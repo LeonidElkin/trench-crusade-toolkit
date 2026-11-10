@@ -1,0 +1,9 @@
+node_modules
+src/generated
+dist
+data
+.reference
+.playwright-mcp
+playwright-report
+test-results
+package-lock.json
