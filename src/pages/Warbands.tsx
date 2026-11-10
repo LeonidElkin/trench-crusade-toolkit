@@ -839,7 +839,7 @@ function Editor({
         <ArrowLeft size={15} />
         Мои отряды
       </a>
-      <div className="warband-heading">
+      <div className="warband-heading" data-unsaved-warband={saveError ? 'true' : undefined}>
         <div>
           <span className="eyebrow">
             {faction?.name} {variant ? ` / ${variant.name}` : ''}

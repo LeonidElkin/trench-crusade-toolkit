@@ -26,4 +26,5 @@ export default tseslint.config(
     },
   },
   { files: ['**/*.js'], languageOptions: { globals: globals.node } },
+  { files: ['public/recover.js'], languageOptions: { globals: globals.browser } },
 )

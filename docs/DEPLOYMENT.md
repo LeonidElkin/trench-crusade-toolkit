@@ -30,3 +30,9 @@ gh api repos/LeonidElkin/trench-crusade-toolkit/pages
 GitHub Pages должен иметь `build_type: workflow`. При первичной настройке разрешён `gh api --method POST repos/LeonidElkin/trench-crusade-toolkit/pages -f build_type=workflow`; существующую конфигурацию сначала читать. Токен уже настроен через GH_TOKEN, не читать файл секретов и не выполнять auth login.
 
 После успеха открыть https://leonidelkin.github.io/trench-crusade-toolkit/ через Playwright MCP. Проверить ресурсы, внутренние маршруты и интерактивность. При ошибке исправить, обычный commit/push и новый полный цикл. Не считать один успешный push доказательством публикации.
+
+## Обновление вкладок после deployment
+
+GitHub Pages может отдавать закешированный HTML, ссылающийся на удалённые JS старой сборки. `public/recover.js` намеренно остаётся обычным неизменяемым по имени public-ресурсом перед модульным входом. Он работает даже при недоступности самого entry bundle, ловит ошибки script и `vite:preloadError` и один раз открывает свежий HTML с сохранением hash-маршрута. Пятиминутный cooldown в sessionStorage предотвращает цикл; при offline, недоступном sessionStorage или маркере несохранённого отряда автоматический reload не выполняется. Кнопка «Перезагрузить» позволяет явно повторить попытку.
+
+Поведение Vite описано в [официальной документации](https://vite.dev/guide/build.html#load-error-handling). E2E реально прерывает загрузку entry/lazy JS, проверяет восстановление, ограничение повторов, ручной повтор и побитовое сохранение localStorage. Эти сценарии запускаются также на публичном сайте в production-smoke.

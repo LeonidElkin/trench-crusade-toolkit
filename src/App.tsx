@@ -61,7 +61,10 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { error: string }
           Ваши отряды остаются в локальном хранилище. Перезагрузите страницу и попробуйте снова.
         </p>
         <pre>{this.state.error}</pre>
-        <button className="button button-primary" onClick={() => window.location.reload()}>
+        <button
+          className="button button-primary"
+          onClick={() => window.dispatchEvent(new Event('tc:reload-app'))}
+        >
           Перезагрузить
         </button>
       </div>

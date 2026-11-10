@@ -195,6 +195,48 @@ test('shows individual portraits, source provenance and the saved army overview'
   await page.getByRole('button', { name: 'Рассмотреть: Алхимик Джабира', exact: true }).click()
   await expect(page.getByRole('dialog')).toContainText('ИЛЛЮСТРАЦИЯ ИЗ PDF')
 })
+test('recovers a missing entry bundle after deployment', async ({ page }) => {
+  let requests = 0
+  await page.route('**/assets/index-*.js', (route) =>
+    ++requests === 1 ? route.abort('failed') : route.continue(),
+  )
+  await page.goto('./#/calculator')
+  await expect(page.locator('.probability-value')).toHaveText(['41,67%', '55,56%', '2,78%'])
+  expect(requests).toBe(2)
+  expect(new URL(page.url()).searchParams.has('_tc_refresh')).toBe(true)
+  expect(new URL(page.url()).hash).toBe('#/calculator')
+})
+test('recovers a missing lazy bundle once, preserves saved data and allows manual retry', async ({
+  page,
+}) => {
+  await createBand(page, 'Восстановление после публикации — E2E')
+  await addUnit(page, 'Священник Еретиков')
+  const savedURL = page.url()
+  const saved = await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v1'))
+  let requests = 0
+  await page.route('**/assets/Rules-*.js', (route) =>
+    ++requests === 1 ? route.abort('failed') : route.continue(),
+  )
+  await page.goto('./#/rules')
+  await expect(page.getByRole('heading', { name: 'Справочник правил', exact: true })).toBeVisible()
+  expect(requests).toBe(2)
+  const refreshed = new URL(page.url()).searchParams.get('_tc_refresh')
+  expect(refreshed).toBeTruthy()
+  await page.route('**/assets/About-*.js', (route) => route.abort('failed'))
+  await page.goto('./#/about')
+  await expect(
+    page.getByRole('heading', { name: 'Не удалось открыть приложение', exact: true }),
+  ).toBeVisible()
+  expect(
+    await page.evaluate(() => sessionStorage.getItem('trench-toolkit.chunk-recovery-at')),
+  ).toBe(refreshed)
+  await page.unroute('**/assets/About-*.js')
+  await page.getByRole('button', { name: 'Перезагрузить', exact: true }).click()
+  await expect(page.getByRole('heading', { name: 'О полевом архиве', exact: true })).toBeVisible()
+  await page.goto(savedURL)
+  await expect(page.locator('.warband-meta')).toContainText('1 боец')
+  expect(await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v1'))).toBe(saved)
+})
 test('has no page overflow on five viewport sizes and keeps tables locally scrollable', async ({
   page,
 }, testInfo) => {

@@ -28,3 +28,5 @@ Playwright MCP используется отдельно от тестового
 [Первый workflow](https://github.com/LeonidElkin/trench-crusade-toolkit/actions/runs/42829304766): verify, deploy, production-smoke — success. Публичный сайт проверен через Playwright MCP на desktop/mobile; включая файловый download/upload и share URL. Статические ресурсы загружаются, ошибок JS и внешних runtime-запросов нет.
 
 Обновление с индивидуальными иллюстрациями: 32 unit/data tests и 13 E2E passed; один повтор viewport sweep намеренно skipped. Новый Skill прошёл quick_validate, инвентаризацию и отрицательные проверки. MCP: армия из шести моделей на всех пяти размерах; все изображения загружены, горизонтального переполнения нет. Скриншоты просмотрены; увеличенный PDF-портрет и мобильное пополнение проверены отдельно.
+
+После обнаружения на production устаревшего cached chunk добавлены сценарии восстановления entry/lazy bundle, запрета повторного автоматического reload и ручного повтора. Итоговый локальный прогон: 32 unit/data tests, 17 E2E passed, 1 deliberately skipped.
