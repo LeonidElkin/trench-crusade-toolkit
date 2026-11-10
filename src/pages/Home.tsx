@@ -1,3 +1,4 @@
+import { countLabel } from '../data/format'
 import { ArrowRight, BookOpen, Dice5, Flag, Search, ChevronRight, Crosshair } from 'lucide-react'
 import { assetUrl, catalog, edition, ruleHref } from '../data/registry'
 const descriptions: Record<string, string> = {
@@ -119,7 +120,13 @@ export function Home({ onSearch, warbandCount }: { onSearch: () => void; warband
               <h3>{f.name}</h3>
               <p>{descriptions[f.id]}</p>
               <span className="faction-bottom">
-                {catalog.variants.filter((v) => v.factionId === f.id).length || 'Без'} вариантов
+                {catalog.variants.some((v) => v.factionId === f.id)
+                  ? countLabel(catalog.variants.filter((v) => v.factionId === f.id).length, [
+                      'вариант',
+                      'варианта',
+                      'вариантов',
+                    ])
+                  : 'Без вариантов'}
                 <ArrowRight size={17} />
               </span>
             </div>

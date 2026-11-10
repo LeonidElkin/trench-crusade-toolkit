@@ -1,12 +1,14 @@
 import { useEffect, useId, useRef, type ReactNode } from 'react'
 import { ArrowUpRight, Check, Copy, X, BookOpen } from 'lucide-react'
 import type { Cost, SourceRef, Stats } from '../domain/schema'
+import { nounForm } from '../data/format'
 import { ruleHref } from '../data/registry'
 export function CostView({ cost, compact = false }: { cost: Cost; compact?: boolean }) {
   return (
     <span className="cost">
       <span>
-        {cost.ducats.toLocaleString('ru-RU')} <small>{compact ? 'дк' : 'дукатов'}</small>
+        {cost.ducats.toLocaleString('ru-RU')}{' '}
+        <small>{compact ? 'дк' : nounForm(cost.ducats, ['дукат', 'дуката', 'дукатов'])}</small>
       </span>
       {cost.glory > 0 && (
         <span className="glory">

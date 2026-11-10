@@ -18,3 +18,9 @@ Playwright MCP используется отдельно от тестового
 Найденные и исправленные дефекты: сопоставление обычного пистолета/дробовика с производными, потеря полного профиля оружия при краткой ссылке варианта, фильтр закладок после лимита результатов, несовпадение base path preview и build, возврат фокуса после создания бойца.
 
 Финальные фактические результаты локального/CI/production-прогона записываются в `HANDOFF.md`.
+
+## Первая публикация, 2026-11-10
+
+Локально: 32 unit/data tests и 11 E2E passed; один повтор viewport sweep намеренно skipped. Skills: quick_validate четырёх пакетов, воспроизводимый импорт (0 entity/text changes), отрицательные случаи staging, валидация и полный site check выполнены практически.
+
+[Первый workflow](https://github.com/LeonidElkin/trench-crusade-toolkit/actions/runs/42829304766): verify, deploy, production-smoke — success. Публичный сайт проверен через Playwright MCP на desktop/mobile; включая файловый download/upload и share URL. Статические ресурсы загружаются, ошибок JS и внешних runtime-запросов нет.

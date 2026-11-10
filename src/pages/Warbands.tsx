@@ -1,3 +1,4 @@
+import { countLabel } from '../data/format'
 import { useRef, useState, lazy, Suspense, type FormEvent } from 'react'
 import {
   AlertCircle,
@@ -586,7 +587,12 @@ function FighterEditor({
       <div className="equipment-section">
         <div className="subsection-heading">
           <h3>Экипировка</h3>
-          <span>{model.equipment.reduce((n, e) => n + e.quantity, 0)} предметов</span>
+          <span>
+            {countLabel(
+              model.equipment.reduce((n, e) => n + e.quantity, 0),
+              ['предмет', 'предмета', 'предметов'],
+            )}
+          </span>
         </div>
         {model.equipment.length > 0 ? (
           <div className="equipped-list">
@@ -825,7 +831,7 @@ function Editor({
           <h1>{band.name}</h1>
           <div className="warband-meta">
             <span className="edition-pill">{band.editionId}</span>
-            <span>{band.units.length} бойцов</span>
+            <span>{countLabel(band.units.length, ['боец', 'бойца', 'бойцов'])}</span>
             <span className={saveError ? 'danger-text' : 'save-state'}>
               <Save size={13} />
               {saveError ? 'Не сохранено' : 'Сохранено на устройстве'}
@@ -1250,7 +1256,7 @@ export function Warbands({
                       <h2>{w.name}</h2>
                     </a>
                     <div className="saved-warband-meta">
-                      <span>{w.units.length} бойцов</span>
+                      <span>{countLabel(w.units.length, ['боец', 'бойца', 'бойцов'])}</span>
                       {c && <CostView cost={warbandCost(c, w).cost} compact />}
                     </div>
                     <div className="saved-warband-bottom">

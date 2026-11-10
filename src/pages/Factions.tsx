@@ -1,3 +1,4 @@
+import { countLabel } from '../data/format'
 import { ArrowLeft, ArrowRight, Flag, Users } from 'lucide-react'
 import { assetUrl, catalog, ruleHref } from '../data/registry'
 import { CostView, RuleLink, Source, StatsGrid } from '../components/Common'
@@ -49,7 +50,7 @@ export function Factions({ factionId }: { factionId?: string }) {
             <Users size={15} /> {units.length} профилей
           </span>
           <span>
-            <Flag size={15} /> {variants.length} вариантов
+            <Flag size={15} /> {countLabel(variants.length, ['вариант', 'варианта', 'вариантов'])}
           </span>
         </div>
         <div className="hero-actions">
