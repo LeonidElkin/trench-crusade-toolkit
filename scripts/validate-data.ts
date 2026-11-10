@@ -4,6 +4,7 @@ import { resolve } from 'node:path'
 import { compileContent } from './compile-content.ts'
 import { EditionSchema, type Edition } from '../src/domain/schema.ts'
 import { pathToFileURL } from 'node:url'
+import { validateVisuals } from './validate-visuals.ts'
 export function validateEdition(data: unknown): string[] {
   const parsed = EditionSchema.safeParse(data)
   if (!parsed.success) return parsed.error.issues.map((i) => `${i.path.join('.')}: ${i.message}`)
@@ -84,6 +85,7 @@ export function validateEdition(data: unknown): string[] {
 export async function validateCurrent(): Promise<Edition> {
   const edition = await compileContent(),
     errors = validateEdition(edition)
+  errors.push(...(await validateVisuals(edition)))
   const audit = JSON.parse(
     await readFile(
       resolve(import.meta.dirname, '../data/editions/1.6.3/import-audit.json'),

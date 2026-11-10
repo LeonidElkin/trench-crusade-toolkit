@@ -1,0 +1,1819 @@
+{
+  "schemaVersion": 1,
+  "editionId": "1.6.3",
+  "attribution": "Иллюстрации из русских PDF Мастерской Кетсу. Trench Crusade / Factory Fortress Inc.; права на оригинальные изображения принадлежат их авторам и правообладателям.",
+  "assets": [
+    {
+      "id": "heretic-priest",
+      "path": "portraits/1.6.3/heretic-priest.webp",
+      "thumbnail": "portraits/1.6.3/heretic-priest-thumb.webp",
+      "width": 416,
+      "height": 737,
+      "bytes": 53892,
+      "sha256": "163fb9af09a11bab577f15b2685c430b2c5f3aae9d5c5b5e94be9babfc249481",
+      "thumbnailBytes": 13380,
+      "thumbnailSha256": "bef1f62b2d5357a5e1d862830412015b744876bb4041fe3aee038f02f162ceb7",
+      "originalSha256": "00c5024d9bbfb2cd8ca76f030f7c6a34b1168dff315bfcdbb40cd6e99b21152e",
+      "source": {
+        "source": "core",
+        "pages": [
+          22
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 161
+      },
+      "caption": "Священник Еретиков"
+    },
+    {
+      "id": "heretic-commando",
+      "path": "portraits/1.6.3/heretic-commando.webp",
+      "thumbnail": "portraits/1.6.3/heretic-commando-thumb.webp",
+      "width": 384,
+      "height": 758,
+      "bytes": 60820,
+      "sha256": "dd976eb771be5f5114ab854a0567551498b960be762ab0dc62f5849aa1e0b57a",
+      "thumbnailBytes": 14504,
+      "thumbnailSha256": "606a670d873508538cd10c2cb3bf1a413449d64f59856e90f581286606e27a80",
+      "originalSha256": "ceb619aac9fa771cf00f89ae30306bfdfd2e41cc0da453da2ddb5fde15618961",
+      "source": {
+        "source": "core",
+        "pages": [
+          22
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 163
+      },
+      "caption": "Еретический Коммандос Смерти"
+    },
+    {
+      "id": "heretic-chorister",
+      "path": "portraits/1.6.3/heretic-chorister.webp",
+      "thumbnail": "portraits/1.6.3/heretic-chorister-thumb.webp",
+      "width": 496,
+      "height": 1000,
+      "bytes": 141420,
+      "sha256": "2f4743651b2b3dadc11b2fc5a5a752fc9e9f7870b4a3d0dcc11356802abdd709",
+      "thumbnailBytes": 20082,
+      "thumbnailSha256": "90f1df5552517906100d81babbea2a0ed4f5dbdb8eaebe2040fd5867a05ba3bb",
+      "originalSha256": "7e9100d40e64615f92d05f4f37eed496ea26e9a5d1caba3d8644b093e91c6d8a",
+      "source": {
+        "source": "core",
+        "pages": [
+          23
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 168
+      },
+      "caption": "Хорист Еретиков"
+    },
+    {
+      "id": "heretic-trooper",
+      "path": "portraits/1.6.3/heretic-trooper.webp",
+      "thumbnail": "portraits/1.6.3/heretic-trooper-thumb.webp",
+      "width": 352,
+      "height": 694,
+      "bytes": 64060,
+      "sha256": "91717058aead78fd677b060d04c6a9239bb5de9b927ce956f3011eec13e3b007",
+      "thumbnailBytes": 18100,
+      "thumbnailSha256": "c821f8ffa27bf4be278a3c675db394d2a0737231d35627744c3fc1a3b22129f9",
+      "originalSha256": "001df0812dffc47e724da1240bb3dea0a95ab4e7af44071cafbf1512ebcd0833",
+      "source": {
+        "source": "core",
+        "pages": [
+          24
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 173
+      },
+      "caption": "Пехота Еретиков"
+    },
+    {
+      "id": "heretic-anointed",
+      "path": "portraits/1.6.3/heretic-anointed.webp",
+      "thumbnail": "portraits/1.6.3/heretic-anointed-thumb.webp",
+      "width": 806,
+      "height": 940,
+      "bytes": 95044,
+      "sha256": "8336f9a4d9943444e059cd051e7778f791310d88a134c53a4b7343f2ac1f846a",
+      "thumbnailBytes": 16022,
+      "thumbnailSha256": "c9f787886c9a08cfaabec4b1d66e3670d6ccb07558ae6c9571f481312cd8624a",
+      "originalSha256": "4f7e47f28c4abf50734df7c6ebba4d7a886ec76762ad14c84a73f1345bad71ec",
+      "source": {
+        "source": "core",
+        "pages": [
+          24
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 175
+      },
+      "caption": "Помазанная Тяжёлая Пехота"
+    },
+    {
+      "id": "heretic-war-wolf",
+      "path": "portraits/1.6.3/heretic-war-wolf.webp",
+      "thumbnail": "portraits/1.6.3/heretic-war-wolf-thumb.webp",
+      "width": 840,
+      "height": 579,
+      "bytes": 124170,
+      "sha256": "e8394e10bca79c82ce9e6dc7915c17c9e885b9630f9c8afebf8af7e878156daf",
+      "thumbnailBytes": 18396,
+      "thumbnailSha256": "d234d58bbc9f2059787baf8bc6e40764ef1eb5f5301a5af6ebda484a42169a42",
+      "originalSha256": "ca5ed82cc4b83907b51c197986d99af28c379cb20f165e1f290c1810761190f9",
+      "source": {
+        "source": "core",
+        "pages": [
+          25
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 180
+      },
+      "caption": "Боевой Волк: Штурмовой зверь"
+    },
+    {
+      "id": "heretic-witch",
+      "path": "portraits/1.6.3/heretic-witch.webp",
+      "thumbnail": "portraits/1.6.3/heretic-witch-thumb.webp",
+      "width": 428,
+      "height": 1000,
+      "bytes": 58740,
+      "sha256": "805f5c45137269271dbf7010b1448dffd3fc6b4f0ca4fcebcfa2583472e772e0",
+      "thumbnailBytes": 8326,
+      "thumbnailSha256": "f42ab970167ac3d5acacc678093ea16da98be240ca5f5f6a327a9c776c5d12a8",
+      "originalSha256": "d43499574208fa77fb43b0a4d107108331a798f8aad510fc64c0974d303f85da",
+      "source": {
+        "source": "core",
+        "pages": [
+          26
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 185
+      },
+      "caption": "Ведьма-Артиллеристка"
+    },
+    {
+      "id": "heretic-wretch",
+      "path": "portraits/1.6.3/heretic-wretch.webp",
+      "thumbnail": "portraits/1.6.3/heretic-wretch-thumb.webp",
+      "width": 449,
+      "height": 1000,
+      "bytes": 97862,
+      "sha256": "1a21b4a6cd9ae3aa35ec85748eb8dc32a1b2e3363980197c8f26e6605ab1196a",
+      "thumbnailBytes": 15888,
+      "thumbnailSha256": "15afe4ac18e051c2f9d044c4ecbf34d73f0d2db1bc10ac1fb9a7c4a6fb3e312a",
+      "originalSha256": "941a92d8af8753b93e8d2179840584c8468007ef822db38fda52d0a9e58dd713",
+      "source": {
+        "source": "core",
+        "pages": [
+          27
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 190
+      },
+      "caption": "Несчастный"
+    },
+    {
+      "id": "pilgrims-prophet",
+      "path": "portraits/1.6.3/pilgrims-prophet.webp",
+      "thumbnail": "portraits/1.6.3/pilgrims-prophet-thumb.webp",
+      "width": 252,
+      "height": 334,
+      "bytes": 26652,
+      "sha256": "18a05299876475c341a21f06f1c1c9b850a8855b8cd47bb3de77f11d2a61bcc0",
+      "thumbnailBytes": 24592,
+      "thumbnailSha256": "138bc0151147ec1cc45ea7bddb95831b25e1733ce85e45aed30eb1501115799c",
+      "originalSha256": "ca4b842cbb646beee2b25f7685c8471d61e685fb665519f06958b41905a8df37",
+      "source": {
+        "source": "core",
+        "pages": [
+          37
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 234
+      },
+      "caption": "Пророк войны"
+    },
+    {
+      "id": "pilgrims-castigator",
+      "path": "portraits/1.6.3/pilgrims-castigator.webp",
+      "thumbnail": "portraits/1.6.3/pilgrims-castigator-thumb.webp",
+      "width": 402,
+      "height": 552,
+      "bytes": 32090,
+      "sha256": "8964c387d71cb197701e060a2c5b0538f0637c791cd301d4e2e391245ad47b4e",
+      "thumbnailBytes": 14770,
+      "thumbnailSha256": "1ad437e1ee8829f1199bfb921b4c1ee712411bbd3b933fa070db009331757d21",
+      "originalSha256": "6830af85436bb8a99a1e764ca7e5609858613266f024194f5135bd9dd7ae4b9b",
+      "source": {
+        "source": "core",
+        "pages": [
+          37
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 236
+      },
+      "caption": "Каратель"
+    },
+    {
+      "id": "pilgrims-communicant",
+      "path": "portraits/1.6.3/pilgrims-communicant.webp",
+      "thumbnail": "portraits/1.6.3/pilgrims-communicant-thumb.webp",
+      "width": 840,
+      "height": 867,
+      "bytes": 116784,
+      "sha256": "b48c3639733fd7b209e8f057a6427bb6e52b89cb51985a31ec07aa2d91554b25",
+      "thumbnailBytes": 19130,
+      "thumbnailSha256": "33d84a98b58004e77d602342f64e9a40b3d3ceb99fcbd3fbd8a148add1e0c966",
+      "originalSha256": "649baa9ed32b0274558627da4c63eb29cd2937b476f253a5752bb1c641ae7062",
+      "source": {
+        "source": "core",
+        "pages": [
+          38
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 241
+      },
+      "caption": "Коммуникант"
+    },
+    {
+      "id": "pilgrims-pilgrim",
+      "path": "portraits/1.6.3/pilgrims-pilgrim.webp",
+      "thumbnail": "portraits/1.6.3/pilgrims-pilgrim-thumb.webp",
+      "width": 404,
+      "height": 578,
+      "bytes": 45350,
+      "sha256": "9c103fea9253686afd8378d0c011d8844a58b9ea391a830fde49ef3fbe399ba7",
+      "thumbnailBytes": 19630,
+      "thumbnailSha256": "27082c5ce0cbfb2e46d66141679f242736dc11cfbfb1318db696bc4d45ba6619",
+      "originalSha256": "b06c7e438a035cc0464b14ef004b6864c46d52cb8fa443ca62babe9fa464496b",
+      "source": {
+        "source": "core",
+        "pages": [
+          39
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 246
+      },
+      "caption": "Траншейный Паломник"
+    },
+    {
+      "id": "pilgrims-prisoner",
+      "path": "portraits/1.6.3/pilgrims-prisoner.webp",
+      "thumbnail": "portraits/1.6.3/pilgrims-prisoner-thumb.webp",
+      "width": 380,
+      "height": 516,
+      "bytes": 28256,
+      "sha256": "1c91e8601b454670f76d86b1f02d5b2a630562b63306613f09231fdfb905bbc2",
+      "thumbnailBytes": 14988,
+      "thumbnailSha256": "f9261502fcaddebea2ce187afc8c764671e542f368bc7a36fd817e7b3021e282",
+      "originalSha256": "d078d894b80a9b81b346455b412da017a4072c0891e18389badb7c316e64fdf9",
+      "source": {
+        "source": "core",
+        "pages": [
+          39
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 248
+      },
+      "caption": "Церковные Узники"
+    },
+    {
+      "id": "pilgrims-nun",
+      "path": "portraits/1.6.3/pilgrims-nun.webp",
+      "thumbnail": "portraits/1.6.3/pilgrims-nun-thumb.webp",
+      "width": 484,
+      "height": 1000,
+      "bytes": 76072,
+      "sha256": "45f53163ce92d976954c57b41f01f73c07c370c771a8e8b4ee9cf39c0213e15a",
+      "thumbnailBytes": 12958,
+      "thumbnailSha256": "172537370953591571d6dda18b7c4f182b0ae81cdcf32ad7b9cc8c7cb87f7e0f",
+      "originalSha256": "960eabeef22e279da6a6f978ca3481a0112beb9799d86fb049bdc9ee7234ede1",
+      "source": {
+        "source": "core",
+        "pages": [
+          40
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 253
+      },
+      "caption": "Стигматизированные Монахини"
+    },
+    {
+      "id": "pilgrims-anchorite",
+      "path": "portraits/1.6.3/pilgrims-anchorite.webp",
+      "thumbnail": "portraits/1.6.3/pilgrims-anchorite-thumb.webp",
+      "width": 708,
+      "height": 1000,
+      "bytes": 87550,
+      "sha256": "afe3c6900ca0e8342337abef5acfeb85947c8a9b459b140f5110d900cd2d5615",
+      "thumbnailBytes": 10862,
+      "thumbnailSha256": "72058a38765dff7e445a4206fc991e0f86290ce6a2641ee910d1d9ce8ebf0289",
+      "originalSha256": "fd789b6c51e5238b447f66e1e4d593ec3a123775e7e312adf0e89184ab007712",
+      "source": {
+        "source": "core",
+        "pages": [
+          42
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 265
+      },
+      "caption": "Святилище Анахорет"
+    },
+    {
+      "id": "sultanate-captain",
+      "path": "portraits/1.6.3/sultanate-captain.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-captain-thumb.webp",
+      "width": 566,
+      "height": 618,
+      "bytes": 96190,
+      "sha256": "5a9f1d71deabad4112fb2a84d9d8f7565546203357cdce1129e4f7adfb410831",
+      "thumbnailBytes": 29350,
+      "thumbnailSha256": "2505f0dd60801e5c392884250b8107314ff07891549429573aa5085846e2f91e",
+      "originalSha256": "c2bd66b33d3fbb077aa7fcfb6792d4d4b3cbcf04f9c76778e0aa8079aa224145",
+      "source": {
+        "source": "core",
+        "pages": [
+          54
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 306
+      },
+      "caption": "Капитан Юзбаши"
+    },
+    {
+      "id": "sultanate-alchemist",
+      "path": "portraits/1.6.3/sultanate-alchemist.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-alchemist-thumb.webp",
+      "width": 491,
+      "height": 694,
+      "bytes": 79232,
+      "sha256": "18413080c25dafc10f7ca4ac65430455f37715256bde957f002b4058db95a74e",
+      "thumbnailBytes": 21722,
+      "thumbnailSha256": "49b629621d3b21f9fdbeff17bb4becb0cb2f4c0e7c348ae0e37b039584fb6586",
+      "originalSha256": "8dc349480802a49262682115280af2f442bf2964cc34eb1a5e21a1e095b9c8fd",
+      "source": {
+        "source": "core",
+        "pages": [
+          54
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 308
+      },
+      "caption": "Алхимик Джабира"
+    },
+    {
+      "id": "sultanate-assassin",
+      "path": "portraits/1.6.3/sultanate-assassin.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-assassin-thumb.webp",
+      "width": 631,
+      "height": 1000,
+      "bytes": 96164,
+      "sha256": "29f82a78f1155bb7b71d828a2baceff1fd6be7e5741fba338ec9b5fb6638ad55",
+      "thumbnailBytes": 15470,
+      "thumbnailSha256": "03f5653d469ffc9fdccc70f88035ae0c898f271482ced1bb19045fb4bbc4f16e",
+      "originalSha256": "e8e023cd758577f33b1076b387d7436a6c3c201378068ca9f209737999c344b8",
+      "source": {
+        "source": "core",
+        "pages": [
+          55
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 313
+      },
+      "caption": "Ассасин Султаната"
+    },
+    {
+      "id": "sultanate-azeb",
+      "path": "portraits/1.6.3/sultanate-azeb.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-azeb-thumb.webp",
+      "width": 508,
+      "height": 782,
+      "bytes": 77086,
+      "sha256": "22f72bd699900d737c9963bceb3ff6b706273a51f6ab26cc6db35af925a8a7b7",
+      "thumbnailBytes": 17894,
+      "thumbnailSha256": "cbcae7eea969374bca32154c564fef91217eb2ec2f95ee3f716e3a150fb4c39e",
+      "originalSha256": "f707153ecf428b7f405b5b5274b5eceaa6b9fe8abcc12e306e735f93b9bbdb4c",
+      "source": {
+        "source": "core",
+        "pages": [
+          56
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 318
+      },
+      "caption": "Азебы"
+    },
+    {
+      "id": "sultanate-lion",
+      "path": "portraits/1.6.3/sultanate-lion.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-lion-thumb.webp",
+      "width": 638,
+      "height": 745,
+      "bytes": 117806,
+      "sha256": "4372e263cecb913a488e58d6274a23000e6f6a1c3d2574368b38fd0fdf72918f",
+      "thumbnailBytes": 28620,
+      "thumbnailSha256": "e02141f345ecc312c7152ead5b69f18f95e8111a12a950b7afa3e9e588a33157",
+      "originalSha256": "aef73061065184b96fef9a78b9503c336f7d39b978bbb6feca25f2f0ab606c36",
+      "source": {
+        "source": "core",
+        "pages": [
+          57
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 323
+      },
+      "caption": "Львы Джабира"
+    },
+    {
+      "id": "sultanate-janissary",
+      "path": "portraits/1.6.3/sultanate-janissary.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-janissary-thumb.webp",
+      "width": 508,
+      "height": 885,
+      "bytes": 97914,
+      "sha256": "bf1f022befbf5cf5a82ce607df3d386c6c8fe5931c9d06722d867da5147d143e",
+      "thumbnailBytes": 18160,
+      "thumbnailSha256": "98c71999fa167b9fbb50954bd2cac8ee1df0358a8fb4da3c15ce5bac28854bee",
+      "originalSha256": "a0cc01c7ac2dfd4c6f228643a83953e39531341a4771584754153d8141be59ce",
+      "source": {
+        "source": "core",
+        "pages": [
+          57
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 325
+      },
+      "caption": "Янычары"
+    },
+    {
+      "id": "sultanate-bull",
+      "path": "portraits/1.6.3/sultanate-bull.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-bull-thumb.webp",
+      "width": 840,
+      "height": 428,
+      "bytes": 82038,
+      "sha256": "41b1b8c7d1a50b72e3d3f5d4c71fdf622aab8a1e5aa874f1e21a6d7da413833f",
+      "thumbnailBytes": 13294,
+      "thumbnailSha256": "6f5828d2f62b3da6ea40aaff003f7f55079baf56cdea2bd1c3ce19992360171c",
+      "originalSha256": "73fcbb6586be2d7bb8b45501c82f6552372e3b2f34b0be6e24ad5156d3c5081d",
+      "source": {
+        "source": "core",
+        "pages": [
+          58
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 330
+      },
+      "caption": "Бронзовый Бык"
+    },
+    {
+      "id": "antioch-lieutenant",
+      "path": "portraits/1.6.3/antioch-lieutenant.webp",
+      "thumbnail": "portraits/1.6.3/antioch-lieutenant-thumb.webp",
+      "width": 405,
+      "height": 1000,
+      "bytes": 73886,
+      "sha256": "6e9e566e871a13fd175a952a2d701d4608b004821da486285ecad2f2c9da81ed",
+      "thumbnailBytes": 12548,
+      "thumbnailSha256": "9d27efaa826854e64e5938e93296ccaff730929c4068d613c34b5fe48f086735",
+      "originalSha256": "c812e8b8dde7d5003c8f9c32b6a994e8ade64e11154e40c136dd80a22ffbbdeb",
+      "source": {
+        "source": "core",
+        "pages": [
+          68
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 366
+      },
+      "caption": "Лейтенант"
+    },
+    {
+      "id": "antioch-cleric",
+      "path": "portraits/1.6.3/antioch-cleric.webp",
+      "thumbnail": "portraits/1.6.3/antioch-cleric-thumb.webp",
+      "width": 840,
+      "height": 923,
+      "bytes": 136628,
+      "sha256": "3f2b9bff5481af122df3b4217a3398a1d79312a3280f30c1ec72dec3365f933f",
+      "thumbnailBytes": 21796,
+      "thumbnailSha256": "e8c0f82926fc01cd377a11313c0898f4a27d6186b765fbc6f90588df188f2729",
+      "originalSha256": "760e7b1a96f83e47c13bd943caf2999166f8ae843e2f390af22ed91f60233ffe",
+      "source": {
+        "source": "core",
+        "pages": [
+          69
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 371
+      },
+      "caption": "Окопный клирик"
+    },
+    {
+      "id": "antioch-sniper",
+      "path": "portraits/1.6.3/antioch-sniper.webp",
+      "thumbnail": "portraits/1.6.3/antioch-sniper-thumb.webp",
+      "width": 400,
+      "height": 725,
+      "bytes": 18098,
+      "sha256": "db289c644588c8c2b2447a3888d18a9a186a10c8454d20fd79daba9518fe48a9",
+      "thumbnailBytes": 3700,
+      "thumbnailSha256": "22ff47ece0304f93123e2c2eeae314c0a08e64a6ce6654284cc9e9d11e37e748",
+      "originalSha256": "38fe423a57eb17dfb5542c57ff56fbb8efc112150c38205dc4201a079cfc4cb7",
+      "source": {
+        "source": "core",
+        "pages": [
+          69
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 374
+      },
+      "caption": "Снайпер-священник"
+    },
+    {
+      "id": "antioch-yeoman",
+      "path": "portraits/1.6.3/antioch-yeoman.webp",
+      "thumbnail": "portraits/1.6.3/antioch-yeoman-thumb.webp",
+      "width": 278,
+      "height": 854,
+      "bytes": 48854,
+      "sha256": "12312a39b18fe7f8bfe2ebd14fd5a983118ba78e1284940b9c6f2a95092fcb54",
+      "thumbnailBytes": 10416,
+      "thumbnailSha256": "8a6ccfc9f8c51a8e8dd5031f8df2b756e13552b06ba7046fc63c27166dfca4ac",
+      "originalSha256": "d2d8a4bf3d6539163f48414c78dfddc4c50f60e1c316efa2ae3ab97bb3b77b49",
+      "source": {
+        "source": "core",
+        "pages": [
+          70
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 378
+      },
+      "caption": "Йомен"
+    },
+    {
+      "id": "antioch-stormtrooper",
+      "path": "portraits/1.6.3/antioch-stormtrooper.webp",
+      "thumbnail": "portraits/1.6.3/antioch-stormtrooper-thumb.webp",
+      "width": 764,
+      "height": 813,
+      "bytes": 88712,
+      "sha256": "a9c28688687fe62661b0089574c88151713d57a2ddcf5a409a49653075d9e631",
+      "thumbnailBytes": 17050,
+      "thumbnailSha256": "934e2bc50607a9d2ea201a9ee34903edc698a20f73337c35330948a4d38a49f7",
+      "originalSha256": "d4d62505d7607a908300129395ebe56c0265323f5bb3b4f1dbd43172141ed3d0",
+      "source": {
+        "source": "core",
+        "pages": [
+          70
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 380
+      },
+      "caption": "Штурмовики"
+    },
+    {
+      "id": "antioch-engineer",
+      "path": "portraits/1.6.3/antioch-engineer.webp",
+      "thumbnail": "portraits/1.6.3/antioch-engineer-thumb.webp",
+      "width": 352,
+      "height": 789,
+      "bytes": 64404,
+      "sha256": "b3f31e3f8c30726895c77b5a0713ec2756608bf57a5e8e22ea83d42ba5d6d77f",
+      "thumbnailBytes": 15394,
+      "thumbnailSha256": "761dd1794499fce27847908953eb64a49f7beafa1552c7f521f42c80b47ec261",
+      "originalSha256": "95112f59179f819ccf0a7e71223d938596f8afb7bd8f98a0d39a3e3f65e476f8",
+      "source": {
+        "source": "core",
+        "pages": [
+          71
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 385
+      },
+      "caption": "Боевые инженеры"
+    },
+    {
+      "id": "antioch-mechanized",
+      "path": "portraits/1.6.3/antioch-mechanized.webp",
+      "thumbnail": "portraits/1.6.3/antioch-mechanized-thumb.webp",
+      "width": 580,
+      "height": 1000,
+      "bytes": 95500,
+      "sha256": "33817200ee4a57b7ff031a63a8b7d03cfb63d0fa0969e5c7d1207f40378b4c81",
+      "thumbnailBytes": 14228,
+      "thumbnailSha256": "cae8574b9988c6dda24c888885c836398ba3af86e27facb55a5e2b3be0964767",
+      "originalSha256": "666d8a364967cd5de01af008f5d06aadb2f1c7bb888a6f0473668c13b3a5c761",
+      "source": {
+        "source": "core",
+        "pages": [
+          71
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 387
+      },
+      "caption": "Механизированная тяжелая пехота"
+    },
+    {
+      "id": "antioch-medic",
+      "path": "portraits/1.6.3/antioch-medic.webp",
+      "thumbnail": "portraits/1.6.3/antioch-medic-thumb.webp",
+      "width": 386,
+      "height": 1000,
+      "bytes": 79106,
+      "sha256": "a1e0525373f434750f34d29279eca60f2742908ca0d5b7da1c0495ae1f792548",
+      "thumbnailBytes": 12604,
+      "thumbnailSha256": "fa0637e2bcbc233cc8c159f6df6049c5ce53555e54278190ea398a5ed5d5a748",
+      "originalSha256": "745934950e3a171c613c0d31d240f3b44ef7093b1586d2be47ed5199db0247ce",
+      "source": {
+        "source": "core",
+        "pages": [
+          72
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 392
+      },
+      "caption": "Боевой медик"
+    },
+    {
+      "id": "grail-lord",
+      "path": "portraits/1.6.3/grail-lord.webp",
+      "thumbnail": "portraits/1.6.3/grail-lord-thumb.webp",
+      "width": 664,
+      "height": 1000,
+      "bytes": 153530,
+      "sha256": "b2b1d1ea8d9f02f557ae35955f82fb909cbafd369736be05f0ac371d51419c5d",
+      "thumbnailBytes": 21734,
+      "thumbnailSha256": "3450a1c9ad910b5551b46232c1a811533b04ddebea40a3197677e98b4eec7d0c",
+      "originalSha256": "aba3d5fbe68695db28738a4a9bfcf293d5176c7e0b1f659b48b5c702d2ab8a5f",
+      "source": {
+        "source": "core",
+        "pages": [
+          86
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 450
+      },
+      "caption": "Повелитель Опухолей"
+    },
+    {
+      "id": "grail-knight",
+      "path": "portraits/1.6.3/grail-knight.webp",
+      "thumbnail": "portraits/1.6.3/grail-knight-thumb.webp",
+      "width": 556,
+      "height": 1000,
+      "bytes": 89654,
+      "sha256": "261def9f2e7adf13bcf83f6c95e13b7de7c017da44d18c5a2042432dc7cc491a",
+      "thumbnailBytes": 14114,
+      "thumbnailSha256": "fd3f535356eb5f4715991bc0a7c486103473993116f31e227988f377a1861eda",
+      "originalSha256": "93159a5d5bc944183d48759cc1371f9dfde756565b2ffaa93995c620bbafd3cc",
+      "source": {
+        "source": "core",
+        "pages": [
+          87
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 455
+      },
+      "caption": "Чумной Рыцарь"
+    },
+    {
+      "id": "grail-guard",
+      "path": "portraits/1.6.3/grail-guard.webp",
+      "thumbnail": "portraits/1.6.3/grail-guard-thumb.webp",
+      "width": 694,
+      "height": 888,
+      "bytes": 204160,
+      "sha256": "e0c97b4cb70fb27a825d19993565a2bc8e81b842a606a2bf869e1efdbeee0b84",
+      "thumbnailBytes": 34304,
+      "thumbnailSha256": "83e399065d1107b80336fe0dc17400f40bbeb97479d426b0f8126d2828e1b509",
+      "originalSha256": "90c2fd014b1971280b4a2ca44067301f0b6846624c413b43a3c44b6b98bdf1a2",
+      "source": {
+        "source": "core",
+        "pages": [
+          88
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 460
+      },
+      "caption": "Страж Трупов"
+    },
+    {
+      "id": "grail-hound",
+      "path": "portraits/1.6.3/grail-hound.webp",
+      "thumbnail": "portraits/1.6.3/grail-hound-thumb.webp",
+      "width": 636,
+      "height": 459,
+      "bytes": 78520,
+      "sha256": "f015874c77ed2723133823b6aedca6d8ccd4ce03b46997a7c003d092b3853db5",
+      "thumbnailBytes": 19784,
+      "thumbnailSha256": "08e93df7ce0e81a268638a48adc730d323213342b7882356424330553a593586",
+      "originalSha256": "947982af015a13c13bef7d43054e947e964186c0ff76ff2b3512384fdab202a3",
+      "source": {
+        "source": "core",
+        "pages": [
+          88
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 462
+      },
+      "caption": "Гончие Чёрного Грааля"
+    },
+    {
+      "id": "grail-thrall",
+      "path": "portraits/1.6.3/grail-thrall.webp",
+      "thumbnail": "portraits/1.6.3/grail-thrall-thumb.webp",
+      "width": 453,
+      "height": 1000,
+      "bytes": 97176,
+      "sha256": "41be884015c715f37b6c1acdc13771abbe53c7645febc11e582dc2fce77536d1",
+      "thumbnailBytes": 14144,
+      "thumbnailSha256": "50361434cc18b4e0873f18b08d9b71924a1abf9d93c6dbe445b596dc289f6fca",
+      "originalSha256": "3ed6c38774911573705dce6b2792f21b64dde830d78013352d81bac17bf9bb25",
+      "source": {
+        "source": "core",
+        "pages": [
+          89
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 467
+      },
+      "caption": "Прислужник Грааля"
+    },
+    {
+      "id": "grail-herald",
+      "path": "portraits/1.6.3/grail-herald.webp",
+      "thumbnail": "portraits/1.6.3/grail-herald-thumb.webp",
+      "width": 772,
+      "height": 1000,
+      "bytes": 83296,
+      "sha256": "bd000f9bf949ff00f8a577ff56697c08a2816796aa6ccee406d54af0378f719d",
+      "thumbnailBytes": 9466,
+      "thumbnailSha256": "e91634f9b2fa17f7c9c1b256be0b95f7ab219cb39adc5b68fd2a794281480527",
+      "originalSha256": "05f68650221f262091d8e4a30528b3e403a3b2333de1954cf0257a6497fec3f2",
+      "source": {
+        "source": "core",
+        "pages": [
+          91
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 478
+      },
+      "caption": "Глашатаи Вельзевула"
+    },
+    {
+      "id": "grail-amalgam",
+      "path": "portraits/1.6.3/grail-amalgam.webp",
+      "thumbnail": "portraits/1.6.3/grail-amalgam-thumb.webp",
+      "width": 772,
+      "height": 1000,
+      "bytes": 97960,
+      "sha256": "9940a119a0236f3ce76cc7089d658b5582b54fdef06236358fadfcad32eefe0e",
+      "thumbnailBytes": 10844,
+      "thumbnailSha256": "cd76b08e212c165aac063ec18df98545762ca76e400f4a3d8d17e6987382cfd6",
+      "originalSha256": "8a3829a27ffbd90f582437296b0d5482e1e55ede1af97e1b4846bae9b107ca0e",
+      "source": {
+        "source": "core",
+        "pages": [
+          93
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 488
+      },
+      "caption": "Амальгама"
+    },
+    {
+      "id": "court-praetor",
+      "path": "portraits/1.6.3/court-praetor.webp",
+      "thumbnail": "portraits/1.6.3/court-praetor-thumb.webp",
+      "width": 772,
+      "height": 1000,
+      "bytes": 104286,
+      "sha256": "b61b02affec971890b62c4a187bfbbaf001cc732d795fd3b722506027e38b0cd",
+      "thumbnailBytes": 13148,
+      "thumbnailSha256": "332187945e256f79ed09eefcf9ce65d67f372641d058708be92e19e42f34d29c",
+      "originalSha256": "58158ead6ac1d618e7d37f04428a0c7357686da0b970a955c8eb99519c322062",
+      "source": {
+        "source": "core",
+        "pages": [
+          107
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 538
+      },
+      "caption": "Претор"
+    },
+    {
+      "id": "court-sorcerer",
+      "path": "portraits/1.6.3/court-sorcerer.webp",
+      "thumbnail": "portraits/1.6.3/court-sorcerer-thumb.webp",
+      "width": 770,
+      "height": 1000,
+      "bytes": 96454,
+      "sha256": "d5925b472d4a25e567e6af47e5ca4727f86424ec182e6cc16c3f060f2a852d75",
+      "thumbnailBytes": 13218,
+      "thumbnailSha256": "fb7d704450ea7ffd64a6785d7b0579fe6a91fbf16ccc4ad4dfa9b4db1d882d8f",
+      "originalSha256": "72dcec43ee40b48f72e237e2e7a5d955bb624334056f909276f5de70b9175ae6",
+      "source": {
+        "source": "core",
+        "pages": [
+          109
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 553
+      },
+      "caption": "Колдун"
+    },
+    {
+      "id": "court-hunter",
+      "path": "portraits/1.6.3/court-hunter.webp",
+      "thumbnail": "portraits/1.6.3/court-hunter-thumb.webp",
+      "width": 771,
+      "height": 1000,
+      "bytes": 103272,
+      "sha256": "80baad19f6f6057a3be99afc3cdd3c2a99089ab2d222ae21c32df4fb4ac9e94b",
+      "thumbnailBytes": 11732,
+      "thumbnailSha256": "69895ba3182d438c284192ae0ecff8a37ccb736145e2f6c3c1f807d1f34924af",
+      "originalSha256": "09b41fe144aa5e79975a124d447b9347d279163039245bcdd2ad8d3d973e251c",
+      "source": {
+        "source": "core",
+        "pages": [
+          111
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 563
+      },
+      "caption": "Охотник Левого Пути"
+    },
+    {
+      "id": "court-knight",
+      "path": "portraits/1.6.3/court-knight.webp",
+      "thumbnail": "portraits/1.6.3/court-knight-thumb.webp",
+      "width": 612,
+      "height": 725,
+      "bytes": 51876,
+      "sha256": "61341377b19a2c43510df40c7f76c156abfda7610ff6037fa27a0f8e867ade68",
+      "thumbnailBytes": 10830,
+      "thumbnailSha256": "59ca3399e9f13936c05273e1be5073b2adc424cef721b242717b779016df8647",
+      "originalSha256": "35c68cb36b33fe2fd5a37b6bf7671f0abb4aedc0731e41c19c750fb95a31d2fc",
+      "source": {
+        "source": "core",
+        "pages": [
+          112
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 568
+      },
+      "caption": "Адский Рыцарь"
+    },
+    {
+      "id": "court-yoke",
+      "path": "portraits/1.6.3/court-yoke.webp",
+      "thumbnail": "portraits/1.6.3/court-yoke-thumb.webp",
+      "width": 400,
+      "height": 575,
+      "bytes": 37614,
+      "sha256": "0d27485089188dfbb38724c5d513b9db86dff0b3f6e2f7b7b4b4be7af2f9a83f",
+      "thumbnailBytes": 12008,
+      "thumbnailSha256": "1a604da9521372fd6dc1036a6b2ad980276363595ab6dba1e57a6ec516e2313c",
+      "originalSha256": "8a0d3f02f2eaab23f85883031ae50b680943ab134298e687743460cb4f34078b",
+      "source": {
+        "source": "core",
+        "pages": [
+          113
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 573
+      },
+      "caption": "Иго-Демон"
+    },
+    {
+      "id": "court-wretch",
+      "path": "portraits/1.6.3/court-wretch.webp",
+      "thumbnail": "portraits/1.6.3/court-wretch-thumb.webp",
+      "width": 400,
+      "height": 575,
+      "bytes": 34288,
+      "sha256": "e9199062ae3ff1e79046b1e5c1ac599d0c087e6c14fc7f31c140fc2e4868fb2f",
+      "thumbnailBytes": 11750,
+      "thumbnailSha256": "2c7c57c72bd8254038cc84874149e38ee48e56353db48753d0a3979249b3b860",
+      "originalSha256": "8757030796b8c47c0cf1ccb0cbed83c43857696d062760f5ec36bb1ece83941b",
+      "source": {
+        "source": "core",
+        "pages": [
+          113
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 575
+      },
+      "caption": "Несчастные"
+    },
+    {
+      "id": "court-locust",
+      "path": "portraits/1.6.3/court-locust.webp",
+      "thumbnail": "portraits/1.6.3/court-locust-thumb.webp",
+      "width": 772,
+      "height": 1000,
+      "bytes": 132106,
+      "sha256": "d05920e5c109eb24213252eb56d6b5df4c9d15ec3c3d844729bce9876ff800b6",
+      "thumbnailBytes": 11894,
+      "thumbnailSha256": "42511f27ecf237fe0f3b5f33baf7be2df86c95543feff7351d4d9698c19887e2",
+      "originalSha256": "a99a5a250ebceeeb276f25ca284c7d0e171c7858f0b5048f28e4ab2bd955c6a8",
+      "source": {
+        "source": "core",
+        "pages": [
+          115
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 585
+      },
+      "caption": "Ямовая саранча"
+    },
+    {
+      "id": "court-saint",
+      "path": "portraits/1.6.3/court-saint.webp",
+      "thumbnail": "portraits/1.6.3/court-saint-thumb.webp",
+      "width": 772,
+      "height": 1000,
+      "bytes": 87698,
+      "sha256": "1ca9764e4c417d6538d86b9bb01ff2a4d1f6a55b3bc6bbaeb6c1dd1c0cbed435",
+      "thumbnailBytes": 9804,
+      "thumbnailSha256": "8520ed1912abf165d970ee6d4dec270266c236575004670b4a039a9abad3fee7",
+      "originalSha256": "50a91b73a1debbf5a57386d644f73c106dc9ba13bb60cfc0c2ed1f897e777a98",
+      "source": {
+        "source": "core",
+        "pages": [
+          117
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 595
+      },
+      "caption": "Оскверненный Святой"
+    },
+    {
+      "id": "allies-medic",
+      "path": "portraits/1.6.3/allies-medic.webp",
+      "thumbnail": "portraits/1.6.3/allies-medic-thumb.webp",
+      "width": 702,
+      "height": 1000,
+      "bytes": 50096,
+      "sha256": "2f81648c735c82f50f006abcad7d42851629368c9201b05bc9090690df17a6dc",
+      "thumbnailBytes": 6652,
+      "thumbnailSha256": "d302d34ea37b62267d97be9171b9aba34f3251830087b46ffeb69fabba5dd6ac",
+      "originalSha256": "6c0ed5a88d9271722ccfd4574986ba1142b957254a3011c13d73dda6d1b01dba",
+      "source": {
+        "source": "allies",
+        "pages": [
+          3
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 5
+      },
+      "caption": "Боевой Медик"
+    },
+    {
+      "id": "allies-witch-hunter",
+      "path": "portraits/1.6.3/allies-witch-hunter.webp",
+      "thumbnail": "portraits/1.6.3/allies-witch-hunter-thumb.webp",
+      "width": 702,
+      "height": 1000,
+      "bytes": 58414,
+      "sha256": "f74ddff4d5f8e2552d57c1da6ca89c539b70a5774186fae232801a56647415cb",
+      "thumbnailBytes": 7492,
+      "thumbnailSha256": "a136d8e35a8ab232b73eaf71c642621e906410b903ea1bc1cd4d83fd34417841",
+      "originalSha256": "b1fceec55ecce0f506e9250def7d8e38a7b33a20318421bef8f6aa36796fc35d",
+      "source": {
+        "source": "allies",
+        "pages": [
+          5
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 10
+      },
+      "caption": "Истребитель ведьм"
+    },
+    {
+      "id": "allies-tank-hunter",
+      "path": "portraits/1.6.3/allies-tank-hunter.webp",
+      "thumbnail": "portraits/1.6.3/allies-tank-hunter-thumb.webp",
+      "width": 703,
+      "height": 1000,
+      "bytes": 114930,
+      "sha256": "26bbf69cb66154343727080e8ec33528d388e77fb34ec5db8a5c872239dad6e9",
+      "thumbnailBytes": 7696,
+      "thumbnailSha256": "8b6c0caf10f3f923c0920aa6784360f41815f0c21bdbdcd5054b54aaaa7f2937",
+      "originalSha256": "fdddbca0e6d0a527e80bca65bac848ac3e4667175620d1b9a2c10bba364f0a88",
+      "source": {
+        "source": "allies",
+        "pages": [
+          7
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 15
+      },
+      "caption": "Коммуникант Истребитель Танков"
+    },
+    {
+      "id": "allies-mendelist",
+      "path": "portraits/1.6.3/allies-mendelist.webp",
+      "thumbnail": "portraits/1.6.3/allies-mendelist-thumb.webp",
+      "width": 592,
+      "height": 1000,
+      "bytes": 152596,
+      "sha256": "7ebcaccd252dcc2298f9cc7182cb6461112265c588efb4c2f48812c052e6a175",
+      "thumbnailBytes": 13470,
+      "thumbnailSha256": "be8ac9fe9173585893049d2bc7de0610a030f7ba5792309db8a4f817eabc583a",
+      "originalSha256": "81df0d0b2b4d02c9ce77f9f644b4908e6a9da728875996b83292ac427e40c551",
+      "source": {
+        "source": "allies",
+        "pages": [
+          9
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 23
+      },
+      "caption": "Монах-Менделист"
+    },
+    {
+      "id": "allies-sin-eater",
+      "path": "portraits/1.6.3/allies-sin-eater.webp",
+      "thumbnail": "portraits/1.6.3/allies-sin-eater-thumb.webp",
+      "width": 773,
+      "height": 1000,
+      "bytes": 131796,
+      "sha256": "7275559c8a96581e9296a6b584a71ceca684847e9dc1454f136d27ffdfcb5b6c",
+      "thumbnailBytes": 11920,
+      "thumbnailSha256": "aacee2abf95ec2ebdb544fa0bb674804f149c9d2982898e5d8bb2263f24c494a",
+      "originalSha256": "dc48f5cebd7f076b5858d32d29f21ade8f19d0216bebf3d01d2bbc1c7d84c1a6",
+      "source": {
+        "source": "allies",
+        "pages": [
+          11
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 30
+      },
+      "caption": "Пожиратель Грехов"
+    },
+    {
+      "id": "allies-sorcerer",
+      "path": "portraits/1.6.3/allies-sorcerer.webp",
+      "thumbnail": "portraits/1.6.3/allies-sorcerer-thumb.webp",
+      "width": 703,
+      "height": 1000,
+      "bytes": 93530,
+      "sha256": "f8ea5eed1412803e6d028768f02af74d82ec9c8ee32455077492b40f1f747099",
+      "thumbnailBytes": 9910,
+      "thumbnailSha256": "3dcb316b847bff440d2c2e7f325e30b78acc205735b3a20359bcca78a86b0379",
+      "originalSha256": "d8dae8c4a9136c0e4c1fe12bdeba2896a551530468008f75c746b3b3ec2ddc76",
+      "source": {
+        "source": "allies",
+        "pages": [
+          13
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 35
+      },
+      "caption": "Гоэтический Колдун"
+    },
+    {
+      "id": "allies-observer",
+      "path": "portraits/1.6.3/allies-observer.webp",
+      "thumbnail": "portraits/1.6.3/allies-observer-thumb.webp",
+      "width": 702,
+      "height": 1000,
+      "bytes": 69244,
+      "sha256": "c1334f6ba9872e290cd1051a31e1cece3f4318901c310c98fb5b05796d5155b2",
+      "thumbnailBytes": 6374,
+      "thumbnailSha256": "3ebe4943b5bae82c1df216cc32e4493f7b76a3a390019a0d3d4c05da149b7d5b",
+      "originalSha256": "a690e01139078285d519099ff6194cf65e3ad574e52afb27ed527111d15c0ae5",
+      "source": {
+        "source": "allies",
+        "pages": [
+          15
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 40
+      },
+      "caption": "Наблюдатель"
+    },
+    {
+      "id": "allies-mamluk",
+      "path": "portraits/1.6.3/allies-mamluk.webp",
+      "thumbnail": "portraits/1.6.3/allies-mamluk-thumb.webp",
+      "width": 625,
+      "height": 1000,
+      "bytes": 66876,
+      "sha256": "a95ba4c44cc387cadbd1287bf13485edf71f6e69e0a59d17084f1062758ae4cc",
+      "thumbnailBytes": 9756,
+      "thumbnailSha256": "21b61f0a2dbde401ab6aa396e3d2a78d10d852997d756f24bc73e7c8e5ef5444",
+      "originalSha256": "f969fdbdfa435972373f95913b6112780e5a6238950b33be15df3de9be92cdad",
+      "source": {
+        "source": "allies",
+        "pages": [
+          17
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 45
+      },
+      "caption": "Мамлюк Фарис"
+    },
+    {
+      "id": "allies-dog",
+      "path": "portraits/1.6.3/allies-dog.webp",
+      "thumbnail": "portraits/1.6.3/allies-dog-thumb.webp",
+      "width": 600,
+      "height": 519,
+      "bytes": 54590,
+      "sha256": "e4da2718d44b59cbcfa5b6abf9d632d1be71b0cf57392051a5d91c819fce70d3",
+      "thumbnailBytes": 13466,
+      "thumbnailSha256": "ae888172c9a3ae0cdba904c7e18f81107e6d41324799b93f7d91bf2030b5a980",
+      "originalSha256": "04a0489ddc9cdd5174aa50390a0522b6ceec83753b86159ed07945d752351d2a",
+      "source": {
+        "source": "allies",
+        "pages": [
+          19
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 50
+      },
+      "caption": "Окопная Собака"
+    },
+    {
+      "id": "allies-scripture-keeper",
+      "path": "portraits/1.6.3/allies-scripture-keeper.webp",
+      "thumbnail": "portraits/1.6.3/allies-scripture-keeper-thumb.webp",
+      "width": 754,
+      "height": 1000,
+      "bytes": 71648,
+      "sha256": "e9afcf6363340e4bd127d536dc458fbed1b32a6ac8ce22909aad758bbb940c50",
+      "thumbnailBytes": 9652,
+      "thumbnailSha256": "85a3fa9f78266d1d05407707f67f5aef053ccabfd2fda15db8cda8e524236836",
+      "originalSha256": "81ce118eeb2b13c6d018278b0f1c7509922ef18b5fd9728921fecef85633ed3e",
+      "source": {
+        "source": "allies",
+        "pages": [
+          21
+        ]
+      },
+      "origin": {
+        "kind": "pdf",
+        "xref": 55
+      },
+      "caption": "Хранитель Писаний"
+    },
+    {
+      "id": "sultanate-sapper",
+      "path": "portraits/1.6.3/sultanate-sapper.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-sapper-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 60216,
+      "sha256": "eddd33dc477ecbeb39d34008254b9ae732a89e8aba2ff763237b10bdda8b799b",
+      "thumbnailBytes": 6252,
+      "thumbnailSha256": "040f201bba76b558e75c8920999f632ae4d9c10ee5ed66b32e0bb6795b88161b",
+      "originalSha256": "b84131fd65cbf98937cb0f674ff050a25d6e067ab82d62ded54b35462d1ce3f1",
+      "source": {
+        "source": "core",
+        "pages": [
+          56
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/sultanate-sapper.md",
+        "inputPath": "assets/generated/1.6.3/sultanate-sapper.png"
+      },
+      "caption": "Саперы Султаната"
+    },
+    {
+      "id": "sultanate-homunculus",
+      "path": "portraits/1.6.3/sultanate-homunculus.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-homunculus-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 47448,
+      "sha256": "59c2c4860a279606d753848a41ba1c0030ca8c76279991a1e912ae70258cbb99",
+      "thumbnailBytes": 5256,
+      "thumbnailSha256": "dc0631115e7849a1f73a45663f2f77f9ce9701e7aa81d6b52818492761fae915",
+      "originalSha256": "d6286c3a930e45cdff32edc58263d4cc52ced8a2e24607dbde1231f9c94f6635",
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/sultanate-homunculus.md",
+        "inputPath": "assets/generated/1.6.3/sultanate-homunculus.png"
+      },
+      "caption": "Гомункул Таквин"
+    },
+    {
+      "id": "grail-fly-thrall",
+      "path": "portraits/1.6.3/grail-fly-thrall.webp",
+      "thumbnail": "portraits/1.6.3/grail-fly-thrall-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 63916,
+      "sha256": "5e54282b72451216201b170dd4119df9c7d6eb3ec01c670647d6a3a80b3c5179",
+      "thumbnailBytes": 6296,
+      "thumbnailSha256": "9a051744a72db82b8554cbb2cbed1dc700905d1accae8aead4f57b873ef392ca",
+      "originalSha256": "c5ceb329e6d33d6a867e9735eb534e1fa7bab3d9e20dabcfab9f873d8ab59b7c",
+      "source": {
+        "source": "core",
+        "pages": [
+          89
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/grail-fly-thrall.md",
+        "inputPath": "assets/generated/1.6.3/grail-fly-thrall.png"
+      },
+      "caption": "Прислужник Мух"
+    },
+    {
+      "id": "sultanate-master-assassin",
+      "path": "portraits/1.6.3/sultanate-master-assassin.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-master-assassin-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 64196,
+      "sha256": "27271b0ea5b80f085b09d61d3888b3b1f3ef2cc6279fae5c412fdd2b412ce124",
+      "thumbnailBytes": 6270,
+      "thumbnailSha256": "c654f30b2cb4cc3319f51b3d2c1465d690443afeec6b34d298c096fb7d0bbd45",
+      "originalSha256": "8bbf11d9bd9167cd2af46c48e5a0d313c1af2887b825ecce3ec1749f86f09c2d",
+      "source": {
+        "source": "core",
+        "pages": [
+          55,
+          56,
+          59
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/sultanate-master-assassin.md",
+        "inputPath": "assets/generated/1.6.3/sultanate-master-assassin.png"
+      },
+      "caption": "Мастер-Ассасин"
+    },
+    {
+      "id": "sultanate-faris",
+      "path": "portraits/1.6.3/sultanate-faris.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-faris-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 59170,
+      "sha256": "abe563acda4e0b9cdcc875df54b9785f891b6c0b205d1ce872da419c6cb52980",
+      "thumbnailBytes": 6200,
+      "thumbnailSha256": "d4b405e664611ba171550889cc5c9c0e063492cb292f508498ced15d75af57a4",
+      "originalSha256": "53a92037a35f54ab62d605d8f0e054bc9245537ddc8c5a9e85247931fe0df5ae",
+      "source": {
+        "source": "core",
+        "pages": [
+          57,
+          58,
+          61
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/sultanate-faris.md",
+        "inputPath": "assets/generated/1.6.3/sultanate-faris.png"
+      },
+      "caption": "Фарис Дома Мудрости"
+    },
+    {
+      "id": "sultanate-kavass",
+      "path": "portraits/1.6.3/sultanate-kavass.webp",
+      "thumbnail": "portraits/1.6.3/sultanate-kavass-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 70700,
+      "sha256": "2f305aa71a1abb870669d01191b326fb23e832e832e4bd6f96a72101ef2ca2a9",
+      "thumbnailBytes": 7352,
+      "thumbnailSha256": "8397dbf033730d5d9b4181f06e8b91aed567f934e865b71a897fe79847b1e3d8",
+      "originalSha256": "a19af2c7fd8b81d88a69d9808f7dcc11133f8825e8d2ccad0fb452252233f69d",
+      "source": {
+        "source": "core",
+        "pages": [
+          56,
+          61
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/sultanate-kavass.md",
+        "inputPath": "assets/generated/1.6.3/sultanate-kavass.png"
+      },
+      "caption": "Кавасс"
+    },
+    {
+      "id": "grail-executor",
+      "path": "portraits/1.6.3/grail-executor.webp",
+      "thumbnail": "portraits/1.6.3/grail-executor-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 93532,
+      "sha256": "68ed8e10835355aa04bc25598ec8828c67e3e89f350286983734658d7b9f2686",
+      "thumbnailBytes": 9304,
+      "thumbnailSha256": "f23449e92f75e87893e0097a6069807352de081353d29ab69118866c870f148f",
+      "originalSha256": "e11b9912034da484bffff209e81ccfef4e7acbffedda70a9689448f94c9d8e62",
+      "source": {
+        "source": "core",
+        "pages": [
+          87,
+          94
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/grail-executor.md",
+        "inputPath": "assets/generated/1.6.3/grail-executor.png"
+      },
+      "caption": "Исполнитель"
+    },
+    {
+      "id": "allies-guard-dog",
+      "path": "portraits/1.6.3/allies-guard-dog.webp",
+      "thumbnail": "portraits/1.6.3/allies-guard-dog-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 63920,
+      "sha256": "2faffafaf15e7ee34920f1816c54b4d50d726649e2a65a74f12a0775997963db",
+      "thumbnailBytes": 6246,
+      "thumbnailSha256": "7b3d0b7efb44b943f773d26ed0aa076504f917f436c5c48fe3e45984cc7ade34",
+      "originalSha256": "5326d493a924ed846313afcd0f7364be7365e55d99991ae900b131cf09dfc621",
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/allies-guard-dog.md",
+        "inputPath": "assets/generated/1.6.3/allies-guard-dog.png"
+      },
+      "caption": "Сторожевая Собака"
+    },
+    {
+      "id": "allies-mercy-dog",
+      "path": "portraits/1.6.3/allies-mercy-dog.webp",
+      "thumbnail": "portraits/1.6.3/allies-mercy-dog-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 63028,
+      "sha256": "de579b6f4ed518e7d284519bfff6928f265e7d81351d0061d66645387dd1b34e",
+      "thumbnailBytes": 6332,
+      "thumbnailSha256": "ac21006f24a40ec912a1d07bc447c29aab0ae983fa81a8fc5b8d7ba4e0d8a497",
+      "originalSha256": "d903eb3df670966f973478a51fb669c48885fddb578a34cd4511bd7f55e8d709",
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/allies-mercy-dog.md",
+        "inputPath": "assets/generated/1.6.3/allies-mercy-dog.png"
+      },
+      "caption": "Собака Милосердия"
+    },
+    {
+      "id": "allies-martyr-dog",
+      "path": "portraits/1.6.3/allies-martyr-dog.webp",
+      "thumbnail": "portraits/1.6.3/allies-martyr-dog-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 70012,
+      "sha256": "3d729de2ed031e0cadc56d254bf3216445739e5c630b8d61cf1d9bdd67b517a7",
+      "thumbnailBytes": 7330,
+      "thumbnailSha256": "7259e473b3cf345f5e54dc889f68cbf4deb5957674989f22db38d690b9ed2b26",
+      "originalSha256": "7bc5c5b5032e188b2f77f2376da737b8a4a0d7d164389741f14cfa8bd7eda2f6",
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/allies-martyr-dog.md",
+        "inputPath": "assets/generated/1.6.3/allies-martyr-dog.png"
+      },
+      "caption": "Собака-Мученик"
+    },
+    {
+      "id": "allies-hellhound",
+      "path": "portraits/1.6.3/allies-hellhound.webp",
+      "thumbnail": "portraits/1.6.3/allies-hellhound-thumb.webp",
+      "width": 667,
+      "height": 1000,
+      "bytes": 59782,
+      "sha256": "9be94dd253c99c17aa576de18663fae1d380f0b4bc6ada416316a22cbecacc8e",
+      "thumbnailBytes": 5448,
+      "thumbnailSha256": "ed636c8dfca385932a3e8b946aa92212729276d7328adb31bfb962e7e5c76171",
+      "originalSha256": "3a9cdbdc7809322b7196bdf9ae08d52fda846713c7be2f240e686535e877766e",
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "origin": {
+        "kind": "generated",
+        "tool": "Codex image_gen",
+        "promptPath": "data/visuals/1.6.3/prompts/allies-hellhound.md",
+        "inputPath": "assets/generated/1.6.3/allies-hellhound.png"
+      },
+      "caption": "Адская Гончая"
+    }
+  ],
+  "units": [
+    {
+      "unitId": "heretic.priest",
+      "assetId": "heretic-priest"
+    },
+    {
+      "unitId": "heretic.commando",
+      "assetId": "heretic-commando"
+    },
+    {
+      "unitId": "heretic.chorister",
+      "assetId": "heretic-chorister"
+    },
+    {
+      "unitId": "heretic.trooper",
+      "assetId": "heretic-trooper"
+    },
+    {
+      "unitId": "heretic.anointed",
+      "assetId": "heretic-anointed"
+    },
+    {
+      "unitId": "heretic.war-wolf",
+      "assetId": "heretic-war-wolf"
+    },
+    {
+      "unitId": "heretic.witch",
+      "assetId": "heretic-witch"
+    },
+    {
+      "unitId": "heretic.wretch",
+      "assetId": "heretic-wretch"
+    },
+    {
+      "unitId": "pilgrims.prophet",
+      "assetId": "pilgrims-prophet"
+    },
+    {
+      "unitId": "pilgrims.castigator",
+      "assetId": "pilgrims-castigator"
+    },
+    {
+      "unitId": "pilgrims.communicant",
+      "assetId": "pilgrims-communicant"
+    },
+    {
+      "unitId": "pilgrims.pilgrim",
+      "assetId": "pilgrims-pilgrim"
+    },
+    {
+      "unitId": "pilgrims.prisoner",
+      "assetId": "pilgrims-prisoner"
+    },
+    {
+      "unitId": "pilgrims.nun",
+      "assetId": "pilgrims-nun"
+    },
+    {
+      "unitId": "pilgrims.anchorite",
+      "assetId": "pilgrims-anchorite"
+    },
+    {
+      "unitId": "sultanate.captain",
+      "assetId": "sultanate-captain"
+    },
+    {
+      "unitId": "sultanate.alchemist",
+      "assetId": "sultanate-alchemist"
+    },
+    {
+      "unitId": "sultanate.assassin",
+      "assetId": "sultanate-assassin"
+    },
+    {
+      "unitId": "sultanate.azeb",
+      "assetId": "sultanate-azeb"
+    },
+    {
+      "unitId": "sultanate.lion",
+      "assetId": "sultanate-lion"
+    },
+    {
+      "unitId": "sultanate.janissary",
+      "assetId": "sultanate-janissary"
+    },
+    {
+      "unitId": "sultanate.bull",
+      "assetId": "sultanate-bull"
+    },
+    {
+      "unitId": "antioch.lieutenant",
+      "assetId": "antioch-lieutenant"
+    },
+    {
+      "unitId": "antioch.cleric",
+      "assetId": "antioch-cleric"
+    },
+    {
+      "unitId": "antioch.sniper",
+      "assetId": "antioch-sniper"
+    },
+    {
+      "unitId": "antioch.yeoman",
+      "assetId": "antioch-yeoman"
+    },
+    {
+      "unitId": "antioch.stormtrooper",
+      "assetId": "antioch-stormtrooper"
+    },
+    {
+      "unitId": "antioch.engineer",
+      "assetId": "antioch-engineer"
+    },
+    {
+      "unitId": "antioch.mechanized",
+      "assetId": "antioch-mechanized"
+    },
+    {
+      "unitId": "antioch.medic",
+      "assetId": "antioch-medic"
+    },
+    {
+      "unitId": "grail.lord",
+      "assetId": "grail-lord"
+    },
+    {
+      "unitId": "grail.knight",
+      "assetId": "grail-knight"
+    },
+    {
+      "unitId": "grail.guard",
+      "assetId": "grail-guard"
+    },
+    {
+      "unitId": "grail.hound",
+      "assetId": "grail-hound"
+    },
+    {
+      "unitId": "grail.thrall",
+      "assetId": "grail-thrall"
+    },
+    {
+      "unitId": "grail.herald",
+      "assetId": "grail-herald"
+    },
+    {
+      "unitId": "grail.amalgam",
+      "assetId": "grail-amalgam"
+    },
+    {
+      "unitId": "court.praetor",
+      "assetId": "court-praetor"
+    },
+    {
+      "unitId": "court.sorcerer",
+      "assetId": "court-sorcerer"
+    },
+    {
+      "unitId": "court.hunter",
+      "assetId": "court-hunter"
+    },
+    {
+      "unitId": "court.knight",
+      "assetId": "court-knight"
+    },
+    {
+      "unitId": "court.yoke",
+      "assetId": "court-yoke"
+    },
+    {
+      "unitId": "court.wretch",
+      "assetId": "court-wretch"
+    },
+    {
+      "unitId": "court.locust",
+      "assetId": "court-locust"
+    },
+    {
+      "unitId": "court.saint",
+      "assetId": "court-saint"
+    },
+    {
+      "unitId": "allies.medic",
+      "assetId": "allies-medic"
+    },
+    {
+      "unitId": "allies.witch-hunter",
+      "assetId": "allies-witch-hunter"
+    },
+    {
+      "unitId": "allies.tank-hunter",
+      "assetId": "allies-tank-hunter"
+    },
+    {
+      "unitId": "allies.mendelist",
+      "assetId": "allies-mendelist"
+    },
+    {
+      "unitId": "allies.sin-eater",
+      "assetId": "allies-sin-eater"
+    },
+    {
+      "unitId": "allies.sorcerer",
+      "assetId": "allies-sorcerer"
+    },
+    {
+      "unitId": "allies.observer",
+      "assetId": "allies-observer"
+    },
+    {
+      "unitId": "allies.mamluk",
+      "assetId": "allies-mamluk"
+    },
+    {
+      "unitId": "allies.dog",
+      "assetId": "allies-dog"
+    },
+    {
+      "unitId": "allies.scripture-keeper",
+      "assetId": "allies-scripture-keeper"
+    },
+    {
+      "unitId": "sultanate.sapper",
+      "assetId": "sultanate-sapper"
+    },
+    {
+      "unitId": "sultanate.homunculus",
+      "assetId": "sultanate-homunculus"
+    },
+    {
+      "unitId": "grail.fly-thrall",
+      "assetId": "grail-fly-thrall"
+    },
+    {
+      "unitId": "sultanate.master-assassin",
+      "assetId": "sultanate-master-assassin"
+    },
+    {
+      "unitId": "sultanate.faris",
+      "assetId": "sultanate-faris"
+    },
+    {
+      "unitId": "sultanate.kavass",
+      "assetId": "sultanate-kavass"
+    },
+    {
+      "unitId": "grail.executor",
+      "assetId": "grail-executor"
+    },
+    {
+      "unitId": "allies.guard-dog",
+      "assetId": "allies-guard-dog"
+    },
+    {
+      "unitId": "allies.mercy-dog",
+      "assetId": "allies-mercy-dog"
+    },
+    {
+      "unitId": "allies.martyr-dog",
+      "assetId": "allies-martyr-dog"
+    },
+    {
+      "unitId": "allies.hellhound",
+      "assetId": "allies-hellhound"
+    }
+  ]
+}

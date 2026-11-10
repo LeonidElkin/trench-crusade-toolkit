@@ -1,0 +1,850 @@
+{
+  "editionId": "1.6.3",
+  "attribution": "Иллюстрации из русских PDF Мастерской Кетсу. Trench Crusade / Factory Fortress Inc.; права на оригинальные изображения принадлежат их авторам и правообладателям.",
+  "assets": [
+    {
+      "id": "heretic-priest",
+      "source": "core",
+      "page": 22,
+      "xref": 161,
+      "caption": "Священник Еретиков",
+      "kind": "pdf"
+    },
+    {
+      "id": "heretic-commando",
+      "source": "core",
+      "page": 22,
+      "xref": 163,
+      "caption": "Еретический Коммандос Смерти",
+      "kind": "pdf"
+    },
+    {
+      "id": "heretic-chorister",
+      "source": "core",
+      "page": 23,
+      "xref": 168,
+      "caption": "Хорист Еретиков",
+      "kind": "pdf"
+    },
+    {
+      "id": "heretic-trooper",
+      "source": "core",
+      "page": 24,
+      "xref": 173,
+      "caption": "Пехота Еретиков",
+      "kind": "pdf"
+    },
+    {
+      "id": "heretic-anointed",
+      "source": "core",
+      "page": 24,
+      "xref": 175,
+      "caption": "Помазанная Тяжёлая Пехота",
+      "kind": "pdf"
+    },
+    {
+      "id": "heretic-war-wolf",
+      "source": "core",
+      "page": 25,
+      "xref": 180,
+      "caption": "Боевой Волк: Штурмовой зверь",
+      "kind": "pdf"
+    },
+    {
+      "id": "heretic-witch",
+      "source": "core",
+      "page": 26,
+      "xref": 185,
+      "caption": "Ведьма-Артиллеристка",
+      "kind": "pdf"
+    },
+    {
+      "id": "heretic-wretch",
+      "source": "core",
+      "page": 27,
+      "xref": 190,
+      "caption": "Несчастный",
+      "kind": "pdf"
+    },
+    {
+      "id": "pilgrims-prophet",
+      "source": "core",
+      "page": 37,
+      "xref": 234,
+      "caption": "Пророк войны",
+      "kind": "pdf"
+    },
+    {
+      "id": "pilgrims-castigator",
+      "source": "core",
+      "page": 37,
+      "xref": 236,
+      "caption": "Каратель",
+      "kind": "pdf"
+    },
+    {
+      "id": "pilgrims-communicant",
+      "source": "core",
+      "page": 38,
+      "xref": 241,
+      "caption": "Коммуникант",
+      "kind": "pdf"
+    },
+    {
+      "id": "pilgrims-pilgrim",
+      "source": "core",
+      "page": 39,
+      "xref": 246,
+      "caption": "Траншейный Паломник",
+      "kind": "pdf"
+    },
+    {
+      "id": "pilgrims-prisoner",
+      "source": "core",
+      "page": 39,
+      "xref": 248,
+      "caption": "Церковные Узники",
+      "kind": "pdf"
+    },
+    {
+      "id": "pilgrims-nun",
+      "source": "core",
+      "page": 40,
+      "xref": 253,
+      "caption": "Стигматизированные Монахини",
+      "kind": "pdf"
+    },
+    {
+      "id": "pilgrims-anchorite",
+      "source": "core",
+      "page": 42,
+      "xref": 265,
+      "caption": "Святилище Анахорет",
+      "kind": "pdf"
+    },
+    {
+      "id": "sultanate-captain",
+      "source": "core",
+      "page": 54,
+      "xref": 306,
+      "caption": "Капитан Юзбаши",
+      "kind": "pdf"
+    },
+    {
+      "id": "sultanate-alchemist",
+      "source": "core",
+      "page": 54,
+      "xref": 308,
+      "caption": "Алхимик Джабира",
+      "kind": "pdf"
+    },
+    {
+      "id": "sultanate-assassin",
+      "source": "core",
+      "page": 55,
+      "xref": 313,
+      "caption": "Ассасин Султаната",
+      "kind": "pdf"
+    },
+    {
+      "id": "sultanate-azeb",
+      "source": "core",
+      "page": 56,
+      "xref": 318,
+      "caption": "Азебы",
+      "kind": "pdf"
+    },
+    {
+      "id": "sultanate-lion",
+      "source": "core",
+      "page": 57,
+      "xref": 323,
+      "caption": "Львы Джабира",
+      "kind": "pdf"
+    },
+    {
+      "id": "sultanate-janissary",
+      "source": "core",
+      "page": 57,
+      "xref": 325,
+      "caption": "Янычары",
+      "kind": "pdf"
+    },
+    {
+      "id": "sultanate-bull",
+      "source": "core",
+      "page": 58,
+      "xref": 330,
+      "caption": "Бронзовый Бык",
+      "kind": "pdf"
+    },
+    {
+      "id": "antioch-lieutenant",
+      "source": "core",
+      "page": 68,
+      "xref": 366,
+      "caption": "Лейтенант",
+      "kind": "pdf"
+    },
+    {
+      "id": "antioch-cleric",
+      "source": "core",
+      "page": 69,
+      "xref": 371,
+      "caption": "Окопный клирик",
+      "kind": "pdf"
+    },
+    {
+      "id": "antioch-sniper",
+      "source": "core",
+      "page": 69,
+      "xref": 374,
+      "caption": "Снайпер-священник",
+      "kind": "pdf"
+    },
+    {
+      "id": "antioch-yeoman",
+      "source": "core",
+      "page": 70,
+      "xref": 378,
+      "caption": "Йомен",
+      "kind": "pdf"
+    },
+    {
+      "id": "antioch-stormtrooper",
+      "source": "core",
+      "page": 70,
+      "xref": 380,
+      "caption": "Штурмовики",
+      "kind": "pdf"
+    },
+    {
+      "id": "antioch-engineer",
+      "source": "core",
+      "page": 71,
+      "xref": 385,
+      "caption": "Боевые инженеры",
+      "kind": "pdf"
+    },
+    {
+      "id": "antioch-mechanized",
+      "source": "core",
+      "page": 71,
+      "xref": 387,
+      "caption": "Механизированная тяжелая пехота",
+      "kind": "pdf"
+    },
+    {
+      "id": "antioch-medic",
+      "source": "core",
+      "page": 72,
+      "xref": 392,
+      "caption": "Боевой медик",
+      "kind": "pdf"
+    },
+    {
+      "id": "grail-lord",
+      "source": "core",
+      "page": 86,
+      "xref": 450,
+      "caption": "Повелитель Опухолей",
+      "kind": "pdf"
+    },
+    {
+      "id": "grail-knight",
+      "source": "core",
+      "page": 87,
+      "xref": 455,
+      "caption": "Чумной Рыцарь",
+      "kind": "pdf"
+    },
+    {
+      "id": "grail-guard",
+      "source": "core",
+      "page": 88,
+      "xref": 460,
+      "caption": "Страж Трупов",
+      "kind": "pdf"
+    },
+    {
+      "id": "grail-hound",
+      "source": "core",
+      "page": 88,
+      "xref": 462,
+      "caption": "Гончие Чёрного Грааля",
+      "kind": "pdf"
+    },
+    {
+      "id": "grail-thrall",
+      "source": "core",
+      "page": 89,
+      "xref": 467,
+      "caption": "Прислужник Грааля",
+      "kind": "pdf"
+    },
+    {
+      "id": "grail-herald",
+      "source": "core",
+      "page": 91,
+      "xref": 478,
+      "caption": "Глашатаи Вельзевула",
+      "kind": "pdf"
+    },
+    {
+      "id": "grail-amalgam",
+      "source": "core",
+      "page": 93,
+      "xref": 488,
+      "caption": "Амальгама",
+      "kind": "pdf"
+    },
+    {
+      "id": "court-praetor",
+      "source": "core",
+      "page": 107,
+      "xref": 538,
+      "caption": "Претор",
+      "kind": "pdf"
+    },
+    {
+      "id": "court-sorcerer",
+      "source": "core",
+      "page": 109,
+      "xref": 553,
+      "caption": "Колдун",
+      "kind": "pdf"
+    },
+    {
+      "id": "court-hunter",
+      "source": "core",
+      "page": 111,
+      "xref": 563,
+      "caption": "Охотник Левого Пути",
+      "kind": "pdf"
+    },
+    {
+      "id": "court-knight",
+      "source": "core",
+      "page": 112,
+      "xref": 568,
+      "caption": "Адский Рыцарь",
+      "kind": "pdf"
+    },
+    {
+      "id": "court-yoke",
+      "source": "core",
+      "page": 113,
+      "xref": 573,
+      "caption": "Иго-Демон",
+      "kind": "pdf"
+    },
+    {
+      "id": "court-wretch",
+      "source": "core",
+      "page": 113,
+      "xref": 575,
+      "caption": "Несчастные",
+      "kind": "pdf"
+    },
+    {
+      "id": "court-locust",
+      "source": "core",
+      "page": 115,
+      "xref": 585,
+      "caption": "Ямовая саранча",
+      "kind": "pdf"
+    },
+    {
+      "id": "court-saint",
+      "source": "core",
+      "page": 117,
+      "xref": 595,
+      "caption": "Оскверненный Святой",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-medic",
+      "source": "allies",
+      "page": 3,
+      "xref": 5,
+      "caption": "Боевой Медик",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-witch-hunter",
+      "source": "allies",
+      "page": 5,
+      "xref": 10,
+      "caption": "Истребитель ведьм",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-tank-hunter",
+      "source": "allies",
+      "page": 7,
+      "xref": 15,
+      "caption": "Коммуникант Истребитель Танков",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-mendelist",
+      "source": "allies",
+      "page": 9,
+      "xref": 23,
+      "caption": "Монах-Менделист",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-sin-eater",
+      "source": "allies",
+      "page": 11,
+      "xref": 30,
+      "caption": "Пожиратель Грехов",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-sorcerer",
+      "source": "allies",
+      "page": 13,
+      "xref": 35,
+      "caption": "Гоэтический Колдун",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-observer",
+      "source": "allies",
+      "page": 15,
+      "xref": 40,
+      "caption": "Наблюдатель",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-mamluk",
+      "source": "allies",
+      "page": 17,
+      "xref": 45,
+      "caption": "Мамлюк Фарис",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-dog",
+      "source": "allies",
+      "page": 19,
+      "xref": 50,
+      "caption": "Окопная Собака",
+      "kind": "pdf"
+    },
+    {
+      "id": "allies-scripture-keeper",
+      "source": "allies",
+      "page": 21,
+      "xref": 55,
+      "caption": "Хранитель Писаний",
+      "kind": "pdf"
+    },
+    {
+      "id": "sultanate-sapper",
+      "kind": "generated",
+      "source": "core",
+      "page": 56,
+      "inputPath": "assets/generated/1.6.3/sultanate-sapper.png",
+      "promptPath": "data/visuals/1.6.3/prompts/sultanate-sapper.md",
+      "caption": "Саперы Султаната",
+      "pages": [
+        56
+      ]
+    },
+    {
+      "id": "sultanate-homunculus",
+      "kind": "generated",
+      "source": "core",
+      "page": 63,
+      "inputPath": "assets/generated/1.6.3/sultanate-homunculus.png",
+      "promptPath": "data/visuals/1.6.3/prompts/sultanate-homunculus.md",
+      "caption": "Гомункул Таквин",
+      "pages": [
+        63
+      ]
+    },
+    {
+      "id": "grail-fly-thrall",
+      "kind": "generated",
+      "source": "core",
+      "page": 89,
+      "inputPath": "assets/generated/1.6.3/grail-fly-thrall.png",
+      "promptPath": "data/visuals/1.6.3/prompts/grail-fly-thrall.md",
+      "caption": "Прислужник Мух",
+      "pages": [
+        89
+      ]
+    },
+    {
+      "id": "sultanate-master-assassin",
+      "kind": "generated",
+      "source": "core",
+      "page": 55,
+      "inputPath": "assets/generated/1.6.3/sultanate-master-assassin.png",
+      "promptPath": "data/visuals/1.6.3/prompts/sultanate-master-assassin.md",
+      "caption": "Мастер-Ассасин",
+      "pages": [
+        55,
+        56,
+        59
+      ]
+    },
+    {
+      "id": "sultanate-faris",
+      "kind": "generated",
+      "source": "core",
+      "page": 57,
+      "pages": [
+        57,
+        58,
+        61
+      ],
+      "inputPath": "assets/generated/1.6.3/sultanate-faris.png",
+      "promptPath": "data/visuals/1.6.3/prompts/sultanate-faris.md",
+      "caption": "Фарис Дома Мудрости"
+    },
+    {
+      "id": "sultanate-kavass",
+      "kind": "generated",
+      "source": "core",
+      "page": 56,
+      "pages": [
+        56,
+        61
+      ],
+      "inputPath": "assets/generated/1.6.3/sultanate-kavass.png",
+      "promptPath": "data/visuals/1.6.3/prompts/sultanate-kavass.md",
+      "caption": "Кавасс"
+    },
+    {
+      "id": "grail-executor",
+      "kind": "generated",
+      "source": "core",
+      "page": 87,
+      "pages": [
+        87,
+        94
+      ],
+      "inputPath": "assets/generated/1.6.3/grail-executor.png",
+      "promptPath": "data/visuals/1.6.3/prompts/grail-executor.md",
+      "caption": "Исполнитель"
+    },
+    {
+      "id": "allies-guard-dog",
+      "kind": "generated",
+      "source": "allies",
+      "page": 18,
+      "pages": [
+        18
+      ],
+      "inputPath": "assets/generated/1.6.3/allies-guard-dog.png",
+      "promptPath": "data/visuals/1.6.3/prompts/allies-guard-dog.md",
+      "caption": "Сторожевая Собака"
+    },
+    {
+      "id": "allies-mercy-dog",
+      "kind": "generated",
+      "source": "allies",
+      "page": 18,
+      "pages": [
+        18
+      ],
+      "inputPath": "assets/generated/1.6.3/allies-mercy-dog.png",
+      "promptPath": "data/visuals/1.6.3/prompts/allies-mercy-dog.md",
+      "caption": "Собака Милосердия"
+    },
+    {
+      "id": "allies-martyr-dog",
+      "kind": "generated",
+      "source": "allies",
+      "page": 18,
+      "pages": [
+        18
+      ],
+      "inputPath": "assets/generated/1.6.3/allies-martyr-dog.png",
+      "promptPath": "data/visuals/1.6.3/prompts/allies-martyr-dog.md",
+      "caption": "Собака-Мученик"
+    },
+    {
+      "id": "allies-hellhound",
+      "kind": "generated",
+      "source": "allies",
+      "page": 18,
+      "pages": [
+        18
+      ],
+      "inputPath": "assets/generated/1.6.3/allies-hellhound.png",
+      "promptPath": "data/visuals/1.6.3/prompts/allies-hellhound.md",
+      "caption": "Адская Гончая"
+    }
+  ],
+  "units": [
+    {
+      "unitId": "heretic.priest",
+      "assetId": "heretic-priest"
+    },
+    {
+      "unitId": "heretic.commando",
+      "assetId": "heretic-commando"
+    },
+    {
+      "unitId": "heretic.chorister",
+      "assetId": "heretic-chorister"
+    },
+    {
+      "unitId": "heretic.trooper",
+      "assetId": "heretic-trooper"
+    },
+    {
+      "unitId": "heretic.anointed",
+      "assetId": "heretic-anointed"
+    },
+    {
+      "unitId": "heretic.war-wolf",
+      "assetId": "heretic-war-wolf"
+    },
+    {
+      "unitId": "heretic.witch",
+      "assetId": "heretic-witch"
+    },
+    {
+      "unitId": "heretic.wretch",
+      "assetId": "heretic-wretch"
+    },
+    {
+      "unitId": "pilgrims.prophet",
+      "assetId": "pilgrims-prophet"
+    },
+    {
+      "unitId": "pilgrims.castigator",
+      "assetId": "pilgrims-castigator"
+    },
+    {
+      "unitId": "pilgrims.communicant",
+      "assetId": "pilgrims-communicant"
+    },
+    {
+      "unitId": "pilgrims.pilgrim",
+      "assetId": "pilgrims-pilgrim"
+    },
+    {
+      "unitId": "pilgrims.prisoner",
+      "assetId": "pilgrims-prisoner"
+    },
+    {
+      "unitId": "pilgrims.nun",
+      "assetId": "pilgrims-nun"
+    },
+    {
+      "unitId": "pilgrims.anchorite",
+      "assetId": "pilgrims-anchorite"
+    },
+    {
+      "unitId": "sultanate.captain",
+      "assetId": "sultanate-captain"
+    },
+    {
+      "unitId": "sultanate.alchemist",
+      "assetId": "sultanate-alchemist"
+    },
+    {
+      "unitId": "sultanate.assassin",
+      "assetId": "sultanate-assassin"
+    },
+    {
+      "unitId": "sultanate.azeb",
+      "assetId": "sultanate-azeb"
+    },
+    {
+      "unitId": "sultanate.lion",
+      "assetId": "sultanate-lion"
+    },
+    {
+      "unitId": "sultanate.janissary",
+      "assetId": "sultanate-janissary"
+    },
+    {
+      "unitId": "sultanate.bull",
+      "assetId": "sultanate-bull"
+    },
+    {
+      "unitId": "antioch.lieutenant",
+      "assetId": "antioch-lieutenant"
+    },
+    {
+      "unitId": "antioch.cleric",
+      "assetId": "antioch-cleric"
+    },
+    {
+      "unitId": "antioch.sniper",
+      "assetId": "antioch-sniper"
+    },
+    {
+      "unitId": "antioch.yeoman",
+      "assetId": "antioch-yeoman"
+    },
+    {
+      "unitId": "antioch.stormtrooper",
+      "assetId": "antioch-stormtrooper"
+    },
+    {
+      "unitId": "antioch.engineer",
+      "assetId": "antioch-engineer"
+    },
+    {
+      "unitId": "antioch.mechanized",
+      "assetId": "antioch-mechanized"
+    },
+    {
+      "unitId": "antioch.medic",
+      "assetId": "antioch-medic"
+    },
+    {
+      "unitId": "grail.lord",
+      "assetId": "grail-lord"
+    },
+    {
+      "unitId": "grail.knight",
+      "assetId": "grail-knight"
+    },
+    {
+      "unitId": "grail.guard",
+      "assetId": "grail-guard"
+    },
+    {
+      "unitId": "grail.hound",
+      "assetId": "grail-hound"
+    },
+    {
+      "unitId": "grail.thrall",
+      "assetId": "grail-thrall"
+    },
+    {
+      "unitId": "grail.herald",
+      "assetId": "grail-herald"
+    },
+    {
+      "unitId": "grail.amalgam",
+      "assetId": "grail-amalgam"
+    },
+    {
+      "unitId": "court.praetor",
+      "assetId": "court-praetor"
+    },
+    {
+      "unitId": "court.sorcerer",
+      "assetId": "court-sorcerer"
+    },
+    {
+      "unitId": "court.hunter",
+      "assetId": "court-hunter"
+    },
+    {
+      "unitId": "court.knight",
+      "assetId": "court-knight"
+    },
+    {
+      "unitId": "court.yoke",
+      "assetId": "court-yoke"
+    },
+    {
+      "unitId": "court.wretch",
+      "assetId": "court-wretch"
+    },
+    {
+      "unitId": "court.locust",
+      "assetId": "court-locust"
+    },
+    {
+      "unitId": "court.saint",
+      "assetId": "court-saint"
+    },
+    {
+      "unitId": "allies.medic",
+      "assetId": "allies-medic"
+    },
+    {
+      "unitId": "allies.witch-hunter",
+      "assetId": "allies-witch-hunter"
+    },
+    {
+      "unitId": "allies.tank-hunter",
+      "assetId": "allies-tank-hunter"
+    },
+    {
+      "unitId": "allies.mendelist",
+      "assetId": "allies-mendelist"
+    },
+    {
+      "unitId": "allies.sin-eater",
+      "assetId": "allies-sin-eater"
+    },
+    {
+      "unitId": "allies.sorcerer",
+      "assetId": "allies-sorcerer"
+    },
+    {
+      "unitId": "allies.observer",
+      "assetId": "allies-observer"
+    },
+    {
+      "unitId": "allies.mamluk",
+      "assetId": "allies-mamluk"
+    },
+    {
+      "unitId": "allies.dog",
+      "assetId": "allies-dog"
+    },
+    {
+      "unitId": "allies.scripture-keeper",
+      "assetId": "allies-scripture-keeper"
+    },
+    {
+      "unitId": "sultanate.sapper",
+      "assetId": "sultanate-sapper"
+    },
+    {
+      "unitId": "sultanate.homunculus",
+      "assetId": "sultanate-homunculus"
+    },
+    {
+      "unitId": "grail.fly-thrall",
+      "assetId": "grail-fly-thrall"
+    },
+    {
+      "unitId": "sultanate.master-assassin",
+      "assetId": "sultanate-master-assassin"
+    },
+    {
+      "unitId": "sultanate.faris",
+      "assetId": "sultanate-faris"
+    },
+    {
+      "unitId": "sultanate.kavass",
+      "assetId": "sultanate-kavass"
+    },
+    {
+      "unitId": "grail.executor",
+      "assetId": "grail-executor"
+    },
+    {
+      "unitId": "allies.guard-dog",
+      "assetId": "allies-guard-dog"
+    },
+    {
+      "unitId": "allies.mercy-dog",
+      "assetId": "allies-mercy-dog"
+    },
+    {
+      "unitId": "allies.martyr-dog",
+      "assetId": "allies-martyr-dog"
+    },
+    {
+      "unitId": "allies.hellhound",
+      "assetId": "allies-hellhound"
+    }
+  ]
+}
