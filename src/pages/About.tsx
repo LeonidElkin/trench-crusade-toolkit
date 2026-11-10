@@ -8,6 +8,7 @@ import {
   ShieldCheck,
 } from 'lucide-react'
 import { catalog, edition } from '../data/registry'
+import { sourcePdfUrl } from '../data/portraits'
 export function About() {
   return (
     <>
@@ -47,6 +48,14 @@ export function About() {
             <div>
               <h3>{s.id === 'core' ? 'Trench Crusade · Правила игры' : 'Союзники и наёмники'}</h3>
               <p>{s.filename}</p>
+              <a
+                className="text-link"
+                href={sourcePdfUrl(edition.id, s.id)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Открыть PDF <ExternalLink size={13} />
+              </a>
               <span className="muted small">
                 {s.pages} страниц ·{' '}
                 {s.edition ? `Редакция ${s.edition}` : 'Номер редакции в документе не указан'}
@@ -61,8 +70,12 @@ export function About() {
         <p className="muted small">
           Перевод: Мастерская Кетсу. Создатели игры и иллюстраций: Factory Fortress Inc., Tuomas
           Pirinen, Mike Franchina и Des Hanley. Иллюстрации извлечены из предоставленной книги.
-          Проект — неофициальный бесплатный инструмент сообщества; права на мир, тексты и
-          изображения принадлежат их правообладателям.
+          Проект — неофициальный некоммерческий бесплатный инструмент сообщества; права на мир,
+          тексты и изображения принадлежат их правообладателям.
+        </p>
+        <p className="muted small">
+          Проект целиком разрабатывается с помощью AI-агентов: архитектура, код, подготовка данных,
+          тестирование, документация и публикация.
         </p>
       </section>
       <section className="panel about-panel">

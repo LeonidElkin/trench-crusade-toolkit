@@ -144,6 +144,57 @@ test('preserves variant currency and rejects malformed import', async ({ page })
   await page.getByRole('button', { name: 'Импортировать отряд', exact: true }).click()
   await expect(page.getByRole('alert')).toContainText('не поддерживается')
 })
+test('shows individual portraits, source provenance and the saved army overview', async ({
+  page,
+}, testInfo) => {
+  await createBand(page, 'Стражи Мудрости — E2E', 'sultanate', 'wisdom')
+  await addUnit(page, 'Алхимик Джабира')
+  await addUnit(page, 'Гомункул Таквин')
+  const sizes =
+    testInfo.project.name === 'desktop'
+      ? [
+          [1440, 1000],
+          [1280, 800],
+          [834, 1112],
+          [390, 844],
+          [320, 740],
+        ]
+      : [[390, 844]]
+  for (const [width, height] of sizes) {
+    await page.setViewportSize({ width: width!, height: height! })
+    await page.getByRole('button', { name: 'Обзор', exact: true }).click()
+    await expect(page.locator('.army-model')).toHaveCount(2)
+    for (const image of await page.locator('.army-portrait img').all()) {
+      await image.scrollIntoViewIfNeeded()
+      await expect(image).toHaveJSProperty('complete', true)
+      expect(await image.evaluate((i: HTMLImageElement) => i.naturalWidth)).toBeGreaterThan(0)
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
+    await page.getByRole('button', { name: 'Настроить: Гомункул Таквин', exact: true }).click()
+    await expect(page.getByRole('textbox', { name: 'Имя бойца', exact: true })).toHaveValue(
+      'Гомункул Таквин',
+    )
+    await page.getByRole('button', { name: 'Рассмотреть: Гомункул Таквин', exact: true }).click()
+    const dialog = page.getByRole('dialog')
+    await expect(dialog).toContainText('СОЗДАНО AI ПО ОПИСАНИЮ ПРАВИЛ')
+    await expect(dialog.locator('img')).toHaveJSProperty('complete', true)
+    expect(
+      await dialog.locator('img').evaluate((i: HTMLImageElement) => i.naturalWidth),
+    ).toBeGreaterThan(280)
+    await expect(dialog.getByRole('link', { name: /Описание в PDF/ })).toHaveAttribute(
+      'href',
+      /reference\/trench-crusade-1.6.3-ru.pdf#page=63$/,
+    )
+    expect(await dialog.evaluate((d) => d.scrollWidth <= d.clientWidth)).toBe(true)
+    await dialog.getByRole('button', { name: 'Закрыть окно', exact: true }).click()
+  }
+  await page.reload()
+  await page.getByRole('button', { name: 'Обзор', exact: true }).click()
+  await expect(page.locator('.army-model')).toHaveCount(2)
+  await page.getByRole('button', { name: 'Настроить: Алхимик Джабира', exact: true }).click()
+  await page.getByRole('button', { name: 'Рассмотреть: Алхимик Джабира', exact: true }).click()
+  await expect(page.getByRole('dialog')).toContainText('ИЛЛЮСТРАЦИЯ ИЗ PDF')
+})
 test('has no page overflow on five viewport sizes and keeps tables locally scrollable', async ({
   page,
 }, testInfo) => {

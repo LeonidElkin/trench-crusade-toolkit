@@ -1,7 +1,8 @@
 import { countLabel } from '../data/format'
 import { ArrowLeft, ArrowRight, Flag, Users } from 'lucide-react'
-import { assetUrl, catalog, ruleHref } from '../data/registry'
+import { assetUrl, catalog, edition, ruleHref } from '../data/registry'
 import { CostView, RuleLink, Source, StatsGrid } from '../components/Common'
+import { UnitPortrait } from '../components/UnitPortrait'
 export function Factions({ factionId }: { factionId?: string }) {
   const faction = catalog.factions.find((f) => f.id === factionId)
   if (!faction)
@@ -78,6 +79,13 @@ export function Factions({ factionId }: { factionId?: string }) {
       <div className="unit-grid">
         {units.map((u) => (
           <article className="unit-card" key={u.id}>
+            <UnitPortrait
+              editionId={edition.id}
+              unitId={u.id}
+              name={u.name}
+              zoom
+              className="dossier-portrait"
+            />
             <div className="unit-card-top">
               <span className="eyebrow">
                 {u.keywords.includes('ELITE') ? 'ЭЛИТА' : 'ВОЙСКА'} ·{' '}

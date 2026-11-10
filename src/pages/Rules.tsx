@@ -14,6 +14,7 @@ import { articles, articlesById } from '../data/content'
 import { createSearchIndex, searchArticles } from '../domain/search'
 import { Markdown } from '../components/Markdown'
 import { RuleLink, Source } from '../components/Common'
+import { UnitPortrait } from '../components/UnitPortrait'
 const index = createSearchIndex(articles)
 const groups = [...new Map(articles.map((a) => [a.category, a.section])).entries()]
 const commonGroups = [
@@ -47,6 +48,7 @@ export function Rules({ articleId }: { articleId?: string }) {
     [query, category, bookmarks, onlyBookmarks],
   )
   const keyword = article ? catalog.keywords.find((k) => k.ruleId === article.id) : undefined
+  const profile = article ? catalog.units.find((u) => u.ruleId === article.id) : undefined
   const related = article
     ? [...catalog.items, ...catalog.units, ...catalog.upgrades].filter((i) =>
         keyword
@@ -179,6 +181,15 @@ export function Rules({ articleId }: { articleId?: string }) {
                 <span className="edition-pill">1.6.3</span>
                 <Source source={article} />
               </div>
+              {profile && (
+                <UnitPortrait
+                  editionId={catalog.edition}
+                  unitId={profile.id}
+                  name={profile.name}
+                  zoom
+                  className="rule-portrait"
+                />
+              )}
               <Markdown
                 content={article.markdown.replace(/^<!--.*?-->\s*##[^\n]*\n/s, '')}
                 currentId={article.id}

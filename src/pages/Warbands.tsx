@@ -12,6 +12,7 @@ import {
   Flag,
   FolderOpen,
   Info,
+  LayoutGrid,
   Plus,
   Save,
   Search,
@@ -53,6 +54,7 @@ import {
 } from '../domain/storage'
 import { validateWarband } from '../domain/validation'
 import { CostView, EmptyState, Modal, StatsGrid, CopyButton } from '../components/Common'
+import { UnitPortrait } from '../components/UnitPortrait'
 const RulePreview = lazy(() =>
   import('../components/RulePreview').then((m) => ({ default: m.RulePreview })),
 )
@@ -448,7 +450,14 @@ function AddFighter({
           const u = effectiveUnit(c, band, base.id)!
           return (
             <article key={u.id} className="recruit-card">
-              <div>
+              <UnitPortrait
+                editionId={band.editionId}
+                unitId={u.id}
+                name={u.name}
+                zoom
+                className="recruit-portrait"
+              />
+              <div className="recruit-details">
                 <div className="recruit-top">
                   <h3>{u.name}</h3>
                   <CostView cost={u.cost} compact />
@@ -525,6 +534,13 @@ function FighterEditor({
   return (
     <section className="fighter-editor panel" tabIndex={-1}>
       <div className="fighter-editor-heading">
+        <UnitPortrait
+          editionId={band.editionId}
+          unitId={u.id}
+          name={u.name}
+          zoom
+          className="fighter-portrait"
+        />
         <div>
           <span className="eyebrow">
             ПРОФИЛЬ БОЙЦА /{' '}
@@ -788,7 +804,7 @@ function Editor({
   const [selectedId, setSelected] = useState(band.units[0]?.id ?? ''),
     [adding, setAdding] = useState(false),
     [settings, setSettings] = useState(false),
-    [tab, setTab] = useState<'roster' | 'validation' | 'notes'>('roster'),
+    [tab, setTab] = useState<'roster' | 'gallery' | 'validation' | 'notes'>('roster'),
     [share, setShare] = useState(''),
     [shareError, setShareError] = useState('')
   const c = getEdition(band.editionId, band.revision)?.catalog
@@ -919,6 +935,10 @@ function Editor({
           <Users size={17} />
           Состав<span>{band.units.length}</span>
         </button>
+        <button className={tab === 'gallery' ? 'active' : ''} onClick={() => setTab('gallery')}>
+          <LayoutGrid size={17} />
+          Обзор
+        </button>
         <button
           className={tab === 'validation' ? 'active' : ''}
           onClick={() => setTab('validation')}
@@ -974,11 +994,13 @@ function Editor({
                       key={m.id}
                       onClick={() => setSelected(m.id)}
                     >
-                      <span
-                        className={`roster-model-icon ${u?.keywords.includes('ELITE') ? 'elite' : ''}`}
-                      >
-                        {u?.keywords.includes('ELITE') ? <Flag size={16} /> : <Users size={16} />}
-                      </span>
+                      <UnitPortrait
+                        editionId={band.editionId}
+                        unitId={m.unitId}
+                        name={m.name || u?.name || ''}
+                        decorative
+                        className="roster-portrait"
+                      />
                       <span>
                         <strong>{m.name || u?.name}</strong>
                         <small>{u?.name}</small>
@@ -1027,6 +1049,69 @@ function Editor({
             )}
           </div>
         </>
+      )}
+      {tab === 'gallery' && (
+        <section className="army-overview" aria-label="Обзор отряда">
+          <div className="army-overview-heading">
+            <div>
+              <span className="eyebrow">ПОД ВАШИМ ЗНАМЕНЕМ</span>
+              <h2>Ваш отряд</h2>
+              <p className="muted small">
+                Нажмите на бойца, чтобы настроить его. Снаряжение не меняет иллюстрацию профиля.
+              </p>
+            </div>
+            <button className="button button-primary" onClick={() => setAdding(true)}>
+              <Plus size={17} />
+              Добавить бойца
+            </button>
+          </div>
+          <div className="army-grid">
+            {band.units.map((m) => {
+              const u = effectiveUnit(c, band, m.unitId, m)
+              return (
+                <button
+                  key={m.id}
+                  className="army-model"
+                  aria-label={`Настроить: ${m.name || u?.name}`}
+                  onClick={() => {
+                    setSelected(m.id)
+                    setTab('roster')
+                  }}
+                >
+                  <UnitPortrait
+                    editionId={band.editionId}
+                    unitId={m.unitId}
+                    name={m.name || u?.name || ''}
+                    decorative
+                    className="army-portrait"
+                  />
+                  <span className="army-model-info">
+                    <span className="eyebrow">
+                      {u?.mercenary
+                        ? 'НАЁМНИК'
+                        : u?.keywords.includes('ELITE')
+                          ? 'ЭЛИТА'
+                          : 'ВОЙСКА'}
+                    </span>
+                    <strong>{m.name || u?.name}</strong>
+                    <span className="army-model-type">{u?.name}</span>
+                    <CostView cost={modelCost(c, band, m).cost} compact />
+                    {errors.some((d) => d.modelId === m.id) && (
+                      <span className="army-model-error">
+                        <AlertCircle size={13} />
+                        Есть нарушения
+                      </span>
+                    )}
+                  </span>
+                  <ChevronRight size={16} className="army-model-arrow" />
+                </button>
+              )
+            })}
+          </div>
+          {!band.units.length && (
+            <p className="empty-text">Войско ещё не собрано. Добавьте первого бойца.</p>
+          )}
+        </section>
       )}
       {tab === 'validation' && (
         <section className="diagnostics">
@@ -1110,6 +1195,7 @@ function Editor({
             const next = addModel(c, band, id)
             update(next)
             setSelected(next.units.at(-1)!.id)
+            setTab('roster')
             setAdding(false)
             requestAnimationFrame(() => {
               const panel = document.querySelector<HTMLElement>('.fighter-editor')
