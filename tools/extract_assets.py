@@ -4,7 +4,7 @@ import hashlib,json
 from pathlib import Path
 import fitz
 ROOT=Path(__file__).resolve().parents[1]
-source=ROOT/'.reference/Trench Crusade 1.6.3 правила (1)-1.pdf'
+source=ROOT/'public/reference/trench-crusade-1.6.3-ru.pdf'
 doc=fitz.open(source);out=ROOT/'public/art';out.mkdir(parents=True,exist_ok=True);manifest=[]
 for name,page in [('heretic',21),('pilgrims',42),('sultanate',65),('antioch',81),('grail',93),('court',107),('hero',3)]:
     im=max(doc[page-1].get_images(),key=lambda i:i[2]*i[3]);data=doc.extract_image(im[0]);path=out/(name+'.'+data['ext']);path.write_bytes(data['image']);manifest.append({'path':str(path.relative_to(ROOT/'public')),'source':'core','page':page,'xref':im[0],'sha256':hashlib.sha256(data['image']).hexdigest()})

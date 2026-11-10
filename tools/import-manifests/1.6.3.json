@@ -4,11 +4,13 @@
     {
       "id": "core",
       "filename": "Trench Crusade 1.6.3 правила (1)-1.pdf",
+      "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
       "edition": "1.6.3"
     },
     {
       "id": "allies",
       "filename": "Союзники и наёмники печать.pdf",
+      "path": "public/reference/allies-and-mercenaries-ru.pdf",
       "edition": null
     }
   ],

@@ -138,7 +138,7 @@ def main():
     if not manifest_path.is_file():ap.error(f'Missing explicit source manifest: {manifest_path}')
     manifest=json.loads(manifest_path.read_text())
     if manifest['editionId']!=a.edition:ap.error('Edition must match the source manifest')
-    sources_manifest=[(s['id'],s['filename'],s['edition'])for s in manifest['sources']]
+    sources_manifest=[(s['id'],s['filename'],s['edition'],s.get('path','reference/'+s['filename']))for s in manifest['sources']]
     ranges=[(s['from'],s['to'],s['title'],s['category'])for s in manifest['sections']]
     dest=a.out or ROOT/'data/editions'/a.edition;dest.mkdir(parents=True,exist_ok=True);(dest/'content').mkdir(exist_ok=True)
     docs=[];audit=[];layout=[];sources=[];current=None;articles=[];seen=collections.Counter();counts=collections.Counter()
@@ -150,8 +150,8 @@ def main():
             (dest/'content'/f"{current['id']}.md").write_text(body)
             current['file']='content/'+current['id']+'.md';current['pages']=sorted(set(current['pages']));current['sha256']=hashlib.sha256(body.encode()).hexdigest();articles.append(current)
         current=None
-    for sid,filename,version in sources_manifest:
-        path=ROOT/'.reference'/filename
+    for sid,filename,version,source_path in sources_manifest:
+        path=ROOT/source_path
         if not path.exists():ap.error(f'Missing source: {path}')
         pdf=fitz.open(path);sources.append({'id':sid,'filename':filename,'edition':version,'pages':len(pdf),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
         for pno,page in enumerate(pdf,1):
