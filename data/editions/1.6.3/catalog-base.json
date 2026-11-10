@@ -2730,7 +2730,7 @@
           2
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-боевой-медик",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [
@@ -2778,7 +2778,7 @@
           6
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-истребитель-ведьм",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [
@@ -2828,7 +2828,7 @@
           6
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-коммуникант-истребитель-танков",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [
@@ -2875,7 +2875,7 @@
           8
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-монах-менделист",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [
@@ -2927,7 +2927,7 @@
           10
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-пожиратель-грехов",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [
@@ -2978,7 +2978,7 @@
           12
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-гоэтический-колдун",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [
@@ -3025,7 +3025,7 @@
           14
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-наблюдатель",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [
@@ -3072,7 +3072,7 @@
           16
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-мамлюк-фарис",
       "equipmentLocked": false,
       "fixedItems": [],
       "allowedCategories": [
@@ -3119,7 +3119,7 @@
           18
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-окопная-собака",
       "equipmentLocked": false,
       "fixedItems": [],
       "allowedCategories": [
@@ -3168,7 +3168,7 @@
           20
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-хранитель-писаний",
       "equipmentLocked": false,
       "fixedItems": [],
       "allowedCategories": [

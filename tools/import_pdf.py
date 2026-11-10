@@ -31,7 +31,7 @@ def lines_md(b):
         if not ss:continue
         raw=clean(''.join(s['text'] for s in l['spans'])).strip()
         if len(raw)==1 and max(s['size'] for s in ss)>25: out.append(raw);continue
-        ishead = (any(s['size']>=11 and 'AmericanText' in s['font'] and len(s['text'].strip())>1 for s in ss) or any(s['size']>=9.7 and 'Bold'in s['font'] for s in ss) or (len(ss[0]['text'].strip())>1 and 'Bold'in ss[0]['font'] and bool(re.match(r'^[+A-Z-][A-Z ()+/-]+:', raw))) or (not raw.startswith('(') and sum(len(s['text'].strip())for s in ss if 'Bold'in s['font'])/max(1,sum(len(s['text'].strip())for s in ss))>.65 and ':'not in raw and (bool(re.search(r'\([A-Za-z][^)]*\)',raw)) or bool(re.search(r'\d+\s+(?:дукат|[Оо]чк)',raw)))) or any(s['size']>=25 and len(s['text'].strip())>2 for s in ss))
+        ishead = (any(s['size']>=11 and any(font in s['font']for font in ['AmericanText','CarolGothic']) and len(s['text'].strip())>1 for s in ss) or any(s['size']>=9.7 and 'Bold'in s['font'] for s in ss) or (len(ss[0]['text'].strip())>1 and 'Bold'in ss[0]['font'] and bool(re.match(r'^[+A-Z-][A-Z ()+/-]+:', raw))) or (not raw.startswith('(') and sum(len(s['text'].strip())for s in ss if 'Bold'in s['font'])/max(1,sum(len(s['text'].strip())for s in ss))>.65 and ':'not in raw and (bool(re.search(r'\([A-Za-z][^)]*\)',raw)) or bool(re.search(r'\d+\s+(?:дукат|[Оо]чк)',raw)))) or any(s['size']>=25 and len(s['text'].strip())>2 for s in ss))
         md=''.join(span_md(s)for s in l['spans']).strip()
         md=re.sub(r'\*\*\s*\*\*',' ',md)
         # Headers retain their original wording but do not need redundant bold.

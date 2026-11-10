@@ -1518,7 +1518,7 @@
       "source": "allies",
       "page": 1,
       "textCharacters": 217,
-      "retainedCharacters": 259,
+      "retainedCharacters": 262,
       "tables": 0,
       "images": 3,
       "status": "text"
@@ -1527,7 +1527,7 @@
       "source": "allies",
       "page": 2,
       "textCharacters": 1747,
-      "retainedCharacters": 1759,
+      "retainedCharacters": 1767,
       "tables": 1,
       "images": 3,
       "status": "text"
@@ -1545,7 +1545,7 @@
       "source": "allies",
       "page": 4,
       "textCharacters": 2456,
-      "retainedCharacters": 2549,
+      "retainedCharacters": 2556,
       "tables": 2,
       "images": 4,
       "status": "text"
@@ -1563,7 +1563,7 @@
       "source": "allies",
       "page": 6,
       "textCharacters": 2178,
-      "retainedCharacters": 2185,
+      "retainedCharacters": 2188,
       "tables": 1,
       "images": 4,
       "status": "text"
@@ -1581,7 +1581,7 @@
       "source": "allies",
       "page": 8,
       "textCharacters": 2394,
-      "retainedCharacters": 2406,
+      "retainedCharacters": 2413,
       "tables": 1,
       "images": 6,
       "status": "text"
@@ -1599,7 +1599,7 @@
       "source": "allies",
       "page": 10,
       "textCharacters": 3121,
-      "retainedCharacters": 3131,
+      "retainedCharacters": 3135,
       "tables": 1,
       "images": 6,
       "status": "text"
@@ -1617,7 +1617,7 @@
       "source": "allies",
       "page": 12,
       "textCharacters": 3217,
-      "retainedCharacters": 3212,
+      "retainedCharacters": 3216,
       "tables": 1,
       "images": 5,
       "status": "text"
@@ -1635,7 +1635,7 @@
       "source": "allies",
       "page": 14,
       "textCharacters": 3824,
-      "retainedCharacters": 3780,
+      "retainedCharacters": 3784,
       "tables": 1,
       "images": 5,
       "status": "text"
@@ -1653,7 +1653,7 @@
       "source": "allies",
       "page": 16,
       "textCharacters": 3734,
-      "retainedCharacters": 3719,
+      "retainedCharacters": 3723,
       "tables": 1,
       "images": 7,
       "status": "text"
@@ -1671,7 +1671,7 @@
       "source": "allies",
       "page": 18,
       "textCharacters": 2848,
-      "retainedCharacters": 2846,
+      "retainedCharacters": 2850,
       "tables": 1,
       "images": 6,
       "status": "text"
@@ -1689,7 +1689,7 @@
       "source": "allies",
       "page": 20,
       "textCharacters": 3006,
-      "retainedCharacters": 3012,
+      "retainedCharacters": 3016,
       "tables": 1,
       "images": 4,
       "status": "text"
@@ -1713,6 +1713,6 @@
       "status": "illustration"
     }
   ],
-  "articleCount": 615,
+  "articleCount": 629,
   "tableCount": 137
 }

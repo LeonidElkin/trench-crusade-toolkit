@@ -6396,21 +6396,179 @@
     "title": "Наёмники",
     "source": "allies",
     "pages": [
-      1,
-      2,
-      4,
-      6,
-      8,
-      10,
-      12,
-      14,
-      16,
-      18,
-      20
+      1
     ],
     "category": "allies",
     "section": "Союзники и наёмники",
     "file": "content/allies-наёмники.md",
-    "sha256": "464c721e75abd7b7349abbcaaea4e35396d7eb0f7357b1209f5c0fc454a98a65"
+    "sha256": "a956dc225c5dc9b39b430b1771c76a56ebbd9dc0aa4779e080e6fd50834a6fd8"
+  },
+  {
+    "id": "allies-factory-fortress-inc",
+    "title": "Factory Fortress Inc.",
+    "source": "allies",
+    "pages": [
+      1
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-factory-fortress-inc.md",
+    "sha256": "461c3b28803d82adc6a8d037c6c3e167bd1550e1a711a54ad3e3b20c73b64b41"
+  },
+  {
+    "id": "allies-0-1-боевой-медик",
+    "title": "0-1 Боевой Медик",
+    "source": "allies",
+    "pages": [
+      2
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-боевой-медик.md",
+    "sha256": "9184704321818a83953d4cb2f747b241366fff8cc5e98032b413186f9345d694"
+  },
+  {
+    "id": "allies-держите-его",
+    "title": "«Держите его.»",
+    "source": "allies",
+    "pages": [
+      2
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-держите-его.md",
+    "sha256": "09502532a48a5b0319e208084fe454c0e564c83b6c8b5a270f74af48f2785f13"
+  },
+  {
+    "id": "allies-0-1-истребитель-ведьм",
+    "title": "0-1 Истребитель ведьм",
+    "source": "allies",
+    "pages": [
+      4
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-истребитель-ведьм.md",
+    "sha256": "7a322acb45b409607133a998669d742c15003b808edf344582e63c39f5f2761b"
+  },
+  {
+    "id": "allies-спасение-не-дар-за-него-платят-монетой-агонии-и-отчаяния",
+    "title": "«Спасение — не дар; за него платят монетой агонии и отчаяния.»",
+    "source": "allies",
+    "pages": [
+      4
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-спасение-не-дар-за-него-платят-монетой-агонии-и-отчаяния.md",
+    "sha256": "00653ff3653a4fdf3da3d6c855146b0df50ad4feccdb0fc8c9276e52e945705b"
+  },
+  {
+    "id": "allies-0-1-коммуникант-истребитель-танков",
+    "title": "0-1 Коммуникант Истребитель Танков",
+    "source": "allies",
+    "pages": [
+      6
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-коммуникант-истребитель-танков.md",
+    "sha256": "3a4225442f1dd031defb20409790a9deff13676395593f9b438226aa0fcc2cb2"
+  },
+  {
+    "id": "allies-0-1-монах-менделист",
+    "title": "0-1 Монах-Менделист",
+    "source": "allies",
+    "pages": [
+      8
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-монах-менделист.md",
+    "sha256": "b948d307ddb07183e9f3296d9e571ef727d19a06ced3c3e8081dbd183362193c"
+  },
+  {
+    "id": "allies-благословенны-патроны-не-сущие-тяжесть-нашей-веры-пусть-ствол-станет-чашей-пуля-проповедью-а-боёк-бо",
+    "title": "«Благословенны патроны, не сущие тяжесть нашей веры. Пусть ствол станет чашей, пуля — проповедью, а боёк — божественной искрой, ибо мы посвящаем каждый патрон быть орудием суда Господня. Аминь.»",
+    "source": "allies",
+    "pages": [
+      8
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-благословенны-патроны-не-сущие-тяжесть-нашей-веры-пусть-ствол-станет-чашей-пуля-проповедью-а-боёк-бо.md",
+    "sha256": "fc772a6d080d4f5b3635de2ac5f330e669cb39ec5f0669a2b7a62c79c49e84ec"
+  },
+  {
+    "id": "allies-0-1-пожиратель-грехов",
+    "title": "0-1 Пожиратель Грехов",
+    "source": "allies",
+    "pages": [
+      10
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-пожиратель-грехов.md",
+    "sha256": "6a59a8e437ad86f9ad86ba86eaf7e63260a446f3d984cbafa233511ce6da41dd"
+  },
+  {
+    "id": "allies-0-1-гоэтический-колдун",
+    "title": "0-1 Гоэтический Колдун",
+    "source": "allies",
+    "pages": [
+      12
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-гоэтический-колдун.md",
+    "sha256": "e41609811d344a65f109efc7c6987a0327c2f7e33592ba5382bd2e1174be4366"
+  },
+  {
+    "id": "allies-0-1-наблюдатель",
+    "title": "0-1 Наблюдатель",
+    "source": "allies",
+    "pages": [
+      14
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-наблюдатель.md",
+    "sha256": "18b6caad34256aee734a792c7e879b8411dd6170297c1472baf13df10172ed3a"
+  },
+  {
+    "id": "allies-0-1-мамлюк-фарис",
+    "title": "0-1 Мамлюк Фарис",
+    "source": "allies",
+    "pages": [
+      16
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-мамлюк-фарис.md",
+    "sha256": "cfab5e0e51bb67ca9ff7b961c8cc378e81aceba933637a9d3d86239115828345"
+  },
+  {
+    "id": "allies-0-1-окопная-собака",
+    "title": "0-1 Окопная Собака",
+    "source": "allies",
+    "pages": [
+      18
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-окопная-собака.md",
+    "sha256": "cc661509ebc5be947cb918de8068eac17be0ad259f5bd179f43b677a3dcf8027"
+  },
+  {
+    "id": "allies-0-1-хранитель-писаний",
+    "title": "0-1 Хранитель Писаний",
+    "source": "allies",
+    "pages": [
+      20
+    ],
+    "category": "allies",
+    "section": "Союзники и наёмники",
+    "file": "content/allies-0-1-хранитель-писаний.md",
+    "sha256": "b18b34d44b68c70505b2e17a7cd614fef35e9cd2ff3160418db3f8a3314feed2"
   }
 ]

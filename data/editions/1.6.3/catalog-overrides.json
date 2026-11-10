@@ -1613,7 +1613,7 @@
           18
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-окопная-собака",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [],
@@ -1661,7 +1661,7 @@
           18
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-окопная-собака",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [],
@@ -1706,7 +1706,7 @@
           18
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-окопная-собака",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [],
@@ -1751,7 +1751,7 @@
           18
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-окопная-собака",
       "equipmentLocked": true,
       "fixedItems": [],
       "allowedCategories": [],
@@ -4800,7 +4800,7 @@
           18
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-окопная-собака",
       "manualCheck": true
     },
     {
@@ -4825,7 +4825,7 @@
           16
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-мамлюк-фарис",
       "manualCheck": true
     },
     {
@@ -4850,7 +4850,7 @@
           16
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-мамлюк-фарис",
       "manualCheck": true
     },
     {
@@ -4875,7 +4875,7 @@
           16
         ]
       },
-      "ruleId": "allies-наёмники",
+      "ruleId": "allies-0-1-мамлюк-фарис",
       "manualCheck": true
     }
   ],
