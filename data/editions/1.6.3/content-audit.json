@@ -1,0 +1,1287 @@
+{
+  "pages": [
+    {
+      "source": "core",
+      "page": 1,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 261,
+      "markdownCharacters": 261
+    },
+    {
+      "source": "core",
+      "page": 2,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1452,
+      "markdownCharacters": 1452
+    },
+    {
+      "source": "core",
+      "page": 3,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1,
+      "markdownCharacters": 1
+    },
+    {
+      "source": "core",
+      "page": 4,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2975,
+      "markdownCharacters": 2975
+    },
+    {
+      "source": "core",
+      "page": 5,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3587,
+      "markdownCharacters": 3587
+    },
+    {
+      "source": "core",
+      "page": 6,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 4384,
+      "markdownCharacters": 4384
+    },
+    {
+      "source": "core",
+      "page": 7,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3824,
+      "markdownCharacters": 3824
+    },
+    {
+      "source": "core",
+      "page": 8,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3699,
+      "markdownCharacters": 3699
+    },
+    {
+      "source": "core",
+      "page": 9,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2309,
+      "markdownCharacters": 2309
+    },
+    {
+      "source": "core",
+      "page": 10,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3013,
+      "markdownCharacters": 3013
+    },
+    {
+      "source": "core",
+      "page": 11,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 238,
+      "markdownCharacters": 238
+    },
+    {
+      "source": "core",
+      "page": 12,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2793,
+      "markdownCharacters": 2906
+    },
+    {
+      "source": "core",
+      "page": 13,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3428,
+      "markdownCharacters": 3560
+    },
+    {
+      "source": "core",
+      "page": 14,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2762,
+      "markdownCharacters": 2762
+    },
+    {
+      "source": "core",
+      "page": 15,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 503,
+      "markdownCharacters": 503
+    },
+    {
+      "source": "core",
+      "page": 16,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2914,
+      "markdownCharacters": 2914
+    },
+    {
+      "source": "core",
+      "page": 18,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3653,
+      "markdownCharacters": 3653
+    },
+    {
+      "source": "core",
+      "page": 19,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2978,
+      "markdownCharacters": 2978
+    },
+    {
+      "source": "core",
+      "page": 20,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2029,
+      "markdownCharacters": 2029
+    },
+    {
+      "source": "core",
+      "page": 22,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1759,
+      "markdownCharacters": 1759
+    },
+    {
+      "source": "core",
+      "page": 23,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2573,
+      "markdownCharacters": 2573
+    },
+    {
+      "source": "core",
+      "page": 24,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1133,
+      "markdownCharacters": 1133
+    },
+    {
+      "source": "core",
+      "page": 25,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1857,
+      "markdownCharacters": 1857
+    },
+    {
+      "source": "core",
+      "page": 26,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2293,
+      "markdownCharacters": 2293
+    },
+    {
+      "source": "core",
+      "page": 27,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2126,
+      "markdownCharacters": 2126
+    },
+    {
+      "source": "core",
+      "page": 28,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2579,
+      "markdownCharacters": 2579
+    },
+    {
+      "source": "core",
+      "page": 29,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1306,
+      "markdownCharacters": 1306
+    },
+    {
+      "source": "core",
+      "page": 30,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3563,
+      "markdownCharacters": 3563
+    },
+    {
+      "source": "core",
+      "page": 31,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2743,
+      "markdownCharacters": 2743
+    },
+    {
+      "source": "core",
+      "page": 33,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2739,
+      "markdownCharacters": 2739
+    },
+    {
+      "source": "core",
+      "page": 34,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2421,
+      "markdownCharacters": 2421
+    },
+    {
+      "source": "core",
+      "page": 35,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2639,
+      "markdownCharacters": 2639
+    },
+    {
+      "source": "core",
+      "page": 37,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1788,
+      "markdownCharacters": 1788
+    },
+    {
+      "source": "core",
+      "page": 38,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2103,
+      "markdownCharacters": 2103
+    },
+    {
+      "source": "core",
+      "page": 39,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1916,
+      "markdownCharacters": 1916
+    },
+    {
+      "source": "core",
+      "page": 40,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1422,
+      "markdownCharacters": 1422
+    },
+    {
+      "source": "core",
+      "page": 41,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2796,
+      "markdownCharacters": 2796
+    },
+    {
+      "source": "core",
+      "page": 43,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3315,
+      "markdownCharacters": 3315
+    },
+    {
+      "source": "core",
+      "page": 44,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3553,
+      "markdownCharacters": 3553
+    },
+    {
+      "source": "core",
+      "page": 45,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2359,
+      "markdownCharacters": 2359
+    },
+    {
+      "source": "core",
+      "page": 46,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2159,
+      "markdownCharacters": 2159
+    },
+    {
+      "source": "core",
+      "page": 48,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3430,
+      "markdownCharacters": 3430
+    },
+    {
+      "source": "core",
+      "page": 49,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2025,
+      "markdownCharacters": 2025
+    },
+    {
+      "source": "core",
+      "page": 50,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2705,
+      "markdownCharacters": 2705
+    },
+    {
+      "source": "core",
+      "page": 51,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2975,
+      "markdownCharacters": 2975
+    },
+    {
+      "source": "core",
+      "page": 52,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1009,
+      "markdownCharacters": 1009
+    },
+    {
+      "source": "core",
+      "page": 54,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1755,
+      "markdownCharacters": 1755
+    },
+    {
+      "source": "core",
+      "page": 55,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1881,
+      "markdownCharacters": 1881
+    },
+    {
+      "source": "core",
+      "page": 56,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2023,
+      "markdownCharacters": 2023
+    },
+    {
+      "source": "core",
+      "page": 57,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1854,
+      "markdownCharacters": 1854
+    },
+    {
+      "source": "core",
+      "page": 58,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1683,
+      "markdownCharacters": 1683
+    },
+    {
+      "source": "core",
+      "page": 59,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3454,
+      "markdownCharacters": 3454
+    },
+    {
+      "source": "core",
+      "page": 60,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2333,
+      "markdownCharacters": 2333
+    },
+    {
+      "source": "core",
+      "page": 61,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3394,
+      "markdownCharacters": 3394
+    },
+    {
+      "source": "core",
+      "page": 62,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2050,
+      "markdownCharacters": 2050
+    },
+    {
+      "source": "core",
+      "page": 63,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3552,
+      "markdownCharacters": 3552
+    },
+    {
+      "source": "core",
+      "page": 64,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1849,
+      "markdownCharacters": 1849
+    },
+    {
+      "source": "core",
+      "page": 66,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3792,
+      "markdownCharacters": 3792
+    },
+    {
+      "source": "core",
+      "page": 67,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3044,
+      "markdownCharacters": 3052
+    },
+    {
+      "source": "core",
+      "page": 68,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1509,
+      "markdownCharacters": 1509
+    },
+    {
+      "source": "core",
+      "page": 69,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1720,
+      "markdownCharacters": 1720
+    },
+    {
+      "source": "core",
+      "page": 70,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1593,
+      "markdownCharacters": 1593
+    },
+    {
+      "source": "core",
+      "page": 71,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1928,
+      "markdownCharacters": 1928
+    },
+    {
+      "source": "core",
+      "page": 72,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1567,
+      "markdownCharacters": 1567
+    },
+    {
+      "source": "core",
+      "page": 73,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3368,
+      "markdownCharacters": 3368
+    },
+    {
+      "source": "core",
+      "page": 74,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3479,
+      "markdownCharacters": 3479
+    },
+    {
+      "source": "core",
+      "page": 75,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1067,
+      "markdownCharacters": 1067
+    },
+    {
+      "source": "core",
+      "page": 76,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1729,
+      "markdownCharacters": 1729
+    },
+    {
+      "source": "core",
+      "page": 77,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 602,
+      "markdownCharacters": 602
+    },
+    {
+      "source": "core",
+      "page": 78,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3452,
+      "markdownCharacters": 3452
+    },
+    {
+      "source": "core",
+      "page": 79,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2012,
+      "markdownCharacters": 2012
+    },
+    {
+      "source": "core",
+      "page": 80,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1915,
+      "markdownCharacters": 1915
+    },
+    {
+      "source": "core",
+      "page": 82,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2024,
+      "markdownCharacters": 2024
+    },
+    {
+      "source": "core",
+      "page": 83,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2720,
+      "markdownCharacters": 2720
+    },
+    {
+      "source": "core",
+      "page": 84,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2418,
+      "markdownCharacters": 2418
+    },
+    {
+      "source": "core",
+      "page": 85,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2480,
+      "markdownCharacters": 2480
+    },
+    {
+      "source": "core",
+      "page": 86,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1639,
+      "markdownCharacters": 1639
+    },
+    {
+      "source": "core",
+      "page": 87,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1491,
+      "markdownCharacters": 1491
+    },
+    {
+      "source": "core",
+      "page": 88,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1715,
+      "markdownCharacters": 1715
+    },
+    {
+      "source": "core",
+      "page": 89,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1583,
+      "markdownCharacters": 1583
+    },
+    {
+      "source": "core",
+      "page": 90,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2304,
+      "markdownCharacters": 2304
+    },
+    {
+      "source": "core",
+      "page": 92,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2167,
+      "markdownCharacters": 2167
+    },
+    {
+      "source": "core",
+      "page": 94,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3841,
+      "markdownCharacters": 3841
+    },
+    {
+      "source": "core",
+      "page": 95,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1901,
+      "markdownCharacters": 1901
+    },
+    {
+      "source": "core",
+      "page": 96,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3089,
+      "markdownCharacters": 3089
+    },
+    {
+      "source": "core",
+      "page": 97,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1865,
+      "markdownCharacters": 1865
+    },
+    {
+      "source": "core",
+      "page": 98,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1927,
+      "markdownCharacters": 1927
+    },
+    {
+      "source": "core",
+      "page": 99,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1829,
+      "markdownCharacters": 1829
+    },
+    {
+      "source": "core",
+      "page": 100,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2648,
+      "markdownCharacters": 2648
+    },
+    {
+      "source": "core",
+      "page": 101,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3006,
+      "markdownCharacters": 3006
+    },
+    {
+      "source": "core",
+      "page": 102,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1874,
+      "markdownCharacters": 1874
+    },
+    {
+      "source": "core",
+      "page": 103,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2156,
+      "markdownCharacters": 2156
+    },
+    {
+      "source": "core",
+      "page": 104,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2113,
+      "markdownCharacters": 2113
+    },
+    {
+      "source": "core",
+      "page": 105,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1921,
+      "markdownCharacters": 1921
+    },
+    {
+      "source": "core",
+      "page": 106,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1009,
+      "markdownCharacters": 1009
+    },
+    {
+      "source": "core",
+      "page": 108,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1171,
+      "markdownCharacters": 1171
+    },
+    {
+      "source": "core",
+      "page": 110,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1893,
+      "markdownCharacters": 1893
+    },
+    {
+      "source": "core",
+      "page": 112,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1128,
+      "markdownCharacters": 1128
+    },
+    {
+      "source": "core",
+      "page": 113,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2109,
+      "markdownCharacters": 2109
+    },
+    {
+      "source": "core",
+      "page": 114,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1392,
+      "markdownCharacters": 1392
+    },
+    {
+      "source": "core",
+      "page": 116,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2523,
+      "markdownCharacters": 2523
+    },
+    {
+      "source": "core",
+      "page": 118,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1807,
+      "markdownCharacters": 1807
+    },
+    {
+      "source": "core",
+      "page": 119,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2428,
+      "markdownCharacters": 2428
+    },
+    {
+      "source": "core",
+      "page": 120,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2356,
+      "markdownCharacters": 2356
+    },
+    {
+      "source": "core",
+      "page": 121,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2334,
+      "markdownCharacters": 2334
+    },
+    {
+      "source": "core",
+      "page": 122,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2532,
+      "markdownCharacters": 2532
+    },
+    {
+      "source": "core",
+      "page": 123,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1067,
+      "markdownCharacters": 1067
+    },
+    {
+      "source": "core",
+      "page": 124,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2187,
+      "markdownCharacters": 2187
+    },
+    {
+      "source": "core",
+      "page": 125,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2310,
+      "markdownCharacters": 2310
+    },
+    {
+      "source": "core",
+      "page": 126,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1855,
+      "markdownCharacters": 1855
+    },
+    {
+      "source": "core",
+      "page": 127,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2682,
+      "markdownCharacters": 2682
+    },
+    {
+      "source": "core",
+      "page": 128,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 692,
+      "markdownCharacters": 692
+    },
+    {
+      "source": "core",
+      "page": 129,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2197,
+      "markdownCharacters": 2197
+    },
+    {
+      "source": "core",
+      "page": 130,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2313,
+      "markdownCharacters": 2313
+    },
+    {
+      "source": "core",
+      "page": 131,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2266,
+      "markdownCharacters": 2266
+    },
+    {
+      "source": "core",
+      "page": 133,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2238,
+      "markdownCharacters": 2238
+    },
+    {
+      "source": "core",
+      "page": 134,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 31,
+      "markdownCharacters": 31
+    },
+    {
+      "source": "core",
+      "page": 135,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2286,
+      "markdownCharacters": 2286
+    },
+    {
+      "source": "core",
+      "page": 136,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 24,
+      "markdownCharacters": 24
+    },
+    {
+      "source": "core",
+      "page": 137,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2822,
+      "markdownCharacters": 2822
+    },
+    {
+      "source": "core",
+      "page": 138,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 22,
+      "markdownCharacters": 22
+    },
+    {
+      "source": "core",
+      "page": 139,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2543,
+      "markdownCharacters": 2543
+    },
+    {
+      "source": "core",
+      "page": 140,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 813,
+      "markdownCharacters": 813
+    },
+    {
+      "source": "core",
+      "page": 141,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2868,
+      "markdownCharacters": 2868
+    },
+    {
+      "source": "core",
+      "page": 142,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 21,
+      "markdownCharacters": 21
+    },
+    {
+      "source": "core",
+      "page": 143,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1359,
+      "markdownCharacters": 1359
+    },
+    {
+      "source": "core",
+      "page": 144,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 24,
+      "markdownCharacters": 24
+    },
+    {
+      "source": "core",
+      "page": 145,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2639,
+      "markdownCharacters": 2639
+    },
+    {
+      "source": "core",
+      "page": 146,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 27,
+      "markdownCharacters": 27
+    },
+    {
+      "source": "core",
+      "page": 147,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2725,
+      "markdownCharacters": 2725
+    },
+    {
+      "source": "core",
+      "page": 148,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3263,
+      "markdownCharacters": 3263
+    },
+    {
+      "source": "core",
+      "page": 149,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1189,
+      "markdownCharacters": 1189
+    },
+    {
+      "source": "core",
+      "page": 150,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 21,
+      "markdownCharacters": 21
+    },
+    {
+      "source": "core",
+      "page": 151,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2899,
+      "markdownCharacters": 2899
+    },
+    {
+      "source": "core",
+      "page": 152,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3826,
+      "markdownCharacters": 3826
+    },
+    {
+      "source": "core",
+      "page": 153,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3883,
+      "markdownCharacters": 3883
+    },
+    {
+      "source": "core",
+      "page": 154,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3258,
+      "markdownCharacters": 3258
+    },
+    {
+      "source": "core",
+      "page": 155,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 425,
+      "markdownCharacters": 425
+    },
+    {
+      "source": "core",
+      "page": 156,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 23,
+      "markdownCharacters": 23
+    },
+    {
+      "source": "core",
+      "page": 157,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2722,
+      "markdownCharacters": 2722
+    },
+    {
+      "source": "core",
+      "page": 158,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3868,
+      "markdownCharacters": 3868
+    },
+    {
+      "source": "core",
+      "page": 159,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2055,
+      "markdownCharacters": 2055
+    },
+    {
+      "source": "core",
+      "page": 160,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1424,
+      "markdownCharacters": 1424
+    },
+    {
+      "source": "core",
+      "page": 162,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1510,
+      "markdownCharacters": 1510
+    },
+    {
+      "source": "core",
+      "page": 163,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2582,
+      "markdownCharacters": 2582
+    },
+    {
+      "source": "core",
+      "page": 164,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1924,
+      "markdownCharacters": 1924
+    },
+    {
+      "source": "core",
+      "page": 165,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1045,
+      "markdownCharacters": 1045
+    },
+    {
+      "source": "core",
+      "page": 166,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 957,
+      "markdownCharacters": 957
+    },
+    {
+      "source": "core",
+      "page": 167,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1196,
+      "markdownCharacters": 1196
+    },
+    {
+      "source": "allies",
+      "page": 1,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 185,
+      "markdownCharacters": 185
+    },
+    {
+      "source": "allies",
+      "page": 2,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1382,
+      "markdownCharacters": 1382
+    },
+    {
+      "source": "allies",
+      "page": 4,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1962,
+      "markdownCharacters": 1962
+    },
+    {
+      "source": "allies",
+      "page": 6,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1753,
+      "markdownCharacters": 1753
+    },
+    {
+      "source": "allies",
+      "page": 8,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 1887,
+      "markdownCharacters": 1887
+    },
+    {
+      "source": "allies",
+      "page": 10,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2503,
+      "markdownCharacters": 2503
+    },
+    {
+      "source": "allies",
+      "page": 12,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2576,
+      "markdownCharacters": 2576
+    },
+    {
+      "source": "allies",
+      "page": 14,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 3076,
+      "markdownCharacters": 3076
+    },
+    {
+      "source": "allies",
+      "page": 16,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2989,
+      "markdownCharacters": 2989
+    },
+    {
+      "source": "allies",
+      "page": 18,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2231,
+      "markdownCharacters": 2231
+    },
+    {
+      "source": "allies",
+      "page": 20,
+      "characterCoverage": 1.0,
+      "missingNumbers": {},
+      "sourceCharacters": 2383,
+      "markdownCharacters": 2383
+    }
+  ],
+  "coveredPages": 160,
+  "minimumCharacterCoverage": 1.0,
+  "pagesWithMissingNumbers": 0
+}

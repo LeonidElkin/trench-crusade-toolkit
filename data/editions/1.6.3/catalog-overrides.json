@@ -1,0 +1,4898 @@
+{
+  "units": {
+    "antioch.yeoman": {
+      "keywords": [
+        "NEW ANTIOCH"
+      ],
+      "fixedItems": [
+        {
+          "name": "Винтовка (обязательная покупка, минимум 5 дукатов)",
+          "category": "ranged"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "antioch.mechanized": {
+      "keywords": [
+        "NEW ANTIOCH",
+        "STRONG"
+      ],
+      "fixedItems": [
+        {
+          "name": "Лёгкая машинная броня",
+          "category": "armour"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "antioch.medic": {
+      "keywords": [
+        "NEW ANTIOCH"
+      ],
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Милосердие",
+          "category": "melee"
+        },
+        {
+          "name": "Медицинский набор",
+          "category": "equipment"
+        },
+        {
+          "name": "Противогаз",
+          "category": "equipment"
+        },
+        {
+          "name": "Стандартная броня",
+          "category": "armour"
+        }
+      ]
+    },
+    "grail.thrall": {
+      "name": "Прислужник Грааля",
+      "equipmentLocked": true,
+      "allowedCategories": []
+    },
+    "heretic.war-wolf": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Броня Тартаруса",
+          "category": "armour"
+        },
+        {
+          "name": "Измельчающие когти",
+          "category": "melee"
+        },
+        {
+          "name": "Рот-Бензопила",
+          "category": "melee"
+        }
+      ]
+    },
+    "pilgrims.prisoner": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Железный Капироте",
+          "category": "equipment"
+        }
+      ]
+    },
+    "pilgrims.anchorite": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Особый доспех Анахорета",
+          "category": "armour"
+        },
+        {
+          "name": "Боевой шлем",
+          "category": "equipment"
+        },
+        {
+          "name": "Колесо Екатерины",
+          "category": "melee"
+        },
+        {
+          "name": "Костоломная Булава",
+          "category": "melee"
+        }
+      ]
+    },
+    "grail.hound": {
+      "equipmentLocked": true,
+      "allowedCategories": []
+    },
+    "court.locust": {
+      "equipmentLocked": false,
+      "allowedCategories": [
+        "equipment"
+      ],
+      "allowedItemIds": [
+        "item.crown-of-hellfire"
+      ],
+      "fixedItems": [
+        {
+          "name": "Укреплённая броня",
+          "category": "armour"
+        }
+      ]
+    },
+    "allies.medic": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Милосердие",
+          "category": "melee"
+        },
+        {
+          "name": "Медицинский набор",
+          "category": "equipment"
+        },
+        {
+          "name": "Противогаз",
+          "category": "equipment"
+        },
+        {
+          "name": "Стандартная броня",
+          "category": "armour"
+        }
+      ],
+      "allowedFactions": [
+        "pilgrims"
+      ]
+    },
+    "allies.witch-hunter": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Укреплённая броня",
+          "category": "armour"
+        },
+        {
+          "name": "Шлем",
+          "category": "equipment"
+        },
+        {
+          "name": "Боевой Молот",
+          "category": "melee"
+        }
+      ],
+      "allowedFactions": [
+        "antioch",
+        "pilgrims"
+      ]
+    },
+    "allies.tank-hunter": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Противотанковая винтовка",
+          "category": "ranged"
+        },
+        {
+          "name": "Две окопные дубинки (кулаки)",
+          "category": "melee"
+        },
+        {
+          "name": "Шлем",
+          "category": "equipment"
+        },
+        {
+          "name": "Стандартная броня",
+          "category": "armour"
+        }
+      ],
+      "allowedFactions": [
+        "antioch",
+        "pilgrims"
+      ]
+    },
+    "allies.mendelist": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Противогаз",
+          "category": "equipment"
+        },
+        {
+          "name": "Таинство Боеприпасов",
+          "category": "equipment"
+        }
+      ],
+      "allowedFactions": [
+        "antioch",
+        "pilgrims"
+      ]
+    },
+    "allies.sin-eater": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Усиленная броня",
+          "category": "armour"
+        },
+        {
+          "name": "Молот-Размягчитель",
+          "category": "melee"
+        }
+      ],
+      "allowedFactions": [
+        "heretic",
+        "grail",
+        "court"
+      ]
+    },
+    "allies.sorcerer": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Усиленная броня",
+          "category": "armour"
+        },
+        {
+          "name": "Два меча (руки)",
+          "category": "melee"
+        }
+      ],
+      "allowedFactions": [
+        "heretic",
+        "court"
+      ]
+    },
+    "allies.observer": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Стандартная броня",
+          "category": "armour"
+        },
+        {
+          "name": "Шлем Окулус",
+          "category": "equipment"
+        },
+        {
+          "name": "Древковое оружие",
+          "category": "melee"
+        },
+        {
+          "name": "Медицинский набор",
+          "category": "equipment"
+        }
+      ],
+      "allowedFactions": [
+        "antioch",
+        "pilgrims"
+      ]
+    },
+    "allies.mamluk": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "fixedItems": [
+        {
+          "name": "Джеззайль",
+          "category": "ranged"
+        },
+        {
+          "name": "Алхимические боеприпасы",
+          "category": "equipment"
+        },
+        {
+          "name": "Шлем",
+          "category": "equipment"
+        },
+        {
+          "name": "Усиленная броня",
+          "category": "armour"
+        }
+      ],
+      "allowedFactions": [
+        "sultanate",
+        "antioch"
+      ]
+    },
+    "allies.dog": {
+      "equipmentLocked": true,
+      "allowedCategories": [],
+      "allowedFactions": [
+        "heretic",
+        "pilgrims",
+        "sultanate",
+        "antioch",
+        "grail",
+        "court"
+      ]
+    },
+    "allies.scripture-keeper": {
+      "equipmentLocked": false,
+      "allowedCategories": [
+        "melee"
+      ],
+      "specialRules": [
+        "unrestricted-melee-only",
+        "one-melee"
+      ],
+      "fixedItems": [
+        {
+          "name": "Свиток Писаний",
+          "category": "equipment"
+        },
+        {
+          "name": "Усиленная броня",
+          "category": "armour"
+        },
+        {
+          "name": "Шлем",
+          "category": "equipment"
+        }
+      ],
+      "allowedFactions": [
+        "heretic",
+        "pilgrims",
+        "sultanate",
+        "antioch",
+        "grail",
+        "court"
+      ]
+    },
+    "heretic.witch": {
+      "equipmentLocked": false,
+      "allowedCategories": [
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "fixedItems": [
+        {
+          "name": "Адские Бомбы",
+          "category": "ranged"
+        }
+      ]
+    },
+    "heretic.commando": {
+      "rangedItemIds": [
+        "item.silenced-pistol",
+        "item.gas-grenades"
+      ],
+      "equipmentLocked": false
+    },
+    "heretic.wretch": {
+      "allowedCategories": [
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "maxItemDucats": 10,
+      "requireWeapon": true,
+      "forbidGloryItems": true,
+      "equipmentLocked": false
+    },
+    "court.wretch": {
+      "allowedCategories": [
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "maxItemDucats": 10,
+      "requireWeapon": true,
+      "forbidGloryItems": true,
+      "equipmentLocked": false
+    },
+    "pilgrims.nun": {
+      "rangedItemIds": [
+        "item.pistolrevolver",
+        "item.automatic-pistol",
+        "item.war-cross"
+      ],
+      "equipmentLocked": false
+    },
+    "sultanate.lion": {
+      "equipmentLocked": false,
+      "allowedCategories": [
+        "armour",
+        "equipment"
+      ],
+      "allowedItemIds": [
+        "item.standard-armour",
+        "item.reinforced-armour",
+        "item.alchemist-armour",
+        "item.wind-amulet"
+      ]
+    },
+    "sultanate.bull": {
+      "specialRules": [
+        "heavy-weapons-only",
+        "bull-arms"
+      ],
+      "equipmentLocked": false
+    },
+    "grail.knight": {
+      "requireArmour": true,
+      "equipmentLocked": false
+    },
+    "grail.herald": {
+      "equipmentLocked": false,
+      "allowedCategories": [
+        "ranged",
+        "equipment"
+      ],
+      "allowedItemIds": [
+        "item.bolt-action-rifle",
+        "item.pistolrevolver",
+        "item.musket",
+        "item.infested-rifle",
+        "item.corruption-belcher",
+        "item.machine-gun",
+        "item.shotgun",
+        "item.putrid-shotgun",
+        "item.gas-grenades",
+        "item.parasite-grenades",
+        "item.viscera-cannon",
+        "item.compound-eyes-helmet",
+        "item.grail-devotee"
+      ]
+    },
+    "grail.amalgam": {
+      "equipmentLocked": false,
+      "allowedCategories": [
+        "ranged",
+        "melee",
+        "armour"
+      ],
+      "allowedItemIds": [
+        "item.bolt-action-rifle",
+        "item.pistolrevolver",
+        "item.musket",
+        "item.infested-rifle",
+        "item.corruption-belcher",
+        "item.machine-gun",
+        "item.shotgun",
+        "item.putrid-shotgun",
+        "item.gas-grenades",
+        "item.parasite-grenades",
+        "item.viscera-cannon",
+        "item.knifedagger",
+        "item.bayonet",
+        "item.trench-club",
+        "item.swordaxe",
+        "item.trench-polearm",
+        "item.double-handed-blunt-weapon",
+        "item.great-swordaxe",
+        "item.plague-blade",
+        "item.beelzebubs-axe",
+        "item.trench-shield"
+      ],
+      "specialRules": [
+        "six-arms",
+        "no-grenades",
+        "two-identical-weapons"
+      ]
+    },
+    "court.sorcerer": {
+      "allowedCategories": [
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "powerMin": 1,
+      "powerMax": 3,
+      "equipmentLocked": false
+    },
+    "court.praetor": {
+      "powerMax": 2,
+      "equipmentLocked": false
+    },
+    "court.knight": {
+      "powerMax": 1,
+      "allowedCategories": [
+        "ranged",
+        "melee",
+        "equipment"
+      ],
+      "fixedItems": [
+        {
+          "name": "Адский железный доспех",
+          "category": "armour"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "court.hunter": {
+      "allowedCategories": [
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "forbiddenItemIds": [
+        "item.infernal-iron-armour"
+      ],
+      "specialRules": [
+        "hunter-hand"
+      ],
+      "fixedItems": [
+        {
+          "name": "Лук Леты",
+          "category": "ranged"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "court.yoke": {
+      "specialRules": [
+        "one-ranged-under-30"
+      ],
+      "equipmentLocked": false
+    },
+    "court.saint": {
+      "allowedCategories": [
+        "melee"
+      ],
+      "specialRules": [
+        "saint-arms"
+      ],
+      "fixedItems": [
+        {
+          "name": "Броня Коцита",
+          "category": "armour"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "heretic.anointed": {
+      "fixedItems": [
+        {
+          "name": "Усиленная броня",
+          "category": "armour"
+        },
+        {
+          "name": "Адское Клеймённое Знамение",
+          "category": "equipment"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "pilgrims.communicant": {
+      "fixedItems": [
+        {
+          "name": "Крест Коммуниканта",
+          "category": "equipment"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "sultanate.sapper": {
+      "fixedItems": [
+        {
+          "name": "Лопата",
+          "category": "equipment"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "antioch.engineer": {
+      "fixedItems": [
+        {
+          "name": "Лопата",
+          "category": "equipment"
+        },
+        {
+          "name": "Бронежилет инженера",
+          "category": "armour"
+        }
+      ],
+      "equipmentLocked": false
+    },
+    "heretic.priest": {
+      "equipmentLocked": false
+    },
+    "heretic.chorister": {
+      "equipmentLocked": false
+    },
+    "heretic.trooper": {
+      "equipmentLocked": false
+    },
+    "pilgrims.prophet": {
+      "equipmentLocked": false
+    },
+    "pilgrims.castigator": {
+      "equipmentLocked": false
+    },
+    "pilgrims.pilgrim": {
+      "equipmentLocked": false
+    },
+    "sultanate.captain": {
+      "equipmentLocked": false
+    },
+    "sultanate.alchemist": {
+      "equipmentLocked": false
+    },
+    "sultanate.assassin": {
+      "equipmentLocked": false
+    },
+    "sultanate.azeb": {
+      "equipmentLocked": false
+    },
+    "sultanate.janissary": {
+      "equipmentLocked": false
+    },
+    "antioch.lieutenant": {
+      "equipmentLocked": false
+    },
+    "antioch.cleric": {
+      "equipmentLocked": false
+    },
+    "antioch.sniper": {
+      "equipmentLocked": false
+    },
+    "antioch.stormtrooper": {
+      "equipmentLocked": false
+    },
+    "grail.lord": {
+      "equipmentLocked": false
+    },
+    "grail.guard": {
+      "equipmentLocked": false
+    }
+  },
+  "items": {
+    "item.standard-armour": {
+      "armourModifier": -1,
+      "category": "armour"
+    },
+    "item.reinforced-armour": {
+      "armourModifier": -2,
+      "category": "armour"
+    },
+    "item.machine-armour": {
+      "armourModifier": -3,
+      "category": "armour"
+    },
+    "item.alchemist-armour": {
+      "armourModifier": -2,
+      "category": "armour"
+    },
+    "item.holy-icon-armour": {
+      "armourModifier": -1,
+      "category": "armour"
+    },
+    "item.infernal-iron-armour": {
+      "armourModifier": -2,
+      "category": "armour"
+    },
+    "item.trench-shield": {
+      "shield": true,
+      "hands": 1,
+      "category": "armour",
+      "armourModifier": -1
+    },
+    "item.heavy-ballistic-shield": {
+      "shield": true,
+      "hands": 1,
+      "category": "armour"
+    },
+    "item.holy-icon-shield": {
+      "shield": true,
+      "hands": 1,
+      "category": "armour",
+      "armourModifier": -1
+    },
+    "item.black-grail-shield": {
+      "shield": true,
+      "hands": 1,
+      "category": "armour",
+      "armourModifier": -1
+    },
+    "item.fire-shield": {
+      "shield": true,
+      "hands": 1,
+      "category": "armour",
+      "armourModifier": -1
+    },
+    "item.troop-flag": {
+      "carriedHands": 1
+    },
+    "item.standard-of-mammon": {
+      "carriedHands": 1
+    },
+    "item.combat-helmet": {
+      "headgear": true
+    },
+    "item.iron-capirote": {
+      "headgear": true
+    },
+    "item.compound-eyes-helmet": {
+      "headgear": true
+    },
+    "item.anfarro": {
+      "headgear": true
+    },
+    "item.бронежилет-инженера": {
+      "unresolved": false,
+      "englishName": "Engineer Body Armour",
+      "ruleId": "core-0-2-боевые-инженеры",
+      "category": "armour",
+      "armourModifier": -2
+    },
+    "item.tarnished-armour": {
+      "category": "armour",
+      "armourModifier": -2,
+      "headgear": true
+    }
+  },
+  "offers": {
+    "offer.heretic.silenced-pistol": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.heretic.sacrificial-knife": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.heretic.blasphemous-staff": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.heretic.reinforced-armour": {
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "allowedUnitIds": [
+        "heretic.anointed"
+      ],
+      "keywordsOrUnits": true
+    },
+    "offer.pilgrims.anti-tank-hammer": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.pilgrims.reinforced-armour": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.pilgrims.holy-icon-shield": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.pilgrims.holy-relic": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.pilgrims.musical-instrument": {
+      "forbiddenKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.sultanate.sniper-rifle": {
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "allowedUnitIds": [
+        "sultanate.janissary"
+      ],
+      "keywordsOrUnits": true
+    },
+    "offer.sultanate.halberd-gun": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.sultanate.reinforced-armour": {
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "allowedUnitIds": [
+        "sultanate.janissary",
+        "sultanate.faris"
+      ],
+      "keywordsOrUnits": true
+    },
+    "offer.sultanate.alchemist-armour": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.sultanate.musical-instrument": {
+      "forbiddenKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.sultanate.cloak-of-alamut": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.sultanate.binoculars": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.sultanate.holy-relic": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.antioch.automatic-pistol": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.antioch.reinforced-armour": {
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "allowedUnitIds": [
+        "antioch.mechanized"
+      ],
+      "keywordsOrUnits": true
+    },
+    "offer.antioch.machine-armour": {
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "exemptLimitUnitIds": [
+        "antioch.mechanized"
+      ]
+    },
+    "offer.antioch.musical-instrument": {
+      "forbiddenKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.antioch.martyrdom-pills": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.antioch.binoculars": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.grail.viscera-cannon": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.grail.plague-blade": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.grail.beelzebubs-axe": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.grail.reinforced-armour": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.grail.black-grail-shield": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.grail.compound-eyes-helmet": {
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "allowedUnitIds": [
+        "grail.herald"
+      ],
+      "keywordsOrUnits": true
+    },
+    "offer.grail.grail-devotee": {
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "allowedUnitIds": [
+        "grail.herald"
+      ],
+      "keywordsOrUnits": true
+    },
+    "offer.grail.unholy-relic": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.court.ophidian-rifle": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.court.reinforced-armour": {
+      "requiredKeywords": [
+        "ELITE"
+      ]
+    },
+    "offer.court.crown-of-hellfire": {
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "allowedUnitIds": [
+        "court.locust"
+      ],
+      "keywordsOrUnits": true
+    },
+    "offer.heretic.tartarus-claws": {
+      "allowedUnitIds": [
+        "heretic.commando"
+      ]
+    },
+    "offer.heretic.hellbound-soul-contract": {
+      "allowedUnitIds": [
+        "heretic.trooper"
+      ]
+    },
+    "offer.sultanate.alaybozan": {
+      "allowedUnitIds": [
+        "sultanate.sapper"
+      ]
+    },
+    "offer.sultanate.incendiary-grenades": {
+      "allowedUnitIds": [
+        "sultanate.alchemist"
+      ]
+    },
+    "offer.sultanate.murad-bombard": {
+      "allowedUnitIds": [
+        "sultanate.bull"
+      ]
+    },
+    "offer.sultanate.flame-cannon": {
+      "allowedUnitIds": [
+        "sultanate.bull"
+      ]
+    },
+    "offer.sultanate.titan-zulfiqar": {
+      "allowedUnitIds": [
+        "sultanate.bull"
+      ]
+    },
+    "offer.sultanate.marid-shovel": {
+      "allowedUnitIds": [
+        "sultanate.bull"
+      ]
+    },
+    "offer.sultanate.assassins-dagger": {
+      "allowedUnitIds": [
+        "sultanate.assassin",
+        "sultanate.master-assassin"
+      ]
+    },
+    "offer.sultanate.alchemical-ammunition": {
+      "requiresItemIds": [
+        "item.jezzail",
+        "item.siege-jezzail",
+        "item.alaybozan",
+        "item.halberd-gun"
+      ]
+    },
+    "offer.antioch.misericordia": {
+      "allowedUnitIds": [
+        "antioch.medic"
+      ]
+    },
+    "offer.antioch.heavy-ballistic-shield": {
+      "requiresItemIds": [
+        "item.machine-armour"
+      ]
+    },
+    "offer.antioch.бронежилет-инженера": {
+      "allowedUnitIds": [
+        "antioch.engineer"
+      ]
+    },
+    "offer.grail.machine-gun": {
+      "allowedUnitIds": [
+        "grail.amalgam"
+      ]
+    },
+    "offer.grail.trench-polearm": {
+      "allowedUnitIds": [
+        "grail.knight",
+        "grail.executor"
+      ]
+    },
+    "offer.court.infernal-iron-armour": {
+      "allowedUnitIds": [
+        "court.knight"
+      ]
+    },
+    "offer.court.shovel": {
+      "allowedUnitIds": [
+        "court.yoke",
+        "court.wretch"
+      ]
+    },
+    "offer.court.restraining-muzzle": {
+      "allowedUnitIds": [
+        "court.yoke"
+      ]
+    }
+  },
+  "variants": {
+    "naval": {
+      "unitLimits": {
+        "heretic.anointed": 1,
+        "heretic.witch": 1,
+        "heretic.war-wolf": 0
+      },
+      "offerOverrides": {
+        "item.submachine-gun": {
+          "cost": {
+            "ducats": 25,
+            "glory": 0
+          }
+        }
+      }
+    },
+    "ghosts": {
+      "banMercenaries": true,
+      "banKeywords": [
+        "ARTIFICIAL"
+      ],
+      "banItemIds": [
+        "item.hellbound-soul-contract",
+        "item.infernal-brand-mark"
+      ],
+      "keywords": [
+        "FEAR"
+      ]
+    },
+    "greed": {
+      "unitLimits": {
+        "heretic.commando": 0
+      },
+      "minimumModelDucats": 80,
+      "minimumCostExempt": [
+        "heretic.wretch"
+      ],
+      "banWeaponKeywords": [
+        "FIRE",
+        "SHRAPNEL"
+      ],
+      "weaponKeywordExceptions": [
+        "item.grenade-launcher"
+      ],
+      "unitCostOverrides": {
+        "allies.sorcerer": {
+          "ducats": 110,
+          "glory": 0
+        }
+      },
+      "foreignArsenals": [
+        "antioch",
+        "sultanate"
+      ]
+    },
+    "affliction": {
+      "banItemIds": [
+        "item.iron-capirote"
+      ],
+      "offerOverrides": {
+        "item.machine-gun": {
+          "limit": 0
+        },
+        "item.punt-gun": {
+          "limit": 1
+        },
+        "item.holy-icon-shield": {
+          "cost": {
+            "ducats": 20,
+            "glory": 0
+          },
+          "requiredKeywords": []
+        },
+        "item.anti-tank-hammer": {
+          "requiredKeywords": []
+        }
+      }
+    },
+    "plague": {
+      "unitLimits": {
+        "pilgrims.prisoner": 2
+      },
+      "unitCostOverrides": {
+        "pilgrims.communicant": {
+          "ducats": 0,
+          "glory": 3
+        }
+      },
+      "banUpgradeIds": [
+        "resurrection"
+      ]
+    },
+    "methodius": {
+      "unitLimits": {
+        "pilgrims.anchorite": 2,
+        "pilgrims.communicant": 0,
+        "pilgrims.nun": 3,
+        "allies.tank-hunter": 0
+      },
+      "banUpgradeIds": [
+        "martyr-device",
+        "resurrection"
+      ],
+      "offerOverrides": {
+        "item.machine-gun": {
+          "cost": {
+            "ducats": 50,
+            "glory": 0
+          },
+          "limit": 2
+        },
+        "item.submachine-gun": {
+          "cost": {
+            "ducats": 30,
+            "glory": 0
+          },
+          "limit": 1
+        }
+      }
+    },
+    "fidai": {
+      "unitLimits": {
+        "sultanate.captain": 0,
+        "sultanate.alchemist": 0,
+        "sultanate.janissary": 0,
+        "sultanate.lion": 0,
+        "sultanate.bull": 0,
+        "sultanate.assassin": 2
+      },
+      "unitMinimums": {
+        "sultanate.captain": 0
+      },
+      "fireteamLimit": 1
+    },
+    "wisdom": {
+      "unitLimits": {
+        "sultanate.captain": 0,
+        "sultanate.azeb": 0,
+        "sultanate.janissary": 0,
+        "sultanate.assassin": 0,
+        "sultanate.alchemist": 2,
+        "sultanate.lion": 3
+      },
+      "unitMinimums": {
+        "sultanate.captain": 0,
+        "sultanate.alchemist": 1
+      },
+      "offerOverrides": {
+        "item.alchemist-armour": {
+          "limit": 2
+        }
+      },
+      "foreignArsenals": [
+        "antioch",
+        "pilgrims"
+      ]
+    },
+    "papal": {
+      "unitMinimums": {
+        "antioch.lieutenant": 0,
+        "antioch.cleric": 1
+      },
+      "banUpgradeIds": [
+        "trench-mole"
+      ],
+      "startingBudget": {
+        "ducats": 500,
+        "glory": 11
+      },
+      "battleBudget": {
+        "ducats": 700,
+        "glory": 15
+      }
+    },
+    "eire": {
+      "unitLimits": {
+        "antioch.mechanized": 1
+      },
+      "fireteamLimit": 1
+    },
+    "prussia": {
+      "unitLimits": {
+        "antioch.stormtrooper": 8,
+        "antioch.mechanized": 1,
+        "antioch.sniper": 1
+      },
+      "unitMinimums": {
+        "antioch.stormtrooper": 2
+      },
+      "banUpgradeIds": [
+        "trench-mole"
+      ],
+      "fireteamLimit": 3,
+      "offerOverrides": {
+        "item.submachine-gun": {
+          "limit": 4
+        },
+        "item.automatic-pistol": {
+          "requiredKeywords": []
+        },
+        "item.grenade-launcher": {
+          "limit": 0
+        },
+        "item.machine-gun": {
+          "limit": 1
+        }
+      }
+    },
+    "alba": {
+      "offerOverrides": {
+        "item.grenade-launcher": {
+          "limit": 1
+        },
+        "item.submachine-gun": {
+          "limit": 1
+        },
+        "item.machine-gun": {
+          "limit": 1
+        },
+        "item.automatic-shotgun": {
+          "limit": 1
+        },
+        "item.sniper-rifle": {
+          "limit": 1
+        }
+      },
+      "keywordsByUnit": {
+        "antioch.lieutenant": [
+          "STRONG"
+        ]
+      }
+    },
+    "abyssinia": {
+      "unitLimits": {
+        "antioch.sniper": 0,
+        "antioch.medic": 2
+      },
+      "banUpgradeIds": [
+        "trench-mole",
+        "machine-armour"
+      ],
+      "heavyRangedLimit": 3
+    },
+    "hegemon": {
+      "unitLimits": {
+        "grail.lord": 0,
+        "grail.amalgam": 0,
+        "grail.knight": 3,
+        "grail.hound": 2,
+        "grail.herald": 2
+      },
+      "banItemIds": [
+        "item.black-grail-shield",
+        "item.beelzebubs-axe"
+      ],
+      "unitCostOverrides": {
+        "grail.thrall": {
+          "ducats": 30,
+          "glory": 0
+        },
+        "grail.fly-thrall": {
+          "ducats": 30,
+          "glory": 0
+        }
+      },
+      "offerOverrides": {
+        "item.plague-blade": {
+          "limit": 3
+        },
+        "item.putrid-shotgun": {
+          "limit": 3
+        },
+        "item.viscera-cannon": {
+          "limit": 3,
+          "requiredKeywords": []
+        }
+      }
+    }
+  },
+  "newUnits": [
+    {
+      "id": "grail.fly-thrall",
+      "name": "Прислужник Мух",
+      "factionId": "grail",
+      "mercenary": false,
+      "cost": {
+        "ducats": 25,
+        "glory": 0
+      },
+      "min": 0,
+      "max": null,
+      "stats": {
+        "name": "Прислужник",
+        "movement": "6”/Летающий",
+        "ranged": "-",
+        "melee": "-1D",
+        "armour": "0",
+        "base": "25 мм"
+      },
+      "profileRows": [
+        [
+          "Прислужник",
+          "5”/пехота",
+          "-",
+          "-1D",
+          "0",
+          "25 мм"
+        ],
+        [
+          "Прислужник Мух",
+          "6”/Летающий",
+          "-",
+          "-1D",
+          "0",
+          "25 мм"
+        ]
+      ],
+      "keywords": [
+        "BLACK GRAIL",
+        "FEAR"
+      ],
+      "source": {
+        "source": "core",
+        "pages": [
+          89
+        ]
+      },
+      "ruleId": "core-прислужник-граалямух",
+      "equipmentLocked": true,
+      "fixedItems": [],
+      "allowedCategories": [],
+      "manualCheck": true
+    },
+    {
+      "id": "sultanate.master-assassin",
+      "name": "Мастер-Ассасин",
+      "factionId": "sultanate",
+      "mercenary": false,
+      "cost": {
+        "ducats": 95,
+        "glory": 0
+      },
+      "min": 1,
+      "max": 1,
+      "stats": {
+        "name": "Ассасин",
+        "movement": "6”/пехота",
+        "ranged": "+1D",
+        "melee": "+2D",
+        "armour": "0",
+        "base": "32 мм"
+      },
+      "profileRows": [
+        [
+          "Ассасин",
+          "6”/пехота",
+          "+1D",
+          "+2D",
+          "0",
+          "32 мм"
+        ]
+      ],
+      "keywords": [
+        "ELITE",
+        "SULTANATE",
+        "INFILTRATOR",
+        "TOUGH"
+      ],
+      "source": {
+        "source": "core",
+        "pages": [
+          55,
+          56
+        ]
+      },
+      "ruleId": "core-вариант-отряда-фидаи-аламута-кабал-ассасинов",
+      "equipmentLocked": false,
+      "fixedItems": [],
+      "allowedCategories": [
+        "ranged",
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "manualCheck": true,
+      "variantId": "fidai"
+    },
+    {
+      "id": "sultanate.faris",
+      "name": "Фарис Дома Мудрости",
+      "factionId": "sultanate",
+      "mercenary": false,
+      "cost": {
+        "ducats": 55,
+        "glory": 0
+      },
+      "min": 0,
+      "max": 2,
+      "stats": {
+        "name": "Янычар",
+        "movement": "6”/пехота",
+        "ranged": "+1D",
+        "melee": "+1D",
+        "armour": "0",
+        "base": "32 мм"
+      },
+      "profileRows": [
+        [
+          "Янычар",
+          "6”/пехота",
+          "+1D",
+          "+1D",
+          "0",
+          "32 мм"
+        ]
+      ],
+      "keywords": [
+        "SULTANATE",
+        "STRONG",
+        "ELITE"
+      ],
+      "source": {
+        "source": "core",
+        "pages": [
+          57,
+          58
+        ]
+      },
+      "ruleId": "core-вариант-отряда-дом-мудрости",
+      "equipmentLocked": false,
+      "fixedItems": [],
+      "allowedCategories": [
+        "ranged",
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "manualCheck": true,
+      "variantId": "wisdom"
+    },
+    {
+      "id": "sultanate.kavass",
+      "name": "Кавасс",
+      "factionId": "sultanate",
+      "mercenary": false,
+      "cost": {
+        "ducats": 25,
+        "glory": 0
+      },
+      "min": 0,
+      "max": null,
+      "stats": {
+        "name": "Азеб",
+        "movement": "6”/пехота",
+        "ranged": "0",
+        "melee": "-1D",
+        "armour": "0",
+        "base": "25 мм"
+      },
+      "profileRows": [
+        [
+          "Азеб",
+          "6”/пехота",
+          "0",
+          "-1D",
+          "0",
+          "25 мм"
+        ]
+      ],
+      "keywords": [
+        "SULTANATE"
+      ],
+      "source": {
+        "source": "core",
+        "pages": [
+          56
+        ]
+      },
+      "ruleId": "core-вариант-отряда-дом-мудрости",
+      "equipmentLocked": false,
+      "fixedItems": [],
+      "allowedCategories": [
+        "ranged",
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "manualCheck": true,
+      "variantId": "wisdom"
+    },
+    {
+      "id": "grail.executor",
+      "name": "Исполнитель",
+      "factionId": "grail",
+      "mercenary": false,
+      "cost": {
+        "ducats": 80,
+        "glory": 0
+      },
+      "min": 1,
+      "max": 1,
+      "stats": {
+        "name": "Чумной Рыцарь",
+        "movement": "6”/пехота",
+        "ranged": "+1D",
+        "melee": "+2D",
+        "armour": "0",
+        "base": "32 мм"
+      },
+      "profileRows": [
+        [
+          "Чумной Рыцарь",
+          "6”/пехота",
+          "-0",
+          "+2D",
+          "0",
+          "32 мм"
+        ]
+      ],
+      "keywords": [
+        "BLACK GRAIL",
+        "ELITE",
+        "FEAR",
+        "STRONG",
+        "TOUGH"
+      ],
+      "source": {
+        "source": "core",
+        "pages": [
+          87
+        ]
+      },
+      "ruleId": "core-вариант-отряда-песнь-скорби-великого-гегемона",
+      "equipmentLocked": true,
+      "fixedItems": [],
+      "allowedCategories": [
+        "ranged",
+        "melee",
+        "armour",
+        "equipment"
+      ],
+      "manualCheck": true,
+      "requireArmour": true,
+      "variantId": "hegemon"
+    },
+    {
+      "id": "allies.guard-dog",
+      "name": "Сторожевая Собака",
+      "factionId": null,
+      "mercenary": true,
+      "cost": {
+        "ducats": 0,
+        "glory": 2
+      },
+      "min": 0,
+      "max": 1,
+      "stats": {
+        "name": "",
+        "movement": "",
+        "ranged": "",
+        "melee": "0",
+        "armour": "",
+        "base": ""
+      },
+      "profileRows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "keywords": [],
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "ruleId": "allies-наёмники",
+      "equipmentLocked": true,
+      "fixedItems": [],
+      "allowedCategories": [],
+      "manualCheck": true,
+      "allowedFactions": [
+        "heretic",
+        "pilgrims",
+        "antioch",
+        "sultanate"
+      ]
+    },
+    {
+      "id": "allies.mercy-dog",
+      "name": "Собака Милосердия",
+      "factionId": null,
+      "mercenary": true,
+      "cost": {
+        "ducats": 0,
+        "glory": 2
+      },
+      "min": 0,
+      "max": 1,
+      "stats": {
+        "name": "",
+        "movement": "",
+        "ranged": "",
+        "melee": "0",
+        "armour": "",
+        "base": ""
+      },
+      "profileRows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "keywords": [],
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "ruleId": "allies-наёмники",
+      "equipmentLocked": true,
+      "fixedItems": [],
+      "allowedCategories": [],
+      "manualCheck": true,
+      "allowedFactions": [
+        "antioch"
+      ]
+    },
+    {
+      "id": "allies.martyr-dog",
+      "name": "Собака-Мученик",
+      "factionId": null,
+      "mercenary": true,
+      "cost": {
+        "ducats": 0,
+        "glory": 2
+      },
+      "min": 0,
+      "max": 1,
+      "stats": {
+        "name": "",
+        "movement": "",
+        "ranged": "",
+        "melee": "0",
+        "armour": "",
+        "base": ""
+      },
+      "profileRows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "keywords": [],
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "ruleId": "allies-наёмники",
+      "equipmentLocked": true,
+      "fixedItems": [],
+      "allowedCategories": [],
+      "manualCheck": true,
+      "allowedFactions": [
+        "pilgrims"
+      ]
+    },
+    {
+      "id": "allies.hellhound",
+      "name": "Адская Гончая",
+      "factionId": null,
+      "mercenary": true,
+      "cost": {
+        "ducats": 0,
+        "glory": 2
+      },
+      "min": 0,
+      "max": 1,
+      "stats": {
+        "name": "",
+        "movement": "",
+        "ranged": "",
+        "melee": "+1D",
+        "armour": "",
+        "base": ""
+      },
+      "profileRows": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "keywords": [],
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "ruleId": "allies-наёмники",
+      "equipmentLocked": true,
+      "fixedItems": [],
+      "allowedCategories": [],
+      "manualCheck": true,
+      "allowedFactions": [
+        "heretic",
+        "grail",
+        "court"
+      ]
+    }
+  ],
+  "newItems": [
+    {
+      "id": "item.sacrificial-lamb",
+      "name": "Жертвенный Агнец",
+      "englishName": null,
+      "category": "equipment",
+      "hands": null,
+      "range": null,
+      "modifiers": null,
+      "keywords": [
+        "CONSUMABLE"
+      ],
+      "source": {
+        "source": "core",
+        "pages": [
+          44
+        ]
+      },
+      "ruleId": "core-специальное-снаряжение-кавалькады"
+    }
+  ],
+  "newOffers": [
+    {
+      "id": "offer.greed.tarnished-armour",
+      "factionId": "heretic",
+      "variantId": "greed",
+      "itemId": "item.tarnished-armour",
+      "name": "Потускневшая броня",
+      "category": "armour",
+      "cost": {
+        "ducats": 45,
+        "glory": 0
+      },
+      "limit": 1,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          31
+        ]
+      },
+      "ruleId": "core-потускневшая-броня-tarnished-armour-45-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.greed.standard-of-mammon",
+      "factionId": "heretic",
+      "variantId": "greed",
+      "itemId": "item.standard-of-mammon",
+      "name": "Знамя Маммона",
+      "category": "equipment",
+      "cost": {
+        "ducats": 25,
+        "glory": 0
+      },
+      "limit": 1,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          31
+        ]
+      },
+      "ruleId": "core-знамя-маммона-standard-of-mammon-25-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.greed.golden-calf-altar",
+      "factionId": "heretic",
+      "variantId": "greed",
+      "itemId": "item.golden-calf-altar",
+      "name": "Алтарь Золотого Тельца",
+      "category": "equipment",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "limit": 3,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          31
+        ]
+      },
+      "ruleId": "core-алтарь-золотого-тельца-golden-calf-altar-20-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.greed.coin-hammer",
+      "factionId": "heretic",
+      "variantId": "greed",
+      "itemId": "item.coin-hammer",
+      "name": "Молот с монетой",
+      "category": "melee",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "limit": 2,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          31
+        ]
+      },
+      "ruleId": "core-молот-с-монетой-coin-hammer-20-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.affliction.holy-icon-armour",
+      "factionId": "pilgrims",
+      "variantId": "affliction",
+      "itemId": "item.holy-icon-armour",
+      "name": "Броня с изображением Святой Иконы",
+      "category": "armour",
+      "cost": {
+        "ducats": 30,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          43
+        ]
+      },
+      "ruleId": "core-броня-с-изображением-святой-иконы-holy-icon-armour",
+      "allowedUnitIds": null,
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.fidai.golden-khanjar",
+      "factionId": "sultanate",
+      "variantId": "fidai",
+      "itemId": "item.golden-khanjar",
+      "name": "Золотой Ханджар",
+      "category": "melee",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          60
+        ]
+      },
+      "ruleId": "core-золотой-ханджар-golden-khanjar-20-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.fidai.bow-of-alamut",
+      "factionId": "sultanate",
+      "variantId": "fidai",
+      "itemId": "item.bow-of-alamut",
+      "name": "Лук Аламута",
+      "category": "ranged",
+      "cost": {
+        "ducats": 50,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          60
+        ]
+      },
+      "ruleId": "core-лук-аламута-bow-of-alamut-50-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.fidai.hashashin-leaf",
+      "factionId": "sultanate",
+      "variantId": "fidai",
+      "itemId": "item.hashashin-leaf",
+      "name": "Лист Хашашин",
+      "category": "equipment",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          60
+        ]
+      },
+      "ruleId": "core-лист-хашашин-hashashin-leaf-5-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.wisdom.elixir-of-al-khidr",
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "itemId": "item.elixir-of-al-khidr",
+      "name": "Эликсир Аль-Хидр",
+      "category": "equipment",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "limit": 1,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          64
+        ]
+      },
+      "ruleId": "core-эликсир-аль-хидр-elixir-of-al-khidr-15-дукатов",
+      "allowedUnitIds": [
+        "sultanate.captain",
+        "sultanate.alchemist",
+        "sultanate.assassin",
+        "sultanate.azeb",
+        "sultanate.sapper",
+        "sultanate.janissary",
+        "sultanate.master-assassin",
+        "sultanate.faris",
+        "sultanate.kavass"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.wisdom.fire-shield",
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "itemId": "item.fire-shield",
+      "name": "Огненный щит",
+      "category": "armour",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "limit": 2,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          64
+        ]
+      },
+      "ruleId": "core-огненный-щит-fire-shield-20-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.prussia.tank-splitter-sword",
+      "factionId": "antioch",
+      "variantId": "prussia",
+      "itemId": "item.tank-splitter-sword",
+      "name": "Меч-противотанковый",
+      "category": "melee",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "limit": 3,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          75
+        ]
+      },
+      "ruleId": "core-меч-противотанковый-tank-splitter-sword-15-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.alba.lochaber-axe",
+      "factionId": "antioch",
+      "variantId": "alba",
+      "itemId": "item.lochaber-axe",
+      "name": "Лохаберский топор",
+      "category": "melee",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          77
+        ]
+      },
+      "ruleId": "core-лохаберский-топор-lochaber-axe-15-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.abyssinia.shotel",
+      "factionId": "antioch",
+      "variantId": "abyssinia",
+      "itemId": "item.shotel",
+      "name": "Шотель",
+      "category": "melee",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          80
+        ]
+      },
+      "ruleId": "core-шотель-shotel-5-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.abyssinia.holy-water-of-lalibela",
+      "factionId": "antioch",
+      "variantId": "abyssinia",
+      "itemId": "item.holy-water-of-lalibela",
+      "name": "Святая вода Лалибелы",
+      "category": "equipment",
+      "cost": {
+        "ducats": 3,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          80
+        ]
+      },
+      "ruleId": "core-святая-вода-лалибелы-holy-water-of-lalibela-3-дуката",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.abyssinia.anfarro",
+      "factionId": "antioch",
+      "variantId": "abyssinia",
+      "itemId": "item.anfarro",
+      "name": "Анфарро (Военная корона)",
+      "category": "equipment",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          80
+        ]
+      },
+      "ruleId": "core-анфарро-военная-корона-anfarro-10-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.abyssinia.tabot",
+      "factionId": "antioch",
+      "variantId": "abyssinia",
+      "itemId": "item.tabot",
+      "name": "Табот",
+      "category": "equipment",
+      "cost": {
+        "ducats": 0,
+        "glory": 4
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          80
+        ]
+      },
+      "ruleId": "core-табот-tabot-4-очка-славы",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.hegemon.broken-crown",
+      "factionId": "grail",
+      "variantId": "hegemon",
+      "itemId": "item.broken-crown",
+      "name": "Разрушенная корона",
+      "category": "equipment",
+      "cost": {
+        "ducats": 25,
+        "glory": 0
+      },
+      "limit": 1,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          95
+        ]
+      },
+      "ruleId": "core-разрушенная-корона-broken-crown-25-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.hegemon.urn-of-bitter-ashes",
+      "factionId": "grail",
+      "variantId": "hegemon",
+      "itemId": "item.urn-of-bitter-ashes",
+      "name": "Урна горьких пепелов",
+      "category": "equipment",
+      "cost": {
+        "ducats": 40,
+        "glory": 0
+      },
+      "limit": 1,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          95
+        ]
+      },
+      "ruleId": "core-урна-горьких-пепелов-urn-of-bitter-ashes-40-дукатов",
+      "allowedUnitIds": null,
+      "requiredKeywords": [
+        "ELITE"
+      ],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.hegemon.blunderbuss",
+      "factionId": "grail",
+      "variantId": "hegemon",
+      "itemId": "item.blunderbuss",
+      "name": "Мушкетон",
+      "category": "ranged",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          95
+        ]
+      },
+      "ruleId": "core-мушкетон-blunderbuss-5-дукатов-совместим-с-щитом",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.trench-mortar",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.trench-mortar",
+      "name": "Траншейный миномёт",
+      "category": "ranged",
+      "cost": {
+        "ducats": 40,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          45
+        ]
+      },
+      "ruleId": "core-траншейный-миномёт-trench-mortar-40-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.gas-filters",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.gas-filters",
+      "name": "Газовые фильтры",
+      "category": "equipment",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          46
+        ]
+      },
+      "ruleId": "core-газовые-фильтры-gas-filters-5-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.holy-diesel-engine",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.holy-diesel-engine",
+      "name": "Святой дизельный двигатель",
+      "category": "equipment",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          46
+        ]
+      },
+      "ruleId": "core-святой-дизельный-двигатель-holy-diesel-engine-10-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.sacred-geometry",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.sacred-geometry",
+      "name": "Священная геометрия",
+      "category": "equipment",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          46
+        ]
+      },
+      "ruleId": "core-священная-геометрия-sacred-geometry-10-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.heavy-flamethrower",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.heavy-flamethrower",
+      "name": "Тяжёлый огнемёт",
+      "category": "ranged",
+      "cost": {
+        "ducats": 45,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          45
+        ]
+      },
+      "ruleId": "core-тяжёлый-огнемёт-heavy-flamethrower-45-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.anti-materiel-rifle",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.anti-materiel-rifle",
+      "name": "Противатанковая винтовка",
+      "category": "ranged",
+      "cost": {
+        "ducats": 0,
+        "glory": 2
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          45
+        ]
+      },
+      "ruleId": "core-противатанковая-винтовка-anti-materiel-rifle-2-очка-славы",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.punt-gun",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.punt-gun",
+      "name": "Ружьё-пушка",
+      "category": "ranged",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          45
+        ]
+      },
+      "ruleId": "core-ружьё-пушка-punt-gun",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.automatic-rifle",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.automatic-rifle",
+      "name": "Автоматическая винтовка",
+      "category": "ranged",
+      "cost": {
+        "ducats": 40,
+        "glory": 0
+      },
+      "limit": 1,
+      "notes": "Специальный арсенал варианта; условия см. в правиле.",
+      "source": {
+        "source": "core",
+        "pages": [
+          44
+        ]
+      },
+      "ruleId": "core-автоматическая-винтовка-automatic-rifle",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.autocannon",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.autocannon",
+      "name": "Автопушка",
+      "category": "ranged",
+      "cost": {
+        "ducats": 55,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Только для Анахорета Святого Мефодия. См. условия замены и лимит улучшений.",
+      "source": {
+        "source": "core",
+        "pages": [
+          45
+        ]
+      },
+      "ruleId": "core-автопушка-autocannon-55-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.gas-censer",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.gas-censer",
+      "name": "Газовая кадильница",
+      "category": "ranged",
+      "cost": {
+        "ducats": 50,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Только для Анахорета Святого Мефодия. См. условия замены и лимит улучшений.",
+      "source": {
+        "source": "core",
+        "pages": [
+          45
+        ]
+      },
+      "ruleId": "core-газовая-кадильница-gas-censer-50-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.grand-anchorite",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.grand-anchorite",
+      "name": "Великий Анахорет",
+      "category": "equipment",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Только для Анахорета Святого Мефодия. См. условия замены и лимит улучшений.",
+      "source": {
+        "source": "core",
+        "pages": [
+          46
+        ]
+      },
+      "ruleId": "core-великий-анахорет-grand-anchorite-15-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.piston-legs",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.piston-legs",
+      "name": "Поршневые ноги",
+      "category": "equipment",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Только для Анахорета Святого Мефодия. См. условия замены и лимит улучшений.",
+      "source": {
+        "source": "core",
+        "pages": [
+          46
+        ]
+      },
+      "ruleId": "core-поршневые-ноги-piston-legs-10-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.hallowed-anchorite",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.hallowed-anchorite",
+      "name": "Освящённый Отшельник",
+      "category": "equipment",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Только для Анахорета Святого Мефодия. См. условия замены и лимит улучшений.",
+      "source": {
+        "source": "core",
+        "pages": [
+          46
+        ]
+      },
+      "ruleId": "core-освящённый-отшельник-hallowed-anchorite-10-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.methodius.wrathful-cherub-face",
+      "factionId": "pilgrims",
+      "variantId": "methodius",
+      "itemId": "item.wrathful-cherub-face",
+      "name": "Лик гневного херувима",
+      "category": "equipment",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Только для Анахорета Святого Мефодия. См. условия замены и лимит улучшений.",
+      "source": {
+        "source": "core",
+        "pages": [
+          46
+        ]
+      },
+      "ruleId": "core-лик-гневного-херувима-wrathful-cherub-face-20-дукатов",
+      "allowedUnitIds": [
+        "pilgrims.anchorite"
+      ],
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": true
+    },
+    {
+      "id": "offer.plague.sacrificial-lamb",
+      "factionId": "pilgrims",
+      "variantId": "plague",
+      "itemId": "item.sacrificial-lamb",
+      "name": "Жертвенный Агнец",
+      "category": "equipment",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "limit": null,
+      "notes": "Недоступен Церковным Узникам.",
+      "source": {
+        "source": "core",
+        "pages": [
+          44
+        ]
+      },
+      "ruleId": "core-специальное-снаряжение-кавалькады",
+      "allowedUnitIds": null,
+      "requiredKeywords": [],
+      "forbiddenKeywords": [],
+      "manualCheck": false
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "legion-ranged",
+      "name": "Легионер: дальний бой",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "heretic.trooper"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "legion",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {
+        "ranged": 1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          24
+        ]
+      },
+      "ruleId": "core-легионеры-ада",
+      "manualCheck": false
+    },
+    {
+      "id": "legion-melee",
+      "name": "Легионер: ближний бой",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "heretic.trooper"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "legion",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {
+        "melee": 1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          24
+        ]
+      },
+      "ruleId": "core-легионеры-ада",
+      "manualCheck": false
+    },
+    {
+      "id": "zealot-strength",
+      "name": "Сила Фанатика",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "pilgrims.pilgrim"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": 1,
+      "keywords": [
+        "STRONG"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          39
+        ]
+      },
+      "ruleId": "core-пехота-верные-войска",
+      "manualCheck": false
+    },
+    {
+      "id": "martyr-device",
+      "name": "Устройство Мученичества",
+      "cost": {
+        "ducats": 35,
+        "glory": 0
+      },
+      "unitIds": [
+        "pilgrims.prisoner"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": 4,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          39
+        ]
+      },
+      "ruleId": "core-пехота-верные-войска",
+      "manualCheck": false
+    },
+    {
+      "id": "resurrection",
+      "name": "Мученик-Покаянник (после гибели)",
+      "cost": {
+        "ducats": 45,
+        "glory": 0
+      },
+      "unitIds": [
+        "pilgrims.pilgrim"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {
+        "melee": 1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          39
+        ]
+      },
+      "ruleId": "core-пехота-верные-войска",
+      "manualCheck": true,
+      "replacesBaseCost": true
+    },
+    {
+      "id": "azeb-skirmisher",
+      "name": "Стрелок Азеб",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.azeb"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [
+        "SKIRMISHER"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          56
+        ]
+      },
+      "ruleId": "core-те-кто-веруют",
+      "manualCheck": false
+    },
+    {
+      "id": "fierce-lion",
+      "name": "Яростный Лев Джабира",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.lion"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          57
+        ]
+      },
+      "ruleId": "core-0-2-львы-джабира",
+      "manualCheck": false
+    },
+    {
+      "id": "trench-mole",
+      "name": "Окопный Крот",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "antioch.yeoman"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": 2,
+      "keywords": [
+        "INFILTRATOR"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          70
+        ]
+      },
+      "ruleId": "core-солдаты-новой-антиохии",
+      "manualCheck": false
+    },
+    {
+      "id": "machine-armour",
+      "name": "Улучшить до машинной брони",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "antioch.mechanized"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {
+        "armour": -1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          71
+        ]
+      },
+      "ruleId": "core-0-2-боевые-инженеры",
+      "manualCheck": false,
+      "base": "40 мм"
+    },
+    {
+      "id": "fly-ranged",
+      "name": "Рыцарь-Спутник Мухи: ДБ",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "grail.knight",
+        "grail.executor"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "knight-rank",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {
+        "ranged": 1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          87
+        ]
+      },
+      "ruleId": "core-0-2-чумной-рыцарь",
+      "manualCheck": false
+    },
+    {
+      "id": "fly-melee",
+      "name": "Рыцарь-Спутник Мухи: ББ",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "grail.knight",
+        "grail.executor"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "knight-rank",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {
+        "melee": 1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          87
+        ]
+      },
+      "ruleId": "core-0-2-чумной-рыцарь",
+      "manualCheck": false
+    },
+    {
+      "id": "rotten-cross",
+      "name": "Рыцарь Гнилого Креста",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "grail.knight",
+        "grail.executor"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "knight-rank",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          87
+        ]
+      },
+      "ruleId": "core-0-2-чумной-рыцарь",
+      "manualCheck": false
+    },
+    {
+      "id": "plague-almoner",
+      "name": "Чумной Раздатчик",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "grail.knight",
+        "grail.executor"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "knight-rank",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          87
+        ]
+      },
+      "ruleId": "core-0-2-чумной-рыцарь",
+      "manualCheck": false
+    },
+    {
+      "id": "infected-hound",
+      "name": "Гончая: Маркеры Заражения",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "grail.hound"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          88
+        ]
+      },
+      "ruleId": "core-0-3-страж-трупов",
+      "manualCheck": false
+    },
+    {
+      "id": "maddening-buzz",
+      "name": "Безумный Гул",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "grail.herald"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          90
+        ]
+      },
+      "ruleId": "core-0-4-глашатаи-вельзевула",
+      "manualCheck": false
+    },
+    {
+      "id": "naval-infiltrator",
+      "name": "Незаметное продвижение",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [],
+      "factionId": "heretic",
+      "variantId": "naval",
+      "group": null,
+      "limit": 3,
+      "keywords": [
+        "INFILTRATOR"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          28
+        ]
+      },
+      "ruleId": "core-вариант-отряда-еретический-десантный-флот",
+      "manualCheck": false,
+      "forbiddenKeywords": [
+        "ELITE"
+      ]
+    },
+    {
+      "id": "sarcophagus",
+      "name": "Мина-Саркофаг",
+      "cost": {
+        "ducats": 30,
+        "glory": 0
+      },
+      "unitIds": [],
+      "factionId": "heretic",
+      "variantId": "ghosts",
+      "group": null,
+      "limit": 2,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          29
+        ]
+      },
+      "ruleId": "core-вариант-отряда-призраки-окопов",
+      "manualCheck": false,
+      "statSet": {
+        "armour": "-3"
+      },
+      "locksEquipment": true
+    },
+    {
+      "id": "palanquin",
+      "name": "Механизированный паланкин",
+      "cost": {
+        "ducats": 60,
+        "glory": 0
+      },
+      "unitIds": [
+        "heretic.priest"
+      ],
+      "factionId": null,
+      "variantId": "ghosts",
+      "group": null,
+      "limit": null,
+      "keywords": [
+        "STRONG"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          29
+        ]
+      },
+      "ruleId": "core-вариант-отряда-призраки-окопов",
+      "manualCheck": false,
+      "statSet": {
+        "armour": "-3"
+      },
+      "base": "50 мм"
+    },
+    {
+      "id": "banshee",
+      "name": "Баньши из колючей проволоки",
+      "cost": {
+        "ducats": 0,
+        "glory": 0
+      },
+      "unitIds": [
+        "heretic.chorister"
+      ],
+      "factionId": null,
+      "variantId": "ghosts",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          29
+        ]
+      },
+      "ruleId": "core-вариант-отряда-призраки-окопов",
+      "manualCheck": false
+    },
+    {
+      "id": "wrath-of-god",
+      "name": "Гнев Божий",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "pilgrims.pilgrim",
+        "pilgrims.castigator"
+      ],
+      "factionId": null,
+      "variantId": "affliction",
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          43
+        ]
+      },
+      "ruleId": "core-вариант-отряда-процессия-священной-муки",
+      "manualCheck": false,
+      "noArmour": true,
+      "noRanged": true
+    },
+    {
+      "id": "assassin-acolyte",
+      "name": "Аколит-ассасин",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.azeb"
+      ],
+      "factionId": null,
+      "variantId": "fidai",
+      "group": null,
+      "limit": 3,
+      "keywords": [
+        "INFILTRATOR"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          59
+        ]
+      },
+      "ruleId": "core-вариант-отряда-фидаи-аламута-кабал-ассасинов",
+      "manualCheck": false
+    },
+    {
+      "id": "kavass-melee",
+      "name": "Кавасс: ближний бой",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.kavass"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": 3,
+      "keywords": [],
+      "statChanges": {
+        "melee": 1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          61
+        ]
+      },
+      "ruleId": "core-вариант-отряда-дом-мудрости",
+      "manualCheck": false
+    },
+    {
+      "id": "swiss-guard",
+      "name": "Швейцарская Гвардия",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [],
+      "factionId": "antioch",
+      "variantId": "papal",
+      "group": null,
+      "limit": 5,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          73
+        ]
+      },
+      "ruleId": "core-вариант-отряда-силы-вмешательства-папских-государств",
+      "manualCheck": true
+    },
+    {
+      "id": "supreme-blessing",
+      "name": "Распятие Понтифика (при создании)",
+      "cost": {
+        "ducats": 0,
+        "glory": 0
+      },
+      "unitIds": [],
+      "factionId": "antioch",
+      "variantId": "papal",
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          73
+        ]
+      },
+      "ruleId": "core-вариант-отряда-силы-вмешательства-папских-государств",
+      "manualCheck": false
+    },
+    {
+      "id": "fianna",
+      "name": "Фианна",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "antioch.stormtrooper"
+      ],
+      "factionId": null,
+      "variantId": "eire",
+      "group": null,
+      "limit": null,
+      "keywords": [
+        "SKIRMISHER",
+        "INFILTRATOR"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          73
+        ]
+      },
+      "ruleId": "core-вариант-отряда-силы-вмешательства-папских-государств",
+      "manualCheck": false
+    },
+    {
+      "id": "berserker",
+      "name": "Берсеркер",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "antioch.lieutenant",
+        "antioch.stormtrooper"
+      ],
+      "factionId": null,
+      "variantId": "eire",
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          74
+        ]
+      },
+      "ruleId": "core-вариант-отряда-рейнджеры-эйре",
+      "manualCheck": true,
+      "noArmour": true
+    },
+    {
+      "id": "forward-positions",
+      "name": "Передовые позиции",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "antioch.stormtrooper"
+      ],
+      "factionId": null,
+      "variantId": "prussia",
+      "group": null,
+      "limit": 2,
+      "keywords": [
+        "INFILTRATOR"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          74
+        ]
+      },
+      "ruleId": "core-вариант-отряда-рейнджеры-эйре",
+      "manualCheck": false
+    },
+    {
+      "id": "rapid-assault",
+      "name": "Молниеносный штурм",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "antioch.stormtrooper",
+        "antioch.lieutenant"
+      ],
+      "factionId": null,
+      "variantId": "prussia",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          74
+        ]
+      },
+      "ruleId": "core-вариант-отряда-рейнджеры-эйре",
+      "manualCheck": false
+    },
+    {
+      "id": "chewa",
+      "name": "Чева",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [],
+      "factionId": "antioch",
+      "variantId": "abyssinia",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          79
+        ]
+      },
+      "ruleId": "core-вариант-отряда-экспедиционные-силы-абиссинии",
+      "manualCheck": true
+    },
+    {
+      "id": "vanguard",
+      "name": "Авангард",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "antioch.yeoman"
+      ],
+      "factionId": null,
+      "variantId": "abyssinia",
+      "group": null,
+      "limit": 4,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          79
+        ]
+      },
+      "ruleId": "core-вариант-отряда-экспедиционные-силы-абиссинии",
+      "manualCheck": false
+    },
+    {
+      "id": "wings",
+      "name": "Крылья",
+      "cost": {
+        "ducats": 30,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [
+        "FLY"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true,
+      "forbiddenUpgradeIds": [
+        "massive-size",
+        "human-hands"
+      ],
+      "statSet": {
+        "movement": "8”/Полёт"
+      }
+    },
+    {
+      "id": "elemental-resistance",
+      "name": "Элементальная устойчивость",
+      "cost": {
+        "ducats": 40,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true
+    },
+    {
+      "id": "massive-size",
+      "name": "Массивный размер",
+      "cost": {
+        "ducats": 30,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [
+        "TOUGH"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true,
+      "forbiddenUpgradeIds": [
+        "wings"
+      ],
+      "base": "50 мм"
+    },
+    {
+      "id": "enslaved-mind",
+      "name": "Порабощённый разум",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [
+        "FIRETEAM"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true
+    },
+    {
+      "id": "human-hands",
+      "name": "Человеческие руки",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true,
+      "forbiddenUpgradeIds": [
+        "wings"
+      ]
+    },
+    {
+      "id": "inhuman-strength",
+      "name": "Нечеловеческая сила",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [
+        "STRONG"
+      ],
+      "statChanges": {
+        "melee": 1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true
+    },
+    {
+      "id": "terrifying",
+      "name": "Устрашающий вид",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [
+        "FEAR"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true
+    },
+    {
+      "id": "additional-arm",
+      "name": "Дополнительная рука",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true
+    },
+    {
+      "id": "two-heads",
+      "name": "Две головы",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true
+    },
+    {
+      "id": "hypnotic-eyes",
+      "name": "Гипнотические глаза",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": null,
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          63
+        ]
+      },
+      "ruleId": "core-существа-таквин",
+      "manualCheck": true
+    },
+    {
+      "id": "power.core-пылающий-ад-burning-inferno-15-дукатов",
+      "name": "Пылающий Ад (Burning Inferno)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.sorcerer"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          101
+        ]
+      },
+      "ruleId": "core-пылающий-ад-burning-inferno-15-дукатов",
+      "manualCheck": false,
+      "sin": null,
+      "power": true
+    },
+    {
+      "id": "power.core-повелитель-рабов-slavemaster-10-дукатов",
+      "name": "Повелитель Рабов (Slavemaster)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          102
+        ]
+      },
+      "ruleId": "core-повелитель-рабов-slavemaster-10-дукатов",
+      "manualCheck": false,
+      "sin": null,
+      "power": true
+    },
+    {
+      "id": "power.core-яростный-натиск-charge-of-hatred-10-дукатов",
+      "name": "Яростный Натиск (Charge of Hatred)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 3,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          102
+        ]
+      },
+      "ruleId": "core-яростный-натиск-charge-of-hatred-10-дукатов",
+      "manualCheck": false,
+      "sin": "wrath",
+      "power": true
+    },
+    {
+      "id": "power.core-малая-метка-каина-lesser-mark-of-cain-20-дукатов",
+      "name": "Малая Метка Каина (Lesser Mark of Cain)",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          102
+        ]
+      },
+      "ruleId": "core-малая-метка-каина-lesser-mark-of-cain-20-дукатов",
+      "manualCheck": false,
+      "sin": "wrath",
+      "power": true
+    },
+    {
+      "id": "power.core-слепая-ярость-blind-rage-10-дукатов",
+      "name": "Слепая Ярость (Blind Rage)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 3,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          102
+        ]
+      },
+      "ruleId": "core-слепая-ярость-blind-rage-10-дукатов",
+      "manualCheck": false,
+      "sin": "wrath",
+      "power": true
+    },
+    {
+      "id": "power.core-завистливые-глаза-envious-eyes-5-дукатов",
+      "name": "Завистливые Глаза (Envious Eyes)",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          102
+        ]
+      },
+      "ruleId": "core-завистливые-глаза-envious-eyes-5-дукатов",
+      "manualCheck": false,
+      "sin": "envy",
+      "power": true
+    },
+    {
+      "id": "power.core-вожделенное-место-coveted-position-10-дукатов",
+      "name": "Вожделенное Место (Coveted Position)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          102
+        ]
+      },
+      "ruleId": "core-вожделенное-место-coveted-position-10-дукатов",
+      "manualCheck": false,
+      "sin": "envy",
+      "power": true
+    },
+    {
+      "id": "power.core-всё-твоё-моё-what-is-yours-is-mine-10-дукатов",
+      "name": "Всё Твоё — Моё (What is Yours is Mine)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          103
+        ]
+      },
+      "ruleId": "core-всё-твоё-моё-what-is-yours-is-mine-10-дукатов",
+      "manualCheck": false,
+      "sin": "envy",
+      "power": true
+    },
+    {
+      "id": "power.core-запретные-наслаждения-forbidden-pleasures-10-дукатов",
+      "name": "Запретные Наслаждения (Forbidden Pleasures)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          103
+        ]
+      },
+      "ruleId": "core-запретные-наслаждения-forbidden-pleasures-10-дукатов",
+      "manualCheck": false,
+      "sin": "lust",
+      "power": true
+    },
+    {
+      "id": "power.core-изысканная-боль-exquisite-pain-15-дукатов",
+      "name": "Изысканная Боль (Exquisite Pain)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          103
+        ]
+      },
+      "ruleId": "core-изысканная-боль-exquisite-pain-15-дукатов",
+      "manualCheck": false,
+      "sin": "lust",
+      "power": true
+    },
+    {
+      "id": "power.core-зов-плоти-call-of-flesh-15-дукатов",
+      "name": "Зов Плоти (Call of Flesh)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          103
+        ]
+      },
+      "ruleId": "core-зов-плоти-call-of-flesh-15-дукатов",
+      "manualCheck": false,
+      "sin": "lust",
+      "power": true
+    },
+    {
+      "id": "power.core-гордая-непокорность-proud-defiance-15-дукатов",
+      "name": "Гордая Непокорность (Proud Defiance)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          103
+        ]
+      },
+      "ruleId": "core-гордая-непокорность-proud-defiance-15-дукатов",
+      "manualCheck": false,
+      "sin": "pride",
+      "power": true
+    },
+    {
+      "id": "power.core-слишком-горд-чтобы-пасть-too-proud-to-fall-10-дукатов",
+      "name": "Слишком Горд, чтобы Пасть (Too Proud to Fall)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          103
+        ]
+      },
+      "ruleId": "core-слишком-горд-чтобы-пасть-too-proud-to-fall-10-дукатов",
+      "manualCheck": false,
+      "sin": "pride",
+      "power": true
+    },
+    {
+      "id": "power.core-свет-самаэля-light-of-samael-15-дукатов",
+      "name": "Свет Самаэля (Light of Samael)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          104
+        ]
+      },
+      "ruleId": "core-свет-самаэля-light-of-samael-15-дукатов",
+      "manualCheck": false,
+      "sin": "pride",
+      "power": true
+    },
+    {
+      "id": "power.core-морфеев-разум-morphean-mind-15-дукатов",
+      "name": "Морфеев Разум (Morphean Mind)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          104
+        ]
+      },
+      "ruleId": "core-морфеев-разум-morphean-mind-15-дукатов",
+      "manualCheck": false,
+      "sin": "sloth",
+      "power": true
+    },
+    {
+      "id": "power.core-чары-ацедии-charm-of-acedia-10-дукатов",
+      "name": "Чары Ацедии (Charm of Acedia)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          104
+        ]
+      },
+      "ruleId": "core-чары-ацедии-charm-of-acedia-10-дукатов",
+      "manualCheck": false,
+      "sin": "sloth",
+      "power": true
+    },
+    {
+      "id": "power.core-даймониум-меридианум-daemonium-meridianum-20-дукатов",
+      "name": "Даймониум Меридианум (Daemonium Meridianum)",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          104
+        ]
+      },
+      "ruleId": "core-даймониум-меридианум-daemonium-meridianum-20-дукатов",
+      "manualCheck": false,
+      "sin": "sloth",
+      "power": true
+    },
+    {
+      "id": "power.core-чрево-зверя-belly-of-the-beast-5-дукатов",
+      "name": "Чрево Зверя (Belly of the Beast)",
+      "cost": {
+        "ducats": 5,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          104
+        ]
+      },
+      "ruleId": "core-чрево-зверя-belly-of-the-beast-5-дукатов",
+      "manualCheck": false,
+      "sin": "gluttony",
+      "power": true
+    },
+    {
+      "id": "power.core-ненасытное-обжорство-uncaring-gluttony-10-дукатов",
+      "name": "Ненасытное Обжорство (Uncaring Gluttony)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          105
+        ]
+      },
+      "ruleId": "core-ненасытное-обжорство-uncaring-gluttony-10-дукатов",
+      "manualCheck": false,
+      "sin": "gluttony",
+      "power": true
+    },
+    {
+      "id": "power.core-пожиратель-плоти-eater-of-the-flesh-10-дукатов",
+      "name": "Пожиратель Плоти (Eater of the Flesh)",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          105
+        ]
+      },
+      "ruleId": "core-пожиратель-плоти-eater-of-the-flesh-10-дукатов",
+      "manualCheck": false,
+      "sin": "gluttony",
+      "power": true
+    },
+    {
+      "id": "power.core-золотое-тело-body-of-gold-15-дукатов",
+      "name": "Золотое Тело (Body of Gold)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 1,
+      "keywords": [
+        "GOLEM"
+      ],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          105
+        ]
+      },
+      "ruleId": "core-золотое-тело-body-of-gold-15-дукатов",
+      "manualCheck": false,
+      "sin": "greed",
+      "power": true,
+      "removesKeywords": [
+        "TOUGH"
+      ]
+    },
+    {
+      "id": "power.core-чёрное-сердце-black-heart-15-дукатов",
+      "name": "Чёрное Сердце (Black Heart)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 3,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          105
+        ]
+      },
+      "ruleId": "core-чёрное-сердце-black-heart-15-дукатов",
+      "manualCheck": false,
+      "sin": "greed",
+      "power": true
+    },
+    {
+      "id": "power.core-всеобщая-алчность-universal-greed-15-дукатов",
+      "name": "Всеобщая Алчность (Universal Greed)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "court.praetor",
+        "court.sorcerer",
+        "court.knight"
+      ],
+      "factionId": "court",
+      "variantId": null,
+      "group": null,
+      "limit": 1,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          105
+        ]
+      },
+      "ruleId": "core-всеобщая-алчность-universal-greed-15-дукатов",
+      "manualCheck": false,
+      "sin": "greed",
+      "power": true
+    },
+    {
+      "id": "art.core-галлюциногенный-камуфляж-20-дукатов",
+      "name": "Галлюциногенный камуфляж",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.assassin",
+        "sultanate.master-assassin"
+      ],
+      "factionId": "sultanate",
+      "variantId": "fidai",
+      "group": "assassin-art",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          59
+        ]
+      },
+      "ruleId": "core-галлюциногенный-камуфляж-20-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "art.core-громовержец-аламута-20-дукатов",
+      "name": "Громовержец Аламута",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.assassin",
+        "sultanate.master-assassin"
+      ],
+      "factionId": "sultanate",
+      "variantId": "fidai",
+      "group": "assassin-art",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          59
+        ]
+      },
+      "ruleId": "core-громовержец-аламута-20-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "art.core-мираж-времени-15-дукатов",
+      "name": "Мираж времени",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.assassin",
+        "sultanate.master-assassin"
+      ],
+      "factionId": "sultanate",
+      "variantId": "fidai",
+      "group": "assassin-art",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          59
+        ]
+      },
+      "ruleId": "core-мираж-времени-15-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "art.core-тайные-пути-10-дукатов",
+      "name": "Тайные пути",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.assassin",
+        "sultanate.master-assassin"
+      ],
+      "factionId": "sultanate",
+      "variantId": "fidai",
+      "group": "assassin-art",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          59
+        ]
+      },
+      "ruleId": "core-тайные-пути-10-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "wisdom.core-медицина-medicine-15-дукатов",
+      "name": "Медицина (Medicine)",
+      "cost": {
+        "ducats": 15,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.alchemist"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          62
+        ]
+      },
+      "ruleId": "core-медицина-medicine-15-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "wisdom.core-картография-и-геометрия-cartography-geometry-20-дукатов",
+      "name": "Картография и геометрия (Cartography & Geometry)",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.alchemist"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          62
+        ]
+      },
+      "ruleId": "core-картография-и-геометрия-cartography-geometry-20-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "wisdom.core-тайны-таквин-secrets-of-takwin-20-дукатов",
+      "name": "Тайны Таквин (Secrets of Takwin)",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.alchemist"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          62
+        ]
+      },
+      "ruleId": "core-тайны-таквин-secrets-of-takwin-20-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "wisdom.core-химия-и-алхимия-chemistry-alchemy-25-дукатов",
+      "name": "Химия и алхимия (Chemistry & Alchemy)",
+      "cost": {
+        "ducats": 25,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.alchemist"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          62
+        ]
+      },
+      "ruleId": "core-химия-и-алхимия-chemistry-alchemy-25-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "wisdom.core-философия-поэзия-и-теология-philosophy-poetry-and-theology-20-дукатов",
+      "name": "Философия, поэзия и теология (Philosophy, Poetry and Theology)",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.alchemist"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          62
+        ]
+      },
+      "ruleId": "core-философия-поэзия-и-теология-philosophy-poetry-and-theology-20-дукатов",
+      "manualCheck": true
+    },
+    {
+      "id": "hawk-eyes",
+      "name": "Орлиные глаза",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {
+        "ranged": 1
+      },
+      "source": {
+        "source": "core",
+        "pages": [
+          64
+        ]
+      },
+      "ruleId": "core-алхимические-формулы",
+      "manualCheck": true
+    },
+    {
+      "id": "startling-speed",
+      "name": "Ошеломляющая скорость",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          64
+        ]
+      },
+      "ruleId": "core-алхимические-формулы",
+      "manualCheck": true
+    },
+    {
+      "id": "seal-solomon",
+      "name": "Печать Соломона",
+      "cost": {
+        "ducats": 10,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          64
+        ]
+      },
+      "ruleId": "core-алхимические-формулы",
+      "manualCheck": true
+    },
+    {
+      "id": "gargantuan",
+      "name": "Гигантский размер",
+      "cost": {
+        "ducats": 20,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          64
+        ]
+      },
+      "ruleId": "core-алхимические-формулы",
+      "manualCheck": true,
+      "requiresUpgradeIds": [
+        "human-hands",
+        "inhuman-strength",
+        "massive-size"
+      ],
+      "base": "60 мм"
+    },
+    {
+      "id": "regenerative",
+      "name": "Регенеративная ткань",
+      "cost": {
+        "ducats": 25,
+        "glory": 0
+      },
+      "unitIds": [
+        "sultanate.homunculus"
+      ],
+      "factionId": "sultanate",
+      "variantId": "wisdom",
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "core",
+        "pages": [
+          64
+        ]
+      },
+      "ruleId": "core-алхимические-формулы",
+      "manualCheck": true
+    },
+    {
+      "id": "dog-fireteam",
+      "name": "FIRETEAM с владельцем",
+      "cost": {
+        "ducats": 0,
+        "glory": 1
+      },
+      "unitIds": [
+        "allies.dog",
+        "allies.guard-dog",
+        "allies.mercy-dog",
+        "allies.martyr-dog",
+        "allies.hellhound"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": null,
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "allies",
+        "pages": [
+          18
+        ]
+      },
+      "ruleId": "allies-наёмники",
+      "manualCheck": true
+    },
+    {
+      "id": "mamluk-loadout-0",
+      "name": "Древковое оружие и Окопный щит",
+      "cost": {
+        "ducats": 0,
+        "glory": 0
+      },
+      "unitIds": [
+        "allies.mamluk"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "mamluk-loadout",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "allies",
+        "pages": [
+          16
+        ]
+      },
+      "ruleId": "allies-наёмники",
+      "manualCheck": true
+    },
+    {
+      "id": "mamluk-loadout-1",
+      "name": "Меч и Пистолет",
+      "cost": {
+        "ducats": 0,
+        "glory": 0
+      },
+      "unitIds": [
+        "allies.mamluk"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "mamluk-loadout",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "allies",
+        "pages": [
+          16
+        ]
+      },
+      "ruleId": "allies-наёмники",
+      "manualCheck": true
+    },
+    {
+      "id": "mamluk-loadout-2",
+      "name": "Двуручный меч",
+      "cost": {
+        "ducats": 0,
+        "glory": 0
+      },
+      "unitIds": [
+        "allies.mamluk"
+      ],
+      "factionId": null,
+      "variantId": null,
+      "group": "mamluk-loadout",
+      "limit": null,
+      "keywords": [],
+      "statChanges": {},
+      "source": {
+        "source": "allies",
+        "pages": [
+          16
+        ]
+      },
+      "ruleId": "allies-наёмники",
+      "manualCheck": true
+    }
+  ],
+  "constraints": [
+    {
+      "id": "source-ambiguity",
+      "severity": "manual",
+      "message": "Источник содержит неоднозначности: HERETI у Помазанника; формулировки кампанийных лимитов; условия замен и трофейного оружия. Билдер не подтверждает их автоматически. См. «О базе правил».",
+      "ruleId": "core-создавая-отряд",
+      "source": {
+        "source": "core",
+        "pages": [
+          14,
+          19,
+          24
+        ]
+      }
+    }
+  ]
+}

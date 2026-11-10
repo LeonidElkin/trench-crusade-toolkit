@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+.playwright-mcp/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+tools/import-cache/
+
+.reference/
+src/generated/
+public/sources/
+
+*.tsbuildinfo

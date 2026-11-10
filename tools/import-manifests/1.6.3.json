@@ -1,0 +1,197 @@
+{
+  "editionId": "1.6.3",
+  "sources": [
+    {
+      "id": "core",
+      "filename": "Trench Crusade 1.6.3 правила (1)-1.pdf",
+      "edition": "1.6.3"
+    },
+    {
+      "id": "allies",
+      "filename": "Союзники и наёмники печать.pdf",
+      "edition": null
+    }
+  ],
+  "sections": [
+    {
+      "from": 1,
+      "to": 3,
+      "title": "Введение",
+      "category": "intro"
+    },
+    {
+      "from": 4,
+      "to": 11,
+      "title": "Основные правила",
+      "category": "rules"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "title": "Ключевые слова",
+      "category": "keywords"
+    },
+    {
+      "from": 14,
+      "to": 17,
+      "title": "Создание отряда",
+      "category": "mustering"
+    },
+    {
+      "from": 18,
+      "to": 27,
+      "title": "Легион Еретиков",
+      "category": "heretic"
+    },
+    {
+      "from": 28,
+      "to": 32,
+      "title": "Варианты Легиона Еретиков",
+      "category": "heretic-variants"
+    },
+    {
+      "from": 33,
+      "to": 41,
+      "title": "Паломники Траншей",
+      "category": "pilgrims"
+    },
+    {
+      "from": 42,
+      "to": 47,
+      "title": "Варианты Паломников",
+      "category": "pilgrims-variants"
+    },
+    {
+      "from": 48,
+      "to": 58,
+      "title": "Железный Султанат",
+      "category": "sultanate"
+    },
+    {
+      "from": 59,
+      "to": 65,
+      "title": "Варианты Султаната",
+      "category": "sultanate-variants"
+    },
+    {
+      "from": 66,
+      "to": 72,
+      "title": "Новое Антиохийское Княжество",
+      "category": "antioch"
+    },
+    {
+      "from": 73,
+      "to": 81,
+      "title": "Варианты Новой Антиохии",
+      "category": "antioch-variants"
+    },
+    {
+      "from": 82,
+      "to": 93,
+      "title": "Культ Чёрного Грааля",
+      "category": "grail"
+    },
+    {
+      "from": 94,
+      "to": 95,
+      "title": "Песнь скорби Великого Гегемона",
+      "category": "grail-variants"
+    },
+    {
+      "from": 96,
+      "to": 117,
+      "title": "Двор Семиглавого Змея",
+      "category": "court"
+    },
+    {
+      "from": 118,
+      "to": 123,
+      "title": "Дальнобойное оружие",
+      "category": "ranged"
+    },
+    {
+      "from": 124,
+      "to": 126,
+      "title": "Оружие ближнего боя",
+      "category": "melee"
+    },
+    {
+      "from": 127,
+      "to": 127,
+      "title": "Броня",
+      "category": "armour"
+    },
+    {
+      "from": 128,
+      "to": 132,
+      "title": "Снаряжение",
+      "category": "equipment"
+    },
+    {
+      "from": 133,
+      "to": 133,
+      "title": "Общие правила сценариев",
+      "category": "scenarios"
+    },
+    {
+      "from": 134,
+      "to": 135,
+      "title": "Захватить Ничейные земли",
+      "category": "scenario-1"
+    },
+    {
+      "from": 136,
+      "to": 137,
+      "title": "Охота на реликвии",
+      "category": "scenario-2"
+    },
+    {
+      "from": 138,
+      "to": 139,
+      "title": "Охота на героев",
+      "category": "scenario-3"
+    },
+    {
+      "from": 140,
+      "to": 141,
+      "title": "Бойня в траншеях",
+      "category": "scenario-4"
+    },
+    {
+      "from": 142,
+      "to": 143,
+      "title": "Великая война",
+      "category": "scenario-5"
+    },
+    {
+      "from": 144,
+      "to": 145,
+      "title": "Рейд за припасами",
+      "category": "scenario-6"
+    },
+    {
+      "from": 146,
+      "to": 149,
+      "title": "Бронированный поезд",
+      "category": "scenario-7"
+    },
+    {
+      "from": 150,
+      "to": 155,
+      "title": "Штурм берегов",
+      "category": "scenario-8"
+    },
+    {
+      "from": 156,
+      "to": 161,
+      "title": "Охота на Дракона",
+      "category": "scenario-9"
+    },
+    {
+      "from": 162,
+      "to": 168,
+      "title": "Генератор случайных сценариев",
+      "category": "scenario-generator"
+    }
+  ]
+}

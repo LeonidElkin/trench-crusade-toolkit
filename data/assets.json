@@ -1,0 +1,163 @@
+[
+  {
+    "path": "art/heretic.jpeg",
+    "source": "core",
+    "page": 21,
+    "xref": 157,
+    "sha256": "bec22d07a696684946e6980a77af59d65189487615b409c17b615341c396ac54"
+  },
+  {
+    "path": "art/pilgrims.jpeg",
+    "source": "core",
+    "page": 42,
+    "xref": 265,
+    "sha256": "7776dddc532cc504cddfc27e2b35bb81e977b706e1e5d17857a5d65d0c62e733"
+  },
+  {
+    "path": "art/sultanate.jpeg",
+    "source": "core",
+    "page": 65,
+    "xref": 356,
+    "sha256": "ecb19c72dde19361a8f780eda6b68ac0e01826739578b004715467ea85d9e41e"
+  },
+  {
+    "path": "art/antioch.jpeg",
+    "source": "core",
+    "page": 81,
+    "xref": 428,
+    "sha256": "f3af28ebe580d4cee9b4bf40fc78511c5997d2e58e6139cd2ccb43b90f4c112a"
+  },
+  {
+    "path": "art/grail.jpeg",
+    "source": "core",
+    "page": 93,
+    "xref": 488,
+    "sha256": "9039de8f14f6a12479ca58dbfdb00fecafce47070f33de66611bd28a3927b9e0"
+  },
+  {
+    "path": "art/court.jpeg",
+    "source": "core",
+    "page": 107,
+    "xref": 538,
+    "sha256": "e765696afb83662e75419afb3a5cb81f4eeea663b760cdd639c08716fea75135"
+  },
+  {
+    "path": "art/hero.jpeg",
+    "source": "core",
+    "page": 3,
+    "xref": 72,
+    "sha256": "c11ca48091b09760c8d9ed4e05e6950b990fbefe3bb3f29a05602773ca60e2e4"
+  },
+  {
+    "path": "diagrams/core-134-662.jpeg",
+    "source": "core",
+    "page": 134,
+    "xref": 662,
+    "sha256": "2bdd33f4d709db5216fc91f58b585777ea4c9ba8a1f04a72fc7b5c3a8fd5860c"
+  },
+  {
+    "path": "diagrams/core-136-670.jpeg",
+    "source": "core",
+    "page": 136,
+    "xref": 670,
+    "sha256": "295968c06b00a366d1818f2cdca8024b9bdea953d83df7917533aac22e7b3acc"
+  },
+  {
+    "path": "diagrams/core-138-678.png",
+    "source": "core",
+    "page": 138,
+    "xref": 678,
+    "sha256": "85a2109b421bd740569692714bce930a3cd77df5fb41e9c733f18336cc194ea2"
+  },
+  {
+    "path": "diagrams/core-140-686.png",
+    "source": "core",
+    "page": 140,
+    "xref": 686,
+    "sha256": "85457b43c2c0972fb66a0e541bac35f64ae6febb7e4d65a849a6bd4b98e80acd"
+  },
+  {
+    "path": "diagrams/core-142-694.png",
+    "source": "core",
+    "page": 142,
+    "xref": 694,
+    "sha256": "e2123d59b683c5f095d6f0361b4908a70feced2e5b337eed06655f448a743c4e"
+  },
+  {
+    "path": "diagrams/core-144-703.png",
+    "source": "core",
+    "page": 144,
+    "xref": 703,
+    "sha256": "57e1f6c563f35c1a74d5cca38e96b7da0be4cb7be917383c20a6a097a3b69d50"
+  },
+  {
+    "path": "diagrams/core-146-710.jpeg",
+    "source": "core",
+    "page": 146,
+    "xref": 710,
+    "sha256": "3c138a70587d17e193f2d7f282b32a2fbaa9313ca9f003c3e151fe90f3e57d47"
+  },
+  {
+    "path": "diagrams/core-150-724.jpeg",
+    "source": "core",
+    "page": 150,
+    "xref": 724,
+    "sha256": "6342c1e4f83285c7ea491d55755175c4acb8a57c2dd48561e025f41bd4a185ff"
+  },
+  {
+    "path": "diagrams/core-156-743.jpeg",
+    "source": "core",
+    "page": 156,
+    "xref": 743,
+    "sha256": "056974cf999ba589cc31eb3a61777e07dcdb30a516437480e19b93a152188f38"
+  },
+  {
+    "path": "diagrams/core-162-767.png",
+    "source": "core",
+    "page": 162,
+    "xref": 767,
+    "sha256": "91ffaebf9975b3a1c1cddf6a74f75c36b914b88183ab819a9c10311de0e6fddd"
+  },
+  {
+    "path": "diagrams/core-164-777.png",
+    "source": "core",
+    "page": 164,
+    "xref": 777,
+    "sha256": "6fd4b963a9c93b8a9281cae8b99e57e436ba800659c177784e376fda53e766f7"
+  },
+  {
+    "path": "diagrams/core-165-782.png",
+    "source": "core",
+    "page": 165,
+    "xref": 782,
+    "sha256": "4abb34b0ce9e811511bdf764e9964f6f3baa44d02f1a23e80edae3099bb8740f"
+  },
+  {
+    "path": "diagrams/core-165-784.jpeg",
+    "source": "core",
+    "page": 165,
+    "xref": 784,
+    "sha256": "319b1a124f1c2a2c2bb03d44c42f61ce93174230a860c3f5bd1c83ee962014bf"
+  },
+  {
+    "path": "diagrams/core-165-786.jpeg",
+    "source": "core",
+    "page": 165,
+    "xref": 786,
+    "sha256": "df697fb0aa587321a13522f7de59923fd7428c5e40b0d35c4410c30a321244e7"
+  },
+  {
+    "path": "diagrams/core-165-788.jpeg",
+    "source": "core",
+    "page": 165,
+    "xref": 788,
+    "sha256": "5e75a4bffe418879e9d6be5d5740fa637c9d811ed44f70cd7695e0b02e2e1078"
+  },
+  {
+    "path": "diagrams/core-166-793.png",
+    "source": "core",
+    "page": 166,
+    "xref": 793,
+    "sha256": "fe7bfeb728cb4bd446b0b9aa3cfd5c5b0885fd2890fc2d64cdae7f48cd7bbd93"
+  }
+]
