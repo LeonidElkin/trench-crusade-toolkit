@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 2,
+  "edition": "1.6.3",
+  "revision": "ru-1.6.3-visual-r2",
+  "documents": [
+    {
+      "id": "core",
+      "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+      "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+      "edition": "1.6.3",
+      "expectedPages": 168,
+      "translation": "Мастерская Кетсу",
+      "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+    },
+    {
+      "id": "allies",
+      "path": "public/reference/allies-and-mercenaries-ru.pdf",
+      "title": "Trench Crusade. Союзники и Наёмники",
+      "edition": null,
+      "expectedPages": 22,
+      "translation": "Мастерская Кетсу",
+      "sha256": "d0818b7cda3df033bb326bdb96249ba5d612dfc4e2194d476698afe0592754bc"
+    }
+  ]
+}
