@@ -24,5 +24,16 @@
   "siteCompletionNoticeSent": false,
   "doclingInstalled": false,
   "doclingTests": [],
-  "next": "Finish integration, full tests, Pages publication and production MCP; send site-ready notice; only then set up Docling."
+  "next": "Publish verified site, check Actions and production MCP, send explicit site-ready notice; then research/install/test Docling on15reference pages.",
+  "knowledgeBaseReady": true,
+  "automaticChecks": {
+    "unitDataTestsPassed": 45,
+    "importGateTestsPassed": 14,
+    "e2ePassed": 27,
+    "e2eDeliberatelySkipped": 1,
+    "lint": "passed",
+    "strictTypeScript": "passed",
+    "productionBuild": "passed",
+    "localPlaywrightMCP": "passed at5viewports; variants/loadout/reload; JSerrors0"
+  }
 }

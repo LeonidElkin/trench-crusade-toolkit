@@ -23,6 +23,9 @@ export function validateEdition(data: unknown): string[] {
     ...c.upgrades,
     ...c.keywords,
     ...c.constraints,
+    ...c.abilities,
+    ...c.procedures,
+    ...c.issues,
   ]
   for (const group of [
     e.articles,
@@ -34,6 +37,9 @@ export function validateEdition(data: unknown): string[] {
     c.upgrades,
     c.keywords,
     c.constraints,
+    c.abilities,
+    c.procedures,
+    c.issues,
   ])
     check(new Set(group.map((x) => x.id)).size === group.length, 'Duplicate entity ID')
   const rules = new Set(e.articles.map((a) => a.id)),
@@ -41,7 +47,8 @@ export function validateEdition(data: unknown): string[] {
     items = new Set(c.items.map((i) => i.id)),
     upgrades = new Set(c.upgrades.map((i) => i.id)),
     factions = new Set(c.factions.map((f) => f.id)),
-    variants = new Set(c.variants.map((v) => v.id))
+    variants = new Set(c.variants.map((v) => v.id)),
+    abilities = new Set(c.abilities.map((a) => a.id))
   for (const x of all) {
     check(rules.has(x.ruleId), `${x.id}: unknown rule ${x.ruleId}`)
     const source = e.sources.find((s) => s.id === x.source.source)
@@ -60,6 +67,8 @@ export function validateEdition(data: unknown): string[] {
     check(!u.factionId || factions.has(u.factionId), `${u.id}: unknown faction`)
     check(!u.variantId || variants.has(u.variantId), `${u.id}: unknown variant`)
     check(u.max === null || u.max >= u.min, `${u.id}: contradictory quantity range`)
+    for (const id of u.abilityIds) check(abilities.has(id), `${u.id}: unknown ability ${id}`)
+    for (const id of u.linkedRuleIds) check(rules.has(id), `${u.id}: unknown inherited rule ${id}`)
     for (const id of [
       ...(u.allowedItemIds ?? []),
       ...(u.forbiddenItemIds ?? []),
@@ -67,6 +76,8 @@ export function validateEdition(data: unknown): string[] {
     ])
       check(items.has(id), `${u.id}: unknown allowed item ${id}`)
   }
+  for (const ability of c.abilities)
+    for (const id of ability.unitIds) check(units.has(id), `${ability.id}: unknown ability owner ${id}`)
   for (const v of c.variants) {
     check(factions.has(v.factionId), `${v.id}: unknown faction`)
     for (const id of [...Object.keys(v.unitLimits ?? {}), ...Object.keys(v.unitMinimums ?? {})])
@@ -88,17 +99,28 @@ export async function validateCurrent(): Promise<Edition> {
   errors.push(...(await validateVisuals(edition)))
   const audit = JSON.parse(
     await readFile(
-      resolve(import.meta.dirname, '../data/editions/1.6.3/import-audit.json'),
+      resolve(import.meta.dirname, '../data/editions/1.6.3/coverage.json'),
       'utf8',
     ),
-  ) as { pages: { source: string; page: number; retainedCharacters: number }[] }
+  ) as { readyForIntegration: boolean; pages: { document: string; pdfPage: number; files: string[]; independentReview: string; visualInspection: string }[] }
+  if (!audit.readyForIntegration) errors.push('Reconstruction has not passed the independent review gate')
   for (const source of edition.sources) {
-    const pages = audit.pages.filter((p) => p.source === source.id)
-    if (pages.length !== source.pages || new Set(pages.map((p) => p.page)).size !== source.pages)
+    const pages = audit.pages.filter((p) => p.document === source.id)
+    if (pages.length !== source.pages || new Set(pages.map((p) => p.pdfPage)).size !== source.pages)
       errors.push(`${source.id}: incomplete page coverage`)
-    for (const page of pages.filter((p) => p.retainedCharacters > 100))
-      if (!edition.articles.some((a) => a.source === page.source && a.pages.includes(page.page)))
-        errors.push(`Missing article for ${page.source} p${page.page}`)
+    for (const page of pages) {
+      if (page.independentReview !== 'verified' || page.visualInspection !== 'inspected')
+        errors.push(`Unreviewed original page ${source.id}:${page.pdfPage}`)
+      for (const file of page.files)
+        if (!edition.articles.some((a) => a.file === file && a.source === page.document && a.pages.includes(page.pdfPage)))
+          errors.push(`Missing article for ${source.id}:${page.pdfPage}/${file}`)
+    }
+  }
+  const storedCatalog = JSON.parse(await readFile(resolve(import.meta.dirname, '../data/editions/1.6.3/catalog.json'), 'utf8'))
+  if (JSON.stringify(storedCatalog) !== JSON.stringify(edition.catalog)) errors.push('Derived catalog differs from the reviewed primary records; export reconstruction again')
+  for (const article of edition.articles) {
+    const markdown = await readFile(resolve(import.meta.dirname, '../data/editions/1.6.3', article.file), 'utf8')
+    if (markdown !== article.markdown) errors.push(`Derived Markdown differs from reviewed primary: ${article.id}`)
   }
   const lockPath = resolve(import.meta.dirname, '../data/editions/1.6.3/edition-lock.json')
   try {

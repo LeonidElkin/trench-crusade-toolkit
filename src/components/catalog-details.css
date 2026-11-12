@@ -1,0 +1,98 @@
+.faction-rule {
+  min-width: 0;
+  padding: 18px 22px;
+  margin-bottom: 12px;
+}
+.faction-rule > summary,
+.unit-equipment-rules > summary {
+  cursor: pointer;
+  color: #d4cead;
+  line-height: 1.7;
+}
+.faction-rule > .source {
+  display: block;
+  margin-top: 10px;
+}
+.faction-roster-select {
+  margin-bottom: 20px;
+}
+.unit-card,
+.unit-conditions,
+.unit-rule-links,
+.profile-selections {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.unit-conditions,
+.unit-rule-links {
+  margin: 15px 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.unit-rule-links:empty,
+.unit-conditions:empty {
+  display: none;
+}
+.unit-rule-links ul {
+  padding: 0;
+  margin: 6px 0 13px;
+  list-style: none;
+}
+.unit-rule-links li + li {
+  margin-top: 6px;
+}
+.unit-rule-links .text-link,
+.unit-rule-links .text-button {
+  text-align: left;
+  white-space: normal;
+}
+.unit-conditions .prose {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.unit-hiring {
+  margin-bottom: 12px;
+}
+.unit-source-issue {
+  color: #e5ba91;
+}
+.fighter-profile > .unit-rule-links,
+.fighter-profile > .unit-conditions {
+  margin-bottom: 0;
+}
+.profile-selections {
+  padding: 19px 22px;
+  border-bottom: 1px solid #526e3e;
+}
+.profile-selections label {
+  display: block;
+  margin-bottom: 14px;
+}
+.profile-selections .source {
+  display: block;
+  margin-top: 7px;
+}
+.profile-selections .small {
+  margin-top: 8px;
+}
+.unit-portrait-missing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  text-align: center;
+  font-size: 10px;
+  color: #a4ad8e;
+}
+.roster-portrait.unit-portrait-missing > span,
+.army-portrait.unit-portrait-missing > span {
+  display: none;
+}
+@media (max-width: 700px) {
+  .profile-selections,
+  .faction-rule {
+    padding: 16px;
+  }
+}

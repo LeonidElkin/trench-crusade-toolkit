@@ -1,12 +1,25 @@
 import { ExportSchema, WarbandSchema, type Warband } from './schema'
 import { z } from 'zod'
-export const STORAGE_KEY = 'trench-toolkit.warbands.v1'
+export const STORAGE_KEY = 'trench-toolkit.warbands.v2'
+export const LEGACY_STORAGE_KEY = 'trench-toolkit.warbands.v1'
 const EnvelopeSchema = z
-  .object({ version: z.literal(1), warbands: z.array(WarbandSchema).max(1000) })
+  .object({ version: z.literal(2), warbands: z.array(WarbandSchema).max(1000) })
   .strict()
 export interface StorageLike {
   getItem(key: string): string | null
   setItem(key: string, value: string): void
+}
+export function legacyWarbandsNotice(storage: StorageLike): string | null {
+  const previous = storage.getItem(LEGACY_STORAGE_KEY)
+  if (!previous) return null
+  try {
+    const value: unknown = JSON.parse(previous)
+    if (value && typeof value === 'object' && 'warbands' in value && Array.isArray(value.warbands) && value.warbands.length === 0)
+      return null
+  } catch {
+    // Preserve an unreadable old payload as well; it is never migrated or overwritten.
+  }
+  return 'В хранилище есть отряды прежней базы. Они несовместимы с восстановленными правилами и сохранены отдельно. Для новой базы создайте новый отряд.'
 }
 export function loadWarbands(storage: StorageLike): Warband[] {
   const value = storage.getItem(STORAGE_KEY)
@@ -19,12 +32,12 @@ export function loadWarbands(storage: StorageLike): Warband[] {
   return parsed.data.warbands
 }
 export function saveWarbands(storage: StorageLike, warbands: Warband[]) {
-  const envelope = EnvelopeSchema.parse({ version: 1, warbands })
+  const envelope = EnvelopeSchema.parse({ version: 2, warbands })
   storage.setItem(STORAGE_KEY, JSON.stringify(envelope))
 }
 export const exportWarband = (warband: Warband) =>
   JSON.stringify(
-    ExportSchema.parse({ format: 'trench-crusade-warband', version: 1, warband }),
+    ExportSchema.parse({ format: 'trench-crusade-warband', version: 2, warband }),
     null,
     2,
   )
@@ -37,9 +50,11 @@ export function importWarband(text: string): Warband {
     throw new Error('Некорректный JSON. Выберите экспортированный файл отряда.')
   }
   const result = ExportSchema.safeParse(value)
+  if (value && typeof value === 'object' && 'version' in value && value.version === 1)
+    throw new Error('Отряд создан по прежней базе правил (v1) и несовместим с восстановленной базой. Автоматический перенос не выполняется.')
   if (!result.success)
     throw new Error(
-      'Формат отряда не поддерживается или повреждён. Требуется trench-crusade-warband v1.',
+      'Формат отряда не поддерживается или повреждён. Требуется trench-crusade-warband v2.',
     )
   return result.data.warband
 }
@@ -53,6 +68,10 @@ export function duplicateWarband(w: Warband, name = `${w.name} — копия`):
     units: w.units.map((m) => ({
       ...structuredClone(m),
       id: ids.get(m.id)!,
+      loadouts: {
+        ...m.loadouts,
+        ...(m.loadouts['bound-alchemist'] ? { 'bound-alchemist': ids.get(m.loadouts['bound-alchemist']) ?? '' } : {}),
+      },
       equipment: m.equipment.map((e) => ({ ...e, id: crypto.randomUUID() })),
     })),
     createdAt: new Date().toISOString(),

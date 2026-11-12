@@ -9,12 +9,29 @@ const numberMap = z.record(z.string(), z.number().int().nonnegative())
 export const SourceSchema = z.object({
   source: z.enum(['core', 'allies']),
   pages: z.array(z.number().int().positive()).min(1),
-})
+  sectionId: z.string().optional(),
+  bbox: z.array(z.number()).length(4).optional(),
+}).passthrough()
 export type SourceRef = z.infer<typeof SourceSchema>
 const provenance = { source: SourceSchema, ruleId: id }
 export const CategorySchema = z.enum(['ranged', 'melee', 'armour', 'equipment'])
 export type Category = z.infer<typeof CategorySchema>
 const categories = z.array(CategorySchema)
+const definition = z.record(z.string(), z.unknown()).default({})
+const LoadoutGroupSchema = z.object({
+  id,
+  name: id,
+  min: z.number().int().nonnegative(),
+  max: z.number().int().positive(),
+  choices: z.array(z.object({
+    id,
+    name: id,
+    equipment: ids,
+    armour: z.string().optional(),
+    ignoredKeywords: ids.optional(),
+  })),
+  source: SourceSchema,
+})
 const StatsSchema = z.object({
   name: z.string(),
   movement: z.string(),
@@ -32,6 +49,10 @@ export const FactionSchema = z.object({
   image: id,
   startingBudget: CostSchema,
   battleBudget: CostSchema,
+  loreRuleId: id.optional(),
+  specialRuleIds: ids.default([]),
+  fireteamLimit: z.number().int().nonnegative().default(0),
+  definition,
 })
 export const ItemSchema = z.object({
   id,
@@ -44,10 +65,13 @@ export const ItemSchema = z.object({
   keywords: ids,
   ...provenance,
   unresolved: z.boolean().optional(),
-  shield: z.boolean().optional(),
-  headgear: z.boolean().optional(),
-  carriedHands: z.number().int().nonnegative().optional(),
-  armourModifier: z.number().int().optional(),
+  shield: z.boolean().nullable().optional(),
+  headgear: z.boolean().nullable().optional(),
+  carriedHands: z.number().int().nonnegative().nullable().optional(),
+  armourModifier: z.number().int().nullable().optional(),
+  countsAsItemName: z.string().nullable().optional(),
+  prerequisites: z.array(z.unknown()).default([]),
+  definition,
 })
 export type Item = z.infer<typeof ItemSchema>
 export const OfferSchema = z.object({
@@ -69,6 +93,8 @@ export const OfferSchema = z.object({
   variantId: id.optional(),
   unitIds: ids.optional(),
   manualCheck: z.boolean().optional(),
+  limitScope: z.enum(['campaign', 'warband', 'unspecified']).default('unspecified'),
+  definition,
 })
 export type Offer = z.infer<typeof OfferSchema>
 const OfferOverrideSchema = z.object({
@@ -102,6 +128,7 @@ export const VariantSchema = z.object({
   startingBudget: CostSchema.optional(),
   battleBudget: CostSchema.optional(),
   heavyRangedLimit: z.number().int().optional(),
+  definition,
 })
 export type Variant = z.infer<typeof VariantSchema>
 export const UnitSchema = z.object({
@@ -132,6 +159,12 @@ export const UnitSchema = z.object({
   powerMin: z.number().int().nonnegative().optional(),
   powerMax: z.number().int().nonnegative().optional(),
   allowedFactions: ids.optional(),
+  equipmentPolicy: z.string().optional(),
+  equipmentAccessNote: z.string().optional(),
+  abilityIds: ids.default([]),
+  linkedRuleIds: ids.default([]),
+  loadoutGroups: z.array(LoadoutGroupSchema).default([]),
+  definition,
 })
 export type Unit = z.infer<typeof UnitSchema>
 export const UpgradeSchema = z.object({
@@ -160,10 +193,12 @@ export const UpgradeSchema = z.object({
   removesKeywords: ids.optional(),
   requiresUpgradeIds: ids.optional(),
   forbiddenUpgradeIds: ids.optional(),
+  groupLimitPerModel: z.number().int().positive().default(1),
+  definition,
 })
 export type Upgrade = z.infer<typeof UpgradeSchema>
 export const CatalogSchema = z.object({
-  schemaVersion: z.literal(1),
+  schemaVersion: z.literal(2),
   edition: id,
   revision: id,
   factions: z.array(FactionSchema),
@@ -173,6 +208,9 @@ export const CatalogSchema = z.object({
   offers: z.array(OfferSchema),
   upgrades: z.array(UpgradeSchema),
   keywords: z.array(z.object({ id, name: id, ...provenance })),
+  abilities: z.array(z.object({ id, name: id, unitIds: ids, ...provenance })),
+  procedures: z.array(z.object({ id, ...provenance }).passthrough()),
+  issues: z.array(z.object({ id, message: id, ...provenance })),
   constraints: z.array(
     z.object({
       id,
@@ -192,6 +230,7 @@ export const ArticleSchema = z.object({
   pages: z.array(z.number().int().positive()).min(1),
   category: id,
   section: id,
+  originalSection: z.string().optional(),
   file: id,
   sha256: id,
   markdown: z.string(),
@@ -202,7 +241,7 @@ export const EditionSchema = z.object({
   id,
   name: id,
   revision: id,
-  schemaVersion: z.literal(1),
+  schemaVersion: z.literal(2),
   sources: z.array(
     z.object({
       id,
@@ -228,12 +267,13 @@ export const ModelSchema = z
     upgrades: ids.max(100),
     notes: z.string().max(10000),
     fireteam: z.string().max(50).default(''),
+    loadouts: z.record(z.string(), z.string()).default({}),
   })
   .strict()
 export type Model = z.infer<typeof ModelSchema>
 export const WarbandSchema = z
   .object({
-    schemaVersion: z.literal(1),
+    schemaVersion: z.literal(2),
     id,
     name: z.string().min(1).max(200),
     editionId: id,
@@ -255,7 +295,7 @@ export type Warband = z.infer<typeof WarbandSchema>
 export const ExportSchema = z
   .object({
     format: z.literal('trench-crusade-warband'),
-    version: z.literal(1),
+    version: z.literal(2),
     warband: WarbandSchema,
   })
   .strict()

@@ -14,7 +14,7 @@ describe('rules database invariants', () => {
     expect(edition.sources.find((s) => s.id === 'allies')?.edition).toBeNull()
     expect(edition.catalog.factions).toHaveLength(6)
     expect(edition.catalog.variants).toHaveLength(14)
-    expect(edition.catalog.units).toHaveLength(66)
+    expect(edition.catalog.units).toHaveLength(70)
     expect(new Set(edition.catalog.units.filter(u => u.mercenary).map(u => u.ruleId)).size).toBe(10)
   })
   it('detects a broken rule link and duplicate ID instead of accepting partial data', () => {

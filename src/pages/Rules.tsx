@@ -15,14 +15,12 @@ import { createSearchIndex, searchArticles } from '../domain/search'
 import { Markdown } from '../components/Markdown'
 import { RuleLink, Source } from '../components/Common'
 import { UnitPortrait } from '../components/UnitPortrait'
+import { articleBody, articleExcerpt, articleGroups } from '../data/article-format'
 const index = createSearchIndex(articles)
-const groups = [...new Map(articles.map((a) => [a.category, a.section])).entries()]
+const groups = articleGroups(articles)
 const commonGroups = [
   { id: '', name: 'Все материалы' },
-  { id: 'rules', name: 'Основные правила' },
-  { id: 'keywords', name: 'Ключевые слова' },
-  { id: 'ranged', name: 'Оружие' },
-  { id: 'allies', name: 'Наёмники' },
+  ...groups.slice(0, 5).map(([id, name]) => ({ id, name })),
 ]
 export function Rules({ articleId }: { articleId?: string }) {
   const [query, setQuery] = useState(''),
@@ -48,14 +46,16 @@ export function Rules({ articleId }: { articleId?: string }) {
     [query, category, bookmarks, onlyBookmarks],
   )
   const keyword = article ? catalog.keywords.find((k) => k.ruleId === article.id) : undefined
-  const profile = article ? catalog.units.find((u) => u.ruleId === article.id) : undefined
+  const profiles = article ? catalog.units.filter((u) => u.ruleId === article.id) : []
+  const profile = profiles.length === 1 ? profiles[0] : undefined
   const related = article
     ? [...catalog.items, ...catalog.units, ...catalog.upgrades].filter((i) =>
         keyword
           ? i.keywords.some(
               (k) => k === keyword.name || (keyword.name === 'BLAST (X)' && k.startsWith('BLAST')),
             )
-          : i.ruleId === article.id,
+          : i.ruleId === article.id ||
+            ('linkedRuleIds' in i && i.linkedRuleIds.includes(article.id)),
       )
     : []
   const sameSection = article ? articles.filter((a) => a.category === article.category) : []
@@ -88,44 +88,27 @@ export function Rules({ articleId }: { articleId?: string }) {
         <a className={!articleId ? 'sidebar-all active' : 'sidebar-all'} href="#/rules">
           Все материалы<span>{articles.length}</span>
         </a>
-        {groups
-          .filter(([id]) => !id.startsWith('scenario-') || id === 'scenario-generator')
-          .map(([id, name]) => (
-            <details key={id} open={article?.category === id || undefined}>
-              <summary>
-                {name}
-                <ChevronRight size={14} />
-              </summary>
-              <div>
-                {articles
-                  .filter((a) => a.category === id)
-                  .map((a) => (
-                    <a
-                      className={a.id === articleId ? 'active' : ''}
-                      href={ruleHref(a.id)}
-                      key={a.id}
-                    >
-                      {a.title}
-                    </a>
-                  ))}
-              </div>
-            </details>
-          ))}
-        <details>
-          <summary>
-            Сценарии
-            <ChevronRight size={14} />
-          </summary>
-          <div>
-            {groups
-              .filter(([id]) => /^scenario-\d/.test(id))
-              .map(([id, name]) => (
-                <a key={id} href={ruleHref(articles.find((a) => a.category === id)!.id)}>
-                  {name}
-                </a>
-              ))}
-          </div>
-        </details>
+        {groups.map(([id, name]) => (
+          <details key={id} open={article?.category === id || undefined}>
+            <summary>
+              {name}
+              <ChevronRight size={14} />
+            </summary>
+            <div>
+              {articles
+                .filter((a) => a.category === id)
+                .map((a) => (
+                  <a
+                    className={a.id === articleId ? 'active' : ''}
+                    href={ruleHref(a.id)}
+                    key={a.id}
+                  >
+                    {a.title}
+                  </a>
+                ))}
+            </div>
+          </details>
+        ))}
         <div className="sidebar-foot">
           Редакция 1.6.3
           <br />
@@ -190,10 +173,7 @@ export function Rules({ articleId }: { articleId?: string }) {
                   className="rule-portrait"
                 />
               )}
-              <Markdown
-                content={article.markdown.replace(/^<!--.*?-->\s*##[^\n]*\n/s, '')}
-                currentId={article.id}
-              />
+              <Markdown content={articleBody(article.markdown)} currentId={article.id} />
             </article>
             {related.length > 0 && (
               <div className="related-panel">
@@ -294,13 +274,7 @@ export function Rules({ articleId }: { articleId?: string }) {
                   <div>
                     <span className="eyebrow">{a.section}</span>
                     <h2>{a.title}</h2>
-                    <p>
-                      {a.text.slice(
-                        a.text.indexOf(a.title) + a.title.length,
-                        a.text.indexOf(a.title) + a.title.length + 160,
-                      )}
-                      …
-                    </p>
+                    <p>{articleExcerpt(a)}</p>
                     <Source source={a} />
                   </div>
                   <ChevronRight size={20} />

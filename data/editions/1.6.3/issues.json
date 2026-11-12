@@ -1,0 +1,637 @@
+[
+  {
+    "id": "allies-dog-equipment",
+    "message": "В профиле собаки нет явного разрешения или запрета на покупку обычной экипировки; не выводить запрет из вида модели.",
+    "source": {
+      "source": "allies",
+      "pages": [
+        18
+      ],
+      "sectionId": "allies-trench-dog",
+      "document": "allies",
+      "blocks": [
+        {
+          "id": "b008",
+          "bbox": [
+            36,
+            225.81552124023438,
+            338.7239685058594,
+            280.4005126953125
+          ]
+        }
+      ]
+    },
+    "ruleId": "allies-trench-dog"
+  },
+  {
+    "id": "allies-mamluk-armour",
+    "message": "Профиль печатает -2(3); сохранено дословно. В личном арсенале есть набор с Окопным Щитом; UI обязан показывать выбранный набор и исходный профиль отдельно.",
+    "source": {
+      "source": "allies",
+      "pages": [
+        16
+      ],
+      "sectionId": "allies-mamluk-faris",
+      "document": "allies"
+    },
+    "ruleId": "allies-mamluk-faris"
+  },
+  {
+    "id": "allies-monk-equipment-scope",
+    "message": "Исходный текст запрещает модифицировать «вооружение». Область запрета для дополнительной брони и прочего снаряжения не уточнена; не выдавать полную блокировку всех категорий за подтверждённое правило.",
+    "source": {
+      "source": "allies",
+      "pages": [
+        8
+      ],
+      "sectionId": "allies-mendelist-monk",
+      "document": "allies"
+    },
+    "ruleId": "allies-mendelist-monk"
+  },
+  {
+    "id": "core-campaign-not-provided",
+    "message": "Предисловие прямо называет правила кампаний и исследований отсутствующими в данном плейтесте. Отсылки к серьёзным ранениям, исследованиям и кампании сохраняются; из этих двух PDF нельзя восстановить отсутствующую полную кампанийную процедуру.",
+    "source": {
+      "source": "core",
+      "pages": [
+        2,
+        9,
+        14,
+        16
+      ],
+      "sectionId": "core-introduction",
+      "id": "core-campaign-not-provided",
+      "document": "core",
+      "description": "Предисловие прямо называет правила кампаний и исследований отсутствующими в данном плейтесте. Отсылки к серьёзным ранениям, исследованиям и кампании сохраняются; из этих двух PDF нельзя восстановить отсутствующую полную кампанийную процедуру."
+    },
+    "ruleId": "core-introduction"
+  },
+  {
+    "id": "core-dragon-base-bands",
+    "message": "Таблица Дракона задаёт интервалы баз 120–200, 210–250 и 260–300 мм. Значения 201–209 и 251–259 не описаны. Не расширять интервалы автоматически и не превращать фразу о 300 мм в неподтверждённую высоту модели.",
+    "source": {
+      "source": "core",
+      "pages": [
+        157
+      ],
+      "sectionId": "core-scenario-9",
+      "id": "core-dragon-base-bands",
+      "document": "core",
+      "description": "Таблица Дракона задаёт интервалы баз 120–200, 210–250 и 260–300 мм. Значения 201–209 и 251–259 не описаны. Не расширять интервалы автоматически и не превращать фразу о 300 мм в неподтверждённую высоту модели."
+    },
+    "ruleId": "core-scenario-9"
+  },
+  {
+    "id": "core-risky-keyword-alias",
+    "message": "Справочник определяет RISKY ACTION, но таблицы оружия используют сокращение RISKY. Сохраняются оба исходных написания; связь должна быть явной нормализацией.",
+    "source": {
+      "source": "core",
+      "pages": [
+        13,
+        121,
+        125
+      ],
+      "sectionId": "core-keyword-fire",
+      "id": "core-risky-keyword-alias",
+      "document": "core",
+      "description": "Справочник определяет RISKY ACTION, но таблицы оружия используют сокращение RISKY. Сохраняются оба исходных написания; связь должна быть явной нормализацией."
+    },
+    "ruleId": "core-keyword-fire"
+  },
+  {
+    "id": "core-trench-shield-machine-conflict",
+    "message": "Краткая таблица p9 говорит, что Траншейный щит совмещается с любой бронёй, но в той же таблице и полном описании p127 Механизированная броня не совмещается с щитом. Применяется специальное исключение p127, обе формулировки сохранены.",
+    "source": {
+      "source": "core",
+      "pages": [
+        9,
+        127
+      ],
+      "sectionId": "core-injuries",
+      "id": "core-trench-shield-machine-conflict",
+      "document": "core",
+      "description": "Краткая таблица p9 говорит, что Траншейный щит совмещается с любой бронёй, но в той же таблице и полном описании p127 Механизированная броня не совмещается с щитом. Применяется специальное исключение p127, обе формулировки сохранены."
+    },
+    "ruleId": "core-injuries"
+  },
+  {
+    "id": "core-charge-line-of-sight",
+    "message": "Краткое описание Charge на p5 требует видимую цель; развёрнутое Нападение на p7 допускает отсутствие прямой видимости после РИСКОВАННОГО ДЕЙСТВИЯ. Оба текста сохранены; различие не устранено догадкой.",
+    "source": {
+      "source": "core",
+      "pages": [
+        5,
+        7
+      ],
+      "sectionId": "core-actions",
+      "id": "core-charge-line-of-sight",
+      "document": "core",
+      "description": "Краткое описание Charge на p5 требует видимую цель; развёрнутое Нападение на p7 допускает отсутствие прямой видимости после РИСКОВАННОГО ДЕЙСТВИЯ. Оба текста сохранены; различие не устранено догадкой."
+    },
+    "ruleId": "core-actions"
+  },
+  {
+    "id": "core-turn-first-activation",
+    "message": "На p4 игрок с меньшим количеством моделей на столе решает, кто начинает активации; на p11 игрок с меньшим количеством моделей в отряде сам начинает новый ход. Обе формулировки сохранены.",
+    "source": {
+      "source": "core",
+      "pages": [
+        4,
+        11
+      ],
+      "sectionId": "core-foundations",
+      "id": "core-turn-first-activation",
+      "document": "core",
+      "description": "На p4 игрок с меньшим количеством моделей на столе решает, кто начинает активации; на p11 игрок с меньшим количеством моделей в отряде сам начинает новый ход. Обе формулировки сохранены."
+    },
+    "ruleId": "core-foundations"
+  },
+  {
+    "id": "core-source-typographical-errors",
+    "message": "В оригинале встречаются «больгих» (p9), лишняя закрывающая скобка BLACK GRAIL (p12), «ДЕЙСТВИК» (p125) и «болгий Ада» (p129). Они сохранены в транскрипции, а не молча исправлены.",
+    "source": {
+      "source": "core",
+      "pages": [
+        9,
+        12,
+        125,
+        129
+      ],
+      "sectionId": "core-injuries",
+      "id": "core-source-typographical-errors",
+      "document": "core",
+      "description": "В оригинале встречаются «больгих» (p9), лишняя закрывающая скобка BLACK GRAIL (p12), «ДЕЙСТВИК» (p125) и «болгий Ада» (p129). Они сохранены в транскрипции, а не молча исправлены."
+    },
+    "ruleId": "core-injuries"
+  },
+  {
+    "id": "core-scenario-glory-victory-wording",
+    "message": "В Славных подвигах источник сначала выдаёт Очко Славы, затем пишет «Очки победы за них можно получить только один раз». Формулировки сохранены; валюты не объединяются.",
+    "source": {
+      "source": "core",
+      "pages": [
+        135,
+        137,
+        139
+      ],
+      "sectionId": "core-scenario-1",
+      "id": "core-scenario-glory-victory-wording",
+      "document": "core",
+      "description": "В Славных подвигах источник сначала выдаёт Очко Славы, затем пишет «Очки победы за них можно получить только один раз». Формулировки сохранены; валюты не объединяются."
+    },
+    "ruleId": "core-scenario-1"
+  },
+  {
+    "id": "core-scenario3-objective-type",
+    "message": "Сценарий3 просит разместить три маркера Целей, но начисление контроля описывает нахождение внутри здания-Цели. Устройства/границы зданий на этих маркерах источник явно не задаёт.",
+    "source": {
+      "source": "core",
+      "pages": [
+        138,
+        139
+      ],
+      "sectionId": "core-scenario-3",
+      "id": "core-scenario3-objective-type",
+      "document": "core",
+      "description": "Сценарий3 просит разместить три маркера Целей, но начисление контроля описывает нахождение внутри здания-Цели. Устройства/границы зданий на этих маркерах источник явно не задаёт."
+    },
+    "ruleId": "core-scenario-3"
+  },
+  {
+    "id": "core-scenario4-mine-placement",
+    "message": "Схема p140 отмечает область постановки мин шириной12дюймов рядом с зоной Обороняющегося; текст p141 говорит «не ближе12» от своей зоны. Схема и текст сохранены; направление ограничения не исправлено предположением.",
+    "source": {
+      "source": "core",
+      "pages": [
+        140,
+        141
+      ],
+      "sectionId": "core-scenario-4",
+      "id": "core-scenario4-mine-placement",
+      "document": "core",
+      "description": "Схема p140 отмечает область постановки мин шириной12дюймов рядом с зоной Обороняющегося; текст p141 говорит «не ближе12» от своей зоны. Схема и текст сохранены; направление ограничения не исправлено предположением."
+    },
+    "ruleId": "core-scenario-4"
+  },
+  {
+    "id": "core-gas-mask-headgear-unspecified",
+    "message": "Общее правило ограничивает один тип головного убора. Combat Helmet и Iron Capirote названы шлемами, но Gas Mask не классифицирован как головной убор; headgear для него оставлен null.",
+    "source": {
+      "source": "core",
+      "pages": [
+        118,
+        129
+      ],
+      "sectionId": "core-equipment-capacity",
+      "id": "core-gas-mask-headgear-unspecified",
+      "document": "core",
+      "description": "Общее правило ограничивает один тип головного убора. Combat Helmet и Iron Capirote названы шлемами, но Gas Mask не классифицирован как головной убор; headgear для него оставлен null."
+    },
+    "ruleId": "core-equipment-capacity"
+  },
+  {
+    "id": "core-scenario5-attacker-unspecified",
+    "message": "Великая война предписывает начинать развёртывание с Атакующего, но не содержит назначения Атакующего. Схема подписывает обе стороны Player, поэтому роль не назначается автоматически.",
+    "source": {
+      "source": "core",
+      "pages": [
+        142,
+        143
+      ],
+      "sectionId": "core-scenario-5",
+      "id": "core-scenario5-attacker-unspecified",
+      "document": "core",
+      "description": "Великая война предписывает начинать развёртывание с Атакующего, но не содержит назначения Атакующего. Схема подписывает обе стороны Player, поэтому роль не назначается автоматически."
+    },
+    "ruleId": "core-scenario-5"
+  },
+  {
+    "id": "core-random-campaign-victory-minimum",
+    "message": "Общие сценарии p133 дают победителю5ОП, если результат иначе указывает меньшее количество; генератор p162 говорит5ОП, «если результат не указывает меньшее». Обе исходные формулировки сохранены без выбора за игрока.",
+    "source": {
+      "source": "core",
+      "pages": [
+        133,
+        162
+      ],
+      "sectionId": "core-scenarios-general",
+      "id": "core-random-campaign-victory-minimum",
+      "document": "core",
+      "description": "Общие сценарии p133 дают победителю5ОП, если результат иначе указывает меньшее количество; генератор p162 говорит5ОП, «если результат не указывает меньшее». Обе исходные формулировки сохранены без выбора за игрока."
+    },
+    "ruleId": "core-scenarios-general"
+  },
+  {
+    "id": "core-field-artillery-not-provided",
+    "message": "Сценарии отсылают к правилам Полевой Артиллерии для профиля Орудийной Башни/Мортиры. Сам раздел и эти профили отсутствуют в предоставленном основном PDF: повторный просмотр common-диапазона и поиск по свежему rawdict всего документа обнаружили только эти две отсылки. Не заменять их профильными миномётами фракций или другой редакцией.",
+    "source": {
+      "source": "core",
+      "pages": [
+        147,
+        151
+      ],
+      "sectionId": "core-scenario-7",
+      "id": "core-field-artillery-not-provided",
+      "document": "core",
+      "description": "Сценарии отсылают к правилам Полевой Артиллерии для профиля Орудийной Башни/Мортиры. Сам раздел и эти профили отсутствуют в предоставленном основном PDF: повторный просмотр common-диапазона и поиск по свежему rawdict всего документа обнаружили только эти две отсылки. Не заменять их профильными миномётами фракций или другой редакцией."
+    },
+    "ruleId": "core-scenario-7"
+  },
+  {
+    "id": "source-hereti",
+    "message": "В строке ключевых слов Помазанника напечатано HERETI, в других профилях — HERETIC. Исходное HERETI сохранено; автоматическое приравнивание не подтверждено источником.",
+    "source": {
+      "source": "core",
+      "pages": [
+        24
+      ],
+      "sectionId": "core-heretic-anointed",
+      "id": "source-hereti",
+      "document": "core",
+      "message": "В строке ключевых слов Помазанника напечатано HERETI, в других профилях — HERETIC. Исходное HERETI сохранено; автоматическое приравнивание не подтверждено источником.",
+      "status": "unresolved-source",
+      "resolution": null
+    },
+    "ruleId": "core-heretic-anointed"
+  },
+  {
+    "id": "source-cumbersom",
+    "message": "В таблице Когтей Тартара напечатано CUMBERSOM без конечной E; определённое в общих правилах слово — CUMBERSOME. Исходная таблица сохранена.",
+    "source": {
+      "source": "core",
+      "pages": [
+        20
+      ],
+      "sectionId": "core-heretic-tartarus-claws",
+      "id": "source-cumbersom",
+      "document": "core",
+      "message": "В таблице Когтей Тартара напечатано CUMBERSOM без конечной E; определённое в общих правилах слово — CUMBERSOME. Исходная таблица сохранена.",
+      "status": "unresolved-source",
+      "resolution": null
+    },
+    "ruleId": "core-heretic-tartarus-claws"
+  },
+  {
+    "id": "source-mortar-range",
+    "message": "Таблица Траншейного миномёта даёт дальность 48”, а текст выбора точки ограничивает её 36”. Оба значения сохранены; окончательная трактовка не задана.",
+    "source": {
+      "source": "core",
+      "pages": [
+        45
+      ],
+      "sectionId": "core-pilgrim-trench-mortar",
+      "id": "source-mortar-range",
+      "document": "core",
+      "message": "Таблица Траншейного миномёта даёт дальность 48”, а текст выбора точки ограничивает её 36”. Оба значения сохранены; окончательная трактовка не задана.",
+      "status": "unresolved-source",
+      "resolution": null
+    },
+    "ruleId": "core-pilgrim-trench-mortar"
+  },
+  {
+    "id": "source-autocannon-row",
+    "message": "В разделе Автопушка строка таблицы названа «Пулемёт». Название строки сохранено, её отдельные характеристики привязаны к разделу Автопушки.",
+    "source": {
+      "source": "core",
+      "pages": [
+        45
+      ],
+      "sectionId": "core-pilgrim-autocannon",
+      "id": "source-autocannon-row",
+      "document": "core",
+      "message": "В разделе Автопушка строка таблицы названа «Пулемёт». Название строки сохранено, её отдельные характеристики привязаны к разделу Автопушки.",
+      "status": "unresolved-source",
+      "resolution": null
+    },
+    "ruleId": "core-pilgrim-autocannon"
+  },
+  {
+    "id": "source-house-collection",
+    "message": "Коллекции оружия сначала требуют выбрать два оружия, затем говорят «Только одно оружие может быть выбрано из этого списка». Неясно, имеется в виду по одному из арсеналов или общий предел. Ограничение требует ручной проверки.",
+    "source": {
+      "source": "core",
+      "pages": [
+        61
+      ],
+      "sectionId": "core-sultanate-house-of-wisdom",
+      "id": "source-house-collection",
+      "document": "core",
+      "message": "Коллекции оружия сначала требуют выбрать два оружия, затем говорят «Только одно оружие может быть выбрано из этого списка». Неясно, имеется в виду по одному из арсеналов или общий предел. Ограничение требует ручной проверки.",
+      "status": "unresolved-source",
+      "resolution": null
+    },
+    "ruleId": "core-sultanate-house-of-wisdom"
+  },
+  {
+    "id": "source-auto-pistole",
+    "message": "В арсенале напечатано «Автоматический пистоле» без последней т. Исходная строка сохранена, связь с общим описанием Автоматического пистолета задаётся явно как редакторская нормализация названия.",
+    "source": {
+      "source": "core",
+      "pages": [
+        34
+      ],
+      "sectionId": "core-pilgrim-arsenal",
+      "id": "source-auto-pistole",
+      "document": "core",
+      "message": "В арсенале напечатано «Автоматический пистоле» без последней т. Исходная строка сохранена, связь с общим описанием Автоматического пистолета задаётся явно как редакторская нормализация названия.",
+      "status": "unresolved-source",
+      "resolution": null
+    },
+    "ruleId": "core-pilgrim-arsenal"
+  },
+  {
+    "id": "source-wretch-glory-price",
+    "message": "Предметы Несчастного ограничены стоимостью 10 дукатов за единицу. Текст не задаёт соотношения со Славой и не формулирует отдельный запрет на предметы за Славу. Для таких покупок нельзя автоматически считать ограничение выполненным.",
+    "source": {
+      "source": "core",
+      "pages": [
+        27
+      ],
+      "sectionId": "core-heretic-wretch",
+      "id": "source-wretch-glory-price",
+      "document": "core",
+      "message": "Предметы Несчастного ограничены стоимостью 10 дукатов за единицу. Текст не задаёт соотношения со Славой и не формулирует отдельный запрет на предметы за Славу. Для таких покупок нельзя автоматически считать ограничение выполненным.",
+      "status": "unresolved-source",
+      "resolution": null
+    },
+    "ruleId": "core-heretic-wretch"
+  },
+  {
+    "id": "source-castigator-name",
+    "message": "Правило Гнев Божий называет «Кастигатора», а профиль этой фракции назван «Каратель» (стр.37–38). Связь названий является явной редакторской интерпретацией и требует ручной проверки; исходные формулировки сохранены.",
+    "source": {
+      "source": "core",
+      "pages": [
+        43
+      ],
+      "sectionId": "core-pilgrim-procession-of-sacred-affliction",
+      "id": "source-castigator-name",
+      "document": "core",
+      "message": "Правило Гнев Божий называет «Кастигатора», а профиль этой фракции назван «Каратель» (стр.37–38). Связь названий является явной редакторской интерпретацией и требует ручной проверки; исходные формулировки сохранены.",
+      "status": "unresolved-source",
+      "resolution": null
+    },
+    "ruleId": "core-pilgrim-procession-of-sacred-affliction"
+  },
+  {
+    "id": "source-staff-conflict",
+    "message": "Богохульный посох: специальное описание Еретиков на p20 даёт +1DICE к другим ДЕЙСТВИЯМ кроме Рывка/дальних/ближних атак, а общее описание p125 требует -1DICE к попаданию. Это разные тексты одного PDF; источник не задаёт явного приоритета. Не сливать предметы по имени и не подменять одно описание другим. Локальное предложение связано со специальной статьёй p20; противоречие должно быть видимо.",
+    "source": {
+      "source": "core",
+      "pages": [
+        20,
+        125
+      ],
+      "sectionId": "core-heretic-staff",
+      "document": "core"
+    },
+    "ruleId": "core-heretic-staff"
+  },
+  {
+    "id": "source-tartarus-claws-conflict",
+    "message": "Когти Тартара: p20 даёт дополнительное перемещение6”, запрещает щит и печатает CUMBERSOM; p125 даёт3”, не содержит этой фразы о щите и печатает прочерк в ключевых словах. Сохранены отдельные предметы/статьи и локальная связь предложения. Источник не указывает, какое описание отменяет другое.",
+    "source": {
+      "source": "core",
+      "pages": [
+        20,
+        125
+      ],
+      "sectionId": "core-heretic-tartarus-claws",
+      "document": "core"
+    },
+    "ruleId": "core-heretic-tartarus-claws"
+  },
+  {
+    "id": "source-wrath-ranged-wording",
+    "message": "Последняя фраза Гнева Божия буквально «Эта модель может не носить никакого дальнобойного оружия». В данных noRanged трактует это как запрет (возможная передача английского may not), но русская формулировка неоднозначна. Исходная фраза сохранена; запрет является явно отмеченным рабочим толкованием, а не бесспорным значением PDF.",
+    "source": {
+      "source": "core",
+      "pages": [
+        43
+      ],
+      "sectionId": "core-pilgrim-procession-of-sacred-affliction",
+      "document": "core"
+    },
+    "ruleId": "core-pilgrim-procession-of-sacred-affliction"
+  },
+  {
+    "id": "core-issue-prussia-automatic-weapons",
+    "message": "«Автоматические дробовики и автоматические пистолеты не ограничены для Элиты». Формулировка не различает снятие ограничения по ключевому слову ELITE и изменение количественного лимита. Не превращать в отсутствие лимита без отдельного решения.",
+    "source": {
+      "source": "core",
+      "pages": [
+        74
+      ],
+      "sectionId": "core-antioch-prussia",
+      "document": "core"
+    },
+    "ruleId": "core-antioch-prussia"
+  },
+  {
+    "id": "core-issue-abyssinia-militia-name",
+    "message": "На79 использованы «Ополченцы», а профиль основной фракции70 называется «Йомен». Нового профиля Ополченца источник не даёт. Сохраняется явное сопоставление для интерфейса, а исходное название не подменяется.",
+    "source": {
+      "source": "core",
+      "pages": [
+        70,
+        79
+      ],
+      "sectionId": "core-antioch-abyssinia",
+      "document": "core"
+    },
+    "ruleId": "core-antioch-abyssinia"
+  },
+  {
+    "id": "core-issue-sapper-charges-name",
+    "message": "Исключение «Снаряды Сапёров» в74/79 не совпадает с названием «Фугасный заряд» в арсенале67. Предполагаемое соответствие не считать подтверждённым и не разрешать запрещённое вооружение молча.",
+    "source": {
+      "source": "core",
+      "pages": [
+        67,
+        74,
+        79
+      ],
+      "sectionId": "core-antioch-abyssinia",
+      "document": "core"
+    },
+    "ruleId": "core-antioch-abyssinia"
+  },
+  {
+    "id": "core-issue-eire-heavy-armour-name",
+    "message": "Рейнджерам запрещена «Тяжёлая ... броня» на74; арсенал67 использует «Усиленная броня». Сохраняются буквальная формулировка и необходимость редакторского решения об этом названии.",
+    "source": {
+      "source": "core",
+      "pages": [
+        67,
+        74
+      ],
+      "sectionId": "core-antioch-eire",
+      "document": "core"
+    },
+    "ruleId": "core-antioch-eire"
+  },
+  {
+    "id": "core-issue-chewa-other-model",
+    "message": "Условие бонуса Чева сформулировано «с другой моделью, кроме Чева». Буквальное описание сохранено; неоднозначно, исключает ли это другую модель Чева или только атакующего Чева.",
+    "source": {
+      "source": "core",
+      "pages": [
+        79
+      ],
+      "sectionId": "core-antioch-abyssinia",
+      "document": "core"
+    },
+    "ruleId": "core-antioch-abyssinia"
+  },
+  {
+    "id": "core-issue-dirge-knight-count",
+    "message": "Исполнитель использует характеристики Чумного Рыцаря; отдельно разрешены «до трёх Чумных Рыцарей». Не сказано прямо, входит ли обязательный Исполнитель в этот предел. Никакой из вариантов подсчёта не помечен подтверждённым.",
+    "source": {
+      "source": "core",
+      "pages": [
+        94
+      ],
+      "sectionId": "core-grail-dirge",
+      "document": "core"
+    },
+    "ruleId": "core-grail-dirge"
+  },
+  {
+    "id": "core-issue-court-sin-aliases",
+    "message": "В списке98 употреблены Гордость, Жадность, Праздность, тогда как разделы сил называют Гордыня, Алчность, Лень. Сохранены исходные названия и явные aliases без дополнительных новых грехов.",
+    "source": {
+      "source": "core",
+      "pages": [
+        98,
+        102,
+        103,
+        104,
+        105
+      ],
+      "sectionId": "core-court-recruitment",
+      "document": "core"
+    },
+    "ruleId": "core-court-recruitment"
+  },
+  {
+    "id": "core-issue-court-blunderbuss",
+    "message": "В арсенале Двора указан «Бландербус»; полное описание «Мушкетон (Blunderbuss)» на95 вводится как эксклюзивное для Песни скорби. Вероятное соответствие названий не выдаётся за прямую ссылку исходника.",
+    "source": {
+      "source": "core",
+      "pages": [
+        95,
+        98
+      ],
+      "sectionId": "core-court-arsenal",
+      "document": "core"
+    },
+    "ruleId": "core-court-arsenal"
+  },
+  {
+    "id": "core-issue-hunter-repeat-cost",
+    "message": "Левый Путь обозначен GOETIC (2), но при повторном применении в том же движении текст говорит «тратя Маркер крови за каждое использование» в единственном числе. Не назначать молча стоимость1 или2 повторного применения.",
+    "source": {
+      "source": "core",
+      "pages": [
+        110
+      ],
+      "sectionId": "core-court-hunter",
+      "document": "core"
+    },
+    "ruleId": "core-court-hunter"
+  },
+  {
+    "id": "core-issue-lieutenant-source-typo",
+    "message": "Оригинальное изображение68 действительно содержит «ДЕЙСВТИЕ». Проверено увеличением5x, исходная опечатка сохранена; это не ошибка нового извлечения.",
+    "source": {
+      "source": "core",
+      "pages": [
+        68
+      ],
+      "sectionId": "core-antioch-lieutenant",
+      "document": "core"
+    },
+    "ruleId": "core-antioch-lieutenant"
+  },
+  {
+    "id": "core-issue-grail-lord-source-typo",
+    "message": "В источнике свободные руки Повелителя Опухолей считаются «траншейной дубиркой». Текст сохранён; сопоставление с Окопной Дубинкой фиксируется явно в structured unarmedRule, без изменения оригинала.",
+    "source": {
+      "source": "core",
+      "pages": [
+        86
+      ],
+      "sectionId": "core-grail-lord",
+      "document": "core"
+    },
+    "ruleId": "core-grail-lord"
+  },
+  {
+    "id": "core-issue-grail-hierarchy-truncated",
+    "message": "В оригинале второй пункт Иерархии Дворян обрывается на «может включать до трёх» без существительного и знака конца предложения. По заголовку и контексту подразумеваются Рыцари Чумы; исходный текст не дописан.",
+    "source": {
+      "source": "core",
+      "pages": [
+        86
+      ],
+      "sectionId": "core-grail-hierarchy",
+      "document": "core"
+    },
+    "ruleId": "core-grail-hierarchy"
+  },
+  {
+    "id": "source-heavy-shield-machine-armour",
+    "message": "На странице67 Тяжёлый баллистический щит продаётся только моделям в Машинной броне, а страница127 запрещает Механизированную броню с любыми щитами. Обе формулировки сохранены; сочетание требует явного решения игроков и получает manual.",
+    "source": {
+      "source": "core",
+      "pages": [
+        67,
+        127
+      ],
+      "sectionId": "core-antioch-arsenal",
+      "document": "core"
+    },
+    "ruleId": "core-antioch-arsenal"
+  }
+]

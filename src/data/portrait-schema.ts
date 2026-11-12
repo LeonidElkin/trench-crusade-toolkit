@@ -45,3 +45,19 @@ export const PortraitIndexSchema = z.object({
     .min(1),
 })
 export type PortraitIndex = z.infer<typeof PortraitIndexSchema>
+
+export const PortraitAliasesSchema = z.object({
+  schemaVersion: z.literal(1),
+  editionId: z.string().min(1),
+  description: z.string().min(1),
+  units: z
+    .array(
+      z.object({
+        unitId: z.string().min(1),
+        visualUnitId: z.string().min(1).nullable(),
+        note: z.string().min(1).optional(),
+        sharedPortraitReason: z.string().min(1).optional(),
+      }),
+    )
+    .min(1),
+})

@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "editionId": "1.6.3",
+  "description": "Только сопоставление иллюстраций с независимо восстановленными профилями. Не содержит игровых правил.",
+  "units": [
+    {
+      "unitId": "allies-medic",
+      "visualUnitId": "allies.medic"
+    },
+    {
+      "unitId": "allies-witch-hunter",
+      "visualUnitId": "allies.witch-hunter"
+    },
+    {
+      "unitId": "allies-communicant-tank-hunter",
+      "visualUnitId": "allies.tank-hunter"
+    },
+    {
+      "unitId": "allies-mendelist-monk",
+      "visualUnitId": "allies.mendelist"
+    },
+    {
+      "unitId": "allies-sin-eater",
+      "visualUnitId": "allies.sin-eater"
+    },
+    {
+      "unitId": "allies-goetic-warlock",
+      "visualUnitId": "allies.sorcerer"
+    },
+    {
+      "unitId": "allies-observer",
+      "visualUnitId": "allies.observer"
+    },
+    {
+      "unitId": "allies-mamluk-faris",
+      "visualUnitId": "allies.mamluk"
+    },
+    {
+      "unitId": "allies-trench-dog",
+      "visualUnitId": "allies.dog"
+    },
+    {
+      "unitId": "allies-dog-guard",
+      "visualUnitId": "allies.guard-dog"
+    },
+    {
+      "unitId": "allies-dog-mercy",
+      "visualUnitId": "allies.mercy-dog"
+    },
+    {
+      "unitId": "allies-dog-martyrdom",
+      "visualUnitId": "allies.martyr-dog"
+    },
+    {
+      "unitId": "allies-dog-hellhound",
+      "visualUnitId": "allies.hellhound"
+    },
+    {
+      "unitId": "allies-scripture-guardian",
+      "visualUnitId": "allies.scripture-keeper"
+    },
+    {
+      "unitId": "core-heretic-priest",
+      "visualUnitId": "heretic.priest"
+    },
+    {
+      "unitId": "core-heretic-death-commando",
+      "visualUnitId": "heretic.commando"
+    },
+    {
+      "unitId": "core-heretic-chorister",
+      "visualUnitId": "heretic.chorister"
+    },
+    {
+      "unitId": "core-heretic-trooper",
+      "visualUnitId": "heretic.trooper"
+    },
+    {
+      "unitId": "core-heretic-anointed",
+      "visualUnitId": "heretic.anointed"
+    },
+    {
+      "unitId": "core-heretic-warwolf",
+      "visualUnitId": "heretic.war-wolf"
+    },
+    {
+      "unitId": "core-heretic-artillery-witch",
+      "visualUnitId": "heretic.witch"
+    },
+    {
+      "unitId": "core-heretic-wretch",
+      "visualUnitId": "heretic.wretch"
+    },
+    {
+      "unitId": "core-pilgrim-war-prophet",
+      "visualUnitId": "pilgrims.prophet"
+    },
+    {
+      "unitId": "core-pilgrim-castigator",
+      "visualUnitId": "pilgrims.castigator"
+    },
+    {
+      "unitId": "core-pilgrim-communicant",
+      "visualUnitId": "pilgrims.communicant"
+    },
+    {
+      "unitId": "core-pilgrim-trooper",
+      "visualUnitId": "pilgrims.pilgrim"
+    },
+    {
+      "unitId": "core-pilgrim-martyr-penitent",
+      "visualUnitId": null,
+      "note": "Отдельная подходящая иллюстрация этого профиля пока не назначена. Портрет другого бойца не используется."
+    },
+    {
+      "unitId": "core-pilgrim-prisoner",
+      "visualUnitId": "pilgrims.prisoner"
+    },
+    {
+      "unitId": "core-pilgrim-stigmatic-nun",
+      "visualUnitId": "pilgrims.nun"
+    },
+    {
+      "unitId": "core-pilgrim-anchorite",
+      "visualUnitId": "pilgrims.anchorite"
+    },
+    {
+      "unitId": "core-sultanate-yuzbashi",
+      "visualUnitId": "sultanate.captain"
+    },
+    {
+      "unitId": "core-sultanate-jabirean-alchemist",
+      "visualUnitId": "sultanate.alchemist"
+    },
+    {
+      "unitId": "core-sultanate-assassin",
+      "visualUnitId": "sultanate.assassin"
+    },
+    {
+      "unitId": "core-sultanate-azeb",
+      "visualUnitId": "sultanate.azeb"
+    },
+    {
+      "unitId": "core-sultanate-sapper",
+      "visualUnitId": "sultanate.sapper"
+    },
+    {
+      "unitId": "core-sultanate-lion",
+      "visualUnitId": "sultanate.lion"
+    },
+    {
+      "unitId": "core-sultanate-janissary",
+      "visualUnitId": "sultanate.janissary"
+    },
+    {
+      "unitId": "core-sultanate-brazen-bull",
+      "visualUnitId": "sultanate.bull"
+    },
+    {
+      "unitId": "core-sultanate-homunculus",
+      "visualUnitId": "sultanate.homunculus"
+    },
+    {
+      "unitId": "core-sultanate-master-assassin",
+      "visualUnitId": "sultanate.master-assassin"
+    },
+    {
+      "unitId": "core-sultanate-dervish",
+      "visualUnitId": null,
+      "note": "Отдельная подходящая иллюстрация этого профиля пока не назначена. Портрет другого бойца не используется."
+    },
+    {
+      "unitId": "core-sultanate-faris",
+      "visualUnitId": "sultanate.faris"
+    },
+    {
+      "unitId": "core-sultanate-kavass",
+      "visualUnitId": "sultanate.kavass"
+    },
+    {
+      "unitId": "core-heretic-barbed-wire-banshee",
+      "visualUnitId": null,
+      "note": "Отдельная подходящая иллюстрация этого профиля пока не назначена. Портрет другого бойца не используется."
+    },
+    {
+      "unitId": "core-antioch-lieutenant",
+      "visualUnitId": "antioch.lieutenant"
+    },
+    {
+      "unitId": "core-antioch-cleric",
+      "visualUnitId": "antioch.cleric"
+    },
+    {
+      "unitId": "core-antioch-sniper",
+      "visualUnitId": "antioch.sniper"
+    },
+    {
+      "unitId": "core-antioch-yeoman",
+      "visualUnitId": "antioch.yeoman"
+    },
+    {
+      "unitId": "core-antioch-trench-mole",
+      "visualUnitId": null,
+      "note": "Отдельная подходящая иллюстрация этого профиля пока не назначена. Портрет другого бойца не используется."
+    },
+    {
+      "unitId": "core-antioch-shocktrooper",
+      "visualUnitId": "antioch.stormtrooper"
+    },
+    {
+      "unitId": "core-antioch-engineer",
+      "visualUnitId": "antioch.engineer"
+    },
+    {
+      "unitId": "core-antioch-mechanized",
+      "visualUnitId": "antioch.mechanized"
+    },
+    {
+      "unitId": "core-antioch-medic",
+      "visualUnitId": "antioch.medic"
+    },
+    {
+      "unitId": "core-grail-lord",
+      "visualUnitId": "grail.lord"
+    },
+    {
+      "unitId": "core-grail-plague-knight",
+      "visualUnitId": "grail.knight"
+    },
+    {
+      "unitId": "core-grail-corpse-guard",
+      "visualUnitId": "grail.guard"
+    },
+    {
+      "unitId": "core-grail-hounds",
+      "visualUnitId": "grail.hound"
+    },
+    {
+      "unitId": "core-grail-thrall",
+      "visualUnitId": "grail.thrall"
+    },
+    {
+      "unitId": "core-grail-fly-thrall",
+      "visualUnitId": "grail.fly-thrall"
+    },
+    {
+      "unitId": "core-grail-herald",
+      "visualUnitId": "grail.herald"
+    },
+    {
+      "unitId": "core-grail-amalgam",
+      "visualUnitId": "grail.amalgam"
+    },
+    {
+      "unitId": "core-dirge-executor",
+      "visualUnitId": "grail.executor"
+    },
+    {
+      "unitId": "core-court-praetor",
+      "visualUnitId": "court.praetor"
+    },
+    {
+      "unitId": "core-court-sorcerer",
+      "visualUnitId": "court.sorcerer"
+    },
+    {
+      "unitId": "core-court-hunter",
+      "visualUnitId": "court.hunter"
+    },
+    {
+      "unitId": "core-court-hell-knight",
+      "visualUnitId": "court.knight"
+    },
+    {
+      "unitId": "core-court-yoke-fiend",
+      "visualUnitId": "court.yoke"
+    },
+    {
+      "unitId": "core-court-wretched",
+      "visualUnitId": "court.wretch"
+    },
+    {
+      "unitId": "core-court-pit-locust",
+      "visualUnitId": "court.locust"
+    },
+    {
+      "unitId": "core-court-desecrated-saint",
+      "visualUnitId": "court.saint"
+    }
+  ]
+}

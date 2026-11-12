@@ -48,19 +48,31 @@ import {
   exportWarband,
   importShare,
   importWarband,
+  legacyWarbandsNotice,
   loadWarbands,
   saveWarbands,
   shareWarband,
 } from '../domain/storage'
 import { validateWarband } from '../domain/validation'
-import { CostView, EmptyState, Modal, StatsGrid, CopyButton } from '../components/Common'
+import { CostView, EmptyState, Modal, Source, StatsGrid, CopyButton } from '../components/Common'
 import { UnitPortrait } from '../components/UnitPortrait'
+import { UnitConditions, UnitRuleLinks } from '../components/UnitDetails'
 const RulePreview = lazy(() =>
   import('../components/RulePreview').then((m) => ({ default: m.RulePreview })),
 )
 const go = (id: string) => {
   window.location.hash = `/warbands/${id}`
 }
+const record = (value: unknown): Record<string, unknown> =>
+  value && typeof value === 'object' && !Array.isArray(value)
+    ? (value as Record<string, unknown>)
+    : {}
+const records = (value: unknown): Record<string, unknown>[] =>
+  Array.isArray(value)
+    ? value.filter((entry) => entry && typeof entry === 'object' && !Array.isArray(entry))
+    : []
+const strings = (value: unknown): string[] =>
+  Array.isArray(value) ? value.filter((entry): entry is string => typeof entry === 'string') : []
 function download(text: string, filename: string) {
   const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }))
   const anchor = document.createElement('a')
@@ -262,7 +274,7 @@ function ImportDialog({
               setText(e.target.value)
               setError('')
             }}
-            placeholder='{"format":"trench-crusade-warband","version":1,…}'
+            placeholder='{"format":"trench-crusade-warband","version":2,…}'
           />
         </label>
         {encoded && !text && (
@@ -419,7 +431,8 @@ function AddFighter({
       (showAll ||
         ((!u.variantId || u.variantId === band.variantId) &&
           effectiveUnit(c, band, u.id)?.max !== 0 &&
-          (!u.mercenary || u.allowedFactions?.includes(band.factionId)))) &&
+          (!u.mercenary || !getVariant(c, band)?.banMercenaries) &&
+          (!u.mercenary || !u.allowedFactions || u.allowedFactions.includes(band.factionId)))) &&
       u.name.toLocaleLowerCase('ru').includes(query.toLocaleLowerCase('ru')),
   )
   return (
@@ -448,6 +461,11 @@ function AddFighter({
       <div className="recruit-list">
         {options.map((base) => {
           const u = effectiveUnit(c, band, base.id)!
+          const available =
+            (!u.variantId || u.variantId === band.variantId) &&
+            u.max !== 0 &&
+            (!u.mercenary || !u.allowedFactions || u.allowedFactions.includes(band.factionId)) &&
+            !(u.mercenary && getVariant(c, band)?.banMercenaries)
           return (
             <article key={u.id} className="recruit-card">
               <UnitPortrait
@@ -463,8 +481,10 @@ function AddFighter({
                   <CostView cost={u.cost} compact />
                 </div>
                 <StatsGrid stats={u.stats} />
+                <UnitConditions c={c} unit={u} equipment={false} />
                 <div className="recruit-meta">
                   <span>
+                    {!available && 'Недоступен для выбранного состава · '}
                     {u.min ? `Обязательно: ${u.min} · ` : ''}
                     {u.max === null ? 'Без лимита' : `Лимит: ${u.max}`} · в отряде{' '}
                     {band.units.filter((m) => m.unitId === u.id).length}
@@ -519,18 +539,23 @@ function FighterEditor({
     )
   const offers = c.offers.filter(
     (o) =>
-      (o.factionId === band.factionId ||
-        band.foreignOfferIds.includes(o.id) ||
-        (model.upgrades.includes('rotten-cross') &&
-          ['antioch', 'heretic'].includes(o.factionId))) &&
+      (offerApplies(c, band, model, o) || (showAll && o.factionId === band.factionId)) &&
       o.category === tab &&
-      (showAll || offerApplies(c, band, model, o)) &&
       o.name.toLocaleLowerCase('ru').includes(query.toLocaleLowerCase('ru')),
   )
   const upgrades = c.upgrades.filter(
     (up) => upgradeApplies(c, band, model, up) || model.upgrades.includes(up.id),
   )
   const changes = (patch: Partial<Model>) => onChange(updateModel(band, model.id, patch))
+  const changeLoadout = (group: string, value: string) =>
+    changes({ loadouts: { ...model.loadouts, [group]: value } })
+  const profileChoices = records(u.definition.profileChoices)
+  const abilityChoices = strings(record(u.definition.abilitySelection).options)
+  const boundUnitId = record(u.definition.rules).boundUnitId
+  const boundModels =
+    typeof boundUnitId === 'string'
+      ? band.units.filter((entry) => entry.unitId === boundUnitId)
+      : []
   return (
     <section className="fighter-editor panel" tabIndex={-1}>
       <div className="fighter-editor-heading">
@@ -572,11 +597,11 @@ function FighterEditor({
             const keyword = c.keywords.find((x) => x.name === k)
             return keyword ? (
               <button className="tag" key={k} onClick={() => onPreview(keyword.ruleId)}>
-                {k}
+                <strong>{k}</strong>
               </button>
             ) : (
               <span className="tag" key={k}>
-                {k}
+                <strong>{k}</strong>
               </span>
             )
           })}
@@ -588,7 +613,121 @@ function FighterEditor({
           </button>
           <CostView cost={modelCost(c, band, model).cost} />
         </div>
+        <UnitRuleLinks c={c} unit={u} onPreview={onPreview} />
+        <UnitConditions c={c} unit={u} fixedEquipment={false} />
+        <Source source={u.source} />
       </div>
+      {(u.loadoutGroups.length > 0 ||
+        profileChoices.length > 0 ||
+        abilityChoices.length > 0 ||
+        typeof boundUnitId === 'string') && (
+        <div className="profile-selections">
+          {u.loadoutGroups.map((group) => {
+            const choice = group.choices.find((entry) => entry.id === model.loadouts[group.id])
+            return (
+              <div key={group.id}>
+                <label>
+                  {group.name}
+                  <select
+                    aria-label={group.name}
+                    value={model.loadouts[group.id] ?? ''}
+                    onChange={(event) => changeLoadout(group.id, event.target.value)}
+                  >
+                    <option value="">Выберите набор</option>
+                    {group.choices.map((entry) => (
+                      <option key={entry.id} value={entry.id}>
+                        {entry.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <p className="muted small">
+                  Включено в стоимость профиля. Выбор сохраняется вместе с бойцом.
+                </p>
+                {choice && (
+                  <p className="small">
+                    {choice.equipment.join(' · ')}
+                    {choice.armour ? ` · Броня: ${choice.armour}` : ''}
+                    {choice.ignoredKeywords?.length ? (
+                      <>
+                        {' '}
+                        · Игнорирует <strong>{choice.ignoredKeywords.join(', ')}</strong>
+                      </>
+                    ) : (
+                      ''
+                    )}
+                  </p>
+                )}
+                <Source source={group.source} />
+              </div>
+            )
+          })}
+          {profileChoices.length > 0 && (
+            <label>
+              Вариант профиля
+              <select
+                aria-label="Вариант профиля бойца"
+                value={model.loadouts.profile ?? ''}
+                onChange={(event) => changeLoadout('profile', event.target.value)}
+              >
+                <option value="">Выберите профиль</option>
+                {profileChoices.map((choice) => (
+                  <option key={String(choice.id)} value={String(choice.id)}>
+                    {String(
+                      choice.name ??
+                        choice.armourItemName ??
+                        u.fixedItems.find((item) => item.category === 'armour')?.name ??
+                        choice.id,
+                    )}
+                    {choice.base ? ` · База: ${String(choice.base)}` : ''}
+                    {choice.armour ? ` · Броня: ${String(choice.armour)}` : ''}
+                    {typeof record(choice.costDelta).ducats === 'number'
+                      ? ` · +${String(record(choice.costDelta).ducats)} дк`
+                      : ''}
+                    {record(choice.costDelta).glory
+                      ? ` · +${String(record(choice.costDelta).glory)} ОС`
+                      : ''}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+          {abilityChoices.length > 0 && (
+            <label>
+              Выбранная способность
+              <select
+                aria-label="Способность бойца"
+                value={model.loadouts.ability ?? ''}
+                onChange={(event) => changeLoadout('ability', event.target.value)}
+              >
+                <option value="">Выберите способность</option>
+                {abilityChoices.map((choice) => (
+                  <option key={choice} value={choice}>
+                    {choice}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+          {typeof boundUnitId === 'string' && (
+            <label>
+              Связанный алхимик
+              <select
+                aria-label="Связанный алхимик"
+                value={model.loadouts['bound-alchemist'] ?? ''}
+                onChange={(event) => changeLoadout('bound-alchemist', event.target.value)}
+              >
+                <option value="">Выберите алхимика из отряда</option>
+                {boundModels.map((entry) => (
+                  <option key={entry.id} value={entry.id}>
+                    {entry.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+        </div>
+      )}
       {u.fixedItems.length > 0 && (
         <div className="fixed-equipment">
           <span className="eyebrow">
@@ -613,7 +752,7 @@ function FighterEditor({
         {model.equipment.length > 0 ? (
           <div className="equipped-list">
             {model.equipment.map((e) => {
-              const o = effectiveOffer(c, band, e.offerId)
+              const o = effectiveOffer(c, band, e.offerId, model)
               return (
                 <div key={e.id}>
                   <button
@@ -695,7 +834,7 @@ function FighterEditor({
             </label>
             <div className="offer-list">
               {offers.map((base) => {
-                const o = effectiveOffer(c, band, base.id)!
+                const o = effectiveOffer(c, band, base.id, model)!
                 return (
                   <div className="offer-row" key={o.id}>
                     <div>
@@ -832,6 +971,26 @@ function Editor({
     model = band.units.find((m) => m.id === selectedId) ?? band.units[0],
     faction = c.factions.find((f) => f.id === band.factionId),
     variant = getVariant(c, band)
+  const allegiances = records(faction?.definition.allegiances)
+  const leaderUnitIds = record(variant?.definition.rules).leadershipRuleReplaces
+    ? []
+    : [
+        ...strings(faction?.definition.leaderChoices),
+        ...records(faction?.definition.leaderChoices).flatMap((choice) =>
+          typeof choice.requiresUnitId === 'string' ? [choice.requiresUnitId] : [],
+        ),
+      ]
+  const leaderModels = band.units.filter((entry) => {
+    const unit = c.units.find((candidate) => candidate.id === entry.unitId)
+    return (
+      unit &&
+      (leaderUnitIds.includes(unit.id) ||
+        unit.definition.leaderEligible === true ||
+        leaderUnitIds.includes(
+          String(unit.definition.inheritsUnitId ?? unit.definition.inheritsFromUnitId ?? ''),
+        ))
+    )
+  })
   const update = (w: Warband) => onChange({ ...w, updatedAt: new Date().toISOString() })
   return (
     <>
@@ -953,7 +1112,7 @@ function Editor({
       </div>
       {tab === 'roster' && (
         <>
-          {band.factionId === 'court' && (
+          {allegiances.length > 0 && (
             <label className="allegiance-select">
               Посвящение Смертному Греху
               <select
@@ -962,17 +1121,26 @@ function Editor({
                 onChange={(e) => update({ ...band, allegiance: e.target.value })}
               >
                 <option value="">Выберите грех</option>
-                {[
-                  ['wrath', 'Гнев'],
-                  ['envy', 'Зависть'],
-                  ['lust', 'Похоть'],
-                  ['pride', 'Гордыня'],
-                  ['sloth', 'Лень'],
-                  ['gluttony', 'Чревоугодие'],
-                  ['greed', 'Алчность'],
-                ].map(([id, name]) => (
-                  <option key={id} value={id}>
-                    {name}
+                {allegiances.map((choice) => (
+                  <option key={String(choice.id)} value={String(choice.id)}>
+                    {String(choice.name)}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+          {leaderUnitIds.length > 0 && (
+            <label className="allegiance-select">
+              Лидер отряда
+              <select
+                aria-label="Лидер отряда"
+                value={band.leaderId}
+                onChange={(event) => update({ ...band, leaderId: event.target.value })}
+              >
+                <option value="">Выберите лидера</option>
+                {leaderModels.map((entry) => (
+                  <option value={entry.id} key={entry.id}>
+                    {entry.name}
                   </option>
                 ))}
               </select>
@@ -1243,11 +1411,16 @@ export function Warbands({
 }) {
   const [initial] = useState(() => {
     try {
-      return { bands: loadWarbands(localStorage), error: '' }
+      return {
+        bands: loadWarbands(localStorage),
+        error: '',
+        legacyNotice: legacyWarbandsNotice(localStorage),
+      }
     } catch (e) {
       return {
         bands: [] as Warband[],
         error: e instanceof Error ? e.message : 'Хранилище недоступно',
+        legacyNotice: null,
       }
     }
   })
@@ -1286,6 +1459,15 @@ export function Warbands({
   }
   return (
     <>
+      {initial.legacyNotice && (
+        <div className="info-note legacy-warband-notice" role="status">
+          <Info size={20} />
+          <div>
+            <strong>Отряды прежней базы сохранены отдельно</strong>
+            <p>{initial.legacyNotice}</p>
+          </div>
+        </div>
+      )}
       {current ? (
         <Editor
           key={current.id}

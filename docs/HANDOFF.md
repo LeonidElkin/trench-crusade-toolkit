@@ -21,17 +21,17 @@
 - Независимые отчёты reviews/*.json: все190страниц, все15новых оригинальных схем сценариев. seal_reviews.py добавляет только byte bindings после проверки уже существующих хешей, статусы не создаёт.
 - Рендеры180dpi и исходные символы/шрифты/координаты всех190страниц — игнорируемый tools/import-cache/visual-1.6.3. Не перечитывать весь PDF. При споре открывать конкретную страницу/crop.
 - links.json явно разделяет подтверждённые текстовые aliases, редакторскую нормализацию, documented-assumption и unresolved. Траншейный нож/Бландербус/Нечестивый амулет не подменяются правдоподобными профилями.
-- Новый compiler читает только новые records+reviews+links, schema2; локально уже compiled379articles/70profiles/255offers. Нет копирования старых overrides. Исходный data/editions пока ещё требует полной замены производными файлами (root не завершил export/promote).
-- Домен warband/validation/rules и UI адаптированы;26новых доменных тестов по новым records прошли у domain_v2. TypeScript и UI content tests прошли, но общий check/E2E ещё НЕ завершены. Новые v2storage и явный отказ старого v1, бесплатные loadouts Мамлюка/profile/ability/bound-alchemist, новые UI/aliases сохранены.
+- Новый compiler читает только новые records+reviews+links, schema2; локально уже compiled379articles/70profiles/255offers. Нет копирования старых overrides. Производный data/editions полностью заменён; старое состояние доступно через Git-тег.
+- Домен warband/validation/rules и UI адаптированы;26новых доменных тестов по новым records прошли у domain_v2. TypeScript и UI content tests прошли, общий check/E2E завершены. Новые v2storage и явный отказ старого v1, бесплатные loadouts Мамлюка/profile/ability/bound-alchemist, новые UI/aliases сохранены.
 - Калькулятор: bloodbath увеличивает исходный пул перед ±DICE; значения берёт из новых procedures. Добавлена регрессия математики. Новые E2E для bloodbath, отказаv1 и сохранности старого ключа подготовлены UI-агентом.
 
-## Что завершить по сайту
+## Проверки и следующий шаг
 
-1. Закрыть17heuristics и переписать KNOWN-ISSUES по новым issues. Важное последнее finding: core67 продаёт HeavyBallisticShield только моделям в MachineArmour, а core127 запрещает MachineArmour с любым щитом. Это конфликт источника: комбинация должна быть manual, а не бесспорный error/valid. Reviewer подтвердил обе страницы, но не успел сохранить quality-review/KNOWN-ISSUES из-за лимита.
-2. Довести нормализатор: source-backed aliases фиксированной экипировки, явные условия item inheritance; неизвестное не превращать в0. Не сливать разные описания Посоха/Когтей core20 против125. Проверенные исключения наследования не возвращать обратно (Дервиш без Strong, Банши безUnholyHymns).
-3. Создать export новой data/editions/1.6.3 (полностью удалить старый набор, восстановление черезGit), catalog.json/articles/content/sources/coverage/issues/lock; обновить validate-data/freeze/tests/CI. Старый tools/audit_content.py не критерий достоверности и должен уйти из workflow. UI-агент обновляет DATA/ARCHITECTURE/EDITIONS и Skills validate/add-edition; проверить его сохранённый результат.
-4. npmci, npmruncheck, unit/data/build/E2E, локальный PlaywrightMCP. Исправлять конкретные failures, не повторять пройденные исследования без причины. Проверить166? нет — все190уже сверены, не начинать заново.
-5. Обновить README/HANDOFF/отчёт, meaningful commits; проверить origin и обычный push, merge main, Actions/Pages, production PlaywrightMCP. Уведомить пользователя о готовности сайта и продолжить Docling.
+Новая база полностью экспортирована в data/editions/1.6.3; прежние Markdown/layout/catalog-base/overrides и старые парсеры удалены, скрытых fallback нет. Неизвестные свойства и противоречия сохраняются. KNOWN-ISSUES и17эвристик quality-review обновлены. Новые DATA/ARCHITECTURE/EDITIONS, Skills import/validate/add-edition и workflow обновлены. compare v2 с самим собой даёт0изменений; Skills quick_validate passed.
+
+Локально прошли npmci, полный npmruncheck (lint/strictTypes/schema+links+coverage/build),45unit/dataтестов,14Pythongateтестов, E2E27passed/1deliberatelyskipped. PlaywrightMCP: таблица ранений на1440/1280/834/390/320, все снимки просмотрены, overflow=false; ДомМудрости правильно заменяет состав; Мамлюк меняет бесплатный набор, сохраняет его послеreload,revisionr2,JSerrors0. Регрессия67/127: тяжёлый баллистический щит+машинная броня даётmanual, не бесспорныйзапрет.
+
+Далее: зафиксировать интеграцию, проверить origin, обычный push/merge main; дождаться успешных Actions/Pages, production PlaywrightMCP. Затем ОБЯЗАТЕЛЬНО отправить пользователю промежуточное сообщение о завершении сайта и сразу продолжить Docling. Пока deployment и обязательное уведомление НЕ выполнены. Не устанавливать Docling до этого шага. Осталось0страниц, веткаA.
 
 ## Среда и экономия
 

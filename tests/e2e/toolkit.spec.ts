@@ -24,6 +24,7 @@ test('finds a keyword, follows contextual rules and deep links directly', async 
     .getByRole('link', { name: /^Ключевые слова HEAVY/ })
     .click()
   await expect(page.getByRole('heading', { name: 'HEAVY', exact: true })).toBeVisible()
+  await expect(page.locator('main h1')).toHaveCount(1)
   await expect(page.locator('.article-meta')).toContainText('стр. 13')
   const url = page.url()
   await page.reload()
@@ -41,7 +42,7 @@ test('navigates all six faction dossiers', async ({ page }) => {
     'Паломники Траншей',
     'Железный Султанат',
     'Новое Антиохийское Княжество',
-    'Культ Чёрного Грааля',
+    'Культ Черного Грааля',
     'Двор Семиглавого Змея',
   ]) {
     if (name === 'Легион Еретиков')
@@ -53,6 +54,39 @@ test('navigates all six faction dossiers', async ({ page }) => {
     await expect(page.getByRole('heading', { level: 1, name, exact: true })).toBeVisible()
     expect(await page.locator('.unit-card').count()).toBeGreaterThan(5)
   }
+})
+test('shows available variant profiles and inherited profile rules', async ({ page }) => {
+  await page.goto('./#/factions/sultanate')
+  const variants = page.getByRole('combobox', { name: 'Профили варианта фракции' })
+  await variants.selectOption('fidai')
+  await expect(page.locator('.unit-card h3')).toContainText(['Мастер-Ассасин', 'Дервиш'])
+  await expect(page.locator('.unit-card h3').filter({ hasText: 'Капитан Юзбаши' })).toHaveCount(0)
+  await variants.selectOption('house-of-wisdom')
+  const faris = page
+    .locator('.unit-card')
+    .filter({ has: page.getByRole('heading', { name: 'Фарис Дома Мудрости', exact: true }) })
+  await expect(
+    faris.locator('.unit-rule-links a[href="#/rules/core-sultanate-janissary"]'),
+  ).not.toHaveCount(0)
+  await expect(page.locator('main h1')).toHaveCount(1)
+})
+test('changes the free personal loadout and preserves it after reloading', async ({ page }) => {
+  await createBand(page, 'Личный арсенал — E2E', 'sultanate')
+  await page.getByRole('button', { name: 'Добавить бойца', exact: true }).click()
+  await page.getByRole('button', { name: 'Союзники и наёмники', exact: true }).click()
+  await page.getByRole('button', { name: 'Добавить: Мамлюк Фарис', exact: true }).click()
+  const loadout = page.getByRole('combobox', {
+    name: 'Личный арсенал перед каждой битвой',
+    exact: true,
+  })
+  await expect(loadout).toHaveValue('polearm-shield')
+  const before = await page.locator('.budget-strip > div').first().innerText()
+  await loadout.selectOption('greatsword')
+  await expect(page.locator('.fixed-equipment')).toContainText('Двуручный Меч')
+  expect(await page.locator('.budget-strip > div').first().innerText()).toBe(before)
+  await expect(page.locator('.fighter-profile .stats-grid dd').nth(3)).toHaveText('-2')
+  await page.reload()
+  await expect(loadout).toHaveValue('greatsword')
 })
 test('calculates exact action and injury probabilities with cancellation', async ({ page }) => {
   await page.goto('./#/calculator')
@@ -70,6 +104,57 @@ test('calculates exact action and injury probabilities with cancellation', async
   ])
   await page.getByRole('spinbutton', { name: 'Отрицательный модификатор', exact: true }).fill('3')
   await expect(page.locator('.probability-value').first()).toHaveText('16,67%')
+})
+test('adds the Bloodbath die before applying DICE modifiers', async ({ page }) => {
+  await page.goto('./#/calculator')
+  await page.getByRole('tab', { name: /Таблица ранений/ }).click()
+  await page.getByRole('button', { name: 'Увеличить +DICE', exact: true }).click()
+  await page.getByRole('checkbox', { name: 'Кровавая баня', exact: true }).check()
+  await expect(page.locator('.roll-formula')).toContainText('Бросить 4D6, оставить 3 наибольших')
+  await expect(page.locator('.dice-badge')).toContainText('4D6')
+})
+test('preserves old local saves while creating an independent v2 warband', async ({ page }) => {
+  const legacy = JSON.stringify({
+    version: 1,
+    warbands: [{ id: 'legacy-preservation-fixture', schemaVersion: 1, name: 'Отряд прежней базы' }],
+  })
+  await page.goto('./#/')
+  await page.evaluate((value) => localStorage.setItem('trench-toolkit.warbands.v1', value), legacy)
+  await createBand(page, 'Независимая новая база — E2E')
+  await expect(page.locator('.legacy-warband-notice')).toContainText(
+    'несовместимы с восстановленными правилами',
+  )
+  const saves = await page.evaluate(() => ({
+    old: localStorage.getItem('trench-toolkit.warbands.v1'),
+    current: JSON.parse(localStorage.getItem('trench-toolkit.warbands.v2') ?? '{}'),
+  }))
+  expect(saves.old).toBe(legacy)
+  expect(saves.current.version).toBe(2)
+  expect(saves.current.warbands).toHaveLength(1)
+  expect(saves.current.warbands[0].schemaVersion).toBe(2)
+  expect(saves.current.warbands[0].revision).toBe('ru-1.6.3-visual-r2')
+  await page.reload()
+  await expect(page.locator('.legacy-warband-notice')).toBeVisible()
+  expect(await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v1'))).toBe(legacy)
+})
+test('explicitly rejects a JSON export from the previous database', async ({ page }) => {
+  await createBand(page, 'Без автоматического переноса — E2E')
+  const before = await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v2'))
+  await page.goto('./#/warbands')
+  await page.getByRole('button', { name: 'Импорт', exact: true }).click()
+  await page
+    .getByRole('textbox', { name: 'JSON для импорта' })
+    .fill(
+      JSON.stringify({
+        format: 'trench-crusade-warband',
+        version: 1,
+        warband: { schemaVersion: 1, id: 'legacy-export-fixture' },
+      }),
+    )
+  await page.getByRole('button', { name: 'Импортировать отряд', exact: true }).click()
+  await expect(page.getByRole('alert')).toContainText('прежней базе правил (v1)')
+  await expect(page.getByRole('alert')).toContainText('Автоматический перенос не выполняется')
+  expect(await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v2'))).toBe(before)
 })
 test('creates a six-model band, equips, diagnoses, saves, restores, exports and imports', async ({
   page,
@@ -89,7 +174,7 @@ test('creates a six-model band, equips, diagnoses, saves, restores, exports and 
   await expect(page.getByRole('dialog').locator('.prose')).toContainText('Хозяин Марионеток')
   await page.getByRole('button', { name: 'Закрыть окно', exact: true }).click()
   for (let n = 0; n < 3; n++) {
-    await addUnit(page, 'Пехота Еретиков')
+    await addUnit(page, 'Пехота Еретиков и Легионеры')
     await page.getByRole('button', { name: 'Купить: Винтовка', exact: true }).click()
   }
   await page.getByRole('checkbox', { name: 'Легионер: ближний бой', exact: true }).check()
@@ -98,16 +183,16 @@ test('creates a six-model band, equips, diagnoses, saves, restores, exports and 
   await page.getByLabel('Показать недоступные покупки').check()
   await page.getByRole('button', { name: 'Купить: Винтовка', exact: true }).click()
   await page.getByRole('button', { name: /^Проверка/ }).click()
-  await expect(page.locator('.diagnostic-error')).toContainText(['недоступен этому бойцу'])
+  await expect(page.locator('.diagnostic-error')).toContainText(['недоступен бойцу'])
   await page.getByRole('button', { name: /^Состав/ }).click()
   await page.getByRole('button', { name: 'Снять: Винтовка', exact: true }).click()
   await expect(page.locator('.warband-meta')).toContainText('6 бойцов')
   const bandURL = page.url()
   const saved = await page.evaluate(() =>
-    JSON.parse(localStorage.getItem('trench-toolkit.warbands.v1') ?? '{}'),
+    JSON.parse(localStorage.getItem('trench-toolkit.warbands.v2') ?? '{}'),
   )
   expect(saved.warbands[0].units).toHaveLength(6)
-  expect(saved.warbands[0].revision).toBe('ru-1.6.3-r1')
+  expect(saved.warbands[0].revision).toBe('ru-1.6.3-visual-r2')
   await page.reload()
   await expect(page.getByRole('heading', { name, exact: true })).toBeVisible()
   await expect(page.locator('.warband-meta')).toContainText('6 бойцов')
@@ -135,7 +220,7 @@ test('creates a six-model band, equips, diagnoses, saves, restores, exports and 
   await expect(page.locator('.warband-meta')).toContainText('6 бойцов')
 })
 test('preserves variant currency and rejects malformed import', async ({ page }) => {
-  await createBand(page, 'Кавалькада E2E', 'pilgrims', 'plague')
+  await createBand(page, 'Кавалькада E2E', 'pilgrim', 'cavalcade-of-tenth-plague')
   await addUnit(page, 'Коммуникант')
   await expect(page.locator('.budget-strip')).toContainText('3 Славы')
   await page.goto('./#/warbands')
@@ -147,7 +232,7 @@ test('preserves variant currency and rejects malformed import', async ({ page })
 test('shows individual portraits, source provenance and the saved army overview', async ({
   page,
 }, testInfo) => {
-  await createBand(page, 'Стражи Мудрости — E2E', 'sultanate', 'wisdom')
+  await createBand(page, 'Стражи Мудрости — E2E', 'sultanate', 'house-of-wisdom')
   await addUnit(page, 'Алхимик Джабира')
   await addUnit(page, 'Гомункул Таквин')
   const sizes =
@@ -212,7 +297,7 @@ test('recovers a missing lazy bundle once, preserves saved data and allows manua
   await createBand(page, 'Восстановление после публикации — E2E')
   await addUnit(page, 'Священник Еретиков')
   const savedURL = page.url()
-  const saved = await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v1'))
+  const saved = await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v2'))
   let requests = 0
   await page.route('**/assets/Rules-*.js', (route) =>
     ++requests === 1 ? route.abort('failed') : route.continue(),
@@ -235,13 +320,13 @@ test('recovers a missing lazy bundle once, preserves saved data and allows manua
   await expect(page.getByRole('heading', { name: 'О полевом архиве', exact: true })).toBeVisible()
   await page.goto(savedURL)
   await expect(page.locator('.warband-meta')).toContainText('1 боец')
-  expect(await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v1'))).toBe(saved)
+  expect(await page.evaluate(() => localStorage.getItem('trench-toolkit.warbands.v2'))).toBe(saved)
 })
 test('has no page overflow on five viewport sizes and keeps tables locally scrollable', async ({
   page,
 }, testInfo) => {
   test.skip(testInfo.project.name !== 'desktop', 'Viewport sweep is run once')
-  const keyword = 'core-heavy'
+  const keyword = 'core-keyword-heavy'
   for (const [width, height] of [
     [1440, 1000],
     [1280, 800],

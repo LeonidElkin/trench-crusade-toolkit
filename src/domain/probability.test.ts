@@ -91,6 +91,27 @@ describe('exact probability calculations', () => {
       rollDistribution({ baseDice: 3, positiveDice: 0, negativeDice: 0 }),
     )
   })
+  it('applies the bloodbath pool before selecting modifier dice (core PDF pp.6 and 9)', () => {
+    for (const originalPool of [2, 3]) {
+      const baseDice = originalPool + 1
+      for (const modifier of [-1, 1]) {
+        const actual = injuryProbabilities({ baseDice, positiveDice: Math.max(0, modifier), negativeDice: Math.max(0, -modifier) })
+        const counts = { none: 0n, minor: 0n, down: 0n, out: 0n }
+        function enumerate(dice: number[]) {
+          if (dice.length < baseDice + 1) {
+            for (let face = 1; face <= 6; face++) enumerate([...dice, face])
+            return
+          }
+          const sum = [...dice].sort((a, b) => modifier > 0 ? b - a : a - b).slice(0, baseDice).reduce((a, b) => a + b, 0)
+          counts[injuryOutcome(sum)]++
+        }
+        enumerate([])
+        expect(Object.fromEntries(Object.entries(actual).map(([key, value]) => [key, value.numerator]))).toEqual(counts)
+      }
+    }
+    expect(injuryProbabilities({ baseDice: 3, positiveDice: 1, negativeDice: 0 }))
+      .not.toEqual(injuryProbabilities({ baseDice: 2, positiveDice: 1, negativeDice: 0, sumExtraDice: 1 }))
+  })
   it('validates bounds and protects cached results from mutation', () => {
     expect(() => rollDistribution({ ...spec, baseDice: 0 })).toThrow(RangeError)
     expect(() => rollDistribution({ ...spec, positiveDice: -1 })).toThrow(RangeError)

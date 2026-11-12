@@ -730,6 +730,186 @@
           "sectionId": "core-court-arsenal"
         }
       ]
+    },
+    {
+      "name": "Шлем",
+      "itemId": "core-item-combat-helmet",
+      "status": "documented-normalization",
+      "note": "Краткое название фиксированного снаряжения сопоставлено полному составному названию общего профиля; исходный текст сохранён.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            129
+          ],
+          "sectionId": "core-item-combat-helmet",
+          "bbox": [
+            36,
+            163.514,
+            445,
+            223.034
+          ]
+        },
+        {
+          "document": "allies",
+          "pages": [
+            4,
+            6,
+            14,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Меч",
+      "itemId": "core-item-sword-axe",
+      "status": "documented-normalization",
+      "note": "Краткое название фиксированного снаряжения сопоставлено полному составному названию общего профиля; исходный текст сохранён.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            124
+          ],
+          "sectionId": "core-item-sword-axe",
+          "bbox": [
+            36,
+            540.994,
+            445,
+            630.544
+          ]
+        },
+        {
+          "document": "allies",
+          "pages": [
+            4,
+            6,
+            14,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Двуручный Меч",
+      "itemId": "core-item-great-sword-axe",
+      "status": "documented-normalization",
+      "note": "Краткое название фиксированного снаряжения сопоставлено полному составному названию общего профиля; исходный текст сохранён.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            126
+          ],
+          "sectionId": "core-item-great-sword-axe",
+          "bbox": [
+            36,
+            463.486,
+            445,
+            580.263
+          ]
+        },
+        {
+          "document": "allies",
+          "pages": [
+            4,
+            6,
+            14,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Древковое Оружие",
+      "itemId": "core-item-trench-polearm",
+      "status": "documented-normalization",
+      "note": "Краткое название фиксированного снаряжения сопоставлено полному составному названию общего профиля; исходный текст сохранён.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            126
+          ],
+          "sectionId": "core-item-trench-polearm",
+          "bbox": [
+            36,
+            85.076,
+            445,
+            211.904
+          ]
+        },
+        {
+          "document": "allies",
+          "pages": [
+            4,
+            6,
+            14,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Джезайл",
+      "itemId": "core-item-jezzail",
+      "status": "documented-normalization",
+      "note": "Краткое название фиксированного снаряжения сопоставлено полному составному названию общего профиля; исходный текст сохранён.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            119
+          ],
+          "sectionId": "core-item-jezzail",
+          "bbox": [
+            36,
+            677.823,
+            445,
+            775
+          ]
+        },
+        {
+          "document": "allies",
+          "pages": [
+            4,
+            6,
+            14,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Джезайль",
+      "itemId": "core-item-jezzail",
+      "status": "documented-normalization",
+      "note": "Краткое название фиксированного снаряжения сопоставлено полному составному названию общего профиля; исходный текст сохранён.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            119
+          ],
+          "sectionId": "core-item-jezzail",
+          "bbox": [
+            36,
+            677.823,
+            445,
+            775
+          ]
+        },
+        {
+          "document": "allies",
+          "pages": [
+            4,
+            6,
+            14,
+            16
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Expand, ExternalLink } from 'lucide-react'
-import { getPortrait, sourcePdfUrl } from '../data/portraits'
+import { Expand, ExternalLink, ImageOff } from 'lucide-react'
+import { getPortrait, getPortraitAssignment, sourcePdfUrl } from '../data/portraits'
 import { assetUrl } from '../data/registry'
 import { Modal, Source } from './Common'
 
@@ -21,7 +21,18 @@ export function UnitPortrait({
 }) {
   const [open, setOpen] = useState(false)
   const portrait = getPortrait(editionId, unitId)
-  if (!portrait) return null
+  if (!portrait)
+    return (
+      <span
+        className={`unit-portrait unit-portrait-missing ${className}`}
+        title={getPortraitAssignment(editionId, unitId)?.note}
+        aria-label={decorative ? undefined : `${name} — иллюстрация не назначена`}
+        aria-hidden={decorative || undefined}
+      >
+        <ImageOff size={24} aria-hidden="true" />
+        <span>Иллюстрация не назначена</span>
+      </span>
+    )
   const picture = (
     <img
       src={assetUrl(portrait.thumbnail)}

@@ -1,0 +1,242 @@
+{
+  "reviewer": "root",
+  "purpose": "Adjudicate structural warnings; does not create visual review statuses. Existing independent reports cover originals.",
+  "findings": [
+    {
+      "sectionId": "core-keyword-black-grail",
+      "severity": "warning",
+      "kind": "short-section",
+      "text": "# **BLACK GRAIL**\n\n**BLACK GRAIL**: Эта модель принадлежит фракции \"Культ Чёрного Грааля\").\n",
+      "document": "core",
+      "pages": [
+        12
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Короткое, но самостоятельное полное определение/правило; диапазон независимо сверен с оригиналом."
+    },
+    {
+      "sectionId": "core-keyword-heretic",
+      "severity": "warning",
+      "kind": "short-section",
+      "text": "# **HERETIC**\n\n**HERETIC**: Эта модель является членом фракции \"Еретический Легион\".\n",
+      "document": "core",
+      "pages": [
+        13
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Короткое, но самостоятельное полное определение/правило; диапазон независимо сверен с оригиналом."
+    },
+    {
+      "sectionId": "core-keyword-new-antioch",
+      "severity": "warning",
+      "kind": "short-section",
+      "text": "# **NEW ANTIOCH**\n\n**NEW ANTIOCH**: Эта модель принадлежит фракции \"Новая Антиохия\".\n",
+      "document": "core",
+      "pages": [
+        13
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Короткое, но самостоятельное полное определение/правило; диапазон независимо сверен с оригиналом."
+    },
+    {
+      "sectionId": "core-keyword-pilgrim",
+      "severity": "warning",
+      "kind": "short-section",
+      "text": "# **PILGRIM**\n\n**PILGRIM**: Эта модель принадлежит фракции \"Паломники\".\n",
+      "document": "core",
+      "pages": [
+        13
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Короткое, но самостоятельное полное определение/правило; диапазон независимо сверен с оригиналом."
+    },
+    {
+      "sectionId": "core-keyword-sultanate",
+      "severity": "warning",
+      "kind": "short-section",
+      "text": "# **SULTANATE**\n\n**SULTANATE**: Эта модель принадлежит фракции \"Железный Султанат\".\n",
+      "document": "core",
+      "pages": [
+        13
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Короткое, но самостоятельное полное определение/правило; диапазон независимо сверен с оригиналом."
+    },
+    {
+      "sectionId": "core-keyword-the-court",
+      "severity": "warning",
+      "kind": "short-section",
+      "text": "# **THE COURT**\n\n**THE COURT**: Эта модель принадлежит фракции \"Двор Семиглавого Змея\".\n",
+      "document": "core",
+      "pages": [
+        13
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Короткое, но самостоятельное полное определение/правило; диапазон независимо сверен с оригиналом."
+    },
+    {
+      "sectionId": "core-scenario-8",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": "**Имя:** Зверь | **Движение:** 8”/пехота **Дальний бой:** - | **Ближний бой:** +2D **Броня:** 0 | **База:** 120 x 80 мм **Ключевые слова: FEAR, TOUGH**",
+      "document": "core",
+      "pages": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Поля профиля и пункты таблицыD6 не обязаны заканчиваться точкой; значения отдельно проверены в независимом диапазоне."
+    },
+    {
+      "sectionId": "core-scenario-8",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": "м случае модель, захватившая тайник, может использовать этот предмет только в этой битве, чтобы получить соответствующий эффект до конца игры) **6:** Гранатомёт",
+      "document": "core",
+      "pages": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Поля профиля и пункты таблицыD6 не обязаны заканчиваться точкой; значения отдельно проверены в независимом диапазоне."
+    },
+    {
+      "sectionId": "core-scenario-9",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": "я природа заражённых крестьян делает их уязвимыми в любом столкновении. Атаки против крестьянина совершаются с **+2 DICE** на попадание и **+2 DICE** на ранение",
+      "document": "core",
+      "pages": [
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Полное предложение/описание без заключительной точки в оригинале; независимая визуальная сверка диапазона завершена, слова и условия сохранены."
+    },
+    {
+      "sectionId": "core-pilgrim-trench-mortar",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": "раншейный миномёт — это гладкоствольное, дульнозарядное оружие с высоким углом огня. Снаряд содержит как взрывчатые вещества, так и смертоносный греческий огонь",
+      "document": "core",
+      "pages": [
+        45
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Полное предложение/описание без заключительной точки в оригинале; независимая визуальная сверка диапазона завершена, слова и условия сохранены."
+    },
+    {
+      "sectionId": "core-sultanate-sapper",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": "ра можно поставить в 6” от зоны развёртывания игрока, но в контакте с элементом ландшафта. Эта способность не работает в сценариях, запрещающих **INFILTRATORS**",
+      "document": "core",
+      "pages": [
+        56
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Полное предложение/описание без заключительной точки в оригинале; независимая визуальная сверка диапазона завершена, слова и условия сохранены."
+    },
+    {
+      "sectionId": "core-sultanate-formula-wings",
+      "severity": "warning",
+      "kind": "short-section",
+      "text": "# Крылья\n\n**Крылья (Wings) (30 дукатов):** Гомункул получает новый режим движения: 8”/Полет.\n",
+      "document": "core",
+      "pages": [
+        63
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Короткое, но самостоятельное полное определение/правило; диапазон независимо сверен с оригиналом."
+    },
+    {
+      "sectionId": "core-antioch-prussia",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": "Assault):** За +5 дукатов за модель любые Штурмовики и Лейтенанты могут добавить +1DICE к своим Рискованным действиям рывка. **Специализированное оборудование**",
+      "document": "core",
+      "pages": [
+        74
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Завершающий фрагмент абзаца является названием/перенесённой меткой; следующий блок или связанный раздел содержит продолжение, потери игровых условий нет. Песнь скорби дополнительно сопоставлена root с изображением95."
+    },
+    {
+      "sectionId": "core-grail-hierarchy",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": "яд может включать до одного Повелителя Опухолей и до двух Рыцарей Чумы. **Рыцарь Чумы**: Отряд должен включать Рыцаря Чумы при создании и может включать до трёх",
+      "document": "core",
+      "pages": [
+        86
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Оборванная формулировка присутствует в источнике и зарегистрирована как неоднозначность, догадкой не дополнялась."
+    },
+    {
+      "sectionId": "core-grail-dirge",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": "е может носить Щит Черного Грааля или Топор Вельзевула. Повелитель Мух не терпит провалившихся рыцарей, носящих его символ. **Последнее благословение Гегемона**",
+      "document": "core",
+      "pages": [
+        94,
+        95
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Завершающий фрагмент абзаца является названием/перенесённой меткой; следующий блок или связанный раздел содержит продолжение, потери игровых условий нет. Песнь скорби дополнительно сопоставлена root с изображением95."
+    },
+    {
+      "sectionId": "core-court-leadership",
+      "severity": "warning",
+      "kind": "short-section",
+      "text": "Знатные Дворяне\n\nВаша варбанда при создании должна включать Претора **ИЛИ** Колдуна в роли лидера.",
+      "document": "core",
+      "pages": [
+        106
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Короткое, но самостоятельное полное определение/правило; диапазон независимо сверен с оригиналом."
+    },
+    {
+      "sectionId": "core-court-desecrated-saint",
+      "severity": "warning",
+      "kind": "possible-unfinished-prose",
+      "text": " в укрытии и находится в пределах 12” от модели. Атакующая модель должна быть в состоянии достичь Святого без Лазания, Прыжков или пересечения Опасной местности",
+      "document": "core",
+      "pages": [
+        116
+      ],
+      "disposition": "accepted-source-form",
+      "reason": "Полное предложение/описание без заключительной точки в оригинале; независимая визуальная сверка диапазона завершена, слова и условия сохранены."
+    }
+  ],
+  "criticalIntegrationFinding": {
+    "source": [
+      {
+        "document": "core",
+        "pages": [
+          67
+        ]
+      },
+      {
+        "document": "core",
+        "pages": [
+          127
+        ]
+      }
+    ],
+    "message": "HeavyBallisticShield requiresMachineArmour versus MachineArmour disallowsanyshield: preserve conflict/manual."
+  }
+}

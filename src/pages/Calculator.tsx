@@ -8,7 +8,7 @@ import {
   rollDistribution,
   type Fraction,
 } from '../domain/probability'
-import { edition } from '../data/registry'
+import { catalog, edition } from '../data/registry'
 import { RuleLink } from '../components/Common'
 function Stepper({
   label,
@@ -105,10 +105,15 @@ export function Calculator() {
     [fixedPositive, setFixedPositive] = useState(0),
     [fixedNegative, setFixedNegative] = useState(0),
     [baseDice, setBaseDice] = useState(2),
-    [extra, setExtra] = useState(0)
+    [extra, setExtra] = useState(0),
+    [bloodbath, setBloodbath] = useState(false)
+  const bloodbathProcedure = catalog.procedures.find((p) => p.kind === 'bloodbath')
+  const bloodbathDice = mode === 'injury' && bloodbath && typeof bloodbathProcedure?.additionalBaseDice === 'number'
+    ? bloodbathProcedure.additionalBaseDice : 0
+  const effectiveBaseDice = baseDice + bloodbathDice
   const spec = useMemo(
-    () => ({ baseDice, positiveDice: positive, negativeDice: negative, sumExtraDice: extra }),
-    [baseDice, positive, negative, extra],
+    () => ({ baseDice: effectiveBaseDice, positiveDice: positive, negativeDice: negative, sumExtraDice: extra }),
+    [effectiveBaseDice, positive, negative, extra],
   )
   const action = useMemo(() => actionProbabilities(spec), [spec]),
     injury = useMemo(
@@ -165,6 +170,7 @@ export function Calculator() {
                 setFixedNegative(0)
                 setBaseDice(2)
                 setExtra(0)
+                setBloodbath(false)
               }}
             >
               <RotateCcw size={17} />
@@ -194,6 +200,19 @@ export function Calculator() {
           </div>
           {mode === 'injury' && (
             <div className="control-section">
+              {bloodbathProcedure && (
+                <>
+                  <label>
+                    <input type="checkbox" checked={bloodbath} onChange={(e) => setBloodbath(e.target.checked)} />
+                    {' '}Кровавая баня
+                  </label>
+                  <p className="muted small">
+                    {String(bloodbathProcedure.bloodMarkerCost)} Маркеров Крови; для цели в состоянии «Повален» — {String(bloodbathProcedure.downTargetBloodMarkerCost)}.
+                    {' '}Дополнительный D6 увеличивает исходный пул перед применением DICE.
+                    {' '}<RuleLink id={bloodbathProcedure.ruleId}>Правило и пример</RuleLink>
+                  </p>
+                </>
+              )}
               <span className="eyebrow">МОДИФИКАТОРЫ СУММЫ</span>
               <Stepper
                 label="Положительный модификатор"
@@ -265,14 +284,14 @@ export function Calculator() {
             </div>
             <span className="dice-badge">
               <Dice5 size={18} />
-              {baseDice + Math.abs(net)}D6
+              {effectiveBaseDice + Math.abs(net)}D6
             </span>
           </div>
           <div className="roll-formula">
-            Бросить <strong>{baseDice + Math.abs(net)}D6</strong>,{' '}
+            Бросить <strong>{effectiveBaseDice + Math.abs(net)}D6</strong>,{' '}
             {net === 0
-              ? `суммировать все ${baseDice}`
-              : `оставить ${baseDice} ${net > 0 ? 'наибольших' : 'наименьших'}`}
+              ? `суммировать все ${effectiveBaseDice}`
+              : `оставить ${effectiveBaseDice} ${net > 0 ? 'наибольших' : 'наименьших'}`}
             {extra > 0 && `, прибавить ещё ${extra}D6`}
             {mode === 'injury' && (
               <span>

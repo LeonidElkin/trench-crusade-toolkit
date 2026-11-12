@@ -1,16 +1,25 @@
 import raw from '../../data/visuals/1.6.3/portraits.json'
-import { PortraitIndexSchema } from './portrait-schema'
+import aliasesRaw from '../../data/visuals/1.6.3/unit-aliases.json'
+import { PortraitAliasesSchema, PortraitIndexSchema } from './portrait-schema'
 
 // Visual metadata is independent of frozen gameplay revisions and saved warbands.
 const indexes = [PortraitIndexSchema.parse(raw)]
+const aliases = [PortraitAliasesSchema.parse(aliasesRaw)]
+export function getPortraitAssignment(editionId: string, unitId: string) {
+  return aliases
+    .find((index) => index.editionId === editionId)
+    ?.units.find((unit) => unit.unitId === unitId)
+}
 export function getPortrait(editionId: string, unitId: string) {
   const index = indexes.find((i) => i.editionId === editionId)
-  const assignment = index?.units.find((u) => u.unitId === unitId)
+  const alias = getPortraitAssignment(editionId, unitId)
+  if (alias?.visualUnitId === null) return undefined
+  const assignment = index?.units.find((u) => u.unitId === (alias?.visualUnitId ?? unitId))
   const asset = index?.assets.find((a) => a.id === assignment?.assetId)
   return asset && index
     ? {
         ...asset,
-        note: assignment?.note,
+        note: [alias?.note, assignment?.note].filter(Boolean).join(' ') || undefined,
         attribution:
           asset.origin.kind === 'pdf'
             ? index.attribution

@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
-import { PortraitIndexSchema } from '../src/data/portrait-schema.ts'
+import { PortraitAliasesSchema, PortraitIndexSchema } from '../src/data/portrait-schema.ts'
 import type { Edition } from '../src/domain/schema.ts'
 
 export async function validateVisuals(edition: Edition): Promise<string[]> {
@@ -14,7 +14,17 @@ export async function validateVisuals(edition: Edition): Promise<string[]> {
   const index = PortraitIndexSchema.parse(
     JSON.parse(await readFile(resolve(root, 'data/visuals', edition.id, 'portraits.json'), 'utf8')),
   )
+  const aliases = PortraitAliasesSchema.parse(
+    JSON.parse(
+      await readFile(resolve(root, 'data/visuals', edition.id, 'unit-aliases.json'), 'utf8'),
+    ),
+  )
   check(index.editionId === edition.id, 'Portrait edition mismatch')
+  check(aliases.editionId === edition.id, 'Portrait alias edition mismatch')
+  check(
+    new Set(aliases.units.map((unit) => unit.unitId)).size === aliases.units.length,
+    'Duplicate portrait alias unit ID',
+  )
   check(
     new Set(index.units.map((u) => u.unitId)).size === index.units.length,
     'Duplicate portrait unit ID',
@@ -29,14 +39,32 @@ export async function validateVisuals(edition: Edition): Promise<string[]> {
   )
   for (const unit of edition.catalog.units)
     check(
-      index.units.some((u) => u.unitId === unit.id),
-      `${unit.id}: portrait missing`,
+      aliases.units.some((alias) => alias.unitId === unit.id),
+      `${unit.id}: portrait assignment or explicit omission missing`,
     )
-  for (const assignment of index.units) {
+  for (const alias of aliases.units) {
     check(
-      edition.catalog.units.some((u) => u.id === assignment.unitId),
-      `${assignment.unitId}: unknown portrait unit`,
+      edition.catalog.units.some((unit) => unit.id === alias.unitId),
+      `${alias.unitId}: unknown portrait alias unit`,
     )
+    if (alias.visualUnitId === null) {
+      check(
+        alias.note?.trim(),
+        `${alias.unitId}: missing portrait must have an explicit explanation`,
+      )
+      continue
+    }
+    check(
+      index.units.some((unit) => unit.unitId === alias.visualUnitId),
+      `${alias.unitId}: broken portrait alias`,
+    )
+    const shared = aliases.units.filter((other) => other.visualUnitId === alias.visualUnitId)
+    check(
+      shared.length === 1 || alias.sharedPortraitReason,
+      `${alias.unitId}: shared portrait requires an explanation`,
+    )
+  }
+  for (const assignment of index.units) {
     check(
       index.assets.some((a) => a.id === assignment.assetId),
       `${assignment.unitId}: broken portrait link`,
