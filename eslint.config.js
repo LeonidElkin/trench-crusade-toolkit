@@ -11,6 +11,8 @@ export default tseslint.config(
       'playwright-report/**',
       'test-results/**',
       'src/generated/**',
+      'tools/import-cache/**',
+      '.venv/**',
     ],
   },
   js.configs.recommended,

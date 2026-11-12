@@ -1,0 +1,6 @@
+[project]
+name = "tc-pdf-preparation"
+version = "0.1.0"
+description = "Local PDF preparation, separate from the static website"
+requires-python = ">=3.12,<3.13"
+dependencies = ["docling==2.150.0", "library-skills==0.0.20"]

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "automatic-draft",
+  "visualReview": "not-performed-by-this-tool",
+  "source": {
+    "id": "core",
+    "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+    "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+    "edition": "1.6.3",
+    "expectedPages": 168,
+    "translation": "Мастерская Кетсу",
+    "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+  },
+  "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+  "pdfPages": [
+    19
+  ],
+  "python": "3.12.3",
+  "versions": {
+    "docling": "2.150.0",
+    "docling-core": "2.106.0",
+    "docling-ibm-models": "4.0.4",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "PyMuPDF": "1.26.7"
+  },
+  "configuration": {
+    "device": "cpu",
+    "threads": 2,
+    "ocr": false,
+    "vlm": false,
+    "pipeline": "standard",
+    "tableMode": "accurate",
+    "remoteServices": false,
+    "generateImages": false,
+    "offline": false,
+    "cache": "tools/import-cache/docling-models"
+  },
+  "conversionStatus": "success",
+  "elapsedSeconds": 6.009,
+  "peakRssMiB": 1127.3,
+  "elements": 63,
+  "tables": 0,
+  "outputs": {
+    "document.json": "98fdcaf24e5174320a4959fe1d8687425ac1114d32040d28edbd8b871de96307",
+    "document.md": "a6146ff7381a7ec44e8228360aabdc2f7b484b9d53ee07af5665b3154a8b9889",
+    "elements.json": "577378679b925a616f94f0c623420c4019baa1ac88dd035a342a39c540a73cf6",
+    "page-019.md": "a6146ff7381a7ec44e8228360aabdc2f7b484b9d53ee07af5665b3154a8b9889"
+  }
+}

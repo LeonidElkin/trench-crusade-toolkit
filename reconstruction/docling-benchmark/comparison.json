@@ -1,0 +1,3991 @@
+{
+  "schemaVersion": 1,
+  "status": "automatic-diagnostics-awaiting-editorial-disposition",
+  "admittedAsStandaloneConverter": false,
+  "fixtureSha256": "07e612b0a3398d77ceddd7d5485e420e12fe27717a0df51171fc9a2756604cc7",
+  "comparatorSha256": "7089570725cba2a800925b57c92d8ed4f10fb6496d60a4012071ddbe1b1b6955",
+  "referenceHashes": {
+    "reconstruction/1.6.3/authored/allies.json": "6591378bc282ccd8df2d9fe412beeded2da138532a80ea6a6fa08dc17d01e593",
+    "reconstruction/1.6.3/authored/core-common.json": "92ffe345c74c121dcb14e293e12e54604dc060e877a0533fa6d82e88c0fdf4f3",
+    "reconstruction/1.6.3/authored/factions-first.json": "73f18493688526ce079d24ed1fbd8a93f88167f0befdb2da38464de9920b3d26",
+    "reconstruction/1.6.3/authored/factions-last.json": "5a673ebb3d4d15c45e19430d1a147263b37b4391ce5905b8921bf55724057af2",
+    "reconstruction/1.6.3/reviews/allies-review.json": "b755c550d0412e2363cb899a71c7023e152135337b1bdf99eb6c077765b383fa",
+    "reconstruction/1.6.3/reviews/core-common-review.json": "b14677e8e51dab71c5c7ce93509f235c2260c02d561e89fc6bb24d429f98c16f",
+    "reconstruction/1.6.3/reviews/factions-first-review.json": "8d0884051acdebd5e3b08971dd7f7ab11d8add4e675a714676175fee5ee75906",
+    "reconstruction/1.6.3/reviews/factions-last-review.json": "684c3347022538c74079d2859e7d854d3fddd95e1495c6dc8b8f2ad0e06b31f0"
+  },
+  "ranges": [
+    {
+      "range": "core-004-007",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "core",
+        "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+        "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+        "edition": "1.6.3",
+        "expectedPages": 168,
+        "translation": "Мастерская Кетсу",
+        "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 24.318,
+      "peakRssMiB": 1587.8,
+      "elements": 101,
+      "tables": 0,
+      "outputs": {
+        "document.json": "c9828930a46f6e251f9831984ad76d5bf24e5579693df7e6c5b7b8cab3c78100",
+        "document.md": "3c66306e6e85607b9f2232245d5b776d8b8c78fb2f39a616d44e1343c8a15395",
+        "elements.json": "0d4d397451fbbfdbb79cccbba48aa19b865cb27562cfcb324dee492284b8e10b",
+        "page-004.md": "a4e0f8210f83e2f2e0d51845e4afe8ed768a975b04a79e52cab0c95f1c634175",
+        "page-005.md": "0d638094eaa91c6fe58a142f9f6c9594abbc9457d3ee55d507f2c81d461a1670",
+        "page-006.md": "7258932bb4b5151dacf08ac619c4b444e90f53c3f6b855d66a6ce75b02780c3c",
+        "page-007.md": "274d8b30f5cb08de727d5f8b13a0cbceee530cf9d32c6bb3e85cd4cf733657e1"
+      }
+    },
+    {
+      "range": "core-019-019",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "core",
+        "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+        "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+        "edition": "1.6.3",
+        "expectedPages": 168,
+        "translation": "Мастерская Кетсу",
+        "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        19
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 6.009,
+      "peakRssMiB": 1127.3,
+      "elements": 63,
+      "tables": 0,
+      "outputs": {
+        "document.json": "98fdcaf24e5174320a4959fe1d8687425ac1114d32040d28edbd8b871de96307",
+        "document.md": "a6146ff7381a7ec44e8228360aabdc2f7b484b9d53ee07af5665b3154a8b9889",
+        "elements.json": "577378679b925a616f94f0c623420c4019baa1ac88dd035a342a39c540a73cf6",
+        "page-019.md": "a6146ff7381a7ec44e8228360aabdc2f7b484b9d53ee07af5665b3154a8b9889"
+      }
+    },
+    {
+      "range": "core-022-022",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "core",
+        "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+        "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+        "edition": "1.6.3",
+        "expectedPages": 168,
+        "translation": "Мастерская Кетсу",
+        "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        22
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 8.796,
+      "peakRssMiB": 1197.2,
+      "elements": 23,
+      "tables": 2,
+      "outputs": {
+        "document.json": "2ec40f6ac118baab9f058249fd6d85f41c97b6304b256e305f43c661d5f10118",
+        "document.md": "2a44262db97bd3e5cc90d6e7587e506f33da2fce8d0ce7d4d3a16c499c68e472",
+        "elements.json": "427512061f25b01d6975b38e42ec34bc075fa1a819a45b7821b67f917ae3498f",
+        "page-022.md": "2a44262db97bd3e5cc90d6e7587e506f33da2fce8d0ce7d4d3a16c499c68e472"
+      }
+    },
+    {
+      "range": "core-045-045",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "core",
+        "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+        "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+        "edition": "1.6.3",
+        "expectedPages": 168,
+        "translation": "Мастерская Кетсу",
+        "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        45
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 8.891,
+      "peakRssMiB": 1195.3,
+      "elements": 24,
+      "tables": 3,
+      "outputs": {
+        "document.json": "412699c91d3baae9db94af957c467529551890b8c0deebe54404a33f2dad4e52",
+        "document.md": "d19d57b46b117f301c58ae8ebff6506228d103fb084ef8ffd08c4e89191748a4",
+        "elements.json": "01c788d734df4266efc1892031bc72e33b822f75ddc1273e0cb3a30b6de96760",
+        "page-045.md": "d19d57b46b117f301c58ae8ebff6506228d103fb084ef8ffd08c4e89191748a4"
+      }
+    },
+    {
+      "range": "core-067-067",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "core",
+        "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+        "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+        "edition": "1.6.3",
+        "expectedPages": 168,
+        "translation": "Мастерская Кетсу",
+        "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        67
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 6.097,
+      "peakRssMiB": 1127.2,
+      "elements": 68,
+      "tables": 0,
+      "outputs": {
+        "document.json": "2ab8b924f1188f69c20407d99f577bc31c09359b69483b87f7d423d425fd250f",
+        "document.md": "f09d67e30007cd4523ed2bf8080fd19de816b97156677167f07cc3971a9ff0a4",
+        "elements.json": "3214c0e0ae8e2723fc78462d93052d2477c0f315d13831c883b98aa915970e88",
+        "page-067.md": "f09d67e30007cd4523ed2bf8080fd19de816b97156677167f07cc3971a9ff0a4"
+      }
+    },
+    {
+      "range": "core-095-095",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "core",
+        "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+        "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+        "edition": "1.6.3",
+        "expectedPages": 168,
+        "translation": "Мастерская Кетсу",
+        "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        95
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 6.948,
+      "peakRssMiB": 1201.8,
+      "elements": 21,
+      "tables": 1,
+      "outputs": {
+        "document.json": "a49461e39f251b2035d7349c7181252fe4586fb117cb95303a12e355a5be9903",
+        "document.md": "c5bec31d66a4a450f8466657642eb12200e55826b4bf4c9ae7c5d3a4cfd188bc",
+        "elements.json": "61082a1ce77f1739dc08d41f509ff05dc61ff9212e98190597b94c397d5d781f",
+        "page-095.md": "c5bec31d66a4a450f8466657642eb12200e55826b4bf4c9ae7c5d3a4cfd188bc"
+      }
+    },
+    {
+      "range": "core-125-125",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "core",
+        "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+        "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+        "edition": "1.6.3",
+        "expectedPages": 168,
+        "translation": "Мастерская Кетсу",
+        "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        125
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 10.328,
+      "peakRssMiB": 1210.4,
+      "elements": 24,
+      "tables": 5,
+      "outputs": {
+        "document.json": "366c3c21075b203391b57223f8a37fda9ea74d6caa975f88825062b60a2418dd",
+        "document.md": "c24010ba91807a2fa9cccbe4846ab36e92f9655f6c65fd73aa4b53ea3aa77b84",
+        "elements.json": "c61451aad89c78e3930bc35e7ba0538e35c0670f8a7b9a3e87be209e323efcd6",
+        "page-125.md": "c24010ba91807a2fa9cccbe4846ab36e92f9655f6c65fd73aa4b53ea3aa77b84"
+      }
+    },
+    {
+      "range": "core-164-164",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "core",
+        "path": "public/reference/trench-crusade-1.6.3-ru.pdf",
+        "title": "Trench Crusade. Правила игры. Версия 1.6.3",
+        "edition": "1.6.3",
+        "expectedPages": 168,
+        "translation": "Мастерская Кетсу",
+        "sha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        164
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 5.827,
+      "peakRssMiB": 1116.6,
+      "elements": 13,
+      "tables": 0,
+      "outputs": {
+        "document.json": "f4f5d1a5961994d9cfb59102012bf5b2d7912f36086a1e7dbc31d19a85d4342a",
+        "document.md": "93199cf30c52e7f5e4a2242cbef99d7e8132c10be12cad67b47ac17e9f5250ad",
+        "elements.json": "292738450994841a51944bed036f040a7ca1c8925177e4d79c2d2ba5f99c0500",
+        "page-164.md": "93199cf30c52e7f5e4a2242cbef99d7e8132c10be12cad67b47ac17e9f5250ad"
+      }
+    },
+    {
+      "range": "allies-002-002",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "allies",
+        "path": "public/reference/allies-and-mercenaries-ru.pdf",
+        "title": "Trench Crusade. Союзники и Наёмники",
+        "edition": null,
+        "expectedPages": 22,
+        "translation": "Мастерская Кетсу",
+        "sha256": "d0818b7cda3df033bb326bdb96249ba5d612dfc4e2194d476698afe0592754bc"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        2
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 6.751,
+      "peakRssMiB": 1176.9,
+      "elements": 16,
+      "tables": 1,
+      "outputs": {
+        "document.json": "85594199a603c95e65e35065848acae44bc94f166b809488f98557868e9beb70",
+        "document.md": "1bedf5d4777d4a0a34bdcfe8a019f30727198a56b8b9ddbe663c1bacd4bfb51f",
+        "elements.json": "e72709544303c64222707f651a6b19185a5627632c42704a6476ae7805e21a05",
+        "page-002.md": "1bedf5d4777d4a0a34bdcfe8a019f30727198a56b8b9ddbe663c1bacd4bfb51f"
+      }
+    },
+    {
+      "range": "allies-004-004",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "allies",
+        "path": "public/reference/allies-and-mercenaries-ru.pdf",
+        "title": "Trench Crusade. Союзники и Наёмники",
+        "edition": null,
+        "expectedPages": 22,
+        "translation": "Мастерская Кетсу",
+        "sha256": "d0818b7cda3df033bb326bdb96249ba5d612dfc4e2194d476698afe0592754bc"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        4
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 7.877,
+      "peakRssMiB": 1125.2,
+      "elements": 21,
+      "tables": 2,
+      "outputs": {
+        "document.json": "5f8e04fba28562d295b2a889440c07b1b6174bb141158f5497da7e19851f6da3",
+        "document.md": "cea6682f7ba404bf15cbfee9030e427533f04e9c7d719db9b4017f086c8155c6",
+        "elements.json": "293377af475cf1dad77be8b5de33baada00e39f25de83bc32f89c1b69fb1a0a1",
+        "page-004.md": "cea6682f7ba404bf15cbfee9030e427533f04e9c7d719db9b4017f086c8155c6"
+      }
+    },
+    {
+      "range": "allies-016-016",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "allies",
+        "path": "public/reference/allies-and-mercenaries-ru.pdf",
+        "title": "Trench Crusade. Союзники и Наёмники",
+        "edition": null,
+        "expectedPages": 22,
+        "translation": "Мастерская Кетсу",
+        "sha256": "d0818b7cda3df033bb326bdb96249ba5d612dfc4e2194d476698afe0592754bc"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        16
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 6.95,
+      "peakRssMiB": 1184.2,
+      "elements": 18,
+      "tables": 1,
+      "outputs": {
+        "document.json": "3abb90c1c24d5daac0df04e95f7db409e096f68a6672cc67d024d0b0dab520e2",
+        "document.md": "dd112d88293d15ff8edfec0058492c081704a627989500c8ceea2223d0ff1031",
+        "elements.json": "0935d9d6f4d948ea47bf049493cdd819df3225ba8e3d50cf9a99dae9b757b88a",
+        "page-016.md": "dd112d88293d15ff8edfec0058492c081704a627989500c8ceea2223d0ff1031"
+      }
+    },
+    {
+      "range": "allies-018-018",
+      "schemaVersion": 1,
+      "status": "automatic-draft",
+      "visualReview": "not-performed-by-this-tool",
+      "source": {
+        "id": "allies",
+        "path": "public/reference/allies-and-mercenaries-ru.pdf",
+        "title": "Trench Crusade. Союзники и Наёмники",
+        "edition": null,
+        "expectedPages": 22,
+        "translation": "Мастерская Кетсу",
+        "sha256": "d0818b7cda3df033bb326bdb96249ba5d612dfc4e2194d476698afe0592754bc"
+      },
+      "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+      "pdfPages": [
+        18
+      ],
+      "python": "3.12.3",
+      "versions": {
+        "docling": "2.150.0",
+        "docling-core": "2.106.0",
+        "docling-ibm-models": "4.0.4",
+        "torch": "2.15.0+cpu",
+        "torchvision": "0.29.2+cpu",
+        "PyMuPDF": "1.26.7"
+      },
+      "configuration": {
+        "device": "cpu",
+        "threads": 2,
+        "ocr": false,
+        "vlm": false,
+        "pipeline": "standard",
+        "tableMode": "accurate",
+        "remoteServices": false,
+        "generateImages": false,
+        "offline": false,
+        "cache": "tools/import-cache/docling-models"
+      },
+      "conversionStatus": "success",
+      "elapsedSeconds": 6.734,
+      "peakRssMiB": 1188.6,
+      "elements": 20,
+      "tables": 1,
+      "outputs": {
+        "document.json": "64fea51d049642d5127e06b668d99ebe1697123b8e640ec1942c5698bd01cfac",
+        "document.md": "89b81f5092f4b87c9a926299b6de932e45c2b515494cb103c13cd0ad76227b56",
+        "elements.json": "32ff6e5853cd6c1c4160440cbba2cb61c6308e0b28892b0872fd236a4f32fbda",
+        "page-018.md": "89b81f5092f4b87c9a926299b6de932e45c2b515494cb103c13cd0ad76227b56"
+      }
+    }
+  ],
+  "selectedPages": 15,
+  "referenceSections": 39,
+  "summary": [
+    {
+      "result": "matched",
+      "kind": "paragraph",
+      "critical": false,
+      "count": 59
+    },
+    {
+      "result": "matched",
+      "kind": "paragraph",
+      "critical": true,
+      "count": 100
+    },
+    {
+      "result": "matched",
+      "kind": "table-row",
+      "critical": true,
+      "count": 11
+    },
+    {
+      "result": "needsReview",
+      "kind": "paragraph",
+      "critical": false,
+      "count": 3
+    },
+    {
+      "result": "needsReview",
+      "kind": "paragraph",
+      "critical": true,
+      "count": 5
+    },
+    {
+      "result": "needsReview",
+      "kind": "table-row",
+      "critical": true,
+      "count": 95
+    }
+  ],
+  "checks": [
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "0-1 Боевой Медик (Стоимость: 2 очка славы)",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "(Может быть нанят только варбандой Паломников Траншей)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Медик | 6”/Пехота | 0 | 0 | -1 | 25 мм |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Медик несёт Милосердие и Медицинский Набор. Она экипирована противогазом и комплектом стандартной брони, что отражено в профиле выше. Снаряжение, броню и оружие Медика нельзя модифицировать.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Добить павших (Finish the Fallen)**: Благодаря знанию анатомии и физиологии медики мастерски наносят смертельные травмы и мучительную боль. Если цель не имеет ключевых слов **DEMONIC** или **BLACK GRAIL**, добавьте +1 DICE к броскам на ранение в ближнем бою против противников в состоянии Повален.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Эксперт медицины (Expert Medic)**: Медик добавляет +1 DICE при использовании Медицинского Набора для помощи дружественным моделям.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**-**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 7,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Сёстры Святого Космы — высококвалифицированный элитный медицинский корпус, специализирующийся на оказании первой помощи и проведении операций прямо на передовой Великой Войны.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 8,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Сёстры приносят изменённую клятву Гиппократа, обязывающую их помогать любым раненым солдатам Веры, независимо от тяжести обстоятельств, а также безжалостно и беспощадно уничтожать еретиков и других врагов, встреченных на поле боя.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 9,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Вооружённые боевым хирургическим ножом, выполняющим роль Милосердия, они одинаково искусны в спасении жизней и в лишении их тех, кто лежит раненым в Ничейной земле. Они несут медицинские наборы с множеством боевых препаратов, особенно полезных для подавления боли даже от самых ужасных ран, возвращая солдат в бой, пусть даже на несколько мгновений, чтобы те могли выполнить миссию или умереть, пытаясь.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-medic",
+      "pages": [
+        2
+      ],
+      "index": 10,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "«Держите его.» — Неизвестный боевой медик",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "0-1 Истребитель ведьм (Стоимость: 5 очков славы)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "(Может быть нанят только Варбандами Новой Антиохии и Паломников Траншей)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Истребитель ведьм | 6”/Пехота | 0 | +1D | -2 | 32 мм |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Истребитель ведьм экипирован Укреплённой Бронёй, носит Шлем и несёт Боевой Молот (см. ниже). Его броню, оружие или снаряжение нельзя модифицировать.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Божественный приговор (Divine Judgement)**: Истребитель ведьм может выбрать любую модель вражеской Варбанды в пределах 24” (даже скрытую или вне линии обзора) и обрушить на неё Приговор Небес с помощью Литании Осуждения. Это Рискованное действие. В случае успеха модель получает один Маркер крови (модели с ключевыми словами **HERETIC**, **BLACK GRAIL** или **DEMONIC** получают два Маркера крови), вспыхивая небесным пламенем. Это святое пламя действует даже на юнитов, невосприимчивых к оружию с ключевым словом **FIRE**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Церемониальный долг (Ceremonial Duty)**: Истребитель ведьм дал обет преследовать еретиков с крайней беспощадностью. Ничто не остановит его святую миссию. Истребитель ведьм невосприимчив к **FEAR**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Достойное поведение (Dignified Conduct)**: Из-за высокого статуса Истребитель ведьм не может выполнять **ДЕЙСТВИЕ** Рывок.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 7,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**-**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 8,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Истребители ведьм — полевые офицеры Инквизиции, которым поручено выслеживать и карать ведьм, колдунов и еретиков, недоступных для обычного правосудия.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 9,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "На поле боя они способны направлять божественное возмездие на тех, кто признан нарушителем Божьей воли, заставляя грешников вспыхивать пламенем от одних лишь слов осуждения. Поскольку никто не безгрешен, никто не застрахован от их приговора.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-witch-hunter",
+      "pages": [
+        4
+      ],
+      "index": 10,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "«Спасение — не дар; за него платят монетой агонии и отчаяния.»",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-gavel-of-justice",
+      "pages": [
+        4
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Молот Правосудия (Gavel of Justice)** Посох Истребителей ведьм — это одновременно символ их должности и оружие, пропитанное гневом Бога против нарушителей Божественного Закона. Он обрекает души виновных гореть в вечном пламени.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-gavel-of-justice",
+      "pages": [
+        4
+      ],
+      "index": 1,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Молот Правосудия | Одноручное | ББ | - | - |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "allies",
+      "section": "allies-gavel-of-justice",
+      "pages": [
+        4
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Если Истребитель ведьм попадает по врагу Молотом Правосудия, цель атаки автоматически подвергается Божественному приговору, как описано в способностях Истребителя, даже если атака не нанесла урона. Это не считается использованием **ДЕЙСТВИЯ** Божественный приговор. Таким образом, Истребитель ведьм может вызвать несколько Божественных приговоров за одну активацию.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "0-1 Мамлюк Фарис (Стоимость: 4 очка славы)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "(Может быть нанят только Железным Султанатом и Княжеством Новой Антиохии)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Мамлюк | 6”/Пехота | +1D | +1D | -2(3) | 32 мм |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Мамлюк несёт Джезайл с Алхимическими Боеприпасами. Он носит Шлем и Усиленную Броню. Перед каждой битвой вы можете выбрать один из следующих наборов из его личного арсенала:",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Древковое Оружие и Окопный Щит;",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Меч и Пистолет;",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Двуручный Меч (игнорирует ключевое слово **HEAVY** для этого оружия)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 7,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Присягнувший Меч (Sworn Sword)**: Мамлюки могут формировать **FIRETEAM** с любой одной моделью с ключевым словом **ELITE** в составе своей Варбанды. Этот **FIRETEAM** всегда добавляется к любым другим **FIRETEAM**, которые Варбанда может сформировать. Если Мамлюк присоединяется к **FIRETEAM** Новой Антиохии, модель получает преимущества специальных правил Fireteam.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 8,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Боевая Доблесть (Martial Prowess)**: Мамлюки — адепты Фурусийи, рыцарской дисциплины, передаваемой через поколения, которую они неустанно практикуют, имея мало равных. Это даёт их Джезайлам ключевое слово **ASSAULT** и способность «совместим с щитом». Кроме того, они не получают штрафов за бой зарасным оружием в ближнем бою.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 9,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Арабский Скакун (Arabian Destrier)**: Если сценарий не запрещает специальное развёртывание **INFILTRATORS**, вы можете развернуть Мамлюка на любом краю стола, при условии, что он находится не ближе 8” к любой вражеской модели после развёртывания **INFILTRATORS**. Мамлюки также могут быть развёрнуты в вашей зоне развёртывания по стандартным правилам.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 10,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**-**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 11,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Мамлюки — отголосок ушедшей эпохи, последние представители воинской элиты, некогда правившей великой империей в Северной Африке. Они понесли тяжёлые потери на ранних этапах Великой Войны, когда легионы демона Заламбуэра вырвались из Адских Врат. Фатимиды повели свои мамлюкские силы в отчаянную кампанию за освобождение Леванта, но их судьба осталась неизвестной. Вместо триумфального возвращения воинов рабы Джаханнама пронеслись через Синай, как злой ветер, сровняв Александрию и Каир с землёй. Оставшиеся Мамлюки отчаянно сражались, защищая свои дома, но тщетно. Слишком горды, чтобы оставить родные земли на милость зла, некоторые из последних Мамлюков не откликнулись на призыв уйти за Железную Стену и вместо этого рассеялись по землям, которыми когда-то правили, чтобы продолжать бой — борьбу, не прекращающуюся с тех тёмных дней.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 12,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "По сей день мамлюкские рыцари ведут смертоносную игру засад и внезапных набегов на египетском фронте против легионов Маммона, зарабатывая на жизнь как наёмные клинки, ведя бесконечную войну против еретиков и сочиняя плачи в память о своих утраченных и опустошённых родинах. Поколения войн закалили Мамлюков в непревзойдённых воинов, ибо родители передают детям секреты Фурусийи — боевых навыков и этического кодекса арабских рыцарей. Слишком малочисленные для открытой войны, Мамлюки сражаются бок о бок с любым из Народов Книги, зарабатывая на жизнь, предлагая свои мечи тому, кто больше заплатит, при условии, что такой лидер обещает бороться с силами Шайтана. Они превыше всего ценят благородный характер и боевую доблесть, часто укрепляя союз, делясь своим искусством меча с уважаемым союзником.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-mamluk-faris",
+      "pages": [
+        16
+      ],
+      "index": 13,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Лишь немногие из прославленных искусственных тяжёлых боевых коней Мамлюков сохранились, и их не рискуют использовать в открытом бою, кроме случаев, когда они защищают последние скрытые убежища Мамлюков в обширных пустынях за дельтой Нила. Однако эти неутомимые скакуны используются, чтобы доставлять тяжёлых мамлюкских воинов на передовые позиции, где они могут сорвать планы врага и застать врасплох уязвимые вражеские отряды.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "0-1 Окопная Собака (Стоимость: 1 очко славы)",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "(До 1 собаки каждого типа, для любой Варбанды (см. ниже))",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Окопная Собака | 8”/Пехота | 0 | 0 | 0 | 25 мм |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Собаки не получают штрафов за бой без оружия. В бою они считаются не-**ELITE** войсками. Боевые собаки не могут стать **ELITE**. За дополнительное +1 Очко Славы любая собака может формировать **FIRETEAM** с любой одной моделью в вашей Варбанде.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Четыре Лапы (Four Paws)**: Собаки могут выполнять любое **ДЕЙСТВИЕ** Рывок или Прыжок/Атаки в прыжке с бонусом +1 DICE. Они не могут взбираться по отвесным поверхностям.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "За дополнительное +1 Очко Славы собака может быть одной из следующих специализированных ролей:",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Сторожевая Собака (Guard Dog)**: Эти собаки предупреждают хозяев о надвигающейся угрозе и яростно сражаются за своих товарищей. Ни один **INFILTRATOR** не может быть размещён в пределах 12” от Сторожевой Собаки, и вы можете атаковать в ближнем бою любого врага в пределах 4” от этой собаки, даже если он вне линии обзора. Любая Варбанда, кроме Чёрного Грааля и Двора Семиглавого Змея.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 7,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Собака Милосердия (Mercy Dog)**: Собаки Милосердия несут Медицинский Набор, который может использовать любая дружественная модель на себе в пределах 1” от собаки. Также они могут тащить любую модель в состоянии Повален в пределах 1” с половинной скоростью, как при обычном движении, так и при Рывке. Если это выводит модель из ближнего боя, это не вызывает бесплатное **ДЕЙСТВИЕ** атаки в ближнем бою. Только Новое Антиохийское Княжество.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 8,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Собака-Мученик (Martyrdom Dog)**: Паломники Траншей нередко с энтузиазмом оснащают своих собак взрывчаткой, чтобы те могли участвовать в славной операции мученичества. Взрывчатка подчиняется тем же правилам, что и Устройство Мученичества Церковных Узников. Только Паломники Траншей.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 9,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Адская Гончая (Hellhound)**: Эта ужасающая инфернальная тварь размером с пони, в её истерзанном чреве пылает адское пламя. Она воет от вечной агонии и ярости в бою. Эта собака невосприимчива к атакам с ключевым словом FIRE, а её собственная атака имеет ключевое слово FIRE. Характеристика атаки в ближнем бою увеличена на +1 DICE. Для Варбанд Маммона или Чёрного Грааля замените ключевое слово FIRE на GAS в правилах выше. Только Чёрный Грааль, Двор Семиглавого Змея и Легион Еретиков.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 10,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**-**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "allies",
+      "section": "allies-trench-dog",
+      "pages": [
+        18
+      ],
+      "index": 11,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Множество животных служит в траншеях бок о бок с солдатами. Боевые собаки — самые распространённые, но встречаются и приручённые оцелоты, берберийские обезьяны, небольшие медведи и другие необычные питомцы, тогда как силы Ада держат адских гончих и иных инфернальных тварей. Эти верные псы могут быть обучены для разных ролей: милосердные собаки спасают раненых солдат, свирепые сторожевые псы охраняют, а курьерские доставляют сообщения.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Trench Crusade — это настольная игра на уровне стычек, которая погружает игроков в ужасающий альтернативный мир. Во время Крестовых походов группа еретиков-Тамплиеров отвергла Всевышнего, нарушив свои священные обеты и выпустив силы Ада на Землю.",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Прошло более 800 лет, и в 1914 году, в Год Господа нашего, жестокая война между силами Небес и Ада продолжается. Это не просто борьба за выживание — это катастрофическое сражение, которое определит судьбу человеческой души.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Следующие правила погружают вас в окопы, где ваши отряды будут участвовать в ожесточённых схватках за господство на нейтральной территории.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Миниатюры** Каждый игрок управляет отрядом, который обычно включает 6–20 моделей. Хотя строгих требований к масштабу нет, игра рассчитана на героический масштаб 32 мм. Если вы предпочитаете другой масштаб — не переживайте, охотники на ведьм не придут к вам за это!",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Игровая поверхность** Для игры потребуется игровое поле. Мы предлагаем два стандартных размера: 48” x 48” или 36” x 36”. Они подходят для большинства столов.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Террейн играет важную роль, и больше – лучше! Trench Crusade — это игра, основанная на позиционировании и тактике, поэтому различные уровни высоты, укрытия и разнообразные элементы ландшафта сделают ваш игровой процесс более насыщенным.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Инструмент измерения** Вам понадобится рулетка или мерная линейка. *Trench* *Crusade* использует британскую систему измерений, то есть расстояния измеряются в дюймах.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 7,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Кубики** Каждый игрок должен иметь восемь шестигранных кубиков (D6) разных цветов.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-foundations",
+      "pages": [
+        4
+      ],
+      "index": 8,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Маркер Крови (Blood Marker)** Вам также понадобятся несколько красных шестигранных кубиков для обозначения **Маркеров Крови**, которые объясняются ниже.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-activation",
+      "pages": [
+        4
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Игроки активируют свои модели поочерёдно. Один **ход** (Turn) состоит из активации всех моделей обоих игроков по одному разу.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-activation",
+      "pages": [
+        4
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Например, первый игрок выбирает модель для активации, выполняет любые доступные ей **ДЕЙСТВИЯ**, после чего наступает очередь второго игрока активировать одну из своих моделей.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-activation",
+      "pages": [
+        4
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Вы можете выбрать любую модель в вашем отряде (которая ещё не была активирована) и активировать её. Эта модель может двигаться, выполнять **ДЕЙСТВИЯ** и использовать специальные навыки или снаряжение по вашему выбору. Когда активация модели завершена, ваш оппонент активирует одну из своих моделей, и процесс продолжается.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-activation",
+      "pages": [
+        4
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Кто начинает активацию:** Игрок с наименьшим количеством моделей на столе решает, кто начнёт активацию в начале каждого хода. Если у обоих игроков одинаковое количество моделей, бросьте D6, и победитель броска решает. Когда каждый игрок активировал все свои модели, **ход заканчивается**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Действия** После активации модель может выполнить любое количество **ДЕЙСТВИЙ** в любой последовательности. Однако каждое действие может быть выполнено только один раз за активацию, если в правилах не указано иное. Например, вы можете выстрелить, затем переместиться и сделать рывок, или сначала сделать рывок, затем атаковать и так далее.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Некоторые **ДЕЙСТВИЯ** требуют броска на **Таблице успеха действий** (см. далее), чтобы определить, удалось ли действие. Если бросок успешен, действие выполняется в соответствии с описанием в правилах. Если бросок провален, модель всё ещё может двигаться или выполнять любые другие действия, доступные ей. Если действие классифицировано как **РИСКОВАННОЕ ДЕЙСТВИЕ** и бросок провален, активация модели завершается, и ваш противник может активировать одну из своих моделей.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Общие действия – это действия доступны всем моделям:",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Движение (Move):** Когда модель выполняет это действие, выберите один из трёх вариантов, бросок не требуется:",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Обычное движение (Standard Move):** Модель перемещается на расстояние, равное её характеристике движения.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Нападение (Charge):** Выберите вражескую модель (которую атакующая модель видит) в пределах 12” в качестве цели. Затем атакующая модель перемещается к цели кратчайшим и наиболее эффективным путём, прибавляя к своему движению результат броска D6”. Это движение может позволить атакующей модели приблизиться на расстояние 1” к цели, вступив с ней в ближний бой. Модель не может нападать в этом ходу, если она уже стреляла, за исключением случаев, когда использовалось оружие с ключевым словом **ASSAULT**, из которого произвели 1 выстрел.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Отступление (Retreat):** Модель перемещается на расстояние, равное её характеристике движения, и может покинуть ближний бой. Каждая вражеская модель, находящаяся в ближнем бою с отступающей моделью, может немедленно выполнить одну атаку ближнего боя. Эффекты атаки разрешаются до перемещения отступающей модели.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 7,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Рывок (Dash):** Модель должна успешно выполнить **РИСКОВАННОЕ ДЕЙСТВИЕ**. Если действие успешно, модель выполняет обычное движение, как описано выше. Можно сделать в дополнение к любому действию.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 8,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Атака дальнего боя:** Модель может стрелять из оружия дальнего боя, которым она оснащена. Модель, находящаяся в ближнем бою, не может стрелять. Модель также не может стрелять, если она совершила нападение в этом ходу активации, за исключением оружия с ключевым словом **ASSAULT**, из которого произвели 1 выстрел.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 9,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Атака в ближнем бою:** Если модель находится в ближнем бою, она может атаковать, используя оружие ближнего боя, которым оснащена.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 10,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Любые другие ДЕЙСТВИЯ**: Многие модели могут выполнять другие возможные **ДЕЙСТВИЯ** во время своей Активации. Подробности смотри в списках боевых отрядов.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-actions",
+      "pages": [
+        4,
+        5
+      ],
+      "index": 11,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Рискованные действия (Risky Actions):** Если вы проваливаете **РИСКОВАННОЕ ДЕЙСТВИЕ**, это всегда заканчивает активацию модели, и теперь ваш противник может активировать одну из своих моделей!",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-action-success",
+      "pages": [
+        5
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Когда вы выполняете **ДЕЙСТВИЕ** (включая ближние или дальние атаки), выполните следующие шаги. Бросьте 2D6 и добавьте/вычтите любые **+DICE** или **-DICE** из профиля персонажа, травм или других источников. Выберите два самых больших результата (или наименьших, если применяется **- DICE**) и сравните их с таблицей ниже:",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-action-success",
+      "pages": [
+        5
+      ],
+      "index": 1,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 2–6 | Провал |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-action-success",
+      "pages": [
+        5
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 7–11 | Успех |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-action-success",
+      "pages": [
+        5
+      ],
+      "index": 3,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 12+ | Критический успех: Если это атака в ближнем или дальнем бою, добавьте **+1 DICE** к броскам на ранения. |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-action-success",
+      "pages": [
+        5
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "При успехе вы производите действие как указано в правилах. При провале вы всё ещё можете двигаться или делать любые другие доступные действия для юнита. Если действие считается **РИСКОВАННЫМ,** и вы проваливаете бросок, активация модели немедленно заканчивается, и право хода переходит к противнику.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dice",
+      "pages": [
+        5,
+        6
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Правила часто содержат модификаторы для бросков кубиков, которые обозначаются как **+DICE** и **- DICE** (например, стрельба с возвышенности добавляет **+1 DICE** к атакам дальнего боя против врагов внизу).",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dice",
+      "pages": [
+        5,
+        6
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Эти модификаторы отображаются в формате **+1 DICE** и **-1 DICE**. Многие модели имеют их в своём профиле для атак ближнего и дальнего боя, а также такие факторы, как расстояние, укрытие и другие элементы, могут применять их к броскам, которые вы делаете на **успех действия** или **на ранение**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dice",
+      "pages": [
+        5,
+        6
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Для каждого **+DICE** добавляется один кубик к пулу броска 2D6, который вы собираетесь выполнить. Например, **+1 DICE** увеличивает общий бросок до 3D6. Затем бросьте все кубики и выберите два самых высоких результата. Если добавлено **+2 DICE**, бросьте 4D6 и выберите два самых высоких значения и так далее.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dice",
+      "pages": [
+        5,
+        6
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Для каждого **-DICE** добавляется один кубик к пулу броска 2D6, но вместо этого вы выбираете два самых низких результата. Например, **-1 DICE** увеличивает общий бросок до 3D6. Затем бросьте все кубики и выберите два самых низких результата. Если добавлено **-2 DICE**, бросьте 4D6 и выберите два самых низких и так далее.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dice",
+      "pages": [
+        5,
+        6
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Пример игрового процесса:** *Модель Паломника стреляет по солдату Еретика из мушкета. Еретик находится в укрытии, что даёт штраф* **- 1 DICE** *ко всем атакам дальнего боя. Паломник бросает 3D6 и получает 5, 5 и 1. Два самых низких результата (1 и 5) составляют итоговый результат 6. Так как для попадания нужно было выбросить 7 или выше, выстрел промахнулся.*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dice",
+      "pages": [
+        5,
+        6
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Перед броском кубиков добавьте все **+DICE** и **- DICE** в пул. Если в пуле есть как **+DICE**, так и **- DICE**, удалите пары противоположных модификаторов до тех пор, пока останется только один тип (либо **+DICE**, либо **-DICE**).",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-blood-markers",
+      "pages": [
+        6
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Во время битвы ваши воины могут быть ранены вражескими атаками, сверхъестественными силами, падениями с высоты и другими причинами — подробности см. в **Таблице ранений**. Этот урон отслеживается с помощью **Маркеров Крови**. Помимо ран, они также отражают истощение, сотрясение, контузию, физическое и психическое перенапряжение и другие последствия.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-blood-markers",
+      "pages": [
+        6
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Каждый раз, когда ваша модель получает такой урон, поместите **красный кубик** рядом с моделью, чтобы обозначить этот урон. Используйте количество точек на кубике, чтобы отразить число Маркеров Крови у модели. Каждый раз, когда эта модель выполняет **ДЕЙСТВИЕ** (стрельба, атаки в ближнем бою и так далее), ваш противник может заявить, что он использует один или несколько её Маркеров Крови. За каждый использованный Маркер Крови добавляется штраф **-1 DICE** к броску кубиков на **успех действия**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-blood-markers",
+      "pages": [
+        6
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Маркеры Крови также можно использовать, если модель получает урон от любого источника. Каждый маркер можно конвертировать в **+1 DICE** к броску на **ранение**, увеличивая вероятность серьёзного ранения. Так же, как и с действиями, несколько маркеров могут быть использованы для влияния на один бросок.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-bloodbath",
+      "pages": [
+        6
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Вы можете бросить дополнительный D6 при бросках **на ранение**, потратив шесть Маркеров Крови на любую модель или три Маркера Крови, если цель находится в состоянии \"Повален\" (**Down**). Вместо обычного броска 2D6 с вашим оружием вы бросаете 3D6 и суммируете результаты. Если оружие, такое как **Адская Бомба** Артиллерийской ведьмы, уже позволяет бросать 3D6, то благодаря эффекту кровавой бани вы бросите 4D6 и суммируете все результаты.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-bloodbath",
+      "pages": [
+        6
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Пример игрового процесса:** *Модель Паломников Траншей* (**Trench Pilgrim**) *получила ранение в ходе битвы и имеет два* **Маркера Крови**. *Солдат* Еретик (**Heretic Trooper**) *стреляет в Паломника из своей надёжной винтовки с затворным механизмом, бросает 8 и попадает! Игрок за Еретиков решает использовать один из Маркеров Крови, чтобы повысить вероятность нанесения ранения. Он бросает 3D6 (2D6* **+1 DICE** *за потраченный маркер) и обращается к* **Таблице ранений**. *Результаты бросков — 4, 5 и 1. Так как использовался* **+1 DICE**, *игрок выбирает два самых высоких числа, которые в сумме дают 9. Паломник выведен из строя!*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-blessing-markers",
+      "pages": [
+        6
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Маркеры Благословения** схожи с маркерами крови, но дают положительные эффекты. Каждый раз, когда модель выполняет **ДЕЙСТВИЕ** (стрельба, рывок, атака в ближнем бою и т. д.), вы можете потратить один или несколько её маркеров благословения, чтобы добавить **+1 DICE** к пулу броска на таблице успеха действий.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-blessing-markers",
+      "pages": [
+        6
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Кроме того, всякий раз, когда противник бросает кубики на таблице ранений против этой модели, она может потратить Маркер Благословения, чтобы применить штраф **-1 DICE** к этому броску. Несколько маркеров благословения могут быть применены к одному броску, если у модели их более одного.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Все модели в игре могут двигаться при активации, если иное не указано в правилах. Каждая модель может перемещаться до указанного в её профиле расстояния, но может двигаться меньше или не двигаться вовсе.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Общие правила движения:",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Модель не может вступить в ближний бой (на расстояние 1” от врага), если она не выполняет **нападение**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Модель не может покинуть ближний бой, если она не выполняет **отступление**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Модель не может перемещаться, если начала свою активацию в ближнем бою, за исключением случаев, когда она остаётся в ближнем бою со всеми противниками, с которыми она была связана.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Модель может перемещаться через союзников, если у неё достаточно движения, чтобы полностью пересечь их базу.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Модель не может покидать пределы игрового поля, если правило не указывает иное.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 7,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Движение (включая нападение) обычно является единственным действием, не требующим броска 2D6 для определения успеха, если иное не указано в правилах.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 8,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Нападение**: Выберите вражескую модель, находящуюся в пределах 12” от атакующей модели, в качестве цели атаки в ближнем бою. Если атакующая модель не имеет прямой видимости к своей цели, она должна выполнить **РИСКОВАННОЕ ДЕЙСТВИЕ** перед продолжением. Бросьте D6 (это бросок на нападение) и добавьте результат к характеристике движения атакующей модели (максимальное расстояние — 12”). Модель должна двигаться к цели по кратчайшему и наиболее эффективному пути. При этом она может прыгать, карабкаться или перемещаться через опасную местность. Однако выбор такого пути является опциональным, и можно выбрать более безопасный маршрут.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 9,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Если после выполнения движения атакующая модель находится в пределах 1” от цели, нападение считается успешным, и обе модели теперь находятся в ближнем бою. Если атакующая модель не достигает цели, нападение считается неудачным, но модель остаётся там, где закончила своё движение.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 10,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Атака нескольких целей**: Модель может атаковать нескольких врагов за одно нападение, если есть место, которое она может занять (в пределах 12”), чтобы вступить в ближний бой со всеми целями атаки. При этом выполняется только одно нападение.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 11,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Препятствующие модели:** Если нападающая модель должна пройти на расстоянии менее 1” от вражеской модели, которая не является целью атаки, её движение немедленно заканчивается, и она считается атакующей эту модель.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 12,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Атака в прыжке:** Если атакующая модель прыгает вниз как часть своего нападения: Она должна приземлиться в пределах 2” от цели. Высота прыжка должна составлять минимум 3” и не более 6” от цели. Выполните **РИСКОВАННОЕ ДЕЙСТВИЕ**. **При успехе** модель получает бонус **+1 DICE** к броскам на попадание и ранение. Игнорируется бонус цели от защитного препятствия (Defended Obstacle). **При провале** модель считается поваленной и получает урон согласно правилам для падения.",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 13,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Лазание:** Модель может подниматься или спускаться по лестницам, рампам, верёвкам, лестничным пролётам и другим объектам, предназначенным для подъёма, как часть обычного движения. Это требует затраты движения. Модель также может попытаться взобраться на отвесные поверхности (например, стены) как часть **РИСКОВАННОГО ДЕЙСТВИЯ**, если у неё достаточно движения, чтобы завершить подъём. **При провале** модель остаётся на месте и не продвигается вверх.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 14,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Прыжки через разрывы:** Модель может перепрыгивать через разрывы, длина которых не превышает половину её характеристики движения. Это действие требует выполнения **РИСКОВАННОГО ДЕЙСТВИЯ**. **При провале** модель падает в выбранное противником место на одном из краёв обрыва и получает урон согласно правилам для падения.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 15,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Прыжки между уступами разной высоты:** Если уступ, на который прыгает модель, ниже уступа, с которого она прыгает, применяются правила **Прыжков вниз** после того, как модель преодолевает разрыв. Если уступ, на который прыгает модель, выше уступа, с которого она прыгает, его высота может быть максимум на 1\" больше. Если высота уступа превышает ½\", прыжок требует дополнительного 1\" движения.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-movement",
+      "pages": [
+        6,
+        7
+      ],
+      "index": 16,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Прыжки вниз:** Модель может добровольно «упасть» с уступа, с которым она находится в базовом контакте. Это никогда не требует затрат движения и может быть выполнено как часть любого перемещения модели. Кроме того, при падении с высоты до 3\" таким образом, модель не выполняет бросок на **ранение.**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-measure-and-climb",
+      "pages": [
+        5
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Предварительное измерение** Если в правилах не указано иное, вам разрешается измерять расстояния, чтобы проверить, находитесь ли вы в пределах досягаемости для стрельбы, атаки в ближнем бою и других действий. **Лазание и прыжки** Во время любого движения модель может взбираться на поверхности, перепрыгивать через разрывы и спускаться с уступов для перемещения по полю боя. **Лазание вверх и вниз** или **прыжки через разрывы** требуют затрат движения в обычном порядке. **Прыжки вниз** не требуют затрат движения, но могут быть опасны в зависимости от высоты прыжка (подробности см. на странице 7).",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-prohibition",
+      "pages": [
+        6
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правило запрещения** Может возникнуть ситуация, когда различные правила и способности конфликтуют друг с другом, создавая логическое противоречие. Одно правило может требовать от модели выполнения определённого действия, тогда как другое правило запрещает это делать. В таких случаях запрет имеет приоритет. Если модель не может выполнить действие, это отменяет любое правило, которое требует его выполнения.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-fractions",
+      "pages": [
+        6
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Дроби** Во всех случаях, когда в правилах упоминаются дроби, всегда округляйте значения в большую сторону до ближайшего целого числа, если это необходимо. Если в вашем отряде девять моделей, а правило применяется к половине всех бойцов, округлите 4,5 модели до 5. С другой стороны, если характеристика движения модели равна 9\", и она сокращается наполовину, результат может остаться равным 4,5\" без необходимости округления до целого числа.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-exit-trench",
+      "pages": [
+        6
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Подняться из окопа** Все окопы считаются оборудованными ступенями для огня и опорами для ног, поэтому выход из них не требует теста на **РИСКОВАННОЕ ДЕЙСТВИЕ**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-sacrificial-knife",
+      "pages": [
+        125
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "*Ужасающие клинки, благословлённые рукой высшего дьявола, используются в еретических ритуалах для* *жертвоприношений тёмным силам Ада. Достаточно коснуться врага, чтобы вызвать неописуемую боль, и даже* *малейшая рана часто смертельна от одного лишь мучения. Они опасны даже для владельца, так как малейшая царапина* *ранит как друга, так и врага.*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-sacrificial-knife",
+      "pages": [
+        125
+      ],
+      "index": 1,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Жертвенный нож | Одноручный | ББ | +2 на ранение | **RISKY** |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-item-sacrificial-knife",
+      "pages": [
+        125
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Жертвенный Нож добавляет +2 ко всем броскам на ранение. Например, результат 7 на Таблице ранений становится 9 при использовании Жертвенного Ножа.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-blasphemous-staff",
+      "pages": [
+        125
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "*Созданный в насмешку над жезлом Пророка Аарона, этот зловещий посох вызывает невообразимую боль при малейшем* *касании благодаря адскому пламени, которое он порождает.*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-blasphemous-staff",
+      "pages": [
+        125
+      ],
+      "index": 1,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Богохульный посох | Одноручный | ББ | - | **FIRE, CRITICAL** |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-blasphemous-staff",
+      "pages": [
+        125
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: при проверке на попадание добавляйте **-1DICE**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-hellblade",
+      "pages": [
+        125
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "*Выкованный из железной руды шахт Дита в Инферно, этот клинок пылает неугасимым пламенем Ада.*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-hellblade",
+      "pages": [
+        125
+      ],
+      "index": 1,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Адский меч | Двуручный | ББ | +1D на ранение | **FIRE** |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-hellblade",
+      "pages": [
+        125
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Адский Клинок добавляет **+1 DICE** при бросках на ранения. Благодаря ключевому слову **FIRE**, он наносит +1 Маркер крови врагам при попадании.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-tartarus-claws",
+      "pages": [
+        125
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "*Созданные из отрубленных рук Малербраншей, Когти Тартара даруются Архидьяволами только тем, чьи сердца* *почернели от греха Гнева.*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-tartarus-claws",
+      "pages": [
+        125
+      ],
+      "index": 1,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Когти Тартара | Двуручное | ББ | - | **-** |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-item-tartarus-claws",
+      "pages": [
+        125
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Когти Тартара всегда идут парой и не позволяют использовать другие оружия ближнего боя. Вы можете выполнить два **ДЕЙСТВИЯ** атаки Когтями без обычного штрафа **-1 DICE** для второй атаки. Если противник повален или выведен из строя Когтями, модель может немедленно переместиться на 3”. Если перемещение приводит к контакту с другой вражеской моделью, это считается атакой, и вы можете выполнить второе **ДЕЙСТВИК** атаки ближнего боя Когтями. Это дополнительное перемещение возможно только раз за Активацию.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-anti-tank-hammer",
+      "pages": [
+        125
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "*Древковое оружие с направленным взрывчатым зарядом на наконечнике. Превосходно для уничтожения бронированных* *целей, но подвергает владельца большой опасности.*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-anti-tank-hammer",
+      "pages": [
+        125
+      ],
+      "index": 1,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Противотанковый молот | Двуручное | ББ | +1D на ранение | **RISKY, CRITICAL** |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-item-anti-tank-hammer",
+      "pages": [
+        125
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Игнорирует модификаторы брони и выполняет броски на ранения с **+1 DICE**. При попадании по врагу владелец также получает +1 Маркер крови.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Переместите область плотного террейна (не менее 6” x 6”, ближайшую к центру стола) в центр стола и поместите Маркер цели в его центр. Этот маркер представляет небольшой объект (реликвию, артефакт, экспериментальное оружие и т.д.).",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Модель, завершившая Движение в контакте с маркером, подбирает объект и несёт его, пока не покинет стол или не будет выведена из строя. Несущая объект модель не может атаковать, выполнять Рывок или использовать иные способы передвижения (телепортация, Повелитель Марионеток и т.д.) из-за мистического эффекта реликвии. В конце активации модель может передать объект дружественной модели в пределах 1”, если ни одна из них не находится в ближнем бою с врагом. Модель, получившая объект, считается завершившей свою активацию в этом ходу, если ещё не сделала этого.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Если несущая объект модель выведена из строя, объект немедленно отбрасывается на D6” в направлении, указанном противником, но не за пределы поля. Если объект попадает на Непроходимую местность, он останавливается перед ней. Если объект падает на модель, она подбирает его, кроме случаев, когда рядом есть вражеская модель в ближнем бою — тогда объект отбрасывается снова.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Если модель с объектом вступает в контакт с краем стола, она сбегает с объектом, и игрок немедленно побеждает.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Если игра заканчивается, пока модель несёт объект, игроки бросают 1D6. Если игрок, контролирующий модель с объектом, побеждает в броске, он выигрывает. В противном случае — ничья. Инфильтраторы развёртываются как обычные войска.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Игрок, не бросавший за тип сценария, бросает 1D6 и сверяется с таблицей ниже, чтобы определить, как Варбанды развёртываются.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "(бросьте D6)",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 7,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 1 | СЛУЧАЙНАЯ ВСТРЕЧА |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 8,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 2 | СТАНДАРТНОЕ РАЗВЕРТЫВАНИЕ |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 9,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 3 | АТАКА С ФЛАНГА |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 10,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 4 | БИТВА НА ДИСТАНЦИИ |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 11,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 5 | ТУННЕЛИ |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 12,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| 6 | ТУМАН ВОЙНЫ |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 13,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Игроки бросают кубик, и победитель выбирает длинный край стола (или любой край для квадратного поля). Противник получает противоположный край. Модели не размещаются на столе в начале игры. В первом ходу половина Варбанды (по выбору игрока) входит на поле. При активации модель начинает движение с любой точки своего края стола, но не может быть развёрнута прямо в ближний бой. Во втором ходу оставшаяся часть Варбанды развёртывается так же.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-random-scenarios",
+      "pages": [
+        164
+      ],
+      "index": 14,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Сценарий со Случайной встречей длится минимум шесть ходов.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-recruitment",
+      "pages": [
+        19
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Создание отряда",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-recruitment",
+      "pages": [
+        19
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "У вас есть 700 дукатов для набора первоначального отряда в кампании. Для одиночных сражений мы рекомендуем стандартный отряд стоимостью 900 дукатов и 8 Очков Славы.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Арсенал Легиона Еретиков",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Солдаты Еретического Легиона могут быть оснащены оружием, бронёй и снаряжением, перечисленными ниже. Все исключения указаны в профилях бойцов или в списке ниже. Предметы с пометкой **Лимит** могут использоваться только в указанном количестве в течение всей кампании. Оружие с пометкой \"**Только для Элиты**\" доступно только моделям с ключевым словом **ELITE**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Винтовка | 10 дукатов (Штыковое крепление) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 3,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Полуавтоматическая винтовка | 15 дукатов (Штыковое крепление) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 4,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Автоматическая винтовка | 2 очка славы (Лимит: 2, Штыковое крепление) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 5,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пистолет | 6 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 6,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пистолет с глушителем | 15 дукатов (Только для Элиты) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 7,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Граната | 7 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 8,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Газовая граната | 10 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 9,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Зажигательная граната | 15 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 10,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пистолет-пулемёт | 2 очка славы (Штыковое крепление, совместим с щитом) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 11,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Дробовик | 10 дукатов (Штыковое крепление, совместим с щитом) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 12,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Автоматический дробовик | 15 дукатов (Штыковое крепление, совместим с щитом) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 13,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Гранатомёт | 30 дукатов (Лимит: 2) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 14,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пулемёт | 50 дукатов (Лимит: 1) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 15,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Огнемёт | 30 дукатов (Лимит: 3) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 16,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Тяжёлый огнемёт | 55 дукатов (Лимит: 2) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 17,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Противотанковая винтовка | 3 очка славы (Лимит: 1) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 18,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Окопный нож | 1 дукат |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 19,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Штык | 2 дуката (Совместим с щитом) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 20,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Окопная Дубинка | 3 дуката |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 21,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Меч/топор | 4 дуката |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 22,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Древковое оружие | 7 дукатов (Совместим с щитом) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 23,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Большой молот/кувалда | 10 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 24,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Большой меч/топор | 12 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 25,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Жертвенный нож | 23 дуката (Лимит: 2, только для Элиты) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 26,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Адский меч | 1 очко славы (Лимит: 2) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 27,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Когти Тартара | 15 дукатов (только для Коммандоса Смерти) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 28,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Богохульный посох | 2 очка славы (Только для Элиты) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 29,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Стандартная броня | 15 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 30,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Усиленная броня | 40 дукатов (Только для Элиты и Помазанника) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 31,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Окопный щит | 10 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 32,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Боевой шлем | 5 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 33,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Противогаз | 5 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 34,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Нечестивый талисман | 15 дукатов (CONSUMABLE) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 35,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Нечестивая реликвия | 15 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 36,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Зажигательные боеприпасы | 15 дукатов (Лимит: 1, CONSUMABLE) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 37,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Лопата | 5 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 38,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Адское Клеймо | 5 дукатов |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 39,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Боевой флаг | 1 очко славы (Лимит: 1) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 40,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Музыкальный инструмент | 15 дукатов (Лимит: 1) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 41,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Альпинистский комплект | 3 дуката (Лимит: 2) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-arsenal",
+      "pages": [
+        19
+      ],
+      "index": 42,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Контракт с Адом | 5 дукатов (Лимит: 3, только для Пехоты Еретиков и Легионеров) |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "1 Священник Еретиков (Стоимость: 80 дукатов) Ваша варбанда обязана иметь Священника Еретика при создании.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Лидер еретического отряда. Эти падшие священники творят всевозможную нечестивую магию, призывая окаменевших демонов и существ с помощью своих гоэтических заклинаний. Часто присягая демоническому лорду в аду, такому как Пазузу или Гисон, они читают нечестивые евангелия, которые ужасают церковные силы, заставляя уши кровоточить, а глазные яблоки лопаться в глазницах.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Священник Еретиков | 6”/пехота | +2D | +2D | 0 | 32 мм |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Экипировка**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 4,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Священник Еретиков может быть экипирован любой броней, оружием или снаряжением из Арсенала Легиона Еретиков.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 5,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Способности**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 6,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Хозяин Марионеток (Puppet Master)**: Выберите цель, друга или врага (включая Священника), в пределах 12”. В качестве **РИСКОВОГО ДЕЙСТВИЯ** вы можете переместить модель на D6” в любом направлении, в том числе заставить ее подпрыгнуть/упасть или вступить в ближний бой с любой вражеской моделью (как если бы она совершила Атаку), или выйти из боя (как если бы она совершила Отступление, включая предоставление всем врагам в пределах дальности свободных атак).",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 7,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Крепкий (Tough)**: Демоническая жизненная сила делает Священников-еретиков очень сложными для убийства. Они подчиняются правилам для КРЕПКИХ существ.",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 8,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**Ключевые слова**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-heretic-priest",
+      "pages": [
+        22
+      ],
+      "index": 9,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "**HERETIC, ELITE, TOUGH, LEADER**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-anchorite-heavy-flamethrower",
+      "pages": [
+        45
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Тяжёлый огнемёт (Heavy Flamethrower) 45 дукатов**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-anchorite-heavy-flamethrower",
+      "pages": [
+        45
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "(Использует стандартне правила Тяжёлого огнемёта)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-anchorite-antimateriel-rifle",
+      "pages": [
+        45
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Противатанковая винтовка (Anti-Materiel Rifle) 2 Очка Славы**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-anchorite-antimateriel-rifle",
+      "pages": [
+        45
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "(Использует стандартные правила Противотанковой винтовки)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-anchorite-punt-gun",
+      "pages": [
+        45
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Ружьё-пушка (Punt Gun) 10 дукатов**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-anchorite-punt-gun",
+      "pages": [
+        45
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "(Использует стандартные правила Ружья-пушки)",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-trench-mortar",
+      "pages": [
+        45
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Траншейный миномёт (Trench Mortar) 40 дукатов**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-trench-mortar",
+      "pages": [
+        45
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Траншейный миномёт — это гладкоствольное, дульнозарядное оружие с высоким углом огня. Снаряд содержит как взрывчатые вещества, так и смертоносный греческий огонь",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-trench-mortar",
+      "pages": [
+        45
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Траншейный миномёт | Двуручный | 48” | Игнор укрытий, +1D на ранения | **FIRE, HEAVY,** **BLAST 3”** |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-trench-mortar",
+      "pages": [
+        45
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Укажите точку на поле боя в пределах 36” (она должна быть в пределах линии видимости), которую вы хотите атаковать. Затем выполните **ДЕЙСТВИЕ** дальнего боя. Если бросок провален (т.е. выпадает 6 или меньше), снаряд падает на 1” дальше от намеченной точки за каждый недостающий балл. Например, если вы выбросили 5, снаряд приземляется на 2” дальше, так как 7 – 5 = 2. Направление падения определяется вашим противником. Все модели в пределах 3” от точки падения 1 x 1 мм получают урон от взрыва — бросок на попадание не требуется. Это оружие имеет радиус **BLAST** 3” — все модели в этом радиусе считаются поражёнными. Добавьте +1DICE ко всем броскам на ранения.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-autocannon",
+      "pages": [
+        45
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Автопушка (Autocannon) 55 дукатов**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-autocannon",
+      "pages": [
+        45
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "Автопушки — это полностью автоматические орудия, способные вести скорострельный огонь снарядами крупного калибра 20 мм. Они способны генерировать невероятную огневую мощь, но быстро перегреваются при длительной стрельбе.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-autocannon",
+      "pages": [
+        45
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пулемёт | Двуручный | 48” | 3 атаки, +1D на ранения | **HEAVY** |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-autocannon",
+      "pages": [
+        45
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Автопушка может выполнять три **ДЕЙСТВИЯ** атаки вместо одного. Они могут нацеливаться на разные модели, если все цели находятся в пределах 6” друг от друга. После выполнения всех трёх атак активация модели завершается, независимо от оставшихся Действий. Добавьте +1DICE ко всем броскам на ранения. Модель может стрелять до пяти раз вместо трёх, если все атаки выполняются как **РИСКОВАННОЕ ДЕЙСТВИЕ**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-gas-censer",
+      "pages": [
+        45
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Газовая кадильница (Gas Censer) 50 дукатов**",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-gas-censer",
+      "pages": [
+        45
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Эта качающаяся кадильница является одновременно смертоносным химическим оружием и объектом поклонения для паломников военного отряда. Она действует как коррозийное и респираторное оружие.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-gas-censer",
+      "pages": [
+        45
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Газовая кадильница | Двуручный | Особый | Игнор брони | **GAS, BLAST 6”** |",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-pilgrim-gas-censer",
+      "pages": [
+        45
+      ],
+      "index": 3,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Анахорет может выполнить бросок на ранения против всех моделей в пределах 6”, кроме самого себя. Обратите внимание, что все модели в пределах радиуса поражаются, включая дружественные и вражеские. Линия видимости не требуется. Атака имеет ключевое слово **GAS** и игнорирует броню, если только модели не находятся в укрытии — в этом случае броня работает как обычно. Использование Газовой кадильницы всегда завершает активацию этой модели.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-recruitment",
+      "pages": [
+        67
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Создание отряда",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-recruitment",
+      "pages": [
+        67
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "У вас есть 700 дукатов для набора первоначального отряда в кампании. Для одиночных сражений мы рекомендуем стандартный отряд стоимостью 900 дукатов и 8 Очков Славы.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-fireteams",
+      "pages": [
+        67
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Боевые группы Новой Антиохии",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-fireteams",
+      "pages": [
+        67
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Ваш отряд может иметь до двух Боевых групп. Эти Боевые группы могут состоять из любых двух моделей вашего отряда. Модели в Боевых группах получают ключевое слово **FIRETEAM**. Боевые группы получают правило Концентрированной атаки (Concentrated Attack):",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-fireteams",
+      "pages": [
+        67
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**FIRETEAM**: Эта модель является частью FIRETEAM, состоящей из двух моделей. Все модели, входящие в одну и ту же FIRETEAM, могут быть активированы одновременно без промежуточного хода противника и могут выполнять свои Действия в любом порядке, переключаясь между двумя моделями. Обратите внимание, что, если активация любого члена FIRETEAM принудительно завершается (например, из-за провала Рискованного действия), это завершает активацию обоих. Союзники не могут быть частью FIRETEAM. **Концентрированная атака (Concentrated Attack)**: Если модель в FIRETEAM совершает любое действие атаки (дальнобойной или ближнего боя) против противника, по которому другая модель их FIRETEAM уже попала атакой в течение той же активации, стоимость Кровавой Бани снижается до трех Маркеров Крови против этого противника, независимо от того, стоит модель или находится в состоянии \"Повален\".",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Арсенал Новой Антиохии",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Силы Новой Антиохии могут быть оснащены следующим оружием, броней и оборудованием. Все исключения четко указаны в описаниях для каждого воина.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 2,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Винтовка | 10 дукатов | Штыковое крепление |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 3,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Полуавтоматическая винтовка | 15 дукатов | Штыковое крепление |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 4,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Автоматическая винтовка | 40 дукатов | Лимит: 1, Штыковое крепление |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 5,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пистолет | 6 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 6,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Автоматический пистолет | 20 дукатов | Только для элиты, Лимит:3 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 7,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пистолет-пулемёт | 30 дукатов | Лимит: 2, Штыковое крепление, совместим с щитом |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 8,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Дробовик | 10 дукатов | Штыковое крепление, совместим с щитом |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 9,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Автоматический дробовик | 15 дукатов | Лимит: 2, Штыковое крепление, совместим с щитом |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 10,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Тяжелый дробовик | 20 дукатов | Лимит: 2, совместим с щитом |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 11,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Снайперская винтовка | 35 дукатов | Лимит: 3 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 12,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Гранатомёт | 30 дукатов | Лимит: 2 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 13,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Граната | 7 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 14,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Зажигательная граната | 15 дукатов | Лимит: 2 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 15,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пулемёт | 50 дукатов | Лимит: 2 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 16,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Огнемёт | 30 дукатов | Лимит: 3 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 17,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Тяжёлый огнемёт | 55 дукатов | Лимит: 1 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 18,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Фугасный заряд | 15 дукатов | Лимит: 3, CONSUMABLE, один на модель |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 19,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Окопный нож | 1 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 20,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Штык | 2 дукатов | совместим с щитом |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 21,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Окопная Дубинка | 3 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 22,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Меч/топор | 4 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 23,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Древковое оружие | 7 дукатов | совместим с щитом |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 24,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Большой молот/кувалда | 10 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 25,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Большой меч/топор | 12 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 26,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Мизерикордия | 15 дукатов | Лимит: 1, только для Боевого медика |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 27,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Стандартная броня | 15 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 28,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Усиленная броня | 40 дукатов | Только для Элиты и Механизированной тяжелой пехоты |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 29,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Машинная броня | 50 дукатов | Только для Элиты, Лимит: 1, исключая Механизированную тяжелую пехоту |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 30,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Бронежилет инженера | 45 дукатов | Только для Боевого инженера |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 31,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Окопный щит | 10 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 32,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Тяжелый баллистический щит | 15 дукатов | Только для моделей в Машинной броне |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 33,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Боевой шлем | 5 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 34,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Противогаз | 5 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 35,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Лопата | 5 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 36,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Медицинский набор | 5 дукатов | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 37,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Музыкальный инструмент | 15 дукатов | Лимит: 1, не для Элиты |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 38,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Пилюли мученичества | 1 очк. Славы | CONSUMABLE, только для Элиты, Лимит: 2 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 39,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Боевой флаг | 1 очк. Славы | Лимит: 1 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 40,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Полевой алтарь | 2 очк. Славы | — |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 41,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Альпинистский комплект | 3 дукатов | Лимит: 4 |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-antioch-arsenal",
+      "pages": [
+        67
+      ],
+      "index": 42,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Бинокль | 10 дукатов | только для Элиты |",
+      "exactTypographyMatch": false
+    },
+    {
+      "document": "core",
+      "section": "core-dirge-broken-crown",
+      "pages": [
+        95
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": false,
+      "expected": "Следующее оружие, броня и оборудование доступны исключительно для отряда Песни скорби.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dirge-broken-crown",
+      "pages": [
+        95
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Разрушенная корона (Broken Crown) 25 дукатов** *Сделана из скрученных и разорванных остатков разрушенной брони их Гегемона, эта корона из шипов и терний является постоянным напоминанием Оплакивающим о их провале.*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dirge-broken-crown",
+      "pages": [
+        95
+      ],
+      "index": 2,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: В начале активации модели, носящей Корону, она накладывает один Маркер Заражения на каждую вражескую модель, находящуюся с ней в ближнем бою. Несмотря на название, этот предмет не является головным убором. **Только для Элиты. Лимит: 1**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dirge-bitter-ashes",
+      "pages": [
+        95
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Урна горьких пепелов (Urn of Bitter Ashes) 40 дукатов** *Эта черная урна содержит пепел, оставшийся от сожженного тела павшего Гегемона, который все еще сохраняет слабое эхо его ненавистной воли. Он кружится и бурлит в воздухе, издавая зловещие шепоты*.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dirge-bitter-ashes",
+      "pages": [
+        95
+      ],
+      "index": 1,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Правила**: Все дальнобойные атаки против модели, несущей Урну, и любых других моделей в пределах 3”, получают штраф -1DICE. **Только для Элиты, Лимит: 1**.",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dirge-blunderbuss",
+      "pages": [
+        95
+      ],
+      "index": 0,
+      "kind": "paragraph",
+      "critical": true,
+      "expected": "**Мушкетон (Blunderbuss) 5 дукатов (совместим с щитом)** *Реликтовое огнестрельное оружие ушедшей эпохи. Это оружие заряжено ржавыми гвоздями, свинцовыми пулями, осколками гранат и кусками снарядов. Некоторые Оплакивающие носят это оружие и формируют своего рода почетный караул для Процессии.*",
+      "exactTypographyMatch": true
+    },
+    {
+      "document": "core",
+      "section": "core-dirge-blunderbuss",
+      "pages": [
+        95
+      ],
+      "index": 1,
+      "kind": "table-row",
+      "critical": true,
+      "expected": "| Мушкетон | Двуручное | 10” | - | **SHRAPNEL** |",
+      "exactTypographyMatch": true
+    }
+  ],
+  "note": "A missed exact paragraph may be typography, order, structure or a critical error. A match proves neither headings nor ownership. Use editorial-review.json; no percentage is an acceptance gate."
+}

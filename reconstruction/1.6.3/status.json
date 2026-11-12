@@ -22,9 +22,16 @@
   },
   "sitePublished": true,
   "siteCompletionNoticeSent": true,
-  "doclingInstalled": false,
-  "doclingTests": [],
-  "next": "Research official Docling and Agent Skill; CPU-only separate environment; benchmark15already reviewed pages; never reimport190pages.",
+  "doclingInstalled": true,
+  "doclingTests": [
+    "15 unique already visually reviewed pages;39sections/273checks;103editorial dispositions;4critical raw-draft ownership cases; reliable mass import rejected.",
+    "Bounded reading-order separator alternative on core19/allies2: identical MD/nativeJSON, no improvement.",
+    "Offline core22 and pinned-model core22: byte-identical MD/nativeJSON.",
+    "Updated project Skill smoke on allies16: byte-identical MD/nativeJSON; official Skill registration verified.",
+    "9 import-tool tests passed;14 primary gate tests and45unit/data tests passed; full check/build passed.",
+    "Stdlib artifact/provenance audit passed; --require-mass-ready intentionally refused."
+  ],
+  "next": "No pending source pages or Docling setup stages. Future editions use the documented hybrid pipeline; retain the explicit Docling quality limitations.",
   "knowledgeBaseReady": true,
   "automaticChecks": {
     "unitDataTestsPassed": 45,
@@ -40,5 +47,24 @@
   "productionCommit": "9c774dc8d64f0b3faafa2fd893525ac10b8371ac",
   "actionsRun": "https://github.com/LeonidElkin/trench-crusade-toolkit/actions/runs/43304853936",
   "actionsConclusion": "success",
-  "productionPlaywrightMCP": "passed; rules/table,HouseofWisdom,bloodbath,privateLoadout/save/reload,v2,overflowfalse,JSerrors0"
+  "productionPlaywrightMCP": "passed; rules/table,HouseofWisdom,bloodbath,privateLoadout/save/reload,v2,overflowfalse,JSerrors0",
+  "doclingVersion": "2.150.0",
+  "docling": {
+    "setupComplete": true,
+    "version": "2.150.0",
+    "device": "cpu",
+    "threads": 2,
+    "ocr": false,
+    "vlm": false,
+    "officialSkillRegistered": true,
+    "benchmarkUniquePages": 15,
+    "unresolvedCriticalDraftCases": 4,
+    "admittedForReliableMassImport": false,
+    "elapsedSeconds": 105.526,
+    "peakRssMiB": 1587.8,
+    "requiredPinnedModelMiB": 366.6,
+    "report": "reconstruction/docling-benchmark/results.json",
+    "procedure": "docs/DOCLING.md",
+    "publishedRulesReimported": false
+  }
 }

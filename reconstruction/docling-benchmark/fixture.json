@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "manifest": "reconstruction/1.6.3/manifest.json",
+  "reference": "reconstruction/1.6.3/authored",
+  "independentReviews": "reconstruction/1.6.3/reviews",
+  "purpose": "Future-edition extractor benchmark; never replace the published independently reviewed records with these drafts.",
+  "ranges": [
+    {"document": "core", "start": 4, "end": 7, "features": ["two-columns", "red-sidebar", "drop-cap", "action-table", "cross-page-continuation"]},
+    {"document": "core", "start": 19, "end": 19, "features": ["arsenal", "prices", "availability-limits"]},
+    {"document": "core", "start": 22, "end": 22, "features": ["two-fighter-profiles", "bases", "negative-modifiers"]},
+    {"document": "core", "start": 45, "end": 45, "features": ["weapon-tables", "exceptions", "modifiers"]},
+    {"document": "core", "start": 67, "end": 67, "features": ["arsenal", "fireteams", "special-restrictions"]},
+    {"document": "core", "start": 95, "end": 95, "features": ["mixed-columns", "variant-rules", "full-width-item-table", "continuation-from-previous-page"]},
+    {"document": "core", "start": 125, "end": 125, "features": ["weapon-tables", "sidebar-quotation", "negative-modifiers"]},
+    {"document": "core", "start": 164, "end": 164, "features": ["scenario", "diagram", "deployment-table", "continuation-to-next-page"]},
+    {"document": "allies", "start": 2, "end": 2, "features": ["profile", "cost", "drop-cap", "equipment", "ability"]},
+    {"document": "allies", "start": 4, "end": 4, "features": ["profile", "sidebar", "special-weapon-table", "faction-restrictions"]},
+    {"document": "allies", "start": 16, "end": 16, "features": ["profile", "red-sidebar", "equipment-alternatives", "special-exceptions"]},
+    {"document": "allies", "start": 18, "end": 18, "features": ["four-dog-subtypes", "cost-upgrades", "faction-availability", "fire-gas-exception"]}
+  ],
+  "sectionSlices": {
+    "core-random-scenarios": {"start": "## Сценарий 6: Извлечь", "end": "## 2. Стандартное"}
+  },
+  "referencePolicy": "Full Markdown of sections wholly covered by the selected ranges; an explicit slice for core164. Hash-bind to the new author records and independent review reports. Automatic scores are diagnostics, never a visual attestation."
+}

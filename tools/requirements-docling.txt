@@ -1,0 +1,5 @@
+# Preparation tools only. CPU wheels are installed first by tools/docling/bootstrap.py.
+-c docling/constraints.txt
+docling==2.150.0
+library-skills==0.0.20
+-r requirements-import.txt

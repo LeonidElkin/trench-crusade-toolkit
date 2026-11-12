@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "automatic-draft",
+  "visualReview": "not-performed-by-this-tool",
+  "source": {
+    "id": "allies",
+    "path": "public/reference/allies-and-mercenaries-ru.pdf",
+    "title": "Trench Crusade. Союзники и Наёмники",
+    "edition": null,
+    "expectedPages": 22,
+    "translation": "Мастерская Кетсу",
+    "sha256": "d0818b7cda3df033bb326bdb96249ba5d612dfc4e2194d476698afe0592754bc"
+  },
+  "manifestSha256": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
+  "pdfPages": [
+    2
+  ],
+  "python": "3.12.3",
+  "versions": {
+    "docling": "2.150.0",
+    "docling-core": "2.106.0",
+    "docling-ibm-models": "4.0.4",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "PyMuPDF": "1.26.7"
+  },
+  "configuration": {
+    "device": "cpu",
+    "threads": 2,
+    "ocr": false,
+    "vlm": false,
+    "pipeline": "standard",
+    "tableMode": "accurate",
+    "remoteServices": false,
+    "generateImages": false,
+    "offline": false,
+    "cache": "tools/import-cache/docling-models"
+  },
+  "conversionStatus": "success",
+  "elapsedSeconds": 6.751,
+  "peakRssMiB": 1176.9,
+  "elements": 16,
+  "tables": 1,
+  "outputs": {
+    "document.json": "85594199a603c95e65e35065848acae44bc94f166b809488f98557868e9beb70",
+    "document.md": "1bedf5d4777d4a0a34bdcfe8a019f30727198a56b8b9ddbe663c1bacd4bfb51f",
+    "elements.json": "e72709544303c64222707f651a6b19185a5627632c42704a6476ae7805e21a05",
+    "page-002.md": "1bedf5d4777d4a0a34bdcfe8a019f30727198a56b8b9ddbe663c1bacd4bfb51f"
+  }
+}

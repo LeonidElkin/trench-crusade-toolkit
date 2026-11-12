@@ -1,0 +1,880 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "root",
+  "date": "2026-11-13",
+  "comparisonSha256": "8ebf5806d9b7b63b18b905dc4f978486c276ce4347ba7abffe1bea7292161a99",
+  "basis": "New independently visually reviewed records only; all candidate paragraphs/table rows compared. Eight original PNGs reopened to confirm diagnosed layout defects. No old data used; no new production content or visual status generated.",
+  "admittedAsStandaloneConverter": false,
+  "admittedForReliableMassImport": false,
+  "decision": "Optional preliminary extractor for individual small ranges only. Reliable path: PyMuPDF symbols/coordinates/images + authored semantic reconstruction + independent visual review and coverage gate.",
+  "boundedConfigurationExperiment": "reading-order separators disabled on core19 and allies2: no MD/native-JSON change; critical cases persist. No repeated model tuning or VLM.",
+  "scopeLimitations": [
+    "39fully covered/sliced reference sections; not a claim that every character on all15pages was independently reread again.",
+    "No OCR/scanned-PDF evaluation; source already has a text layer.",
+    "No measured end-to-end LLM token savings.",
+    "Generated diagrams/images are disabled; original visual evidence remains mandatory."
+  ],
+  "pages": [
+    {
+      "document": "core",
+      "pdfPage": 4,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": true,
+      "findings": [
+        "D01"
+      ]
+    },
+    {
+      "document": "core",
+      "pdfPage": 5,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": true,
+      "findings": [
+        "D06"
+      ]
+    },
+    {
+      "document": "core",
+      "pdfPage": 6,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": false,
+      "findings": []
+    },
+    {
+      "document": "core",
+      "pdfPage": 7,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": false,
+      "findings": [
+        "D08"
+      ]
+    },
+    {
+      "document": "core",
+      "pdfPage": 19,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": true,
+      "findings": [
+        "D02"
+      ]
+    },
+    {
+      "document": "core",
+      "pdfPage": 22,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": false,
+      "findings": [
+        "D07",
+        "D08"
+      ]
+    },
+    {
+      "document": "core",
+      "pdfPage": 45,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": false,
+      "findings": []
+    },
+    {
+      "document": "core",
+      "pdfPage": 67,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": true,
+      "findings": [
+        "D03",
+        "D08"
+      ]
+    },
+    {
+      "document": "core",
+      "pdfPage": 95,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": false,
+      "findings": []
+    },
+    {
+      "document": "core",
+      "pdfPage": 125,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": true,
+      "findings": [
+        "D07"
+      ]
+    },
+    {
+      "document": "core",
+      "pdfPage": 164,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": false,
+      "findings": [
+        "D06"
+      ]
+    },
+    {
+      "document": "allies",
+      "pdfPage": 2,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": true,
+      "findings": [
+        "D04"
+      ]
+    },
+    {
+      "document": "allies",
+      "pdfPage": 4,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": false,
+      "findings": [
+        "D07"
+      ]
+    },
+    {
+      "document": "allies",
+      "pdfPage": 16,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": true,
+      "findings": []
+    },
+    {
+      "document": "allies",
+      "pdfPage": 18,
+      "baseline": "new authored record + valid independent visual review",
+      "benchmarkAssessment": "compared with the verified baseline; not a new visual attestation",
+      "originalImageReopenedForThisBenchmark": true,
+      "findings": [
+        "D05"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "D01",
+      "severity": "structural",
+      "pages": {
+        "core": [
+          4
+        ]
+      },
+      "draftStatus": "unfixed",
+      "description": "Буквица T отделена от rench Crusade и помещена после первого абзаца. Восстанавливать по изображению/координатам, не принимать отдельным блоком."
+    },
+    {
+      "id": "D02",
+      "severity": "critical",
+      "pages": {
+        "core": [
+          19
+        ]
+      },
+      "draftStatus": "unfixed",
+      "description": "Арсенал не распознан таблицей. Названия оружия отделены от цен и ограничений; у брони нарушена последовательность. Например, Стандартная броня=15дукатов, Усиленная=40 с ограничением, а текст выдаёт 40...15...Помазанника...10 без связей.41строка требует визуальной реконструкции."
+    },
+    {
+      "id": "D03",
+      "severity": "critical",
+      "pages": {
+        "core": [
+          67
+        ]
+      },
+      "draftStatus": "unfixed",
+      "description": "Арсенал Новой Антиохии:41строка теряет связь названия с ценой/лимитом/доступностью. Наличие всех чисел не исправляет принадлежность."
+    },
+    {
+      "id": "D04",
+      "severity": "critical",
+      "pages": {
+        "allies": [
+          2
+        ]
+      },
+      "draftStatus": "unfixed",
+      "description": "Стоимость2очкаСлавы извлечена в конце страницы после блока ключевых слов, между цитатой и подписью. Принадлежность профилю не выражена структурой."
+    },
+    {
+      "id": "D05",
+      "severity": "critical",
+      "pages": {
+        "allies": [
+          18
+        ]
+      },
+      "draftStatus": "unfixed",
+      "description": "Базовая стоимость1очкоСлавы перенесена после специальных ролей/ключевых слов. Не смешивать её с дополнительными +1Славы за роль и FIRETEAM."
+    },
+    {
+      "id": "D06",
+      "severity": "structural",
+      "pages": {
+        "core": [
+          5,
+          164
+        ]
+      },
+      "draftStatus": "unfixed",
+      "description": "Таблица успеха и таблица развёртывания стали текстом. Числа/исходы сохранены, но табличная структура отсутствует. Подпись «(бросьте D6)» на164пропущена; предшествующее предложение явно сохраняет1D6."
+    },
+    {
+      "id": "D07",
+      "severity": "structural",
+      "pages": {
+        "core": [
+          22,
+          125
+        ],
+        "allies": [
+          4
+        ]
+      },
+      "draftStatus": "unfixed",
+      "description": "Переносы имён в ячейках: Священник Еретиков и Когти Тартара разбиты на строки с пустыми остальными ячейками; нож потерян в имени строки таблицы, но есть в заголовке/правиле; Право-судия содержит перенос. Числа и знаки проверенных профилей/оружия сохранены."
+    },
+    {
+      "id": "D08",
+      "severity": "typographic",
+      "pages": {
+        "core": [
+          7,
+          22,
+          67
+        ]
+      },
+      "draftStatus": "unfixed",
+      "description": "Defended-Obstacle вместо Defended Obstacle; Священниковеретиков без дефиса; маркер списка между FIRETEAM и Концентрированной атакой. Условия/отрицания не изменены."
+    }
+  ],
+  "dispositions": [
+    {
+      "section": "allies-medic",
+      "index": 0,
+      "finding": "D04",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "allies-medic",
+      "index": 10,
+      "finding": "D04",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "allies-gavel-of-justice",
+      "index": 1,
+      "finding": "D07",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "allies-trench-dog",
+      "index": 0,
+      "finding": "D05",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-foundations",
+      "index": 0,
+      "finding": "D01",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-action-success",
+      "index": 1,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-action-success",
+      "index": 2,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-action-success",
+      "index": 3,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-movement",
+      "index": 12,
+      "finding": "D08",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-item-sacrificial-knife",
+      "index": 1,
+      "finding": "D07",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-item-tartarus-claws",
+      "index": 1,
+      "finding": "D07",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-random-scenarios",
+      "index": 6,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-random-scenarios",
+      "index": 7,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-random-scenarios",
+      "index": 8,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-random-scenarios",
+      "index": 9,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-random-scenarios",
+      "index": 10,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-random-scenarios",
+      "index": 11,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-random-scenarios",
+      "index": 12,
+      "finding": "D06",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 2,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 3,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 4,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 5,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 6,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 7,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 8,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 9,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 10,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 11,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 12,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 13,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 14,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 15,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 16,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 17,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 18,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 19,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 20,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 21,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 22,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 23,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 24,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 25,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 26,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 27,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 28,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 29,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 30,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 31,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 32,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 33,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 34,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 35,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 36,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 37,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 38,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 39,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 40,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 41,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-arsenal",
+      "index": 42,
+      "finding": "D02",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-priest",
+      "index": 2,
+      "finding": "D07",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-heretic-priest",
+      "index": 7,
+      "finding": "D08",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-fireteams",
+      "index": 2,
+      "finding": "D08",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 2,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 3,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 4,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 5,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 6,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 7,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 8,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 9,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 10,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 11,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 12,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 13,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 14,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 15,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 16,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 17,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 18,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 19,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 20,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 21,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 22,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 23,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 24,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 25,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 26,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 27,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 28,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 29,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 30,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 31,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 32,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 33,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 34,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 35,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 36,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 37,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 38,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 39,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 40,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 41,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    },
+    {
+      "section": "core-antioch-arsenal",
+      "index": 42,
+      "finding": "D03",
+      "result": "assessed; raw draft retained; no production import"
+    }
+  ]
+}
