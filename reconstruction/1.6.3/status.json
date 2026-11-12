@@ -20,11 +20,11 @@
       "completedWithoutRecordedSourceRemarks": 19
     }
   },
-  "sitePublished": false,
-  "siteCompletionNoticeSent": false,
+  "sitePublished": true,
+  "siteCompletionNoticeSent": true,
   "doclingInstalled": false,
   "doclingTests": [],
-  "next": "Publish verified site, check Actions and production MCP, send explicit site-ready notice; then research/install/test Docling on15reference pages.",
+  "next": "Research official Docling and Agent Skill; CPU-only separate environment; benchmark15already reviewed pages; never reimport190pages.",
   "knowledgeBaseReady": true,
   "automaticChecks": {
     "unitDataTestsPassed": 45,
@@ -35,5 +35,10 @@
     "strictTypeScript": "passed",
     "productionBuild": "passed",
     "localPlaywrightMCP": "passed at5viewports; variants/loadout/reload; JSerrors0"
-  }
+  },
+  "productionURL": "https://leonidelkin.github.io/trench-crusade-toolkit/",
+  "productionCommit": "9c774dc8d64f0b3faafa2fd893525ac10b8371ac",
+  "actionsRun": "https://github.com/LeonidElkin/trench-crusade-toolkit/actions/runs/43304853936",
+  "actionsConclusion": "success",
+  "productionPlaywrightMCP": "passed; rules/table,HouseofWisdom,bloodbath,privateLoadout/save/reload,v2,overflowfalse,JSerrors0"
 }
