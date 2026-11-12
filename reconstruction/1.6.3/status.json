@@ -1,0 +1,28 @@
+{
+  "strategy": "A",
+  "remainingPages": 0,
+  "reason": "All original pages have authored content or explicit nonrule exclusions and valid independent visual reviews. Source ambiguities remain documented, not substituted.",
+  "pages": {
+    "core": {
+      "total": 168,
+      "notProcessed": 0,
+      "automaticOnly": 0,
+      "awaitingVisualReview": 0,
+      "visuallyReviewedWithSourceRemarks": 49,
+      "completedWithoutRecordedSourceRemarks": 119
+    },
+    "allies": {
+      "total": 22,
+      "notProcessed": 0,
+      "automaticOnly": 0,
+      "awaitingVisualReview": 0,
+      "visuallyReviewedWithSourceRemarks": 3,
+      "completedWithoutRecordedSourceRemarks": 19
+    }
+  },
+  "sitePublished": false,
+  "siteCompletionNoticeSent": false,
+  "doclingInstalled": false,
+  "doclingTests": [],
+  "next": "Finish integration, full tests, Pages publication and production MCP; send site-ready notice; only then set up Docling."
+}

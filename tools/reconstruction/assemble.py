@@ -132,7 +132,7 @@ def assemble(manifest_path: Path, authored_dir: Path, reviews_dir: Path, out: Pa
                 errors.append(f"Unprocessed page {document}:{number}")
                 continue
             entry.update({"extractionStatus": page["extractionStatus"], "readingOrder": page.get("readingOrder", []), "author": authors[key][0]})
-            if not page.get("readingOrder"):
+            if not page.get("readingOrder") and not (page["contentType"] in NONRULES and page.get("explicitExclusion")):
                 errors.append(f"Missing reading-order decision: {document}:{number}")
             inspection = page.get("visualInspection", {})
             if inspection.get("status") == "inspected" and inspection.get("agent") == authors[key][0]:
@@ -148,7 +148,7 @@ def assemble(manifest_path: Path, authored_dir: Path, reviews_dir: Path, out: Pa
                     errors.append(f"Invalid page/section relation: {document}:{number}/{sid}")
                 entry["files"].append(f"content/{sid}.md")
             if not section_ids:
-                entry["nonruleReason"] = "; ".join(str(x) for x in page["readingOrder"])
+                entry["nonruleReason"] = page.get("explicitExclusion") or "; ".join(str(x) for x in page["readingOrder"])
             matching_reviews = []
             for report, review, filename in reviews[key]:
                 if report["reviewer"] == authors[key][0] or review.get("status") != "verified":

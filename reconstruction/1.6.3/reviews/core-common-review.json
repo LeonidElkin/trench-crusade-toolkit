@@ -1,0 +1,1128 @@
+{
+  "reviewer": "review_common",
+  "document": "core",
+  "authorFile": "reconstruction/1.6.3/authored/core-common.json",
+  "sourceSha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9",
+  "authorFileSha256": "92ffe345c74c121dcb14e293e12e54604dc060e877a0533fa6d82e88c0fdf4f3",
+  "entitiesSha256": "002e7bdbfbbbc836bedea27ab289274611b42cc62fee3beb583aa597dfb11707",
+  "pages": [
+    {
+      "pdfPage": 1,
+      "status": "verified",
+      "notes": "Просмотрен титул: редакция 1.6.3, перевод Мастерской Кетсу и авторские подписи; самостоятельных механик нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 2,
+      "status": "verified",
+      "notes": "Сверены буквица, полное предисловие и подпись Туомаса Пиринена; состав плейтеста и отсылки сохранены.",
+      "sectionHashes": {
+        "core-introduction": "a1411468ae2e713b06d763e89de71c482d49511c16628dd68928bb246fc4ca1b"
+      },
+      "issues": [
+        "core-campaign-not-provided"
+      ]
+    },
+    {
+      "pdfPage": 3,
+      "status": "verified",
+      "notes": "Просмотрена полноформатная иллюстрация двух бойцов; самостоятельного текста правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 4,
+      "status": "verified",
+      "notes": "Сверены левая и правая колонки, буквица Trench, размеры поля и кубики, порядок активаций и красное примечание о ключевых словах.",
+      "sectionHashes": {
+        "core-foundations": "282b4fc88eb2d31cb2ee39d0928bcad5da4c13234d49b558a41771f8cbcc823e",
+        "core-activation": "9b9ef2275e43e785e2db700b7698fedee266630a29942c017f19101e8d8613e1",
+        "core-actions": "a7c693785abb09da529ac60adaede6a6d5b7fd55370dfdd59d6bb60327d9646d",
+        "core-keywords-intro": "61d99ea2f8f80526a0ef83c8b128317f35b2ca64f258ec179950cb1a94a1b7e6"
+      },
+      "issues": [
+        "core-turn-first-activation"
+      ]
+    },
+    {
+      "pdfPage": 5,
+      "status": "verified",
+      "notes": "Сверены все действия, три вида движения, таблица успеха и боковые примечания. Различие требования видимости Charge относительно страницы 7 отмечено как противоречие источника.",
+      "sectionHashes": {
+        "core-actions": "a7c693785abb09da529ac60adaede6a6d5b7fd55370dfdd59d6bb60327d9646d",
+        "core-action-success": "813281acc290add73b2c4959112215204fed7edb071d44890f250b0e42f1e5b0",
+        "core-dice": "d45639f501d19c1e8627b38859007db894747ed5aec74a4ceb5fbe370f19302a",
+        "core-measure-and-climb": "7ad0b135c7ec9a56c6ed53ffcaa23bd7cf402dc8cea43452f73fbc04d0c4c3a0"
+      },
+      "issues": [
+        "core-charge-line-of-sight"
+      ]
+    },
+    {
+      "pdfPage": 6,
+      "status": "verified",
+      "notes": "Сверены модификаторы и пример, Bloodbath, оба вида маркеров, движение и боковые правила запрета, дробей и выхода из окопа.",
+      "sectionHashes": {
+        "core-dice": "d45639f501d19c1e8627b38859007db894747ed5aec74a4ceb5fbe370f19302a",
+        "core-blood-markers": "48cf4526cb92ccd6befe6e2f661e50715932587dfc536f76c3c89e5adab67af4",
+        "core-bloodbath": "81edb0140aa6ff287c005fca63791e57944033e427b8b31a052b6df32da37b30",
+        "core-blessing-markers": "577ae851816261049efc8c1aa3f4bfbf6b15c8b50d8be36e2c73115ad0cc64c9",
+        "core-movement": "1d5455063db696afd8772d94787857410806002b2faffc9c7d2c1f867f22ee04",
+        "core-prohibition": "c20d144c80ee0bce832e9e78656976fff24fa0b8b7bb96298f66f42ab0f57e8d",
+        "core-fractions": "9c93803e08453ddb04f7cf3cdac844018320fc0b5d26aa241fc30c9d95183be3",
+        "core-exit-trench": "c3467bbf61e040471958c2a4aa2acff539f229b04cead613f8ef8179b55f9d89"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 7,
+      "status": "verified",
+      "notes": "Сверены продолжение движения, нападения, прыжки и падение; все расстояния и модификаторы сохранены. Красная максима отделена от механики.",
+      "sectionHashes": {
+        "core-movement": "1d5455063db696afd8772d94787857410806002b2faffc9c7d2c1f867f22ee04",
+        "core-falling": "1e93a1dd0cbad722bfe25934d258f3e806f54a0d85ed1cbf7926f004a953f528",
+        "core-model-representation": "aa83cb6fa9139b26d230d02b69cbc5b1197e36f77aea5a7fe8ca740b6be1568a"
+      },
+      "issues": [
+        "core-charge-line-of-sight"
+      ]
+    },
+    {
+      "pdfPage": 8,
+      "status": "verified",
+      "notes": "Сверены продолжения падения и полёта, четыре типа местности, шесть шагов стрельбы, укрытие, дальность и стрельба в ближний бой.",
+      "sectionHashes": {
+        "core-falling": "1e93a1dd0cbad722bfe25934d258f3e806f54a0d85ed1cbf7926f004a953f528",
+        "core-terrain": "27b1b89ca2c9fd63f0451c4436707590a73410e87509454cc6765b8738a6d2e6",
+        "core-movement-types": "cb85589123cc49cb6b8c07e8ebc83aebee447677c1307e4bfc6bbe7c78acc8b0",
+        "core-ranged": "356141b69933ad4c47d1818cb42a17bfce3b60c95e2ee49b37d5297ceb6d3ecc",
+        "core-shoot-into-melee": "2b5ad6ef44d7ccc65d1ebb176dc960cc00154a0979ac81dfbb6f9b5662b72384"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 9,
+      "status": "verified",
+      "notes": "Сверены таблица ранений, примечание об исходном пуле, броня, маркеры и состояние Повален. Спорная опечатка «больгих» дополнительно подтверждена увеличенным оригиналом.",
+      "sectionHashes": {
+        "core-injuries": "da42f84b7e792c5588968aef4de1e9ceafad895c7cee25cc6d84d80ee9392084"
+      },
+      "issues": [
+        "core-campaign-not-provided",
+        "core-trench-shield-machine-conflict",
+        "core-source-typographical-errors"
+      ]
+    },
+    {
+      "pdfPage": 10,
+      "status": "verified",
+      "notes": "Сверены стрельба с высоты, три шага ближнего боя, STRONG, запасное оружие, перемещение в бою, конец активации и оба варианта морали.",
+      "sectionHashes": {
+        "core-ranged": "356141b69933ad4c47d1818cb42a17bfce3b60c95e2ee49b37d5297ceb6d3ecc",
+        "core-melee": "774400c9d2eb0edbbcc81918262145e09dbfbc6e878bc914207b7c84f54a045a",
+        "core-end-activation": "889b58cbd56d323da45771a016acca87c95eec3fbbb569f3cea00f9a6ced74b5",
+        "core-morale": "6db57f0dd341f27ce4ab99927c10398696f6c2e24e7072bbd2912c44d2f779b1"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 11,
+      "status": "verified",
+      "notes": "Сверены конец хода и цитата Псалмов 27:8. Отличие выбора первого игрока от страницы 4 отмечено как неоднозначность источника.",
+      "sectionHashes": {
+        "core-end-turn": "a04e1ee1c63ebea6d27a2040c37d937308f38852e7c976a52c1e6c5ee476b0b5"
+      },
+      "issues": [
+        "core-turn-first-activation"
+      ]
+    },
+    {
+      "pdfPage": 12,
+      "status": "verified",
+      "notes": "Сверены буквица и обе колонки ключевых слов от +DICE до начала FIRE, все числа и ограничения. Исходная лишняя скобка BLACK GRAIL сохранена.",
+      "sectionHashes": {
+        "core-keywords-intro": "61d99ea2f8f80526a0ef83c8b128317f35b2ca64f258ec179950cb1a94a1b7e6",
+        "core-keyword-plus-dice": "bb9edae7e9b9aba26591adc6969903cf9f2b137c2535bf2780981a54ee5d3ea3",
+        "core-keyword-minus-dice": "32ef85fe57903f9757f89e169eeaa6b55a08eb340a6fb21584e9602495fbcc0c",
+        "core-keyword-action": "d72880215128c52b035ea25bd6d6d29af64b2bad1fcee778b18e68131eab6605",
+        "core-keyword-artificial": "b242a68c9463c4a8c30f869c24eae523107234745c2f25a469285aabf1329a50",
+        "core-keyword-assault": "755094f5783df1448c807eaed5b44949283d57958f3fc8c193f324a2b3f870bd",
+        "core-keyword-black-grail": "d1c04fedb72e1467928ec467c7ea3987497b1277d561aa78bcbe68e4e6beace8",
+        "core-keyword-blast-x": "46d4c979146c34b28211be60ce1519da1c8d93e0719c505c3ce0b9039859c9c9",
+        "core-keyword-blessing-marker": "61683ff0369f4c29749f33f1a8191aeece8d2656de23ccec781357ca29a5ef7f",
+        "core-keyword-blood-marker": "a8ff52981042522b02898a98af8f1e75eb090176ad2c6dc6d8df7e2d88faf09d",
+        "core-keyword-consumable": "d1c221c71e99215009ba1492695926b15a504af16ae6a1b65bc3e8e98ca277ca",
+        "core-keyword-critical": "98518d3fed0d14c44e34f23d2754c3ecacf19ab6524aa2ad64c9c29aeaa2a65d",
+        "core-keyword-cumbersome": "19decbf7f66de9e61b9d6153697ea91d346bbd41b44ab453a953f4891952f083",
+        "core-keyword-elite": "65b37245ffa591b3a1bea41fdec876b5003a6b9fd91ae07299b7e31a0829ccdb",
+        "core-keyword-fear": "e9c4a953f3e104111911cd9aea21e72ff7529d2c0d4d13869046f809ef5e24dd",
+        "core-keyword-fire": "ae2d0f3b50ad63172695c03c72ec70a0fce76c65efef6586741149882a5946ff"
+      },
+      "issues": [
+        "core-source-typographical-errors"
+      ]
+    },
+    {
+      "pdfPage": 13,
+      "status": "verified",
+      "notes": "Сверены продолжение FIRE и остальные ключевые слова. Все исключения GOLEM, HEAVY, STRONG, LIMIT, GRENADE и INFILTRATOR сохранены.",
+      "sectionHashes": {
+        "core-keyword-fire": "ae2d0f3b50ad63172695c03c72ec70a0fce76c65efef6586741149882a5946ff",
+        "core-keyword-fireteam": "e77f5d4700d768a538c67b968f2b264b0b54015fdd101b38e64fc07572520cab",
+        "core-keyword-gas": "3effb9fea40f789c2577e170ebe352f7a8e89414114f07d8ac38246431a2b4ec",
+        "core-keyword-golem": "3ce51a7d453f1adebbfbcb45756a745683c5c64efe860b7ae663e1be944ab997",
+        "core-keyword-grenade": "212b5bb0de7dbfefdb5755be5a003c2c6729787efdb5d49d521e43f021f59023",
+        "core-keyword-heavy": "c16eef827029f62e2cbf5d1a77599fd40519d7c9ec1f66e93fe09ab0ed1a5458",
+        "core-keyword-heretic": "cffa4d12981c26d735806f701674bd64a0e8cdad51b0a3c13b340eabcf546dd3",
+        "core-keyword-infiltrator": "5f4f17a6ea8f9ffaa231a0ef21b2e019c99ff93ae51fc6752ba5d911d34c0857",
+        "core-keyword-leader": "9a887ca0743a0b7626984ff0aa15b1778c546ff7d85086f8828d76c04ab2c649",
+        "core-keyword-new-antioch": "e345e7d44a40caa9c127b7841eab5eae274397f72479317c7d0eb14f5ae59eab",
+        "core-keyword-pilgrim": "961ccc2738d6a0b00bdee55b1163d1e7e9088e76d6f63eab26a3f581ca1a639a",
+        "core-keyword-limit-x": "b2691dd77311b93c5c4a9093873e34ebde226e03602878f8ecb3a3bad92b767a",
+        "core-keyword-risky-action": "26e6f2f1e6f30cab6e543ab75ec4e2a0073f1a4b4d91b4e2fc447f9390517ea4",
+        "core-keyword-shrapnel": "b6e24e48e49826c1688d6f9ccb9c5408e864a8d2cdbe44d63454524d1ec811bd",
+        "core-keyword-skirmisher": "80fbdc71ec9d846e0dde266e01bdcae316e684a9f7356a8100de5879a283ff0f",
+        "core-keyword-strong": "02b83cf4f2b08ab9568b5a2fb4c8713ed032596221d1e5d54404760e560ec09e",
+        "core-keyword-sultanate": "79fc4afb6eb9cc3dd5d9f8bff6cfd21808c9d2ac99a72d3c32c42a228113f4e2",
+        "core-keyword-the-court": "6377d87a3dcfd9a287c071ab46def7bc0594a21cf5c1be2fb0769393bd2f4c7a",
+        "core-keyword-tough": "d7d347e5e60b1422fc57e2866834b0c5c3a0fbbe8b57f73f8dd3031fc9f3306a"
+      },
+      "issues": [
+        "core-risky-keyword-alias"
+      ]
+    },
+    {
+      "pdfPage": 14,
+      "status": "verified",
+      "notes": "Сверены набор за 700 дукатов, независимая Слава, LIMIT, ELITE, начало снаряжения и красная максима. Продолжение абзаца набора в правой колонке соединено.",
+      "sectionHashes": {
+        "core-model-representation": "aa83cb6fa9139b26d230d02b69cbc5b1197e36f77aea5a7fe8ca740b6be1568a",
+        "core-choose-faction": "63ba7999c2ae1adfbec5e33d54f6e2d12fd2b6f92854b1c5a0bab64946d2a68a",
+        "core-recruitment": "b9033f2707593cc948ae0ab76ad6d5872fd59bf226b00d038af98d964c537248",
+        "core-recruitment-limits": "d6c2f359baa6db601e993ee9fa675b0e3e11fd046751498b92871203ca412364",
+        "core-equipping": "d8ba1477f9614a2c9069a25832d8ccaf5d52affe20b30b8b4b0087bdb6260c3b"
+      },
+      "issues": [
+        "core-campaign-not-provided"
+      ]
+    },
+    {
+      "pdfPage": 15,
+      "status": "verified",
+      "notes": "Сверены продолжение лимитов ближнего оружия и обмен снаряжением. Фотография не трактуется как дополнительный профиль.",
+      "sectionHashes": {
+        "core-equipping": "d8ba1477f9614a2c9069a25832d8ccaf5d52affe20b30b8b4b0087bdb6260c3b"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 16,
+      "status": "verified",
+      "notes": "Сверены найм только за Славу, исключения наёмников из отрядных ограничений, приобретаемые способности и все девять пояснений профиля.",
+      "sectionHashes": {
+        "core-allies-hiring": "7e864342b87ce5c3b069437cd558a053eada0dec46447970df4e3df478ebb4c2",
+        "core-purchasable-abilities": "da8db895b9db1130013dbca62193c4b489e5ab7d4b9edc02552838b18fe2b06e",
+        "core-roster": "c757c9b16a73cd6e8e0d3a7f2a70be4539edcdc583cef70ceba617e203c1493a",
+        "core-characteristic-profile": "2e0a0b58ccb3f4f28c95b5a9a2cf3e13e9d44794aabc3a60487e1c53a7097322"
+      },
+      "issues": [
+        "core-campaign-not-provided"
+      ]
+    },
+    {
+      "pdfPage": 17,
+      "status": "verified",
+      "notes": "Просмотрена иллюстрация рыцаря. Самостоятельных правил и подписей нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 118,
+      "status": "verified",
+      "notes": "Сверены оба столбца ограничений: оружие, броня, головной убор, тип гранат, постоянная рука щита, флага и инструмента; исключение дальнего оружия в ближнем бою сохранено.",
+      "sectionHashes": {
+        "core-equipment-capacity": "e5ab08a9475730a30f260e2ede2c90e735d23dd241da9fba36c87cc2bc27a0a4"
+      },
+      "issues": [
+        "core-gas-mask-headgear-unspecified"
+      ]
+    },
+    {
+      "pdfPage": 119,
+      "status": "verified",
+      "notes": "Сверены шесть профилей, все столбцы и полные правила пистолетов и автоматической винтовки. Удалён дублирующийся заголовок полуавтоматической винтовки.",
+      "sectionHashes": {
+        "core-item-pistol-revolver": "514980f5f4494936673da8bd3af5974e08c3375ef46b66f262727b4f866f0653",
+        "core-item-automatic-pistol": "d507bce08e6bfd394f5e9cea9052e63f46ffe2da58ba6ef7d56c7a47901683dd",
+        "core-item-bolt-action-rifle": "b68ed010486dccc6511fcd0a35a52429447e25f6ff5f955963dd9158f27268ff",
+        "core-item-semi-automatic-rifle": "d052dc0e38d33d58cf7d1e5a52e58d31982469058f85c95bc61a159dd33b6a7a",
+        "core-item-automatic-rifle": "a57449ff4810872fc36ad7640de4bdbd7342545c33e2e2a7a1fc6620aee8b1e7",
+        "core-item-jezzail": "dd79246b3ea1643a8fb305f0c85a80880c68c427069e09cab31100cf644b3906"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 120,
+      "status": "verified",
+      "notes": "Сверены пять профилей, полные правила дробовиков, пистолета-пулемёта и мушкета. Все дальности, модификаторы и ограничения целей совпадают.",
+      "sectionHashes": {
+        "core-item-shotgun": "1b3250d03f73df92baed1fda5e9d34234ed61311364448b5023e6bfe0fdb7a90",
+        "core-item-automatic-shotgun": "68904a5c1e0bd7817ac4e266986d0001dcadb625d7101100be24e613b0502d45",
+        "core-item-heavy-shotgun": "025c75c9f7b8d9047b9183a67f9e9715ac87c0fae072c2c75cab987bb0498827",
+        "core-item-submachine-gun": "e11258f735eb4ecf77209862f216d5541d201f89ec841ee621adbbc1d39dc293",
+        "core-item-musket": "d27b67e1ed3c5eee7ed03aaa46ff8402ab80ad504998faf5a4a544d6d632aa5b"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 121,
+      "status": "verified",
+      "notes": "Сверены пять профилей, BLAST 2/3, дополнительная Кровь, критическое игнорирование брони и красная цитата. Написание RISKY сохранено.",
+      "sectionHashes": {
+        "core-item-silenced-pistol": "f89e8828d9d079e21a5482a21cbe43a359484d93efe0a75632b3e8a65c61d860",
+        "core-item-sniper-rifle": "99737a278075dbc608b23508f4977a37fddfed5bf4a0b893f7f357f0ad495986",
+        "core-item-grenades": "b578e1204cd8839f53630e604272b0379e3b132e63a59c467555b121a4751a15",
+        "core-item-incendiary-grenades": "4de1a68c775fd85be9b5a1d19a01865c7458e7806843cc91fdcad3e90c792486",
+        "core-item-gas-grenades": "dc8d0d656de54913f17f8cfc787824fb908fe7a2816255f402cab46177b2f65d",
+        "core-armoury-marginal-quotes": "64b1a5fdb297f2b88d4aacca7e374847afbb042b48c02f21fb221dfc732d2423"
+      },
+      "issues": [
+        "core-risky-keyword-alias"
+      ]
+    },
+    {
+      "pdfPage": 122,
+      "status": "verified",
+      "notes": "Сверены пять профилей, разброс заряда с примером 7−5, бронебойность, три атаки пулемёта, расстояние 6” между целями, конец активации и цитата.",
+      "sectionHashes": {
+        "core-item-grenade-launcher": "32629f9042b8ee9391c09abb87887ece364bdf015c9f6dcd7a3f0dcc93e661fb",
+        "core-item-satchel-charge": "1c081cf2539bdef8daae1cf8425fb8d769c4d0194c1819466fd5ea90667b18d5",
+        "core-item-molotov-cocktail": "83298d96bfc358779a7a9a4ccdc43a346d3614bc73ba9201a4f028000575b18c",
+        "core-item-anti-materiel-rifle": "6bdcfb23d9175b4d7a48d706b9ae9f50b3525cae26b5cfa02cc0db4b797a41f4",
+        "core-item-machine-gun": "053520f410a95e8e7efe3079b31bd6322c169acc04f52c4315355705518b99dd",
+        "core-armoury-marginal-quotes": "64b1a5fdb297f2b88d4aacca7e374847afbb042b48c02f21fb221dfc732d2423"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 123,
+      "status": "verified",
+      "notes": "Сверены оба огнемёта: дальность 8/10”, одна/две цели, 6” между целями, автоматическое попадание, броня и FIRE.",
+      "sectionHashes": {
+        "core-item-flamethrower": "8b4d694183038aa23b7b6767c6e5954fc525558a43b1092e6dd91222dd6194ee",
+        "core-item-heavy-flamethrower": "25fbb5e4326489c422fe0d9fcca5c207bfa05e2368c52e7e6411f742a57dd005"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 124,
+      "status": "verified",
+      "notes": "Сверены ввод и пять профилей ближнего оружия, безоружный штраф, двуручный CUMBERSOME-штык, крепление и исключение из лимита.",
+      "sectionHashes": {
+        "core-melee-weapons-intro": "638f69cad150d88b0cb4f613c48861af40fd88418450967248efe65d0527138f",
+        "core-item-unarmed": "a3d1ad27eb8d2dfe7703a8b087882308c167bd1fde52b62bb602a789869515b7",
+        "core-item-knife-dagger": "5fab1c9647bb6b4eb17d09cd05689e56f5712f2faaf8e36464bd9a8a415613be",
+        "core-item-trench-club": "d1a112b4603bf42f4301083a581253b452b964344bed6f3512490a928e25d462",
+        "core-item-sword-axe": "a30bea9c905355a413c969bad35685692a2a021571ccc964b10388b64ada0048",
+        "core-item-bayonet": "65f7b7c48660db39cd402b230c48ae767d9a19307f97e20aa6a32e0937617606"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 125,
+      "status": "verified",
+      "notes": "Сверены пять профилей: плоское +2 ножа, −1DICE посоха, пара Когтей, движение 3” один раз, саморанение молота. Исходная опечатка ДЕЙСТВИК сохранена с issue.",
+      "sectionHashes": {
+        "core-item-sacrificial-knife": "b3832c4cd5d29d961328e58613a07eafcc5cee6b04f98d3f815ab6aeca15618a",
+        "core-item-blasphemous-staff": "a4ed1b3161c4f4fb5984bcbf43b322d7aea8042cee8bd83a4ef9f0c3ea66c2ac",
+        "core-item-hellblade": "43b3a1e4c7deb30c94573e706173b5b0f9e1777d030fa6307d6fbd7307e499db",
+        "core-item-tartarus-claws": "82d1e5f5dea8725db4113b6ed4996fedacc16247a198336f3cd09d6fc2d47988",
+        "core-item-anti-tank-hammer": "ad8227a65f77965b0942bf6189ef0f4c1296fe06c9777a398cc78ad2e216c89f",
+        "core-armoury-marginal-quotes": "64b1a5fdb297f2b88d4aacca7e374847afbb042b48c02f21fb221dfc732d2423"
+      },
+      "issues": [
+        "core-risky-keyword-alias",
+        "core-source-typographical-errors"
+      ]
+    },
+    {
+      "pdfPage": 126,
+      "status": "verified",
+      "notes": "Сверены пять профилей: две руки и штраф напавшему, исключение запасной плети, плоское +1 молота, +1D большого меча и условная бронебойность Милосердия.",
+      "sectionHashes": {
+        "core-item-trench-polearm": "4329174a8c5318fb1751582b67bd443e1a7e063ec4b1f8819762713ea4b1a0d6",
+        "core-item-scourge-battle-whip-flail": "2fb272e967ba2d9b7eb20b3fb60acafdd2ff7c974a7d944971fffce7822cc0a6",
+        "core-item-double-handed-blunt-weapon": "318bd6c4feddd1ce80147990ec37a46cb527c91b1c52dc8eb84c1bbc22674104",
+        "core-item-great-sword-axe": "3659394377c1a7bce65ceb2a00d9f388cb245b43364ea45f6467e90ee0583972",
+        "core-item-misericordia": "b620233b7c07a9d19dcc91a5c722594245c4303ea058dbf582733e2750ff12fb"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 127,
+      "status": "verified",
+      "notes": "Сверены два щита и три комплекта брони: модификаторы −1/−2/−3, руки, совместимость, D3 нападения, базы 40/50 мм, Новая Антиохия и приоритет TOUGH.",
+      "sectionHashes": {
+        "core-armour-intro": "6aa1ef823a5bac53a993c9a39f62e96f7d05b3056de6816ab89f3775a7a2fa7f",
+        "core-item-trench-shield": "2534bf8e5dd8b867e14ce5385a1dd6bb978466534ef274253aba6c758e3fff0d",
+        "core-item-heavy-ballistic-shield": "abff6c1098a72187c1bdf1b666a30bd3bb006f07479c8d4c0a8ba10b250ea133",
+        "core-item-standard-armour": "10b136205ade75b6102634930d59e6c913bb016000d15d5fe9c919edf1d326e7",
+        "core-item-reinforced-armour": "7a380985a98c8c4cc9b318ac20d6f973c53928b4c4a27457766344415e23571b",
+        "core-item-machine-armour": "1ca7409a332ea0d56dfa746dc9dbaa2fe9fd7a95cdb1dfe9876070fdbe8cb634"
+      },
+      "issues": [
+        "core-trench-shield-machine-conflict"
+      ]
+    },
+    {
+      "pdfPage": 128,
+      "status": "verified",
+      "notes": "Сверены оба предмета Святой Иконы: каждый даёт −1, щит занимает одну руку, защита работает против игнорирования брони. Иллюстрация отделена.",
+      "sectionHashes": {
+        "core-item-holy-icon-shield": "1b237c670bb3972fbe2ade62b0a316310ef48925b1465b83c5f378e1f57b137a",
+        "core-item-holy-icon-armour": "fbf67586a06e26fbd8482f91fb5cc5327ead614fece61629af121000d313aa59"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 129,
+      "status": "verified",
+      "notes": "Сверены семь предметов, шлемы, Medi-kit, противогаз и патроны. Отсутствие классификации Gas Mask как головного убора отмечено; «болгий Ада» дополнительно подтверждено крупным фрагментом.",
+      "sectionHashes": {
+        "core-equipment-intro": "d217be32671ba7a3b729fa26956d0779af477feffcc58bd6dc9e5d3389c31979",
+        "core-item-combat-helmet": "c7b7a849b310566e36ab9a742de20a1096f19b60a34580379738337915459054",
+        "core-item-iron-capirote": "d9d37fed42b813efa5aa6efe6e5093bed872d01e687643981c9d56c47485e30b",
+        "core-item-medi-kit": "53f1765bdbd1621eef2871adfa515590efbd7d78dd383cd901c664b1dc78bcf8",
+        "core-item-gas-mask": "c854760b3c66f8e5d9315536fa4de0c94c914a8094385c594d136f79fa11bcd5",
+        "core-item-holy-relic": "ba0f921cb0104669082cbf1cc49ddf2cc4c848a48690c949e6080a219a2a24a6",
+        "core-item-armour-piercing-bullets": "2af4518d37db613a96d48d1aaa8e163261251aec68753aeb25300bcde1bfb91b",
+        "core-item-dum-dum-bullets": "13c47b1282d5c8cfb8d6a97c789013413ba10305bb6f53735a5e2b6dcbc57480"
+      },
+      "issues": [
+        "core-source-typographical-errors",
+        "core-gas-mask-headgear-unspecified"
+      ]
+    },
+    {
+      "pdfPage": 130,
+      "status": "verified",
+      "notes": "Сверены восемь предметов, ограничения прицела, обе свободные руки для лопаты, постоянная рука флага, расходуемые и условные эффекты.",
+      "sectionHashes": {
+        "core-item-incendiary-ammunition": "f6e5497e55f7fe0dcb005b4d0ab82f0cbb699de2286dfdfacb2b0faa7698df14",
+        "core-item-tracer-bullets": "531f03e5b081d7caf76bfd439c5b36ee56f3b1332878c5736a38b34853ac9dc8",
+        "core-item-sniper-scope": "2c59751936397a5292ad53c3cf8cbb4c5a51f8a1418023449ca4ecfa33112661",
+        "core-item-shovel": "965c5f3eb2e26cba5c690d3b799fb1c5af1558b2e99711d16190997ebdf2d68e",
+        "core-item-troop-flag": "93107562e8a3cb929b2baf98f05d890cb1c8d7f2fd7715e09f5d9def3fa21a10",
+        "core-item-martyrdom-pills": "8e0aefe29a06e8f4ac246df83f6348d11826f383a5f0d18edaa31ca7cd190d5d",
+        "core-item-unholy-trinket": "b514a4e5e28edbf73a91576e860cf93bd971f5d87d41dcca14518559c3d20586",
+        "core-item-unholy-relic": "544af3dcc8a73a81d7b2acb68d8d67d843446bad86f4bf656daf8da94319db30"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 131,
+      "status": "verified",
+      "notes": "Сверены семь предметов: икона один раз за битву без CONSUMABLE, алтарь 40 мм и три модели, бинокль 16”, инструмент 4” и одна рука, +1D к лазанию.",
+      "sectionHashes": {
+        "core-item-blessed-icon": "9134618dafb2d591315e37739ec36c0e5d9b02f36e05b30ade4ff9147d580711",
+        "core-item-infernal-brand-mark": "1ddc5ca7dd72ead5371fc6492f18d30f63bb23b8deed92708ed17e8e65914957",
+        "core-item-field-shrine": "d8d0af10ade18cd2b795a016677c67c6ca149afbeb88a18b85847a10fad3ba59",
+        "core-item-hellbound-soul-contract": "c02d359d0c3e5beab1984092e9a2a954c3734dea2e544fde039822f4e0ae6171",
+        "core-item-binoculars": "19d1d3cc86b5351d464e04a4f4b156df2e48ff856261ed5a6f37173c708d714d",
+        "core-item-musical-instrument": "1ba472f0aaaa55707eff3cc935970d47624bc9c9315ffa18beb84ddc6da8a153",
+        "core-item-mountaineer-kit": "5cb9ba5e83e20ea23682d2728a2b4947446042dce0ae49689620913a4cde12d7"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 132,
+      "status": "verified",
+      "notes": "Просмотрена иллюстрация крепости и берега. Самостоятельного текста правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 133,
+      "status": "verified",
+      "notes": "Сверены поле 4×4 фута, семь типов террейна с лимитами, 8/6” между зданиями, три крупных и шесть мелких элементов, маркеры, предбитвенные способности, ОП и шесть ходов.",
+      "sectionHashes": {
+        "core-scenarios-general": "cd334d210d7b4cf436f2147255d7f0bc53aeeb69c937f4a3c72f399dfbb0ddbe"
+      },
+      "issues": [
+        "core-random-campaign-victory-minimum"
+      ]
+    },
+    {
+      "pdfPage": 134,
+      "status": "verified",
+      "notes": "Сверены титул и схема сценария 1: пять целей, 24” между зонами, отступы 6” и центр. Отдельный файл схемы также просмотрен.",
+      "sectionHashes": {
+        "core-scenario-1": "2e2f2399302bfa74266d8221735d2d113bb5b3f53c75d39ad9cadf2b97241483"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 135,
+      "status": "verified",
+      "notes": "Сверены обе колонки сценария 1: весь отряд, запрет INFILTRATOR, четыре хода, 1/2 ОП и семь подвигов. Смешение слов Слава/ОП отмечено.",
+      "sectionHashes": {
+        "core-scenario-1": "2e2f2399302bfa74266d8221735d2d113bb5b3f53c75d39ad9cadf2b97241483"
+      },
+      "issues": [
+        "core-scenario-glory-victory-wording"
+      ]
+    },
+    {
+      "pdfPage": 136,
+      "status": "verified",
+      "notes": "Сверена схема сценария 2: шесть пронумерованных реликвариев, 5/6 в центре, расстояния 24/6”. Отдельный файл схемы также просмотрен.",
+      "sectionHashes": {
+        "core-scenario-2": "1d82b76639902d87435e6eee8f258c14dfa04ad34b6ae0041cc892134fe7f654"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 137,
+      "status": "verified",
+      "notes": "Сверены сценарий 2 и вынесенный вправо подвиг Защитник Реликвии: шесть моделей, 40 мм, подкрепления D3, 8”, четыре хода, отсутствие морали и все условия ОП.",
+      "sectionHashes": {
+        "core-scenario-2": "1d82b76639902d87435e6eee8f258c14dfa04ad34b6ae0041cc892134fe7f654"
+      },
+      "issues": [
+        "core-scenario-glory-victory-wording"
+      ]
+    },
+    {
+      "pdfPage": 138,
+      "status": "verified",
+      "notes": "Сверены титул и схема сценария 3: три цели, центр и расстояния 24/6”. Несоответствие маркеров и зданий в тексте отмечено.",
+      "sectionHashes": {
+        "core-scenario-3": "f03c6251f822a48776d1377ad45ff86a2b6f87c5ee1f6a4f490112820e29e509"
+      },
+      "issues": [
+        "core-scenario3-objective-type"
+      ]
+    },
+    {
+      "pdfPage": 139,
+      "status": "verified",
+      "notes": "Сверены 20 моделей и все ELITE, три тайные цели и своя выживающая, четыре хода, 1/2/3 ОП и пять подвигов. Продолжение Особых целей соединено по колонкам.",
+      "sectionHashes": {
+        "core-scenario-3": "f03c6251f822a48776d1377ad45ff86a2b6f87c5ee1f6a4f490112820e29e509"
+      },
+      "issues": [
+        "core-scenario-glory-victory-wording",
+        "core-scenario3-objective-type"
+      ]
+    },
+    {
+      "pdfPage": 140,
+      "status": "verified",
+      "notes": "Сверены схема сценария 4, половина сил защитника, три окопа по 8”, двенадцать мин и четыре пустышки. Расхождение области мин с текстом 141 отмечено.",
+      "sectionHashes": {
+        "core-scenario-4": "b5ca91bc642281c62e67a2e4efd0dc070da288bfe59c57c5491fcc299b33d5bf"
+      },
+      "issues": [
+        "core-scenario4-mine-placement"
+      ]
+    },
+    {
+      "pdfPage": 141,
+      "status": "verified",
+      "notes": "Сверены продолжение мин, 2/3”, SHRAPNEL, обезвреживание, INFILTRATOR 12”, окончание на четвёртом/пятом ходу, ОП и шесть подвигов.",
+      "sectionHashes": {
+        "core-scenario-4": "b5ca91bc642281c62e67a2e4efd0dc070da288bfe59c57c5491fcc299b33d5bf"
+      },
+      "issues": [
+        "core-scenario4-mine-placement"
+      ]
+    },
+    {
+      "pdfPage": 142,
+      "status": "verified",
+      "notes": "Сверены титул и схема сценария 5: две зоны и 24”. Схема не назначает Атакующего.",
+      "sectionHashes": {
+        "core-scenario-5": "7edb1f51dbdd1353c2f0c358afa195149bea0a7ae6dbd3e43d4404960b908a45"
+      },
+      "issues": [
+        "core-scenario5-attacker-unspecified"
+      ]
+    },
+    {
+      "pdfPage": 143,
+      "status": "verified",
+      "notes": "Сверен сценарий 5: все модели, пять ходов, потрясение при провале морали, дукаты/10 с округлением вверх, Слава×3. Отсутствие назначения Атакующего отмечено.",
+      "sectionHashes": {
+        "core-scenario-5": "7edb1f51dbdd1353c2f0c358afa195149bea0a7ae6dbd3e43d4404960b908a45"
+      },
+      "issues": [
+        "core-scenario5-attacker-unspecified"
+      ]
+    },
+    {
+      "pdfPage": 144,
+      "status": "verified",
+      "notes": "Сверены титул и схема сценария 6 с зонами Defender/Attacker и расстоянием 24”.",
+      "sectionHashes": {
+        "core-scenario-6": "3d6fd6bfb544a817e5614304a2a9fd50960fa432b2e341d3564424946834580e"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 145,
+      "status": "verified",
+      "notes": "Сверены силы 6/6+D3, подкрепления D3 и 8”, шесть целей и 6”, HEAVY для стрельбы, четыре хода, 1/1/2 ОП и шесть подвигов.",
+      "sectionHashes": {
+        "core-scenario-6": "3d6fd6bfb544a817e5614304a2a9fd50960fa432b2e341d3564424946834580e"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 146,
+      "status": "verified",
+      "notes": "Сверена полная схема сценария 7: три вагона 4×8×5”, холм 10×48×5”, мост, расстояния 12” и орудие G. Отдельный файл схемы также просмотрен.",
+      "sectionHashes": {
+        "core-scenario-7": "e2531e2c1dc4ace93f1f4cc972e869a3a0d3ee2b9e29dc4f2a49a8439b6335fd"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 147,
+      "status": "verified",
+      "notes": "Сверены обзор и обе колонки сценария 7: пятнадцать моделей, холм 5”, высота модели 125 мм, размещение INFILTRATOR, шесть ходов, вагоны, лестницы и укрытие. Отсутствующая отсылка к артиллерии отмечена.",
+      "sectionHashes": {
+        "core-scenario-7": "e2531e2c1dc4ace93f1f4cc972e869a3a0d3ee2b9e29dc4f2a49a8439b6335fd"
+      },
+      "issues": [
+        "core-field-artillery-not-provided"
+      ]
+    },
+    {
+      "pdfPage": 148,
+      "status": "verified",
+      "notes": "Сверены все правила ящиков: содержимое D3, захват, сброс, передача, все руки, HEAVY, ограничения действий и передвижения, три использования, расстояния и конец игры.",
+      "sectionHashes": {
+        "core-scenario-7": "e2531e2c1dc4ace93f1f4cc972e869a3a0d3ee2b9e29dc4f2a49a8439b6335fd"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 149,
+      "status": "verified",
+      "notes": "Сверены 3/2/1 ОП, прекращение игры при уничтожении/морали и шесть подвигов, включая три последовательных хода в пределах 3” без Крови.",
+      "sectionHashes": {
+        "core-scenario-7": "e2531e2c1dc4ace93f1f4cc972e869a3a0d3ee2b9e29dc4f2a49a8439b6335fd"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 150,
+      "status": "verified",
+      "notes": "Сверены титул и схема сценария 8: полосы 12/22/14”, три окопа по 8”, два бункера, главное сооружение, G/M. Отдельный файл схемы также просмотрен.",
+      "sectionHashes": {
+        "core-scenario-8": "e6aa8e208cea9d873e310ae2abccff5b029e8a6f8774582ac4adfc02b1da129f"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 151,
+      "status": "verified",
+      "notes": "Сверены шестнадцать моделей, ELITE и округление защитника вниз, размеры окопов и зданий, ограничения высоты, три укрепления, INFILTRATOR 8” и размещение.",
+      "sectionHashes": {
+        "core-scenario-8": "e6aa8e208cea9d873e310ae2abccff5b029e8a6f8774582ac4adfc02b1da129f"
+      },
+      "issues": [
+        "core-field-artillery-not-provided"
+      ]
+    },
+    {
+      "pdfPage": 152,
+      "status": "verified",
+      "notes": "Сверены длительность и случайное событие: начало со второго хода, 1–3 на D6, максимум одно событие; туман, наёмник, реликвии, появление и активация Зверя, полный профиль.",
+      "sectionHashes": {
+        "core-scenario-8": "e6aa8e208cea9d873e310ae2abccff5b029e8a6f8774582ac4adfc02b1da129f"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 153,
+      "status": "verified",
+      "notes": "Сверены Зверь 60 мм и 120×80 мм, три атаки, Укус, Когти, способности; полные крысиные рои с двумя шаблонами 80 мм, расстояниями, 2D6 и D3 ходами; начало тайника.",
+      "sectionHashes": {
+        "core-scenario-8": "e6aa8e208cea9d873e310ae2abccff5b029e8a6f8774582ac4adfc02b1da129f"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 154,
+      "status": "verified",
+      "notes": "Сверены шесть результатов тайника, разрушение здания ELITE, следующий ход, 1”, броня, 5/2 ОП, две решающие победы и пять подвигов. Продолжения колонок сохранены.",
+      "sectionHashes": {
+        "core-scenario-8": "e6aa8e208cea9d873e310ae2abccff5b029e8a6f8774582ac4adfc02b1da129f"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 155,
+      "status": "verified",
+      "notes": "Сверены Призрак берегов и две опциональные замены Ловец крыс/Кровавый зверь. Других правил на странице нет.",
+      "sectionHashes": {
+        "core-scenario-8": "e6aa8e208cea9d873e310ae2abccff5b029e8a6f8774582ac4adfc02b1da129f"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 156,
+      "status": "verified",
+      "notes": "Сверены титул и схема сценария 9: центральный Дракон и 28” между зонами. Отдельный файл схемы также просмотрен.",
+      "sectionHashes": {
+        "core-scenario-9": "9da4486233dd94c5c78e5d8b16e3fbff202019ea99d562177a002199362caf07"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 157,
+      "status": "verified",
+      "notes": "Сверены шесть крестьян 25 мм, расстояния, INFILTRATOR, длительность, активация и профиль Дракона, интервалы базы 120–200/210–250/260–300 мм. Пробелы интервалов не заполнены догадкой.",
+      "sectionHashes": {
+        "core-scenario-9": "9da4486233dd94c5c78e5d8b16e3fbff202019ea99d562177a002199362caf07"
+      },
+      "issues": [
+        "core-dragon-base-bands"
+      ]
+    },
+    {
+      "pdfPage": 158,
+      "status": "verified",
+      "notes": "Сверены лазание и действия на Драконе, сброс 2”, движение и цели, топот, хвост, дыхание, три Повален, шесть Маркеров Крови на последней жизни, сопротивление и осада.",
+      "sectionHashes": {
+        "core-scenario-9": "9da4486233dd94c5c78e5d8b16e3fbff202019ea99d562177a002199362caf07"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 159,
+      "status": "verified",
+      "notes": "Сверены конец осады, FEAR, лор и активации крестьян, профиль 5”/0/25 мм, отсутствие атак и рывка, +2D к попаданию и ранению; начало ОП.",
+      "sectionHashes": {
+        "core-scenario-9": "9da4486233dd94c5c78e5d8b16e3fbff202019ea99d562177a002199362caf07"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 160,
+      "status": "verified",
+      "notes": "Сверены продолжение ОП, уход Дракона и отсутствие победы, пять подвигов и два Очка Славы за Dragon Slayer. Иллюстрация отделена.",
+      "sectionHashes": {
+        "core-scenario-9": "9da4486233dd94c5c78e5d8b16e3fbff202019ea99d562177a002199362caf07"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 161,
+      "status": "verified",
+      "notes": "Просмотрено продолжение полноформатной иллюстрации. Самостоятельных правил и профилей нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 162,
+      "status": "verified",
+      "notes": "Сверены шесть шагов генератора, подготовка, вход, террейн, длительность и таблица шести сценариев. Различие фразы о пяти кампанийных ОП со страницей 133 отмечено.",
+      "sectionHashes": {
+        "core-random-scenarios": "ee2f9a6d96deeb9e059c5af47c4d72262795f25777fb2359ecdd11993652f4ae"
+      },
+      "issues": [
+        "core-random-campaign-victory-minimum"
+      ]
+    },
+    {
+      "pdfPage": 163,
+      "status": "verified",
+      "notes": "Сверены сценарии 1–5: стоимость/100 и 30 за Славу, D3+1 целей, радиус и расстояния, заряд и следующая активация, четыре окопа, эвакуация из центра края.",
+      "sectionHashes": {
+        "core-random-scenarios": "ee2f9a6d96deeb9e059c5af47c4d72262795f25777fb2359ecdd11993652f4ae"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 164,
+      "status": "verified",
+      "notes": "Сверены Извлечь, террейн 6×6”, передача 1”, сброс D6, победа/ничья, шесть типов развёртывания, Случайная встреча и её схема.",
+      "sectionHashes": {
+        "core-random-scenarios": "ee2f9a6d96deeb9e059c5af47c4d72262795f25777fb2359ecdd11993652f4ae"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 165,
+      "status": "verified",
+      "notes": "Сверены четыре схемы и полный текст типов 2–5: 24”, фланг 4/4”, дистанция 12” и шесть ходов, туннели, половина резерва вниз и запрет рывка. Продолжение дистанции справа сверху учтено.",
+      "sectionHashes": {
+        "core-random-scenarios": "ee2f9a6d96deeb9e059c5af47c4d72262795f25777fb2359ecdd11993652f4ae"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 166,
+      "status": "verified",
+      "notes": "Сверены Туман войны, резерв, первый ход, шесть строк сторон, схема, два разных результата подвигов каждого игрока, Victorious, одно Очко Славы и однократность.",
+      "sectionHashes": {
+        "core-random-scenarios": "ee2f9a6d96deeb9e059c5af47c4d72262795f25777fb2359ecdd11993652f4ae"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 167,
+      "status": "verified",
+      "notes": "Сверены все двенадцать строк двух таблиц подвигов, включая исключения Sharpshooter, шестой Маркер Крови, два отступления, невидимую цель и падение 3”.",
+      "sectionHashes": {
+        "core-random-scenarios": "ee2f9a6d96deeb9e059c5af47c4d72262795f25777fb2359ecdd11993652f4ae"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 168,
+      "status": "verified",
+      "notes": "Просмотрена задняя обложка: Мастерская Кетсу, Playtest Rules 1.6.3, 2025. Самостоятельных механик нет.",
+      "sectionHashes": {},
+      "issues": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "review-common-full-image-pass",
+      "status": "resolved",
+      "pages": [
+        1,
+        17,
+        118,
+        168
+      ],
+      "description": "Второй независимый редактор открыл все 68 PNG страниц 1–17 и 118–168 через view_image и сравнил полный текст и игровые сущности с первичным авторским JSON. Буквицы, колонки, боковые блоки, таблицы, продолжения и иллюстрационные страницы учтены."
+    },
+    {
+      "id": "review-common-editorial-formatting",
+      "status": "resolved",
+      "pages": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        13,
+        16,
+        118,
+        119,
+        124,
+        127,
+        129,
+        130,
+        131,
+        133,
+        139
+      ],
+      "description": "Восстановлены абзацы и пробелы на границах шрифтов/колонок, убраны дублирующиеся заголовки, английские игровые ключевые слова выделены жирным. Исходные слова, числа и опечатки сохранены."
+    },
+    {
+      "id": "review-common-item-mechanics",
+      "status": "resolved",
+      "pages": [
+        13,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131
+      ],
+      "description": "У 67 предметов добавлены подтверждённые механические поля и полные rules с источниками. Условное использование лопаты, исключение штыка из лимита, крепление и запрет любых щитов для Machine Armour записаны явно. Неизвестное осталось null."
+    },
+    {
+      "id": "review-common-diagrams",
+      "status": "resolved",
+      "pages": [
+        134,
+        136,
+        138,
+        140,
+        142,
+        144,
+        146,
+        150,
+        156,
+        164,
+        165,
+        166
+      ],
+      "description": "Все 15 сохранённых схем отдельно открыты через view_image и сопоставлены с оригинальными страницами. Зоны, размеры, маркеры и нумерация не обрезаны; SHA каждого ассета совпал с diagram record."
+    },
+    {
+      "id": "review-common-source-limitations",
+      "status": "source-issues-retained",
+      "pages": [
+        4,
+        5,
+        7,
+        9,
+        11,
+        12,
+        118,
+        125,
+        129,
+        133,
+        135,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        147,
+        151,
+        157,
+        162
+      ],
+      "description": "Неоднозначности и опечатки PDF сохранены как 14 issues. Verified подтверждает верность транскрипции; неопределённая механика остаётся неопределённой. Отсылки к кампании и Полевой Артиллерии не заполнены другой редакцией."
+    }
+  ],
+  "diagrams": [
+    {
+      "path": "assets/reconstruction/core/page-134-1.png",
+      "pdfPage": 134,
+      "sha256": "c09e886c5d96bbb3c12c5ee76b433836b56a478b75447942bd077825dfa4ea76",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-136-1.png",
+      "pdfPage": 136,
+      "sha256": "2023af9a08b0eac5aec229b6f76843fec06e665812255b789a49e6d1137cac32",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-138-1.png",
+      "pdfPage": 138,
+      "sha256": "7b49ca9e3f875df52872a7f4e6b69085843e28cb06d7072c369841573b524731",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-140-1.png",
+      "pdfPage": 140,
+      "sha256": "93c9f8f47002d65e1f3e7d650f49dea190724af5da07b5fb05f4e9da5ac9b9aa",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-142-1.png",
+      "pdfPage": 142,
+      "sha256": "44c26e14bb461ad30c3a07db9f3b37f5cfb26c8635a3c2dba6d27a02b559bb10",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-144-1.png",
+      "pdfPage": 144,
+      "sha256": "5555b5dc186a6e2827bbf70ca1b7c4ac211ebf77b35d6c945db102f0743376ba",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-146-1.png",
+      "pdfPage": 146,
+      "sha256": "3d6f7ad54bf639474a97cbcceef15a80f97e5ff87f539cb7f8805d266ad486ba",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-150-1.png",
+      "pdfPage": 150,
+      "sha256": "b5b1c8d836a82940e51dc6ba700a3f1abac57b3d313fa56f23bed3e136572a27",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-156-1.png",
+      "pdfPage": 156,
+      "sha256": "d04d411b5f53300818484e7a1ae29131f046168f479d9ec24fbddd653c07d195",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-164-1.png",
+      "pdfPage": 164,
+      "sha256": "9a9664d45d7e44a158831f24823531d435aa9cceaf03f01191b293a2b6965c95",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-165-1.png",
+      "pdfPage": 165,
+      "sha256": "cf1ace279dc59a012cc33ad2c7f4464213b1ec6f4d7f91a557920acaad967504",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-165-2.png",
+      "pdfPage": 165,
+      "sha256": "e2652be9d69f24560631d89c8cd81650a58f3d165a84eff9a6b087e5b3972798",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-165-3.png",
+      "pdfPage": 165,
+      "sha256": "36c7c5bf0faef12351eea86b45419f50e0860b2641b2936edf9a97728a668db9",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-165-4.png",
+      "pdfPage": 165,
+      "sha256": "0f7144251ed6466b33f374fd7a16020eded3d3d1e51398586c5a5c7d0c7e5dac",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    },
+    {
+      "path": "assets/reconstruction/core/page-166-1.png",
+      "pdfPage": 166,
+      "sha256": "35c948375c3a535b9367ca3973948307d55f97577c54be3beaedceecc5fec8ba",
+      "comparison": "Все 15 ассетов отдельно просмотрены reviewer через view_image и сопоставлены с оригинальными страницами."
+    }
+  ],
+  "sourceIssues": [
+    {
+      "id": "core-campaign-not-provided",
+      "document": "core",
+      "pages": [
+        2,
+        9,
+        14,
+        16
+      ],
+      "description": "Предисловие прямо называет правила кампаний и исследований отсутствующими в данном плейтесте. Отсылки к серьёзным ранениям, исследованиям и кампании сохраняются; из этих двух PDF нельзя восстановить отсутствующую полную кампанийную процедуру."
+    },
+    {
+      "id": "core-dragon-base-bands",
+      "document": "core",
+      "pages": [
+        157
+      ],
+      "description": "Таблица Дракона задаёт интервалы баз 120–200, 210–250 и 260–300 мм. Значения 201–209 и 251–259 не описаны. Не расширять интервалы автоматически и не превращать фразу о 300 мм в неподтверждённую высоту модели."
+    },
+    {
+      "id": "core-risky-keyword-alias",
+      "document": "core",
+      "pages": [
+        13,
+        121,
+        125
+      ],
+      "description": "Справочник определяет RISKY ACTION, но таблицы оружия используют сокращение RISKY. Сохраняются оба исходных написания; связь должна быть явной нормализацией."
+    },
+    {
+      "id": "core-trench-shield-machine-conflict",
+      "document": "core",
+      "pages": [
+        9,
+        127
+      ],
+      "description": "Краткая таблица p9 говорит, что Траншейный щит совмещается с любой бронёй, но в той же таблице и полном описании p127 Механизированная броня не совмещается с щитом. Применяется специальное исключение p127, обе формулировки сохранены."
+    },
+    {
+      "id": "core-charge-line-of-sight",
+      "document": "core",
+      "pages": [
+        5,
+        7
+      ],
+      "description": "Краткое описание Charge на p5 требует видимую цель; развёрнутое Нападение на p7 допускает отсутствие прямой видимости после РИСКОВАННОГО ДЕЙСТВИЯ. Оба текста сохранены; различие не устранено догадкой."
+    },
+    {
+      "id": "core-turn-first-activation",
+      "document": "core",
+      "pages": [
+        4,
+        11
+      ],
+      "description": "На p4 игрок с меньшим количеством моделей на столе решает, кто начинает активации; на p11 игрок с меньшим количеством моделей в отряде сам начинает новый ход. Обе формулировки сохранены."
+    },
+    {
+      "id": "core-source-typographical-errors",
+      "document": "core",
+      "pages": [
+        9,
+        12,
+        125,
+        129
+      ],
+      "description": "В оригинале встречаются «больгих» (p9), лишняя закрывающая скобка BLACK GRAIL (p12), «ДЕЙСТВИК» (p125) и «болгий Ада» (p129). Они сохранены в транскрипции, а не молча исправлены."
+    },
+    {
+      "id": "core-scenario-glory-victory-wording",
+      "document": "core",
+      "pages": [
+        135,
+        137,
+        139
+      ],
+      "description": "В Славных подвигах источник сначала выдаёт Очко Славы, затем пишет «Очки победы за них можно получить только один раз». Формулировки сохранены; валюты не объединяются."
+    },
+    {
+      "id": "core-scenario3-objective-type",
+      "document": "core",
+      "pages": [
+        138,
+        139
+      ],
+      "description": "Сценарий3 просит разместить три маркера Целей, но начисление контроля описывает нахождение внутри здания-Цели. Устройства/границы зданий на этих маркерах источник явно не задаёт."
+    },
+    {
+      "id": "core-scenario4-mine-placement",
+      "document": "core",
+      "pages": [
+        140,
+        141
+      ],
+      "description": "Схема p140 отмечает область постановки мин шириной12дюймов рядом с зоной Обороняющегося; текст p141 говорит «не ближе12» от своей зоны. Схема и текст сохранены; направление ограничения не исправлено предположением."
+    },
+    {
+      "id": "core-gas-mask-headgear-unspecified",
+      "document": "core",
+      "pages": [
+        118,
+        129
+      ],
+      "description": "Общее правило ограничивает один тип головного убора. Combat Helmet и Iron Capirote названы шлемами, но Gas Mask не классифицирован как головной убор; headgear для него оставлен null."
+    },
+    {
+      "id": "core-scenario5-attacker-unspecified",
+      "document": "core",
+      "pages": [
+        142,
+        143
+      ],
+      "description": "Великая война предписывает начинать развёртывание с Атакующего, но не содержит назначения Атакующего. Схема подписывает обе стороны Player, поэтому роль не назначается автоматически."
+    },
+    {
+      "id": "core-random-campaign-victory-minimum",
+      "document": "core",
+      "pages": [
+        133,
+        162
+      ],
+      "description": "Общие сценарии p133 дают победителю5ОП, если результат иначе указывает меньшее количество; генератор p162 говорит5ОП, «если результат не указывает меньшее». Обе исходные формулировки сохранены без выбора за игрока."
+    },
+    {
+      "id": "core-field-artillery-not-provided",
+      "document": "core",
+      "pages": [
+        147,
+        151
+      ],
+      "description": "Сценарии отсылают к правилам Полевой Артиллерии для профиля Орудийной Башни/Мортиры. Сам раздел и эти профили отсутствуют в предоставленном основном PDF: повторный просмотр common-диапазона и поиск по свежему rawdict всего документа обнаружили только эти две отсылки. Не заменять их профильными миномётами фракций или другой редакцией."
+    }
+  ],
+  "byteBindingMethod": "Derived after matching reviewer source, entities and section hashes; review statuses unchanged."
+}

@@ -1,0 +1,222 @@
+{
+  "reviewer": "core_rules",
+  "document": "allies",
+  "authorFile": "reconstruction/1.6.3/authored/allies.json",
+  "method": "Независимое рассмотрение свежих изображений каждой из22 страниц через view_image, matrix1.8; посрочное сопоставление новых статей и всех чисел/допусков/профилей с оригиналом. Старый корпус не использовался.",
+  "pages": [
+    {
+      "pdfPage": 1,
+      "status": "verified",
+      "notes": "Титул и авторство, номер редакции отсутствует; самостоятельных правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 2,
+      "status": "verified",
+      "notes": "Проверены стоимость 2 Славы, доступ только Паломникам, шесть характеристик и обе способности; запрет модификации полного набора.",
+      "sectionHashes": {
+        "allies-medic": "0d5058bd83b2bab64568091a9895b0ed9fc3dfbd3566854d0e74128c205ef66d"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 3,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 4,
+      "status": "verified",
+      "notes": "Проверены 5 Славы, доступ Антиохии/Паломникам, профиль, дальность 24, 1/2 Маркера крови, запрет Рывка и отдельный одноручный Молот Правосудия.",
+      "sectionHashes": {
+        "allies-witch-hunter": "15802d9f0eea26218c2f2ade874691c8092c46f9ec6e38ec65a7a7125746d74e",
+        "allies-gavel-of-justice": "cf9c420c9e6c876d316662e167abd8be2d4c03630e0e021f0938439bc9f96fc8"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 5,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 6,
+      "status": "verified",
+      "notes": "Проверены 5 Славы, профиль +1D/+1D/-1, фиксированные противотанковая винтовка и кулаки-дубины, TOUGH/STRONG и регенерация1.",
+      "sectionHashes": {
+        "allies-communicant-tank-hunter": "e1168d4ba1f9e8909d885ffe5c10c74975f33e9e80ab13f07ea7ec455d9efc69"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 7,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 8,
+      "status": "verified",
+      "notes": "Проверены 2 Славы, профиль -1D/-1D/0, одновременная активация в1” и три эффекта таинства. Исправлена чрезмерная блокировка всего снаряжения; исходное «вооружение» и неопределённость прочих категорий сохранены.",
+      "sectionHashes": {
+        "allies-mendelist-monk": "d49de5e56123d7918078c1bdf88a7d0d66f8bdb08730f3bcecc469ce992d83e0"
+      },
+      "issues": [
+        "allies-monk-equipment-scope"
+      ]
+    },
+    {
+      "pdfPage": 9,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 10,
+      "status": "verified",
+      "notes": "Проверены 6 Славы, профиль, доступ трём еретическим фракциям, поглощение40мм/1”, -3DICE атака поглощённого, +4DICE Извержение и все последствия маркеров.",
+      "sectionHashes": {
+        "allies-sin-eater": "f7c00c8fdf6327c11eb9cfbedb4d414007d57de6493fa8abb873d53ec284b97c"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 11,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 12,
+      "status": "verified",
+      "notes": "Проверены 4 Славы, только Еретики/Двор, телепорт6”/+1DICE, пассажир32мм, запрет выхода из ближнего боя и взгляд24”/1 либо2 маркера.",
+      "sectionHashes": {
+        "allies-goetic-warlock": "d6bbd6344591dcf375579e9954539adc6244594eb031caa1aa202622fb21c509"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 13,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 14,
+      "status": "verified",
+      "notes": "Проверены 3 Славы, профиль8”/+1D/+2D/-1/32мм, фиксированный комплект, -3DICE входящих атак, переброс/психический откат и Голос Бога; красное поле лора отделено.",
+      "sectionHashes": {
+        "allies-observer": "4a7d231195feee3eaece91085e1be4ce0bb2e4520b846bb0c1b76fbf412e1000"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 15,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 16,
+      "status": "verified",
+      "notes": "Проверены 4 Славы, Султанат/Антиохия, исходная броня -2(3), три личных набора, FIRETEAM сELITE и особое развёртывание. Исходная опечатка «зарасным» сохранена.",
+      "sectionHashes": {
+        "allies-mamluk-faris": "c592fbe537faab0bdc9f70c8952361404c25fbec8ea0b2702b9ed3c4e845e27d"
+      },
+      "issues": [
+        "allies-mamluk-armour"
+      ]
+    },
+    {
+      "pdfPage": 17,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 18,
+      "status": "verified",
+      "notes": "Проверены базовая1 Славы, дополнительная1 за одну спецроль и отдельная1 заFIRETEAM, по1 собаке каждого типа, доступ ролей, +1DICE Четыре Лапы, запретELITE. Подтверждённое снаряжение Mercy/Martyr и условная замена FIRE→GAS вынесены в поля; запрет обычных покупок не выдуман.",
+      "sectionHashes": {
+        "allies-trench-dog": "c120ba8eb2ed7000e396a631940b0d9649774a8882f35aeb48499f2677982647"
+      },
+      "issues": [
+        "allies-dog-equipment"
+      ]
+    },
+    {
+      "pdfPage": 19,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 20,
+      "status": "verified",
+      "notes": "Проверены 7 Славы, доступ любой Варбанде, исходный профиль, одно неограниченное melee-оружие за стандартную цену,GOLEM, половинныйРывок и Писание18”/+1 заМаркер.",
+      "sectionHashes": {
+        "allies-scripture-guardian": "fe72b98f36f3aa32688b09a6117ace1d4a4e3479bcce8864b8f8b21e9b635dc3"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 21,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 22,
+      "status": "verified",
+      "notes": "Реально просмотрена оригинальная иллюстративная страница; самостоятельных правил и таблиц нет.",
+      "sectionHashes": {},
+      "issues": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "review-allies-monk-policy",
+      "pages": [
+        8
+      ],
+      "severity": "data-correction",
+      "description": "equipmentPolicy fixed ошибочно распространял запрет на все категории. Исправлен на weapons-fixed; неясная область дополнительной брони/снаряжения зарегистрирована отдельно.",
+      "status": "corrected"
+    },
+    {
+      "id": "review-allies-dog-fixed-equipment",
+      "pages": [
+        18
+      ],
+      "severity": "data-correction",
+      "description": "Текст Mercy/Martyr явно даёт меднабор/взрывчатку, но fixedEquipment был пуст. Поля дополнены без стоимости сверх уже включённой специализации.",
+      "status": "corrected"
+    },
+    {
+      "id": "review-allies-hellhound-conditional",
+      "pages": [
+        18
+      ],
+      "severity": "data-enrichment",
+      "description": "Атака и иммунитет FIRE, замена обоих на GAS у Маммона/Чёрного Грааля сохранены отдельными условными полями, не ошибочными keywords модели.",
+      "status": "corrected"
+    }
+  ],
+  "entitiesSha256": "7b35cc02e02d414b16293c0390afade8c5bf108eb6f1788a716f7e8a1e5c1100",
+  "sourceSha256": "d0818b7cda3df033bb326bdb96249ba5d612dfc4e2194d476698afe0592754bc",
+  "authorFileSha256": "6591378bc282ccd8df2d9fe412beeded2da138532a80ea6a6fa08dc17d01e593",
+  "byteBindingMethod": "Derived after matching reviewer source, entities and section hashes; review statuses unchanged."
+}

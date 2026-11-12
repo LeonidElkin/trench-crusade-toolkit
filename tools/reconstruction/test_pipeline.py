@@ -68,6 +68,12 @@ class IntegrationGateTests(unittest.TestCase):
         self.author["pages"].pop()
         self.assertFalse(self.run_gate()["readyForIntegration"])
 
+    def test_illustration_has_no_reading_order_but_requires_explicit_exclusion(self):
+        self.author["pages"][1]["readingOrder"] = []
+        self.assertFalse(self.run_gate()["readyForIntegration"])
+        self.author["pages"][1]["explicitExclusion"] = "illustration-without-independent-rules"
+        self.assertTrue(self.run_gate()["readyForIntegration"])
+
     def test_content_cannot_be_dismissed_without_explicit_classification(self):
         self.author["pages"][1]["contentType"] = "rules"
         self.assertFalse(self.run_gate()["readyForIntegration"])

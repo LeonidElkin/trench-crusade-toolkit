@@ -1,0 +1,584 @@
+{
+  "reviewer": "core_rules",
+  "document": "core",
+  "authorFile": "reconstruction/1.6.3/authored/factions-first.json",
+  "sourceSha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9",
+  "method": "Независимый контекст: реально рассмотрены изображения каждой страницы18–65 через view_image, сопоставлены все новые статьи, профили, строкиарсеналов, значения и ограничения. Старые игровые данные не читались.",
+  "pages": [
+    {
+      "pdfPage": 18,
+      "status": "verified",
+      "notes": "Прочитан весь лор по двум колонкам, буквицаМ возвращена в первое слово; красная цитата вынесена отдельно.",
+      "sectionHashes": {
+        "core-heretic-lore": "f153a97e594961fa195bac9823dcf26db5ecbf95582e31aef6c28d1258a8a88c"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 19,
+      "status": "verified",
+      "notes": "Сверены 700 дукатов кампании, рекомендованные 900+8 для одиночной битвы, весь арсенал: цены/валюты/лимиты/ограничения/штыки/совместимость со щитом. Продолжение лора принадлежит предыдущей статье.",
+      "sectionHashes": {
+        "core-heretic-lore": "f153a97e594961fa195bac9823dcf26db5ecbf95582e31aef6c28d1258a8a88c",
+        "core-heretic-recruitment": "cfe5518b55460c25a5b05863294c7b726c4cf953caf2014023ac5783944d7d7e",
+        "core-heretic-arsenal": "292c84a0661e8c6bcbb0c9d22f4d4b1beb43e319c4ce1ac0e76fb23f1c07f18b"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 20,
+      "status": "verified",
+      "notes": "Сверены все 4 таблицы и полные правила. Обнаружены противоречия Посоха и Когтей с общимp125; сохранены отдельныеitemId, явныеissues и manualCheck. CUMBERSOM оставлено как в источнике.",
+      "sectionHashes": {
+        "core-heretic-sacrificial-knife": "06f6e143f8d4abf77f9ed97bf5817d1e47ac150126944606866d60cfa95ddb9d",
+        "core-heretic-staff": "1861d54c88d9b2f460a4c99c97bc765300295f56ca3f200099f675f61fdde0fe",
+        "core-heretic-hellblade": "1d88011d08e8605563ef1cfc9fce488783879f04dfeb0925b729b7ca7820ddec",
+        "core-heretic-tartarus-claws": "9e04e5e2264a4f9b883f0cca2fd7daba33f343437c96edf13c4043d888e183c8",
+        "core-heretic-special-equipment": "7783fbf356586ed111c5848c21938662f3f06dfee874d832f97348a2a2e31078"
+      },
+      "issues": [
+        "source-staff-conflict",
+        "source-tartarus-claws-conflict"
+      ]
+    },
+    {
+      "pdfPage": 21,
+      "status": "verified",
+      "notes": "Оригинальная иллюстративная страница действительно рассмотрена; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 22,
+      "status": "verified",
+      "notes": "Проверены Священник 80, обязательность 1, профиль и Puppet Master12”/D6”; Коммандос 90, профиль и ограничение дальнобойного оружия. Продолжение способностей на 23 соединено.",
+      "sectionHashes": {
+        "core-heretic-priest": "b916650c223d61c9c498e52422505422ea4c4b4a1461a013306903e88d97748a",
+        "core-heretic-death-commando": "41001e4a0e16a19756a40565eecea8131ad5612f1d25fcf267f2b0359b664c3a"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 23,
+      "status": "verified",
+      "notes": "Проверены продолжения Коммандоса, генератор-1DICE и Hide1.5”; Хорист 65, шесть характеристик, обе способности и ключевые слова.",
+      "sectionHashes": {
+        "core-heretic-death-commando": "41001e4a0e16a19756a40565eecea8131ad5612f1d25fcf267f2b0359b664c3a",
+        "core-heretic-chorister": "e2954ba4d106cf9849a7c2f279463a9a6e89f2fa6d4ecab4803f56e8ab4a8e7c"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 24,
+      "status": "verified",
+      "notes": "Сверены обе строки Пехоты/Легионера, цена 30/+10 и половина с округлениемвниз; Помазанник 95, включённые броня/клеймо, max5. HERETI сохранено как опечатка источника.",
+      "sectionHashes": {
+        "core-heretic-trooper": "e331c51b06f3a5f9ccf98d4ccf45e27d591969826a76cb1c5ecb9864fd917371",
+        "core-heretic-anointed": "ce849575b2955e49177ed49b49a401cbc31e5eb5c15ed37fd2daff4f93223e21"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 25,
+      "status": "verified",
+      "notes": "Проверены 140,max1, профиль БоевогоВолка, полный запрет покупок,0/2 руки встроенных оружий, два различных типа атаки, все способности и ключевые слова.",
+      "sectionHashes": {
+        "core-heretic-warwolf": "c30c59eba4dab1562004b493c2d235f9ed4facc89c3adffe14d9de17df0672eb"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 26,
+      "status": "verified",
+      "notes": "Проверены Ведьма 90,max1 либо 2 приотряде>1000, профиль, АдскаяБомба 36”/BLAST3”/прямое 3D6sum/смещение/SHRAPNEL, завершениеактивации и иммунитеты.",
+      "sectionHashes": {
+        "core-heretic-artillery-witch": "f844c7e85e21344b201a9db9998208bd4d9236827cc48778bf5103f90db1b680"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 27,
+      "status": "verified",
+      "notes": "Сверены 25, отсутствиечисленногопредела при строгомчисленномпревосходстве HERETIC, melee-only,10 дук/предмет, обязательноеоружие и все 3 способности. ЦенаСлавы не выведена издуката.",
+      "sectionHashes": {
+        "core-heretic-wretch": "57f3278ed050d120d4453d56709c0638f1d2ad061dfd838083eb574fe7900b1d"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 28,
+      "status": "verified",
+      "notes": "Проверены 5 правилДесантногофлота, преобразованиестоимости SMG25, max1 Помазанник/Ведьма, запретВолка и 3Infiltratorулучшения. Призраки: всеисключения, наёмники/ARTIFICIAL/предметы/маркеры.",
+      "sectionHashes": {
+        "core-heretic-naval-raiding-party": "7988af79132a60a3b279adc81191cedd13be2698158964c909b3679d4adb5ce4",
+        "core-heretic-trench-ghosts": "f38a858afc50f69f7d4cc2d94a995a0888223d9d52a8963ec615e139a454f719"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 29,
+      "status": "verified",
+      "notes": "Проверены Slow3”, мины 30/max2/броня-3/BLAST3”, Баньши замена UnholyHymns→DeathWail и паланкин 60/50 мм/2”/STRONG. Для Баньши добавлено явное наследование профиля.",
+      "sectionHashes": {
+        "core-heretic-trench-ghosts": "f38a858afc50f69f7d4cc2d94a995a0888223d9d52a8963ec615e139a454f719"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 30,
+      "status": "verified",
+      "notes": "Проверены все 7 правилАлчности, минимум 80 с исключениемНесчастных, иностранныепредметы, GASзамены, запретКоммандоса и 110 дукнаёмникуКолдуну.",
+      "sectionHashes": {
+        "core-heretic-knights-of-avarice": "e1be4f5a3c4e841612406c2d3ef82e13ec820e441d3ab7d7123acbaf8f784fde"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 31,
+      "status": "verified",
+      "notes": "Проверены 4 предметаАлчности, цены 45/25/20/20, лимиты 1/1/3/2, таблицаМолота и условияиспользования; цитатаБеры отдельно.",
+      "sectionHashes": {
+        "core-heretic-tarnished-armour": "f5da4df4f9044bb05a07caef7623880fcd075a118f4a9fb74f1f249c03a80f66",
+        "core-heretic-standard-of-mammon": "3f8a897c515c83d14ce2f5398a8f4fb247aa5687f788573219e3f5a2a8c33d33",
+        "core-heretic-golden-calf-altar": "360667704a57d6ebdb0cfdb8f7ac676b51039531e415092911e08ff53db850e4",
+        "core-heretic-coin-hammer": "1c19cf2ec62ee1170022d40fc042b9fe09ea2c44dc9864a3908e7b3d4930a2ec",
+        "core-heretic-mammon-quote": "e5095a72d9803186ff2060eaadf57b2a3c914aef19d0952a32413ec95984b159"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 32,
+      "status": "verified",
+      "notes": "Оригинальная иллюстративная страница действительно рассмотрена; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 33,
+      "status": "verified",
+      "notes": "Полный лорПаломников прочитан по двумколонкам и в продолжении 34; буквицаП восстановлена; не превращён в механики.",
+      "sectionHashes": {
+        "core-pilgrim-lore": "3a7bb04e4211aaff6a68bae3a82833d826c17aaa93c20ac2467a047d3949fcad"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 34,
+      "status": "verified",
+      "notes": "Сверены 700/900+8, весь арсеналПаломников и ограничения, включаямузыканта не ELITE иисходное«пистоле».",
+      "sectionHashes": {
+        "core-pilgrim-lore": "3a7bb04e4211aaff6a68bae3a82833d826c17aaa93c20ac2467a047d3949fcad",
+        "core-pilgrim-recruitment": "d1782bff546aa98a89eac0892f7fb4e8b0f9225a86b4efd2a03b52a6c06eb19f",
+        "core-pilgrim-arsenal": "9427834c9a633f4e4ba1d0dd28ae2b8526aad0bd3fdfbb4933b1451353fcfddd"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 35,
+      "status": "verified",
+      "notes": "Свереныкапрот/молотов/крест/ружьё/молот; пятьстолбцов, ценыизарсенала ивсеособыеусловия. Исправлен разрывлоровойфразы«психологического ужаса»; примечание Capirote сохранено.",
+      "sectionHashes": {
+        "core-pilgrim-special-equipment": "971924fa1ff13bf98d320a5b051948a9e1031f5b9f4245641653291f3bee988c",
+        "core-pilgrim-iron-capirote": "f46748021c8b267e82650a5e798a0b619bf1f99390f8f810a7951c335a95c260",
+        "core-pilgrim-molotov": "d18e35f542bba36146c8cb915808db3f74061ec11621c4098793140211f9b0d7",
+        "core-pilgrim-war-cross": "7a90f55366b82a9fe04927d3bfcc4d4ba7cb851b5b4483fd80810731e79d5872",
+        "core-pilgrim-punt-gun": "50d0e9837b2d53c7df202c60aff991481c09298ed8594af373c33bda2682f116",
+        "core-pilgrim-antitank-hammer": "d2fd040bbd3b77164509ed1b86fc73a26a0fb7a09c9a924822ab437b1a8c5d28"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 36,
+      "status": "verified",
+      "notes": "Оригинальная иллюстративная страница действительно рассмотрена; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 37,
+      "status": "verified",
+      "notes": "ПровереныПророк 80/обязательный 1, профиль и 3 способности; Каратель 50,max1, профиль. Межстраничная Ортодоксия 37→38 полная.",
+      "sectionHashes": {
+        "core-pilgrim-war-prophet": "68f52b8d5fc63c05a92b1590c74c2bc2added491cbd322f795f9ec28ca43e815",
+        "core-pilgrim-castigator": "b0368899e1f1d95f7e31c2eb6e1b60bdd630cdd7f6449ffaf5b00a3f0f547562"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 38,
+      "status": "verified",
+      "notes": "СверенывсеспособностиКарателяиКоммуниканта 100,-3D/+2D/0/40 мм, неснимаемыйКрест и Bodyguard с исключением BLAST.",
+      "sectionHashes": {
+        "core-pilgrim-castigator": "b0368899e1f1d95f7e31c2eb6e1b60bdd630cdd7f6449ffaf5b00a3f0f547562",
+        "core-pilgrim-communicant": "9021b8885587b299130c6d55d233977d385658279032135096a10a2d2fc0d7a0"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 39,
+      "status": "verified",
+      "notes": "СвереныПаломник 30 ивоскрешение 45 с сохранениемэкипировки, один STRONG+5; Узник 20/устройство+35, запретарсенала, неснимаемыйкапрот и началоустройства.",
+      "sectionHashes": {
+        "core-pilgrim-trooper": "2ec9203d53cf2657ea9c8e622bc6a81fe0432a53deeaf7bb6cb1f68abc05bdd2",
+        "core-pilgrim-prisoner": "51893297df7b49dc62656a051ce94ce460ed5b078ff2a6fc7f399aad9f6aecac"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 40,
+      "status": "verified",
+      "notes": "СверенокончаниеУстройства:4D6sum/лимит 4/мораль,БезумныйРывок; Монахиня 50,max4,8”/+1D/+1D/0/25 мм,доступоружия и 2 способности.",
+      "sectionHashes": {
+        "core-pilgrim-prisoner": "51893297df7b49dc62656a051ce94ce460ed5b078ff2a6fc7f399aad9f6aecac",
+        "core-pilgrim-stigmatic-nun": "a2419fbe11bae0ca129faba89f81f1bbc6a6102049fbabdbaba901c0bdd31758"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 41,
+      "status": "verified",
+      "notes": "СвереныАнахорет 140,max1,полныйпрофиль,фиксированноеоружие/броня/шлем,колесо 3D6sum,булава,всеусловияжертвыСломанныйнаКолесе.",
+      "sectionHashes": {
+        "core-pilgrim-anchorite": "be0a6f613a7820dd3c02ac4220fed22eb8faaea31caef77b1833a95b1f75d1fe"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 42,
+      "status": "verified",
+      "notes": "Оригинальная иллюстративная страница действительно рассмотрена; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 43,
+      "status": "verified",
+      "notes": "Оба вариантапрочитаны с правильнымпорядкомколонок; броняПроцессии 30 вынесена изверха правойколонки; всеограничения иисключения сохранены. НеоднозначнаяпоследняяфразаГневаБожия зарегистрирована.",
+      "sectionHashes": {
+        "core-pilgrim-procession-of-sacred-affliction": "f3f2b195094c314c4772d82bbb4b17158ac470cabe6d0837eac21f64e7fc5216",
+        "core-pilgrim-holy-icon-armour": "4abdccb5ae3ef9b003bf8a3d694cc213dfa6322175a0bed9133e089e578c6a9d",
+        "core-pilgrim-cavalcade-of-tenth-plague": "9115bf8f52b3b8e4fb5e3d10c37a55c8adb0c99c61eede560686d41c2c37d6c2"
+      },
+      "issues": [
+        "source-wrath-ranged-wording"
+      ]
+    },
+    {
+      "pdfPage": 44,
+      "status": "verified",
+      "notes": "ЖертвенныйАгнец 5 — продолжениеКавалькады 43; СвятойМефодий: полныйлор ивсе 8 правил,запретКоммуникантоввключаянаёмника,3 Монахинисобязательнойбронёй,измененияцен/лимитов,заменаколеса.",
+      "sectionHashes": {
+        "core-pilgrim-sacrificial-lamb": "44d34269d67561df8318d2fc6754adcff5181393581fd1e4c0abc6f4d926d2e8",
+        "core-pilgrim-saint-methodius": "bce8998243fe9ecb43aef8207c3763dcf2da866acddfbfe69882465ac08d316f"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 45,
+      "status": "verified",
+      "notes": "Свереныценывсех 6 орудий,3 полныхтаблицы,миномёт 48vs36 истрокаПулемётподАвтопушкойсохранены; ссылки«используетстандартныеправила» исправлены изложнойкатегорииЛор вПримечаниеисточника.",
+      "sectionHashes": {
+        "core-pilgrim-anchorite-heavy-flamethrower": "6707aa9dd20a6f11b03186d8300e09b2dd1681038bb0da7e8689b4acdfd108fa",
+        "core-pilgrim-anchorite-antimateriel-rifle": "32e6d3d12a562a874408227ae4f9334fd5fb5c06f05d0bb64f7910e54995baa1",
+        "core-pilgrim-anchorite-punt-gun": "ec31219d0312d601a74d69433776dff61c1a582056ea13a1d0e6c167947bd5fc",
+        "core-pilgrim-trench-mortar": "3d9c3f30d29ab8462c82e3476bfa953111395c61e8efca33ebd68f564bd52bbd",
+        "core-pilgrim-autocannon": "29ba3e8c7192a15208aee550d0c12fe9bd1510d1ec45097bdd7ca05af3c03cb4",
+        "core-pilgrim-gas-censer": "d5c50a9c01ed5d9b885a7c3a3c34cf94ca49890ec37b7401a23be565707e318b"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 46,
+      "status": "verified",
+      "notes": "Провереныдо 2 особыхпредметов наАнахорета,все 7 улучшений,цены 5/10/10/15/10/10/20,лимиты иточныеусловия.",
+      "sectionHashes": {
+        "core-pilgrim-anchorite-upgrades": "6ede41b583157c4c85be70505525ec4946ff2f4b5ed2980f968ad674a1920b05",
+        "core-pilgrim-gas-filters": "c31266b0e6cf291640bcd0a434295d5a47641eb8c4430049c873f2ed0ab18ba5",
+        "core-pilgrim-holy-diesel-engine": "b6506c7e4f4dfe75df83f5b1f6aa54b0b795056a9205e6589b2149fea35f068c",
+        "core-pilgrim-sacred-geometry": "182d3bac3f0010277a8e544977944d651e893143785631f17db3a624e776c860",
+        "core-pilgrim-grand-anchorite": "093237eb33de397b28203a1a718b4a088f7f251da132f785114aac93fc10fe6d",
+        "core-pilgrim-piston-legs": "81292c734036df984043474c0ba2594e647be3b87dcc3694056aedd8bde4927d",
+        "core-pilgrim-hallowed-anchorite": "02af8862974ed35bb6e992739aa52551fdb2a138011018a6c0d297c290c279c7",
+        "core-pilgrim-wrathful-cherub-face": "6131bd962907fa45c8a3281b733c8977bc21409249010680d8feb21778260c6a"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 47,
+      "status": "verified",
+      "notes": "Оригинальная иллюстративная страница действительно рассмотрена; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 48,
+      "status": "verified",
+      "notes": "ПолныйлорСултаната, буквицаК иоба красныхбоковыхтекстасохранены отдельноотмеханик.",
+      "sectionHashes": {
+        "core-sultanate-lore": "452b582640faa58d2054557775e54352fefe1bf02fdf4b93340e273117269425"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 49,
+      "status": "verified",
+      "notes": "Сверены 700/900+8 ивесьарсеналСултаната,валюты,лимиты,доступтолькоАлхимику/Сапёру/Быку/Ассасинам,снайперЭлитаилиЯнычар иammoусловия.",
+      "sectionHashes": {
+        "core-sultanate-recruitment": "cf2301d26d59646f2c5f24a4919f1d42f719cc57e4326dc8205bf574d3a72ec5",
+        "core-sultanate-arsenal": "a6574860d7939f5d940b3696080fda9f93692801309d2b5a4414952c05daef27"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 50,
+      "status": "verified",
+      "notes": "Сверены 4 таблицы иполныетексты,одноручныеБомбарда/Пушка/Зульфикар,прямой 3D6sumvsПоваленбезмаркеров,12”линия и+2 числоранения.",
+      "sectionHashes": {
+        "core-sultanate-special-equipment": "9920924a347fd5740202efd9deada66a8a4de4a49b2d8a471e5d3423f74226af",
+        "core-sultanate-jezzail": "6163c1bb0044e27d027762c8071fc19434775263c350fbf8d8842cdc0b949f5b",
+        "core-sultanate-murad-bombard": "ef4043ee5e711f32815e9ab60ab21b06d0deb4ae453791322c71f4664ad21d87",
+        "core-sultanate-flame-cannon": "68a07e471408ddbd985f5a0c2c5f160012209bcd21569641bf39e23188b0bf7f",
+        "core-sultanate-titan-zulfiqar": "56cb3853394cccc2924fe12284044693cf04fbebc6144b16ed8ebf52f5439b7f"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 51,
+      "status": "verified",
+      "notes": "Свереныкинжал,+1 числоранения,алебардаББ/24”,осадный 30”,алайбозан 12”,алхимическаяброня иоружейныебоеприпасы. Всеисключенияполностьюсохранены.",
+      "sectionHashes": {
+        "core-sultanate-assassins-dagger": "f26d35ebf13f9f54e3bf28c839521a8acc411f4f709c61081d8efc69e7db43c2",
+        "core-sultanate-halberd-gun": "ddc3a507da7b3ac62d5e926ed910f2aafc6124343970ff851e008a8daecbb66d",
+        "core-sultanate-siege-jezzail": "577eec4436222c52a5e0cc57a051b8afe55b1e70d5a969d78b035955e6084918",
+        "core-sultanate-alaybozan": "d5172318f7761bb13ce3ab5e1f7c85645dc49b9d4e82e0d08422ac668c5cec8c",
+        "core-sultanate-alchemist-armour": "438fe95afcf4eb3ee0ec1d74b2ab489f097bd6a764ca4b66cea5817678106f97",
+        "core-sultanate-alchemical-ammunition": "ca64c729158d98699efa84c761c491e5a4d054274b1e3f2da100a62711112d8b"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 52,
+      "status": "verified",
+      "notes": "СвереныПлащ-2DICEвукрытии,Амулет+3”раззабитву,ЛопатаМарида HEAVY и связьсобычнойлопатой.",
+      "sectionHashes": {
+        "core-sultanate-cloak-of-alamut": "6f54205d38706848c9a7b3e8e15b70e25fd796ff9a04b49c5fa35b207cebb1d0",
+        "core-sultanate-wind-amulet": "7a42383523e1bd75ccd527f5e6bc6b25f6155c91546b018197a59660dfb8d539",
+        "core-sultanate-marid-shovel": "c3ce12f584b4f4b97c5dc6f5ff79661d292034eda3f8587e68fa5dc693a6a47f"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 53,
+      "status": "verified",
+      "notes": "Оригинальная иллюстративная страница действительно рассмотрена; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 54,
+      "status": "verified",
+      "notes": "ПровереныЮзбаши 70/обязательность,профиль/TOUGH/FEARиммунитет/+1DICEvsTOUGH; Алхимик 55,профиль иначалоспособности с продолжением 55.",
+      "sectionHashes": {
+        "core-sultanate-yuzbashi": "b3507919553b75a27d8a06a29b943407b4a499066e40fbe63aa97b161793e0dc",
+        "core-sultanate-jabirean-alchemist": "cf5ecda7262ed05be9ce675f48dc41d0b6e1ac9cfd043d5519d8c55ffd817b8c"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 55,
+      "status": "verified",
+      "notes": "Свереноокончание Mastery(+1DICEriskychange) и весьАссасин 85/профиль/TimeSlip6”/TemporalAssassin2 цели/Infiltrator8”.",
+      "sectionHashes": {
+        "core-sultanate-jabirean-alchemist": "cf5ecda7262ed05be9ce675f48dc41d0b6e1ac9cfd043d5519d8c55ffd817b8c",
+        "core-sultanate-assassin": "5c4e7c5609852ac5f5f9b4b0d3edd5d5c1a41750e284a89c4691ef36bf0df567"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 56,
+      "status": "verified",
+      "notes": "СвереныАзеб 25/профиль/Skirmisher+5 иСапёр 50,max2,профиль/фиксированнаялопата/все 4 способности/8×8”мина.",
+      "sectionHashes": {
+        "core-sultanate-azeb": "d5bebdfa129a4262d023b3ebba9102b392e653b6d4257f285237c39f9cae901a",
+        "core-sultanate-sapper": "8d0149af1ee1099b726f16c07fcc3e79214d743f6fc6baa90fa6fb4f07e7f407"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 57,
+      "status": "verified",
+      "notes": "СвереныЛев 60,max2,дверазныебазы,толькобронябезщита+Амулет,ярость+5 и 3 способности; Янычар 55,max6,профиль и Strong,продолжение CounterCharge58.",
+      "sectionHashes": {
+        "core-sultanate-lion": "2ed011114d09bad863c9405c99064694f7613301f620a45e88612af8a8db616f",
+        "core-sultanate-janissary": "dd459d28380b96aba7c667cbd227ba3bb838092adf9e51119b5175a24115fb41"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 58,
+      "status": "verified",
+      "notes": "СверенокончаниеЯнычара,Бык 100,max1,профиль,HEAVYоружиетолько идо 2 бычьихоружий,все 5 способностей иточныйпорядоктекставокругиллюстрации.",
+      "sectionHashes": {
+        "core-sultanate-janissary": "dd459d28380b96aba7c667cbd227ba3bb838092adf9e51119b5175a24115fb41",
+        "core-sultanate-brazen-bull": "4e8d7019758361b7b188881be73fbf54570ce5fae6a2d9ad88021d36e75f22ed"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 59,
+      "status": "verified",
+      "notes": "Сверены всеправилаФидаи,обязательныйМастер 95 какчасть 3 Ассасинов,запретыбазовыхбойцов,4 Дервиша,4 покупныеспособности с ценами 20/20/15/10 иправиломбездубликатов. Наследованиепрофилейявное.",
+      "sectionHashes": {
+        "core-sultanate-fidai": "f9635d66646475c121653539113990b4f60a749a672e7347a52ea77295e2f151",
+        "core-sultanate-hallucinogenic-camouflage": "ffdb63b1c93fb4e2a2598c33ebb0d977ca59d5a10cfa9c7a4fc52d46a9206360",
+        "core-sultanate-thunderbolt": "420b8e934b1eba0e7197e08e18b6939a44b3b46ac4ffc1c494d47c1043d2a516",
+        "core-sultanate-time-mirage": "0a59edb046c0d76260719cb4e07e3c9fc0496600a27bf760582bd9ba1fe3f83b",
+        "core-sultanate-secret-paths": "5184e1c675fbc9834b0bc44d1827c7e7c9e70206df678f2795d6314125cd7f1c"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 60,
+      "status": "verified",
+      "notes": "СвереныЗолотойХанджар 20/лимит 2/двеатаки,Лук 50/40”/лимит 1/телепортусловие,Лист 5/лимит 4/CONSUMABLE/STRONG.",
+      "sectionHashes": {
+        "core-sultanate-fidai-equipment": "881a365f30dae25bf39d691891d7416a9c5bad18c596381ed1e53f53f9497b36",
+        "core-sultanate-golden-khanjar": "dc1a97fbc67364b6cabd0e1e0881aab88d564ff829c6d226973e4afef2af5665",
+        "core-sultanate-bow-of-alamut": "20a037ac4c41eca587a29fcdf9eb51709d13db38a1d949418da0068e8d905b08",
+        "core-sultanate-hashashin-leaf": "5a895fb34ea7838f20e373cb897a1a930e4dd4e09741613000c0e6519e297216"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 61,
+      "status": "verified",
+      "notes": "СверенполныйДомМудрости;Алхимикmin1max2,Львы 3,Фарисы 2,Кавассы+5max3 ипротиворечивыйабзацКоллекции. ЯвнооформленонаследованиепрофилейФариса/Кавасса.",
+      "sectionHashes": {
+        "core-sultanate-house-of-wisdom": "9205a75d2faac333b96f3964813d89c81f5d192886ec3e6d5d30e672560d4d43"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 62,
+      "status": "verified",
+      "notes": "Сверены 5 Тайн,цены 15/20/20/25/20,только 1 наАлхимика,бездубликатов;Медицинапрямозапрещаетмеднабор—добавлено структурноеограничение.",
+      "sectionHashes": {
+        "core-sultanate-house-secrets": "ed4268a6914f229e0be61f586304fcb7b837ed862d9e4ef81e84d7d9c7251bc5",
+        "core-sultanate-medicine": "a4fded4c7f6e1ecd34f10ca2a399e966b23e2eae6e7f750647a70e3fd715aca2",
+        "core-sultanate-cartography-geometry": "ff3c5f7d9bdb0196de675df6c9002b9fbd4e83f0fccff3b964a4bd9642ed2e0e",
+        "core-sultanate-secrets-of-takwin": "ba1dd82a41d06f58203287e8fcdc44687d0ad381e8b3a75ef81f7c9b9e283498",
+        "core-sultanate-chemistry-alchemy": "86206d3792c7e2a3384066e8105da16bac34aa76a985685cbe3e5479078b55e8",
+        "core-sultanate-philosophy-poetry-theology": "0525e4003e3682dfdce691bd39bab83040ef0e986bfffaee29172db4edf4acd1"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 63,
+      "status": "verified",
+      "notes": "Провереносвязывание 1 Таквин/Алхимик,Гомункул 40/6”/0D/0D/0/25 мм,запретснаряжения,воссоздание 40,первые 10 формул ивсеисключения.",
+      "sectionHashes": {
+        "core-sultanate-takwin-recruitment": "e54ca8681dc61ef6dbcc5e34154f238558cc4f569208de6d920eba70a186a603",
+        "core-sultanate-homunculus": "f31cf48a90f5b5773ed05720cfa9ba6ad467f11ddbc5b95b99389966a0d61303",
+        "core-sultanate-alchemical-formulas": "d680711341283cbe8d0c887adf6f66435d3d9358bf95727f02c407b8448db6bf",
+        "core-sultanate-formula-wings": "5cabd4b2987d5b1d8b06552b2c857bea990c4b3e68836cedd034888bff86c813",
+        "core-sultanate-formula-elemental-resistance": "4f5346ad2cffef3496f355378338f13c14322e9af0dd5a9506a90f5b50d1c0bb",
+        "core-sultanate-formula-massive-size": "720bde12197d2378957b74776f9e95a74514cc77e1d4a607ff853f0fe60ffd42",
+        "core-sultanate-formula-enslaved-mind": "b63da7cfea6866b9b598d6e26c044d9f2cb408e0c503510b91ef113476ba6657",
+        "core-sultanate-formula-human-hands": "2e9356ed47aec81305dd4252f505b0c8b7f8d0eace660b244532f96589c1a28d",
+        "core-sultanate-formula-inhuman-strength": "05cb3ad96a1bbe722e3f89ca429b16dc5b60ddcb2b5fa887a912868cf124ee1b",
+        "core-sultanate-formula-terrifying-appearance": "d1c4edfc2094654670ca771f4597348a32ba7dd08d0bd88eef5c082b32eb2b6f",
+        "core-sultanate-formula-additional-arm": "39f48813dc1e27d2fe353e9cc27ae7c66439baca2541a978a531d1198cd5744b",
+        "core-sultanate-formula-two-heads": "f0a4dc17742052bc75da8587ab5533da2e6610487f5330bd05e7837be9fb041b",
+        "core-sultanate-formula-hypnotic-eyes": "60300dfeb47d7d48c1e83a3bbf03391e9f3d7a2a8459c51e1ec2001b9dad356b"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 64,
+      "status": "verified",
+      "notes": "Свереныоставшиеся 5 формул,цены 10/10/10/20/25,60 мм/трипредпосылки/оружиеБыка,эликсир 15/лимит 1 с 3 исключениями,щит 20/лимит 2/занятаярука/анти FIRE.",
+      "sectionHashes": {
+        "core-sultanate-formula-hawk-eyes": "9101678b94e0055307ad355c2cbe1f76003b82417693c6f6480e0761ca8255c8",
+        "core-sultanate-formula-startling-speed": "55a70544b71f5b274b32334c28a1c790fad022bde8cef3b41dcbcac44d52c63e",
+        "core-sultanate-formula-seal-of-solomon": "34fab011faef80ff2fa106354e8ea858cc8e5ab6bcca6e3e8fb2017d7103b488",
+        "core-sultanate-formula-gargantuan-size": "fa5d063154de3f57ee5aaf84263b52fa19914e334d2d0ad2a69a28bdcbb4795d",
+        "core-sultanate-formula-regenerative-tissue": "e12f8b117f2f163d490f26d8bc55f834d9b733a651c26de50ee82304d77759fb",
+        "core-sultanate-house-arsenal": "53e5759f7e952f71e3a3b030db7249e53a83c6e14e5e235f429eecec59e08c05",
+        "core-sultanate-elixir": "2444a06321fdc84ad7eee7f724b1bf517d0d1577713b93b439b5a8f88ec08bf8",
+        "core-sultanate-fire-shield": "9ca0dc3cdee14bea0e427e22d7ce36de9d0c4c8e01675048eca53c82ebd12e03"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 65,
+      "status": "verified",
+      "notes": "Оригинальная иллюстративная страница действительно рассмотрена; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "review-first-staff-claws-source-conflicts",
+      "pages": [
+        20
+      ],
+      "status": "corrected",
+      "description": "Два реальных межстраничных противоречия зарегистрированы; локальныепредложения не слиты с общимарсеналом."
+    },
+    {
+      "id": "review-first-capirote-paragraph",
+      "pages": [
+        35
+      ],
+      "status": "corrected",
+      "description": "Склеена разорванная фраза о психологическом ужасе; полное содержание и примечание сохранены."
+    },
+    {
+      "id": "review-first-rules-reference-not-lore",
+      "pages": [
+        45
+      ],
+      "status": "corrected",
+      "description": "Три ссылки на стандартные правила оружия перестали быть помечены лором."
+    },
+    {
+      "id": "review-first-profile-inheritance",
+      "pages": [
+        29,
+        59,
+        61
+      ],
+      "status": "corrected",
+      "description": "Пять явно производных профилей получили inheritsFromUnitId и ограничения наследования способностей; не подменять наследование копированием только чисел."
+    },
+    {
+      "id": "review-first-medicine-excludes-medikit",
+      "pages": [
+        62
+      ],
+      "status": "corrected",
+      "description": "Запрет медицинского набора при Тайне Медицина добавлен в structuredrules."
+    },
+    {
+      "id": "review-first-wrath-wording",
+      "pages": [
+        43
+      ],
+      "status": "source-uncertainty-recorded",
+      "description": "Неоднозначная исходная фраза о дальнобойном оружии оставлена дословно; рабочее noRanged помечено manual."
+    },
+    {
+      "id": "review-first-bold-boundaries",
+      "pages": [
+        35,
+        44
+      ],
+      "status": "corrected",
+      "description": "Смежные четыре звёздочки, возникшие из границ PDF-спанов, объединены без изменения букв/чисел."
+    }
+  ],
+  "entitiesSha256": "3b43b3f8c054b79d9b4b1590cc54fdeb2175995de340f486bf5162bf68cef884",
+  "authorFileSha256": "73f18493688526ce079d24ed1fbd8a93f88167f0befdb2da38464de9920b3d26",
+  "byteBindingMethod": "Derived after matching reviewer source, entities and section hashes; review statuses unchanged."
+}

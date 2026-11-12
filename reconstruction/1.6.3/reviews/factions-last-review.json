@@ -1,0 +1,645 @@
+{
+  "reviewer": "factions_first",
+  "document": "core",
+  "authorFile": "reconstruction/1.6.3/authored/factions-last.json",
+  "sourceSha256": "c1ddd9579d5e7cfb5623f8b0c8528a40a96e004776831f8ccbe9e65b617879c9",
+  "entitiesSha256": "cae619903db9e90ea2f0c925ea8efd27f4110fbd8b0110efcdbd8fefb42d11e9",
+  "method": "Отдельный от автора контекст. Непосредственно просмотрены все52 оригинальных изображения66–117, затем сопоставлены полные секции, таблицы, профили и структурированные сущности. Техническое совпадение извлечённого текста не использовалось как замена визуальной сверке.",
+  "pages": [
+    {
+      "pdfPage": 66,
+      "status": "verified",
+      "notes": "Визуально сверены две колонки, буквица Н и продолжение на67; красная клятва отделена как лор, без игровой механики.",
+      "sectionHashes": {
+        "core-antioch-lore": "ecfd5afc49dc61f0c4207922a94f30418942b796a04cd837361c881cb0c0ee00",
+        "core-antioch-oath": "7ce6a87c1e6f8d7622f3df7c9c05d6fa18c6e224f1186839e3f650c8ed2fb8f9"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 67,
+      "status": "verified",
+      "notes": "Сверены продолжение истории, все41 строки арсенала с ценами/лимитами и специальные правила огневых групп и концентрированной кровавой бани; порядок текста и таблицы совпадает.",
+      "sectionHashes": {
+        "core-antioch-lore": "ecfd5afc49dc61f0c4207922a94f30418942b796a04cd837361c881cb0c0ee00",
+        "core-antioch-recruitment": "5a78ecb5307eed9f4997e3fe49f48af28cfd215fb13f8e952d7d1511700419ec",
+        "core-antioch-fireteams": "ad0aadc57c60ea7175a2a9d512f7a5195859165069eb232b5bf960845b2a34d6",
+        "core-antioch-arsenal": "e299d41e0d323b8457c2e315658cf4ef9f7ab23ef5779c4a680e05cb77a48d80"
+      },
+      "issues": [
+        "core-issue-sapper-charges-name",
+        "core-issue-eire-heavy-armour-name"
+      ]
+    },
+    {
+      "pdfPage": 68,
+      "status": "verified",
+      "notes": "Сверены профиль Лейтенанта70, характеристики6/+2/+2/0/32, экипировка и Командование. Увеличением оригинала подтверждена опечатка ДЕЙСВТИЕ.",
+      "sectionHashes": {
+        "core-antioch-lieutenant": "82454403c3f6cac87337010dd66dee80e0bfcafb876573540594c018e683ff35"
+      },
+      "issues": [
+        "core-issue-lieutenant-source-typo"
+      ]
+    },
+    {
+      "pdfPage": 69,
+      "status": "verified",
+      "notes": "Сверены священнослужитель60 (до2, одна выбранная способность), снайпер50 (до3), характеристики и полные способности обеих моделей.",
+      "sectionHashes": {
+        "core-antioch-cleric": "d138d092cb1ee5db6bb89ea512f2a1c3f41240f8427e01f958424719ee5b9458",
+        "core-antioch-sniper": "59d7ef7ee880a712ec34e30d98e721f7144a463e869644266810e0e3bce4a9fc"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 70,
+      "status": "verified",
+      "notes": "Сверены Йомен30 с отдельной обязательной винтовкой5, Траншейный крот+10/лимит2 и3 при бюджете более1000, штурмовик45/до5 и обе таблицы профилей.",
+      "sectionHashes": {
+        "core-antioch-yeoman": "dc6a755ab1170a948bbce2de25880d9fc2664ae8abbb3c50d91b90e82b008f19",
+        "core-antioch-shocktrooper": "a83a509c0592340fe80ea9f18ba2a2b75a970f33233a23e1a92012ed893b641a"
+      },
+      "issues": [
+        "core-issue-abyssinia-militia-name"
+      ]
+    },
+    {
+      "pdfPage": 71,
+      "status": "verified",
+      "notes": "Сверены сапёр80/до2, фиксированные лопата и броня, механизированная пехота85/до3 и все улучшения, размеры баз и продолжение способности на72.",
+      "sectionHashes": {
+        "core-antioch-engineer": "5ebd43782ebffd36d4d120adce36de21c05e96111f0c392f6a02b4d4a09778da",
+        "core-antioch-mechanized": "813db4d22ce3a2d6bda4bc5c67e50f0e597575aa2fa065b442e12da6cc8888be"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 72,
+      "status": "verified",
+      "notes": "Сверены завершение STRONG механизированной пехоты и основной боевой медик65 со своей неизменяемой экипировкой и иммунитетом FEAR. Не смешан с наёмником.",
+      "sectionHashes": {
+        "core-antioch-mechanized": "813db4d22ce3a2d6bda4bc5c67e50f0e597575aa2fa065b442e12da6cc8888be",
+        "core-antioch-medic": "386ccfe015f3b6803dea319149626ed23d630b27cceca39220405049503fa2ba"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 73,
+      "status": "verified",
+      "notes": "Сверены Папское государство (500/11 в кампании,700/15 отдельно), обязательный священнослужитель, молитвы и переход D3 между колонками; начало Эйре и Карникс.",
+      "sectionHashes": {
+        "core-antioch-papal": "77288dc86faf4785a064f47ac11da099533d86f5990c57e1a1a8a05b53f686c1",
+        "core-antioch-eire": "ec2c46d333de4015a41c6dd66b3870f30a30e9ab9a8c777376f6776fcddd2b11"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 74,
+      "status": "verified",
+      "notes": "Сверены продолжение Эйре, Берсеркеры+15 и исключения брони; Пруссия, минимум2/максимум8 штурмовиков, три огневые группы и условия оружия. Неоднозначные названия и ограничения зарегистрированы.",
+      "sectionHashes": {
+        "core-antioch-eire": "ec2c46d333de4015a41c6dd66b3870f30a30e9ab9a8c777376f6776fcddd2b11",
+        "core-antioch-prussia": "6a33fdc55f9b19c8efc1374f14d854b416fb03253de65c37cfcccd87c8e4070e"
+      },
+      "issues": [
+        "core-issue-prussia-automatic-weapons",
+        "core-issue-sapper-charges-name",
+        "core-issue-eire-heavy-armour-name"
+      ]
+    },
+    {
+      "pdfPage": 75,
+      "status": "verified",
+      "notes": "Сверена таблица Раскалывателя танков15/лимит3, двухручность, CUMBERSOME, CRITICAL, +1DICE ранений и особая замена кубика на6 против брони с исключением щита.",
+      "sectionHashes": {
+        "core-prussia-tank-splitter": "496795950270a5599bb70df9ac6f6a25c14b41e27d71dae1ad895c5a507f91fa"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 76,
+      "status": "verified",
+      "notes": "Сверены правила Альбы, перенос ближнего показателя механизированной пехоты в дальний, STRONG командира, лимиты оружия, Великий меч7 и Волынка с иммунитетом FEAR в4 дюймах.",
+      "sectionHashes": {
+        "core-antioch-alba": "d34cea202d966dc43b56b9541a83598ddccaf8f814b38b145b7d0acc6929a381"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 77,
+      "status": "verified",
+      "notes": "Сверен Лохабер15, двухручность, HEAVY/CRITICAL/CUMBERSOME, плоский+1 к ранению и -1DICE атаки при нападении.",
+      "sectionHashes": {
+        "core-alba-lochaber-axe": "29d5502e5ca429ea0bd29c2c412f954606b6bc24aa934b3b1bb09f6d73dee167"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 78,
+      "status": "verified",
+      "notes": "Полностью сверены две колонки истории Абиссинии и продолжение на79; самостоятельных профилей или таблиц на странице нет.",
+      "sectionHashes": {
+        "core-antioch-abyssinia-lore": "665e4ab44d2a09c5d7a7e5485cd1673e49f4371e474f606b4889cb43080abfb6"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 79,
+      "status": "verified",
+      "notes": "Сверены Абиссиния: Чева+5 и условие бонуса, до2 медиков, запреты снайперов/кротов/улучшения механизированной пехоты, три оружия HEAVY и особые молитвы.",
+      "sectionHashes": {
+        "core-antioch-abyssinia": "a6d2aaff9503f95704dd6aabbfc5baf69ce9c0210f5b711269ebd06d87980159"
+      },
+      "issues": [
+        "core-issue-abyssinia-militia-name",
+        "core-issue-sapper-charges-name",
+        "core-issue-chewa-other-model"
+      ]
+    },
+    {
+      "pdfPage": 80,
+      "status": "verified",
+      "notes": "Сверены четыре предмета и их таблицы: Шотель5, святая вода3/до4, Анфарро10/до6, Табот4 Славы/до1, все исключения и радиусы.",
+      "sectionHashes": {
+        "core-abyssinia-shotel": "e7cf26080694edc20f5825f39e0452228d610ab1ddf384a2a2fb996b0963c34b",
+        "core-abyssinia-holy-water": "7209d3ca61be5163a2cc791e09145c5d1ce76feeb51b0b800935a39c302b2767",
+        "core-abyssinia-anfarro": "527c8f566107b6749b4c985eb7ff6a0387fec9a159ad0dbe25cfc2662e480c89",
+        "core-abyssinia-tabot": "14d3767e06aca4407f3ed82628518afd3d1d2073ba6f010c4cd2ee3180e7715e"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 81,
+      "status": "verified",
+      "notes": "Просмотрена полностраничная иллюстрация; самостоятельных игровых правил нет, исключение покрытия явное.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 82,
+      "status": "verified",
+      "notes": "Сверены буквица Э, две колонки истории Чёрного Грааля и естественные границы абзацев; лор не превращён в механики.",
+      "sectionHashes": {
+        "core-grail-lore": "5ad40b2681d90b183215556184b0743d81758e4eda6ac0ad08ba2457cc595ddf"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 83,
+      "status": "verified",
+      "notes": "Сверены инфекционные маркеры и пределы, рост при6, ограничение применения, мораль, бюджет700/900 с8 маркерами, все32 строки арсенала.",
+      "sectionHashes": {
+        "core-grail-special": "7ee2e3e943519755b87f1f4b651ecb84692b3913e49a91125d5497b7769f19ca",
+        "core-grail-arsenal": "c01fe3801446249b8a4c27db0941141112299f50f94d0f215b502f83485193ef"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 84,
+      "status": "verified",
+      "notes": "Сверены пять таблиц оружия и полные особенности: рвотный снайпер18, рвотомёт8, госпитальная винтовка12, валашская аркебуза24 и паразитный пистолет BB.",
+      "sectionHashes": {
+        "core-grail-infested-rifle": "4b696f49db4954ede5d90a3a12ea674056c7d5d29912a40c05528ed6dfda0038",
+        "core-grail-corruption-belcher": "644c12986b9ec03eb3d954da5b1ee4d2a2d2abf36f5daf999d5f2a6cbf040761",
+        "core-grail-putrid-shotgun": "cb577df01624beae23f3a50939d7bba8910c4005aee78f8f40a8827cda037d5f",
+        "core-grail-viscera-cannon": "8f34ba69d406a3d61068ee8e02384c850a4429a9a6b582c18b8aaa21b4679a79",
+        "core-grail-plague-blade": "8d2d62582c2ac4766541af778fc9635c709e7183efbcb8f90a8ca7a76bde439c"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 85,
+      "status": "verified",
+      "notes": "Сверены топор+2DICE ранений, условный щит, паразитные гранаты8, шлем+1 к дальнему бою, преданный+1 к итоговому ранению и лимит2.",
+      "sectionHashes": {
+        "core-grail-beelzebubs-axe": "13fb457c87c7bb5189166bcc35bccbd6fc68d8901138f60edc20825a38b4efa4",
+        "core-grail-black-grail-shield": "c4043911a65c6ae6cf0602279f1056f962e778835603e076a35ceb134a3fd4b1",
+        "core-grail-parasite-grenades": "cf3880a9cb8a2a804a6698d602a0119b3fb102f92b77e7bf1d3fb34582c8d70e",
+        "core-grail-compound-eyes-helmet": "b4bbe1288abee40ca595cf7e96faf88010cb0d3bc33cd65161022420276e64be",
+        "core-grail-grail-devotee": "aa135076a05f93f2f4c33adaf675205c8e584beb244bdd28f528c79765cb63b2"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 86,
+      "status": "verified",
+      "notes": "Сверены иерархия и Повелитель Опухолей130, профиль6/+1/+4/0/40или50, оружие и способности. Два дефекта самого оригинала сохранены с issues.",
+      "sectionHashes": {
+        "core-grail-hierarchy": "fb6130701013354763354f65b823523fbd149b9303a3ea8ca1ed0968e2e39f5a",
+        "core-grail-lord": "8db9ec011acb9578bce7875a43afb113fe2238b8bd550e5ce0ff29e5583dfe95"
+      },
+      "issues": [
+        "core-issue-grail-lord-source-typo",
+        "core-issue-grail-hierarchy-truncated"
+      ]
+    },
+    {
+      "pdfPage": 87,
+      "status": "verified",
+      "notes": "Сверен Рыцарь Чумы60, лимиты2 либо3 при лидерстве, обязательная броня и три звания/улучшения5,5,10.",
+      "sectionHashes": {
+        "core-grail-plague-knight": "35de0feeb9a5f93a8c0c8cb638e4438baab1078ddb4400b6415c5a44cf938f2d"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 88,
+      "status": "verified",
+      "notes": "Сверены Телохранитель55/до3 и перехват в1 дюйме с исключением BLAST; Гончие55/до3, фиксированная экипировка и порог улучшения инфекции5.",
+      "sectionHashes": {
+        "core-grail-corpse-guard": "5cdf39d698da635319bcad625f88a124b05744c3a86f3f167e89c28191d9969c",
+        "core-grail-hounds": "e01cfd3cd81a5f4cee42b832e306a4185af2f1e993224b539ebe830de15a8a2d"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 89,
+      "status": "verified",
+      "notes": "Сверены продолжение гончих, пешие/летающие трупные рабы25 с отдельными профилями, отсутствие покупной экипировки и полные исключения.",
+      "sectionHashes": {
+        "core-grail-hounds": "e01cfd3cd81a5f4cee42b832e306a4185af2f1e993224b539ebe830de15a8a2d",
+        "core-grail-thralls": "3fd3189ed66812e8245df9f19dd6cd3008629544806e83ac90ebbefc1034983d"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 90,
+      "status": "verified",
+      "notes": "Сверен Вестник Вельзевула50/до4, полёт10, база40, разрешённая экипировка и Сводящее с ума жужжание10/до1/радиус8.",
+      "sectionHashes": {
+        "core-grail-herald": "4db345addae03ca1a0e00d88df9efb688739ae664eec7efccf7429dcd4483f0a"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 91,
+      "status": "verified",
+      "notes": "Просмотрена полностраничная иллюстрация; самостоятельных правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 92,
+      "status": "verified",
+      "notes": "Сверена Амальгама150: шесть рук, ограничения оружия/щитов/гранат, -2DICE ранений, TOUGH, профиль и размер базы.",
+      "sectionHashes": {
+        "core-grail-amalgam": "8adf8f8f37fe120dd38557616c1f1622692776984ca5b4241c626b7b4690293e"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 93,
+      "status": "verified",
+      "notes": "Просмотрена полностраничная иллюстрация; самостоятельных правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 94,
+      "status": "verified",
+      "notes": "Сверены обязательный Исполнитель80, его профиль и TOUGH, неопределённый общий лимит рыцарей, запрет Повелителя/Амальгамы, изменения рабов30 и специальные лимиты предметов.",
+      "sectionHashes": {
+        "core-grail-dirge": "e8cc4af9f7b31156b80dddfcaa818c5f5a82a87c2dcc7ebe34f78b2aa4be8932"
+      },
+      "issues": [
+        "core-issue-dirge-knight-count"
+      ]
+    },
+    {
+      "pdfPage": 95,
+      "status": "verified",
+      "notes": "Сверены Воля Гегемона, трата инфекции на18 дюймах и четыре разрешённых действия, а также три специальных предмета25/40/5 и все их условия.",
+      "sectionHashes": {
+        "core-grail-dirge": "e8cc4af9f7b31156b80dddfcaa818c5f5a82a87c2dcc7ebe34f78b2aa4be8932",
+        "core-dirge-broken-crown": "29901f98ee2ded7fa227df0bdc1654efb1fbca6f86675af14fdfc55292e09d6a",
+        "core-dirge-bitter-ashes": "bddb229267cdf8bad4f523611fa5db94d20f56e54f9df869305072614decf89d",
+        "core-dirge-blunderbuss": "d57585082e56e6c75c004d4d99bae94b86cd7a81e9d0aa4d828d213b912dd39f"
+      },
+      "issues": [
+        "core-issue-court-blunderbuss"
+      ]
+    },
+    {
+      "pdfPage": 96,
+      "status": "verified",
+      "notes": "Сверены буквица И, обе колонки истории Двора и продолжение на97; отсутствующие на странице игровые механики не выдуманы.",
+      "sectionHashes": {
+        "core-court-lore": "0356d78566cde122999d5b9487155f11278de552001dd040aec2495dbd97210e"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 97,
+      "status": "verified",
+      "notes": "Сверено продолжение истории Двора; отделено от набора и арсенала следующей страницы.",
+      "sectionHashes": {
+        "core-court-lore": "0356d78566cde122999d5b9487155f11278de552001dd040aec2495dbd97210e"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 98,
+      "status": "verified",
+      "notes": "Сверены DEMONIC и исключение дополнительных FIRE-маркеров, выбор семи грехов, все34 строки арсенала, цены и ELITE у брони. Различающиеся названия грехов и Бландербуса явно зарегистрированы.",
+      "sectionHashes": {
+        "core-court-recruitment": "5bf0938263ee9f86fe71cf9675da42108836a6c8d196b4ad3371c69e1ea6f872",
+        "core-court-arsenal": "ecd3c44c79b814858732e54161cd5ff2ceab470262c4cd9661f750e2881896d7"
+      },
+      "issues": [
+        "core-issue-court-sin-aliases",
+        "core-issue-court-blunderbuss"
+      ]
+    },
+    {
+      "pdfPage": 99,
+      "status": "verified",
+      "notes": "Сверены четыре оружейных таблицы: аркебуза18, офидийская винтовка30, змеиное орудие36 и лук Леты24; руки, ключевые слова и все способы расчёта ранений.",
+      "sectionHashes": {
+        "core-court-arquebus": "327859d3bf83b64fc9c04b1feadc7ebd4b665f06b847406f3cc36d00900a4c28",
+        "core-court-ophidian-rifle": "03311cdc7d4369b582f710ba286438cf3ecba2f8c2cd9d7ac1361cd7b856004e",
+        "core-court-serpent-assault-gun": "4353dc520932d97048398012c447dd0bce3ebb63b017ba8347ef93d110011596",
+        "core-court-bow-of-lethe": "82cfc770f3ae6a77ac826cd5c2d87cd2df8e32ecd13f8c627898d4f756768444"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 100,
+      "status": "verified",
+      "notes": "Сверены инструмент пыток, клинок Ада, Отсекатель голов, Малебранш, огненная корона и инфернальное железо, включая D6/2D6, 3D6 суммой и эффект против игнорирования брони.",
+      "sectionHashes": {
+        "core-court-torture-instrument": "ff37b476ddf439805569c1964036d43f6f611db629bf023377bc1a09788e6537",
+        "core-court-hellblade": "d6732667e947b85f372d22dc4fcab55f12d07c7a1ae28c8a65ef1a69b6633568",
+        "core-court-head-taker": "7a546a987dc19003435453ebf4b00f0487e543b2cc167b6eadca5524352e32c8",
+        "core-court-malebranche-sword": "9b8af801167f81b8d9bbb6df0d58c181462a0bfc8de4a1811957113770e653ef",
+        "core-court-crown-hellfire": "0a48c0849e42a96c9e4ca5ff6c00fc09115caaaeabe7ccb6273414ceadf099c8",
+        "core-court-infernal-iron": "41e511eddb8c175cb61b4162308912c2ceca8e0bc32dd8fbb30f4579edf0b7d0"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 101,
+      "status": "verified",
+      "notes": "Сверены Намордник, общие условия GOETIC, исключения DEMONIC/Грааля и первый греховный дар Пылающее инферно15 с тратой1–3 маркеров.",
+      "sectionHashes": {
+        "core-court-restraining-muzzle": "d318cca4dde6ea9a39e3c906140e955d0a7a338c63885a58d078e4d100633d7d",
+        "core-court-goetic": "bfda0c5175296ce3f063442d51e1b3c637c4943f5586118bfacc0e98817f098f",
+        "core-court-power-burning-inferno": "d40d2155554b0fbc1ab4989aec1f813f10b95e40adc58f0fe476fc53a65fe5f7"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 102,
+      "status": "verified",
+      "notes": "Сверены все пять даров страницы, стоимости, количественные лимиты, требования и эффекты Повелителя рабов, Гнева и Зависти.",
+      "sectionHashes": {
+        "core-court-power-slavemaster": "33b2781b1f0157313f93d5572a530ca231f338815b16b3bdc575c1266439ea33",
+        "core-court-power-charge-hatred": "96c59c6f0c9decebebfbaa66370788b18705a320026ac678753aa44ccd7e69d8",
+        "core-court-power-lesser-mark-cain": "8614c83c565f706a880332fa12e557f3e32f4a439e42e700df99e662a1b28000",
+        "core-court-power-blind-rage": "fb7fdd45a1642702f77712cbcbef74b26afe0361fecd6420c445bb60b1f49f4d",
+        "core-court-power-envious-eyes": "1166f196a773d76d18c95e45e5c0c6bab8d8112631bdf5bbd21964918e4886a9",
+        "core-court-power-coveted-position": "37a8d663b76e3efa4b6c66ebfc323cd9278d9dbb7dad06124dc7720fa9e4840f"
+      },
+      "issues": [
+        "core-issue-court-sin-aliases"
+      ]
+    },
+    {
+      "pdfPage": 103,
+      "status": "verified",
+      "notes": "Сверены все шесть даров Зависти/Похоти/Гордыни, условия выбора целей, срабатывания и исключения без сокращения описаний.",
+      "sectionHashes": {
+        "core-court-power-yours-mine": "6195bb61e6cf38bc17a4346c04f3167a3d290350901ee96ce3067bf29e8044eb",
+        "core-court-power-forbidden-pleasures": "735d2e22c13ba26cbbe7013bcddff9ee70dcdbe96f7560fab4d4efe8e95190b5",
+        "core-court-power-exquisite-pain": "6f03a8aa2089a738e61af58aee95ae62be0f8eb48b99b5ff120fc68d9ae31d1f",
+        "core-court-power-call-flesh": "840dcbff1aaf18e3a6e737738689595d0ec21c4d4093293ac68148d99c3b6db8",
+        "core-court-power-proud-defiance": "dec9b4913375f5da64d2c1d818b745195e816239175823eeae0da99982b5945a",
+        "core-court-power-too-proud-fall": "4ec2638847293c48c6a4e5f4c92bb9561790e6cb391783384f264d957487a8a6"
+      },
+      "issues": [
+        "core-issue-court-sin-aliases"
+      ]
+    },
+    {
+      "pdfPage": 104,
+      "status": "verified",
+      "notes": "Сверены все пять даров Гордыни/Лени/Чревоугодия, стоимость, GOETIC, лимит1 у Daemonium Meridiam и условия действия.",
+      "sectionHashes": {
+        "core-court-power-light-samael": "3a5c78a6134eb201387c04fcc6a427603b0d05188ce3c90a5f751c5494ca67d7",
+        "core-court-power-morphean-mind": "aba38432d1310c90a301bd5a235eba2b356479a2587e8ecc11760f47e2915e7d",
+        "core-court-power-charm-acedia": "d865521a324c7838806d06d5f6944a0db2dc146df05839fbb934d8d164452d2a",
+        "core-court-power-daemonium-meridianum": "13388b0537345a745f9df807e90837244e978d667962499b0a6c6ed79899f5dc",
+        "core-court-power-belly-beast": "7d010251074e899244a6d676123a3b7302f7fafae839b9252df7145835bd218a"
+      },
+      "issues": [
+        "core-issue-court-sin-aliases"
+      ]
+    },
+    {
+      "pdfPage": 105,
+      "status": "verified",
+      "notes": "Сверены все пять даров Чревоугодия/Алчности: исходное условие ещё не активировалась в этой битве, GOLEM с удалением TOUGH, повторение Чёрного сердца и порог150 для Ударов вселенной.",
+      "sectionHashes": {
+        "core-court-power-uncaring-gluttony": "eba33a1240142569c3488cc6d8e662a01ee0ec56ca3355312d01975254fab27e",
+        "core-court-power-eater-flesh": "7b65b7eea81a79475669f3548677c5ba48160fa3ede242e6d51bba61b9f5543a",
+        "core-court-power-body-gold": "504d0d0381d49ceb84ad6502c22183fd6e5bf252f87569c0c502937005f5b962",
+        "core-court-power-black-heart": "7c7cd692579b4025aae4623e1faeae98b3fa83b6f8e6bd4fd30c07c7de249f6a",
+        "core-court-power-universal-greed": "0b7ce5c2168bda91bc444b498da5680769d7f4964b3e4bde2333abe51fc08a16"
+      },
+      "issues": [
+        "core-issue-court-sin-aliases"
+      ]
+    },
+    {
+      "pdfPage": 106,
+      "status": "verified",
+      "notes": "Сверены иерархия и Претор115: полёт8,+3/+3, не более двух даров и не более одного дара Гнева.",
+      "sectionHashes": {
+        "core-court-leadership": "1ef85a2f0012631b18e8414c12a03618e04bb2e2a72da3e4309826a9218c57e8",
+        "core-court-praetor": "0631ec1c7f89ff4d4b56582a3341e320a1ec496a50a513d3db079fb2213c7dcb"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 107,
+      "status": "verified",
+      "notes": "Просмотрена полностраничная иллюстрация; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 108,
+      "status": "verified",
+      "notes": "Сверен Колдун75: полёт6,+1/+1, возможность командования без приписанного отсутствующего LEADER, минимум1/максимум3 дара и все врождённые GOETIC-способности.",
+      "sectionHashes": {
+        "core-court-sorcerer": "771be0c74f24531c88a6fe65859bedc80b2950e79f71c1481850fe899883abff"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 109,
+      "status": "verified",
+      "notes": "Просмотрена полностраничная иллюстрация; самостоятельных правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 110,
+      "status": "verified",
+      "notes": "Сверен Охотник110:6/+2/+1/32, без FEAR, обязательный лук Леты и три способности; противоречивая стоимость повторного Левого Пути сохранена как issue.",
+      "sectionHashes": {
+        "core-court-hunter": "569627e8239e336b9c25a795679ac1b5e5cc45b736c8b32694ab72c59abfed33"
+      },
+      "issues": [
+        "core-issue-hunter-repeat-cost"
+      ]
+    },
+    {
+      "pdfPage": 111,
+      "status": "verified",
+      "notes": "Просмотрена полностраничная иллюстрация; самостоятельных правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 112,
+      "status": "verified",
+      "notes": "Сверен Рыцарь Преисподней100/до3: фиксированное инфернальное железо-2, база40, ELITE/STRONG/DEMONIC, без FEAR и не более одного дара.",
+      "sectionHashes": {
+        "core-court-hell-knight": "405915322e75203f191d3a9213ca281fedab49937fc1cbead0fd4456380701b3"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 113,
+      "status": "verified",
+      "notes": "Сверены Демон ярма30 с одним дальним оружием до30 дукатов, Hateful и Torturer со всеми условиями, начало отдельного профиля несчастного20.",
+      "sectionHashes": {
+        "core-court-yoke-fiend": "0b294f244c43a57d8ef439a0553c171eb0e46f61594d476250313a38acb38302",
+        "core-court-wretched": "436507c019a291f07817ee0fa22a70e3520be07a2b27f5693412e9989a6e3d29"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 114,
+      "status": "verified",
+      "notes": "Сверены продолжение несчастного, лимит10 дукатов на предмет и обязательное оружие, строгое отношение численности; саранча90/до3, полёт8,+2/-2, база30x60 и только разрешённая корона.",
+      "sectionHashes": {
+        "core-court-wretched": "436507c019a291f07817ee0fa22a70e3520be07a2b27f5693412e9989a6e3d29",
+        "core-court-pit-locust": "f3342c868bd2ef5f46774c4b324e66a9df5ad8c4de1cdfec1364492c471a2f67"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 115,
+      "status": "verified",
+      "notes": "Просмотрена полностраничная иллюстрация; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    },
+    {
+      "pdfPage": 116,
+      "status": "verified",
+      "notes": "Сверен Осквернённый святой140/до1:6/-/+3/-3/60, три руки/три оружия/одно двуручное, все семь аур с радиусами8/12/8/12/8/6/8 и исключениями.",
+      "sectionHashes": {
+        "core-court-desecrated-saint": "067eb25212d77097bf21b21731f5c2b57ed551daa3207465d3730139dc1c14e7"
+      },
+      "issues": []
+    },
+    {
+      "pdfPage": 117,
+      "status": "verified",
+      "notes": "Просмотрена полностраничная иллюстрация; самостоятельных игровых правил нет.",
+      "sectionHashes": {},
+      "issues": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "last-review-table-boundaries",
+      "pages": [
+        70,
+        99,
+        100,
+        106
+      ],
+      "status": "corrected-by-author",
+      "description": "После визуальной сверки удалены повторные заголовки/остатки таблиц, попавшие за ошибочно округлённые границы. Последний JSON повторно сверён."
+    },
+    {
+      "id": "last-review-column-joins",
+      "pages": [
+        73
+      ],
+      "status": "corrected-by-author",
+      "description": "Восстановлена цельность D3 Маркеров благословения на переходе колонок молитвы; исправлен технический разрыв Мета-Христа."
+    },
+    {
+      "id": "last-review-court-armour-elite",
+      "pages": [
+        98
+      ],
+      "status": "corrected",
+      "entityIds": [
+        "core-court-offer-21"
+      ],
+      "description": "В структурированный offer усиленной брони добавлено requiredKeywords:[ELITE], явно указанное строкой оригинальной таблицы."
+    },
+    {
+      "id": "last-review-variant-instruments",
+      "pages": [
+        67,
+        73,
+        76
+      ],
+      "status": "corrected",
+      "entityIds": [
+        "core-eire-carnyx",
+        "core-alba-bagpipes",
+        "core-eire-carnyx-offer",
+        "core-alba-bagpipes-offer"
+      ],
+      "description": "Созданы отдельные предметы/предложения Карникса и Волынки по прямой замене музыкального инструмента. Цена15 и общий лимит1 наследуются явно; Карникс разрешён ELITE и даёт FEAR, Волынка сохраняет запрет ELITE и даёт только указанный иммунитет FEAR дружественным моделям в4 дюймах."
+    },
+    {
+      "id": "last-review-dirge-thrall-lock",
+      "pages": [
+        94
+      ],
+      "status": "corrected",
+      "entityIds": [
+        "core-grail-dirge",
+        "core-grail-thrall"
+      ],
+      "description": "В узком изменении трупного раба Песни скорби явно снят базовый equipmentLocked, сохранив перечисленные источником разрешённые категории и предметы."
+    },
+    {
+      "id": "last-review-source-typos",
+      "pages": [
+        68,
+        86
+      ],
+      "status": "preserved-source-form",
+      "description": "Независимо подтверждены опечатка ДЕЙСВТИЕ (дополнительный просмотр5x), дубиркой и оборванная фраза иерархии. Исходные формулировки сохранены, отдельные issues не выдают их за однозначные правила."
+    },
+    {
+      "id": "last-review-source-ambiguities",
+      "pages": [
+        74,
+        79,
+        94,
+        95,
+        98,
+        102,
+        103,
+        104,
+        105,
+        110
+      ],
+      "status": "documented",
+      "description": "Сверены все12 issues автора: неоднозначные ограничения/названия, подсчёт рыцарей, формы грехов, Бландербус и цена повторного Левого Пути. Сам источник не даёт однозначного решения; оригинальный текст сохранён."
+    }
+  ],
+  "authorFileSha256": "5a673ebb3d4d15c45e19430d1a147263b37b4391ce5905b8921bf55724057af2",
+  "byteBindingMethod": "Derived after matching reviewer source, entities and section hashes; review statuses unchanged."
+}

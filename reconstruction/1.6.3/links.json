@@ -1,0 +1,735 @@
+{
+  "schemaVersion": 2,
+  "itemLinks": [
+    {
+      "name": "Окопный нож",
+      "itemId": "core-item-knife-dagger",
+      "status": "confirmed-text-alias",
+      "note": "Название «Окопный нож» прямо используется в полном описании Ножа/кинжала.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            124
+          ],
+          "sectionId": "core-item-knife-dagger",
+          "bbox": [
+            36,
+            325.694,
+            445,
+            441.393
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            19
+          ],
+          "sectionId": "core-heretic-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.09,
+            667.15
+          ],
+          "textBlockIndices": [
+            10
+          ],
+          "rowY": 332.85
+        },
+        {
+          "document": "core",
+          "pages": [
+            34
+          ],
+          "sectionId": "core-pilgrim-arsenal",
+          "bbox": [
+            268.25,
+            163.56,
+            570.91,
+            642.79
+          ],
+          "textBlockIndices": [
+            16,
+            17,
+            18
+          ],
+          "rowY": 352.41
+        },
+        {
+          "document": "core",
+          "pages": [
+            67
+          ],
+          "sectionId": "core-antioch-arsenal"
+        },
+        {
+          "document": "core",
+          "pages": [
+            83
+          ],
+          "sectionId": "core-grail-arsenal"
+        },
+        {
+          "document": "core",
+          "pages": [
+            98
+          ],
+          "sectionId": "core-court-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Окопный щит",
+      "itemId": "core-item-trench-shield",
+      "status": "confirmed-text-alias",
+      "note": "Полное описание Траншейного щита использует также название «Окопный щит».",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            127
+          ],
+          "sectionId": "core-item-trench-shield",
+          "bbox": [
+            36,
+            163.514,
+            445,
+            273.704
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            19
+          ],
+          "sectionId": "core-heretic-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.09,
+            667.15
+          ],
+          "textBlockIndices": [
+            10
+          ],
+          "rowY": 511.31
+        },
+        {
+          "document": "core",
+          "pages": [
+            34
+          ],
+          "sectionId": "core-pilgrim-arsenal",
+          "bbox": [
+            268.25,
+            163.56,
+            570.91,
+            642.79
+          ],
+          "textBlockIndices": [
+            16,
+            17,
+            18
+          ],
+          "rowY": 487.43
+        },
+        {
+          "document": "core",
+          "pages": [
+            49
+          ],
+          "sectionId": "core-sultanate-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.89,
+            614.95
+          ],
+          "textBlockIndices": [
+            8
+          ],
+          "rowY": 429.35
+        },
+        {
+          "document": "core",
+          "pages": [
+            67
+          ],
+          "sectionId": "core-antioch-arsenal"
+        },
+        {
+          "document": "core",
+          "pages": [
+            83
+          ],
+          "sectionId": "core-grail-arsenal"
+        },
+        {
+          "document": "core",
+          "pages": [
+            98
+          ],
+          "sectionId": "core-court-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Медицинский набор",
+      "itemId": "core-item-medi-kit",
+      "status": "confirmed-text-alias",
+      "note": "Полное описание Медицинского комплекта использует также «Медицинский набор».",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            129
+          ],
+          "sectionId": "core-item-medi-kit",
+          "bbox": [
+            36,
+            302.865,
+            445,
+            392.624
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            49
+          ],
+          "sectionId": "core-sultanate-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.89,
+            614.95
+          ],
+          "textBlockIndices": [
+            8
+          ],
+          "rowY": 513.71
+        },
+        {
+          "document": "core",
+          "pages": [
+            67
+          ],
+          "sectionId": "core-antioch-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Знамя отряда",
+      "itemId": "core-item-troop-flag",
+      "status": "confirmed-text-alias",
+      "note": "Описание Боевого флага явно включает знамёна, флаги, штандарты и вымпелы.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            130
+          ],
+          "sectionId": "core-item-troop-flag",
+          "bbox": [
+            36,
+            414.244,
+            445,
+            494.044
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            49
+          ],
+          "sectionId": "core-sultanate-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.89,
+            614.95
+          ],
+          "textBlockIndices": [
+            8
+          ],
+          "rowY": 584.54
+        }
+      ]
+    },
+    {
+      "name": "Знамя",
+      "itemId": "core-item-troop-flag",
+      "status": "confirmed-text-alias",
+      "note": "Описание Боевого флага явно включает знамёна, флаги, штандарты и вымпелы.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            130
+          ],
+          "sectionId": "core-item-troop-flag",
+          "bbox": [
+            36,
+            414.244,
+            445,
+            494.044
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            98
+          ],
+          "sectionId": "core-court-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Большой молот/кувалда",
+      "itemId": "core-item-double-handed-blunt-weapon",
+      "status": "documented-assumption",
+      "note": "Редакторское сопоставление с таблицей «Двуручный молот» и общим описанием тяжёлого тупого оружия; буквальная перекрёстная ссылка отсутствует.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            126
+          ],
+          "sectionId": "core-item-double-handed-blunt-weapon",
+          "bbox": [
+            36,
+            327.613,
+            445,
+            463.486
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            19
+          ],
+          "sectionId": "core-heretic-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.09,
+            667.15
+          ],
+          "textBlockIndices": [
+            10
+          ],
+          "rowY": 387.45
+        },
+        {
+          "document": "core",
+          "pages": [
+            34
+          ],
+          "sectionId": "core-pilgrim-arsenal",
+          "bbox": [
+            268.25,
+            163.56,
+            570.91,
+            642.79
+          ],
+          "textBlockIndices": [
+            16,
+            17,
+            18
+          ],
+          "rowY": 413.27
+        },
+        {
+          "document": "core",
+          "pages": [
+            67
+          ],
+          "sectionId": "core-antioch-arsenal"
+        },
+        {
+          "document": "core",
+          "pages": [
+            83
+          ],
+          "sectionId": "core-grail-arsenal"
+        },
+        {
+          "document": "core",
+          "pages": [
+            98
+          ],
+          "sectionId": "core-court-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Большой молот/Кувалда",
+      "itemId": "core-item-double-handed-blunt-weapon",
+      "status": "documented-assumption",
+      "note": "То же редакторское сопоставление варианта написания с заглавной буквой; не считать отдельным подтверждением источника.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            126
+          ],
+          "sectionId": "core-item-double-handed-blunt-weapon",
+          "bbox": [
+            36,
+            327.613,
+            445,
+            463.486
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            49
+          ],
+          "sectionId": "core-sultanate-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.89,
+            614.95
+          ],
+          "textBlockIndices": [
+            8
+          ],
+          "rowY": 355.05
+        }
+      ]
+    },
+    {
+      "name": "Автоматический пистоле",
+      "itemId": "core-item-automatic-pistol",
+      "status": "documented-normalization",
+      "note": "Оригинальная строка арсенала обрывает слово «пистоле». Исходное название сохранено; ссылка на полное описание автоматического пистолета является явной нормализацией опечатки.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            119
+          ],
+          "sectionId": "core-item-automatic-pistol",
+          "bbox": [
+            36,
+            220.904,
+            445,
+            375.013
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            34
+          ],
+          "sectionId": "core-pilgrim-arsenal",
+          "bbox": [
+            268.25,
+            163.56,
+            570.91,
+            642.79
+          ],
+          "textBlockIndices": [
+            16,
+            17,
+            18
+          ],
+          "rowY": 207.3
+        }
+      ]
+    },
+    {
+      "name": "Цеп/плеть",
+      "itemId": "core-item-scourge-battle-whip-flail",
+      "status": "documented-normalization",
+      "note": "Краткое название арсенала сопоставлено полному составному названию «Плеть/Боевой кнут/цеп»; исходные названия сохранены.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            126
+          ],
+          "sectionId": "core-item-scourge-battle-whip-flail",
+          "bbox": [
+            36,
+            211.904,
+            445,
+            327.613
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            34
+          ],
+          "sectionId": "core-pilgrim-arsenal",
+          "bbox": [
+            268.25,
+            163.56,
+            570.91,
+            642.79
+          ],
+          "textBlockIndices": [
+            16,
+            17,
+            18
+          ],
+          "rowY": 392.97
+        }
+      ]
+    },
+    {
+      "name": "Большой меч или топор",
+      "itemId": "core-item-great-sword-axe",
+      "status": "documented-normalization",
+      "note": "Союз «или» и косая черта в составном названии нормализованы только для ссылки.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            126
+          ],
+          "sectionId": "core-item-great-sword-axe",
+          "bbox": [
+            36,
+            463.486,
+            445,
+            580.263
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            49
+          ],
+          "sectionId": "core-sultanate-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.89,
+            614.95
+          ],
+          "textBlockIndices": [
+            8
+          ],
+          "rowY": 365.13
+        }
+      ]
+    },
+    {
+      "name": "Альпинистский набор",
+      "itemId": "core-item-mountaineer-kit",
+      "status": "documented-normalization",
+      "note": "Варианты названия набор/комплект сохранены в исходных строках.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            131
+          ],
+          "sectionId": "core-item-mountaineer-kit",
+          "bbox": [
+            36,
+            614.314,
+            445,
+            775
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            49
+          ],
+          "sectionId": "core-sultanate-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.89,
+            614.95
+          ],
+          "textBlockIndices": [
+            8
+          ],
+          "rowY": 503.51
+        }
+      ]
+    },
+    {
+      "name": "Мизерикордия",
+      "itemId": "core-item-misericordia",
+      "status": "documented-normalization",
+      "note": "Транслитерация Misericordia сопоставлена русскому названию полного описания «Милосердие (Misericordia)».",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            126
+          ],
+          "sectionId": "core-item-misericordia",
+          "bbox": [
+            36,
+            580.263,
+            445,
+            775
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            67
+          ],
+          "sectionId": "core-antioch-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Машинная броня",
+      "itemId": "core-item-machine-armour",
+      "status": "documented-normalization",
+      "note": "Русские названия Machine Armour различаются в таблицах и полном описании. Обе формы сохранены, источник свойств — полное описание.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            127
+          ],
+          "sectionId": "core-item-machine-armour",
+          "bbox": [
+            36,
+            543.364,
+            445,
+            775
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            67
+          ],
+          "sectionId": "core-antioch-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Пилюли мученичества",
+      "itemId": "core-item-martyrdom-pills",
+      "status": "documented-normalization",
+      "note": "Разные русские названия Pills (пилюли/таблетки) сохранены; исходные механики не изменены.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            130
+          ],
+          "sectionId": "core-item-martyrdom-pills",
+          "bbox": [
+            36,
+            494.044,
+            445,
+            583.954
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            67
+          ],
+          "sectionId": "core-antioch-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Газовые гранаты",
+      "itemId": "core-item-gas-grenades",
+      "status": "documented-normalization",
+      "note": "Множественное число названия в арсенале сопоставлено единственному числу полного описания.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            121
+          ],
+          "sectionId": "core-item-gas-grenades",
+          "bbox": [
+            36,
+            606.544,
+            445,
+            775
+          ]
+        },
+        {
+          "document": "core",
+          "pages": [
+            83
+          ],
+          "sectionId": "core-grail-arsenal"
+        },
+        {
+          "document": "core",
+          "pages": [
+            98
+          ],
+          "sectionId": "core-court-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Траншейный нож",
+      "itemId": null,
+      "status": "unresolved",
+      "note": "В полном описании присутствует «Окопный нож», но «Траншейный нож» явно не сопоставлен; профиль не подставляется по сходству.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            49
+          ],
+          "sectionId": "core-sultanate-arsenal",
+          "bbox": [
+            268.25,
+            85.08,
+            570.89,
+            614.95
+          ],
+          "textBlockIndices": [
+            8
+          ],
+          "rowY": 294.33
+        }
+      ]
+    },
+    {
+      "name": "Бландербус",
+      "itemId": null,
+      "status": "unresolved",
+      "note": "Арсенал Двора содержит Бландербус, а найденное описание Мушкетона объявляет его эксклюзивным Песни скорби. Автоматическое отождествление не подтверждено.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            98
+          ],
+          "sectionId": "core-court-arsenal"
+        }
+      ]
+    },
+    {
+      "name": "Нечестивый амулет",
+      "itemId": null,
+      "status": "unresolved",
+      "note": "Нет явной ссылки на одноимённое полное описание; не подменять Нечестивым талисманом только по близости названий.",
+      "sources": [
+        {
+          "document": "core",
+          "pages": [
+            98
+          ],
+          "sectionId": "core-court-arsenal"
+        }
+      ]
+    }
+  ]
+}
