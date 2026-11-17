@@ -6,7 +6,7 @@
 .faction-rule > summary,
 .unit-equipment-rules > summary {
   cursor: pointer;
-  color: #d4cead;
+  color: var(--accent);
   line-height: 1.7;
 }
 .faction-rule > .source {
@@ -62,7 +62,7 @@
 }
 .profile-selections {
   padding: 19px 22px;
-  border-bottom: 1px solid #526e3e;
+  border-bottom: 1px solid var(--border);
 }
 .profile-selections label {
   display: block;
@@ -84,7 +84,7 @@
   padding: 8px;
   text-align: center;
   font-size: 10px;
-  color: #a4ad8e;
+  color: var(--muted);
 }
 .roster-portrait.unit-portrait-missing > span,
 .army-portrait.unit-portrait-missing > span {

@@ -3,9 +3,9 @@
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  border: 1px solid #536044;
+  border: 1px solid var(--border);
   border-radius: 3px;
-  background: radial-gradient(ellipse at 50% 75%, #4b4934 0, #2d3427 48%, #1b231d 100%);
+  background: radial-gradient(ellipse at 50% 75%, var(--border) 0, var(--panel) 48%, var(--bg) 100%);
 }
 .unit-portrait img {
   display: block;
@@ -18,7 +18,7 @@
   cursor: zoom-in;
 }
 .portrait-zoom:hover {
-  border-color: #b6aa73;
+  border-color: var(--accent);
 }
 .portrait-expand {
   display: grid;
@@ -28,9 +28,9 @@
   right: 7px;
   width: 27px;
   height: 27px;
-  border: 1px solid #838767;
-  background: #19231ed9;
-  color: #e0d5aa;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--accent);
   border-radius: 3px;
 }
 .dossier-portrait {
@@ -47,7 +47,7 @@
   max-height: 62vh;
   min-height: 180px;
   object-fit: contain;
-  background: #1b231d;
+  background: var(--bg);
   border-radius: 3px;
 }
 .portrait-full figcaption {
@@ -127,20 +127,20 @@
   text-align: left;
   min-width: 0;
   padding: 0;
-  border: 1px solid #61754b;
+  border: 1px solid var(--border);
   border-radius: 4px;
   overflow: hidden;
-  background: #293923;
+  background: var(--panel);
   transition: border-color 150ms;
 }
 .army-model:hover {
-  border-color: #c0ac70;
+  border-color: var(--accent);
 }
 .army-portrait {
   height: 250px;
   width: 100%;
   border: 0;
-  border-bottom: 1px solid #596845;
+  border-bottom: 1px solid var(--border);
   border-radius: 0;
 }
 .army-portrait img {
@@ -160,11 +160,11 @@
   font-size: 25px;
   line-height: 1.3;
   font-weight: 500;
-  color: #eee2bb;
+  color: var(--heading-color);
 }
 .army-model-type {
   font-size: 11px;
-  color: #b9c79e;
+  color: var(--muted);
   min-height: 18px;
 }
 .army-model-info .cost {
@@ -182,7 +182,7 @@
   position: absolute;
   right: 12px;
   bottom: 22px;
-  color: #c5bb87;
+  color: var(--accent);
 }
 .rule-portrait {
   width: min(100%, 330px);

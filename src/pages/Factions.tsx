@@ -115,7 +115,7 @@ export function Factions({ factionId }: { factionId?: string }) {
       <section
         className="faction-banner"
         style={{
-          backgroundImage: `linear-gradient(90deg, #191c1b 20%, #191c1b66 100%), url("${assetUrl(faction.image)}")`,
+          backgroundImage: `var(--faction-banner-overlay), url("${assetUrl(faction.image)}")`,
         }}
       >
         <span className="eyebrow">ДОСЬЕ ФРАКЦИИ / 1.6.3</span>

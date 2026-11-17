@@ -15,3 +15,5 @@ src/generated/
 public/sources/
 
 *.tsbuildinfo
+
+/trench_graphite_previews_and_css/
