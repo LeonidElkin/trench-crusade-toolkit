@@ -25,8 +25,8 @@ for (const subdirectory of ['authored', 'reviews'])
     const path = `reconstruction/1.6.3/${subdirectory}/${file}`
     inputs[path] = digest(await readFile(resolve(root, path)))
   }
-for (const file of ['manifest.json', 'links.json', 'integration-issues.json']) {
-  const path = `reconstruction/1.6.3/${file}`
+for (const path of ['reconstruction/1.6.3/manifest.json', 'reconstruction/1.6.3/links.json',
+  'reconstruction/1.6.3/integration-issues.json', 'scripts/rules-errata.ts']) {
   inputs[path] = digest(await readFile(resolve(root, path)))
 }
 await json('inputs.json', inputs)

@@ -1,7 +1,7 @@
-import type { Catalog, Model, SourceRef, Unit, Warband } from './schema'
+import type { Catalog, Item, Model, SourceRef, Unit, Warband } from './schema'
 import {
   effectiveOffer, effectiveUnit, getVariant, leaderChoice, modelCost, modelGear,
-  modelKeywords, offerApplies, upgradeApplies, warbandCost, type ModelGear,
+  modelKeywords, offerAccessReason, possibleSapperException, upgradeApplies, warbandCost, type ModelGear,
 } from './warband'
 import {
   equipmentExceptions, findItem, itemHasName, namesEqual, number, profileChoices, record,
@@ -96,7 +96,7 @@ export function validateWarband(c: Catalog, w: Warband): ValidationResult {
     }
   }
 
-  const purchasesByLimit = new Map<string, { quantity: number; offerId: string }>()
+  const purchasesByLimit = new Map<string, { quantity: number; nonElite: number; offerId: string }>()
   const boundAlchemists = new Set<string>()
   for (const model of w.units) {
     const unit = effectiveUnit(c, w, model.unitId, model)
@@ -131,7 +131,8 @@ export function validateWarband(c: Catalog, w: Warband): ValidationResult {
       activate(offer)
       if (item) activate(item)
       if (!item) { add('unknown-item-profile', 'error', `Нет профиля предмета ${offer.itemId}.`, model, offer.ruleId, offer.source); continue }
-      if (!offerApplies(c, w, model, offer)) add('equipment-access', 'error', `${offer.name}: недоступен бойцу или выбранному варианту. ${offer.notes}`, model, offer.ruleId, offer.source)
+      const access = offerAccessReason(c, w, model, offer)
+      if (access) add('equipment-access', 'error', `${offer.name}. ${access}`, model, offer.ruleId, offer.source)
       if (offer.manualCheck || item.unresolved || item.definition.manualCheck)
         add('special-item-manual', 'manual', string(record(offer.definition.profileLink).note, `${offer.name}: профиль или дополнительные условия покупки требуют сверки.`), model, offer.ruleId, offer.source)
       if (offer.category === 'armour' && item.armourModifier == null)
@@ -142,9 +143,16 @@ export function validateWarband(c: Catalog, w: Warband): ValidationResult {
       const hasRequired = gear.some((g) => requiredIds.includes(g.item?.id ?? '') || requiredNames.some((name) => gearHasName(c, g, name, w.factionId))) ||
         ups.some((up) => requiredNames.some((name) => namesEqual(name, string(rulesOf(up).countsAs))))
       if ((requiredNames.length || requiredIds.length) && !hasRequired)
-        add('item-prerequisite', 'error', `${offer.name}: отсутствует обязательное снаряжение.`, model, offer.ruleId, offer.source)
-      if (rulesOf(item).requiresBayonetLug && !gear.some((g) => g.offer?.definition.bayonetLug || /штыковое крепление/i.test(string(record(g.offer?.definition.restrictions).sourceText))))
+        add('item-prerequisite', 'error', `${offer.name} требует ${(requiredNames.length ? requiredNames : requiredIds.map((id) => c.items.find((candidate) => candidate.id === id)?.name ?? id)).join(' / ')}.`, model, offer.ruleId, offer.source)
+      if (rulesOf(item).requiresBayonetLug && !gear.some((g) => hasBayonetMount(c, w, g)))
         add('bayonet-mount', 'error', 'Штык требует оружие со штыковым креплением.', model, item.ruleId, item.source)
+      const ranged = gear.filter((g) => g.category === 'ranged')
+      for (const prerequisite of item.prerequisites.map(record)) {
+        const pattern = prerequisite.kind === 'rifle-name' ? /винтовк/i
+          : prerequisite.kind === 'equipped-rifle-or-pistol' ? /винтовк|пистолет(?!-пулем)/i : undefined
+        if (pattern && !ranged.some((g) => pattern.test(g.name)))
+          add('item-use-prerequisite', 'warning', `${entry.name}. Для применения требуется ${prerequisite.kind === 'rifle-name' ? 'винтовка' : 'винтовка или пистолет'}.`, model, item.ruleId, item.source)
+      }
       for (const name of strings(item.definition.forbiddenWithItemNames)) if (gear.some((g) => g !== entry && gearHasName(c, g, name, w.factionId)))
         add('incompatible-items', 'error', `${entry.name} несовместим с ${name}.`, model, item.ruleId, item.source)
       if (unit.maxItemDucats !== undefined && offer.cost.glory > 0)
@@ -156,12 +164,19 @@ export function validateWarband(c: Catalog, w: Warband): ValidationResult {
           add('weapon-keyword-ban', 'error', `${entry.name}: вариант запрещает ${banned}.`, model, variant?.ruleId, variant?.source)
         const exempt = [...(offer.exemptLimitUnitIds ?? []), ...strings(raw.limitExemptUnitIds)]
         if (!exempt.includes(unit.id)) {
-          const key = string(raw.sharedLimitGroup, offer.itemId)
+          const key = `${offer.factionId}:${string(raw.sharedLimitGroup, offer.itemId)}`
           const old = purchasesByLimit.get(key)
-          purchasesByLimit.set(key, { quantity: (old?.quantity ?? 0) + entry.quantity, offerId: old?.offerId ?? offer.id })
+          purchasesByLimit.set(key, {
+            quantity: (old?.quantity ?? 0) + entry.quantity,
+            nonElite: (old?.nonElite ?? 0) + (keywords.includes('ELITE') ? 0 : entry.quantity),
+            offerId: old?.offerId ?? offer.id,
+          })
         }
       }
     }
+    const claws = gear.find((entry) => rulesOf(entry.item ?? { definition: {} }).harrowingAssault)
+    if (claws && gear.some((entry) => entry !== claws && entry.category === 'melee'))
+      add('claws-exclusive', 'error', 'Когти Тартара нельзя сочетать с другим оружием ближнего боя.', model, claws.item?.ruleId, claws.item?.source)
     const compulsory = record(ur.compulsoryPurchase)
     if (compulsory.name) {
       const replacement = record(compulsory.replacement)
@@ -233,7 +248,8 @@ export function validateWarband(c: Catalog, w: Warband): ValidationResult {
     if (Object.keys(powerPurchase).length) {
       const count = ups.filter((up) => up.power && rulesOf(up).countsTowardPowerLimit !== false).length
       const max = number(record(powerPurchase.maxByAllegiance)[w.allegiance], number(powerPurchase.max))
-      if (count < number(powerPurchase.min) || count > max) add('powers', 'error', `GOETIC: допустимо ${number(powerPurchase.min)}–${max} приобретённых сил, сейчас ${count}.`, model, unit.ruleId, unit.source)
+      if (count < number(powerPurchase.min)) add('powers', 'error', `GOETIC: требуется минимум ${number(powerPurchase.min)} сил, сейчас ${count}.`, model, unit.ruleId, unit.source)
+      if (count > max) add('power-limit', 'error', `GOETIC: допустимо не больше ${max} сил, сейчас ${count}.`, model, unit.ruleId, unit.source)
     }
     if (ur.requiresBoundAlchemist) {
       const boundUnitId = string(ur.boundUnitId), boundId = model.loadouts['bound-alchemist']
@@ -249,11 +265,16 @@ export function validateWarband(c: Catalog, w: Warband): ValidationResult {
     if (bullSpecific > bullMax) add('specific-weapon-limit', 'error', `Допустимо специальных оружий Бронзового Быка: ${bullMax}.`, model, unit.ruleId, unit.source)
   }
 
-  for (const { quantity, offerId } of purchasesByLimit.values()) {
+  for (const { quantity, nonElite, offerId } of purchasesByLimit.values()) {
     const offer = effectiveOffer(c, w, offerId)
     if (!offer || offer.limit === null || offer.limit === 0) continue
     if (offer.limitScope === 'campaign' && w.format !== 'campaign') continue
-    if (quantity > offer.limit) add('item-limit', 'error', `${offer.name}: лимит ${offer.limit}, приобретено ${quantity}.`, undefined, offer.ruleId, offer.source)
+    if (quantity > offer.limit) {
+      const prussianElite = variant?.id === 'core-antioch-prussia' && nonElite <= offer.limit &&
+        ['core-item-automatic-shotgun', 'core-item-automatic-pistol'].includes(offer.itemId)
+      add('item-limit', prussianElite ? 'manual' : 'error', `${offer.name}: лимит ${offer.limit}, приобретено ${quantity}.${prussianElite ? ' Исключение для ELITE в источнике неоднозначно.' : ''}`,
+        undefined, prussianElite ? variant?.ruleId : offer.ruleId, prussianElite ? variant?.source : offer.source)
+    }
     if (offer.limitScope === 'campaign') add('campaign-item-limit', 'manual', `${offer.name}: в лимит кампании могут входить покупки вне текущего состава. Подтвердите историю арсенала.`, undefined, offer.ruleId, offer.source)
     if (String(offer.limitScope) === 'unspecified') add('item-limit-scope', 'manual', `${offer.name}: источник не задаёт область учёта лимита; текущий состав проверен.`, undefined, offer.ruleId, offer.source)
   }
@@ -264,11 +285,12 @@ export function validateWarband(c: Catalog, w: Warband): ValidationResult {
     if (limit !== null && w.units.filter((m) => m.upgrades.includes(up.id)).length > limit)
       add('upgrade-limit', 'error', `${up.name}: лимит ${limit}.`, undefined, override === undefined ? up.ruleId : variant?.ruleId, override === undefined ? up.source : variant?.source)
     const ratio = record(rule.limitRule), key = JSON.stringify(ratio)
-    if (ratio.fractionOfUnit && !checkedRatios.has(key)) {
+    if ((ratio.fractionOfUnit || ratio.fractionOfWarband) && !checkedRatios.has(key)) {
       checkedRatios.add(key)
       const equivalent = c.upgrades.filter((other) => JSON.stringify(record(rulesOf(other).limitRule)) === key).map((other) => other.id)
       const count = w.units.filter((m) => m.upgrades.some((id) => equivalent.includes(id))).length
-      const max = Math.floor(countUnit(string(ratio.fractionOfUnit)) * number(ratio.numerator, 1) / number(ratio.denominator, 1))
+      const eligible = ratio.fractionOfWarband ? w.units.length : countUnit(string(ratio.fractionOfUnit))
+      const max = Math.floor(eligible * number(ratio.numerator, 1) / number(ratio.denominator, 1))
       if (count > max) add('upgrade-ratio', 'error', `${up.name}: долевой лимит ${max}, улучшено моделей ${count}.`, undefined, up.ruleId, up.source)
     }
     for (const scoped of records(rule.limitRules)) {
@@ -279,8 +301,16 @@ export function validateWarband(c: Catalog, w: Warband): ValidationResult {
     }
   }
   if (variant?.heavyRangedLimit !== undefined) {
-    const count = regular.reduce((sum, m) => sum + modelGear(c, w, m).filter((g) => g.category === 'ranged' && g.item?.keywords.includes('HEAVY')).reduce((n, g) => n + g.quantity, 0), 0)
-    if (count > variant.heavyRangedLimit) add('heavy-ranged-limit', 'error', `Допустимо дальнобойных HEAVY: ${variant.heavyRangedLimit}, сейчас ${count}.`, undefined, variant.ruleId, variant.source)
+    const heavy = regular.flatMap((m) => modelGear(c, w, m).filter((g) =>
+      g.category === 'ranged' && g.item?.keywords.includes('HEAVY')))
+    const count = heavy.reduce((sum, g) => sum + g.quantity, 0)
+    if (count > variant.heavyRangedLimit) {
+      const confirmed = heavy.filter((g) => !possibleSapperException(vr, g.item))
+        .reduce((sum, g) => sum + g.quantity, 0)
+      add('heavy-ranged-limit', confirmed > variant.heavyRangedLimit ? 'error' : 'manual',
+        `Допустимо дальнобойных HEAVY: ${variant.heavyRangedLimit}. Подтверждено ${confirmed} из ${count}, исключение для Снарядов Сапёров требует сверки при различии.`,
+        undefined, variant.ruleId, variant.source)
+    }
   }
   checkFireteams(c, w, add)
   checkForeignArsenals(c, w, add)
@@ -298,6 +328,20 @@ const gearHasName = (c: Catalog, gear: ModelGear, name: string, faction: string)
   namesEqual(gear.name, name) || itemHasName(gear.item, name) ||
   [string(gear.definition.countsAs), ...strings(gear.definition.countsAs), ...strings(gear.item?.definition.countsAs),
     string(gear.item?.definition.countsAsItemName)].some((alias) => alias && (namesEqual(alias, name) || itemHasName(findItem(c, alias, faction), name)))
+
+function hasBayonetMount(c: Catalog, w: Warband, gear: ModelGear): boolean {
+  if (gear.category !== 'ranged') return false
+  const mount = (definition: Record<string, unknown>) =>
+    definition.bayonetLug === true ||
+    /штыков[а-я]* креплени/i.test(string(record(definition.restrictions).sourceText))
+  return mount(gear.definition) || mount(gear.item?.definition ?? {}) ||
+    (!gear.offer && c.offers.some((offer) =>
+      !offer.variantId && offer.factionId === w.factionId && offer.itemId === gear.item?.id &&
+      mount(offer.definition)))
+}
+
+const isGrenade = (item?: Item) => Boolean(item?.keywords.includes('GRENADE') ||
+  /гранат/i.test(string(item?.definition.type)))
 
 function checkCapacity(c: Catalog, w: Warband, unit: Unit, model: Model, gear: ModelGear[], add: Add) {
   const ur = rulesOf(unit), keywords = modelKeywords(c, w, model), strong = keywords.includes('STRONG')
@@ -324,15 +368,16 @@ function checkCapacity(c: Catalog, w: Warband, unit: Unit, model: Model, gear: M
     const rawHands = g.definition.treatedAsHands ?? g.definition.hands ?? g.item?.hands
     if (typeof rawHands !== 'number') return null
     let value = rawHands
-    if (strongHands && g.item?.keywords.includes('HEAVY') && heavyDiscounted < number(strongHands.maxHeavyWeapons)) {
+    const cumbersome = g.item?.keywords.includes('CUMBERSOME')
+    if (strongHands && !cumbersome && g.item?.keywords.includes('HEAVY') && heavyDiscounted < number(strongHands.maxHeavyWeapons)) {
       heavyDiscounted += g.quantity
       value = number(strongHands.handsPerHeavyWeapon, 1)
-    } else if (g.category === 'melee' && strong && value === 2) value = 1
+    } else if (g.category === 'melee' && strong && !cumbersome && value === 2) value = 1
     const compatible = g.definition.shieldCompatible || /совместим с щитом/i.test(string(record(g.offer?.definition.restrictions).sourceText))
     if (shields.length && compatible && !ignoreCompatibility) value = Math.min(value, 1)
     return value
   }
-  const weapons = gear.filter((g) => ['ranged', 'melee'].includes(g.category) && !g.item?.keywords.includes('GRENADE') && !number(g.definition.alwaysOccupiesHands))
+  const weapons = gear.filter((g) => ['ranged', 'melee'].includes(g.category) && !isGrenade(g.item) && !number(g.definition.alwaysOccupiesHands))
   const carried = gear.filter((g) => !weapons.includes(g)).reduce((sum, g) =>
     sum + number(g.definition.alwaysOccupiesHands, number(g.item?.carriedHands, g.item?.shield ? 1 : 0)) * g.quantity, 0)
   const uses = weapons.map((g) => ({ gear: g, hands: handUse(g) }))
@@ -361,7 +406,7 @@ function checkCapacity(c: Catalog, w: Warband, unit: Unit, model: Model, gear: M
   if (armour.reduce((sum, g) => sum + g.quantity, 0) > 1) add('one-armour', 'error', 'Допустим только один комплект брони, включая встроенную.', model, ruleId, source)
   const headgear = gear.filter((g) => g.item?.headgear || strings(g.definition.countsAs).some((name) => findItem(c, name, w.factionId)?.headgear))
   if (headgear.reduce((sum, g) => sum + g.quantity, 0) > 1) add('one-headgear', 'error', 'Допустим только один тип головного убора, включая встроенный.', model, ruleId, source)
-  const grenadeTypes = new Set(gear.filter((g) => g.item?.keywords.includes('GRENADE') || /гранат/i.test(string(g.item?.definition.type))).map((g) => g.item?.id ?? g.name))
+  const grenadeTypes = new Set(gear.filter((g) => isGrenade(g.item)).map((g) => g.item?.id ?? g.name))
   if (grenadeTypes.size > 1) add('grenade-types', 'error', 'Можно нести только один тип гранат.', model, ruleId, source)
   const totals = new Map<string, number>()
   for (const g of gear) {
@@ -372,7 +417,9 @@ function checkCapacity(c: Catalog, w: Warband, unit: Unit, model: Model, gear: M
     const maxType = equipmentExceptions(unit, 'maxQuantityPerWeaponType')[0]
     const maxSpecific = equipmentExceptions(unit, 'maxItemQuantity').find((e) => gearHasName(c, g, string(e.itemName), w.factionId))
     const weaponsTypeLimit = maxType && ['ranged', 'melee'].includes(g.category) ? number(maxType.max) : Infinity
-    const personal = number(g.offer?.definition.perModelLimit, number(g.item?.definition.perModelLimit, g.category === 'equipment' ? 1 : Infinity))
+    const single = !['ranged', 'melee'].includes(g.category) || isGrenade(g.item) ||
+      Boolean(g.item && rulesOf(g.item).requiresBayonetLug)
+    const personal = number(g.offer?.definition.perModelLimit, number(g.item?.definition.perModelLimit, single ? 1 : Infinity))
     const max = Math.min(weaponsTypeLimit, maxSpecific ? number(maxSpecific.max) : Infinity, personal)
     if ((totals.get(g.item?.id ?? g.name) ?? 0) > max) add('item-per-model-limit', 'error', `${g.name}: на модель допустимо ${max}.`, model, g.item?.ruleId ?? ruleId, g.source)
     for (const exception of exceptions) {
@@ -416,29 +463,38 @@ function checkFireteams(c: Catalog, w: Warband, add: Add) {
   if (ordinary > (variant?.fireteamLimit ?? faction?.fireteamLimit ?? 0)) add('fireteam-limit', 'error', 'Превышено число обычных FIRETEAM отряда.', undefined, variant?.ruleId ?? faction?.ruleId, variant?.source ?? faction?.source)
 }
 
-function checkForeignArsenals(c: Catalog, w: Warband, add: Add) {
-  if (!w.foreignOfferIds.length) return
+export function foreignArsenalGroups(c: Catalog, w: Warband) {
   const variant = getVariant(c, w), vr = variant ? rulesOf(variant) : {}
-  const selections = records(vr.foreignArsenalSelections), collection = record(vr.foreignWeaponCollection)
-  if (!selections.length && !Object.keys(collection).length) {
-    add('foreign-arsenal', 'error', 'Вариант не предоставляет выбор иностранных арсеналов.', undefined, variant?.ruleId, variant?.source)
-    return
-  }
-  if (new Set(w.foreignOfferIds).size !== w.foreignOfferIds.length) add('foreign-duplicate', 'error', 'Один иностранный предмет выбран повторно.', undefined, variant?.ruleId, variant?.source)
   const aliases = (id: string) => id === 'new-antioch' ? 'antioch' : id
-  const allowed = selections.map((selection) => aliases(string(selection.factionId)))
-  if (collection.factions) allowed.push(...strings(collection.factions).map(aliases))
+  const selections = records(vr.foreignArsenalSelections)
+  const collection = record(vr.foreignWeaponCollection)
+  return [
+    ...selections.map((selection) => ({ factionId: aliases(string(selection.factionId)), count: number(selection.count), collection: false, definition: selection })),
+    ...strings(collection.factions).map((id) => ({ factionId: aliases(id), count: number(collection.countPerFaction, 1), collection: true, definition: collection })),
+  ].map((group) => ({ ...group,
+    offers: c.offers.filter((offer) => offer.factionId === group.factionId && !offer.variantId &&
+      (!group.collection || ['ranged', 'melee'].includes(offer.category)) &&
+      (!group.definition.requiresAbsentFromBaseArsenal || !c.offers.some((base) =>
+        base.factionId === w.factionId && !base.variantId && base.itemId === offer.itemId))),
+  }))
+}
+
+function checkForeignArsenals(c: Catalog, w: Warband, add: Add) {
+  const variant = getVariant(c, w), groups = foreignArsenalGroups(c, w)
+  if (!groups.length && !w.foreignOfferIds.length) return
+  const selected = c.offers.filter((offer) => w.foreignOfferIds.includes(offer.id))
+  if (new Set(w.foreignOfferIds).size !== w.foreignOfferIds.length)
+    add('foreign-duplicate', 'error', 'Предложение арсенала выбрано повторно.', undefined, variant?.ruleId, variant?.source)
   for (const id of w.foreignOfferIds) {
-    const offer = c.offers.find((o) => o.id === id)
-    if (!offer || !allowed.includes(offer.factionId) || offer.variantId) {
-      add('foreign-arsenal', 'error', 'Выбран недоступный иностранный предмет.', undefined, variant?.ruleId, variant?.source)
-      continue
-    }
-    if (collection.factions && !['ranged', 'melee'].includes(offer.category)) add('foreign-weapon', 'error', 'Коллекция может содержать только оружие.', undefined, variant?.ruleId, variant?.source)
-    if (collection.requiresAbsentFromBaseArsenal && c.offers.some((o) => o.factionId === w.factionId && !o.variantId && o.itemId === offer.itemId))
-      add('foreign-base-item', 'error', 'Это оружие уже присутствует в базовом арсенале.', undefined, variant?.ruleId, variant?.source)
+    if (!groups.some((group) => group.offers.some((offer) => offer.id === id)))
+      add('foreign-arsenal', 'error', 'Предмет не соответствует условиям выбора иностранного арсенала.', undefined, variant?.ruleId, variant?.source)
   }
-  for (const selection of selections) if (w.foreignOfferIds.filter((id) => c.offers.find((o) => o.id === id)?.factionId === aliases(string(selection.factionId))).length > number(selection.count))
-    add('foreign-selection-count', 'error', 'Превышено число выбранных предметов иностранного арсенала.', undefined, variant?.ruleId, variant?.source)
-  if (collection.manualCheck) add('foreign-collection-manual', 'manual', 'Источник неоднозначно задаёт общий размер коллекции оружия; требуется ручное решение.', undefined, variant?.ruleId, variant?.source)
+  for (const group of groups) {
+    const name = c.factions.find((f) => f.id === group.factionId)?.name ?? group.factionId
+    const count = selected.filter((offer) => offer.factionId === group.factionId && group.offers.includes(offer)).length
+    if (count > group.count)
+      add('foreign-selection-count', 'error', `${name}. Допустимо выбрать предметов: ${group.count}.`, undefined, variant?.ruleId, variant?.source)
+    if (group.collection && count < group.count)
+      add('foreign-selection-required', 'error', `${name}. Выберите одно оружие для коллекции.`, undefined, variant?.ruleId, variant?.source)
+  }
 }

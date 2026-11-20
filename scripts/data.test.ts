@@ -17,6 +17,21 @@ describe('rules database invariants', () => {
     expect(edition.catalog.units).toHaveLength(70)
     expect(new Set(edition.catalog.units.filter(u => u.mercenary).map(u => u.ruleId)).size).toBe(10)
   })
+  it('publishes exactly one Tartarus profile and distinct mortar ranges with provenance', () => {
+    const { catalog, articles } = edition
+    const claws = catalog.items.filter((item) => item.name === 'Когти Тартара')
+    expect(claws.map((item) => item.id)).toEqual(['core-item-tartarus-claws'])
+    expect(claws[0]!.keywords).toContain('CUMBERSOME')
+    expect(claws[0]!.source.pages).toEqual([20, 125])
+    expect(articles.find((entry) => entry.id === 'core-heretic-tartarus-claws')!.canonicalRuleId).toBe(claws[0]!.ruleId)
+    expect(catalog.offers.find((offer) => offer.name === claws[0]!.name)?.itemId).toBe(claws[0]!.id)
+    expect(articles.filter((entry) => entry.markdown.includes('Harrowing Assault'))).toHaveLength(1)
+    expect(articles.find((entry) => entry.id === claws[0]!.ruleId)?.markdown).toContain('it cannot make the 3” move if the second attack')
+    expect(catalog.items.filter((item) => item.id.endsWith('trench-mortar')).map((item) => item.range).sort()).toEqual(['36”', '48”'])
+    expect(catalog.keywords.some((key) => key.name === 'RISKY')).toBe(true)
+    expect(catalog.units.find((unit) => unit.id === 'core-heretic-anointed')?.keywords).toContain('HERETIC')
+    expect(JSON.stringify({ catalog, articles })).not.toMatch(/\b(?:HERETI|CUMBERSOM)\b/)
+  })
   it('detects a broken rule link and duplicate ID instead of accepting partial data', () => {
     const broken = structuredClone(edition)
     broken.catalog.units[0]!.ruleId = 'missing-rule'

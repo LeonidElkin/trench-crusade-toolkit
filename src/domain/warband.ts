@@ -42,6 +42,26 @@ export function leaderChoice(c: Catalog, w: Warband) {
     ?? choices.find((choice) => w.units.some((m) => m.unitId === choice.requiresUnitId))
 }
 
+export function unitAccessReason(c: Catalog, w: Warband, unit: Unit): string | undefined {
+  const variant = getVariant(c, w)
+  if (unit.variantId && unit.variantId !== w.variantId) return 'Профиль относится к другому варианту фракции.'
+  if (!unit.mercenary) {
+    if (unit.factionId !== w.factionId) return 'Профиль относится к другой фракции.'
+    if (variant?.unitLimits?.[unit.id] === 0 || variant?.banKeywords?.some((key) => unit.keywords.includes(key)))
+      return 'Боец запрещён правилами этого варианта.'
+    return
+  }
+  if (unit.allowedFactions && !unit.allowedFactions.includes(w.factionId)) return 'Наёмник недоступен этой фракции.'
+  if (variant?.banMercenaries) return 'Вариант запрещает наёмников.'
+  if (variant && strings(rulesOf(variant).banMercenaryNames).some((name) => namesEqual(name, unit.name)))
+    return 'Вариант запрещает именно этого наёмника.'
+}
+
+export function factionUnits(c: Catalog, w: Warband, mercenaries = false): Unit[] {
+  return c.units.filter((u) => u.mercenary === mercenaries && !unitAccessReason(c, w, u))
+    .map((u) => effectiveUnit(c, w, u.id)!)
+}
+
 export function effectiveUnit(c: Catalog, w: Warband, unitId: string, model?: Model): Unit | undefined {
   const unit = c.units.find((u) => u.id === unitId)
   if (!unit) return
@@ -191,7 +211,52 @@ export function effectiveOffer(c: Catalog, w: Warband, offerId: string, model?: 
   }
   if (vr.antiTankHammerEliteOnly === false && item?.englishName === 'Anti-Tank Hammer')
     result.requiredKeywords = result.requiredKeywords.filter((k) => k !== 'ELITE')
+  const unit = model && c.units.find((u) => u.id === model.unitId)
+  const compulsory = record(unit && rulesOf(unit).compulsoryPurchase)
+  if (compulsory.name && namesEqual(offer.name, string(compulsory.name))) result.cost = asCost(compulsory.cost)
   return result
+}
+
+export function compulsorySlot(c: Catalog, w: Warband, model: Model) {
+  const unit = c.units.find((u) => u.id === model.unitId)
+  const rule = record(unit && rulesOf(unit).compulsoryPurchase)
+  const replacement = record(rule.replacement)
+  const purchase = rule.name ? model.equipment.find(({ offerId }) => {
+    const offer = effectiveOffer(c, w, offerId)
+    return offer && (namesEqual(offer.name, string(rule.name)) || offer.category === replacement.category)
+  }) : undefined
+  return { purchase, rule, replacement }
+}
+
+export function equipOffer(c: Catalog, w: Warband, model: Model, offer: Offer): Warband {
+  const { purchase, replacement } = compulsorySlot(c, w, model)
+  if (purchase && offer.category === replacement.category && purchase.offerId !== offer.id) {
+    const equipment = model.equipment.flatMap((entry) => {
+      if (entry.id !== purchase.id) return [entry]
+      const substituted = { ...entry, offerId: offer.id, quantity: 1 }
+      return entry.quantity > 1
+        ? [substituted, { ...entry, id: uuid(), quantity: entry.quantity - 1 }]
+        : [substituted]
+    })
+    return updateModel(w, model.id, { equipment })
+  }
+  return buyEquipment(w, model.id, offer.id)
+}
+
+export function equipmentPurchaseCost(c: Catalog, w: Warband, model: Model, purchase: Model['equipment'][number]): Cost | undefined {
+  const offer = effectiveOffer(c, w, purchase.offerId, model)
+  if (!offer) return
+  const { purchase: slot, rule, replacement } = compulsorySlot(c, w, model)
+  const baseOffer = effectiveOffer(c, w, purchase.offerId)!
+  if (purchase.id !== slot?.id) return plusCost(zeroCost(), rule.name ? baseOffer.cost : offer.cost, purchase.quantity)
+  const price = asCost(rule.cost)
+  const slotCost = namesEqual(offer.name, string(rule.name)) ? price
+    : offer.cost.glory && replacement.refundDucatsForGloryWeapon ? offer.cost
+    : replacement.payOnlyPositivePriceDifference ? {
+        ducats: price.ducats + Math.max(0, offer.cost.ducats - number(replacement.sourcePriceBaseline, price.ducats)),
+        glory: price.glory + offer.cost.glory,
+      } : offer.cost
+  return plusCost(slotCost, baseOffer.cost, purchase.quantity - 1)
 }
 
 export function modelCost(c: Catalog, w: Warband, model: Model): { cost: Cost; complete: boolean } {
@@ -200,26 +265,13 @@ export function modelCost(c: Catalog, w: Warband, model: Model): { cost: Cost; c
   let cost = ups.find((u) => u.replacesBaseCost)?.cost ?? unit?.cost ?? zeroCost()
   let complete = Boolean(unit) && ups.length === model.upgrades.length
   if (unit) cost = plusCost(cost, asCost(selectedProfile(unit, model)?.costDelta))
-  const compulsory = record(unit && rulesOf(unit).compulsoryPurchase)
-  const replacement = record(compulsory.replacement), compulsoryPrice = asCost(compulsory.cost)
-  let included = false
+  const { purchase: slot, rule } = compulsorySlot(c, w, model)
   for (const purchase of model.equipment) {
-    const offer = effectiveOffer(c, w, purchase.offerId, model)
-    if (!offer) { complete = false; continue }
-    let quantity = purchase.quantity
-    if (!included && compulsory.name && (namesEqual(offer.name, string(compulsory.name)) ||
-      (replacement.category === offer.category && replacement.payOnlyPositivePriceDifference))) {
-      included = true
-      const exact = namesEqual(offer.name, string(compulsory.name))
-      cost = plusCost(cost, exact ? compulsoryPrice : {
-        ducats: compulsoryPrice.ducats + Math.max(0, offer.cost.ducats - number(replacement.sourcePriceBaseline, compulsoryPrice.ducats)),
-        glory: compulsoryPrice.glory + Math.max(0, offer.cost.glory),
-      })
-      quantity -= 1
-    }
-    cost = plusCost(cost, offer.cost, quantity)
+    const price = equipmentPurchaseCost(c, w, model, purchase)
+    if (price) cost = plusCost(cost, price)
+    else complete = false
   }
-  if (compulsory.name && !included) cost = plusCost(cost, compulsoryPrice)
+  if (rule.name && !slot) cost = plusCost(cost, asCost(rule.cost))
   for (const up of ups) if (!up.replacesBaseCost) cost = plusCost(cost, up.cost)
   return { cost, complete }
 }
@@ -235,6 +287,7 @@ export interface ModelGear {
   category: Category
   quantity: number
   fixed: boolean
+  purchaseId?: string
   item?: Item
   offer?: Offer
   source: SourceRef
@@ -258,7 +311,7 @@ export function modelGear(c: Catalog, w: Warband, model: Model): ModelGear[] {
   const purchases: ModelGear[] = model.equipment.flatMap((purchase) => {
     const offer = effectiveOffer(c, w, purchase.offerId, model)
     if (!offer) return []
-    return [{ name: offer.name, category: offer.category, quantity: purchase.quantity, fixed: false,
+    return [{ name: offer.name, category: offer.category, quantity: purchase.quantity, fixed: false, purchaseId: purchase.id,
       item: c.items.find((i) => i.id === offer.itemId), offer, source: offer.source,
       definition: { ...offer.definition, ...record(offer.definition.restrictions) } }]
   })
@@ -320,32 +373,40 @@ export function upgradeApplies(c: Catalog, w: Warband, model: Model, upgrade: Up
   return true
 }
 
+export const possibleSapperException = (rule: Record<string, unknown>, item?: Item) =>
+  Boolean(rule.exceptionNeedsResolution && (rule.sourceExceptionName || rule.sourceLimitExceptionName) &&
+    item?.id === 'core-item-satchel-charge')
+
 export function offerApplies(c: Catalog, w: Warband, model: Model, candidate: Offer): boolean {
+  return !offerAccessReason(c, w, model, candidate)
+}
+
+export function offerAccessReason(c: Catalog, w: Warband, model: Model, candidate: Offer): string | undefined {
   const unit = effectiveUnit(c, w, model.unitId, model), offer = effectiveOffer(c, w, candidate.id, model)
-  if (!unit || !offer) return false
+  if (!unit || !offer) return 'Предложение или профиль отсутствует в каталоге.'
   const ur = rulesOf(unit), vr = getVariant(c, w) ? rulesOf(getVariant(c, w)!) : {}
   const restriction = record(offer.definition.restrictions), raw = { ...offer.definition, ...restriction }
   const item = c.items.find((i) => i.id === offer.itemId), ups = selectedUpgrades(c, model)
   const upRules = ups.map(rulesOf), keywords = modelKeywords(c, w, model)
   const tags = upRules.flatMap((rule) => string(rule.grantsTag) || [])
-  if (offer.variantId && offer.variantId !== w.variantId) return false
-  if (offer.unitIds && !offer.unitIds.includes(unit.id)) return false
+  if (offer.variantId && offer.variantId !== w.variantId) return 'Предмет доступен в другом варианте фракции.'
+  if (offer.unitIds && !offer.unitIds.includes(unit.id)) return 'Предмет доступен только указанным профилям.'
   const matches = (name: string) => namesEqual(name, offer.name) || itemHasName(item, name)
   const permittedNames = [...strings(record(ur.allowedEquipment).additionalItemNames),
     ...strings(ur.effectiveAdditionalItemNames), ...strings(ur.permittedOptionalEquipment)]
   const explicit = unit.allowedItemIds?.includes(offer.itemId) || permittedNames.some(matches)
   const fixedReplacement = record(ur.fixedWeaponReplacement)
   const replacement = Boolean(raw.replacesFixedItemName && namesEqual(string(raw.replacesFixedItemName), string(fixedReplacement.slot)))
-  if (unit.equipmentLocked && !explicit && !replacement) return false
-  if (!unit.allowedCategories.includes(offer.category) && !explicit && !replacement) return false
-  if (Object.keys(fixedReplacement).length && !replacement) return false
-  if (unit.allowedItemIds?.length && !unit.allowedItemIds.includes(offer.itemId)) return false
-  if (unit.forbiddenItemIds?.includes(offer.itemId) || strings(raw.forbiddenUnitIds).includes(unit.id)) return false
-  if (unit.rangedItemIds?.length && offer.category === 'ranged' && !unit.rangedItemIds.includes(offer.itemId)) return false
+  if (unit.equipmentLocked && !explicit && !replacement) return 'Профиль использует собственную экипировку.'
+  if (!unit.allowedCategories.includes(offer.category) && !explicit && !replacement) return 'Профиль не может покупать снаряжение этой категории.'
+  if (Object.keys(fixedReplacement).length && !replacement) return `Доступно только оружие на замену предмету «${fixedReplacement.slot}».`
+  if (unit.allowedItemIds?.length && !unit.allowedItemIds.includes(offer.itemId)) return 'Предмет отсутствует в личном списке профиля.'
+  if (unit.forbiddenItemIds?.includes(offer.itemId) || strings(raw.forbiddenUnitIds).includes(unit.id)) return 'Профиль прямо запрещает этот предмет.'
+  if (unit.rangedItemIds?.length && offer.category === 'ranged' && !unit.rangedItemIds.includes(offer.itemId)) return 'Оружие отсутствует в личном списке дальнобойного оружия.'
   const ranged = record(record(ur.allowedEquipment).ranged)
-  if (offer.category === 'ranged' && typeof ranged.maxItemDucats === 'number' && offer.cost.ducats > ranged.maxItemDucats) return false
-  if (unit.maxItemDucats !== undefined && offer.cost.ducats > unit.maxItemDucats) return false
-  if (unit.forbidGloryItems && offer.cost.glory) return false
+  if (offer.category === 'ranged' && typeof ranged.maxItemDucats === 'number' && offer.cost.ducats > ranged.maxItemDucats) return `Дальнобойное оружие для этого профиля стоит не более ${ranged.maxItemDucats} дк.`
+  if (unit.maxItemDucats !== undefined && offer.cost.ducats > unit.maxItemDucats) return `Предмет для этого профиля стоит не более ${unit.maxItemDucats} дк.`
+  if (unit.forbidGloryItems && offer.cost.glory) return 'Профиль не может покупать предметы за Очки Славы.'
   const foreign = upRules.some((rule) => {
     const access = record(rule.foreignArsenalPurchase)
     const arsenalNames = strings(access.arsenalNames)
@@ -354,53 +415,58 @@ export function offerApplies(c: Catalog, w: Warband, model: Model, candidate: Of
       (strings(access.factionIds).includes(offer.factionId) || arsenalNames.some((name) =>
         namesEqual(name, faction?.name ?? '') || (name === 'Новая Антиохия' && offer.factionId === 'antioch')))
   })
-  if (offer.factionId !== w.factionId && !w.foreignOfferIds.includes(offer.id) && !foreign) return false
+  if (offer.factionId !== w.factionId && !w.foreignOfferIds.includes(offer.id) && !foreign) return 'Предмет не выбран из иностранного арсенала.'
   const any = raw.eligibilityAny ?? record(raw.eligibility).any
-  if (any && !eligibilityMatches(any, model, keywords, tags)) return false
-  if (typeof raw.eligibility === 'object' && !eligibilityMatches(raw.eligibility, model, keywords, tags)) return false
+  if (any && !eligibilityMatches(any, model, keywords, tags)) return 'Профиль не отвечает ни одному из условий покупки.'
+  if (typeof raw.eligibility === 'object' && !eligibilityMatches(raw.eligibility, model, keywords, tags)) return 'Условие доступа в арсенале не выполнено.'
   const keywordOrUnit = record(restriction.keywordsOrUnits)
   const orKeywords = strings(keywordOrUnit.keywords), orUnits = strings(keywordOrUnit.unitIds)
   if ((orKeywords.length || orUnits.length) &&
-    !orKeywords.some((key) => keywords.includes(key)) && !orUnits.includes(unit.id)) return false
+    !orKeywords.some((key) => keywords.includes(key)) && !orUnits.includes(unit.id)) return `Требуется профиль из списка или ключевое слово ${orKeywords.join(', ')}.`
   const neededKeywords = [...offer.requiredKeywords, ...strings(restriction.requiredKeywords)]
   const allowedUnits = offer.allowedUnitIds ?? (Array.isArray(raw.allowedUnitIds) ? strings(raw.allowedUnitIds) : null)
   const bullWeapon = allowedUnits?.some((id) => c.units.find((u) => u.id === id && number(rulesOf(u).maxBullSpecificWeapons) > 0))
   const gargantuan = bullWeapon && upRules.some((rule) => number(rule.allowedBullSpecificWeaponCount) > 0)
   const keywordOK = neededKeywords.every((key) => keywords.includes(key))
   const unitOK = !allowedUnits || allowedUnits.includes(unit.id) || Boolean(gargantuan)
-  if (offer.keywordsOrUnits ? !(keywordOK || unitOK) : !keywordOK || !unitOK) return false
-  if ([...offer.forbiddenKeywords, ...strings(restriction.forbiddenKeywords)].some((key) => keywords.includes(key))) return false
+  if (offer.keywordsOrUnits ? !((neededKeywords.length > 0 && keywordOK) || (allowedUnits && unitOK)) : !keywordOK || !unitOK)
+    return neededKeywords.length && !keywordOK ? `Требуются ключевые слова ${neededKeywords.join(', ')} или указанный профиль.` : 'Предмет доступен только указанным профилям.'
+  const forbiddenKeyword = [...offer.forbiddenKeywords, ...strings(restriction.forbiddenKeywords)].find((key) => keywords.includes(key))
+  if (forbiddenKeyword) return `Предмет недоступен моделям с ${forbiddenKeyword}.`
   if (upRules.some((rule) => rule.forbidEliteItems) &&
-    (neededKeywords.includes('ELITE') || restriction.eliteOnly || orKeywords.includes('ELITE') || records(any).some((e) => e.keyword === 'ELITE'))) return false
+    (neededKeywords.includes('ELITE') || restriction.eliteOnly || orKeywords.includes('ELITE') || records(any).some((e) => e.keyword === 'ELITE'))) return 'Улучшение запрещает предметы для ELITE.'
   const grenade = item?.keywords.includes('GRENADE') || /гранат/i.test(string(item?.definition.type))
-  if (grenade && (upRules.some((rule) => rule.forbidGrenades) || records(ur.equipmentExceptions).some((e) => e.kind === 'forbidKeyword' && e.keyword === 'GRENADE'))) return false
+  if (grenade && (upRules.some((rule) => rule.forbidGrenades) || records(ur.equipmentExceptions).some((e) => e.kind === 'forbidKeyword' && e.keyword === 'GRENADE'))) return 'Профиль не может нести гранаты.'
   if (upRules.some((rule) => rule.unlockWeaponPurchases)) {
-    if (offer.category === 'armour' && !upRules.flatMap((rule) => strings(rule.allowedShieldNames)).some(matches)) return false
-    if (upRules.some((rule) => rule.forbidUnitRestrictedWeapons) && allowedUnits && !gargantuan) return false
+    if (offer.category === 'armour' && !upRules.flatMap((rule) => strings(rule.allowedShieldNames)).some(matches)) return 'Выбранное улучшение открывает доступ только к указанным щитам.'
+    if (upRules.some((rule) => rule.forbidUnitRestrictedWeapons) && allowedUnits && !gargantuan) return 'Выбранное улучшение не открывает доступ к оружию других профилей.'
   }
-  if (ur.forbidShields && item?.shield) return false
-  if (['ranged', 'melee'].includes(offer.category) && strings(ur.weaponsMustHaveKeywords).some((key) => !item?.keywords.includes(key))) return false
-  for (const rule of upRules) {
-    if (rule.locksEquipment) return false
-    if (rule.noRanged && offer.category === 'ranged') return false
-    if (rule.noArmour && offer.category === 'armour' && !(rule.allowShields && item?.shield)) return false
-    if (strings(rule.forbidCategories).includes(offer.category) && !strings(rule.allowedArmourExceptions).some(matches)) return false
-    if (strings(rule.forbidItemNames).some(matches)) return false
+  if (ur.forbidShields && item?.shield) return 'Профиль не может нести щит.'
+  if (['ranged', 'melee'].includes(offer.category) && strings(ur.weaponsMustHaveKeywords).some((key) => !item?.keywords.includes(key))) return `Профиль требует оружие с ${strings(ur.weaponsMustHaveKeywords).join(', ')}.`
+  for (const upgrade of ups) {
+    const rule = rulesOf(upgrade)
+    if (rule.locksEquipment) return 'Выбранное улучшение закрепляет экипировку бойца.'
+    if (rule.noRanged && offer.category === 'ranged' && upgrade.id !== 'pilgrim-wrath-of-god')
+      return 'Выбранное улучшение запрещает дальнобойное оружие.'
+    if (rule.noArmour && offer.category === 'armour' && !(rule.allowShields && item?.shield)) return 'Выбранное улучшение запрещает броню.'
+    if (strings(rule.forbidCategories).includes(offer.category) && !strings(rule.allowedArmourExceptions).some(matches)) return 'Выбранное улучшение запрещает эту категорию экипировки.'
+    if (strings(rule.forbidItemNames).some(matches)) return 'Выбранное улучшение запрещает этот предмет.'
   }
   if (!unit.mercenary) {
-    if (getVariant(c, w)?.banItemIds?.includes(offer.itemId)) return false
-    if (strings(vr.forbiddenItemNames ?? vr.bannedItemNames).some(matches)) return false
-    for (const [name] of Object.entries(record(vr.itemReplacements))) if (matches(name)) return false
+    if (getVariant(c, w)?.banItemIds?.includes(offer.itemId)) return 'Вариант запрещает этот предмет.'
+    if (strings(vr.forbiddenItemNames ?? vr.bannedItemNames).some(matches)) return 'Вариант запрещает этот предмет.'
+    for (const [name] of Object.entries(record(vr.itemReplacements))) if (matches(name)) return 'Вариант заменяет этот предмет своим снаряжением.'
     const holy = record(vr.holyIconShield)
-    if (item?.englishName === 'Holy Icon Shield' && strings(holy.exceptUnitIds).includes(unit.id)) return false
+    if (item?.englishName === 'Holy Icon Shield' && strings(holy.exceptUnitIds).includes(unit.id)) return 'Вариант исключает этот профиль из списка доступа к щиту.'
     for (const restriction of records(vr.equipmentRestrictions)) {
       if (strings(restriction.exceptUnitIds).includes(unit.id)) continue
-      if (restriction.kind === 'forbidHeavyWeapons' && ['ranged', 'melee'].includes(offer.category) && item?.keywords.includes('HEAVY')) return false
-      if (restriction.kind === 'forbidArmourNames' && strings(restriction.names).some(matches)) return false
+      if (restriction.kind === 'forbidHeavyWeapons' && ['ranged', 'melee'].includes(offer.category) &&
+        item?.keywords.includes('HEAVY') && !possibleSapperException(restriction, item)) return 'Вариант запрещает этому профилю оружие HEAVY.'
+      if (restriction.kind === 'forbidArmourNames' && strings(restriction.names).some(matches)) return 'Вариант запрещает этому профилю эту броню.'
     }
   }
   const policy = record(ur.purchasePolicy)
   if (policy.requiresUnrestrictedOffer && (offer.limit !== null || allowedUnits || neededKeywords.length ||
-    offer.forbiddenKeywords.length || Object.keys(keywordOrUnit).length || any)) return false
-  return offer.limit !== 0
+    offer.forbiddenKeywords.length || Object.keys(keywordOrUnit).length || any || Object.keys(record(raw.eligibility)).length)) return 'Профиль может покупать только оружие без ограничений.'
+  if (offer.limit === 0) return 'В этом варианте лимит предмета равен нулю.'
 }

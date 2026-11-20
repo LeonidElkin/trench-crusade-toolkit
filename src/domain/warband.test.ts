@@ -1,28 +1,20 @@
-import { readFileSync, existsSync } from 'node:fs'
-import { fileURLToPath } from 'node:url'
+import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { reconstructCatalog, type RecordValue } from '../../scripts/reconstruct-catalog'
+import { CatalogSchema, type Warband } from './schema'
+import { purchase, recruit, rosterGuard, selectUpgrade } from './roster-actions'
 import {
   addModel, buyEquipment, createWarband, effectiveOffer, effectiveUnit, modelCost,
   modelKeywords, modelStats, offerApplies, removeModel, toggleUpgrade, updateModel, warbandCost,
 } from './warband'
-import { validateWarband } from './validation'
+import { foreignArsenalGroups, validateWarband } from './validation'
 import {
   duplicateWarband, exportWarband, importShare, importWarband, loadWarbands,
   saveWarbands, shareWarband, STORAGE_KEY,
 } from './storage'
-import type { Warband } from './schema'
 
-// Test inputs are exclusively the independent reconstruction, never the retired catalogue.
-const read = (relative: string) => JSON.parse(readFileSync(new URL(relative, import.meta.url), 'utf8'))
-const authored = ['core-common', 'factions-first', 'factions-last', 'allies'].map((name) =>
-  read(`../../reconstruction/1.6.3/authored/${name}.json`) as RecordValue)
-const linksUrl = new URL('../../reconstruction/1.6.3/links.json', import.meta.url)
-const linkDefinitions: RecordValue[] = existsSync(fileURLToPath(linksUrl))
-  ? read('../../reconstruction/1.6.3/links.json').itemLinks : []
-const links = Object.fromEntries(linkDefinitions.filter((link) => link.status !== 'unresolved')
-  .map((link) => [link.factionId ? `${link.factionId}:${link.name}` : String(link.name), String(link.itemId)]))
-const { catalog } = reconstructCatalog(authored, '1.6.3', 'independent-domain-tests', links, linkDefinitions)
+const catalog = CatalogSchema.parse(JSON.parse(
+  readFileSync(new URL('../generated/catalog.json', import.meta.url), 'utf8'),
+))
 const offer = (faction: string, name: string) => {
   const result = catalog.offers.find((o) => o.factionId === faction && !o.variantId && o.name === name)
   if (!result) throw new Error(`Нет новой исходной покупки: ${faction}/${name}`)
@@ -66,7 +58,8 @@ describe('independent source-backed costs and fixed equipment', () => {
     expect(warbandCost(catalog, w).cost.ducats).toBe(95)
     w = buy(w, 'Стандартная броня')
     expect(codes(w)).toContain('one-armour')
-    expect(validateWarband(catalog, w).diagnostics.find((d) => d.code === 'source-hereti')?.source?.pages).toContain(24)
+    expect(modelKeywords(catalog, w, w.units[0]!)).toContain('HERETIC')
+    expect(validateWarband(catalog, w).diagnostics.some((d) => d.code === 'source-hereti')).toBe(false)
   })
   it('applies declared variant prices and the explicit allied warlock exception (core28/30)', () => {
     const smg = offer('heretic', 'Пистолет-пулемёт')
@@ -206,7 +199,7 @@ describe('source-backed goetic and allied exceptions', () => {
     expect(codes(w)).toContain('allegiance')
     w = { ...w, allegiance: 'wrath' }
     for (const id of ['core-court-power-charge-hatred', 'core-court-power-blind-rage']) w = toggleUpgrade(w, w.units[0]!.id, id)
-    expect(errors(w).find((d) => d.code === 'powers')?.source?.pages).toEqual([106])
+    expect(errors(w).find((d) => d.code === 'power-limit')?.source?.pages).toEqual([106])
     expect(codes({ ...w, allegiance: 'envy' })).toContain('upgrade-access')
     const sorcerer = withUnit('court', 'core-court-sorcerer')
     expect(codes(sorcerer)).toContain('powers')
@@ -305,4 +298,78 @@ it('preserves the source conflict for Machine Armour and Heavy Ballistic Shield 
   const diagnostics = validateWarband(catalog, w).diagnostics
   expect(diagnostics.some((d) => d.code === 'shield-source-conflict' && d.severity === 'manual')).toBe(true)
   expect(diagnostics.some((d) => d.code === 'shield-prohibited')).toBe(false)
+})
+
+describe('guarded roster changes', () => {
+  it('blocks exhausted fighters, prerequisites and the second armour while permitting an over-budget recruit', () => {
+    let w = withUnit('heretic', 'core-heretic-priest')
+    w = { ...w, budget: { ducats: 0, glory: 0 } }
+    const model = w.units[0]!
+    const priest = catalog.units.find((u) => u.id === model.unitId)!
+    expect(recruit(catalog, w, priest, rosterGuard(catalog, w)).reason).toContain('допустимо 1')
+    const trooper = catalog.units.find((u) => u.id === 'core-heretic-trooper')!
+    expect(recruit(catalog, w, trooper, rosterGuard(catalog, w)).next).toBeDefined()
+    const bayonet = offer('heretic', 'Штык')
+    expect(purchase(catalog, w, model, bayonet, rosterGuard(catalog, w)).reason).toContain('креплением')
+    w = buy(w, 'Винтовка')
+    w = purchase(catalog, w, w.units[0]!, bayonet, rosterGuard(catalog, w)).next!
+    expect(purchase(catalog, w, w.units[0]!, bayonet, rosterGuard(catalog, w)).reason).toContain('допустимо 1')
+    const anointed = withUnit('heretic', 'core-heretic-anointed')
+    expect(purchase(catalog, anointed, anointed.units[0]!, offer('heretic', 'Стандартная броня'),
+      rosterGuard(catalog, anointed)).reason).toContain('один комплект брони')
+  })
+  it('shares the half-roster limit and swaps the two legionary specialties atomically', () => {
+    let w = withUnit('heretic', 'core-heretic-trooper')
+    const melee = catalog.upgrades.find((up) => up.id === 'heretic-legionary-melee')!
+    const ranged = catalog.upgrades.find((up) => up.id === 'heretic-legionary-ranged')!
+    expect(selectUpgrade(catalog, w, w.units[0]!, melee, rosterGuard(catalog, w)).reason).toContain('долевой лимит 0')
+    w = addModel(catalog, w, 'core-heretic-priest')
+    w = selectUpgrade(catalog, w, w.units[0]!, melee, rosterGuard(catalog, w)).next!
+    w = selectUpgrade(catalog, w, w.units[0]!, ranged, rosterGuard(catalog, w)).next!
+    expect(w.units[0]!.upgrades).toEqual([ranged.id])
+    expect(modelStats(catalog, w, w.units[0]!)).toMatchObject({ ranged: '+1D', melee: '0' })
+    w = addModel(catalog, w, 'core-heretic-trooper')
+    expect(selectUpgrade(catalog, w, w.units[2]!, melee, rosterGuard(catalog, w)).reason).toContain('долевой лимит 1')
+  })
+  it('returns the five ducats when an eligible Glory ranged weapon takes the yeoman slot', () => {
+    // These arsenals have no current Antioch ranged offer in Glory, so exercise the same code with a test offer.
+    const glory = { ...offer('antioch', 'Автоматическая винтовка'), id: 'test-glory-rifle', cost: { ducats: 0, glory: 2 } }
+    const c = { ...catalog, offers: [...catalog.offers, glory] }
+    const w = withUnit('antioch', 'core-antioch-yeoman')
+    const rifle = offer('antioch', 'Винтовка')
+    expect(effectiveOffer(c, w, rifle.id, w.units[0]!)?.cost.ducats).toBe(5)
+    expect(effectiveOffer(c, w, rifle.id)?.cost.ducats).toBe(10)
+    const next = purchase(c, w, w.units[0]!, glory, rosterGuard(c, w)).next!
+    expect(next.units[0]!.equipment.map((item) => item.offerId)).toEqual([glory.id])
+    expect(modelCost(c, next, next.units[0]!).cost).toEqual({ ducats: 30, glory: 2 })
+  })
+  it('allows a 48-inch mortar only as the Methodius Anchorite replacement', () => {
+    const w = withUnit('pilgrim', 'core-pilgrim-anchorite', 'saint-methodius')
+    const mortar = catalog.offers.find((o) => o.id === 'core-pilgrim-trench-mortar-purchase')!
+    const next = purchase(catalog, w, w.units[0]!, mortar, rosterGuard(catalog, w)).next!
+    expect(effectiveUnit(catalog, next, next.units[0]!.unitId, next.units[0]!)?.fixedItems.map((g) => g.name)).not.toContain('Колесо Екатерины')
+    expect(modelCost(catalog, next, next.units[0]!).cost.ducats).toBe(warbandCost(catalog, w).cost.ducats + 40)
+    expect(offerApplies(catalog, { ...w, variantId: null }, w.units[0]!, mortar)).toBe(false)
+    const trooper = addModel(catalog, w, 'core-pilgrim-trooper').units.at(-1)!
+    expect(offerApplies(catalog, w, trooper, mortar)).toBe(false)
+  })
+  it('reports ambiguous restrictions without turning them into a purchase ban', () => {
+    let w = withUnit('pilgrim', 'core-pilgrim-trooper', 'procession-of-sacred-affliction')
+    w = toggleUpgrade(w, w.units[0]!.id, 'pilgrim-wrath-of-god')
+    expect(purchase(catalog, w, w.units[0]!, offer('pilgrim', 'Винтовка'), rosterGuard(catalog, w)).next)
+      .toBeDefined()
+    expect(validateWarband(catalog, w).diagnostics.some((d) =>
+      d.code === 'source-wrath-ranged-wording' && d.severity === 'manual')).toBe(true)
+  })
+  it('requires one eligible weapon from each House of Wisdom source arsenal', () => {
+    let w = withUnit('sultanate', 'core-sultanate-jabirean-alchemist', 'house-of-wisdom')
+    const [antioch, pilgrim] = foreignArsenalGroups(catalog, w)
+    expect(antioch?.factionId).toBe('antioch')
+    expect(pilgrim?.factionId).toBe('pilgrim')
+    const first = antioch!.offers[0]!, second = pilgrim!.offers.find((item) => item.itemId !== first.itemId)!
+    expect(codes(w)).toContain('foreign-selection-required')
+    w = { ...w, foreignOfferIds: [first.id, second.id] }
+    expect(codes(w).filter((id) => id.startsWith('foreign-'))).toEqual([])
+    expect(codes({ ...w, foreignOfferIds: antioch!.offers.slice(0, 2).map((o) => o.id) })).toContain('foreign-selection-count')
+  })
 })

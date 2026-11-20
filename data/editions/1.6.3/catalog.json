@@ -781,7 +781,7 @@
       "unitLimits": {},
       "unitMinimums": {},
       "offerOverrides": {
-        "core-pilgrim-autocannon": {
+        "core-item-machine-gun": {
           "limit": 0
         },
         "core-pilgrim-punt-gun": {
@@ -998,7 +998,7 @@
       },
       "unitMinimums": {},
       "offerOverrides": {
-        "core-pilgrim-autocannon": {
+        "core-item-machine-gun": {
           "cost": {
             "ducats": 50,
             "glory": 0
@@ -1310,7 +1310,7 @@
         "document": "core"
       },
       "ruleId": "core-sultanate-house-of-wisdom",
-      "manualCheck": true,
+      "manualCheck": false,
       "unitLimits": {
         "core-sultanate-jabirean-alchemist": 2,
         "core-sultanate-lion": 3,
@@ -1384,14 +1384,14 @@
             ],
             "foreignWeaponCollection": {
               "factions": [
-                "new-antioch",
+                "antioch",
                 "pilgrim"
               ],
-              "requiresAbsentFromBaseArsenal": true,
-              "manualCheck": true
+              "countPerFaction": 1,
+              "requiresAbsentFromBaseArsenal": true
             }
           },
-          "manualCheck": true,
+          "manualCheck": false,
           "unitLimits": {
             "core-sultanate-jabirean-alchemist": 2,
             "core-sultanate-lion": 3,
@@ -1417,15 +1417,15 @@
           ],
           "foreignWeaponCollection": {
             "factions": [
-              "new-antioch",
+              "antioch",
               "pilgrim"
             ],
-            "requiresAbsentFromBaseArsenal": true,
-            "manualCheck": true
+            "countPerFaction": 1,
+            "requiresAbsentFromBaseArsenal": true
           },
           "unitCostOverrides": {}
         },
-        "manualCheck": true
+        "manualCheck": false
       }
     },
     {
@@ -9322,7 +9322,7 @@
         ]
       ],
       "keywords": [
-        "HERETI",
+        "HERETIC",
         "STRONG"
       ],
       "source": {
@@ -9351,7 +9351,7 @@
         "armour",
         "equipment"
       ],
-      "manualCheck": true,
+      "manualCheck": false,
       "rangedItemIds": [],
       "requireWeapon": false,
       "requireArmour": false,
@@ -9392,7 +9392,7 @@
           ]
         ],
         "keywords": [
-          "HERETI",
+          "HERETIC",
           "STRONG"
         ],
         "source": {
@@ -9426,7 +9426,7 @@
           "equipment"
         ],
         "rules": {},
-        "manualCheck": true,
+        "manualCheck": false,
         "abilities": [
           "core-heretic-anointed-ability-1"
         ]
@@ -13278,7 +13278,8 @@
           "replacement": {
             "category": "ranged",
             "payOnlyPositivePriceDifference": true,
-            "sourcePriceBaseline": 5
+            "sourcePriceBaseline": 5,
+            "refundDucatsForGloryWeapon": true
           }
         },
         "rules": {}
@@ -13394,7 +13395,8 @@
           "replacement": {
             "category": "ranged",
             "payOnlyPositivePriceDifference": true,
-            "sourcePriceBaseline": 5
+            "sourcePriceBaseline": 5,
+            "refundDucatsForGloryWeapon": true
           }
         },
         "sharesLimitWith": "core-antioch-yeoman",
@@ -16479,7 +16481,7 @@
           }
         },
         "aliases": [
-          "Автоматический пистоле"
+          "Автоматический пистолет"
         ]
       }
     },
@@ -19943,19 +19945,16 @@
       "hands": 2,
       "range": "ББ",
       "modifiers": "-",
-      "keywords": [],
+      "keywords": [
+        "CUMBERSOME"
+      ],
       "source": {
         "source": "core",
         "pages": [
+          20,
           125
         ],
         "sectionId": "core-item-tartarus-claws",
-        "bbox": [
-          36,
-          448.233,
-          445,
-          614.464
-        ],
         "document": "core"
       },
       "ruleId": "core-item-tartarus-claws",
@@ -19985,15 +19984,10 @@
         "source": {
           "document": "core",
           "pages": [
+            20,
             125
           ],
-          "sectionId": "core-item-tartarus-claws",
-          "bbox": [
-            36,
-            448.233,
-            445,
-            614.464
-          ]
+          "sectionId": "core-item-tartarus-claws"
         },
         "ruleId": "core-item-tartarus-claws",
         "tableRows": [
@@ -20009,7 +20003,7 @@
             "Двуручное",
             "ББ",
             "-",
-            "**-**"
+            "**CUMBERSOME**"
           ]
         ],
         "cost": null,
@@ -20018,8 +20012,10 @@
         "type": "Двуручное",
         "range": "ББ",
         "modifiers": "-",
-        "keywords": [],
-        "rawKeywords": "-",
+        "keywords": [
+          "CUMBERSOME"
+        ],
+        "rawKeywords": "CUMBERSOME",
         "hands": 2,
         "shield": null,
         "headgear": null,
@@ -20040,19 +20036,18 @@
           }
         ],
         "rules": {
-          "text": "Когти Тартара всегда идут парой и не позволяют использовать другие оружия ближнего боя. Вы можете выполнить два **ДЕЙСТВИЯ** атаки Когтями без обычного штрафа **-1 DICE** для второй атаки. Если противник повален или выведен из строя Когтями, модель может немедленно переместиться на 3”. Если перемещение приводит к контакту с другой вражеской моделью, это считается атакой, и вы можете выполнить второе **ДЕЙСТВИК** атаки ближнего боя Когтями. Это дополнительное перемещение возможно только раз за Активацию.",
+          "text": "Когти Тартара всегда используются парой и не позволяют использовать другое оружие ближнего боя. Модель может выполнить две атаки Когтями за активацию без обычного штрафа **−1 DICE** для второй. Действие атаки после перемещения расходует оставшуюся атаку.",
+          "harrowingAssault": {
+            "english": "If the target is taken Down or Out of Action by a Melee Attack made with Tartarus Claws, you can immediately move the model up to 3”. You can use this move to move within 1” another enemy model, and if you do so, this model can take another Fight ACTION. However, it cannot make the 3” move if the second attack takes the target Down or Out of Action.",
+            "russian": "Если атака ближнего боя Когтями Тартара повалила или вывела цель из строя, модель может немедленно переместиться на расстояние до 3”. Она может использовать это перемещение, чтобы оказаться в пределах 1” от другой вражеской модели. В таком случае она может выполнить ещё одно **Fight ACTION** (Действие атаки ближнего боя). Если вторая атака повалила или вывела цель из строя, модель не может совершить это перемещение на 3”."
+          },
           "source": {
             "document": "core",
             "pages": [
+              20,
               125
             ],
-            "sectionId": "core-item-tartarus-claws",
-            "bbox": [
-              36,
-              448.233,
-              445,
-              614.464
-            ]
+            "sectionId": "core-item-tartarus-claws"
           }
         },
         "mechanicalFieldSources": {
@@ -23659,6 +23654,82 @@
       }
     },
     {
+      "id": "core-item-trench-mortar",
+      "name": "Траншейный миномёт",
+      "englishName": "Trench Mortar",
+      "category": "ranged",
+      "hands": 2,
+      "range": "36”",
+      "modifiers": "Игнор укрытий, +1D на ранения",
+      "keywords": [
+        "FIRE",
+        "HEAVY",
+        "BLAST 3”"
+      ],
+      "source": {
+        "source": "core",
+        "pages": [
+          45
+        ],
+        "sectionId": "core-item-trench-mortar",
+        "bbox": [
+          41.4,
+          236.61,
+          386.52,
+          267.5
+        ],
+        "document": "core",
+        "textBlockIndices": [
+          7,
+          8,
+          9
+        ]
+      },
+      "ruleId": "core-item-trench-mortar",
+      "prerequisites": [],
+      "definition": {
+        "id": "core-item-trench-mortar",
+        "name": "Траншейный миномёт",
+        "sourceTableName": "Траншейный миномёт",
+        "category": "ranged",
+        "type": "Двуручный",
+        "hands": 2,
+        "range": "36”",
+        "modifiers": "Игнор укрытий, +1D на ранения",
+        "keywords": [
+          "FIRE",
+          "HEAVY",
+          "BLAST 3”"
+        ],
+        "source": {
+          "document": "core",
+          "pages": [
+            45
+          ],
+          "sectionId": "core-item-trench-mortar",
+          "bbox": [
+            41.4,
+            236.61,
+            386.52,
+            267.5
+          ],
+          "textBlockIndices": [
+            7,
+            8,
+            9
+          ]
+        },
+        "ruleId": "core-item-trench-mortar",
+        "manualCheck": false,
+        "rules": {
+          "ignoreCover": true,
+          "targetPointRangeInches": 36
+        },
+        "englishName": "Trench Mortar",
+        "aliases": []
+      }
+    },
+    {
       "id": "core-heretic-sacrificial-knife",
       "name": "Жертвенный нож",
       "englishName": null,
@@ -23850,71 +23921,6 @@
         },
         "ruleId": "core-heretic-hellblade",
         "manualCheck": false,
-        "aliases": []
-      }
-    },
-    {
-      "id": "core-heretic-tartarus-claws",
-      "name": "Когти Тартара",
-      "englishName": null,
-      "category": "melee",
-      "hands": 2,
-      "range": "ББ",
-      "modifiers": "-",
-      "keywords": [
-        "CUMBERSOM"
-      ],
-      "source": {
-        "source": "core",
-        "pages": [
-          20
-        ],
-        "sectionId": "core-heretic-tartarus-claws",
-        "bbox": [
-          41.4,
-          552.95,
-          381.4,
-          583.87
-        ],
-        "document": "core",
-        "textBlockIndices": [
-          17,
-          18
-        ]
-      },
-      "ruleId": "core-heretic-tartarus-claws",
-      "prerequisites": [],
-      "definition": {
-        "id": "core-heretic-tartarus-claws",
-        "name": "Когти Тартара",
-        "sourceTableName": "Когти Тартара",
-        "category": "melee",
-        "type": "Двуручное",
-        "hands": 2,
-        "range": "ББ",
-        "modifiers": "-",
-        "keywords": [
-          "CUMBERSOM"
-        ],
-        "source": {
-          "document": "core",
-          "pages": [
-            20
-          ],
-          "sectionId": "core-heretic-tartarus-claws",
-          "bbox": [
-            41.4,
-            552.95,
-            381.4,
-            583.87
-          ],
-          "textBlockIndices": [
-            17,
-            18
-          ]
-        },
-        "ruleId": "core-heretic-tartarus-claws",
-        "manualCheck": true,
         "aliases": []
       }
     },
@@ -24247,8 +24253,8 @@
     },
     {
       "id": "core-pilgrim-trench-mortar",
-      "name": "Траншейный миномёт",
-      "englishName": null,
+      "name": "Траншейный миномёт Анахорета",
+      "englishName": "Anchorite Trench Mortar",
       "category": "ranged",
       "hands": 2,
       "range": "48”",
@@ -24281,8 +24287,8 @@
       "prerequisites": [],
       "definition": {
         "id": "core-pilgrim-trench-mortar",
-        "name": "Траншейный миномёт",
-        "sourceTableName": "Траншейный миномёт",
+        "name": "Траншейный миномёт Анахорета",
+        "sourceTableName": "Траншейный миномёт Анахорета",
         "category": "ranged",
         "type": "Двуручный",
         "hands": 2,
@@ -24312,12 +24318,12 @@
           ]
         },
         "ruleId": "core-pilgrim-trench-mortar",
-        "manualCheck": true,
+        "manualCheck": false,
         "rules": {
-          "rangeFromTable": "48”",
-          "targetPointRangeFromText": "36”",
-          "ignoreCover": true
+          "ignoreCover": true,
+          "targetPointRangeInches": 48
         },
+        "englishName": "Anchorite Trench Mortar",
         "aliases": []
       }
     },
@@ -24355,7 +24361,7 @@
       "definition": {
         "id": "core-pilgrim-autocannon",
         "name": "Автопушка",
-        "sourceTableName": "Пулемёт",
+        "sourceTableName": "Автопушка",
         "category": "ranged",
         "type": "Двуручный",
         "hands": 2,
@@ -29249,7 +29255,7 @@
     {
       "id": "heretic-offer-26",
       "factionId": "heretic",
-      "itemId": "core-heretic-tartarus-claws",
+      "itemId": "core-item-tartarus-claws",
       "name": "Когти Тартара",
       "category": "melee",
       "cost": {
@@ -29284,7 +29290,7 @@
       "forbiddenKeywords": [],
       "keywordsOrUnits": false,
       "requiresItemIds": [],
-      "manualCheck": true,
+      "manualCheck": false,
       "limitScope": "campaign",
       "definition": {
         "name": "Когти Тартара",
@@ -29315,7 +29321,7 @@
           "rowY": 431.15
         },
         "itemName": "Когти Тартара",
-        "itemId": "core-heretic-tartarus-claws",
+        "itemId": "core-item-tartarus-claws",
         "restrictions": {
           "eliteOnly": false,
           "nonEliteOnly": false,
@@ -29324,8 +29330,7 @@
             "core-heretic-death-commando"
           ]
         },
-        "manualCheck": true,
-        "sourceConflictId": "source-tartarus-claws-conflict"
+        "manualCheck": false
       }
     },
     {
@@ -30827,7 +30832,7 @@
       "id": "pilgrim-offer-04",
       "factionId": "pilgrim",
       "itemId": "core-item-automatic-pistol",
-      "name": "Автоматический пистоле",
+      "name": "Автоматический пистолет",
       "category": "ranged",
       "cost": {
         "ducats": 20,
@@ -30864,7 +30869,7 @@
       "manualCheck": false,
       "limitScope": "unspecified",
       "definition": {
-        "name": "Автоматический пистоле",
+        "name": "Автоматический пистолет",
         "category": "ranged",
         "priceText": "20 дукатов (Лимит: 2)",
         "id": "pilgrim-offer-04",
@@ -30893,8 +30898,8 @@
           ],
           "rowY": 207.3
         },
-        "itemName": "Автоматический пистоле",
-        "itemId": null,
+        "itemName": "Автоматический пистолет",
+        "itemId": "core-item-automatic-pistol",
         "restrictions": {
           "eliteOnly": false,
           "nonEliteOnly": false,
@@ -30902,10 +30907,10 @@
         },
         "manualCheck": false,
         "profileLink": {
-          "name": "Автоматический пистоле",
+          "name": "Автоматический пистолет",
           "itemId": "core-item-automatic-pistol",
           "status": "documented-normalization",
-          "note": "Оригинальная строка арсенала обрывает слово «пистоле». Исходное название сохранено; ссылка на полное описание автоматического пистолета является явной нормализацией опечатки.",
+          "note": "Название предложения исправлено по заголовку полного профиля.",
           "sources": [
             {
               "document": "core",
@@ -31346,7 +31351,7 @@
     {
       "id": "pilgrim-offer-10",
       "factionId": "pilgrim",
-      "itemId": "core-pilgrim-autocannon",
+      "itemId": "core-item-machine-gun",
       "name": "Пулемёт",
       "category": "ranged",
       "cost": {
@@ -37823,7 +37828,7 @@
       "id": "core-pilgrim-trench-mortar-purchase",
       "factionId": "pilgrim",
       "itemId": "core-pilgrim-trench-mortar",
-      "name": "Траншейный миномёт",
+      "name": "Траншейный миномёт Анахорета",
       "category": "ranged",
       "cost": {
         "ducats": 40,
@@ -37853,8 +37858,8 @@
       "definition": {
         "id": "core-pilgrim-trench-mortar-purchase",
         "itemId": "core-pilgrim-trench-mortar",
-        "itemName": "Траншейный миномёт",
-        "name": "Траншейный миномёт",
+        "itemName": "Траншейный миномёт Анахорета",
+        "name": "Траншейный миномёт Анахорета",
         "category": "ranged",
         "factionId": "pilgrim",
         "variantId": "saint-methodius",
@@ -38745,7 +38750,47 @@
         "consumable": false,
         "requiredKeywords": [
           "ELITE"
-        ]
+        ],
+        "profileLink": {
+          "name": "Автоматический пистолет",
+          "itemId": "core-item-automatic-pistol",
+          "status": "documented-normalization",
+          "note": "Название предложения исправлено по заголовку полного профиля.",
+          "sources": [
+            {
+              "document": "core",
+              "pages": [
+                119
+              ],
+              "sectionId": "core-item-automatic-pistol",
+              "bbox": [
+                36,
+                220.904,
+                445,
+                375.013
+              ]
+            },
+            {
+              "document": "core",
+              "pages": [
+                34
+              ],
+              "sectionId": "core-pilgrim-arsenal",
+              "bbox": [
+                268.25,
+                163.56,
+                570.91,
+                642.79
+              ],
+              "textBlockIndices": [
+                16,
+                17,
+                18
+              ],
+              "rowY": 207.3
+            }
+          ]
+        }
       }
     },
     {
@@ -45982,10 +46027,10 @@
           },
           "exclusiveGroup": "legionary-specialty",
           "limitRule": {
-            "fractionOfUnit": "core-heretic-trooper",
             "numerator": 1,
             "denominator": 2,
-            "round": "down"
+            "round": "down",
+            "fractionOfWarband": true
           }
         },
         "manualCheck": false
@@ -46048,10 +46093,10 @@
           },
           "exclusiveGroup": "legionary-specialty",
           "limitRule": {
-            "fractionOfUnit": "core-heretic-trooper",
             "numerator": 1,
             "denominator": 2,
-            "round": "down"
+            "round": "down",
+            "fractionOfWarband": true
           }
         },
         "manualCheck": false
@@ -46357,7 +46402,7 @@
     },
     {
       "id": "heretic-naval-infiltrator",
-      "name": "Незаметное продвижение",
+      "name": "Infiltrato",
       "cost": {
         "ducats": 10,
         "glory": 0
@@ -46389,7 +46434,7 @@
       "groupLimitPerModel": 1,
       "definition": {
         "id": "heretic-naval-infiltrator",
-        "name": "Незаметное продвижение",
+        "name": "Infiltrato",
         "cost": {
           "ducats": 10,
           "glory": 0
@@ -51160,6 +51205,21 @@
         "document": "core"
       },
       "ruleId": "core-keyword-tough"
+    },
+    {
+      "id": "core-keyword-risky",
+      "name": "RISKY",
+      "source": {
+        "source": "core",
+        "pages": [
+          13,
+          121,
+          125
+        ],
+        "sectionId": "core-keyword-risky",
+        "document": "core"
+      },
+      "ruleId": "core-keyword-risky"
     }
   ],
   "abilities": [
@@ -55810,23 +55870,6 @@
       "ruleId": "core-scenario-9"
     },
     {
-      "id": "core-risky-keyword-alias",
-      "message": "Справочник определяет RISKY ACTION, но таблицы оружия используют сокращение RISKY. Сохраняются оба исходных написания; связь должна быть явной нормализацией.",
-      "source": {
-        "source": "core",
-        "pages": [
-          13,
-          121,
-          125
-        ],
-        "sectionId": "core-keyword-fire",
-        "id": "core-risky-keyword-alias",
-        "document": "core",
-        "description": "Справочник определяет RISKY ACTION, но таблицы оружия используют сокращение RISKY. Сохраняются оба исходных написания; связь должна быть явной нормализацией."
-      },
-      "ruleId": "core-keyword-fire"
-    },
-    {
       "id": "core-trench-shield-machine-conflict",
       "message": "Краткая таблица p9 говорит, что Траншейный щит совмещается с любой бронёй, но в той же таблице и полном описании p127 Механизированная броня не совмещается с щитом. Применяется специальное исключение p127, обе формулировки сохранены.",
       "source": {
@@ -55873,24 +55916,6 @@
         "description": "На p4 игрок с меньшим количеством моделей на столе решает, кто начинает активации; на p11 игрок с меньшим количеством моделей в отряде сам начинает новый ход. Обе формулировки сохранены."
       },
       "ruleId": "core-foundations"
-    },
-    {
-      "id": "core-source-typographical-errors",
-      "message": "В оригинале встречаются «больгих» (p9), лишняя закрывающая скобка BLACK GRAIL (p12), «ДЕЙСТВИК» (p125) и «болгий Ада» (p129). Они сохранены в транскрипции, а не молча исправлены.",
-      "source": {
-        "source": "core",
-        "pages": [
-          9,
-          12,
-          125,
-          129
-        ],
-        "sectionId": "core-injuries",
-        "id": "core-source-typographical-errors",
-        "document": "core",
-        "description": "В оригинале встречаются «больгих» (p9), лишняя закрывающая скобка BLACK GRAIL (p12), «ДЕЙСТВИК» (p125) и «болгий Ада» (p129). Они сохранены в транскрипции, а не молча исправлены."
-      },
-      "ruleId": "core-injuries"
     },
     {
       "id": "core-scenario-glory-victory-wording",
@@ -56006,108 +56031,6 @@
       "ruleId": "core-scenario-7"
     },
     {
-      "id": "source-hereti",
-      "message": "В строке ключевых слов Помазанника напечатано HERETI, в других профилях — HERETIC. Исходное HERETI сохранено; автоматическое приравнивание не подтверждено источником.",
-      "source": {
-        "source": "core",
-        "pages": [
-          24
-        ],
-        "sectionId": "core-heretic-anointed",
-        "id": "source-hereti",
-        "document": "core",
-        "message": "В строке ключевых слов Помазанника напечатано HERETI, в других профилях — HERETIC. Исходное HERETI сохранено; автоматическое приравнивание не подтверждено источником.",
-        "status": "unresolved-source",
-        "resolution": null
-      },
-      "ruleId": "core-heretic-anointed"
-    },
-    {
-      "id": "source-cumbersom",
-      "message": "В таблице Когтей Тартара напечатано CUMBERSOM без конечной E; определённое в общих правилах слово — CUMBERSOME. Исходная таблица сохранена.",
-      "source": {
-        "source": "core",
-        "pages": [
-          20
-        ],
-        "sectionId": "core-heretic-tartarus-claws",
-        "id": "source-cumbersom",
-        "document": "core",
-        "message": "В таблице Когтей Тартара напечатано CUMBERSOM без конечной E; определённое в общих правилах слово — CUMBERSOME. Исходная таблица сохранена.",
-        "status": "unresolved-source",
-        "resolution": null
-      },
-      "ruleId": "core-heretic-tartarus-claws"
-    },
-    {
-      "id": "source-mortar-range",
-      "message": "Таблица Траншейного миномёта даёт дальность 48”, а текст выбора точки ограничивает её 36”. Оба значения сохранены; окончательная трактовка не задана.",
-      "source": {
-        "source": "core",
-        "pages": [
-          45
-        ],
-        "sectionId": "core-pilgrim-trench-mortar",
-        "id": "source-mortar-range",
-        "document": "core",
-        "message": "Таблица Траншейного миномёта даёт дальность 48”, а текст выбора точки ограничивает её 36”. Оба значения сохранены; окончательная трактовка не задана.",
-        "status": "unresolved-source",
-        "resolution": null
-      },
-      "ruleId": "core-pilgrim-trench-mortar"
-    },
-    {
-      "id": "source-autocannon-row",
-      "message": "В разделе Автопушка строка таблицы названа «Пулемёт». Название строки сохранено, её отдельные характеристики привязаны к разделу Автопушки.",
-      "source": {
-        "source": "core",
-        "pages": [
-          45
-        ],
-        "sectionId": "core-pilgrim-autocannon",
-        "id": "source-autocannon-row",
-        "document": "core",
-        "message": "В разделе Автопушка строка таблицы названа «Пулемёт». Название строки сохранено, её отдельные характеристики привязаны к разделу Автопушки.",
-        "status": "unresolved-source",
-        "resolution": null
-      },
-      "ruleId": "core-pilgrim-autocannon"
-    },
-    {
-      "id": "source-house-collection",
-      "message": "Коллекции оружия сначала требуют выбрать два оружия, затем говорят «Только одно оружие может быть выбрано из этого списка». Неясно, имеется в виду по одному из арсеналов или общий предел. Ограничение требует ручной проверки.",
-      "source": {
-        "source": "core",
-        "pages": [
-          61
-        ],
-        "sectionId": "core-sultanate-house-of-wisdom",
-        "id": "source-house-collection",
-        "document": "core",
-        "message": "Коллекции оружия сначала требуют выбрать два оружия, затем говорят «Только одно оружие может быть выбрано из этого списка». Неясно, имеется в виду по одному из арсеналов или общий предел. Ограничение требует ручной проверки.",
-        "status": "unresolved-source",
-        "resolution": null
-      },
-      "ruleId": "core-sultanate-house-of-wisdom"
-    },
-    {
-      "id": "source-auto-pistole",
-      "message": "В арсенале напечатано «Автоматический пистоле» без последней т. Исходная строка сохранена, связь с общим описанием Автоматического пистолета задаётся явно как редакторская нормализация названия.",
-      "source": {
-        "source": "core",
-        "pages": [
-          34
-        ],
-        "sectionId": "core-pilgrim-arsenal",
-        "id": "source-auto-pistole",
-        "document": "core",
-        "message": "В арсенале напечатано «Автоматический пистоле» без последней т. Исходная строка сохранена, связь с общим описанием Автоматического пистолета задаётся явно как редакторская нормализация названия.",
-        "status": "unresolved-source",
-        "resolution": null
-      },
-      "ruleId": "core-pilgrim-arsenal"
-    },
-    {
       "id": "source-wretch-glory-price",
       "message": "Предметы Несчастного ограничены стоимостью 10 дукатов за единицу. Текст не задаёт соотношения со Славой и не формулирует отдельный запрет на предметы за Славу. Для таких покупок нельзя автоматически считать ограничение выполненным.",
       "source": {
@@ -56154,20 +56077,6 @@
         "document": "core"
       },
       "ruleId": "core-heretic-staff"
-    },
-    {
-      "id": "source-tartarus-claws-conflict",
-      "message": "Когти Тартара: p20 даёт дополнительное перемещение6”, запрещает щит и печатает CUMBERSOM; p125 даёт3”, не содержит этой фразы о щите и печатает прочерк в ключевых словах. Сохранены отдельные предметы/статьи и локальная связь предложения. Источник не указывает, какое описание отменяет другое.",
-      "source": {
-        "source": "core",
-        "pages": [
-          20,
-          125
-        ],
-        "sectionId": "core-heretic-tartarus-claws",
-        "document": "core"
-      },
-      "ruleId": "core-heretic-tartarus-claws"
     },
     {
       "id": "source-wrath-ranged-wording",
@@ -56309,32 +56218,6 @@
       "ruleId": "core-court-hunter"
     },
     {
-      "id": "core-issue-lieutenant-source-typo",
-      "message": "Оригинальное изображение68 действительно содержит «ДЕЙСВТИЕ». Проверено увеличением5x, исходная опечатка сохранена; это не ошибка нового извлечения.",
-      "source": {
-        "source": "core",
-        "pages": [
-          68
-        ],
-        "sectionId": "core-antioch-lieutenant",
-        "document": "core"
-      },
-      "ruleId": "core-antioch-lieutenant"
-    },
-    {
-      "id": "core-issue-grail-lord-source-typo",
-      "message": "В источнике свободные руки Повелителя Опухолей считаются «траншейной дубиркой». Текст сохранён; сопоставление с Окопной Дубинкой фиксируется явно в structured unarmedRule, без изменения оригинала.",
-      "source": {
-        "source": "core",
-        "pages": [
-          86
-        ],
-        "sectionId": "core-grail-lord",
-        "document": "core"
-      },
-      "ruleId": "core-grail-lord"
-    },
-    {
       "id": "core-issue-grail-hierarchy-truncated",
       "message": "В оригинале второй пункт Иерархии Дворян обрывается на «может включать до трёх» без существительного и знака конца предложения. По заголовку и контексту подразумеваются Рыцари Чумы; исходный текст не дописан.",
       "source": {
@@ -56363,90 +56246,6 @@
     }
   ],
   "constraints": [
-    {
-      "id": "source-hereti",
-      "message": "В строке ключевых слов Помазанника напечатано HERETI, в других профилях — HERETIC. Исходное HERETI сохранено; автоматическое приравнивание не подтверждено источником.",
-      "severity": "manual",
-      "source": {
-        "source": "core",
-        "pages": [
-          24
-        ],
-        "sectionId": "core-heretic-anointed",
-        "document": "core"
-      },
-      "ruleId": "core-heretic-anointed"
-    },
-    {
-      "id": "source-cumbersom",
-      "message": "В таблице Когтей Тартара напечатано CUMBERSOM без конечной E; определённое в общих правилах слово — CUMBERSOME. Исходная таблица сохранена.",
-      "severity": "manual",
-      "source": {
-        "source": "core",
-        "pages": [
-          20
-        ],
-        "sectionId": "core-heretic-tartarus-claws",
-        "document": "core"
-      },
-      "ruleId": "core-heretic-tartarus-claws"
-    },
-    {
-      "id": "source-mortar-range",
-      "message": "Таблица Траншейного миномёта даёт дальность 48”, а текст выбора точки ограничивает её 36”. Оба значения сохранены; окончательная трактовка не задана.",
-      "severity": "manual",
-      "source": {
-        "source": "core",
-        "pages": [
-          45
-        ],
-        "sectionId": "core-pilgrim-trench-mortar",
-        "document": "core"
-      },
-      "ruleId": "core-pilgrim-trench-mortar"
-    },
-    {
-      "id": "source-autocannon-row",
-      "message": "В разделе Автопушка строка таблицы названа «Пулемёт». Название строки сохранено, её отдельные характеристики привязаны к разделу Автопушки.",
-      "severity": "manual",
-      "source": {
-        "source": "core",
-        "pages": [
-          45
-        ],
-        "sectionId": "core-pilgrim-autocannon",
-        "document": "core"
-      },
-      "ruleId": "core-pilgrim-autocannon"
-    },
-    {
-      "id": "source-house-collection",
-      "message": "Коллекции оружия сначала требуют выбрать два оружия, затем говорят «Только одно оружие может быть выбрано из этого списка». Неясно, имеется в виду по одному из арсеналов или общий предел. Ограничение требует ручной проверки.",
-      "severity": "manual",
-      "source": {
-        "source": "core",
-        "pages": [
-          61
-        ],
-        "sectionId": "core-sultanate-house-of-wisdom",
-        "document": "core"
-      },
-      "ruleId": "core-sultanate-house-of-wisdom"
-    },
-    {
-      "id": "source-auto-pistole",
-      "message": "В арсенале напечатано «Автоматический пистоле» без последней т. Исходная строка сохранена, связь с общим описанием Автоматического пистолета задаётся явно как редакторская нормализация названия.",
-      "severity": "manual",
-      "source": {
-        "source": "core",
-        "pages": [
-          34
-        ],
-        "sectionId": "core-pilgrim-arsenal",
-        "document": "core"
-      },
-      "ruleId": "core-pilgrim-arsenal"
-    },
     {
       "id": "source-wretch-glory-price",
       "message": "Предметы Несчастного ограничены стоимостью 10 дукатов за единицу. Текст не задаёт соотношения со Славой и не формулирует отдельный запрет на предметы за Славу. Для таких покупок нельзя автоматически считать ограничение выполненным.",
@@ -56489,21 +56288,6 @@
         "document": "core"
       },
       "ruleId": "core-heretic-staff"
-    },
-    {
-      "id": "source-tartarus-claws-conflict",
-      "message": "Когти Тартара: p20 даёт дополнительное перемещение6”, запрещает щит и печатает CUMBERSOM; p125 даёт3”, не содержит этой фразы о щите и печатает прочерк в ключевых словах. Сохранены отдельные предметы/статьи и локальная связь предложения. Источник не указывает, какое описание отменяет другое.",
-      "severity": "manual",
-      "source": {
-        "source": "core",
-        "pages": [
-          20,
-          125
-        ],
-        "sectionId": "core-heretic-tartarus-claws",
-        "document": "core"
-      },
-      "ruleId": "core-heretic-tartarus-claws"
     },
     {
       "id": "source-wrath-ranged-wording",

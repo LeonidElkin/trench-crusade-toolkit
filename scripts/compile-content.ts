@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url'
 import { EditionSchema } from '../src/domain/schema.ts'
 import { reconstructCatalog, str, record, list, type RecordValue } from './reconstruct-catalog.ts'
 import { digest, reviewedRecords } from './verify-reconstruction.ts'
+import { applyRulesErrata } from './rules-errata.ts'
 
 const root = resolve(import.meta.dirname, '..')
 const categoryLabels: Record<string, string> = {
@@ -31,22 +32,22 @@ function categoryOf(section: RecordValue): string {
 
 export async function compileContent() {
   const verified = await reviewedRecords(root, '1.6.3')
-  let links: Record<string, string> = {}
   let linkDefinitions: RecordValue[] = []
   try {
     const definitions = record(JSON.parse(await readFile(resolve(root, 'reconstruction/1.6.3/links.json'), 'utf8')))
     linkDefinitions = list(definitions.itemLinks)
-    links = Object.fromEntries(linkDefinitions.filter((l) => l.status !== 'unresolved')
-      .map((l) => [str(l.factionId) ? `${str(l.factionId)}:${str(l.name)}` : str(l.name), str(l.itemId)]))
   } catch (error) {
     if (!(error instanceof Error && 'code' in error && error.code === 'ENOENT')) throw error
   }
+  const corrected = applyRulesErrata(verified, linkDefinitions)
+  const links = Object.fromEntries(corrected.links.filter((l) => l.status !== 'unresolved')
+    .map((l) => [str(l.factionId) ? `${str(l.factionId)}:${str(l.name)}` : str(l.name), str(l.itemId)]))
   const integrationIssues = list(record(JSON.parse(await readFile(resolve(root, 'reconstruction/1.6.3/integration-issues.json'), 'utf8'))).issues)
-  const { catalog, unresolvedLinks } = reconstructCatalog(verified.records, '1.6.3', str(verified.manifest.revision), links, linkDefinitions, integrationIssues)
+  const { catalog, unresolvedLinks } = reconstructCatalog(corrected.records, '1.6.3', str(verified.manifest.revision), links, corrected.links, integrationIssues)
   const factionLabels = Object.fromEntries(catalog.factions.map((f) => [`faction-${f.id}`, f.name]))
-  const articles = verified.sections.map((section) => {
+  const articles = corrected.sections.map((section) => {
     const markdown = str(section.markdown), category = categoryOf(section), id = str(section.id)
-    return { ...section, category, section: factionLabels[category] ?? categoryLabels[category] ?? str(section.title),
+    return { ...section, originalCategory: section.category, category, section: factionLabels[category] ?? categoryLabels[category] ?? str(section.title),
       file: `content/${id}.md`, sha256: digest(markdown), markdown,
       text: markdown.replace(/<!--.*?-->/gs, '').replace(/[#*|]/g, '').replace(/\s+/g, ' ').trim() }
   })

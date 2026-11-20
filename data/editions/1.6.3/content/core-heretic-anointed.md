@@ -18,4 +18,4 @@
 
 **Ключевые слова**
 
-**HERETI, STRONG**
+**HERETIC, STRONG**

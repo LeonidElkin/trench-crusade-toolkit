@@ -9,6 +9,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Боевой Медик",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-medic.md",
     "sha256": "0d5058bd83b2bab64568091a9895b0ed9fc3dfbd3566854d0e74128c205ef66d"
   },
@@ -22,6 +23,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Истребитель ведьм",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-witch-hunter.md",
     "sha256": "15802d9f0eea26218c2f2ade874691c8092c46f9ec6e38ec65a7a7125746d74e"
   },
@@ -35,6 +37,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Особое оружие. Молот Правосудия (Gavel of Justice)",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-gavel-of-justice.md",
     "sha256": "cf9c420c9e6c876d316662e167abd8be2d4c03630e0e021f0938439bc9f96fc8"
   },
@@ -48,6 +51,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Коммуникант Истребитель Танков",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-communicant-tank-hunter.md",
     "sha256": "e1168d4ba1f9e8909d885ffe5c10c74975f33e9e80ab13f07ea7ec455d9efc69"
   },
@@ -61,6 +65,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Монах-Менделист",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-mendelist-monk.md",
     "sha256": "d49de5e56123d7918078c1bdf88a7d0d66f8bdb08730f3bcecc469ce992d83e0"
   },
@@ -74,6 +79,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Пожиратель Грехов",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-sin-eater.md",
     "sha256": "f7c00c8fdf6327c11eb9cfbedb4d414007d57de6493fa8abb873d53ec284b97c"
   },
@@ -87,6 +93,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Гоэтический Колдун",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-goetic-warlock.md",
     "sha256": "d6bbd6344591dcf375579e9954539adc6244594eb031caa1aa202622fb21c509"
   },
@@ -100,6 +107,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Наблюдатель",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-observer.md",
     "sha256": "4a7d231195feee3eaece91085e1be4ce0bb2e4520b846bb0c1b76fbf412e1000"
   },
@@ -113,6 +121,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Мамлюк Фарис",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-mamluk-faris.md",
     "sha256": "c592fbe537faab0bdc9f70c8952361404c25fbec8ea0b2702b9ed3c4e845e27d"
   },
@@ -126,6 +135,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Окопная Собака",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-trench-dog.md",
     "sha256": "c120ba8eb2ed7000e396a631940b0d9649774a8882f35aeb48499f2677982647"
   },
@@ -139,6 +149,7 @@
     "category": "allies",
     "section": "Союзники и наёмники",
     "originalSection": "Хранитель Писаний",
+    "originalCategory": "Союзники и наёмники",
     "file": "content/allies-scripture-guardian.md",
     "sha256": "fe72b98f36f3aa32688b09a6117ace1d4a4e3479bcce8864b8f8b21e9b635dc3"
   },
@@ -152,6 +163,7 @@
     "category": "introduction",
     "section": "Введение",
     "originalSection": "Предисловие",
+    "originalCategory": "Введение",
     "file": "content/core-introduction.md",
     "sha256": "a1411468ae2e713b06d763e89de71c482d49511c16628dd68928bb246fc4ca1b"
   },
@@ -165,6 +177,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Основы игры и необходимые материалы",
+    "originalCategory": "Основные правила",
     "file": "content/core-foundations.md",
     "sha256": "282b4fc88eb2d31cb2ee39d0928bcad5da4c13234d49b558a41771f8cbcc823e"
   },
@@ -178,6 +191,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Ход игры и активации",
+    "originalCategory": "Основные правила",
     "file": "content/core-activation.md",
     "sha256": "9b9ef2275e43e785e2db700b7698fedee266630a29942c017f19101e8d8613e1"
   },
@@ -192,6 +206,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Действия",
+    "originalCategory": "Основные правила",
     "file": "content/core-actions.md",
     "sha256": "a7c693785abb09da529ac60adaede6a6d5b7fd55370dfdd59d6bb60327d9646d"
   },
@@ -205,6 +220,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Таблица успеха действий",
+    "originalCategory": "Основные правила",
     "file": "content/core-action-success.md",
     "sha256": "813281acc290add73b2c4959112215204fed7edb071d44890f250b0e42f1e5b0"
   },
@@ -219,6 +235,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Модификаторы +DICE и -DICE",
+    "originalCategory": "Основные правила",
     "file": "content/core-dice.md",
     "sha256": "d45639f501d19c1e8627b38859007db894747ed5aec74a4ceb5fbe370f19302a"
   },
@@ -232,6 +249,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Маркеры Крови",
+    "originalCategory": "Основные правила",
     "file": "content/core-blood-markers.md",
     "sha256": "48cf4526cb92ccd6befe6e2f661e50715932587dfc536f76c3c89e5adab67af4"
   },
@@ -245,6 +263,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Кровавая баня",
+    "originalCategory": "Основные правила",
     "file": "content/core-bloodbath.md",
     "sha256": "81edb0140aa6ff287c005fca63791e57944033e427b8b31a052b6df32da37b30"
   },
@@ -258,6 +277,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Маркеры Благословения",
+    "originalCategory": "Основные правила",
     "file": "content/core-blessing-markers.md",
     "sha256": "577ae851816261049efc8c1aa3f4bfbf6b15c8b50d8be36e2c73115ad0cc64c9"
   },
@@ -272,6 +292,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Движение, нападение, лазание и прыжки",
+    "originalCategory": "Движение",
     "file": "content/core-movement.md",
     "sha256": "1d5455063db696afd8772d94787857410806002b2faffc9c7d2c1f867f22ee04"
   },
@@ -286,6 +307,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Падение",
+    "originalCategory": "Движение",
     "file": "content/core-falling.md",
     "sha256": "1e93a1dd0cbad722bfe25934d258f3e806f54a0d85ed1cbf7926f004a953f528"
   },
@@ -299,6 +321,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Местность",
+    "originalCategory": "Движение",
     "file": "content/core-terrain.md",
     "sha256": "27b1b89ca2c9fd63f0451c4436707590a73410e87509454cc6765b8738a6d2e6"
   },
@@ -312,6 +335,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Типы движения",
+    "originalCategory": "Движение",
     "file": "content/core-movement-types.md",
     "sha256": "cb85589123cc49cb6b8c07e8ebc83aebee447677c1307e4bfc6bbe7c78acc8b0"
   },
@@ -326,6 +350,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Бой и дальние атаки",
+    "originalCategory": "Бой",
     "file": "content/core-ranged.md",
     "sha256": "356141b69933ad4c47d1818cb42a17bfce3b60c95e2ee49b37d5297ceb6d3ecc"
   },
@@ -339,8 +364,9 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Таблица ранений",
+    "originalCategory": "Бой",
     "file": "content/core-injuries.md",
-    "sha256": "da42f84b7e792c5588968aef4de1e9ceafad895c7cee25cc6d84d80ee9392084"
+    "sha256": "dcf13d2696bf9dee433afee5e457907de7f04468a5d3c0c4a1fc7421293b258e"
   },
   {
     "id": "core-melee",
@@ -352,6 +378,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Ближний бой",
+    "originalCategory": "Бой",
     "file": "content/core-melee.md",
     "sha256": "774400c9d2eb0edbbcc81918262145e09dbfbc6e878bc914207b7c84f54a045a"
   },
@@ -365,6 +392,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Конец активации",
+    "originalCategory": "Основные правила",
     "file": "content/core-end-activation.md",
     "sha256": "889b58cbd56d323da45771a016acca87c95eec3fbbb569f3cea00f9a6ced74b5"
   },
@@ -378,6 +406,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Мораль",
+    "originalCategory": "Основные правила",
     "file": "content/core-morale.md",
     "sha256": "6db57f0dd341f27ce4ab99927c10398696f6c2e24e7072bbd2912c44d2f779b1"
   },
@@ -391,6 +420,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Конец хода",
+    "originalCategory": "Основные правила",
     "file": "content/core-end-turn.md",
     "sha256": "a04e1ee1c63ebea6d27a2040c37d937308f38852e7c976a52c1e6c5ee476b0b5"
   },
@@ -405,6 +435,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Ключевые слова: общие сведения",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keywords-intro.md",
     "sha256": "61d99ea2f8f80526a0ef83c8b128317f35b2ca64f258ec179950cb1a94a1b7e6"
   },
@@ -418,6 +449,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Предварительное измерение, лазание и прыжки",
+    "originalCategory": "Движение",
     "file": "content/core-measure-and-climb.md",
     "sha256": "7ad0b135c7ec9a56c6ed53ffcaa23bd7cf402dc8cea43452f73fbc04d0c4c3a0"
   },
@@ -431,6 +463,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Правило запрещения",
+    "originalCategory": "Основные правила",
     "file": "content/core-prohibition.md",
     "sha256": "c20d144c80ee0bce832e9e78656976fff24fa0b8b7bb96298f66f42ab0f57e8d"
   },
@@ -444,6 +477,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Дроби",
+    "originalCategory": "Основные правила",
     "file": "content/core-fractions.md",
     "sha256": "9c93803e08453ddb04f7cf3cdac844018320fc0b5d26aa241fc30c9d95183be3"
   },
@@ -457,6 +491,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Подняться из окопа",
+    "originalCategory": "Движение",
     "file": "content/core-exit-trench.md",
     "sha256": "c3467bbf61e040471958c2a4aa2acff539f229b04cead613f8ef8179b55f9d89"
   },
@@ -471,6 +506,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Точность моделей",
+    "originalCategory": "Создание отряда",
     "file": "content/core-model-representation.md",
     "sha256": "aa83cb6fa9139b26d230d02b69cbc5b1197e36f77aea5a7fe8ca740b6be1568a"
   },
@@ -484,6 +520,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Стрельба в ближний бой",
+    "originalCategory": "Бой",
     "file": "content/core-shoot-into-melee.md",
     "sha256": "2b5ad6ef44d7ccc65d1ebb176dc960cc00154a0979ac81dfbb6f9b5662b72384"
   },
@@ -497,6 +534,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Выберите свою фракцию",
+    "originalCategory": "Создание отряда",
     "file": "content/core-choose-faction.md",
     "sha256": "63ba7999c2ae1adfbec5e33d54f6e2d12fd2b6f92854b1c5a0bab64946d2a68a"
   },
@@ -510,6 +548,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Набор вашего отряда",
+    "originalCategory": "Создание отряда",
     "file": "content/core-recruitment.md",
     "sha256": "b9033f2707593cc948ae0ab76ad6d5872fd59bf226b00d038af98d964c537248"
   },
@@ -523,6 +562,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Ключевые слова и ограничения снаряжения",
+    "originalCategory": "Создание отряда",
     "file": "content/core-recruitment-limits.md",
     "sha256": "d6c2f359baa6db601e993ee9fa675b0e3e11fd046751498b92871203ca412364"
   },
@@ -537,6 +577,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Снаряжение отряда",
+    "originalCategory": "Создание отряда",
     "file": "content/core-equipping.md",
     "sha256": "d8ba1477f9614a2c9069a25832d8ccaf5d52affe20b30b8b4b0087bdb6260c3b"
   },
@@ -550,6 +591,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Союзники и наёмники",
+    "originalCategory": "Создание отряда",
     "file": "content/core-allies-hiring.md",
     "sha256": "7e864342b87ce5c3b069437cd558a053eada0dec46447970df4e3df478ebb4c2"
   },
@@ -563,6 +605,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Приобретаемые способности",
+    "originalCategory": "Создание отряда",
     "file": "content/core-purchasable-abilities.md",
     "sha256": "da8db895b9db1130013dbca62193c4b489e5ab7d4b9edc02552838b18fe2b06e"
   },
@@ -576,6 +619,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Список отряда и готовность к битве",
+    "originalCategory": "Создание отряда",
     "file": "content/core-roster.md",
     "sha256": "c757c9b16a73cd6e8e0d3a7f2a70be4539edcdc583cef70ceba617e203c1493a"
   },
@@ -589,6 +633,7 @@
     "category": "rules",
     "section": "Основные правила",
     "originalSection": "Профиль характеристик",
+    "originalCategory": "Создание отряда",
     "file": "content/core-characteristic-profile.md",
     "sha256": "2e0a0b58ccb3f4f28c95b5a9a2cf3e13e9d44794aabc3a60487e1c53a7097322"
   },
@@ -602,6 +647,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "+DICE",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-plus-dice.md",
     "sha256": "bb9edae7e9b9aba26591adc6969903cf9f2b137c2535bf2780981a54ee5d3ea3"
   },
@@ -615,6 +661,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "-DICE",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-minus-dice.md",
     "sha256": "32ef85fe57903f9757f89e169eeaa6b55a08eb340a6fb21584e9602495fbcc0c"
   },
@@ -628,6 +675,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "ACTION",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-action.md",
     "sha256": "d72880215128c52b035ea25bd6d6d29af64b2bad1fcee778b18e68131eab6605"
   },
@@ -641,6 +689,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "ARTIFICIAL",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-artificial.md",
     "sha256": "b242a68c9463c4a8c30f869c24eae523107234745c2f25a469285aabf1329a50"
   },
@@ -654,6 +703,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "ASSAULT",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-assault.md",
     "sha256": "755094f5783df1448c807eaed5b44949283d57958f3fc8c193f324a2b3f870bd"
   },
@@ -667,8 +717,9 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "BLACK GRAIL",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-black-grail.md",
-    "sha256": "d1c04fedb72e1467928ec467c7ea3987497b1277d561aa78bcbe68e4e6beace8"
+    "sha256": "f45d889176b9e10c8cf92077dad623e06b71a6d1e45e58c4be911a095b292835"
   },
   {
     "id": "core-keyword-blast-x",
@@ -680,6 +731,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "BLAST (X)",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-blast-x.md",
     "sha256": "46d4c979146c34b28211be60ce1519da1c8d93e0719c505c3ce0b9039859c9c9"
   },
@@ -693,6 +745,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "BLESSING MARKER",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-blessing-marker.md",
     "sha256": "61683ff0369f4c29749f33f1a8191aeece8d2656de23ccec781357ca29a5ef7f"
   },
@@ -706,6 +759,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "BLOOD MARKER",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-blood-marker.md",
     "sha256": "a8ff52981042522b02898a98af8f1e75eb090176ad2c6dc6d8df7e2d88faf09d"
   },
@@ -719,6 +773,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "CONSUMABLE",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-consumable.md",
     "sha256": "d1c221c71e99215009ba1492695926b15a504af16ae6a1b65bc3e8e98ca277ca"
   },
@@ -732,6 +787,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "CRITICAL",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-critical.md",
     "sha256": "98518d3fed0d14c44e34f23d2754c3ecacf19ab6524aa2ad64c9c29aeaa2a65d"
   },
@@ -745,6 +801,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "CUMBERSOME",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-cumbersome.md",
     "sha256": "19decbf7f66de9e61b9d6153697ea91d346bbd41b44ab453a953f4891952f083"
   },
@@ -758,6 +815,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "ELITE",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-elite.md",
     "sha256": "65b37245ffa591b3a1bea41fdec876b5003a6b9fd91ae07299b7e31a0829ccdb"
   },
@@ -771,6 +829,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "FEAR",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-fear.md",
     "sha256": "e9c4a953f3e104111911cd9aea21e72ff7529d2c0d4d13869046f809ef5e24dd"
   },
@@ -785,6 +844,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "FIRE",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-fire.md",
     "sha256": "ae2d0f3b50ad63172695c03c72ec70a0fce76c65efef6586741149882a5946ff"
   },
@@ -798,6 +858,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "FIRETEAM",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-fireteam.md",
     "sha256": "e77f5d4700d768a538c67b968f2b264b0b54015fdd101b38e64fc07572520cab"
   },
@@ -811,6 +872,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "GAS",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-gas.md",
     "sha256": "3effb9fea40f789c2577e170ebe352f7a8e89414114f07d8ac38246431a2b4ec"
   },
@@ -824,6 +886,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "GOLEM",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-golem.md",
     "sha256": "3ce51a7d453f1adebbfbcb45756a745683c5c64efe860b7ae663e1be944ab997"
   },
@@ -837,6 +900,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "GRENADE",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-grenade.md",
     "sha256": "212b5bb0de7dbfefdb5755be5a003c2c6729787efdb5d49d521e43f021f59023"
   },
@@ -850,6 +914,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "HEAVY",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-heavy.md",
     "sha256": "c16eef827029f62e2cbf5d1a77599fd40519d7c9ec1f66e93fe09ab0ed1a5458"
   },
@@ -863,6 +928,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "HERETIC",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-heretic.md",
     "sha256": "cffa4d12981c26d735806f701674bd64a0e8cdad51b0a3c13b340eabcf546dd3"
   },
@@ -876,6 +942,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "INFILTRATOR",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-infiltrator.md",
     "sha256": "5f4f17a6ea8f9ffaa231a0ef21b2e019c99ff93ae51fc6752ba5d911d34c0857"
   },
@@ -889,6 +956,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "LEADER",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-leader.md",
     "sha256": "9a887ca0743a0b7626984ff0aa15b1778c546ff7d85086f8828d76c04ab2c649"
   },
@@ -902,6 +970,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "NEW ANTIOCH",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-new-antioch.md",
     "sha256": "e345e7d44a40caa9c127b7841eab5eae274397f72479317c7d0eb14f5ae59eab"
   },
@@ -915,6 +984,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "PILGRIM",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-pilgrim.md",
     "sha256": "961ccc2738d6a0b00bdee55b1163d1e7e9088e76d6f63eab26a3f581ca1a639a"
   },
@@ -928,6 +998,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "LIMIT (X)",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-limit-x.md",
     "sha256": "b2691dd77311b93c5c4a9093873e34ebde226e03602878f8ecb3a3bad92b767a"
   },
@@ -941,6 +1012,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "RISKY ACTION",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-risky-action.md",
     "sha256": "26e6f2f1e6f30cab6e543ab75ec4e2a0073f1a4b4d91b4e2fc447f9390517ea4"
   },
@@ -954,6 +1026,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "SHRAPNEL",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-shrapnel.md",
     "sha256": "b6e24e48e49826c1688d6f9ccb9c5408e864a8d2cdbe44d63454524d1ec811bd"
   },
@@ -967,6 +1040,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "SKIRMISHER",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-skirmisher.md",
     "sha256": "80fbdc71ec9d846e0dde266e01bdcae316e684a9f7356a8100de5879a283ff0f"
   },
@@ -980,6 +1054,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "STRONG",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-strong.md",
     "sha256": "02b83cf4f2b08ab9568b5a2fb4c8713ed032596221d1e5d54404760e560ec09e"
   },
@@ -993,6 +1068,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "SULTANATE",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-sultanate.md",
     "sha256": "79fc4afb6eb9cc3dd5d9f8bff6cfd21808c9d2ac99a72d3c32c42a228113f4e2"
   },
@@ -1006,6 +1082,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "THE COURT",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-the-court.md",
     "sha256": "6377d87a3dcfd9a287c071ab46def7bc0594a21cf5c1be2fb0769393bd2f4c7a"
   },
@@ -1019,6 +1096,7 @@
     "category": "keywords",
     "section": "Ключевые слова",
     "originalSection": "TOUGH",
+    "originalCategory": "Ключевые слова",
     "file": "content/core-keyword-tough.md",
     "sha256": "d7d347e5e60b1422fc57e2866834b0c5c3a0fbbe8b57f73f8dd3031fc9f3306a"
   },
@@ -1032,6 +1110,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Оружие, броня и снаряжение: общие ограничения",
+    "originalCategory": "Снаряжение",
     "file": "content/core-equipment-capacity.md",
     "sha256": "e5ab08a9475730a30f260e2ede2c90e735d23dd241da9fba36c87cc2bc27a0a4"
   },
@@ -1045,6 +1124,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Пистолет/револьвер (Pistol/Revolver)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-pistol-revolver.md",
     "sha256": "514980f5f4494936673da8bd3af5974e08c3375ef46b66f262727b4f866f0653"
   },
@@ -1058,6 +1138,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Автоматический пистолет (Automatic Pistol)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-automatic-pistol.md",
     "sha256": "d507bce08e6bfd394f5e9cea9052e63f46ffe2da58ba6ef7d56c7a47901683dd"
   },
@@ -1071,6 +1152,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Винтовка с продольно-скользящим затвором (Bolt Action Rifle)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-bolt-action-rifle.md",
     "sha256": "b68ed010486dccc6511fcd0a35a52429447e25f6ff5f955963dd9158f27268ff"
   },
@@ -1084,6 +1166,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Полуавтоматическая винтовка (Semi-Automatic Rifle)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-semi-automatic-rifle.md",
     "sha256": "d052dc0e38d33d58cf7d1e5a52e58d31982469058f85c95bc61a159dd33b6a7a"
   },
@@ -1097,6 +1180,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Автоматическая винтовка (Automatic Rifle)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-automatic-rifle.md",
     "sha256": "a57449ff4810872fc36ad7640de4bdbd7342545c33e2e2a7a1fc6620aee8b1e7"
   },
@@ -1110,6 +1194,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Джеззайль (Jezzail)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-jezzail.md",
     "sha256": "dd79246b3ea1643a8fb305f0c85a80880c68c427069e09cab31100cf644b3906"
   },
@@ -1123,6 +1208,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Дробовик (Shotgun)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-shotgun.md",
     "sha256": "1b3250d03f73df92baed1fda5e9d34234ed61311364448b5023e6bfe0fdb7a90"
   },
@@ -1136,6 +1222,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Автоматический дробовик (Automatic Shotgun)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-automatic-shotgun.md",
     "sha256": "68904a5c1e0bd7817ac4e266986d0001dcadb625d7101100be24e613b0502d45"
   },
@@ -1149,6 +1236,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Тяжёлый дробовик (Heavy Shotgun)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-heavy-shotgun.md",
     "sha256": "025c75c9f7b8d9047b9183a67f9e9715ac87c0fae072c2c75cab987bb0498827"
   },
@@ -1162,6 +1250,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Пистолет-пулемёт (Submachine Gun)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-submachine-gun.md",
     "sha256": "e11258f735eb4ecf77209862f216d5541d201f89ec841ee621adbbc1d39dc293"
   },
@@ -1175,6 +1264,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Мушкет (Musket)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-musket.md",
     "sha256": "d27b67e1ed3c5eee7ed03aaa46ff8402ab80ad504998faf5a4a544d6d632aa5b"
   },
@@ -1188,6 +1278,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Пистолет с глушителем (Silenced Pistol)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-silenced-pistol.md",
     "sha256": "f89e8828d9d079e21a5482a21cbe43a359484d93efe0a75632b3e8a65c61d860"
   },
@@ -1201,6 +1292,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Снайперская винтовка (Sniper Rifle)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-sniper-rifle.md",
     "sha256": "99737a278075dbc608b23508f4977a37fddfed5bf4a0b893f7f357f0ad495986"
   },
@@ -1214,6 +1306,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Граната (Grenades)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-grenades.md",
     "sha256": "b578e1204cd8839f53630e604272b0379e3b132e63a59c467555b121a4751a15"
   },
@@ -1227,6 +1320,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Зажигательная граната (Incendiary Grenades)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-incendiary-grenades.md",
     "sha256": "4de1a68c775fd85be9b5a1d19a01865c7458e7806843cc91fdcad3e90c792486"
   },
@@ -1240,6 +1334,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Газовая граната (Gas Grenades)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-gas-grenades.md",
     "sha256": "dc8d0d656de54913f17f8cfc787824fb908fe7a2816255f402cab46177b2f65d"
   },
@@ -1253,6 +1348,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Гранатомёт (Grenade Launcher)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-grenade-launcher.md",
     "sha256": "32629f9042b8ee9391c09abb87887ece364bdf015c9f6dcd7a3f0dcc93e661fb"
   },
@@ -1266,6 +1362,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Фугасный заряд (Satchel Charge)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-satchel-charge.md",
     "sha256": "1c081cf2539bdef8daae1cf8425fb8d769c4d0194c1819466fd5ea90667b18d5"
   },
@@ -1279,6 +1376,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Коктейль Молотова (Molotov Cocktail)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-molotov-cocktail.md",
     "sha256": "83298d96bfc358779a7a9a4ccdc43a346d3614bc73ba9201a4f028000575b18c"
   },
@@ -1292,6 +1390,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Противотанковая Винтовка (Anti-Materiel Rifle)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-anti-materiel-rifle.md",
     "sha256": "6bdcfb23d9175b4d7a48d706b9ae9f50b3525cae26b5cfa02cc0db4b797a41f4"
   },
@@ -1305,6 +1404,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Пулемет (Machine Gun)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-machine-gun.md",
     "sha256": "053520f410a95e8e7efe3079b31bd6322c169acc04f52c4315355705518b99dd"
   },
@@ -1318,6 +1418,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Огнемёт (Flamethrower)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-flamethrower.md",
     "sha256": "8b4d694183038aa23b7b6767c6e5954fc525558a43b1092e6dd91222dd6194ee"
   },
@@ -1331,6 +1432,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Тяжелый огнемет (Heavy Flamethrower)",
+    "originalCategory": "Дальнобойное оружие",
     "file": "content/core-item-heavy-flamethrower.md",
     "sha256": "25fbb5e4326489c422fe0d9fcca5c207bfa05e2368c52e7e6411f742a57dd005"
   },
@@ -1344,6 +1446,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Оружие Ближнего Боя",
+    "originalCategory": "Снаряжение",
     "file": "content/core-melee-weapons-intro.md",
     "sha256": "638f69cad150d88b0cb4f613c48861af40fd88418450967248efe65d0527138f"
   },
@@ -1357,6 +1460,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Безоружный (Unarmed)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-unarmed.md",
     "sha256": "a3d1ad27eb8d2dfe7703a8b087882308c167bd1fde52b62bb602a789869515b7"
   },
@@ -1370,6 +1474,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Нож/кинжал (Knife/Dagger)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-knife-dagger.md",
     "sha256": "5fab1c9647bb6b4eb17d09cd05689e56f5712f2faaf8e36464bd9a8a415613be"
   },
@@ -1383,6 +1488,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Окопная Дубинка (Trench Club)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-trench-club.md",
     "sha256": "d1a112b4603bf42f4301083a581253b452b964344bed6f3512490a928e25d462"
   },
@@ -1396,6 +1502,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Меч/Топор (Sword/Axe)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-sword-axe.md",
     "sha256": "a30bea9c905355a413c969bad35685692a2a021571ccc964b10388b64ada0048"
   },
@@ -1409,6 +1516,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Штык (Bayonet)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-bayonet.md",
     "sha256": "65f7b7c48660db39cd402b230c48ae767d9a19307f97e20aa6a32e0937617606"
   },
@@ -1422,6 +1530,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Жертвенный нож (Sacrificial Knife)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-sacrificial-knife.md",
     "sha256": "b3832c4cd5d29d961328e58613a07eafcc5cee6b04f98d3f815ab6aeca15618a"
   },
@@ -1435,6 +1544,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Богохульный посох (Blasphemous Staff)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-blasphemous-staff.md",
     "sha256": "a4ed1b3161c4f4fb5984bcbf43b322d7aea8042cee8bd83a4ef9f0c3ea66c2ac"
   },
@@ -1448,6 +1558,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Адский меч (Hellblade)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-hellblade.md",
     "sha256": "43b3a1e4c7deb30c94573e706173b5b0f9e1777d030fa6307d6fbd7307e499db"
   },
@@ -1456,13 +1567,15 @@
     "title": "Когти Тартара (Tartarus Claws)",
     "source": "core",
     "pages": [
+      20,
       125
     ],
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Когти Тартара (Tartarus Claws)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-tartarus-claws.md",
-    "sha256": "82d1e5f5dea8725db4113b6ed4996fedacc16247a198336f3cd09d6fc2d47988"
+    "sha256": "553562f9873544439d76eb36fd7a65214327c204677ae8488f2cbe5b9900ba04"
   },
   {
     "id": "core-item-anti-tank-hammer",
@@ -1474,6 +1587,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Противотанковый молот (Anti-Tank Hammer)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-anti-tank-hammer.md",
     "sha256": "ad8227a65f77965b0942bf6189ef0f4c1296fe06c9777a398cc78ad2e216c89f"
   },
@@ -1487,6 +1601,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Окопное Древковое Оружие (Trench Polearm)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-trench-polearm.md",
     "sha256": "4329174a8c5318fb1751582b67bd443e1a7e063ec4b1f8819762713ea4b1a0d6"
   },
@@ -1500,6 +1615,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Плеть/Боевой кнут/цеп (Scourge/Battle Whip/Flail)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-scourge-battle-whip-flail.md",
     "sha256": "2fb272e967ba2d9b7eb20b3fb60acafdd2ff7c974a7d944971fffce7822cc0a6"
   },
@@ -1513,6 +1629,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Двуручное тупое оружие (Double-Handed Blunt Weapon)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-double-handed-blunt-weapon.md",
     "sha256": "318bd6c4feddd1ce80147990ec37a46cb527c91b1c52dc8eb84c1bbc22674104"
   },
@@ -1526,6 +1643,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Большой меч/топор (Great Sword/Axe)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-great-sword-axe.md",
     "sha256": "3659394377c1a7bce65ceb2a00d9f388cb245b43364ea45f6467e90ee0583972"
   },
@@ -1539,6 +1657,7 @@
     "category": "weapons",
     "section": "Оружие",
     "originalSection": "Милосердие (Misericordia)",
+    "originalCategory": "Оружие ближнего боя",
     "file": "content/core-item-misericordia.md",
     "sha256": "b620233b7c07a9d19dcc91a5c722594245c4303ea058dbf582733e2750ff12fb"
   },
@@ -1552,6 +1671,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Броня",
+    "originalCategory": "Снаряжение",
     "file": "content/core-armour-intro.md",
     "sha256": "6aa1ef823a5bac53a993c9a39f62e96f7d05b3056de6816ab89f3775a7a2fa7f"
   },
@@ -1565,6 +1685,7 @@
     "category": "armour",
     "section": "Броня и щиты",
     "originalSection": "Траншейный щит (Trench Shield)",
+    "originalCategory": "Броня",
     "file": "content/core-item-trench-shield.md",
     "sha256": "2534bf8e5dd8b867e14ce5385a1dd6bb978466534ef274253aba6c758e3fff0d"
   },
@@ -1578,6 +1699,7 @@
     "category": "armour",
     "section": "Броня и щиты",
     "originalSection": "Тяжёлый баллистический щит (Heavy Ballistic Shield)",
+    "originalCategory": "Броня",
     "file": "content/core-item-heavy-ballistic-shield.md",
     "sha256": "abff6c1098a72187c1bdf1b666a30bd3bb006f07479c8d4c0a8ba10b250ea133"
   },
@@ -1591,6 +1713,7 @@
     "category": "armour",
     "section": "Броня и щиты",
     "originalSection": "Стандартная броня (Standard Armour)",
+    "originalCategory": "Броня",
     "file": "content/core-item-standard-armour.md",
     "sha256": "10b136205ade75b6102634930d59e6c913bb016000d15d5fe9c919edf1d326e7"
   },
@@ -1604,6 +1727,7 @@
     "category": "armour",
     "section": "Броня и щиты",
     "originalSection": "Усиленная броня (Reinforced Armour)",
+    "originalCategory": "Броня",
     "file": "content/core-item-reinforced-armour.md",
     "sha256": "7a380985a98c8c4cc9b318ac20d6f973c53928b4c4a27457766344415e23571b"
   },
@@ -1617,6 +1741,7 @@
     "category": "armour",
     "section": "Броня и щиты",
     "originalSection": "Механизированная броня (Machine Armour)",
+    "originalCategory": "Броня",
     "file": "content/core-item-machine-armour.md",
     "sha256": "1ca7409a332ea0d56dfa746dc9dbaa2fe9fd7a95cdb1dfe9876070fdbe8cb634"
   },
@@ -1630,6 +1755,7 @@
     "category": "armour",
     "section": "Броня и щиты",
     "originalSection": "Щит с изображением Святой Иконы (Holy Icon Shield)",
+    "originalCategory": "Броня",
     "file": "content/core-item-holy-icon-shield.md",
     "sha256": "1b237c670bb3972fbe2ade62b0a316310ef48925b1465b83c5f378e1f57b137a"
   },
@@ -1643,6 +1769,7 @@
     "category": "armour",
     "section": "Броня и щиты",
     "originalSection": "Броня с изображением Святой Иконы (Holy Icon Armour)",
+    "originalCategory": "Броня",
     "file": "content/core-item-holy-icon-armour.md",
     "sha256": "fbf67586a06e26fbd8482f91fb5cc5327ead614fece61629af121000d313aa59"
   },
@@ -1656,6 +1783,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Экипировка",
+    "originalCategory": "Снаряжение",
     "file": "content/core-equipment-intro.md",
     "sha256": "d217be32671ba7a3b729fa26956d0779af477feffcc58bd6dc9e5d3389c31979"
   },
@@ -1669,6 +1797,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Боевой шлем (Combat Helmet)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-combat-helmet.md",
     "sha256": "c7b7a849b310566e36ab9a742de20a1096f19b60a34580379738337915459054"
   },
@@ -1682,6 +1811,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Железный капирот (Iron Capirote)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-iron-capirote.md",
     "sha256": "d9d37fed42b813efa5aa6efe6e5093bed872d01e687643981c9d56c47485e30b"
   },
@@ -1695,6 +1825,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Медицинский комплект (Medi-kit)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-medi-kit.md",
     "sha256": "53f1765bdbd1621eef2871adfa515590efbd7d78dd383cd901c664b1dc78bcf8"
   },
@@ -1708,6 +1839,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Противогаз (Gas Mask)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-gas-mask.md",
     "sha256": "c854760b3c66f8e5d9315536fa4de0c94c914a8094385c594d136f79fa11bcd5"
   },
@@ -1721,6 +1853,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Святая реликвия (Holy Relic)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-holy-relic.md",
     "sha256": "ba0f921cb0104669082cbf1cc49ddf2cc4c848a48690c949e6080a219a2a24a6"
   },
@@ -1734,6 +1867,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Бронебойные пули (Armour-Piercing Bullets)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-armour-piercing-bullets.md",
     "sha256": "2af4518d37db613a96d48d1aaa8e163261251aec68753aeb25300bcde1bfb91b"
   },
@@ -1747,6 +1881,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Экспансивные пули (Dum-Dum Bullets)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-dum-dum-bullets.md",
     "sha256": "13c47b1282d5c8cfb8d6a97c789013413ba10305bb6f53735a5e2b6dcbc57480"
   },
@@ -1760,6 +1895,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Зажигательные боеприпасы (Incendiary Ammunition)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-incendiary-ammunition.md",
     "sha256": "f6e5497e55f7fe0dcb005b4d0ab82f0cbb699de2286dfdfacb2b0faa7698df14"
   },
@@ -1773,6 +1909,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Трассирующие пули (Tracer Bullets)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-tracer-bullets.md",
     "sha256": "531f03e5b081d7caf76bfd439c5b36ee56f3b1332878c5736a38b34853ac9dc8"
   },
@@ -1786,6 +1923,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Снайперский прицел (Sniper Scope)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-sniper-scope.md",
     "sha256": "2c59751936397a5292ad53c3cf8cbb4c5a51f8a1418023449ca4ecfa33112661"
   },
@@ -1799,6 +1937,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Лопата (Shovel)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-shovel.md",
     "sha256": "965c5f3eb2e26cba5c690d3b799fb1c5af1558b2e99711d16190997ebdf2d68e"
   },
@@ -1812,6 +1951,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Боевой флаг (Troop Flag)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-troop-flag.md",
     "sha256": "93107562e8a3cb929b2baf98f05d890cb1c8d7f2fd7715e09f5d9def3fa21a10"
   },
@@ -1825,6 +1965,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Таблетки мученичества (Martyrdom Pills)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-martyrdom-pills.md",
     "sha256": "8e0aefe29a06e8f4ac246df83f6348d11826f383a5f0d18edaa31ca7cd190d5d"
   },
@@ -1838,6 +1979,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Нечестивый талисман (Unholy Trinket)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-unholy-trinket.md",
     "sha256": "b514a4e5e28edbf73a91576e860cf93bd971f5d87d41dcca14518559c3d20586"
   },
@@ -1851,6 +1993,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Нечестивая реликвия (Unholy Relic)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-unholy-relic.md",
     "sha256": "544af3dcc8a73a81d7b2acb68d8d67d843446bad86f4bf656daf8da94319db30"
   },
@@ -1864,6 +2007,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Благословенная икона (Blessed Icon)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-blessed-icon.md",
     "sha256": "9134618dafb2d591315e37739ec36c0e5d9b02f36e05b30ade4ff9147d580711"
   },
@@ -1877,6 +2021,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Адское Клеймо (Infernal Brand Mark)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-infernal-brand-mark.md",
     "sha256": "1ddc5ca7dd72ead5371fc6492f18d30f63bb23b8deed92708ed17e8e65914957"
   },
@@ -1890,6 +2035,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Полевой алтарь (Field Shrine)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-field-shrine.md",
     "sha256": "d8d0af10ade18cd2b795a016677c67c6ca149afbeb88a18b85847a10fad3ba59"
   },
@@ -1903,6 +2049,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Контракт с Адом (Hellbound Soul Contract)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-hellbound-soul-contract.md",
     "sha256": "c02d359d0c3e5beab1984092e9a2a954c3734dea2e544fde039822f4e0ae6171"
   },
@@ -1916,6 +2063,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Бинокль (Binoculars)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-binoculars.md",
     "sha256": "19d1d3cc86b5351d464e04a4f4b156df2e48ff856261ed5a6f37173c708d714d"
   },
@@ -1929,6 +2077,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Музыкальный инструмент (Musical Instrument)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-musical-instrument.md",
     "sha256": "1ba472f0aaaa55707eff3cc935970d47624bc9c9315ffa18beb84ddc6da8a153"
   },
@@ -1942,6 +2091,7 @@
     "category": "equipment",
     "section": "Снаряжение",
     "originalSection": "Альпинистский комплект (Mountaineer Kit)",
+    "originalCategory": "Экипировка",
     "file": "content/core-item-mountaineer-kit.md",
     "sha256": "5cb9ba5e83e20ea23682d2728a2b4947446042dce0ae49689620913a4cde12d7"
   },
@@ -1955,6 +2105,7 @@
     "category": "scenarios",
     "section": "Сценарии",
     "originalSection": "Сценарии: общие правила",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenarios-general.md",
     "sha256": "cd334d210d7b4cf436f2147255d7f0bc53aeeb69c937f4a3c72f399dfbb0ddbe"
   },
@@ -1969,6 +2120,7 @@
     "category": "scenario-1",
     "section": "Сценарий 1: Захватить Ничейные земли",
     "originalSection": "Сценарий 1: Захватить Ничейные земли",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-1.md",
     "sha256": "2e2f2399302bfa74266d8221735d2d113bb5b3f53c75d39ad9cadf2b97241483"
   },
@@ -1983,6 +2135,7 @@
     "category": "scenario-2",
     "section": "Сценарий 2: Охота на реликвии",
     "originalSection": "Сценарий 2: Охота на реликвии",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-2.md",
     "sha256": "1d82b76639902d87435e6eee8f258c14dfa04ad34b6ae0041cc892134fe7f654"
   },
@@ -1997,6 +2150,7 @@
     "category": "scenario-3",
     "section": "Сценарий 3: Охота на героев",
     "originalSection": "Сценарий 3: Охота на героев",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-3.md",
     "sha256": "f03c6251f822a48776d1377ad45ff86a2b6f87c5ee1f6a4f490112820e29e509"
   },
@@ -2011,6 +2165,7 @@
     "category": "scenario-4",
     "section": "Сценарий 4: Бойня в траншеях",
     "originalSection": "Сценарий 4: Бойня в траншеях",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-4.md",
     "sha256": "b5ca91bc642281c62e67a2e4efd0dc070da288bfe59c57c5491fcc299b33d5bf"
   },
@@ -2025,6 +2180,7 @@
     "category": "scenario-5",
     "section": "Сценарий 5: Великая война",
     "originalSection": "Сценарий 5: Великая война",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-5.md",
     "sha256": "7edb1f51dbdd1353c2f0c358afa195149bea0a7ae6dbd3e43d4404960b908a45"
   },
@@ -2039,6 +2195,7 @@
     "category": "scenario-6",
     "section": "Сценарий 6: Рейд за припасами",
     "originalSection": "Сценарий 6: Рейд за припасами",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-6.md",
     "sha256": "3d6fd6bfb544a817e5614304a2a9fd50960fa432b2e341d3564424946834580e"
   },
@@ -2055,6 +2212,7 @@
     "category": "scenario-7",
     "section": "Сценарий 7: Бронированный поезд",
     "originalSection": "Сценарий 7: Бронированный поезд",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-7.md",
     "sha256": "e2531e2c1dc4ace93f1f4cc972e869a3a0d3ee2b9e29dc4f2a49a8439b6335fd"
   },
@@ -2073,6 +2231,7 @@
     "category": "scenario-8",
     "section": "Сценарий 8: Штурм берегов",
     "originalSection": "Сценарий 8: Штурм берегов",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-8.md",
     "sha256": "e6aa8e208cea9d873e310ae2abccff5b029e8a6f8774582ac4adfc02b1da129f"
   },
@@ -2090,6 +2249,7 @@
     "category": "scenario-9",
     "section": "Сценарий 9: Охота на Дракона",
     "originalSection": "Сценарий 9: Охота на Дракона",
+    "originalCategory": "Сценарии",
     "file": "content/core-scenario-9.md",
     "sha256": "9da4486233dd94c5c78e5d8b16e3fbff202019ea99d562177a002199362caf07"
   },
@@ -2108,6 +2268,7 @@
     "category": "scenario-generator",
     "section": "Генератор случайных сценариев",
     "originalSection": "Генератор рандомных сценариев",
+    "originalCategory": "Сценарии",
     "file": "content/core-random-scenarios.md",
     "sha256": "ee2f9a6d96deeb9e059c5af47c4d72262795f25777fb2359ecdd11993652f4ae"
   },
@@ -2123,6 +2284,7 @@
     "category": "introduction",
     "section": "Введение",
     "originalSection": "Цитаты на полях арсенала",
+    "originalCategory": "Лор",
     "file": "content/core-armoury-marginal-quotes.md",
     "sha256": "64b1a5fdb297f2b88d4aacca7e374847afbb042b48c02f21fb221dfc732d2423"
   },
@@ -2137,6 +2299,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Легион Еретиков: описание",
+    "originalCategory": "Лор",
     "file": "content/core-heretic-lore.md",
     "sha256": "f153a97e594961fa195bac9823dcf26db5ecbf95582e31aef6c28d1258a8a88c"
   },
@@ -2150,6 +2313,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Легион Еретиков: создание отряда",
+    "originalCategory": "Фракции",
     "file": "content/core-heretic-recruitment.md",
     "sha256": "cfe5518b55460c25a5b05863294c7b726c4cf953caf2014023ac5783944d7d7e"
   },
@@ -2163,6 +2327,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Арсенал Легиона Еретиков",
+    "originalCategory": "Арсеналы",
     "file": "content/core-heretic-arsenal.md",
     "sha256": "292c84a0661e8c6bcbb0c9d22f4d4b1beb43e319c4ce1ac0e76fb23f1c07f18b"
   },
@@ -2176,6 +2341,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Жертвенный нож",
+    "originalCategory": "Снаряжение",
     "file": "content/core-heretic-sacrificial-knife.md",
     "sha256": "06f6e143f8d4abf77f9ed97bf5817d1e47ac150126944606866d60cfa95ddb9d"
   },
@@ -2189,6 +2355,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Богохульный посох",
+    "originalCategory": "Снаряжение",
     "file": "content/core-heretic-staff.md",
     "sha256": "1861d54c88d9b2f460a4c99c97bc765300295f56ca3f200099f675f61fdde0fe"
   },
@@ -2202,6 +2369,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Адский меч",
+    "originalCategory": "Снаряжение",
     "file": "content/core-heretic-hellblade.md",
     "sha256": "1d88011d08e8605563ef1cfc9fce488783879f04dfeb0925b729b7ca7820ddec"
   },
@@ -2215,8 +2383,10 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Когти Тартара",
+    "originalCategory": "Снаряжение",
+    "canonicalRuleId": "core-item-tartarus-claws",
     "file": "content/core-heretic-tartarus-claws.md",
-    "sha256": "9e04e5e2264a4f9b883f0cca2fd7daba33f343437c96edf13c4043d888e183c8"
+    "sha256": "5a97420c70844aaf236244defdce5c2518ba3bfd076569376f05c01063cbfd36"
   },
   {
     "id": "core-heretic-special-equipment",
@@ -2228,6 +2398,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Особое снаряжение Еретиков",
+    "originalCategory": "Арсеналы",
     "file": "content/core-heretic-special-equipment.md",
     "sha256": "7783fbf356586ed111c5848c21938662f3f06dfee874d832f97348a2a2e31078"
   },
@@ -2241,6 +2412,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Священник Еретиков",
+    "originalCategory": "Бойцы",
     "file": "content/core-heretic-priest.md",
     "sha256": "b916650c223d61c9c498e52422505422ea4c4b4a1461a013306903e88d97748a"
   },
@@ -2255,6 +2427,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Еретический Коммандос Смерти",
+    "originalCategory": "Бойцы",
     "file": "content/core-heretic-death-commando.md",
     "sha256": "41001e4a0e16a19756a40565eecea8131ad5612f1d25fcf267f2b0359b664c3a"
   },
@@ -2268,6 +2441,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Хорист Еретиков",
+    "originalCategory": "Бойцы",
     "file": "content/core-heretic-chorister.md",
     "sha256": "e2954ba4d106cf9849a7c2f279463a9a6e89f2fa6d4ecab4803f56e8ab4a8e7c"
   },
@@ -2281,8 +2455,9 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Пехота Еретиков и Легионеры",
+    "originalCategory": "Бойцы",
     "file": "content/core-heretic-trooper.md",
-    "sha256": "e331c51b06f3a5f9ccf98d4ccf45e27d591969826a76cb1c5ecb9864fd917371"
+    "sha256": "b756e28ba32312c663edade2c1741f9e42641b7052dbb6a79bbe78519b3811d3"
   },
   {
     "id": "core-heretic-anointed",
@@ -2294,8 +2469,9 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Помазанная Тяжёлая Пехота",
+    "originalCategory": "Бойцы",
     "file": "content/core-heretic-anointed.md",
-    "sha256": "ce849575b2955e49177ed49b49a401cbc31e5eb5c15ed37fd2daff4f93223e21"
+    "sha256": "249a65c8fc5accf5214fc3a3aab51eb248cb5fad756d7cd58dddc4849ce6df33"
   },
   {
     "id": "core-heretic-warwolf",
@@ -2307,6 +2483,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Боевой Волк: Штурмовой зверь",
+    "originalCategory": "Бойцы",
     "file": "content/core-heretic-warwolf.md",
     "sha256": "c30c59eba4dab1562004b493c2d235f9ed4facc89c3adffe14d9de17df0672eb"
   },
@@ -2320,6 +2497,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Ведьма-Артиллеристка",
+    "originalCategory": "Бойцы",
     "file": "content/core-heretic-artillery-witch.md",
     "sha256": "f844c7e85e21344b201a9db9998208bd4d9236827cc48778bf5103f90db1b680"
   },
@@ -2333,6 +2511,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Несчастный Легиона Еретиков",
+    "originalCategory": "Бойцы",
     "file": "content/core-heretic-wretch.md",
     "sha256": "57f3278ed050d120d4453d56709c0638f1d2ad061dfd838083eb574fe7900b1d"
   },
@@ -2346,8 +2525,9 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Еретический десантный флот",
+    "originalCategory": "Варианты фракций",
     "file": "content/core-heretic-naval-raiding-party.md",
-    "sha256": "7988af79132a60a3b279adc81191cedd13be2698158964c909b3679d4adb5ce4"
+    "sha256": "f2927faa5c88a271d3f4dcbb3e6f8df565923cc58ef3db0e4f6dcebbddf59f43"
   },
   {
     "id": "core-heretic-trench-ghosts",
@@ -2360,6 +2540,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Призраки окопов",
+    "originalCategory": "Варианты фракций",
     "file": "content/core-heretic-trench-ghosts.md",
     "sha256": "f38a858afc50f69f7d4cc2d94a995a0888223d9d52a8963ec615e139a454f719"
   },
@@ -2373,6 +2554,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Рыцари Алчности",
+    "originalCategory": "Варианты фракций",
     "file": "content/core-heretic-knights-of-avarice.md",
     "sha256": "e1be4f5a3c4e841612406c2d3ef82e13ec820e441d3ab7d7123acbaf8f784fde"
   },
@@ -2386,6 +2568,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Потускневшая броня",
+    "originalCategory": "Снаряжение",
     "file": "content/core-heretic-tarnished-armour.md",
     "sha256": "f5da4df4f9044bb05a07caef7623880fcd075a118f4a9fb74f1f249c03a80f66"
   },
@@ -2399,6 +2582,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Знамя Маммона",
+    "originalCategory": "Снаряжение",
     "file": "content/core-heretic-standard-of-mammon.md",
     "sha256": "3f8a897c515c83d14ce2f5398a8f4fb247aa5687f788573219e3f5a2a8c33d33"
   },
@@ -2412,6 +2596,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Алтарь Золотого Тельца",
+    "originalCategory": "Снаряжение",
     "file": "content/core-heretic-golden-calf-altar.md",
     "sha256": "360667704a57d6ebdb0cfdb8f7ac676b51039531e415092911e08ff53db850e4"
   },
@@ -2425,6 +2610,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Молот с монетой",
+    "originalCategory": "Снаряжение",
     "file": "content/core-heretic-coin-hammer.md",
     "sha256": "1c19cf2ec62ee1170022d40fc042b9fe09ea2c44dc9864a3908e7b3d4930a2ec"
   },
@@ -2438,6 +2624,7 @@
     "category": "faction-heretic",
     "section": "Легион Еретиков",
     "originalSection": "Рыцари Алчности: слова Беры",
+    "originalCategory": "Лор",
     "file": "content/core-heretic-mammon-quote.md",
     "sha256": "e5095a72d9803186ff2060eaadf57b2a3c914aef19d0952a32413ec95984b159"
   },
@@ -2452,6 +2639,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Паломники Траншей: описание",
+    "originalCategory": "Лор",
     "file": "content/core-pilgrim-lore.md",
     "sha256": "3a7bb04e4211aaff6a68bae3a82833d826c17aaa93c20ac2467a047d3949fcad"
   },
@@ -2465,6 +2653,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Паломники Траншей: создание отряда",
+    "originalCategory": "Фракции",
     "file": "content/core-pilgrim-recruitment.md",
     "sha256": "d1782bff546aa98a89eac0892f7fb4e8b0f9225a86b4efd2a03b52a6c06eb19f"
   },
@@ -2478,8 +2667,9 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Арсенал Траншейных Паломников",
+    "originalCategory": "Арсеналы",
     "file": "content/core-pilgrim-arsenal.md",
-    "sha256": "9427834c9a633f4e4ba1d0dd28ae2b8526aad0bd3fdfbb4933b1451353fcfddd"
+    "sha256": "4217a2da30a61cd1373f30a1490a94e730a37da267e25487d77d20d94c4ee1f8"
   },
   {
     "id": "core-pilgrim-special-equipment",
@@ -2491,6 +2681,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Особое снаряжение Паломников",
+    "originalCategory": "Арсеналы",
     "file": "content/core-pilgrim-special-equipment.md",
     "sha256": "971924fa1ff13bf98d320a5b051948a9e1031f5b9f4245641653291f3bee988c"
   },
@@ -2504,6 +2695,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Железный капирот",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-iron-capirote.md",
     "sha256": "f46748021c8b267e82650a5e798a0b619bf1f99390f8f810a7951c335a95c260"
   },
@@ -2517,6 +2709,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Коктейль Молотова",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-molotov.md",
     "sha256": "d18e35f542bba36146c8cb915808db3f74061ec11621c4098793140211f9b0d7"
   },
@@ -2530,6 +2723,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Боевой крест",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-war-cross.md",
     "sha256": "7a90f55366b82a9fe04927d3bfcc4d4ba7cb851b5b4483fd80810731e79d5872"
   },
@@ -2543,6 +2737,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Ружьё-пушка",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-punt-gun.md",
     "sha256": "50d0e9837b2d53c7df202c60aff991481c09298ed8594af373c33bda2682f116"
   },
@@ -2556,6 +2751,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Противотанковый молот",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-antitank-hammer.md",
     "sha256": "d2fd040bbd3b77164509ed1b86fc73a26a0fb7a09c9a924822ab437b1a8c5d28"
   },
@@ -2569,6 +2765,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Пророк войны",
+    "originalCategory": "Бойцы",
     "file": "content/core-pilgrim-war-prophet.md",
     "sha256": "68f52b8d5fc63c05a92b1590c74c2bc2added491cbd322f795f9ec28ca43e815"
   },
@@ -2583,6 +2780,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Каратель",
+    "originalCategory": "Бойцы",
     "file": "content/core-pilgrim-castigator.md",
     "sha256": "b0368899e1f1d95f7e31c2eb6e1b60bdd630cdd7f6449ffaf5b00a3f0f547562"
   },
@@ -2596,6 +2794,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Коммуникант",
+    "originalCategory": "Бойцы",
     "file": "content/core-pilgrim-communicant.md",
     "sha256": "9021b8885587b299130c6d55d233977d385658279032135096a10a2d2fc0d7a0"
   },
@@ -2609,6 +2808,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Траншейный Паломник и Мученик-Покаянник",
+    "originalCategory": "Бойцы",
     "file": "content/core-pilgrim-trooper.md",
     "sha256": "2ec9203d53cf2657ea9c8e622bc6a81fe0432a53deeaf7bb6cb1f68abc05bdd2"
   },
@@ -2623,6 +2823,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Церковные Узники",
+    "originalCategory": "Бойцы",
     "file": "content/core-pilgrim-prisoner.md",
     "sha256": "51893297df7b49dc62656a051ce94ce460ed5b078ff2a6fc7f399aad9f6aecac"
   },
@@ -2636,6 +2837,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Стигматизированные Монахини",
+    "originalCategory": "Бойцы",
     "file": "content/core-pilgrim-stigmatic-nun.md",
     "sha256": "a2419fbe11bae0ca129faba89f81f1bbc6a6102049fbabdbaba901c0bdd31758"
   },
@@ -2649,6 +2851,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Святилище Анахорет",
+    "originalCategory": "Бойцы",
     "file": "content/core-pilgrim-anchorite.md",
     "sha256": "be0a6f613a7820dd3c02ac4220fed22eb8faaea31caef77b1833a95b1f75d1fe"
   },
@@ -2662,6 +2865,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Процессия Священной Муки",
+    "originalCategory": "Варианты фракций",
     "file": "content/core-pilgrim-procession-of-sacred-affliction.md",
     "sha256": "f3f2b195094c314c4772d82bbb4b17158ac470cabe6d0837eac21f64e7fc5216"
   },
@@ -2675,6 +2879,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Доспехи со Святыми Иконами",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-holy-icon-armour.md",
     "sha256": "4abdccb5ae3ef9b003bf8a3d694cc213dfa6322175a0bed9133e089e578c6a9d"
   },
@@ -2688,6 +2893,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Кавалькада Десятой Чумы",
+    "originalCategory": "Варианты фракций",
     "file": "content/core-pilgrim-cavalcade-of-tenth-plague.md",
     "sha256": "9115bf8f52b3b8e4fb5e3d10c37a55c8adb0c99c61eede560686d41c2c37d6c2"
   },
@@ -2701,6 +2907,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Жертвенный Агнец",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-sacrificial-lamb.md",
     "sha256": "44d34269d67561df8318d2fc6754adcff5181393581fd1e4c0abc6f4d926d2e8"
   },
@@ -2714,6 +2921,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Военное Паломничество Святого Мефодия",
+    "originalCategory": "Варианты фракций",
     "file": "content/core-pilgrim-saint-methodius.md",
     "sha256": "bce8998243fe9ecb43aef8207c3763dcf2da866acddfbfe69882465ac08d316f"
   },
@@ -2727,6 +2935,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Тяжёлый огнемёт Анахорета",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-anchorite-heavy-flamethrower.md",
     "sha256": "6707aa9dd20a6f11b03186d8300e09b2dd1681038bb0da7e8689b4acdfd108fa"
   },
@@ -2740,6 +2949,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Противотанковая винтовка Анахорета",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-anchorite-antimateriel-rifle.md",
     "sha256": "32e6d3d12a562a874408227ae4f9334fd5fb5c06f05d0bb64f7910e54995baa1"
   },
@@ -2753,12 +2963,13 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Ружьё-пушка Анахорета",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-anchorite-punt-gun.md",
     "sha256": "ec31219d0312d601a74d69433776dff61c1a582056ea13a1d0e6c167947bd5fc"
   },
   {
     "id": "core-pilgrim-trench-mortar",
-    "title": "Траншейный миномёт",
+    "title": "Траншейный миномёт Анахорета",
     "source": "core",
     "pages": [
       45
@@ -2766,8 +2977,9 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Траншейный миномёт",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-trench-mortar.md",
-    "sha256": "3d9c3f30d29ab8462c82e3476bfa953111395c61e8efca33ebd68f564bd52bbd"
+    "sha256": "6c875fd4936320ff21e4206442241965ec873570b368f58ae7d2ad4b0f6ef916"
   },
   {
     "id": "core-pilgrim-autocannon",
@@ -2779,8 +2991,9 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Автопушка",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-autocannon.md",
-    "sha256": "29ba3e8c7192a15208aee550d0c12fe9bd1510d1ec45097bdd7ca05af3c03cb4"
+    "sha256": "feaab8f96c4a457d86e30ae89820f8d09f93a045069d6a873476ba6e4dfa4ef5"
   },
   {
     "id": "core-pilgrim-gas-censer",
@@ -2792,6 +3005,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Газовая кадильница",
+    "originalCategory": "Снаряжение",
     "file": "content/core-pilgrim-gas-censer.md",
     "sha256": "d5c50a9c01ed5d9b885a7c3a3c34cf94ca49890ec37b7401a23be565707e318b"
   },
@@ -2805,6 +3019,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Особое снаряжение для Анахорета",
+    "originalCategory": "Улучшения",
     "file": "content/core-pilgrim-anchorite-upgrades.md",
     "sha256": "6ede41b583157c4c85be70505525ec4946ff2f4b5ed2980f968ad674a1920b05"
   },
@@ -2818,6 +3033,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Газовые фильтры",
+    "originalCategory": "Улучшения",
     "file": "content/core-pilgrim-gas-filters.md",
     "sha256": "c31266b0e6cf291640bcd0a434295d5a47641eb8c4430049c873f2ed0ab18ba5"
   },
@@ -2831,6 +3047,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Святой дизельный двигатель",
+    "originalCategory": "Улучшения",
     "file": "content/core-pilgrim-holy-diesel-engine.md",
     "sha256": "b6506c7e4f4dfe75df83f5b1f6aa54b0b795056a9205e6589b2149fea35f068c"
   },
@@ -2844,6 +3061,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Священная геометрия",
+    "originalCategory": "Улучшения",
     "file": "content/core-pilgrim-sacred-geometry.md",
     "sha256": "182d3bac3f0010277a8e544977944d651e893143785631f17db3a624e776c860"
   },
@@ -2857,6 +3075,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Великий Анахорет",
+    "originalCategory": "Улучшения",
     "file": "content/core-pilgrim-grand-anchorite.md",
     "sha256": "093237eb33de397b28203a1a718b4a088f7f251da132f785114aac93fc10fe6d"
   },
@@ -2870,6 +3089,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Поршневые ноги",
+    "originalCategory": "Улучшения",
     "file": "content/core-pilgrim-piston-legs.md",
     "sha256": "81292c734036df984043474c0ba2594e647be3b87dcc3694056aedd8bde4927d"
   },
@@ -2883,6 +3103,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Освящённый Отшельник",
+    "originalCategory": "Улучшения",
     "file": "content/core-pilgrim-hallowed-anchorite.md",
     "sha256": "02af8862974ed35bb6e992739aa52551fdb2a138011018a6c0d297c290c279c7"
   },
@@ -2896,6 +3117,7 @@
     "category": "faction-pilgrim",
     "section": "Паломники Траншей",
     "originalSection": "Лик гневного херувима",
+    "originalCategory": "Улучшения",
     "file": "content/core-pilgrim-wrathful-cherub-face.md",
     "sha256": "6131bd962907fa45c8a3281b733c8977bc21409249010680d8feb21778260c6a"
   },
@@ -2909,6 +3131,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Железный Султанат: описание",
+    "originalCategory": "Лор",
     "file": "content/core-sultanate-lore.md",
     "sha256": "452b582640faa58d2054557775e54352fefe1bf02fdf4b93340e273117269425"
   },
@@ -2922,6 +3145,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Железный Султанат: создание отряда",
+    "originalCategory": "Фракции",
     "file": "content/core-sultanate-recruitment.md",
     "sha256": "cf2301d26d59646f2c5f24a4919f1d42f719cc57e4326dc8205bf574d3a72ec5"
   },
@@ -2935,6 +3159,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Арсенал Железного Султаната",
+    "originalCategory": "Арсеналы",
     "file": "content/core-sultanate-arsenal.md",
     "sha256": "a6574860d7939f5d940b3696080fda9f93692801309d2b5a4414952c05daef27"
   },
@@ -2948,6 +3173,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Оружие, броня и снаряжение Султаната",
+    "originalCategory": "Арсеналы",
     "file": "content/core-sultanate-special-equipment.md",
     "sha256": "9920924a347fd5740202efd9deada66a8a4de4a49b2d8a471e5d3423f74226af"
   },
@@ -2961,6 +3187,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Джеззайль",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-jezzail.md",
     "sha256": "6163c1bb0044e27d027762c8071fc19434775263c350fbf8d8842cdc0b949f5b"
   },
@@ -2974,6 +3201,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "МУРАД Бомбарда",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-murad-bombard.md",
     "sha256": "ef4043ee5e711f32815e9ab60ab21b06d0deb4ae453791322c71f4664ad21d87"
   },
@@ -2987,6 +3215,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Огненная пушка",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-flame-cannon.md",
     "sha256": "68a07e471408ddbd985f5a0c2c5f160012209bcd21569641bf39e23188b0bf7f"
   },
@@ -3000,6 +3229,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Титан Зульфикар",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-titan-zulfiqar.md",
     "sha256": "56cb3853394cccc2924fe12284044693cf04fbebc6144b16ed8ebf52f5439b7f"
   },
@@ -3013,6 +3243,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Кинжал ассасина",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-assassins-dagger.md",
     "sha256": "f26d35ebf13f9f54e3bf28c839521a8acc411f4f709c61081d8efc69e7db43c2"
   },
@@ -3026,6 +3257,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Алебарда-пушка",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-halberd-gun.md",
     "sha256": "ddc3a507da7b3ac62d5e926ed910f2aafc6124343970ff851e008a8daecbb66d"
   },
@@ -3039,6 +3271,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Осадный Джеззайль",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-siege-jezzail.md",
     "sha256": "577eec4436222c52a5e0cc57a051b8afe55b1e70d5a969d78b035955e6084918"
   },
@@ -3052,6 +3285,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Алаибозан",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-alaybozan.md",
     "sha256": "d5172318f7761bb13ce3ab5e1f7c85645dc49b9d4e82e0d08422ac668c5cec8c"
   },
@@ -3065,6 +3299,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Алхимический доспех",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-alchemist-armour.md",
     "sha256": "438fe95afcf4eb3ee0ec1d74b2ab489f097bd6a764ca4b66cea5817678106f97"
   },
@@ -3078,6 +3313,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Алхимическое вооружение",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-alchemical-ammunition.md",
     "sha256": "ca64c729158d98699efa84c761c491e5a4d054274b1e3f2da100a62711112d8b"
   },
@@ -3091,6 +3327,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Плащ Аламута",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-cloak-of-alamut.md",
     "sha256": "6f54205d38706848c9a7b3e8e15b70e25fd796ff9a04b49c5fa35b207cebb1d0"
   },
@@ -3104,6 +3341,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Амулет ветров",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-wind-amulet.md",
     "sha256": "7a42383523e1bd75ccd527f5e6bc6b25f6155c91546b018197a59660dfb8d539"
   },
@@ -3117,6 +3355,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Лопата Марида",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-marid-shovel.md",
     "sha256": "c3ce12f584b4f4b97c5dc6f5ff79661d292034eda3f8587e68fa5dc693a6a47f"
   },
@@ -3130,6 +3369,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Капитан Юзбаши",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-yuzbashi.md",
     "sha256": "b3507919553b75a27d8a06a29b943407b4a499066e40fbe63aa97b161793e0dc"
   },
@@ -3144,6 +3384,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Алхимик Джабира",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-jabirean-alchemist.md",
     "sha256": "cf5ecda7262ed05be9ce675f48dc41d0b6e1ac9cfd043d5519d8c55ffd817b8c"
   },
@@ -3157,6 +3398,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Ассасин Султаната",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-assassin.md",
     "sha256": "5c4e7c5609852ac5f5f9b4b0d3edd5d5c1a41750e284a89c4691ef36bf0df567"
   },
@@ -3170,8 +3412,9 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Азебы",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-azeb.md",
-    "sha256": "d5bebdfa129a4262d023b3ebba9102b392e653b6d4257f285237c39f9cae901a"
+    "sha256": "7da5c0d6518aea867fab9200dd62fee22d198e6655f48d9715618623a8e14b74"
   },
   {
     "id": "core-sultanate-sapper",
@@ -3183,6 +3426,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Саперы Султаната",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-sapper.md",
     "sha256": "8d0149af1ee1099b726f16c07fcc3e79214d743f6fc6baa90fa6fb4f07e7f407"
   },
@@ -3196,6 +3440,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Львы Джабира",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-lion.md",
     "sha256": "2ed011114d09bad863c9405c99064694f7613301f620a45e88612af8a8db616f"
   },
@@ -3210,6 +3455,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Янычары",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-janissary.md",
     "sha256": "dd459d28380b96aba7c667cbd227ba3bb838092adf9e51119b5175a24115fb41"
   },
@@ -3223,6 +3469,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Бронзовый Бык",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-brazen-bull.md",
     "sha256": "4e8d7019758361b7b188881be73fbf54570ce5fae6a2d9ad88021d36e75f22ed"
   },
@@ -3236,6 +3483,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Фидаи Аламута – Кабал Ассасинов",
+    "originalCategory": "Варианты фракций",
     "file": "content/core-sultanate-fidai.md",
     "sha256": "f9635d66646475c121653539113990b4f60a749a672e7347a52ea77295e2f151"
   },
@@ -3249,6 +3497,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Галлюциногенный камуфляж",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-hallucinogenic-camouflage.md",
     "sha256": "ffdb63b1c93fb4e2a2598c33ebb0d977ca59d5a10cfa9c7a4fc52d46a9206360"
   },
@@ -3262,6 +3511,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Громовержец Аламута",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-thunderbolt.md",
     "sha256": "420b8e934b1eba0e7197e08e18b6939a44b3b46ac4ffc1c494d47c1043d2a516"
   },
@@ -3275,6 +3525,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Мираж времени",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-time-mirage.md",
     "sha256": "0a59edb046c0d76260719cb4e07e3c9fc0496600a27bf760582bd9ba1fe3f83b"
   },
@@ -3288,6 +3539,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Тайные пути",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-secret-paths.md",
     "sha256": "5184e1c675fbc9834b0bc44d1827c7e7c9e70206df678f2795d6314125cd7f1c"
   },
@@ -3301,6 +3553,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Особое оружие и оборудование Фидаи Аламута",
+    "originalCategory": "Арсеналы",
     "file": "content/core-sultanate-fidai-equipment.md",
     "sha256": "881a365f30dae25bf39d691891d7416a9c5bad18c596381ed1e53f53f9497b36"
   },
@@ -3314,6 +3567,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Золотой Ханджар",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-golden-khanjar.md",
     "sha256": "dc1a97fbc67364b6cabd0e1e0881aab88d564ff829c6d226973e4afef2af5665"
   },
@@ -3327,6 +3581,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Лук Аламута",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-bow-of-alamut.md",
     "sha256": "20a037ac4c41eca587a29fcdf9eb51709d13db38a1d949418da0068e8d905b08"
   },
@@ -3340,6 +3595,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Лист Хашашин",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-hashashin-leaf.md",
     "sha256": "5a895fb34ea7838f20e373cb897a1a930e4dd4e09741613000c0e6519e297216"
   },
@@ -3353,8 +3609,9 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Дом Мудрости",
+    "originalCategory": "Варианты фракций",
     "file": "content/core-sultanate-house-of-wisdom.md",
-    "sha256": "9205a75d2faac333b96f3964813d89c81f5d192886ec3e6d5d30e672560d4d43"
+    "sha256": "3404bfb5395802c34871fe024e245173911b4ef5490c36a176ef4abd9bae9fda"
   },
   {
     "id": "core-sultanate-house-secrets",
@@ -3366,6 +3623,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Тайны Дома Мудрости",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-house-secrets.md",
     "sha256": "ed4268a6914f229e0be61f586304fcb7b837ed862d9e4ef81e84d7d9c7251bc5"
   },
@@ -3379,6 +3637,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Медицина",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-medicine.md",
     "sha256": "a4fded4c7f6e1ecd34f10ca2a399e966b23e2eae6e7f750647a70e3fd715aca2"
   },
@@ -3392,6 +3651,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Картография и геометрия",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-cartography-geometry.md",
     "sha256": "ff3c5f7d9bdb0196de675df6c9002b9fbd4e83f0fccff3b964a4bd9642ed2e0e"
   },
@@ -3405,6 +3665,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Тайны Таквин",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-secrets-of-takwin.md",
     "sha256": "ba1dd82a41d06f58203287e8fcdc44687d0ad381e8b3a75ef81f7c9b9e283498"
   },
@@ -3418,6 +3679,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Химия и алхимия",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-chemistry-alchemy.md",
     "sha256": "86206d3792c7e2a3384066e8105da16bac34aa76a985685cbe3e5479078b55e8"
   },
@@ -3431,6 +3693,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Философия, поэзия и теология",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-philosophy-poetry-theology.md",
     "sha256": "0525e4003e3682dfdce691bd39bab83040ef0e986bfffaee29172db4edf4acd1"
   },
@@ -3444,6 +3707,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Существа Таквин: связь с Алхимиком",
+    "originalCategory": "Создание отряда",
     "file": "content/core-sultanate-takwin-recruitment.md",
     "sha256": "e54ca8681dc61ef6dbcc5e34154f238558cc4f569208de6d920eba70a186a603"
   },
@@ -3457,6 +3721,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Гомункул Таквин",
+    "originalCategory": "Бойцы",
     "file": "content/core-sultanate-homunculus.md",
     "sha256": "f31cf48a90f5b5773ed05720cfa9ba6ad467f11ddbc5b95b99389966a0d61303"
   },
@@ -3470,6 +3735,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Алхимические формулы: приобретение",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-alchemical-formulas.md",
     "sha256": "d680711341283cbe8d0c887adf6f66435d3d9358bf95727f02c407b8448db6bf"
   },
@@ -3483,6 +3749,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Крылья",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-wings.md",
     "sha256": "5cabd4b2987d5b1d8b06552b2c857bea990c4b3e68836cedd034888bff86c813"
   },
@@ -3496,6 +3763,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Элементальная устойчивость",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-elemental-resistance.md",
     "sha256": "4f5346ad2cffef3496f355378338f13c14322e9af0dd5a9506a90f5b50d1c0bb"
   },
@@ -3509,6 +3777,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Массивный размер",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-massive-size.md",
     "sha256": "720bde12197d2378957b74776f9e95a74514cc77e1d4a607ff853f0fe60ffd42"
   },
@@ -3522,6 +3791,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Порабощенный разум",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-enslaved-mind.md",
     "sha256": "b63da7cfea6866b9b598d6e26c044d9f2cb408e0c503510b91ef113476ba6657"
   },
@@ -3535,6 +3805,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Человеческие руки",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-human-hands.md",
     "sha256": "2e9356ed47aec81305dd4252f505b0c8b7f8d0eace660b244532f96589c1a28d"
   },
@@ -3548,6 +3819,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Нечеловеческая сила",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-inhuman-strength.md",
     "sha256": "05cb3ad96a1bbe722e3f89ca429b16dc5b60ddcb2b5fa887a912868cf124ee1b"
   },
@@ -3561,6 +3833,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Устрашающий вид",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-terrifying-appearance.md",
     "sha256": "d1c4edfc2094654670ca771f4597348a32ba7dd08d0bd88eef5c082b32eb2b6f"
   },
@@ -3574,6 +3847,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Дополнительная рука",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-additional-arm.md",
     "sha256": "39f48813dc1e27d2fe353e9cc27ae7c66439baca2541a978a531d1198cd5744b"
   },
@@ -3587,6 +3861,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Две головы",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-two-heads.md",
     "sha256": "f0a4dc17742052bc75da8587ab5533da2e6610487f5330bd05e7837be9fb041b"
   },
@@ -3600,6 +3875,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Гипнотические глаза",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-hypnotic-eyes.md",
     "sha256": "60300dfeb47d7d48c1e83a3bbf03391e9f3d7a2a8459c51e1ec2001b9dad356b"
   },
@@ -3613,6 +3889,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Орлиные глаза",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-hawk-eyes.md",
     "sha256": "9101678b94e0055307ad355c2cbe1f76003b82417693c6f6480e0761ca8255c8"
   },
@@ -3626,6 +3903,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Ошеломляющая скорость",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-startling-speed.md",
     "sha256": "55a70544b71f5b274b32334c28a1c790fad022bde8cef3b41dcbcac44d52c63e"
   },
@@ -3639,6 +3917,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Печать Соломона",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-seal-of-solomon.md",
     "sha256": "34fab011faef80ff2fa106354e8ea858cc8e5ab6bcca6e3e8fb2017d7103b488"
   },
@@ -3652,6 +3931,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Гигантский размер",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-gargantuan-size.md",
     "sha256": "fa5d063154de3f57ee5aaf84263b52fa19914e334d2d0ad2a69a28bdcbb4795d"
   },
@@ -3665,6 +3945,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Регенеративная ткань",
+    "originalCategory": "Улучшения",
     "file": "content/core-sultanate-formula-regenerative-tissue.md",
     "sha256": "e12f8b117f2f163d490f26d8bc55f834d9b733a651c26de50ee82304d77759fb"
   },
@@ -3678,6 +3959,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Специальный арсенал Дома Мудрости",
+    "originalCategory": "Арсеналы",
     "file": "content/core-sultanate-house-arsenal.md",
     "sha256": "53e5759f7e952f71e3a3b030db7249e53a83c6e14e5e235f429eecec59e08c05"
   },
@@ -3691,6 +3973,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Эликсир Аль-Хидр",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-elixir.md",
     "sha256": "2444a06321fdc84ad7eee7f724b1bf517d0d1577713b93b439b5a8f88ec08bf8"
   },
@@ -3704,6 +3987,7 @@
     "category": "faction-sultanate",
     "section": "Железный Султанат",
     "originalSection": "Огненный щит",
+    "originalCategory": "Снаряжение",
     "file": "content/core-sultanate-fire-shield.md",
     "sha256": "9ca0dc3cdee14bea0e427e22d7ce36de9d0c4c8e01675048eca53c82ebd12e03"
   },
@@ -3718,6 +4002,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Новое Антиохийское Княжество — история",
+    "originalCategory": "lore",
     "file": "content/core-antioch-lore.md",
     "sha256": "ecfd5afc49dc61f0c4207922a94f30418942b796a04cd837361c881cb0c0ee00"
   },
@@ -3731,6 +4016,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Клятва Новой Антиохии",
+    "originalCategory": "lore",
     "file": "content/core-antioch-oath.md",
     "sha256": "7ce6a87c1e6f8d7622f3df7c9c05d6fa18c6e224f1186839e3f650c8ed2fb8f9"
   },
@@ -3744,6 +4030,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Создание отряда Новой Антиохии",
+    "originalCategory": "factions",
     "file": "content/core-antioch-recruitment.md",
     "sha256": "5a78ecb5307eed9f4997e3fe49f48af28cfd215fb13f8e952d7d1511700419ec"
   },
@@ -3757,6 +4044,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Боевые группы Новой Антиохии",
+    "originalCategory": "factions",
     "file": "content/core-antioch-fireteams.md",
     "sha256": "ad0aadc57c60ea7175a2a9d512f7a5195859165069eb232b5bf960845b2a34d6"
   },
@@ -3770,6 +4058,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Арсенал Новой Антиохии",
+    "originalCategory": "arsenal",
     "file": "content/core-antioch-arsenal.md",
     "sha256": "e299d41e0d323b8457c2e315658cf4ef9f7ab23ef5779c4a680e05cb77a48d80"
   },
@@ -3783,8 +4072,9 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Лейтенант",
+    "originalCategory": "units",
     "file": "content/core-antioch-lieutenant.md",
-    "sha256": "82454403c3f6cac87337010dd66dee80e0bfcafb876573540594c018e683ff35"
+    "sha256": "9a9a825c844af462dc9984701417c166b604fc8ddcd5ea2d9ce6d97e34d69f1b"
   },
   {
     "id": "core-antioch-cleric",
@@ -3796,6 +4086,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Окопный клирик",
+    "originalCategory": "units",
     "file": "content/core-antioch-cleric.md",
     "sha256": "d138d092cb1ee5db6bb89ea512f2a1c3f41240f8427e01f958424719ee5b9458"
   },
@@ -3809,6 +4100,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Снайпер-священник",
+    "originalCategory": "units",
     "file": "content/core-antioch-sniper.md",
     "sha256": "59d7ef7ee880a712ec34e30d98e721f7144a463e869644266810e0e3bce4a9fc"
   },
@@ -3822,8 +4114,9 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Йомен и Окопный Крот",
+    "originalCategory": "units",
     "file": "content/core-antioch-yeoman.md",
-    "sha256": "dc6a755ab1170a948bbce2de25880d9fc2664ae8abbb3c50d91b90e82b008f19"
+    "sha256": "b825ddbf61cb2d6006df441783051adb82b5910737fb1e68a158a24becc1d8b4"
   },
   {
     "id": "core-antioch-shocktrooper",
@@ -3835,6 +4128,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Штурмовики",
+    "originalCategory": "units",
     "file": "content/core-antioch-shocktrooper.md",
     "sha256": "a83a509c0592340fe80ea9f18ba2a2b75a970f33233a23e1a92012ed893b641a"
   },
@@ -3848,6 +4142,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Боевые инженеры",
+    "originalCategory": "units",
     "file": "content/core-antioch-engineer.md",
     "sha256": "5ebd43782ebffd36d4d120adce36de21c05e96111f0c392f6a02b4d4a09778da"
   },
@@ -3862,6 +4157,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Механизированная тяжелая пехота",
+    "originalCategory": "units",
     "file": "content/core-antioch-mechanized.md",
     "sha256": "813db4d22ce3a2d6bda4bc5c67e50f0e597575aa2fa065b442e12da6cc8888be"
   },
@@ -3875,6 +4171,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Боевой медик Новой Антиохии",
+    "originalCategory": "units",
     "file": "content/core-antioch-medic.md",
     "sha256": "386ccfe015f3b6803dea319149626ed23d630b27cceca39220405049503fa2ba"
   },
@@ -3888,6 +4185,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Силы вмешательства Папских государств",
+    "originalCategory": "variants",
     "file": "content/core-antioch-papal.md",
     "sha256": "77288dc86faf4785a064f47ac11da099533d86f5990c57e1a1a8a05b53f686c1"
   },
@@ -3902,6 +4200,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Рейнджеры Эйре",
+    "originalCategory": "variants",
     "file": "content/core-antioch-eire.md",
     "sha256": "ec2c46d333de4015a41c6dd66b3870f30a30e9ab9a8c777376f6776fcddd2b11"
   },
@@ -3915,6 +4214,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Штурмовики Свободного Государства Пруссия",
+    "originalCategory": "variants",
     "file": "content/core-antioch-prussia.md",
     "sha256": "6a33fdc55f9b19c8efc1374f14d854b416fb03253de65c37cfcccd87c8e4070e"
   },
@@ -3928,6 +4228,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Меч-противотанковый",
+    "originalCategory": "equipment",
     "file": "content/core-prussia-tank-splitter.md",
     "sha256": "496795950270a5599bb70df9ac6f6a25c14b41e27d71dae1ad895c5a507f91fa"
   },
@@ -3941,6 +4242,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Штурмовой Отряд Королевства Альба",
+    "originalCategory": "variants",
     "file": "content/core-antioch-alba.md",
     "sha256": "d34cea202d966dc43b56b9541a83598ddccaf8f814b38b145b7d0acc6929a381"
   },
@@ -3954,6 +4256,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Лохаберский топор",
+    "originalCategory": "equipment",
     "file": "content/core-alba-lochaber-axe.md",
     "sha256": "29d5502e5ca429ea0bd29c2c412f954606b6bc24aa934b3b1bb09f6d73dee167"
   },
@@ -3967,6 +4270,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Экспедиционные Силы Абиссинии — история",
+    "originalCategory": "lore",
     "file": "content/core-antioch-abyssinia-lore.md",
     "sha256": "665e4ab44d2a09c5d7a7e5485cd1673e49f4371e474f606b4889cb43080abfb6"
   },
@@ -3980,6 +4284,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Экспедиционные Силы Абиссинии",
+    "originalCategory": "variants",
     "file": "content/core-antioch-abyssinia.md",
     "sha256": "a6d2aaff9503f95704dd6aabbfc5baf69ce9c0210f5b711269ebd06d87980159"
   },
@@ -3993,6 +4298,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Шотель",
+    "originalCategory": "equipment",
     "file": "content/core-abyssinia-shotel.md",
     "sha256": "e7cf26080694edc20f5825f39e0452228d610ab1ddf384a2a2fb996b0963c34b"
   },
@@ -4006,6 +4312,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Святая вода Лалибелы",
+    "originalCategory": "equipment",
     "file": "content/core-abyssinia-holy-water.md",
     "sha256": "7209d3ca61be5163a2cc791e09145c5d1ce76feeb51b0b800935a39c302b2767"
   },
@@ -4019,6 +4326,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Анфарро (Военная корона)",
+    "originalCategory": "equipment",
     "file": "content/core-abyssinia-anfarro.md",
     "sha256": "527c8f566107b6749b4c985eb7ff6a0387fec9a159ad0dbe25cfc2662e480c89"
   },
@@ -4032,6 +4340,7 @@
     "category": "faction-antioch",
     "section": "Новое Антиохийское Княжество",
     "originalSection": "Табот",
+    "originalCategory": "equipment",
     "file": "content/core-abyssinia-tabot.md",
     "sha256": "14d3767e06aca4407f3ed82628518afd3d1d2073ba6f010c4cd2ee3180e7715e"
   },
@@ -4045,6 +4354,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Культ Черного Грааля — история",
+    "originalCategory": "lore",
     "file": "content/core-grail-lore.md",
     "sha256": "5ad40b2681d90b183215556184b0743d81758e4eda6ac0ad08ba2457cc595ddf"
   },
@@ -4058,6 +4368,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Особые правила и создание отряда Черного Грааля",
+    "originalCategory": "factions",
     "file": "content/core-grail-special.md",
     "sha256": "7ee2e3e943519755b87f1f4b651ecb84692b3913e49a91125d5497b7769f19ca"
   },
@@ -4071,6 +4382,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Арсенал Черного Грааля",
+    "originalCategory": "arsenal",
     "file": "content/core-grail-arsenal.md",
     "sha256": "c01fe3801446249b8a4c27db0941141112299f50f94d0f215b502f83485193ef"
   },
@@ -4084,6 +4396,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Зараженная винтовка",
+    "originalCategory": "equipment",
     "file": "content/core-grail-infested-rifle.md",
     "sha256": "4b696f49db4954ede5d90a3a12ea674056c7d5d29912a40c05528ed6dfda0038"
   },
@@ -4097,6 +4410,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Извергающий заразу",
+    "originalCategory": "equipment",
     "file": "content/core-grail-corruption-belcher.md",
     "sha256": "644c12986b9ec03eb3d954da5b1ee4d2a2d2abf36f5daf999d5f2a6cbf040761"
   },
@@ -4110,6 +4424,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Гнилостный дробовик",
+    "originalCategory": "equipment",
     "file": "content/core-grail-putrid-shotgun.md",
     "sha256": "cb577df01624beae23f3a50939d7bba8910c4005aee78f8f40a8827cda037d5f"
   },
@@ -4123,6 +4438,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Пушка Гнили (Пушка внутренностей)",
+    "originalCategory": "equipment",
     "file": "content/core-grail-viscera-cannon.md",
     "sha256": "8f34ba69d406a3d61068ee8e02384c850a4429a9a6b582c18b8aaa21b4679a79"
   },
@@ -4136,6 +4452,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Чумной клинок",
+    "originalCategory": "equipment",
     "file": "content/core-grail-plague-blade.md",
     "sha256": "8d2d62582c2ac4766541af778fc9635c709e7183efbcb8f90a8ca7a76bde439c"
   },
@@ -4149,6 +4466,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Топор Вельзевула",
+    "originalCategory": "equipment",
     "file": "content/core-grail-beelzebubs-axe.md",
     "sha256": "13fb457c87c7bb5189166bcc35bccbd6fc68d8901138f60edc20825a38b4efa4"
   },
@@ -4162,6 +4480,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Щит Черного Грааля",
+    "originalCategory": "equipment",
     "file": "content/core-grail-black-grail-shield.md",
     "sha256": "c4043911a65c6ae6cf0602279f1056f962e778835603e076a35ceb134a3fd4b1"
   },
@@ -4175,6 +4494,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Паразитические гранаты",
+    "originalCategory": "equipment",
     "file": "content/core-grail-parasite-grenades.md",
     "sha256": "cf3880a9cb8a2a804a6698d602a0119b3fb102f92b77e7bf1d3fb34582c8d70e"
   },
@@ -4188,6 +4508,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Шлем Составных Глаз",
+    "originalCategory": "equipment",
     "file": "content/core-grail-compound-eyes-helmet.md",
     "sha256": "b4bbe1288abee40ca595cf7e96faf88010cb0d3bc33cd65161022420276e64be"
   },
@@ -4201,6 +4522,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Приверженец Грааля",
+    "originalCategory": "equipment",
     "file": "content/core-grail-grail-devotee.md",
     "sha256": "aa135076a05f93f2f4c33adaf675205c8e584beb244bdd28f528c79765cb63b2"
   },
@@ -4214,6 +4536,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Орден Мухи — иерархия дворян",
+    "originalCategory": "factions",
     "file": "content/core-grail-hierarchy.md",
     "sha256": "fb6130701013354763354f65b823523fbd149b9303a3ea8ca1ed0968e2e39f5a"
   },
@@ -4227,8 +4550,9 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Повелитель Опухолей",
+    "originalCategory": "units",
     "file": "content/core-grail-lord.md",
-    "sha256": "8db9ec011acb9578bce7875a43afb113fe2238b8bd550e5ce0ff29e5583dfe95"
+    "sha256": "040aeefd1dc70579651734900c2ed708a71046103de324ce6718d318dabcf98b"
   },
   {
     "id": "core-grail-plague-knight",
@@ -4240,6 +4564,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Чумной Рыцарь",
+    "originalCategory": "units",
     "file": "content/core-grail-plague-knight.md",
     "sha256": "35de0feeb9a5f93a8c0c8cb638e4438baab1078ddb4400b6415c5a44cf938f2d"
   },
@@ -4253,6 +4578,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Страж Трупов",
+    "originalCategory": "units",
     "file": "content/core-grail-corpse-guard.md",
     "sha256": "5cdf39d698da635319bcad625f88a124b05744c3a86f3f167e89c28191d9969c"
   },
@@ -4267,6 +4593,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Гончие Чёрного Грааля",
+    "originalCategory": "units",
     "file": "content/core-grail-hounds.md",
     "sha256": "e01cfd3cd81a5f4cee42b832e306a4185af2f1e993224b539ebe830de15a8a2d"
   },
@@ -4280,6 +4607,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Прислужник Грааля/Мух",
+    "originalCategory": "units",
     "file": "content/core-grail-thralls.md",
     "sha256": "3fd3189ed66812e8245df9f19dd6cd3008629544806e83ac90ebbefc1034983d"
   },
@@ -4293,6 +4621,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Глашатаи Вельзевула",
+    "originalCategory": "units",
     "file": "content/core-grail-herald.md",
     "sha256": "4db345addae03ca1a0e00d88df9efb688739ae664eec7efccf7429dcd4483f0a"
   },
@@ -4306,6 +4635,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Амальгама",
+    "originalCategory": "units",
     "file": "content/core-grail-amalgam.md",
     "sha256": "8adf8f8f37fe120dd38557616c1f1622692776984ca5b4241c626b7b4690293e"
   },
@@ -4320,6 +4650,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Песнь скорби Великого Гегемона",
+    "originalCategory": "variants",
     "file": "content/core-grail-dirge.md",
     "sha256": "e8cc4af9f7b31156b80dddfcaa818c5f5a82a87c2dcc7ebe34f78b2aa4be8932"
   },
@@ -4333,6 +4664,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Разрушенная корона",
+    "originalCategory": "equipment",
     "file": "content/core-dirge-broken-crown.md",
     "sha256": "29901f98ee2ded7fa227df0bdc1654efb1fbca6f86675af14fdfc55292e09d6a"
   },
@@ -4346,6 +4678,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Урна горьких пепелов",
+    "originalCategory": "equipment",
     "file": "content/core-dirge-bitter-ashes.md",
     "sha256": "bddb229267cdf8bad4f523611fa5db94d20f56e54f9df869305072614decf89d"
   },
@@ -4359,6 +4692,7 @@
     "category": "faction-grail",
     "section": "Культ Черного Грааля",
     "originalSection": "Мушкетон",
+    "originalCategory": "equipment",
     "file": "content/core-dirge-blunderbuss.md",
     "sha256": "d57585082e56e6c75c004d4d99bae94b86cd7a81e9d0aa4d828d213b912dd39f"
   },
@@ -4373,6 +4707,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Двор Семиглавого Змея — история",
+    "originalCategory": "lore",
     "file": "content/core-court-lore.md",
     "sha256": "0356d78566cde122999d5b9487155f11278de552001dd040aec2495dbd97210e"
   },
@@ -4386,6 +4721,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Создание отряда Двора и Семь Смертных Грехов",
+    "originalCategory": "factions",
     "file": "content/core-court-recruitment.md",
     "sha256": "5bf0938263ee9f86fe71cf9675da42108836a6c8d196b4ad3371c69e1ea6f872"
   },
@@ -4399,6 +4735,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Арсенал Двора",
+    "originalCategory": "arsenal",
     "file": "content/core-court-arsenal.md",
     "sha256": "ecd3c44c79b814858732e54161cd5ff2ceab470262c4cd9661f750e2881896d7"
   },
@@ -4412,6 +4749,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Аркебуза",
+    "originalCategory": "equipment",
     "file": "content/core-court-arquebus.md",
     "sha256": "327859d3bf83b64fc9c04b1feadc7ebd4b665f06b847406f3cc36d00900a4c28"
   },
@@ -4425,6 +4763,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Змееустая Винтовка",
+    "originalCategory": "equipment",
     "file": "content/core-court-ophidian-rifle.md",
     "sha256": "03311cdc7d4369b582f710ba286438cf3ecba2f8c2cd9d7ac1361cd7b856004e"
   },
@@ -4438,6 +4777,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Змеиная Громпушка (Штурмовая змея)",
+    "originalCategory": "equipment",
     "file": "content/core-court-serpent-assault-gun.md",
     "sha256": "4353dc520932d97048398012c447dd0bce3ebb63b017ba8347ef93d110011596"
   },
@@ -4451,6 +4791,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Лук Леты",
+    "originalCategory": "equipment",
     "file": "content/core-court-bow-of-lethe.md",
     "sha256": "82cfc770f3ae6a77ac826cd5c2d87cd2df8e32ecd13f8c627898d4f756768444"
   },
@@ -4464,6 +4805,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Орудие пыток",
+    "originalCategory": "equipment",
     "file": "content/core-court-torture-instrument.md",
     "sha256": "ff37b476ddf439805569c1964036d43f6f611db629bf023377bc1a09788e6537"
   },
@@ -4477,6 +4819,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Адский клинок",
+    "originalCategory": "equipment",
     "file": "content/core-court-hellblade.md",
     "sha256": "d6732667e947b85f372d22dc4fcab55f12d07c7a1ae28c8a65ef1a69b6633568"
   },
@@ -4490,6 +4833,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Головорез",
+    "originalCategory": "equipment",
     "file": "content/core-court-head-taker.md",
     "sha256": "7a546a987dc19003435453ebf4b00f0487e543b2cc167b6eadca5524352e32c8"
   },
@@ -4503,6 +4847,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Меч Малебранче",
+    "originalCategory": "equipment",
     "file": "content/core-court-malebranche-sword.md",
     "sha256": "9b8af801167f81b8d9bbb6df0d58c181462a0bfc8de4a1811957113770e653ef"
   },
@@ -4516,6 +4861,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Корона Адского Пламени",
+    "originalCategory": "equipment",
     "file": "content/core-court-crown-hellfire.md",
     "sha256": "0a48c0849e42a96c9e4ca5ff6c00fc09115caaaeabe7ccb6273414ceadf099c8"
   },
@@ -4529,6 +4875,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Адский Железный Доспех",
+    "originalCategory": "equipment",
     "file": "content/core-court-infernal-iron.md",
     "sha256": "41e511eddb8c175cb61b4162308912c2ceca8e0bc32dd8fbb30f4579edf0b7d0"
   },
@@ -4542,6 +4889,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Узда Подчинения",
+    "originalCategory": "equipment",
     "file": "content/core-court-restraining-muzzle.md",
     "sha256": "d318cca4dde6ea9a39e3c906140e955d0a7a338c63885a58d078e4d100633d7d"
   },
@@ -4555,6 +4903,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Гоэтические Силы — общие правила",
+    "originalCategory": "abilities",
     "file": "content/core-court-goetic.md",
     "sha256": "bfda0c5175296ce3f063442d51e1b3c637c4943f5586118bfacc0e98817f098f"
   },
@@ -4568,6 +4917,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Пылающий Ад (Burning Inferno)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-burning-inferno.md",
     "sha256": "d40d2155554b0fbc1ab4989aec1f813f10b95e40adc58f0fe476fc53a65fe5f7"
   },
@@ -4581,6 +4931,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Повелитель Рабов (Slavemaster)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-slavemaster.md",
     "sha256": "33b2781b1f0157313f93d5572a530ca231f338815b16b3bdc575c1266439ea33"
   },
@@ -4594,6 +4945,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Яростный Натиск (Charge of Hatred)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-charge-hatred.md",
     "sha256": "96c59c6f0c9decebebfbaa66370788b18705a320026ac678753aa44ccd7e69d8"
   },
@@ -4607,6 +4959,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Малая Метка Каина (Lesser Mark of Cain)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-lesser-mark-cain.md",
     "sha256": "8614c83c565f706a880332fa12e557f3e32f4a439e42e700df99e662a1b28000"
   },
@@ -4620,6 +4973,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Слепая Ярость (Blind Rage)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-blind-rage.md",
     "sha256": "fb7fdd45a1642702f77712cbcbef74b26afe0361fecd6420c445bb60b1f49f4d"
   },
@@ -4633,6 +4987,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Завистливые Глаза (Envious Eyes)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-envious-eyes.md",
     "sha256": "1166f196a773d76d18c95e45e5c0c6bab8d8112631bdf5bbd21964918e4886a9"
   },
@@ -4646,6 +5001,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Вожделенное Место (Coveted Position)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-coveted-position.md",
     "sha256": "37a8d663b76e3efa4b6c66ebfc323cd9278d9dbb7dad06124dc7720fa9e4840f"
   },
@@ -4659,6 +5015,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Всё Твоё — Моё (What is Yours is Mine)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-yours-mine.md",
     "sha256": "6195bb61e6cf38bc17a4346c04f3167a3d290350901ee96ce3067bf29e8044eb"
   },
@@ -4672,6 +5029,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Запретные Наслаждения (Forbidden Pleasures)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-forbidden-pleasures.md",
     "sha256": "735d2e22c13ba26cbbe7013bcddff9ee70dcdbe96f7560fab4d4efe8e95190b5"
   },
@@ -4685,6 +5043,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Изысканная Боль (Exquisite Pain)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-exquisite-pain.md",
     "sha256": "6f03a8aa2089a738e61af58aee95ae62be0f8eb48b99b5ff120fc68d9ae31d1f"
   },
@@ -4698,6 +5057,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Зов Плоти (Call of Flesh)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-call-flesh.md",
     "sha256": "840dcbff1aaf18e3a6e737738689595d0ec21c4d4093293ac68148d99c3b6db8"
   },
@@ -4711,6 +5071,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Гордая Непокорность (Proud Defiance)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-proud-defiance.md",
     "sha256": "dec9b4913375f5da64d2c1d818b745195e816239175823eeae0da99982b5945a"
   },
@@ -4724,6 +5085,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Слишком Горд, чтобы Пасть (Too Proud to Fall)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-too-proud-fall.md",
     "sha256": "4ec2638847293c48c6a4e5f4c92bb9561790e6cb391783384f264d957487a8a6"
   },
@@ -4737,6 +5099,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Свет Самаэля (Light of Samael)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-light-samael.md",
     "sha256": "3a5c78a6134eb201387c04fcc6a427603b0d05188ce3c90a5f751c5494ca67d7"
   },
@@ -4750,6 +5113,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Морфеев Разум (Morphean Mind)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-morphean-mind.md",
     "sha256": "aba38432d1310c90a301bd5a235eba2b356479a2587e8ecc11760f47e2915e7d"
   },
@@ -4763,6 +5127,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Чары Ацедии (Charm of Acedia)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-charm-acedia.md",
     "sha256": "d865521a324c7838806d06d5f6944a0db2dc146df05839fbb934d8d164452d2a"
   },
@@ -4776,6 +5141,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Даймониум Меридианум (Daemonium Meridianum)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-daemonium-meridianum.md",
     "sha256": "13388b0537345a745f9df807e90837244e978d667962499b0a6c6ed79899f5dc"
   },
@@ -4789,6 +5155,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Чрево Зверя (Belly of the Beast)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-belly-beast.md",
     "sha256": "7d010251074e899244a6d676123a3b7302f7fafae839b9252df7145835bd218a"
   },
@@ -4802,6 +5169,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Ненасытное Обжорство (Uncaring Gluttony)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-uncaring-gluttony.md",
     "sha256": "eba33a1240142569c3488cc6d8e662a01ee0ec56ca3355312d01975254fab27e"
   },
@@ -4815,6 +5183,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Пожиратель Плоти (Eater of the Flesh)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-eater-flesh.md",
     "sha256": "7b65b7eea81a79475669f3548677c5ba48160fa3ede242e6d51bba61b9f5543a"
   },
@@ -4828,6 +5197,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Золотое Тело (Body of Gold)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-body-gold.md",
     "sha256": "504d0d0381d49ceb84ad6502c22183fd6e5bf252f87569c0c502937005f5b962"
   },
@@ -4841,6 +5211,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Чёрное Сердце (Black Heart)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-black-heart.md",
     "sha256": "7c7cd692579b4025aae4623e1faeae98b3fa83b6f8e6bd4fd30c07c7de249f6a"
   },
@@ -4854,6 +5225,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Всеобщая Алчность (Universal Greed)",
+    "originalCategory": "abilities",
     "file": "content/core-court-power-universal-greed.md",
     "sha256": "0b7ce5c2168bda91bc444b498da5680769d7f4964b3e4bde2333abe51fc08a16"
   },
@@ -4867,6 +5239,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Знатные Дворяне — выбор лидера",
+    "originalCategory": "factions",
     "file": "content/core-court-leadership.md",
     "sha256": "1ef85a2f0012631b18e8414c12a03618e04bb2e2a72da3e4309826a9218c57e8"
   },
@@ -4880,6 +5253,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Претор",
+    "originalCategory": "units",
     "file": "content/core-court-praetor.md",
     "sha256": "0631ec1c7f89ff4d4b56582a3341e320a1ec496a50a513d3db079fb2213c7dcb"
   },
@@ -4893,6 +5267,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Колдун",
+    "originalCategory": "units",
     "file": "content/core-court-sorcerer.md",
     "sha256": "771be0c74f24531c88a6fe65859bedc80b2950e79f71c1481850fe899883abff"
   },
@@ -4906,6 +5281,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Охотник Левого Пути",
+    "originalCategory": "units",
     "file": "content/core-court-hunter.md",
     "sha256": "569627e8239e336b9c25a795679ac1b5e5cc45b736c8b32694ab72c59abfed33"
   },
@@ -4919,6 +5295,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Адский Рыцарь",
+    "originalCategory": "units",
     "file": "content/core-court-hell-knight.md",
     "sha256": "405915322e75203f191d3a9213ca281fedab49937fc1cbead0fd4456380701b3"
   },
@@ -4932,6 +5309,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Иго-Демон",
+    "originalCategory": "units",
     "file": "content/core-court-yoke-fiend.md",
     "sha256": "0b294f244c43a57d8ef439a0553c171eb0e46f61594d476250313a38acb38302"
   },
@@ -4946,6 +5324,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Несчастные",
+    "originalCategory": "units",
     "file": "content/core-court-wretched.md",
     "sha256": "436507c019a291f07817ee0fa22a70e3520be07a2b27f5693412e9989a6e3d29"
   },
@@ -4959,6 +5338,7 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Ямовая саранча",
+    "originalCategory": "units",
     "file": "content/core-court-pit-locust.md",
     "sha256": "f3342c868bd2ef5f46774c4b324e66a9df5ad8c4de1cdfec1364492c471a2f67"
   },
@@ -4972,7 +5352,38 @@
     "category": "faction-court",
     "section": "Двор Семиглавого Змея",
     "originalSection": "Оскверненный Святой",
+    "originalCategory": "units",
     "file": "content/core-court-desecrated-saint.md",
     "sha256": "067eb25212d77097bf21b21731f5c2b57ed551daa3207465d3730139dc1c14e7"
+  },
+  {
+    "id": "core-item-trench-mortar",
+    "title": "Траншейный миномёт",
+    "source": "core",
+    "pages": [
+      45
+    ],
+    "category": "weapons",
+    "section": "Оружие",
+    "originalSection": "Траншейный миномёт",
+    "originalCategory": "Дальнобойное оружие",
+    "file": "content/core-item-trench-mortar.md",
+    "sha256": "1f639e3b17b4b05e813134b4f9e5c9951ee40e16563f2a56d76ec23e38ed4826"
+  },
+  {
+    "id": "core-keyword-risky",
+    "title": "RISKY",
+    "source": "core",
+    "pages": [
+      13,
+      121,
+      125
+    ],
+    "category": "keywords",
+    "section": "Ключевые слова",
+    "originalSection": "RISKY ACTION",
+    "originalCategory": "Ключевые слова",
+    "file": "content/core-keyword-risky.md",
+    "sha256": "d68ccc996a89f8a3b6700451b2830015c30aa6c975f47ba533b21364773ffc10"
   }
 ]

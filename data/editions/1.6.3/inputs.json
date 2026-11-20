@@ -9,5 +9,6 @@
   "reconstruction/1.6.3/reviews/factions-last-review.json": "684c3347022538c74079d2859e7d854d3fddd95e1495c6dc8b8f2ad0e06b31f0",
   "reconstruction/1.6.3/manifest.json": "f45b1aff70fd3858e530756ea0bfe4d78cec93267c5ffb44c0cfc0b66245cc0b",
   "reconstruction/1.6.3/links.json": "87ac42a51911492b4dd28647369c9e887af6f70731f7c0026a038f1eeb7a7e9a",
-  "reconstruction/1.6.3/integration-issues.json": "583c428d360c15a54c97209db6335114aa20761ea90427e6b1e2c67d0f0723be"
+  "reconstruction/1.6.3/integration-issues.json": "583c428d360c15a54c97209db6335114aa20761ea90427e6b1e2c67d0f0723be",
+  "scripts/rules-errata.ts": "1b6f4086781a5abad9135d0d73ef36ad11820230277ad8754d1f277c450e2430"
 }

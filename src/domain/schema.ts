@@ -231,6 +231,8 @@ export const ArticleSchema = z.object({
   category: id,
   section: id,
   originalSection: z.string().optional(),
+  originalCategory: z.string().optional(),
+  canonicalRuleId: id.optional(),
   file: id,
   sha256: id,
   markdown: z.string(),

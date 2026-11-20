@@ -83,23 +83,6 @@
     "ruleId": "core-scenario-9"
   },
   {
-    "id": "core-risky-keyword-alias",
-    "message": "Справочник определяет RISKY ACTION, но таблицы оружия используют сокращение RISKY. Сохраняются оба исходных написания; связь должна быть явной нормализацией.",
-    "source": {
-      "source": "core",
-      "pages": [
-        13,
-        121,
-        125
-      ],
-      "sectionId": "core-keyword-fire",
-      "id": "core-risky-keyword-alias",
-      "document": "core",
-      "description": "Справочник определяет RISKY ACTION, но таблицы оружия используют сокращение RISKY. Сохраняются оба исходных написания; связь должна быть явной нормализацией."
-    },
-    "ruleId": "core-keyword-fire"
-  },
-  {
     "id": "core-trench-shield-machine-conflict",
     "message": "Краткая таблица p9 говорит, что Траншейный щит совмещается с любой бронёй, но в той же таблице и полном описании p127 Механизированная броня не совмещается с щитом. Применяется специальное исключение p127, обе формулировки сохранены.",
     "source": {
@@ -146,24 +129,6 @@
       "description": "На p4 игрок с меньшим количеством моделей на столе решает, кто начинает активации; на p11 игрок с меньшим количеством моделей в отряде сам начинает новый ход. Обе формулировки сохранены."
     },
     "ruleId": "core-foundations"
-  },
-  {
-    "id": "core-source-typographical-errors",
-    "message": "В оригинале встречаются «больгих» (p9), лишняя закрывающая скобка BLACK GRAIL (p12), «ДЕЙСТВИК» (p125) и «болгий Ада» (p129). Они сохранены в транскрипции, а не молча исправлены.",
-    "source": {
-      "source": "core",
-      "pages": [
-        9,
-        12,
-        125,
-        129
-      ],
-      "sectionId": "core-injuries",
-      "id": "core-source-typographical-errors",
-      "document": "core",
-      "description": "В оригинале встречаются «больгих» (p9), лишняя закрывающая скобка BLACK GRAIL (p12), «ДЕЙСТВИК» (p125) и «болгий Ада» (p129). Они сохранены в транскрипции, а не молча исправлены."
-    },
-    "ruleId": "core-injuries"
   },
   {
     "id": "core-scenario-glory-victory-wording",
@@ -279,108 +244,6 @@
     "ruleId": "core-scenario-7"
   },
   {
-    "id": "source-hereti",
-    "message": "В строке ключевых слов Помазанника напечатано HERETI, в других профилях — HERETIC. Исходное HERETI сохранено; автоматическое приравнивание не подтверждено источником.",
-    "source": {
-      "source": "core",
-      "pages": [
-        24
-      ],
-      "sectionId": "core-heretic-anointed",
-      "id": "source-hereti",
-      "document": "core",
-      "message": "В строке ключевых слов Помазанника напечатано HERETI, в других профилях — HERETIC. Исходное HERETI сохранено; автоматическое приравнивание не подтверждено источником.",
-      "status": "unresolved-source",
-      "resolution": null
-    },
-    "ruleId": "core-heretic-anointed"
-  },
-  {
-    "id": "source-cumbersom",
-    "message": "В таблице Когтей Тартара напечатано CUMBERSOM без конечной E; определённое в общих правилах слово — CUMBERSOME. Исходная таблица сохранена.",
-    "source": {
-      "source": "core",
-      "pages": [
-        20
-      ],
-      "sectionId": "core-heretic-tartarus-claws",
-      "id": "source-cumbersom",
-      "document": "core",
-      "message": "В таблице Когтей Тартара напечатано CUMBERSOM без конечной E; определённое в общих правилах слово — CUMBERSOME. Исходная таблица сохранена.",
-      "status": "unresolved-source",
-      "resolution": null
-    },
-    "ruleId": "core-heretic-tartarus-claws"
-  },
-  {
-    "id": "source-mortar-range",
-    "message": "Таблица Траншейного миномёта даёт дальность 48”, а текст выбора точки ограничивает её 36”. Оба значения сохранены; окончательная трактовка не задана.",
-    "source": {
-      "source": "core",
-      "pages": [
-        45
-      ],
-      "sectionId": "core-pilgrim-trench-mortar",
-      "id": "source-mortar-range",
-      "document": "core",
-      "message": "Таблица Траншейного миномёта даёт дальность 48”, а текст выбора точки ограничивает её 36”. Оба значения сохранены; окончательная трактовка не задана.",
-      "status": "unresolved-source",
-      "resolution": null
-    },
-    "ruleId": "core-pilgrim-trench-mortar"
-  },
-  {
-    "id": "source-autocannon-row",
-    "message": "В разделе Автопушка строка таблицы названа «Пулемёт». Название строки сохранено, её отдельные характеристики привязаны к разделу Автопушки.",
-    "source": {
-      "source": "core",
-      "pages": [
-        45
-      ],
-      "sectionId": "core-pilgrim-autocannon",
-      "id": "source-autocannon-row",
-      "document": "core",
-      "message": "В разделе Автопушка строка таблицы названа «Пулемёт». Название строки сохранено, её отдельные характеристики привязаны к разделу Автопушки.",
-      "status": "unresolved-source",
-      "resolution": null
-    },
-    "ruleId": "core-pilgrim-autocannon"
-  },
-  {
-    "id": "source-house-collection",
-    "message": "Коллекции оружия сначала требуют выбрать два оружия, затем говорят «Только одно оружие может быть выбрано из этого списка». Неясно, имеется в виду по одному из арсеналов или общий предел. Ограничение требует ручной проверки.",
-    "source": {
-      "source": "core",
-      "pages": [
-        61
-      ],
-      "sectionId": "core-sultanate-house-of-wisdom",
-      "id": "source-house-collection",
-      "document": "core",
-      "message": "Коллекции оружия сначала требуют выбрать два оружия, затем говорят «Только одно оружие может быть выбрано из этого списка». Неясно, имеется в виду по одному из арсеналов или общий предел. Ограничение требует ручной проверки.",
-      "status": "unresolved-source",
-      "resolution": null
-    },
-    "ruleId": "core-sultanate-house-of-wisdom"
-  },
-  {
-    "id": "source-auto-pistole",
-    "message": "В арсенале напечатано «Автоматический пистоле» без последней т. Исходная строка сохранена, связь с общим описанием Автоматического пистолета задаётся явно как редакторская нормализация названия.",
-    "source": {
-      "source": "core",
-      "pages": [
-        34
-      ],
-      "sectionId": "core-pilgrim-arsenal",
-      "id": "source-auto-pistole",
-      "document": "core",
-      "message": "В арсенале напечатано «Автоматический пистоле» без последней т. Исходная строка сохранена, связь с общим описанием Автоматического пистолета задаётся явно как редакторская нормализация названия.",
-      "status": "unresolved-source",
-      "resolution": null
-    },
-    "ruleId": "core-pilgrim-arsenal"
-  },
-  {
     "id": "source-wretch-glory-price",
     "message": "Предметы Несчастного ограничены стоимостью 10 дукатов за единицу. Текст не задаёт соотношения со Славой и не формулирует отдельный запрет на предметы за Славу. Для таких покупок нельзя автоматически считать ограничение выполненным.",
     "source": {
@@ -427,20 +290,6 @@
       "document": "core"
     },
     "ruleId": "core-heretic-staff"
-  },
-  {
-    "id": "source-tartarus-claws-conflict",
-    "message": "Когти Тартара: p20 даёт дополнительное перемещение6”, запрещает щит и печатает CUMBERSOM; p125 даёт3”, не содержит этой фразы о щите и печатает прочерк в ключевых словах. Сохранены отдельные предметы/статьи и локальная связь предложения. Источник не указывает, какое описание отменяет другое.",
-    "source": {
-      "source": "core",
-      "pages": [
-        20,
-        125
-      ],
-      "sectionId": "core-heretic-tartarus-claws",
-      "document": "core"
-    },
-    "ruleId": "core-heretic-tartarus-claws"
   },
   {
     "id": "source-wrath-ranged-wording",
@@ -580,32 +429,6 @@
       "document": "core"
     },
     "ruleId": "core-court-hunter"
-  },
-  {
-    "id": "core-issue-lieutenant-source-typo",
-    "message": "Оригинальное изображение68 действительно содержит «ДЕЙСВТИЕ». Проверено увеличением5x, исходная опечатка сохранена; это не ошибка нового извлечения.",
-    "source": {
-      "source": "core",
-      "pages": [
-        68
-      ],
-      "sectionId": "core-antioch-lieutenant",
-      "document": "core"
-    },
-    "ruleId": "core-antioch-lieutenant"
-  },
-  {
-    "id": "core-issue-grail-lord-source-typo",
-    "message": "В источнике свободные руки Повелителя Опухолей считаются «траншейной дубиркой». Текст сохранён; сопоставление с Окопной Дубинкой фиксируется явно в structured unarmedRule, без изменения оригинала.",
-    "source": {
-      "source": "core",
-      "pages": [
-        86
-      ],
-      "sectionId": "core-grail-lord",
-      "document": "core"
-    },
-    "ruleId": "core-grail-lord"
   },
   {
     "id": "core-issue-grail-hierarchy-truncated",

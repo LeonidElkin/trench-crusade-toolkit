@@ -55,7 +55,14 @@ export function validateEdition(data: unknown): string[] {
     for (const page of x.source.pages)
       check(source && page <= source.pages, `${x.id}: invalid source page ${page}`)
   }
-  for (const a of e.articles) check(a.markdown.trim(), `${a.id}: empty article`)
+  for (const a of e.articles) {
+    check(a.markdown.trim(), `${a.id}: empty article`)
+    if (a.canonicalRuleId) {
+      const target = e.articles.find((candidate) => candidate.id === a.canonicalRuleId)
+      check(target && !target.canonicalRuleId && target.source === a.source,
+        `${a.id}: invalid canonical article ${a.canonicalRuleId}`)
+    }
+  }
   for (const o of c.offers) {
     check(items.has(o.itemId), `${o.id}: unknown item`)
     check(factions.has(o.factionId), `${o.id}: unknown faction`)
