@@ -1,17 +1,18 @@
 import { countLabel } from '../data/format'
-import { useState } from 'react'
 import { ArrowLeft, ArrowRight, Flag, Users } from 'lucide-react'
-import { assetUrl, catalog, edition, ruleHref } from '../data/registry'
+import { assetUrl, catalog, edition, factionHref } from '../data/registry'
 import { articlesById } from '../data/content'
-import { articleBody } from '../data/article-format'
-import { createWarband, effectiveUnit } from '../domain/warband'
-import type { Unit } from '../domain/schema'
-import { CostView, RuleLink, Source } from '../components/Common'
+import { ruleBody } from '../data/article-format'
+import { referenceHref } from '../data/reference-navigation'
+import { createWarband, factionUnits } from '../domain/warband'
+import type { Unit, Warband } from '../domain/schema'
+import { RuleLink, Source } from '../components/Common'
 import { Markdown } from '../components/Markdown'
-import { UnitConditions, UnitProfileStats, UnitRuleLinks } from '../components/UnitDetails'
+import { UnitConditions, UnitLore, UnitProfileStats, UnitQuantity, UnitRuleLinks } from '../components/UnitDetails'
 import { UnitPortrait } from '../components/UnitPortrait'
+import { Arsenal } from '../components/Arsenal'
 
-function ProfileCard({ unit }: { unit: Unit }) {
+function ProfileCard({ unit, band }: { unit: Unit; band: Warband }) {
   return (
     <article className="unit-card">
       <UnitPortrait
@@ -23,18 +24,11 @@ function ProfileCard({ unit }: { unit: Unit }) {
       />
       <div className="unit-card-top">
         <span className="eyebrow">
-          {unit.mercenary ? 'НАЁМНИК' : unit.keywords.includes('ELITE') ? 'ЭЛИТА' : 'ВОЙСКА'} ·{' '}
-          {unit.min
-            ? `${unit.min} ОБЯЗАТЕЛЬНО`
-            : unit.max === null
-              ? 'БЕЗ ЛИМИТА'
-              : `0–${unit.max}`}
+          {unit.mercenary ? 'НАЁМНИК' : unit.keywords.includes('ELITE') ? 'ЭЛИТА' : 'ВОЙСКА'}
         </span>
-        <CostView cost={unit.cost} compact />
+        <UnitQuantity unit={unit} cost />
       </div>
-      <h3>
-        <a href={ruleHref(unit.ruleId)}>{unit.name}</a>
-      </h3>
+      <h3><a href={referenceHref(unit.ruleId, band, unit)}>{unit.name}</a></h3>
       <UnitProfileStats unit={unit} />
       <div className="tags">
         {unit.keywords.map((keyword) => (
@@ -45,20 +39,19 @@ function ProfileCard({ unit }: { unit: Unit }) {
       </div>
       <UnitConditions c={catalog} unit={unit} />
       <UnitRuleLinks c={catalog} unit={unit} />
-      <RuleLink id={unit.ruleId}>Полный профиль и способности</RuleLink>
+      <a className="text-link" href={referenceHref(unit.ruleId, band, unit)}>Полный профиль и способности<ArrowRight size={14} /></a>
       <Source source={unit.source} />
+      <UnitLore unit={unit} />
     </article>
   )
 }
 
-export function Factions({ factionId }: { factionId?: string }) {
-  const [variantId, setVariant] = useState('')
+export function Factions({ factionId, variantId }: { factionId?: string; variantId?: string }) {
   const faction = catalog.factions.find((f) => f.id === factionId)
   const selectedVariant = catalog.variants.find(
     (variant) => variant.factionId === faction?.id && variant.id === variantId,
   )
   const selectedVariantId = selectedVariant?.id ?? null
-  const band = faction ? createWarband(catalog, faction.id, selectedVariantId, 'battle') : undefined
   if (!faction)
     return (
       <>
@@ -84,28 +77,12 @@ export function Factions({ factionId }: { factionId?: string }) {
         </div>
       </>
     )
-  const units = catalog.units
-      .filter(
-        (unit) =>
-          unit.factionId === faction.id &&
-          (!unit.variantId || unit.variantId === selectedVariantId),
-      )
-      .map((unit) => effectiveUnit(catalog, band!, unit.id))
-      .filter((unit): unit is Unit => !!unit && unit.max !== 0),
-    variants = catalog.variants.filter((v) => v.factionId === faction.id),
-    mercenaries = selectedVariant?.banMercenaries
-      ? []
-      : catalog.units.filter(
-          (unit) =>
-            unit.mercenary && (!unit.allowedFactions || unit.allowedFactions.includes(faction.id)),
-        ),
-    ruleIds = [
-      ...new Set([
-        faction.ruleId,
-        ...faction.specialRuleIds,
-        ...(selectedVariant ? [selectedVariant.ruleId] : []),
-      ]),
-    ]
+  const band = createWarband(catalog, faction.id, selectedVariantId, 'battle')
+  const units = factionUnits(catalog, band)
+  const variants = catalog.variants.filter((v) => v.factionId === faction.id)
+  const mercenaries = factionUnits(catalog, band, true)
+  const ruleIds = [...new Set([...faction.specialRuleIds, ...(selectedVariant ? [selectedVariant.ruleId] : [])])]
+  const mainRuleId = selectedVariant?.ruleId ?? faction.loreRuleId ?? `core-${faction.id}-lore`
   return (
     <>
       <a className="back-link" href="#/factions">
@@ -129,11 +106,11 @@ export function Factions({ factionId }: { factionId?: string }) {
           </span>
         </div>
         <div className="hero-actions">
-          <a className="button button-primary" href={`#/warbands/new/${faction.id}`}>
+          <a className="button button-primary" href={`#/warbands/new/${faction.id}${selectedVariant ? '/' + selectedVariant.id : ''}`}>
             <Flag size={16} />
             Создать отряд
           </a>
-          <RuleLink id={faction.ruleId}>Правила фракции</RuleLink>
+          <a className="text-link" href={referenceHref(mainRuleId, band)}>Правила фракции<ArrowRight size={16} /></a>
         </div>
       </section>
       <div className="faction-tabs" aria-label="Быстрый переход к фракции">
@@ -146,7 +123,6 @@ export function Factions({ factionId }: { factionId?: string }) {
       <section className="faction-rules" aria-label="Правила и состав фракции">
         <div className="section-intro">
           <div>
-            <span className="eyebrow">СОЗДАНИЕ ОТРЯДА</span>
             <h2>Правила фракции</h2>
           </div>
           {faction.loreRuleId && <RuleLink id={faction.loreRuleId}>История фракции</RuleLink>}
@@ -159,13 +135,13 @@ export function Factions({ factionId }: { factionId?: string }) {
               key={id}
               open={selectedVariant?.ruleId === id || undefined}
             >
-              <summary>{article.title}</summary>
+              <summary>{id === 'core-court-recruitment' ? 'Семь смертных грехов' : article.title}</summary>
               <Markdown
-                content={articleBody(article.markdown)}
+                content={ruleBody(id, article.markdown)}
                 currentId={id}
                 minimumHeadingLevel={3}
               />
-              <RuleLink id={id}>Открыть в справочнике</RuleLink>
+              <a className="text-link" href={referenceHref(id, band)}>Открыть в справочнике<ArrowRight size={14} /></a>
               <Source source={article} />
             </details>
           ) : (
@@ -180,7 +156,7 @@ export function Factions({ factionId }: { factionId?: string }) {
           <span className="eyebrow">ЛИЧНЫЙ СОСТАВ</span>
           <h2>Бойцы</h2>
         </div>
-        <RuleLink id={faction.arsenalRuleId}>Арсенал фракции</RuleLink>
+        <a className="text-link" href={referenceHref(faction.arsenalRuleId, band)}>Арсенал фракции<ArrowRight size={14} /></a>
       </div>
       {variants.length > 0 && (
         <label className="select-label faction-roster-select">
@@ -188,7 +164,7 @@ export function Factions({ factionId }: { factionId?: string }) {
           <select
             aria-label="Профили варианта фракции"
             value={selectedVariantId ?? ''}
-            onChange={(event) => setVariant(event.target.value)}
+            onChange={(event) => window.location.assign(factionHref(faction.id, event.target.value))}
           >
             <option value="">Основной список фракции</option>
             {variants.map((variant) => (
@@ -201,9 +177,13 @@ export function Factions({ factionId }: { factionId?: string }) {
       )}
       <div className="unit-grid">
         {units.map((unit) => (
-          <ProfileCard key={unit.id} unit={unit} />
+          <ProfileCard key={unit.id} unit={unit} band={band} />
         ))}
       </div>
+      <details className="faction-rule panel faction-arsenal">
+        <summary>Экипировка · Арсенал</summary>
+        <Arsenal c={catalog} band={band} />
+      </details>
       {mercenaries.length > 0 && (
         <>
           <div className="section-intro">
@@ -214,7 +194,7 @@ export function Factions({ factionId }: { factionId?: string }) {
           </div>
           <div className="unit-grid">
             {mercenaries.map((unit) => (
-              <ProfileCard key={unit.id} unit={unit} />
+              <ProfileCard key={unit.id} unit={unit} band={band} />
             ))}
           </div>
         </>
@@ -229,7 +209,7 @@ export function Factions({ factionId }: { factionId?: string }) {
           </div>
           <div className="variant-grid">
             {variants.map((v) => (
-              <a className="variant-card" href={ruleHref(v.ruleId)} key={v.id}>
+              <a className="variant-card" href={factionHref(faction.id, v.id)} key={v.id}>
                 <Flag size={21} />
                 <div>
                   <h3>{v.name}</h3>

@@ -82,7 +82,7 @@ test('changes the free personal loadout and preserves it after reloading', async
   await expect(loadout).toHaveValue('polearm-shield')
   const before = await page.locator('.budget-strip > div').first().innerText()
   await loadout.selectOption('greatsword')
-  await expect(page.locator('.fixed-equipment')).toContainText('Двуручный Меч')
+  await expect(page.locator('.equipped-groups')).toContainText('Двуручный Меч')
   expect(await page.locator('.budget-strip > div').first().innerText()).toBe(before)
   await expect(page.locator('.fighter-profile .stats-grid dd').nth(3)).toHaveText('-2')
   await page.reload()
@@ -102,7 +102,7 @@ test('calculates exact action and injury probabilities with cancellation', async
     '30,56%',
     '27,78%',
   ])
-  await page.getByRole('spinbutton', { name: 'Отрицательный модификатор', exact: true }).fill('3')
+  await page.getByRole('spinbutton', { name: 'Броня вражеского бойца', exact: true }).fill('3')
   await expect(page.locator('.probability-value').first()).toHaveText('16,67%')
 })
 test('adds the Bloodbath die before applying DICE modifiers', async ({ page }) => {
@@ -171,21 +171,20 @@ test('creates a six-model band, equips, diagnoses, saves, restores, exports and 
   await page.getByRole('button', { name: 'Купить: Стандартная броня', exact: true }).click()
   await page.getByRole('button', { name: 'Способности и правила профиля', exact: true }).click()
   await expect(page.getByRole('dialog')).toBeVisible()
-  await expect(page.getByRole('dialog').locator('.prose')).toContainText('Хозяин Марионеток')
+  await expect(page.getByRole('dialog').locator('.prose').first()).toContainText('Хозяин Марионеток')
   await page.getByRole('button', { name: 'Закрыть окно', exact: true }).click()
   for (let n = 0; n < 3; n++) {
     await addUnit(page, 'Пехота Еретиков и Легионеры')
     await page.getByRole('button', { name: 'Купить: Винтовка', exact: true }).click()
   }
-  await page.getByRole('checkbox', { name: 'Легионер: ближний бой', exact: true }).check()
+  await page.getByRole('radio', { name: 'Легионер: ближний бой', exact: true }).check()
   await addUnit(page, 'Помазанная Тяжёлая Пехота')
   await addUnit(page, 'Еретический Коммандос Смерти')
   await page.getByLabel('Показать недоступные покупки').check()
-  await page.getByRole('button', { name: 'Купить: Винтовка', exact: true }).click()
-  await page.getByRole('button', { name: /^Проверка/ }).click()
-  await expect(page.locator('.diagnostic-error')).toContainText(['недоступен бойцу'])
-  await page.getByRole('button', { name: /^Состав/ }).click()
-  await page.getByRole('button', { name: 'Снять: Винтовка', exact: true }).click()
+  const forbidden = page.getByRole('button', { name: 'Купить: Винтовка', exact: true })
+  await expect(forbidden).toBeDisabled()
+  await expect(forbidden.locator('..')).toContainText('личном списке')
+  await expect(page.getByRole('button', { name: 'Снять: Винтовка', exact: true })).toHaveCount(0)
   await expect(page.locator('.warband-meta')).toContainText('6 бойцов')
   const bandURL = page.url()
   const saved = await page.evaluate(() =>
@@ -333,9 +332,9 @@ test('has no page overflow on five viewport sizes and keeps tables locally scrol
     [834, 1112],
     [390, 844],
     [320, 740],
-  ]) {
+  ] as const) {
     await page.setViewportSize({ width: width!, height: height! })
-    for (const route of ['', 'calculator', 'factions/heretic', `rules/${keyword}`]) {
+    for (const route of ['', 'calculator', 'factions/heretic', `rules/${keyword}`, 'turn']) {
       await page.goto(`./#/${route}`)
       await expect(page.locator('main h1').first()).toBeVisible()
       const size = await page.evaluate(() => ({
@@ -343,8 +342,124 @@ test('has no page overflow on five viewport sizes and keeps tables locally scrol
         viewport: innerWidth,
       }))
       expect(size.scroll, `${width}: ${route}`).toBeLessThanOrEqual(size.viewport)
+      if (width <= 760 && route.startsWith('rules/')) {
+        const contents = page.locator('.mobile-reference')
+        await expect(contents).toBeVisible()
+        expect((await contents.boundingBox())?.height ?? Infinity).toBeLessThan(75)
+      }
     }
     await page.goto('./#/')
     await page.screenshot({ path: testInfo.outputPath(`home-${width}.png`), fullPage: true })
   }
+})
+
+
+test('opens a subfaction from the overview and reads scoped mercenaries and the clickable arsenal', async ({ page }, testInfo) => {
+  await page.goto('./#/')
+  await page.getByRole('button', { name: 'Подфракции · Легион Еретиков' }).click()
+  await page.locator('.subfaction-panel:visible').getByRole('link', { name: 'Еретический десантный флот' }).click()
+  await expect(page.getByRole('combobox', { name: 'Профили варианта фракции' })).toHaveValue('naval-raiding-party')
+  await expect(page.locator('.unit-card').filter({ has: page.getByRole('heading', { name: 'Помазанная Тяжёлая Пехота' }) })).toContainText('Лимит: 1')
+
+  await page.goto('./#/rules/core-heretic-arsenal')
+  await page.locator('.reference-arsenal').getByRole('button', { name: 'Когти Тартара' }).click()
+  const card = page.getByRole('dialog')
+  await expect(card).toContainText('Harrowing Assault')
+  await expect(card).toContainText('CUMBERSOME')
+  await card.getByRole('button', { name: 'Закрыть окно' }).click()
+  await page.getByRole('link', { name: /Следующий раздел/ }).click()
+  await expect(page.locator('main h1')).not.toHaveText('Арсенал Легиона Еретиков')
+
+  await page.goto('./#/rules')
+  const book = testInfo.project.name === 'desktop'
+    ? page.getByRole('complementary', { name: 'Оглавление' })
+    : page.locator('.mobile-reference')
+  if (testInfo.project.name !== 'desktop') await book.locator(':scope > summary').click()
+  await book.getByText('Экипировка', { exact: true }).first().click()
+  await expect(book.getByText('Броня и щиты', { exact: true }).first()).toBeVisible()
+  await book.getByText('Сценарии', { exact: true }).click()
+  await expect(book.getByRole('link', { name: 'Генератор рандомных сценариев' })).toBeVisible()
+  const search = page.getByRole('textbox', { name: 'Поиск в справочнике', exact: true })
+  await search.fill('RISKY')
+  await page.locator('.rule-results').getByRole('link', { name: /^Ключевые слова RISKY RISKY в/ }).click()
+  await expect(page.getByRole('heading', { name: 'RISKY', exact: true })).toBeVisible()
+
+  await page.goto('./#/rules/allies-mamluk-faris/sultanate/house-of-wisdom/allies-mamluk-faris')
+  await expect(page.getByRole('heading', { name: 'Мамлюк Фарис', exact: true })).toBeVisible()
+  await expect(page.locator('.reader-breadcrumb')).toContainText('Дом Мудрости')
+  await expect(page.locator('article .unit-lore')).toContainText('Лор')
+})
+
+test('shows budget usage, greys out unavailable gear and lets the user change the budget', async ({ page }) => {
+  const name = 'Бюджет — E2E'
+  await createBand(page, name)
+  await addUnit(page, 'Помазанная Тяжёлая Пехота')
+  await page.getByRole('tab', { name: 'Броня', exact: true }).click()
+  await expect(page.getByRole('button', { name: 'Снять: Усиленная броня' })).toBeDisabled()
+  await expect(page.getByRole('button', { name: 'Купить: Стандартная броня' })).toBeDisabled()
+  await page.getByRole('tab', { name: 'Ближний бой', exact: true }).click()
+  await expect(page.getByRole('button', { name: 'Купить: Штык' }).locator('..')).toContainText(/креплением/)
+  await page.getByRole('tab', { name: 'Дальний бой', exact: true }).click()
+  await page.getByRole('button', { name: 'Купить: Винтовка', exact: true }).click()
+  await page.getByRole('tab', { name: 'Ближний бой', exact: true }).click()
+  await page.getByRole('button', { name: 'Купить: Штык' }).click()
+  await expect(page.getByRole('button', { name: 'Купить: Штык' })).toBeDisabled()
+
+  await page.getByRole('button', { name: 'Параметры отряда' }).click()
+  await page.getByRole('spinbutton', { name: 'Бюджет в дукатах' }).fill('90')
+  await page.getByRole('spinbutton', { name: 'Бюджет Славы' }).fill('12')
+  await page.getByRole('button', { name: 'Готово' }).click()
+  await page.getByRole('link', { name: 'Мои отряды', exact: true }).last().click()
+  await expect(page.locator('.saved-warband .budget-usage')).toContainText(/\d+\/90 дукатов/)
+  await expect(page.locator('.saved-warband .budget-usage')).toContainText('0/12 очков Славы')
+})
+
+test('opens the distribution tooltip and limits the injury pool selector to three values', async ({ page }, testInfo) => {
+  await page.goto('./#/calculator')
+  await expect(page.getByText('Особые броски', { exact: true })).toHaveCount(0)
+  const bucket = page.getByRole('button', { name: /^Сумма 7,/ })
+  if (testInfo.project.name === 'mobile') await bucket.tap()
+  else await bucket.hover()
+  await expect(page.getByRole('tooltip')).toContainText('16,666667% · 6 из 36 исходов')
+  await expect(bucket).toHaveClass(/is-active/)
+  await page.getByRole('tab', { name: /Таблица ранений/ }).click()
+  const pool = page.getByRole('combobox', { name: 'Исходное количество кубиков' })
+  await expect(pool.locator('option')).toHaveText(['2D6', '3D6', '4D6'])
+  await pool.selectOption('4')
+  await expect(page.locator('.dice-badge')).toContainText('4D6')
+})
+
+test('tracks alternate activations, duplicate fighters and persistent casualties in the turn indicator', async ({ page }) => {
+  const own = 'Караул — E2E'
+  const enemy = 'Противник E2E'
+  await createBand(page, own)
+  await addUnit(page, 'Пехота Еретиков и Легионеры')
+  await addUnit(page, 'Пехота Еретиков и Легионеры')
+  await page.goto('./#/turn')
+  await page.getByLabel('Отряд из библиотеки').selectOption({ label: own })
+  await page.getByRole('button', { name: 'Добавить сохранённый отряд' }).click()
+  await page.locator('.battle-setup > summary').click()
+  await page.getByLabel('Название противника').fill(enemy)
+  await page.getByRole('button', { name: 'Добавить противника', exact: true }).click()
+  const enemyCard = page.getByRole('region', { name: enemy, exact: true })
+  await enemyCard.getByLabel('Профиль противника').selectOption('core-heretic-trooper')
+  for (let count = 0; count < 2; count++) await enemyCard.getByRole('button', { name: 'Добавить в отряд' }).click()
+  await page.getByRole('button', { name: 'Бросить D6 за оба отряда' }).click()
+  await page.getByRole('button', { name: `Первый ход: ${own}` }).click()
+  const ownCard = page.getByRole('region', { name: own, exact: true })
+  await ownCard.getByRole('button', { name: 'Пехота Еретиков и Легионеры №1', exact: true }).click()
+  await expect(page.getByRole('dialog').locator('.stats-grid')).toBeVisible()
+  await page.getByRole('button', { name: 'Закрыть окно' }).click()
+  const first = ownCard.getByRole('button', { name: /Совершил ход.*№1/ })
+  await first.click()
+  await expect(page.locator('.turn-status [role=status]').first()).toHaveText(`Активирует: ${enemy}`)
+  const casualty = enemyCard.getByRole('button', { name: /Выведен из строя.*№2/ })
+  await casualty.click()
+  await enemyCard.getByRole('button', { name: /Совершил ход.*№1/ }).click()
+  await ownCard.getByRole('button', { name: /Совершил ход.*№2/ }).click()
+  await page.getByRole('button', { name: 'Завершить ход' }).click()
+  await expect(page.getByRole('heading', { name: 'Ход 2' })).toBeVisible()
+  await expect(first).toHaveAttribute('aria-pressed', 'false')
+  await page.reload()
+  await expect(casualty).toHaveAttribute('aria-pressed', 'true')
 })

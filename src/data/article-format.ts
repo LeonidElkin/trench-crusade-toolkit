@@ -51,3 +51,46 @@ export function articleExcerpt(article: Article): string {
   const text = body.startsWith(article.title) ? body.slice(article.title.length).trim() : body
   return text.length > 160 ? `${text.slice(0, 160)}…` : text
 }
+
+
+export function unitArticle(markdown: string): { body: string; lore: string } {
+  const lore: string[] = []
+  const parts = articleBody(markdown).split(/\n\s*\n/)
+  const firstTable = parts.findIndex((part) => /^\|[^\n]*Движ/iu.test(part))
+  let inLore = false
+  const body = parts.flatMap((part, index) => {
+    if (/^#{2,4}\s+(Описание|Лор)\s*$/iu.test(part)) {
+      inLore = true
+      return []
+    }
+    if (inLore && /^#{1,6}\s/m.test(part)) inLore = false
+    const explicitLore = /^>\s*\*\*Лор:\*\*/iu.test(part)
+    if (inLore || explicitLore || (index < firstTable && /^\*[^*][\s\S]*\*$/u.test(part))) {
+      lore.push(part.replace(/^>\s*(?:\*\*Лор:\*\*\s*)?/gmu, ''))
+      return []
+    }
+    if (index === firstTable || /^#{2,4}\s+Профиль характеристик\s*$/iu.test(part)) return []
+    if (index < firstTable && /^(?:\*\*)?(?:0[-–]\d+\s+|\d+\s+)?[^\n]*\(Стоимость:/iu.test(part)) {
+      const position = part.search(/\(Стоимость:/iu)
+      const end = part.indexOf(')', position)
+      const rest = end >= 0 ? part.slice(end + 1).replace(/^\*\*/, '').trim() : ''
+      return rest ? [rest] : []
+    }
+    return [part.replace(/^(\*\*)?0\s*[-–]\s*\d+\s+/gmu, '$1')]
+  }).join('\n\n').trim()
+  return { body, lore: lore.join('\n\n') }
+}
+
+export function ruleBody(id: string, markdown: string): string {
+  const body = articleBody(markdown)
+  if (id === 'core-injuries')
+    return body.replace(
+      /\*\*Модификаторы к броскам на таблице ранений:\*\*[\s\S]*?(\*\*Цель в состоянии[^\n]+)[\s\S]*?(?=\*\*Без эффекта:)/u,
+      '$1\n\n',
+    )
+  if (id === 'core-activation')
+    return body + '\n\nПровал **RISKY ACTION** завершает активацию. После активации всех моделей переходите к [фазе морали](#/rules/core-morale).'
+  if (id === 'core-grail-special' || id === 'core-court-recruitment')
+    return body.replace(/^Создание отряда\s*\n+У вас есть [^\n]+\s*/mu, '')
+  return body
+}

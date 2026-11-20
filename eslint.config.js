@@ -13,6 +13,7 @@ export default tseslint.config(
       'src/generated/**',
       'tools/import-cache/**',
       '.venv/**',
+      'trench_graphite_previews_and_css/**',
     ],
   },
   js.configs.recommended,

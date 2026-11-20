@@ -1,9 +1,9 @@
-import { countLabel } from '../data/format'
+import { useState } from 'react'
 import { ArrowRight, BookOpen, Dice5, Flag, Search, ChevronRight, Crosshair } from 'lucide-react'
-import { assetUrl, catalog, edition, ruleHref } from '../data/registry'
+import { assetUrl, catalog, edition, factionHref, ruleHref } from '../data/registry'
 const descriptions: Record<string, string> = {
   heretic: 'Проклятые легионы. Клятвы, скреплённые кровью.',
-  pilgrims: 'Вера крепче стали. Искупление в огне войны.',
+  pilgrim: 'Вера крепче стали. Искупление в огне войны.',
   sultanate: 'За Железной Стеной. Алхимия и тайное знание.',
   antioch: 'Последний бастион. Дисциплина против тьмы.',
   grail: 'Дары Вельзевула. Чума, не знающая смерти.',
@@ -110,28 +110,8 @@ export function Home({ onSearch, warbandCount }: { onSearch: () => void; warband
           <ArrowRight size={16} />
         </a>
       </div>
-      <section className="faction-grid" aria-label="Фракции">
-        {catalog.factions.map((f, i) => (
-          <a className="faction-card" href={`#/factions/${f.id}`} key={f.id}>
-            <img src={assetUrl(f.image)} alt="" loading="lazy" />
-            <div className="faction-shade" />
-            <div className="faction-card-content">
-              <span className="faction-index">0{i + 1} / ФРАКЦИЯ</span>
-              <h3>{f.name}</h3>
-              <p>{descriptions[f.id]}</p>
-              <span className="faction-bottom">
-                {catalog.variants.some((v) => v.factionId === f.id)
-                  ? countLabel(catalog.variants.filter((v) => v.factionId === f.id).length, [
-                      'вариант',
-                      'варианта',
-                      'вариантов',
-                    ])
-                  : 'Без вариантов'}
-                <ArrowRight size={17} />
-              </span>
-            </div>
-          </a>
-        ))}
+      <section className="faction-grid overview-factions" aria-label="Фракции">
+        {catalog.factions.map((faction) => <OverviewFaction key={faction.id} faction={faction} />)}
       </section>
       <section className="field-note">
         <div className="field-note-icon">
@@ -161,6 +141,42 @@ export function Home({ onSearch, warbandCount }: { onSearch: () => void; warband
         </a>
       </div>
     </div>
+  )
+}
+function OverviewFaction({ faction }: { faction: typeof catalog.factions[number] }) {
+  const [open, setOpen] = useState(false)
+  const variants = catalog.variants.filter((v) => v.factionId === faction.id)
+  const id = `subfactions-${faction.id}`
+  return (
+    <article className="faction-card overview-faction" onKeyDown={(event) => {
+      if (event.key === 'Escape') {
+        setOpen(false)
+        document.getElementById(id + '-toggle')?.focus()
+      }
+    }}>
+      <img src={assetUrl(faction.image)} alt="" loading="lazy" />
+      <div className="faction-shade" />
+      <div className="faction-card-content">
+        <h3><a href={factionHref(faction.id)}>{faction.name}</a></h3>
+        <p>{descriptions[faction.id]}</p>
+        {variants.length > 0 && <button className="faction-bottom" type="button" id={id + '-toggle'}
+          aria-label={`Подфракции · ${faction.name}`} aria-controls={id} aria-expanded={open}
+          onClick={() => setOpen((value) => !value)}>
+          Подфракции<ChevronRight size={17} />
+        </button>}
+      </div>
+      <div id={id} className="subfaction-panel" hidden={!open}>
+        <button className="text-button subfaction-close" onClick={() => {
+          setOpen(false)
+          document.getElementById(id + '-toggle')?.focus()
+        }}>Закрыть<ChevronRight size={16} /></button>
+        <ul>
+          {variants.map((variant) => (
+            <li key={variant.id}><a href={factionHref(faction.id, variant.id)}>{variant.name}<ArrowRight size={15} /></a></li>
+          ))}
+        </ul>
+      </div>
+    </article>
   )
 }
 function ArrowUp() {

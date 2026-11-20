@@ -1,4 +1,4 @@
-import { countLabel } from '../data/format'
+import { countLabel, nounForm } from '../data/format'
 import { useRef, useState, lazy, Suspense, type FormEvent } from 'react'
 import {
   AlertCircle,
@@ -7,6 +7,7 @@ import {
   BookOpen,
   Check,
   ChevronRight,
+  Clock3,
   Copy,
   Download,
   Flag,
@@ -22,13 +23,11 @@ import {
   Trash2,
   Upload,
   Users,
-  X,
 } from 'lucide-react'
 import { categoryNames, edition, editions, getEdition } from '../data/registry'
-import type { Catalog, Category, Model, Warband } from '../domain/schema'
+import type { Catalog, Category, Cost, Model, Warband } from '../domain/schema'
 import {
-  addModel,
-  buyEquipment,
+  compulsorySlot,
   createWarband,
   effectiveOffer,
   effectiveUnit,
@@ -38,9 +37,7 @@ import {
   modelStats,
   offerApplies,
   removeModel,
-  toggleUpgrade,
   updateModel,
-  upgradeApplies,
   warbandCost,
 } from '../domain/warband'
 import {
@@ -53,7 +50,11 @@ import {
   saveWarbands,
   shareWarband,
 } from '../domain/storage'
-import { validateWarband } from '../domain/validation'
+import { foreignArsenalGroups, validateWarband } from '../domain/validation'
+import { availableAlchemists, purchase, recruit, rosterGuard, selectUpgrade } from '../domain/roster-actions'
+import { rulesOf } from '../domain/rules'
+import { EquippedGear } from '../components/Equipment'
+import { equipmentCategories, weaponHands } from '../data/equipment-format'
 import { CostView, EmptyState, Modal, Source, StatsGrid, CopyButton } from '../components/Common'
 import { UnitPortrait } from '../components/UnitPortrait'
 import { UnitConditions, UnitRuleLinks } from '../components/UnitDetails'
@@ -81,12 +82,47 @@ function download(text: string, filename: string) {
   anchor.click()
   setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
+function BudgetInputs({ budget, onChange }: { budget: Cost; onChange: (cost: Cost) => void }) {
+  return (
+    <div className="budget-fields">
+      {([
+        ['ducats', 'Бюджет в дукатах', 100000],
+        ['glory', 'Бюджет Славы', 10000],
+      ] as const).map(([currency, label, max]) => (
+        <label key={currency}>
+          {label}
+          <input type="number" min={0} max={max} value={budget[currency]}
+            onChange={(e) => onChange({
+              ...budget,
+              [currency]: Math.min(max, Math.max(0, Math.floor(Number(e.target.value) || 0))),
+            })} />
+        </label>
+      ))}
+    </div>
+  )
+}
+
+function BudgetUsage({ cost, budget }: { cost: Cost; budget: Cost }) {
+  return (
+    <span className="budget-usage">
+      <span className={cost.ducats > budget.ducats ? 'danger-text' : undefined}>
+        {cost.ducats}/{budget.ducats} дукатов
+      </span>
+      <span className={cost.glory > budget.glory ? 'danger-text' : 'glory'}>
+        {cost.glory}/{budget.glory} {nounForm(budget.glory, ['очко', 'очка', 'очков'])} Славы
+      </span>
+    </span>
+  )
+}
+
 function NewWarband({
   defaultFaction,
+  defaultVariant,
   onCreate,
   onClose,
 }: {
   defaultFaction?: string
+  defaultVariant?: string
   onCreate: (w: Warband) => void
   onClose: () => void
 }) {
@@ -97,19 +133,22 @@ function NewWarband({
         ? defaultFaction
         : rules.factions[0]!.id,
     ),
-    [variantId, setVariant] = useState(''),
+    [variantId, setVariant] = useState(
+      rules.variants.find((v) => v.id === defaultVariant && v.factionId === defaultFaction)?.id ?? '',
+    ),
+    [customBudget, setCustomBudget] = useState<Cost>(),
     [format, setFormat] = useState<'campaign' | 'battle'>('battle'),
     [name, setName] = useState('')
   const f = rules.factions.find((f) => f.id === factionId)!,
     v = rules.variants.find((v) => v.id === variantId),
     budget =
-      format === 'campaign'
+      customBudget ?? (format === 'campaign'
         ? (v?.startingBudget ?? f.startingBudget)
-        : (v?.battleBudget ?? f.battleBudget)
+        : (v?.battleBudget ?? f.battleBudget))
   function submit(e: FormEvent) {
     e.preventDefault()
     const w = createWarband(rules, factionId, variantId || null, format)
-    onCreate({ ...w, name: name.trim() || `${f.name} — новый отряд` })
+    onCreate({ ...w, budget, name: name.trim() || `${f.name} — новый отряд` })
   }
   return (
     <Modal title="Новое знамя над траншеями" onClose={onClose}>
@@ -192,17 +231,7 @@ function NewWarband({
             <option value="campaign">Начало кампании</option>
           </select>
         </label>
-        <div className="new-budget">
-          <span>Начальный бюджет</span>
-          <CostView cost={budget} />
-        </div>
-        <div className="info-note compact">
-          <Info size={18} />
-          <p>
-            Временно невалидный состав разрешён. Все нарушения и непроверенные условия будут
-            показаны в диагностике.
-          </p>
-        </div>
+        <BudgetInputs budget={budget} onChange={setCustomBudget} />
         <button type="submit" className="button button-primary full-width">
           <Flag size={17} />
           Создать отряд
@@ -309,7 +338,7 @@ function WarbandSettings({
   onChange: (w: Warband) => void
   onClose: () => void
 }) {
-  const v = getVariant(c, band)
+  const foreign = foreignArsenalGroups(c, band)
   return (
     <Modal title="Параметры отряда" onClose={onClose}>
       <div className="form-stack">
@@ -322,46 +351,7 @@ function WarbandSettings({
             onChange={(e) => onChange({ ...band, name: e.target.value || 'Без названия' })}
           />
         </label>
-        <label>
-          Бюджет в дукатах
-          <input
-            aria-label="Бюджет в дукатах"
-            type="number"
-            min="0"
-            max="100000"
-            value={band.budget.ducats}
-            onChange={(e) =>
-              onChange({
-                ...band,
-                format: 'custom',
-                budget: {
-                  ...band.budget,
-                  ducats: Math.min(100000, Math.max(0, Math.floor(Number(e.target.value)))),
-                },
-              })
-            }
-          />
-        </label>
-        <label>
-          Бюджет Славы
-          <input
-            aria-label="Бюджет Славы"
-            type="number"
-            min="0"
-            max="10000"
-            value={band.budget.glory}
-            onChange={(e) =>
-              onChange({
-                ...band,
-                format: 'custom',
-                budget: {
-                  ...band.budget,
-                  glory: Math.min(10000, Math.max(0, Math.floor(Number(e.target.value)))),
-                },
-              })
-            }
-          />
-        </label>
+        <BudgetInputs budget={band.budget} onChange={(budget) => onChange({ ...band, budget })} />
         <div className="info-note compact">
           <Info size={18} />
           <p>
@@ -369,38 +359,34 @@ function WarbandSettings({
             новый отряд.
           </p>
         </div>
-        {v?.foreignArsenals?.map((fid) => (
-          <label key={fid}>
-            Трофейный предмет: {c.factions.find((f) => f.id === fid)?.name}
-            <select
-              value={
-                band.foreignOfferIds.find(
-                  (id) => c.offers.find((o) => o.id === id)?.factionId === fid,
-                ) ?? ''
-              }
-              onChange={(e) =>
-                onChange({
-                  ...band,
-                  foreignOfferIds: [
-                    ...band.foreignOfferIds.filter(
-                      (id) => c.offers.find((o) => o.id === id)?.factionId !== fid,
-                    ),
-                    ...(e.target.value ? [e.target.value] : []),
-                  ],
-                })
-              }
-            >
-              <option value="">Не выбран</option>
-              {c.offers
-                .filter((o) => o.factionId === fid && !o.variantId)
-                .map((o) => (
+        {foreign.map((group) => {
+          const name = c.factions.find((f) => f.id === group.factionId)?.name ?? group.factionId
+          const selected = band.foreignOfferIds.find((id) =>
+            c.offers.some((o) => o.id === id && o.factionId === group.factionId)) ?? ''
+          const used = band.units.some((model) => model.equipment.some((item) => item.offerId === selected))
+          return (
+            <label key={group.factionId}>
+              {group.collection ? `Оружие коллекции · ${name}` : `Трофейный предмет · ${name}`}
+              <select value={selected} disabled={used} onChange={(e) => onChange({
+                ...band,
+                foreignOfferIds: [
+                  ...band.foreignOfferIds.filter((id) => !c.offers.some((o) => o.id === id && o.factionId === group.factionId)),
+                  ...(e.target.value ? [e.target.value] : []),
+                ],
+              })}>
+                <option value="">Не выбрано</option>
+                {selected && !group.offers.some((o) => o.id === selected) &&
+                  <option value={selected}>Недоступный выбор из сохранения</option>}
+                {group.offers.map((o) => (
                   <option value={o.id} key={o.id}>
                     {o.name} · {o.cost.ducats} дк / {o.cost.glory} ОС
                   </option>
                 ))}
-            </select>
-          </label>
-        ))}
+              </select>
+              {used && <span className="muted small">Снимите предмет с бойцов перед сменой выбора.</span>}
+            </label>
+          )
+        })}
         <button className="button button-primary" onClick={onClose}>
           <Check size={17} />
           Готово
@@ -413,28 +399,21 @@ function AddFighter({
   c,
   band,
   onAdd,
+  check,
   onClose,
   onPreview,
 }: {
   c: Catalog
   band: Warband
-  onAdd: (id: string) => void
+  onAdd: (next: Warband) => void
+  check: ReturnType<typeof rosterGuard>
   onClose: () => void
   onPreview: (id: string) => void
 }) {
-  const [query, setQuery] = useState(''),
-    [mercenaries, setMercenaries] = useState(false),
-    [showAll, setAll] = useState(false)
-  const options = c.units.filter(
-    (u) =>
-      (mercenaries ? u.mercenary : u.factionId === band.factionId) &&
-      (showAll ||
-        ((!u.variantId || u.variantId === band.variantId) &&
-          effectiveUnit(c, band, u.id)?.max !== 0 &&
-          (!u.mercenary || !getVariant(c, band)?.banMercenaries) &&
-          (!u.mercenary || !u.allowedFactions || u.allowedFactions.includes(band.factionId)))) &&
-      u.name.toLocaleLowerCase('ru').includes(query.toLocaleLowerCase('ru')),
-  )
+  const [query, setQuery] = useState(''), [mercenaries, setMercenaries] = useState(false)
+  const options = c.units.filter((unit) =>
+    (mercenaries ? unit.mercenary : unit.factionId === band.factionId) &&
+      unit.name.toLocaleLowerCase('ru').includes(query.toLocaleLowerCase('ru')))
   return (
     <Modal title="Пополнение отряда" onClose={onClose} wide>
       <div className="segmented">
@@ -454,20 +433,12 @@ function AddFighter({
           placeholder="Найти профиль…"
         />
       </div>
-      <label className="checkbox-line">
-        <input type="checkbox" checked={showAll} onChange={(e) => setAll(e.target.checked)} />
-        Показать также недоступные профили
-      </label>
       <div className="recruit-list">
         {options.map((base) => {
           const u = effectiveUnit(c, band, base.id)!
-          const available =
-            (!u.variantId || u.variantId === band.variantId) &&
-            u.max !== 0 &&
-            (!u.mercenary || !u.allowedFactions || u.allowedFactions.includes(band.factionId)) &&
-            !(u.mercenary && getVariant(c, band)?.banMercenaries)
+          const action = recruit(c, band, base, check)
           return (
-            <article key={u.id} className="recruit-card">
+            <article key={u.id} className={`recruit-card ${action.reason ? 'is-unavailable' : ''}`}>
               <UnitPortrait
                 editionId={band.editionId}
                 unitId={u.id}
@@ -479,12 +450,14 @@ function AddFighter({
                 <div className="recruit-top">
                   <h3>{u.name}</h3>
                   <CostView cost={u.cost} compact />
+                  {Boolean(record(u.definition.compulsoryPurchase).name) && (
+                    <span className="muted small">+ {String(record(record(u.definition.compulsoryPurchase).cost).ducats)} дк за винтовку</span>
+                  )}
                 </div>
                 <StatsGrid stats={u.stats} />
                 <UnitConditions c={c} unit={u} equipment={false} />
                 <div className="recruit-meta">
                   <span>
-                    {!available && 'Недоступен для выбранного состава · '}
                     {u.min ? `Обязательно: ${u.min} · ` : ''}
                     {u.max === null ? 'Без лимита' : `Лимит: ${u.max}`} · в отряде{' '}
                     {band.units.filter((m) => m.unitId === u.id).length}
@@ -494,11 +467,13 @@ function AddFighter({
                     <BookOpen size={13} />
                   </button>
                 </div>
+                {action.reason && <p className="unavailable-reason">{action.reason}</p>}
               </div>
               <button
                 className="button button-small button-primary"
                 aria-label={`Добавить: ${u.name}`}
-                onClick={() => onAdd(u.id)}
+                disabled={!action.next}
+                onClick={() => action.next && onAdd(action.next)}
               >
                 <Plus size={16} />
                 Добавить
@@ -518,6 +493,7 @@ function FighterEditor({
   onChange,
   onPreview,
   onRemove,
+  check,
 }: {
   c: Catalog
   band: Warband
@@ -525,10 +501,11 @@ function FighterEditor({
   onChange: (w: Warband) => void
   onPreview: (id: string) => void
   onRemove: () => void
+  check: ReturnType<typeof rosterGuard>
 }) {
   const [tab, setTab] = useState<Category>('ranged'),
     [query, setQuery] = useState(''),
-    [showAll, setAll] = useState(false)
+    [showAll, setAll] = useState(true)
   const u = effectiveUnit(c, band, model.unitId, model),
     stats = modelStats(c, band, model)
   if (!u || !stats)
@@ -537,25 +514,36 @@ function FighterEditor({
         Профиль отсутствует в этой редакции. Экспортируйте отряд для восстановления.
       </div>
     )
-  const offers = c.offers.filter(
-    (o) =>
-      (offerApplies(c, band, model, o) || (showAll && o.factionId === band.factionId)) &&
-      o.category === tab &&
-      o.name.toLocaleLowerCase('ru').includes(query.toLocaleLowerCase('ru')),
-  )
-  const upgrades = c.upgrades.filter(
-    (up) => upgradeApplies(c, band, model, up) || model.upgrades.includes(up.id),
-  )
+  const offers = c.offers.filter((o) =>
+    o.category === tab &&
+    o.name.toLocaleLowerCase('ru').includes(query.toLocaleLowerCase('ru')) &&
+    (o.factionId === band.factionId || band.foreignOfferIds.includes(o.id) ||
+      offerApplies(c, band, model, o)))
+    .map((offer) => ({ offer: effectiveOffer(c, band, offer.id, model)!, action: purchase(c, band, model, offer, check) }))
+    .filter(({ action }) => showAll || !action.reason)
+  const upgrades = c.upgrades.filter((up) => model.upgrades.includes(up.id) ||
+    (!up.variantId || up.variantId === band.variantId) &&
+    (!up.factionId || up.factionId === band.factionId) &&
+    (up.unitIds.length ? up.unitIds.includes(u.id) : !u.mercenary) &&
+    (!up.sin || up.sin === band.allegiance))
+  const slot = compulsorySlot(c, band, model)
   const changes = (patch: Partial<Model>) => onChange(updateModel(band, model.id, patch))
   const changeLoadout = (group: string, value: string) =>
     changes({ loadouts: { ...model.loadouts, [group]: value } })
-  const profileChoices = records(u.definition.profileChoices)
-  const abilityChoices = strings(record(u.definition.abilitySelection).options)
-  const boundUnitId = record(u.definition.rules).boundUnitId
-  const boundModels =
-    typeof boundUnitId === 'string'
-      ? band.units.filter((entry) => entry.unitId === boundUnitId)
-      : []
+  const ur = rulesOf(u)
+  const vr = rulesOf(getVariant(c, band) ?? { definition: {} })
+  const profileChoices = records(ur.profileChoices)
+  const replacement = record(record(vr.abilityOptionsReplacing)[u.id])
+  const abilityChoices = [
+    ...strings(record(ur.abilitySelection).options).filter((name) => name !== replacement.replaces),
+    ...strings(record(vr.abilityOptionsAdded)[u.id]), ...strings(replacement.options),
+  ]
+  const boundUnitId = ur.boundUnitId
+  const boundModels = availableAlchemists(band, u, model.id)
+  const without = (id: string) => model.equipment.filter((entry) => entry.id !== id)
+  const loadoutError = (group: string, id: string) => check(updateModel(band, model.id, {
+    loadouts: { ...model.loadouts, [group]: id },
+  }))
   return (
     <section className="fighter-editor panel" tabIndex={-1}>
       <div className="fighter-editor-heading">
@@ -633,9 +621,9 @@ function FighterEditor({
                     value={model.loadouts[group.id] ?? ''}
                     onChange={(event) => changeLoadout(group.id, event.target.value)}
                   >
-                    <option value="">Выберите набор</option>
+                    <option value="" disabled={group.min > 0}>Выберите набор</option>
                     {group.choices.map((entry) => (
-                      <option key={entry.id} value={entry.id}>
+                      <option key={entry.id} value={entry.id} disabled={Boolean(loadoutError(group.id, entry.id))}>
                         {entry.name}
                       </option>
                     ))}
@@ -670,9 +658,9 @@ function FighterEditor({
                 value={model.loadouts.profile ?? ''}
                 onChange={(event) => changeLoadout('profile', event.target.value)}
               >
-                <option value="">Выберите профиль</option>
+                <option value="" disabled>Выберите профиль</option>
                 {profileChoices.map((choice) => (
-                  <option key={String(choice.id)} value={String(choice.id)}>
+                  <option key={String(choice.id)} value={String(choice.id)} disabled={Boolean(loadoutError('profile', String(choice.id)))}>
                     {String(
                       choice.name ??
                         choice.armourItemName ??
@@ -700,7 +688,7 @@ function FighterEditor({
                 value={model.loadouts.ability ?? ''}
                 onChange={(event) => changeLoadout('ability', event.target.value)}
               >
-                <option value="">Выберите способность</option>
+                <option value="" disabled>Выберите способность</option>
                 {abilityChoices.map((choice) => (
                   <option key={choice} value={choice}>
                     {choice}
@@ -717,7 +705,7 @@ function FighterEditor({
                 value={model.loadouts['bound-alchemist'] ?? ''}
                 onChange={(event) => changeLoadout('bound-alchemist', event.target.value)}
               >
-                <option value="">Выберите алхимика из отряда</option>
+                <option value="" disabled>Выберите алхимика из отряда</option>
                 {boundModels.map((entry) => (
                   <option key={entry.id} value={entry.id}>
                     {entry.name}
@@ -728,77 +716,20 @@ function FighterEditor({
           )}
         </div>
       )}
-      {u.fixedItems.length > 0 && (
-        <div className="fixed-equipment">
-          <span className="eyebrow">
-            <Shield size={13} /> ВКЛЮЧЕНО В ПРОФИЛЬ
-          </span>
-          <p>{u.fixedItems.map((i) => i.name).join(' · ')}</p>
-          <span className="muted small">
-            Неснимаемое снаряжение учтено в базовой стоимости и характеристиках.
-          </span>
-        </div>
-      )}
       <div className="equipment-section">
         <div className="subsection-heading">
           <h3>Экипировка</h3>
-          <span>
-            {countLabel(
-              model.equipment.reduce((n, e) => n + e.quantity, 0),
-              ['предмет', 'предмета', 'предметов'],
-            )}
-          </span>
         </div>
-        {model.equipment.length > 0 ? (
-          <div className="equipped-list">
-            {model.equipment.map((e) => {
-              const o = effectiveOffer(c, band, e.offerId, model)
-              return (
-                <div key={e.id}>
-                  <button
-                    className="equipped-name"
-                    onClick={() =>
-                      o && onPreview(c.items.find((i) => i.id === o.itemId)?.ruleId ?? o.ruleId)
-                    }
-                  >
-                    <BookOpen size={14} />
-                    {o?.name ?? `Неизвестный предмет ${e.offerId}`}
-                    {e.quantity > 1 && ` ×${e.quantity}`}
-                  </button>
-                  {o && (
-                    <CostView
-                      cost={{
-                        ducats: o.cost.ducats * e.quantity,
-                        glory: o.cost.glory * e.quantity,
-                      }}
-                      compact
-                    />
-                  )}
-                  <button
-                    className="icon-button"
-                    aria-label={`Снять: ${o?.name ?? e.offerId}`}
-                    onClick={() =>
-                      changes({ equipment: model.equipment.filter((x) => x.id !== e.id) })
-                    }
-                  >
-                    <X size={16} />
-                  </button>
-                </div>
-              )
-            })}
-          </div>
-        ) : (
-          <p className="muted small">Дополнительное снаряжение не выбрано.</p>
+        <EquippedGear c={c} band={band} model={model} onPreview={onPreview}
+          onRemove={(id) => changes({ equipment: without(id) })}
+          removalReason={(id) => check(updateModel(band, model.id, { equipment: without(id) }),
+            ['weapon-required', 'armour-required', 'variant-armour-required', 'equipment-required', 'minimum-model-cost'])}
+        />
+        {u.equipmentLocked && (
+          <p className="locked-note"><Shield size={17} />Профиль использует собственную экипировку.</p>
         )}
-        {u.equipmentLocked ? (
-          <div className="locked-note">
-            <Shield size={17} />
-            Профиль запрещает изменение экипировки. Доступные улучшения перечислены ниже.
-          </div>
-        ) : (
-          <>
             <div className="equipment-tabs" role="tablist" aria-label="Категория снаряжения">
-              {(['ranged', 'melee', 'armour', 'equipment'] as const).map((cat) => (
+              {equipmentCategories.map((cat) => (
                 <button
                   role="tab"
                   aria-selected={tab === cat}
@@ -833,39 +764,35 @@ function FighterEditor({
               Показать недоступные покупки
             </label>
             <div className="offer-list">
-              {offers.map((base) => {
-                const o = effectiveOffer(c, band, base.id, model)!
+              {offers.map(({ offer: o, action }) => {
+                const item = c.items.find((i) => i.id === o.itemId)
+                const replacement = slot.purchase && o.category === slot.replacement.category && o.id !== slot.purchase.offerId
                 return (
-                  <div className="offer-row" key={o.id}>
+                  <div className={`offer-row ${action.reason ? 'is-unavailable' : ''}`} key={o.id}>
                     <div>
-                      <button
-                        className="text-button offer-name"
-                        onClick={() =>
-                          onPreview(c.items.find((i) => i.id === o.itemId)?.ruleId ?? o.ruleId)
-                        }
-                      >
+                      <button className="text-button offer-name" onClick={() => onPreview(item?.ruleId ?? o.ruleId)}>
                         {o.name}
                         <BookOpen size={12} />
                       </button>
+                      {weaponHands(item) && <p>{weaponHands(item)}</p>}
                       {o.notes && <p>{o.notes}</p>}
+                      {o.limit !== null && <p>Лимит: {o.limit}</p>}
+                      {action.reason && <p className="unavailable-reason">{action.reason}</p>}
                     </div>
                     <CostView cost={o.cost} compact />
-                    <button
-                      className="icon-button add-equipment"
-                      aria-label={`Купить: ${o.name}`}
-                      onClick={() => onChange(buyEquipment(band, model.id, o.id))}
-                    >
+                    <button className="icon-button add-equipment"
+                      aria-label={`${replacement ? 'Заменить на' : 'Купить'}: ${o.name}`}
+                      title={action.reason ?? (replacement ? 'Заменить обязательное оружие' : undefined)}
+                      disabled={!action.next} onClick={() => action.next && onChange(action.next)}>
                       <Plus size={18} />
                     </button>
                   </div>
                 )
               })}
               {!offers.length && (
-                <p className="empty-text">В этой категории нет доступных покупок.</p>
+                <p className="empty-text">В этой категории нет подходящих предложений.</p>
               )}
             </div>
-          </>
-        )}
       </div>
       {upgrades.length > 0 && (
         <div className="upgrade-section">
@@ -873,29 +800,40 @@ function FighterEditor({
             <h3>Улучшения и способности</h3>
             <span>{model.upgrades.length} выбрано</span>
           </div>
-          {upgrades.map((up) => (
-            <div className="upgrade-row" key={up.id}>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={model.upgrades.includes(up.id)}
-                  onChange={() => onChange(toggleUpgrade(band, model.id, up.id))}
-                />
-                <span>
-                  {up.name}
-                  {up.limit !== null && <small>Лимит: {up.limit}</small>}
-                </span>
-              </label>
-              <CostView cost={up.cost} compact />
-              <button
-                className="icon-button"
-                aria-label={`Правило: ${up.name}`}
-                onClick={() => onPreview(up.ruleId)}
-              >
-                <BookOpen size={15} />
-              </button>
-            </div>
-          ))}
+          {upgrades.some((up) => up.group === 'legionary-specialty') && (() => {
+            const selected = upgrades.find((up) => up.group === 'legionary-specialty' && model.upgrades.includes(up.id))
+            return <label className="checkbox-line">
+              <input type="radio" name={`legionary-${model.id}`} checked={!selected} onChange={() => {
+                const next = selected && selectUpgrade(c, band, model, selected, check).next
+                if (next) onChange(next)
+              }} />
+              Без специализации Легионера
+            </label>
+          })()}
+          {upgrades.map((up) => {
+            const chosen = model.upgrades.includes(up.id)
+            const action = selectUpgrade(c, band, model, up, check)
+            const specialty = up.group === 'legionary-specialty'
+            return (
+              <div className={`upgrade-row ${action.reason && !chosen ? 'is-unavailable' : ''}`} key={up.id}>
+                <label>
+                  <input type={specialty ? 'radio' : 'checkbox'} name={specialty ? `legionary-${model.id}` : undefined}
+                    checked={chosen} aria-label={up.name}
+                    disabled={!action.next && !chosen}
+                    onChange={() => action.next && onChange(action.next)} />
+                  <span>
+                    {up.name === 'Infiltrato' ? <strong>{up.name}</strong> : up.name}
+                    {up.limit !== null && <small>Лимит: {up.limit}</small>}
+                    {action.reason && <small className="unavailable-reason">{action.reason}</small>}
+                  </span>
+                </label>
+                <CostView cost={up.cost} compact />
+                <button className="icon-button" aria-label={`Правило: ${up.name}`} onClick={() => onPreview(up.ruleId)}>
+                  <BookOpen size={15} />
+                </button>
+              </div>
+            )
+          })}
         </div>
       )}
       <details className="model-notes">
@@ -966,6 +904,7 @@ function Editor({
     )
   const total = warbandCost(c, band),
     validation = validateWarband(c, band),
+    check = rosterGuard(c, band, validation.diagnostics),
     errors = validation.diagnostics.filter((d) => d.severity === 'error'),
     manual = validation.diagnostics.filter((d) => d.severity === 'manual'),
     model = band.units.find((m) => m.id === selectedId) ?? band.units[0],
@@ -1199,6 +1138,7 @@ function Editor({
                 model={model}
                 onChange={update}
                 onPreview={onPreview}
+                check={check}
                 onRemove={() => update(removeModel(band, model.id))}
               />
             ) : (
@@ -1359,8 +1299,8 @@ function Editor({
           band={band}
           onClose={() => setAdding(false)}
           onPreview={onPreview}
-          onAdd={(id) => {
-            const next = addModel(c, band, id)
+          check={check}
+          onAdd={(next) => {
             update(next)
             setSelected(next.units.at(-1)!.id)
             setTab('roster')
@@ -1403,10 +1343,12 @@ function Editor({
 export function Warbands({
   routeId,
   defaultFaction,
+  defaultVariant,
   encoded,
 }: {
   routeId?: string
   defaultFaction?: string
+  defaultVariant?: string
   encoded?: string
 }) {
   const [initial] = useState(() => {
@@ -1493,6 +1435,7 @@ export function Warbands({
               <p>Ваши знамёна, ваши воины. Сохранены на этом устройстве.</p>
             </div>
             <div className="library-actions">
+              <a className="button button-outline" href="#/turn"><Clock3 size={17} />Индикатор хода</a>
               <button className="button button-outline" onClick={() => setImporting(true)}>
                 <Upload size={17} />
                 Импорт
@@ -1525,7 +1468,7 @@ export function Warbands({
                     </a>
                     <div className="saved-warband-meta">
                       <span>{countLabel(w.units.length, ['боец', 'бойца', 'бойцов'])}</span>
-                      {c && <CostView cost={warbandCost(c, w).cost} compact />}
+                      {c && <BudgetUsage cost={warbandCost(c, w).cost} budget={w.budget} />}
                     </div>
                     <div className="saved-warband-bottom">
                       <a className="text-link" href={`#/warbands/${w.id}`}>
@@ -1583,7 +1526,7 @@ export function Warbands({
         </>
       )}
       {(creating || routeId === 'new') && (
-        <NewWarband defaultFaction={defaultFaction} onClose={closeCreation} onCreate={add} />
+        <NewWarband defaultFaction={defaultFaction} defaultVariant={defaultVariant} onClose={closeCreation} onCreate={add} />
       )}
       {(importing || encoded !== undefined) && (
         <ImportDialog

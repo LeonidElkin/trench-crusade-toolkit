@@ -11,6 +11,7 @@ import {
 import {
   ArrowUpRight,
   BookOpen,
+  Clock3,
   ChevronRight,
   Cross,
   Dice5,
@@ -32,6 +33,7 @@ const Rules = lazy(() => import('./pages/Rules').then((m) => ({ default: m.Rules
 const Factions = lazy(() => import('./pages/Factions').then((m) => ({ default: m.Factions })))
 const Calculator = lazy(() => import('./pages/Calculator').then((m) => ({ default: m.Calculator })))
 const Warbands = lazy(() => import('./pages/Warbands').then((m) => ({ default: m.Warbands })))
+const Turn = lazy(() => import('./pages/Turn').then((m) => ({ default: m.Turn })))
 const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About })))
 const nav = [
   { id: '', name: 'Обзор', icon: HomeIcon },
@@ -39,6 +41,7 @@ const nav = [
   { id: 'factions', name: 'Фракции', icon: Shield },
   { id: 'calculator', name: 'Калькулятор', short: 'Расчёты', icon: Dice5 },
   { id: 'warbands', name: 'Мои отряды', short: 'Отряды', icon: Flag },
+  { id: 'turn', name: 'Индикатор хода', short: 'Ход', icon: Clock3 },
 ]
 const subscribe = (cb: () => void) => {
   window.addEventListener('hashchange', cb)
@@ -114,15 +117,18 @@ function Shell() {
     page === '' ? (
       <Home onSearch={() => setSearch(true)} warbandCount={count} />
     ) : page === 'rules' ? (
-      <Rules articleId={parts[1] ? decodeURIComponent(parts[1]) : undefined} />
+      <Rules articleId={parts[1] ? decodeURIComponent(parts[1]) : undefined} factionId={parts[2]}
+        variantId={parts[3] === '_' ? undefined : parts[3]} unitId={parts[4]} />
     ) : page === 'factions' ? (
-      <Factions factionId={parts[1]} />
+      <Factions factionId={parts[1]} variantId={parts[2]} />
     ) : page === 'calculator' ? (
       <Calculator />
     ) : page === 'warbands' ? (
-      <Warbands routeId={parts[1]} defaultFaction={parts[2]} />
+      <Warbands routeId={parts[1]} defaultFaction={parts[2]} defaultVariant={parts[3]} />
     ) : page === 'import' ? (
       <Warbands encoded={parts[1] ?? ''} />
+    ) : page === 'turn' ? (
+      <Turn />
     ) : page === 'about' ? (
       <About />
     ) : (
@@ -161,11 +167,7 @@ function Shell() {
             TRENCH CRUSADE<small>FIELD TOOLKIT</small>
           </span>
         </a>
-        <div className="sidebar-divider">
-          <span>ПОЛЕВОЙ ШТАБ</span>
-          <span>№ 163</span>
-        </div>
-        <nav>
+        <nav className="primary-links">
           {nav.map((n) => (
             <a
               className={`nav-item ${page === n.id ? 'active' : ''}`}

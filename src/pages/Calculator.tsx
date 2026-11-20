@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { Dice5, Info, Minus, Plus, RotateCcw, ChevronDown, Crosshair } from 'lucide-react'
+import { useId, useMemo, useState } from 'react'
+import { Dice5, Info, Minus, Plus, RotateCcw, Crosshair } from 'lucide-react'
 import {
   actionProbabilities,
   injuryProbabilities,
@@ -98,6 +98,49 @@ function ProbabilityRow({
     </div>
   )
 }
+function DistributionChart({ distribution, total }: { distribution: Map<number, bigint>; total: bigint }) {
+  const tooltip = useId()
+  const [hovered, setHovered] = useState<number>()
+  const [focused, setFocused] = useState<number>()
+  const [pinned, setPinned] = useState<number>()
+  const bins = [...distribution].sort(([a], [b]) => a - b)
+  const active = hovered ?? focused ?? pinned
+  const count = active === undefined ? undefined : distribution.get(active)
+  const maxCount = Math.max(...bins.map(([, n]) => Number(n)))
+  const chance = (value: bigint) => percent({ numerator: value, denominator: total })
+    .toLocaleString('ru-RU', { minimumFractionDigits: 2, maximumFractionDigits: 6 })
+
+  return (
+    <div className="interactive-distribution" onKeyDown={(event) => {
+      if (event.key === 'Escape') {
+        setHovered(undefined)
+        setFocused(undefined)
+        setPinned(undefined)
+      }
+    }}>
+      {count !== undefined && <div id={tooltip} className="distribution-tooltip" role="tooltip">
+        <strong>Сумма {active}</strong>
+        <span>{chance(count)}% · {count.toLocaleString('ru-RU')} из {total.toLocaleString('ru-RU')} исходов</span>
+      </div>}
+      <div className="distribution-chart" aria-label="Распределение суммы выбранных кубиков">
+        {bins.map(([sum, value]) => (
+          <button className={`distribution-column ${active === sum ? 'is-active' : ''}`} key={sum}
+            aria-label={`Сумма ${sum}, ${chance(value)} процента`}
+            aria-describedby={active === sum ? tooltip : undefined}
+            aria-pressed={pinned === sum}
+            onPointerEnter={(event) => { if (event.pointerType !== 'touch') setHovered(sum) }}
+            onPointerLeave={() => setHovered(undefined)}
+            onFocus={() => setFocused(sum)}
+            onBlur={() => setFocused(undefined)}
+            onClick={() => setPinned((current) => current === sum ? undefined : sum)}>
+            <span className="distribution-bar" style={{ height: `${Number(value) / maxCount * 100}%` }} />
+            <span className="distribution-value">{sum}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  )
+}
 export function Calculator() {
   const [mode, setMode] = useState<'action' | 'injury'>('action'),
     [positive, setPositive] = useState(0),
@@ -105,27 +148,22 @@ export function Calculator() {
     [fixedPositive, setFixedPositive] = useState(0),
     [fixedNegative, setFixedNegative] = useState(0),
     [baseDice, setBaseDice] = useState(2),
-    [extra, setExtra] = useState(0),
     [bloodbath, setBloodbath] = useState(false)
   const bloodbathProcedure = catalog.procedures.find((p) => p.kind === 'bloodbath')
   const bloodbathDice = mode === 'injury' && bloodbath && typeof bloodbathProcedure?.additionalBaseDice === 'number'
     ? bloodbathProcedure.additionalBaseDice : 0
-  const effectiveBaseDice = baseDice + bloodbathDice
+  const effectiveBaseDice = (mode === 'action' ? 2 : baseDice) + bloodbathDice
   const spec = useMemo(
-    () => ({ baseDice: effectiveBaseDice, positiveDice: positive, negativeDice: negative, sumExtraDice: extra }),
-    [effectiveBaseDice, positive, negative, extra],
+    () => ({ baseDice: effectiveBaseDice, positiveDice: positive, negativeDice: negative }),
+    [effectiveBaseDice, positive, negative],
   )
   const action = useMemo(() => actionProbabilities(spec), [spec]),
     injury = useMemo(
       () => injuryProbabilities(spec, fixedPositive, fixedNegative),
       [spec, fixedPositive, fixedNegative],
     )
-  const distribution = useMemo(
-      () => [...rollDistribution(spec).distribution].sort((a, b) => a[0] - b[0]),
-      [spec],
-    ),
-    net = positive - negative
-  const maxCount = Math.max(...distribution.map(([, n]) => Number(n)))
+  const distribution = useMemo(() => rollDistribution(spec), [spec])
+  const net = positive - negative
   const rule = edition.articles.find((a) =>
     a.title.toLowerCase().includes(mode === 'action' ? 'таблица успеха' : 'таблица ранений'),
   )
@@ -169,13 +207,23 @@ export function Calculator() {
                 setFixedPositive(0)
                 setFixedNegative(0)
                 setBaseDice(2)
-                setExtra(0)
                 setBloodbath(false)
               }}
             >
               <RotateCcw size={17} />
             </button>
           </div>
+          {mode === 'injury' && (
+            <div className="control-section">
+              <label className="base-dice-select">
+                Исходный бросок
+                <select value={baseDice} aria-label="Исходное количество кубиков"
+                  onChange={(event) => setBaseDice(Number(event.target.value))}>
+                  {[2, 3, 4].map((n) => <option value={n} key={n}>{n}D6</option>)}
+                </select>
+              </label>
+            </div>
+          )}
           <div className="control-section">
             <span className="eyebrow">МОДИФИКАТОРЫ КОЛИЧЕСТВА КУБИКОВ</span>
             <Stepper
@@ -215,14 +263,14 @@ export function Calculator() {
               )}
               <span className="eyebrow">МОДИФИКАТОРЫ СУММЫ</span>
               <Stepper
-                label="Положительный модификатор"
+                label="Модификатор оружия бойца"
                 value={fixedPositive}
                 onChange={setFixedPositive}
                 max={20}
                 detail="Добавляется к сумме выбранных кубиков"
               />
               <Stepper
-                label="Отрицательный модификатор"
+                label="Броня вражеского бойца"
                 value={fixedNegative}
                 onChange={setFixedNegative}
                 max={20}
@@ -230,51 +278,6 @@ export function Calculator() {
               />
             </div>
           )}
-          <details className="advanced-controls">
-            <summary>
-              Особые броски
-              <ChevronDown size={16} />
-            </summary>
-            <p className="muted small">
-              Используйте только процедуру, прямо указанную в правиле. Нестандартные параметры —
-              математическая настройка, а не новое игровое правило.
-            </p>
-            <label>
-              Исходный бросок
-              <select
-                value={baseDice}
-                aria-label="Исходное количество кубиков"
-                onChange={(e) => setBaseDice(Number(e.target.value))}
-              >
-                {[1, 2, 3, 4, 5, 6].map((n) => (
-                  <option value={n} key={n}>
-                    {n}D6
-                    {n === 2
-                      ? ' · стандарт'
-                      : n === 3
-                        ? ' · например, Колесо Екатерины'
-                        : n === 4
-                          ? ' · например, Устройство Мученичества'
-                          : ''}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label>
-              Дополнительно суммировать
-              <select
-                value={extra}
-                aria-label="Дополнительно суммируемые кубики"
-                onChange={(e) => setExtra(Number(e.target.value))}
-              >
-                {[0, 1, 2, 3, 4].map((n) => (
-                  <option value={n} key={n}>
-                    {n === 0 ? 'Нет дополнительных кубиков' : `+${n}D6 к сумме`}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </details>
         </section>
         <section className="panel calculator-results" aria-live="polite">
           <div className="panel-header">
@@ -292,7 +295,6 @@ export function Calculator() {
             {net === 0
               ? `суммировать все ${effectiveBaseDice}`
               : `оставить ${effectiveBaseDice} ${net > 0 ? 'наибольших' : 'наименьших'}`}
-            {extra > 0 && `, прибавить ещё ${extra}D6`}
             {mode === 'injury' && (
               <span>
                 {' '}
@@ -352,21 +354,7 @@ export function Calculator() {
           <h2>Распределение суммы</h2>
           <span className="muted small">До фиксированных модификаторов</span>
         </div>
-        <div className="distribution-chart" aria-label="Распределение суммы выбранных кубиков">
-          {distribution.map(([sum, count]) => (
-            <div
-              className="distribution-column"
-              key={sum}
-              title={`${sum}: ${count.toString()} исходов`}
-            >
-              <div
-                className="distribution-bar"
-                style={{ height: `${(Number(count) / maxCount) * 100}%` }}
-              />
-              <span>{sum}</span>
-            </div>
-          ))}
-        </div>
+        <DistributionChart distribution={distribution.distribution} total={distribution.total} />
       </section>
       <div className="info-note">
         <Info size={19} />

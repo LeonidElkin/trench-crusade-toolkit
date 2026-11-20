@@ -13,6 +13,7 @@ export const unitsById = new Map(catalog.units.map((u) => [u.id, u]))
 export const itemsById = new Map(catalog.items.map((i) => [i.id, i]))
 export const offersById = new Map(catalog.offers.map((o) => [o.id, o]))
 export const ruleHref = (id: string) => `#/rules/${encodeURIComponent(id)}`
+export const factionHref = (id: string, variantId?: string) => `#/factions/${id}${variantId ? '/' + variantId : ''}`
 export const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`
 export const categoryNames = {
   ranged: 'Дальнобойное оружие',

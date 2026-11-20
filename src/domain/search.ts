@@ -35,7 +35,7 @@ export function searchArticles(
       score: tokens.reduce(
         (score, token) =>
           score + (e.title.includes(token) ? 15 : e.text.includes(token) ? 1 : -1000),
-        0,
+        tokens.length && e.title === tokens.join(' ') ? 50 : 0,
       ),
     }))
     .filter((e) => e.score >= 0)

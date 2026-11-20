@@ -1,9 +1,32 @@
 import type { Catalog, Unit } from '../domain/schema'
 import { articlesById } from '../data/content'
-import { articleIntroduction, articleSection } from '../data/article-format'
-import { RuleLink, Source, StatsGrid } from './Common'
+import { articleSection, unitArticle } from '../data/article-format'
+import { CostView, RuleLink, Source, StatsGrid } from './Common'
 import { Markdown } from './Markdown'
+import { record, rulesOf } from '../domain/rules'
 import './catalog-details.css'
+
+export function UnitQuantity({ unit, cost = false }: { unit: Unit; cost?: boolean }) {
+  const compulsory = record(rulesOf(unit).compulsoryPurchase)
+  return (
+    <div className="unit-quantity">
+      <strong>{unit.max === null ? 'Без лимита' : `Лимит: ${unit.max}`}</strong>
+      {unit.min > 0 && <strong>Обязательно: {unit.min}</strong>}
+      {cost && <CostView cost={unit.cost} compact />}
+      {cost && Boolean(compulsory.name) &&
+        <span className="muted small">+ {String(record(compulsory.cost).ducats)} дк за обязательную винтовку</span>}
+    </div>
+  )
+}
+
+export function UnitLore({ unit }: { unit: Unit }) {
+  const article = articlesById.get(unit.ruleId)
+  const lore = article && unitArticle(article.markdown).lore
+  if (!lore) return null
+  return <details className="unit-lore"><summary>Лор</summary>
+    <Markdown content={lore} currentId={unit.ruleId} minimumHeadingLevel={4} />
+  </details>
+}
 
 export function UnitProfileStats({ unit }: { unit: Unit }) {
   const extraRows = unit.profileRows.slice(1).filter((row) => row.length >= 6)
@@ -33,12 +56,15 @@ export function UnitRuleLinks({
   c,
   unit,
   onPreview,
+  currentId,
 }: {
   c: Catalog
   unit: Unit
   onPreview?: (id: string) => void
+  currentId?: string
 }) {
-  const abilities = c.abilities.filter((ability) => unit.abilityIds.includes(ability.id))
+  const abilities = c.abilities.filter((ability) => unit.abilityIds.includes(ability.id) && ability.ruleId !== currentId)
+  const links = unit.linkedRuleIds.filter((id) => id !== currentId)
   const reference = (id: string, name: string) =>
     onPreview ? (
       <button className="text-button" onClick={() => onPreview(id)}>
@@ -59,11 +85,11 @@ export function UnitRuleLinks({
           </ul>
         </div>
       )}
-      {unit.linkedRuleIds.length > 0 && (
+      {links.length > 0 && (
         <div>
           <span className="eyebrow">СВЯЗАННЫЕ ПРАВИЛА ПРОФИЛЯ</span>
           <ul>
-            {unit.linkedRuleIds.map((id) => (
+            {links.map((id) => (
               <li key={id}>{reference(id, articlesById.get(id)?.title ?? id)}</li>
             ))}
           </ul>
@@ -102,7 +128,7 @@ export function UnitConditions({
         <div className="unit-hiring">
           <span className="eyebrow">УСЛОВИЯ НАЙМА</span>
           <Markdown
-            content={articleIntroduction(article.markdown)}
+            content={unitArticle(article.markdown).body.split(/^#{1,6}\s+/m)[0] ?? ''}
             currentId={article.id}
             minimumHeadingLevel={4}
           />

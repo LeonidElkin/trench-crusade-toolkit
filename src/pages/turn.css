@@ -1,0 +1,144 @@
+.battle-setup,
+.turn-status,
+.battle-party {
+  min-width: 0;
+  margin-bottom: 18px;
+}
+.battle-setup > summary {
+  cursor: pointer;
+  padding: 16px 20px;
+  color: var(--accent);
+}
+.battle-setup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.battle-setup-grid form {
+  padding: 20px;
+  border-top: 1px solid var(--border);
+}
+.battle-setup-grid form + form {
+  border-left: 1px solid var(--border);
+}
+.battle-setup h2,
+.turn-status h2,
+.battle-party h2 {
+  margin: 0 0 4px;
+  overflow-wrap: anywhere;
+}
+.turn-status .panel-header,
+.battle-party .panel-header {
+  align-items: start;
+  gap: 12px;
+}
+.turn-status .panel-header p,
+.battle-party .panel-header p {
+  margin: 0;
+}
+.turn-status-content {
+  padding: 12px 20px;
+}
+.turn-status-content > p,
+.turn-choices,
+.turn-rule-links {
+  margin: 8px 0 12px;
+}
+.turn-choices,
+.turn-rule-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+.turn-choices button[aria-pressed='true'],
+.battle-marks button[aria-pressed='true'] {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--panel-dark);
+}
+.battle-parties {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  gap: 12px;
+}
+.battle-party.is-active {
+  border-color: var(--accent);
+}
+.battle-side {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+}
+.battle-side input {
+  min-width: 0;
+}
+.quick-roster {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 16px 12px;
+}
+.quick-roster label {
+  min-width: 0;
+  flex: 1 1 190px;
+}
+.quick-roster select {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+}
+.battle-figure {
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+.battle-figure.is-out {
+  background: var(--panel-dark);
+}
+.battle-figure.is-out .battle-figure-name,
+.battle-figure.is-out .battle-weapons,
+.battle-figure.is-out .stats-grid dd {
+  color: var(--muted);
+}
+.battle-figure-name {
+  text-align: left;
+  margin-bottom: 8px;
+}
+.battle-weapons {
+  color: var(--secondary);
+  font-size: 0.82rem;
+  margin: 8px 0;
+}
+.battle-marks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.battle-marks button {
+  min-height: 42px;
+}
+.battle-fireteam {
+  margin-top: 8px;
+}
+.battle-profile > * + * {
+  margin-top: 12px;
+}
+.battle-notes {
+  white-space: pre-wrap;
+}
+@media (max-width: 620px) {
+  .battle-setup-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .battle-setup-grid form + form {
+    border-left: 0;
+  }
+  .turn-status .panel-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .battle-marks .button {
+    flex: 1 1 auto;
+  }
+}

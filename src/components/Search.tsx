@@ -1,10 +1,10 @@
 import { useMemo, useState } from 'react'
 import { Search, ArrowUpRight } from 'lucide-react'
 import { ruleHref } from '../data/registry'
-import { articles } from '../data/content'
+import { referencePage, searchableArticles } from '../data/reference-navigation'
 import { createSearchIndex, searchArticles } from '../domain/search'
 import { Modal, Source } from './Common'
-const index = createSearchIndex(articles)
+const index = createSearchIndex(searchableArticles)
 export function SearchDialog({ onClose }: { onClose: () => void }) {
   const [query, setQuery] = useState('')
   const results = useMemo(() => searchArticles(index, query, '', query ? 40 : 8), [query])
@@ -28,7 +28,7 @@ export function SearchDialog({ onClose }: { onClose: () => void }) {
       </p>
       <div className="search-results">
         {results.map((a) => (
-          <a key={a.id} href={ruleHref(a.id)} onClick={onClose}>
+          <a key={a.id} href={referencePage(a.id)?.href ?? ruleHref(a.id)} onClick={onClose}>
             <div>
               <span className="eyebrow">{a.section}</span>
               <h3>{a.title}</h3>

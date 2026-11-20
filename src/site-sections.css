@@ -1,0 +1,326 @@
+.primary-links {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+.is-unavailable {
+  background: var(--panel-dark);
+  color: var(--muted);
+}
+.is-unavailable :is(.offer-name, h3, .cost, .stats-grid dd, .unit-quantity) {
+  color: var(--muted);
+}
+.is-unavailable .recruit-portrait {
+  filter: grayscale(1) brightness(0.8);
+}
+button:disabled,
+.upgrade-row input:disabled {
+  cursor: not-allowed;
+}
+.recruit-card .button:disabled,
+.offer-row .add-equipment:disabled,
+.equipped-list .icon-button:disabled {
+  color: var(--muted);
+  background: var(--panel-dark);
+  border-color: var(--border);
+  opacity: 0.68;
+}
+.unavailable-reason {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.budget-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.budget-usage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-variant-numeric: tabular-nums;
+}
+.equipped-groups {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.equipped-groups h4 {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+.equipped-list > div {
+  grid-template-columns: minmax(0, 1fr) auto auto;
+}
+.equipped-list > div > div {
+  min-width: 0;
+}
+.equipped-list .icon-button {
+  grid-column: -2;
+}
+.equipped-name {
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.gear-detail {
+  margin: 4px 0 0;
+}
+.equipment-unknown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow-wrap: anywhere;
+}
+.rules-sidebar details details {
+  border: 0;
+  border-left: 1px solid var(--border);
+}
+.rules-sidebar details summary {
+  cursor: pointer;
+  font-size: 0.75rem;
+  min-height: 36px;
+}
+.rules-sidebar details a {
+  font-size: 0.72rem;
+  overflow-wrap: anywhere;
+}
+.rules-sidebar details a:hover {
+  color: var(--accent);
+}
+.mobile-reference {
+  display: none;
+}
+.rule-article h1:has(+ .article-meta + .rule-portrait),
+.unit-card h3 a {
+  font-weight: 700;
+}
+.reader-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+}
+.reader-breadcrumb span + span::before {
+  content: '›';
+  margin-inline-end: 10px;
+  color: var(--accent);
+}
+.reader-next {
+  margin: 24px 0 12px;
+}
+.reader-next .button {
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
+  white-space: normal;
+}
+.reader-next strong {
+  display: block;
+  margin-top: 3px;
+}
+.unit-quantity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 12px;
+  margin-block: 6px 10px;
+  font-size: 0.8rem;
+}
+.unit-lore {
+  border-top: 1px solid var(--border);
+  color: var(--secondary);
+  padding-top: 8px;
+  margin-top: 14px;
+}
+.unit-lore summary {
+  padding: 5px 0;
+  cursor: pointer;
+}
+.unit-lore .prose {
+  font-size: 0.83rem;
+}
+.reference-arsenal {
+  margin-block: 16px;
+  min-width: 0;
+}
+.reference-arsenal details + details {
+  margin-top: 12px;
+}
+.reference-arsenal summary {
+  color: var(--accent);
+  cursor: pointer;
+  padding: 6px 0;
+}
+.reference-arsenal ul,
+.variant-reference ul,
+.subfaction-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0;
+}
+.reference-arsenal li {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.reference-arsenal li p {
+  margin: 4px 0;
+}
+.reference-arsenal button,
+.variant-reference a {
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.variant-reference a,
+.overview-faction h3 a {
+  color: var(--heading-color);
+}
+.variant-reference > :is(h2, ul) {
+  margin-top: 16px;
+}
+.faction-arsenal {
+  margin-top: 18px;
+}
+.preview-offer {
+  display: flex;
+  gap: 6px 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+.overview-faction img {
+  object-fit: contain;
+  object-position: center;
+}
+.overview-faction:hover img {
+  transform: none;
+}
+.overview-faction .faction-bottom {
+  z-index: 1;
+  background: color-mix(in srgb, var(--panel-dark) 86%, transparent);
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.overview-faction h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+.subfaction-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: auto;
+  padding: 14px 16px;
+  background: color-mix(in srgb, var(--panel-dark) 93%, transparent);
+}
+.subfaction-panel a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.subfaction-panel a svg,
+.subfaction-close svg {
+  flex-shrink: 0;
+}
+.subfaction-close {
+  margin-left: auto;
+  display: flex;
+}
+.base-dice-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.base-dice-select select {
+  width: auto;
+}
+.interactive-distribution {
+  position: relative;
+}
+.distribution-chart {
+  gap: clamp(2px, 1vw, 8px);
+}
+.distribution-chart .distribution-column {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  min-width: 0;
+  align-self: stretch;
+  cursor: pointer;
+}
+.distribution-chart .distribution-column > .distribution-bar {
+  position: static;
+  transform: none;
+  display: block;
+  width: 100%;
+  min-height: 2px;
+}
+.distribution-column.is-active .distribution-bar {
+  background: var(--heading-color);
+}
+.distribution-column > .distribution-value {
+  margin-top: 4px;
+}
+.distribution-tooltip {
+  display: grid;
+  gap: 4px;
+  z-index: 3;
+  position: absolute;
+  inset: 2px auto auto 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 90%;
+  pointer-events: none;
+  background: var(--panel-dark);
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: var(--text);
+}
+@media (max-width: 1040px) {
+  .mobile-nav {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .rules-main .mobile-reference {
+    display: block;
+    position: static;
+    width: 100%;
+    min-height: 0;
+    max-height: 65dvh;
+    margin-bottom: 14px;
+    padding: 0;
+    border: 1px solid var(--border);
+  }
+  .mobile-reference > summary {
+    padding: 10px 14px;
+    min-height: 44px;
+  }
+  .mobile-reference > div {
+    padding: 0 10px 10px;
+  }
+  .mobile-reference details a {
+    padding-block: 8px;
+  }
+}
+@media print {
+  .reader-next,
+  .rules-main .mobile-reference {
+    display: none;
+  }
+}
